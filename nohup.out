@@ -1,0 +1,2 @@
+Already up to date.
+/root/switch-games-bot/run_and_push.sh: line 5: 136783 Killed                  ./venv/bin/python3 scraper.py
