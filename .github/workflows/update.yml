@@ -34,6 +34,9 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Добавляем файл
           git add switch_games.json
-          git commit -m "Auto-update database: $(date)" || echo "No changes to commit"
-          git push
+          
+          # Проверяем, есть ли что коммитить, чтобы не падать на пустом коммите
+          if git
