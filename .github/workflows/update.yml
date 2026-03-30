@@ -38,5 +38,15 @@ jobs:
           # Добавляем файл
           git add switch_games.json
           
-          # Проверяем, есть ли что коммитить, чтобы не падать на пустом коммите
-          if git
+          # Проверяем, есть ли что коммитить (чтобы не падать на ошибке 'nothing to commit')
+          if git diff --quiet && git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Auto-update database: $(date)"
+            
+            # САМАЯ ВАЖНАЯ ЧАСТЬ: стягиваем изменения из GitHub перед пушем.
+            # --rebase аккуратно поставит наш коммит поверх тех, что уже есть в репозитории.
+            git pull --rebase origin main
+            
+            git push origin main
+          fi
