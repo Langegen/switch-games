@@ -2,18 +2,22 @@ name: Update Switch Database
 
 on:
   schedule:
-    - cron: '0 6 * * *' # Запуск каждый день в 6:00 утра (UTC)
-  workflow_dispatch:     # Позволяет запускать вручную кнопкой
+    - cron: '0 6 * * *' # Каждый день в 6:00 UTC
+  workflow_dispatch:     # Кнопка ручного запуска
 
 permissions:
-  contents: write        # Разрешение боту записывать файл в репозиторий
+  contents: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    # Включаем принудительное использование Node.js 24, как просит GitHub
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4 # На текущий момент v4 актуальна, переменная выше решит проблему
 
       - name: Set up Python
         uses: actions/setup-python@v5
