@@ -1,0 +1,35 @@
+name: Update Switch Database
+
+on:
+  schedule:
+    - cron: '0 6 * * *' # Запуск каждый день в 6:00 утра (UTC)
+  workflow_dispatch:     # Позволяет запускать вручную кнопкой
+
+permissions:
+  contents: write        # Разрешение боту записывать файл в репозиторий
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4
+
+      - name: Run scraper
+        run: python scraper.py
+
+      - name: Commit and Push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add switch_games.json
+          git commit -m "Auto-update database: $(date)" || echo "No changes to commit"
+          git push
