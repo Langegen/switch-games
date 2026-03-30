@@ -35,20 +35,17 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           
-          # Добавляем наш обновленный JSON
-          git add switch_games.json
-          
-          # Проверяем, изменилось ли что-то на самом деле
-          if git diff --quiet && git diff --staged --quiet; then
-            echo "No changes to commit. Everything is up to date."
+          # Проверяем, существует ли файл вообще
+          if [ -f switch_games.json ]; then
+            git add switch_games.json
+            # Проверяем, есть ли изменения для коммита
+            if git diff --staged --quiet; then
+              echo "No changes to commit"
+            else
+              git commit -m "Auto-update database: $(date)"
+              git pull --rebase origin main
+              git push origin main
+            fi
           else
-            git commit -m "Auto-update database: $(date)"
-            
-            # --- РЕШЕНИЕ ПРОБЛЕМЫ ---
-            # Забираем изменения из GitHub. --rebase перенесет наш новый коммит 
-            # в самый конец очереди, исключая конфликты.
-            git pull --rebase origin main
-            
-            # Теперь пушим со спокойной душой
-            git push origin main
+            echo "File switch_games.json not found, skipping..."
           fi
