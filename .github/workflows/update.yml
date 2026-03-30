@@ -35,18 +35,20 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           
-          # Добавляем файл
+          # Добавляем наш обновленный JSON
           git add switch_games.json
           
-          # Проверяем, есть ли что коммитить (чтобы не падать на ошибке 'nothing to commit')
+          # Проверяем, изменилось ли что-то на самом деле
           if git diff --quiet && git diff --staged --quiet; then
-            echo "No changes to commit"
+            echo "No changes to commit. Everything is up to date."
           else
             git commit -m "Auto-update database: $(date)"
             
-            # САМАЯ ВАЖНАЯ ЧАСТЬ: стягиваем изменения из GitHub перед пушем.
-            # --rebase аккуратно поставит наш коммит поверх тех, что уже есть в репозитории.
+            # --- РЕШЕНИЕ ПРОБЛЕМЫ ---
+            # Забираем изменения из GitHub. --rebase перенесет наш новый коммит 
+            # в самый конец очереди, исключая конфликты.
             git pull --rebase origin main
             
+            # Теперь пушим со спокойной душой
             git push origin main
           fi
