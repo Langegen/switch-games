@@ -1,5 +1,110 @@
 [
     {
+        "title": "Kletka (Клеть, Клетка) [NSP][RUS/Multi10]",
+        "size": "2 GB",
+        "magnet": "magnet:?xt=urn:btih:B55687FCFD06F1BE1E71AE0C3E79408393534807&tr=http%3A%2F%2Fbt2.t-ru.org%2Fann%3Fmagnet",
+        "topic_id": "6849020",
+        "url": "https://rutracker.org/forum/viewtopic.php?t=6849020"
+    },
+    {
+        "title": "Taiko no Tatsujin: Rhythm Festival + кастомные моды Shin Ultramix и Music Pass Unlocker [NSP][ENG]",
+        "size": "15.88 GB",
+        "magnet": "magnet:?xt=urn:btih:97970F314B78514B1EDF51F8E58FDE18FD607EAE&tr=http%3A%2F%2Fbt4.t-ru.org%2Fann%3Fmagnet",
+        "topic_id": "6248800",
+        "url": "https://rutracker.org/forum/viewtopic.php?t=6248800"
+    },
+    {
+        "title": "Egglia Rebirth (Legend of the Redcap) [NSZ][ENG]",
+        "size": "540.1 MB",
+        "magnet": "magnet:?xt=urn:btih:4C175F638B95BE87219E196845EA551175FF6694&tr=http%3A%2F%2Fbt.t-ru.org%2Fann%3Fmagnet",
+        "topic_id": "6151963",
+        "url": "https://rutracker.org/forum/viewtopic.php?t=6151963"
+    },
+    {
+        "title": "Dusty Raging Fist [NSZ][ENG]",
+        "size": "1.75 GB",
+        "magnet": "magnet:?xt=urn:btih:08F2F2E3436FBC623B0765F02BA2FB3AA3AFDB07&tr=http%3A%2F%2Fbt2.t-ru.org%2Fann%3Fmagnet",
+        "topic_id": "6777486",
+        "url": "https://rutracker.org/forum/viewtopic.php?t=6777486"
+    },
+    {
+        "title": "Nightmare the Lunatic [NSZ][RUS/Multi7]",
+        "size": "312.4 MB",
+        "magnet": "magnet:?xt=urn:btih:178691B80C666ADAD7148D5D10E7722C4552F880&tr=http%3A%2F%2Fbt3.t-ru.org%2Fann%3Fmagnet",
+        "topic_id": "6782332",
+        "url": "https://rutracker.org/forum/viewtopic.php?t=6782332"
+    },
+    {
+        "title": "Ninja Ming [NSZ][ENG]",
+        "size": "Unknown",
+        "magnet": null,
+        "topic_id": "6785762",
+        "url": "https://rutracker.org/forum/viewtopic.php?t=6785762"
+    },
+    {
+        "title": "Yono and the Celestial Elephants [NSZ][ENG]",
+        "size": "423.3 MB",
+        "magnet": "magnet:?xt=urn:btih:B595F5EFDF4152A8DBD7246F2BD09C63AB1B73D4&tr=http%3A%2F%2Fbt.t-ru.org%2Fann%3Fmagnet",
+        "topic_id": "5830170",
+        "url": "https://rutracker.org/forum/viewtopic.php?t=5830170"
+    },
+    {
+        "title": "Shift Quantum [NSZ][RUS/Multi9]",
+        "size": "430.1 MB",
+        "magnet": "magnet:?xt=urn:btih:D3FED3982489A3194DED2B8D63E9AF733A043F8E&tr=http%3A%2F%2Fbt2.t-ru.org%2Fann%3Fmagnet",
+        "topic_id": "5813003",
+        "url": "https://rutracker.org/forum/viewtopic.php?t=5813003"
+    },
+    {
+        "title": "Shadow Bug [NSZ][RUS/Multi10]",
+        "size": "193.1 MB",
+        "magnet": "magnet:?xt=urn:btih:4C6C644B1E6BB63DD6298424347283C996B78EE5&tr=http%3A%2F%2Fbt.t-ru.org%2Fann%3Fmagnet",
+        "topic_id": "5822104",
+        "url": "https://rutracker.org/forum/viewtopic.php?t=5822104"
+    },
+    {
+        "title": "Shift Happens [NSZ][RUS/Multi5]",
+        "size": "1.38 GB",
+        "magnet": "magnet:?xt=urn:btih:93CC34D938B3B95987CDC4A6773C82AE3BCCA236&tr=http%3A%2F%2Fbt4.t-ru.org%2Fann%3Fmagnet",
+        "topic_id": "6088227",
+        "url": "https://rutracker.org/forum/viewtopic.php?t=6088227"
+    },
+    {
+        "title": "Munchkin Quacked Quest (Манчкин) [NSZ][ENG]",
+        "size": "1.66 GB",
+        "magnet": "magnet:?xt=urn:btih:4F50F929AF1480838CC677A862D02585669C3512&tr=http%3A%2F%2Fbt2.t-ru.org%2Fann%3Fmagnet",
+        "topic_id": "5808184",
+        "url": "https://rutracker.org/forum/viewtopic.php?t=5808184"
+    },
+    {
+        "title": "Melbits World [NSZ][ENG]",
+        "size": "379.8 MB",
+        "magnet": "magnet:?xt=urn:btih:CBCA8775EF9AAC08B3F356F32C07C2C965A085B4&tr=http%3A%2F%2Fbt3.t-ru.org%2Fann%3Fmagnet",
+        "topic_id": "5823017",
+        "url": "https://rutracker.org/forum/viewtopic.php?t=5823017"
+    },
+    {
+        "title": "Keylocker [NSP][ENG]",
+        "size": "1.06 GB",
+        "magnet": "magnet:?xt=urn:btih:C0C0CE1B5E3D45530454D01B75CA86C6EE30DB9D&tr=http%3A%2F%2Fbt2.t-ru.org%2Fann%3Fmagnet",
+        "topic_id": "6578194",
+        "url": "https://rutracker.org/forum/viewtopic.php?t=6578194"
+    },
+    {
+        "title": "Cecconoid [NSZ][ENG]",
+        "size": "52.9 MB",
+        "magnet": "magnet:?xt=urn:btih:F9456C48ADB0287B22AE9A14F616CB23A24F6DDC&tr=http%3A%2F%2Fbt.t-ru.org%2Fann%3Fmagnet",
+        "topic_id": "5942326",
+        "url": "https://rutracker.org/forum/viewtopic.php?t=5942326"
+    },
+    {
+        "title": "eBaseball Professional Baseball Spirits 2021 Grand Slam [NSP][JAP]",
+        "size": "7.42 GB",
+        "magnet": "magnet:?xt=urn:btih:2802B4E79F7E2529DB4BFB0B4C5479DF28C7892E&tr=http%3A%2F%2Fbt.t-ru.org%2Fann%3Fmagnet",
+        "topic_id": "6676753",
+        "url": "https://rutracker.org/forum/viewtopic.php?t=6676753"
+    },
+    {
         "title": "Gecko Gods [NSZ][ENG]",
         "size": "1.44 GB",
         "magnet": "magnet:?xt=urn:btih:22D52D05D62AA8B8EFF98BE0280177E143FD0A19&tr=http%3A%2F%2Fbt3.t-ru.org%2Fann%3Fmagnet",
