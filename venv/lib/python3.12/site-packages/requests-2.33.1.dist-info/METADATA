@@ -1,6 +1,6 @@
 Metadata-Version: 2.4
 Name: requests
-Version: 2.33.0
+Version: 2.33.1
 Summary: Python HTTP for Humans.
 Author-email: Kenneth Reitz <me@kennethreitz.org>
 Maintainer-email: Ian Stapleton Cordasco <graffatcolmingov@gmail.com>, Nate Prewitt <nate.prewitt@gmail.com>
@@ -38,13 +38,6 @@ Provides-Extra: socks
 Requires-Dist: PySocks!=1.5.7,>=1.5.6; extra == "socks"
 Provides-Extra: use-chardet-on-py3
 Requires-Dist: chardet<8,>=3.0.2; extra == "use-chardet-on-py3"
-Provides-Extra: test
-Requires-Dist: pytest-httpbin==2.1.0; extra == "test"
-Requires-Dist: pytest-cov; extra == "test"
-Requires-Dist: pytest-mock; extra == "test"
-Requires-Dist: pytest-xdist; extra == "test"
-Requires-Dist: PySocks!=1.5.7,>=1.5.6; extra == "test"
-Requires-Dist: pytest>=3; extra == "test"
 Dynamic: license-file
 
 # Requests

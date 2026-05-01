@@ -1,6 +1,6 @@
 Metadata-Version: 2.4
 Name: charset-normalizer
-Version: 3.4.6
+Version: 3.4.7
 Summary: The Real First Universal Charset Detector. Open, modern and actively maintained alternative to Chardet.
 Author-email: "Ahmed R. TAHRI" <tahri.ahmed@proton.me>
 Maintainer-email: "Ahmed R. TAHRI" <tahri.ahmed@proton.me>
@@ -26,6 +26,7 @@ Classifier: Programming Language :: Python :: 3.14
 Classifier: Programming Language :: Python :: 3 :: Only
 Classifier: Programming Language :: Python :: Implementation :: CPython
 Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Programming Language :: Python :: Free Threading :: 4 - Resilient
 Classifier: Topic :: Text Processing :: Linguistic
 Classifier: Topic :: Utilities
 Classifier: Typing :: Typed
@@ -302,6 +303,15 @@ tools.
 # Changelog
 All notable changes to charset-normalizer will be documented in this file. This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+
+## [3.4.7](https://github.com/Ousret/charset_normalizer/compare/3.4.6...3.4.7) (2026-04-02)
+
+### Changed
+- Pre-built optimized version using mypy[c] v1.20.
+- Relax `setuptools` constraint to `setuptools>=68,<82.1`.
+
+### Fixed
+- Correctly remove SIG remnant in utf-7 decoded string. (#718) (#716)
 
 ## [3.4.6](https://github.com/Ousret/charset_normalizer/compare/3.4.5...3.4.6) (2026-03-15)
 
