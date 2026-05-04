@@ -32,3 +32,16 @@ Already up to date.
   > Найдено: Wandersong [NSZ][ENG]...
   > Найдено: Ghost Girl Ghussy XXXL Edition / Cuckies and Cream...
 [+] База обновлена. Добавлено: 8
+[main 14150c2] Auto-update: 2026-05-03 00:00:15
+ 2 files changed, 76 insertions(+)
+To https://github.com/Langegen/switch-games.git
+   71af15c..14150c2  main -> main
+Already up to date.
+[*] В базе 4021 игр. Проверяю 4 страницы обновлений.
+--- Страница 1/4 ---
+  > Найдено: Chippy and Noppo [NSP][ENG]...
+  > Найдено: Istanbul Digital edition [NSZ][RUS (Mod.)/ENG]...
+--- Страница 2/4 ---
+--- Страница 3/4 ---
+--- Страница 4/4 ---
+[+] База обновлена. Добавлено: 2
