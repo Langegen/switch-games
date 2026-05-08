@@ -117,3 +117,16 @@ Already up to date.
   > Найдено: Knight vs Giant the Broken Excalibur [NSZ][ENG]...
   > Найдено: Sonic the Hedgehog 1 и 2 Classic (2013 decompilati...
 [+] База обновлена. Добавлено: 18
+[main dd3e3e9] Auto-update: 2026-05-07 00:00:29
+ 2 files changed, 155 insertions(+)
+To https://github.com/Langegen/switch-games.git
+   b12f974..dd3e3e9  main -> main
+Already up to date.
+[*] В базе 4062 игр. Проверяю 4 страницы обновлений.
+--- Страница 1/4 ---
+--- Страница 2/4 ---
+--- Страница 3/4 ---
+--- Страница 4/4 ---
+  > Найдено: The Artful Escape [NSP][RUS/Multi10]...
+  > Найдено: Youtubers Life (OMG Edition) [NSZ][RUS/Multi7]...
+[+] База обновлена. Добавлено: 2
