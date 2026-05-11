@@ -171,3 +171,17 @@ Already up to date.
   > Найдено: The Missing: J.J. Macfield and the Island of Memor...
 --- Страница 4/4 ---
 [+] База обновлена. Добавлено: 5
+[main d5fdd66] Auto-update: 2026-05-10 00:00:15
+ 2 files changed, 51 insertions(+)
+To https://github.com/Langegen/switch-games.git
+   eabbb59..d5fdd66  main -> main
+Already up to date.
+[*] В базе 4083 игр. Проверяю 4 страницы обновлений.
+--- Страница 1/4 ---
+--- Страница 2/4 ---
+--- Страница 3/4 ---
+--- Страница 4/4 ---
+  > Найдено: Uncharted Tides: Port Royal [NSZ][RUS/Multi5]...
+  > Найдено: Unepic [NSP][RUS/Multi7]...
+  > Найдено: Voice of Cards 1-2-3: The Isle Dragon Roars / The ...
+[+] База обновлена. Добавлено: 3
