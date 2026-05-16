@@ -286,3 +286,14 @@ Already up to date.
   > Найдено: Lost Phone Stories / A Normal Lost Phone / Another...
   > Найдено: Telling Lies [NSP][RUS/Multi10]...
 [+] База обновлена. Добавлено: 19
+[main 1ad2804] Auto-update: 2026-05-15 00:00:30
+ 2 files changed, 163 insertions(+)
+To https://github.com/Langegen/switch-games.git
+   7994b71..1ad2804  main -> main
+Already up to date.
+[*] В базе 4144 игр. Проверяю 4 страницы обновлений.
+--- Страница 1/4 ---
+--- Страница 2/4 ---
+--- Страница 3/4 ---
+--- Страница 4/4 ---
+[=] Новых игр нет.
