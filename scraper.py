@@ -5,43 +5,59 @@ import time
 from bs4 import BeautifulSoup
 from playwright.sync_api import sync_playwright
 
+# Настройки
 FORUM_ID = '1605'
 BASE_URL = "https://rutracker.org/forum/"
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 JSON_FILE = os.path.join(BASE_DIR, 'switch_games.json')
 
 def clean_title(title):
+    """Удаляет [Nintendo Switch] и чистит спецсимволы"""
     title = re.sub(r'^\[Nintendo Switch\]\s*', '', title, flags=re.IGNORECASE).strip()
     return title.replace('"', "'")
 
-def fetch_page_with_retry(page, url, max_retries=3):
-    """Загружает страницу и ждет прохождения Cloudflare с повторными попытками"""
-    for attempt in range(max_retries):
-        try:
-            print(f"[*] Загрузка (попытка {attempt+1}): {url}")
-            page.goto(url, wait_until="domcontentloaded", timeout=45000)
-            
-            # Даем время скриптам Cloudflare выполниться
-            time.sleep(4)
-            
+def fetch_page_smart(page, url, max_wait_sec=30):
+    """
+    Открывает страницу и ждет в цикле, пока не исчезнут 
+    экраны проверки Cloudflare / DDoS-защиты
+    """
+    try:
+        page.goto(url, wait_until="domcontentloaded", timeout=45000)
+        
+        start_time = time.time()
+        while time.time() - start_time < max_wait_sec:
             content = page.content()
-            # Проверяем, не висит ли еще экран проверки
-            if "Checking your browser" in content or "Just a moment" in content:
-                print("[!] Обнаружена проверка Cloudflare, ждем еще 6 секунд...")
-                time.sleep(6)
-                content = page.content()
-                
-            return content
-        except Exception as e:
-            print(f"[!] Ошибка при загрузке {url}: {e}")
-            time.sleep(3)
-    return None
+            
+            # Проверяем, активна ли ещё страница проверки
+            is_checking = any(phrase in content for phrase in [
+                "Checking your browser", 
+                "Just a moment", 
+                "DDoS protection",
+                "Please wait while we check",
+                "Проверка вашего браузера"
+            ])
+            
+            if not is_checking:
+                # Проверка успешно пройдена!
+                time.sleep(0.5)
+                return page.content()
+            
+            print("[-] Ожидание прохождения проверки Cloudflare...")
+            time.sleep(1)
+            
+        print(f"[!] Таймаут: проверка Cloudflare не была пройдена за {max_wait_sec} сек.")
+        return None
+        
+    except Exception as e:
+        print(f"[!] Ошибка загрузки {url}: {e}")
+        return None
 
 def get_topic_data(page, topic_id):
+    """Собирает magnet-ссылку и размер со страницы раздачи"""
     url = f"{BASE_URL}viewtopic.php?t={topic_id}"
     data = {"magnet": None, "size": "Unknown"}
     
-    html = fetch_page_with_retry(page, url)
+    html = fetch_page_smart(page, url)
     if not html:
         return data
 
@@ -57,12 +73,13 @@ def get_topic_data(page, topic_id):
             raw_size = list_items[-1].get_text(strip=True)
             data["size"] = raw_size.replace('\xa0', ' ').replace('&nbsp;', ' ')
 
-    time.sleep(1.5)
+    time.sleep(1)  # Небольшая пауза между темами
     return data
 
 def get_total_pages(page):
+    """Определяет общее количество страниц в разделе"""
     url = f"{BASE_URL}viewforum.php?f={FORUM_ID}"
-    html = fetch_page_with_retry(page, url)
+    html = fetch_page_smart(page, url)
     if not html:
         return 1
 
@@ -75,6 +92,7 @@ def run_scraper():
     existing_data = []
     existing_ids = set()
     
+    # 1. Чтение существующей базы
     if os.path.exists(JSON_FILE):
         try:
             with open(JSON_FILE, 'r', encoding='utf-8') as f:
@@ -85,18 +103,18 @@ def run_scraper():
         except Exception as e:
             print(f"(!) Ошибка чтения базы: {e}")
 
-    # Запускаем браузер с защитой от обнаружения автоматизации
+    # 2. Запуск эмулятора браузера
     with sync_playwright() as p:
         browser = p.chromium.launch(
             headless=True,
             args=[
                 '--no-sandbox', 
                 '--disable-setuid-sandbox',
-                '--disable-blink-features=AutomationControlled',
-                '--disable-infobars'
+                '--disable-blink-features=AutomationControlled'
             ]
         )
         
+        # Задаем контекст реального браузера
         context = browser.new_context(
             user_agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
             viewport={'width': 1920, 'height': 1080},
@@ -105,6 +123,7 @@ def run_scraper():
         
         page = context.new_page()
 
+        # 3. Определение глубины сканирования
         if not existing_data:
             print("[*] Первый запуск: сканирую весь раздел.")
             total_pages = get_total_pages(page)
@@ -114,12 +133,13 @@ def run_scraper():
 
         new_entries = []
 
+        # 4. Обход страниц раздела
         for p_num in range(total_pages):
             start = p_num * 50
             url = f"{BASE_URL}viewforum.php?f={FORUM_ID}&start={start}"
             print(f"--- Страница {p_num + 1}/{total_pages} ---")
             
-            html = fetch_page_with_retry(page, url)
+            html = fetch_page_smart(page, url)
             if not html:
                 continue
 
@@ -127,9 +147,10 @@ def run_scraper():
             rows = soup.select('tr.hl-tr')
             
             if not rows:
-                print(f"[?] Не найдено строк на странице {p_num + 1}. Возможно блокировка не пройдена.")
+                print(f"[?] Не найдено тем на странице {p_num + 1}.")
                 continue
 
+            # На первой странице пропускаем прикрепленные правила (первые ~15 строк)
             if p_num == 0 and len(rows) > 15:
                 rows = rows[15:]
 
@@ -156,6 +177,7 @@ def run_scraper():
 
         browser.close()
 
+    # 5. Сохранение результатов
     if new_entries:
         full_db = new_entries + existing_data
         try:
