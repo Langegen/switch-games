@@ -4,6 +4,7 @@ import re
 import time
 from bs4 import BeautifulSoup
 from playwright.sync_api import sync_playwright
+from playwright_stealth import stealth_sync
 
 # Настройки
 FORUM_ID = '1605'
@@ -12,48 +13,37 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 JSON_FILE = os.path.join(BASE_DIR, 'switch_games.json')
 
 def clean_title(title):
-    """Удаляет [Nintendo Switch] и чистит спецсимволы"""
     title = re.sub(r'^\[Nintendo Switch\]\s*', '', title, flags=re.IGNORECASE).strip()
     return title.replace('"', "'")
 
-def fetch_page_smart(page, url, max_wait_sec=30):
+def fetch_page_smart(page, url, max_wait_sec=25):
     """
-    Открывает страницу и ждет в цикле, пока не исчезнут 
-    экраны проверки Cloudflare / DDoS-защиты
+    Загружает страницу и ждет появления реального контента (таблицы раздач tr.hl-tr)
     """
     try:
         page.goto(url, wait_until="domcontentloaded", timeout=45000)
         
         start_time = time.time()
         while time.time() - start_time < max_wait_sec:
-            content = page.content()
-            
-            # Проверяем, активна ли ещё страница проверки
-            is_checking = any(phrase in content for phrase in [
-                "Checking your browser", 
-                "Just a moment", 
-                "DDoS protection",
-                "Please wait while we check",
-                "Проверка вашего браузера"
-            ])
-            
-            if not is_checking:
-                # Проверка успешно пройдена!
-                time.sleep(0.5)
+            # Проверяем, появилась ли хотя бы одна строка с раздачей в DOM
+            if page.locator("tr.hl-tr").count() > 0:
                 return page.content()
             
-            print("[-] Ожидание прохождения проверки Cloudflare...")
-            time.sleep(1)
+            content = page.content()
+            # Если висит проверка
+            if any(p in content for p in ["Checking your browser", "Just a moment", "DDoS protection", "Проверка"]):
+                print("[-] Проходим проверку Cloudflare/Qrator...")
             
-        print(f"[!] Таймаут: проверка Cloudflare не была пройдена за {max_wait_sec} сек.")
-        return None
+            time.sleep(1.5)
+            
+        # Возвращаем то, что прогрузилось по истечению таймаута
+        return page.content()
         
     except Exception as e:
         print(f"[!] Ошибка загрузки {url}: {e}")
         return None
 
 def get_topic_data(page, topic_id):
-    """Собирает magnet-ссылку и размер со страницы раздачи"""
     url = f"{BASE_URL}viewtopic.php?t={topic_id}"
     data = {"magnet": None, "size": "Unknown"}
     
@@ -73,11 +63,10 @@ def get_topic_data(page, topic_id):
             raw_size = list_items[-1].get_text(strip=True)
             data["size"] = raw_size.replace('\xa0', ' ').replace('&nbsp;', ' ')
 
-    time.sleep(1)  # Небольшая пауза между темами
+    time.sleep(1)
     return data
 
 def get_total_pages(page):
-    """Определяет общее количество страниц в разделе"""
     url = f"{BASE_URL}viewforum.php?f={FORUM_ID}"
     html = fetch_page_smart(page, url)
     if not html:
@@ -92,7 +81,6 @@ def run_scraper():
     existing_data = []
     existing_ids = set()
     
-    # 1. Чтение существующей базы
     if os.path.exists(JSON_FILE):
         try:
             with open(JSON_FILE, 'r', encoding='utf-8') as f:
@@ -103,27 +91,28 @@ def run_scraper():
         except Exception as e:
             print(f"(!) Ошибка чтения базы: {e}")
 
-    # 2. Запуск эмулятора браузера
     with sync_playwright() as p:
+        # Запуск с отключением флагов автоматизации
         browser = p.chromium.launch(
             headless=True,
             args=[
                 '--no-sandbox', 
                 '--disable-setuid-sandbox',
-                '--disable-blink-features=AutomationControlled'
+                '--disable-blink-features=AutomationControlled',
+                '--disable-infobars'
             ]
         )
         
-        # Задаем контекст реального браузера
         context = browser.new_context(
-            user_agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
+            user_agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
             viewport={'width': 1920, 'height': 1080},
-            locale='ru-RU'
+            locale='ru-RU,ru'
         )
         
         page = context.new_page()
+        # Маскируем браузер под обычного пользователя
+        stealth_sync(page)
 
-        # 3. Определение глубины сканирования
         if not existing_data:
             print("[*] Первый запуск: сканирую весь раздел.")
             total_pages = get_total_pages(page)
@@ -133,7 +122,6 @@ def run_scraper():
 
         new_entries = []
 
-        # 4. Обход страниц раздела
         for p_num in range(total_pages):
             start = p_num * 50
             url = f"{BASE_URL}viewforum.php?f={FORUM_ID}&start={start}"
@@ -150,7 +138,6 @@ def run_scraper():
                 print(f"[?] Не найдено тем на странице {p_num + 1}.")
                 continue
 
-            # На первой странице пропускаем прикрепленные правила (первые ~15 строк)
             if p_num == 0 and len(rows) > 15:
                 rows = rows[15:]
 
@@ -177,7 +164,6 @@ def run_scraper():
 
         browser.close()
 
-    # 5. Сохранение результатов
     if new_entries:
         full_db = new_entries + existing_data
         try:
