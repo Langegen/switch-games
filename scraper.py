@@ -4,7 +4,6 @@ import re
 import time
 from bs4 import BeautifulSoup
 from playwright.sync_api import sync_playwright
-from playwright_stealth import stealth_page
 
 # Настройки
 FORUM_ID = '1605'
@@ -16,27 +15,31 @@ def clean_title(title):
     title = re.sub(r'^\[Nintendo Switch\]\s*', '', title, flags=re.IGNORECASE).strip()
     return title.replace('"', "'")
 
-def fetch_page_smart(page, url, max_wait_sec=25):
-    """
-    Загружает страницу и ждет появления реального контента (таблицы раздач tr.hl-tr)
-    """
+def apply_stealth_scripts(page):
+    """Скрывает следы автоматизации Chromium от Cloudflare"""
+    page.add_init_script("""
+        Object.defineProperty(navigator, 'webdriver', { get: () => undefined });
+        Object.defineProperty(navigator, 'languages', { get: () => ['ru-RU', 'ru', 'en-US', 'en'] });
+        Object.defineProperty(navigator, 'plugins', { get: () => [1, 2, 3, 4, 5] });
+        window.chrome = { runtime: {} };
+    """)
+
+def fetch_page_smart(page, url, max_wait_sec=30):
+    """Загружает страницу через Tor и ждет появления таблицы раздач tr.hl-tr"""
     try:
-        page.goto(url, wait_until="domcontentloaded", timeout=45000)
+        page.goto(url, wait_until="domcontentloaded", timeout=60000)
         
         start_time = time.time()
         while time.time() - start_time < max_wait_sec:
-            # Проверяем, появилась ли хотя бы одна строка с раздачей в DOM
             if page.locator("tr.hl-tr").count() > 0:
                 return page.content()
             
             content = page.content()
-            # Если висит проверка
             if any(p in content for p in ["Checking your browser", "Just a moment", "DDoS protection", "Проверка"]):
-                print("[-] Проходим проверку Cloudflare/Qrator...")
+                print("[-] Проходим проверку Cloudflare через Tor...")
             
-            time.sleep(1.5)
+            time.sleep(2)
             
-        # Возвращаем то, что прогрузилось по истечению таймаута
         return page.content()
         
     except Exception as e:
@@ -92,7 +95,6 @@ def run_scraper():
             print(f"(!) Ошибка чтения базы: {e}")
 
     with sync_playwright() as p:
-        # Запуск с отключением флагов автоматизации
         browser = p.chromium.launch(
             headless=True,
             args=[
@@ -103,15 +105,16 @@ def run_scraper():
             ]
         )
         
+        # Маршрутизируем трафик через локальный Tor-прокси
         context = browser.new_context(
+            proxy={"server": "socks5://127.0.0.1:9050"},
             user_agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
             viewport={'width': 1920, 'height': 1080},
             locale='ru-RU,ru'
         )
         
         page = context.new_page()
-        # Маскируем браузер под обычного пользователя
-        stealth_sync(page)
+        apply_stealth_scripts(page)
 
         if not existing_data:
             print("[*] Первый запуск: сканирую весь раздел.")
