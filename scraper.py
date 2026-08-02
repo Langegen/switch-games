@@ -16,7 +16,7 @@ def clean_title(title):
     return title.replace('"', "'")
 
 def apply_stealth_scripts(page):
-    """Скрывает следы автоматизации Chromium от Cloudflare"""
+    """Скрывает следы автоматизации Chromium"""
     page.add_init_script("""
         Object.defineProperty(navigator, 'webdriver', { get: () => undefined });
         Object.defineProperty(navigator, 'languages', { get: () => ['ru-RU', 'ru', 'en-US', 'en'] });
@@ -24,33 +24,45 @@ def apply_stealth_scripts(page):
         window.chrome = { runtime: {} };
     """)
 
-def fetch_page_smart(page, url, max_wait_sec=30):
-    """Загружает страницу через Tor и ждет появления таблицы раздач tr.hl-tr"""
+def fetch_page_smart(page, url, expected_selector=None):
+    """
+    Быстрая загрузка страницы без зависимостей от медленных счетчиков.
+    Ждет конкретный селектор для мгновенной отдачи HTML.
+    """
     try:
-        page.goto(url, wait_until="domcontentloaded", timeout=60000)
+        # commit = реагировать как только сервер прислал первые данные
+        page.goto(url, wait_until="commit", timeout=30000)
         
-        start_time = time.time()
-        while time.time() - start_time < max_wait_sec:
-            if page.locator("tr.hl-tr").count() > 0:
+        # Если передан ожидаемый селектор — ждем только его появления (макс 8 сек)
+        if expected_selector:
+            try:
+                page.wait_for_selector(expected_selector, timeout=8000)
                 return page.content()
+            except:
+                pass # Если селектор не появился за 8 сек, проверяем на Cloudflare
+                
+        content = page.content()
+        
+        # Проверяем НАСТОЯЩИЕ маркеры Cloudflare (БЕЗ слова "Проверка")
+        cf_markers = ["Just a moment...", "Checking your browser", "cf-turnstile", "DDoS protection by Cloudflare"]
+        if any(marker in content for marker in cf_markers):
+            print("[-] Обнаружена проверка Cloudflare, ждем 7 секунд...")
+            time.sleep(7)
+            return page.content()
             
-            content = page.content()
-            if any(p in content for p in ["Checking your browser", "Just a moment", "DDoS protection", "Проверка"]):
-                print("[-] Проходим проверку Cloudflare через Tor...")
-            
-            time.sleep(2)
-            
-        return page.content()
+        return content
         
     except Exception as e:
         print(f"[!] Ошибка загрузки {url}: {e}")
         return None
 
 def get_topic_data(page, topic_id):
+    """Загружает страницу темы и ищет .attach_link"""
     url = f"{BASE_URL}viewtopic.php?t={topic_id}"
     data = {"magnet": None, "size": "Unknown"}
     
-    html = fetch_page_smart(page, url)
+    # Ждем селектор блока скачивания, а не таблицу раздела!
+    html = fetch_page_smart(page, url, expected_selector="div.attach_link")
     if not html:
         return data
 
@@ -66,12 +78,11 @@ def get_topic_data(page, topic_id):
             raw_size = list_items[-1].get_text(strip=True)
             data["size"] = raw_size.replace('\xa0', ' ').replace('&nbsp;', ' ')
 
-    time.sleep(1)
     return data
 
 def get_total_pages(page):
     url = f"{BASE_URL}viewforum.php?f={FORUM_ID}"
-    html = fetch_page_smart(page, url)
+    html = fetch_page_smart(page, url, expected_selector="a.pg")
     if not html:
         return 1
 
@@ -105,7 +116,9 @@ def run_scraper():
             ]
         )
         
-        # Маршрутизируем трафик через локальный Tor-прокси
+        # SOCKS5 Прокси:
+        # Если используешь Tor — оставь 9050.
+        # Если используешь 3X-UI SOCKS inbound — измени на 10808 (или свой порт).
         context = browser.new_context(
             proxy={"server": "socks5://127.0.0.1:9050"},
             user_agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
@@ -130,7 +143,7 @@ def run_scraper():
             url = f"{BASE_URL}viewforum.php?f={FORUM_ID}&start={start}"
             print(f"--- Страница {p_num + 1}/{total_pages} ---")
             
-            html = fetch_page_smart(page, url)
+            html = fetch_page_smart(page, url, expected_selector="tr.hl-tr")
             if not html:
                 continue
 
