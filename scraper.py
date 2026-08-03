@@ -3,11 +3,12 @@ import json
 import re
 import time
 from bs4 import BeautifulSoup
-from playwright.sync_api import sync_playwright
+from curl_cffi import requests
 
-# Настройки
+# Заходим напрямую на официальное зеркало
+BASE_URL = "https://rutracker.net/forum/"
 FORUM_ID = '1605'
-BASE_URL = "https://rutracker.org/forum/"
+
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 JSON_FILE = os.path.join(BASE_DIR, 'switch_games.json')
 
@@ -15,54 +16,29 @@ def clean_title(title):
     title = re.sub(r'^\[Nintendo Switch\]\s*', '', title, flags=re.IGNORECASE).strip()
     return title.replace('"', "'")
 
-def apply_stealth_scripts(page):
-    """Скрывает следы автоматизации Chromium"""
-    page.add_init_script("""
-        Object.defineProperty(navigator, 'webdriver', { get: () => undefined });
-        Object.defineProperty(navigator, 'languages', { get: () => ['ru-RU', 'ru', 'en-US', 'en'] });
-        Object.defineProperty(navigator, 'plugins', { get: () => [1, 2, 3, 4, 5] });
-        window.chrome = { runtime: {} };
-    """)
+def fetch_url(url, max_retries=3):
+    """Выполняет прямой HTTP-запрос с подменой TLS-отпечатка Chrome 120"""
+    for attempt in range(max_retries):
+        try:
+            resp = requests.get(
+                url, 
+                impersonate="chrome120", 
+                timeout=20
+            )
+            if resp.status_code == 200:
+                return resp.text
+            elif resp.status_code == 403:
+                print(f"    [!] 403 Forbidden на попытке {attempt+1}")
+        except Exception as e:
+            print(f"    [!] Ошибка сети (попытка {attempt+1}): {e}")
+        time.sleep(2)
+    return None
 
-def fetch_page_smart(page, url, expected_selector=None):
-    """
-    Быстрая загрузка страницы без зависимостей от медленных счетчиков.
-    Ждет конкретный селектор для мгновенной отдачи HTML.
-    """
-    try:
-        # commit = реагировать как только сервер прислал первые данные
-        page.goto(url, wait_until="commit", timeout=30000)
-        
-        # Если передан ожидаемый селектор — ждем только его появления (макс 8 сек)
-        if expected_selector:
-            try:
-                page.wait_for_selector(expected_selector, timeout=8000)
-                return page.content()
-            except:
-                pass # Если селектор не появился за 8 сек, проверяем на Cloudflare
-                
-        content = page.content()
-        
-        # Проверяем НАСТОЯЩИЕ маркеры Cloudflare (БЕЗ слова "Проверка")
-        cf_markers = ["Just a moment...", "Checking your browser", "cf-turnstile", "DDoS protection by Cloudflare"]
-        if any(marker in content for marker in cf_markers):
-            print("[-] Обнаружена проверка Cloudflare, ждем 7 секунд...")
-            time.sleep(7)
-            return page.content()
-            
-        return content
-        
-    except Exception as e:
-        print(f"[!] Ошибка загрузки {url}: {e}")
-        return None
-
-def get_topic_data(page, topic_id):
-    """Загружает страницу темы и ищет .attach_link"""
+def get_topic_data(topic_id):
     url = f"{BASE_URL}viewtopic.php?t={topic_id}"
     data = {"magnet": None, "size": "Unknown"}
     
-    # Ждем селектор блока скачивания, а не таблицу раздела!
-    html = fetch_page_smart(page, url, expected_selector="div.attach_link")
+    html = fetch_url(url)
     if not html:
         return data
 
@@ -80,9 +56,9 @@ def get_topic_data(page, topic_id):
 
     return data
 
-def get_total_pages(page):
+def get_total_pages():
     url = f"{BASE_URL}viewforum.php?f={FORUM_ID}"
-    html = fetch_page_smart(page, url, expected_selector="a.pg")
+    html = fetch_url(url)
     if not html:
         return 1
 
@@ -105,80 +81,55 @@ def run_scraper():
         except Exception as e:
             print(f"(!) Ошибка чтения базы: {e}")
 
-    with sync_playwright() as p:
-        browser = p.chromium.launch(
-            headless=True,
-            args=[
-                '--no-sandbox', 
-                '--disable-setuid-sandbox',
-                '--disable-blink-features=AutomationControlled',
-                '--disable-infobars'
-            ]
-        )
+    if not existing_data:
+        print("[*] Первый запуск: сканирую весь раздел.")
+        total_pages = get_total_pages()
+    else:
+        print(f"[*] В базе {len(existing_data)} игр. Проверяю 10 страниц обновлений.")
+        total_pages = 10
+
+    new_entries = []
+
+    for p_num in range(total_pages):
+        start = p_num * 50
+        url = f"{BASE_URL}viewforum.php?f={FORUM_ID}&start={start}"
+        print(f"--- Страница {p_num + 1}/{total_pages} ---")
         
-        # SOCKS5 Прокси:
-        # Если используешь Tor — оставь 9050.
-        # Если используешь 3X-UI SOCKS inbound — измени на 10808 (или свой порт).
-        context = browser.new_context(
-            proxy={"server": "socks5://127.0.0.1:9050"},
-            user_agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
-            viewport={'width': 1920, 'height': 1080},
-            locale='ru-RU,ru'
-        )
+        html = fetch_url(url)
+        if not html:
+            print(f"[!] Ошибка доступа к странице {p_num + 1}")
+            continue
+
+        soup = BeautifulSoup(html, 'html.parser')
+        rows = soup.select('tr.hl-tr')
         
-        page = context.new_page()
-        apply_stealth_scripts(page)
+        if not rows:
+            print(f"[?] Не найдено тем на странице {p_num + 1}.")
+            continue
 
-        if not existing_data:
-            print("[*] Первый запуск: сканирую весь раздел.")
-            total_pages = get_total_pages(page)
-        else:
-            print(f"[*] В базе {len(existing_data)} игр. Проверяю 10 страниц обновлений.")
-            total_pages = 10
+        if p_num == 0 and len(rows) > 15:
+            rows = rows[15:]
 
-        new_entries = []
-
-        for p_num in range(total_pages):
-            start = p_num * 50
-            url = f"{BASE_URL}viewforum.php?f={FORUM_ID}&start={start}"
-            print(f"--- Страница {p_num + 1}/{total_pages} ---")
+        for row in rows:
+            link_tag = row.select_one('a.tt-text')
+            if not link_tag:
+                continue
             
-            html = fetch_page_smart(page, url, expected_selector="tr.hl-tr")
-            if not html:
+            topic_id = link_tag['href'].split('=')[-1]
+            if topic_id in existing_ids:
                 continue
 
-            soup = BeautifulSoup(html, 'html.parser')
-            rows = soup.select('tr.hl-tr')
+            title = clean_title(link_tag.text)
+            print(f"  > Найдена НОВАЯ игра: {title[:50]}...")
             
-            if not rows:
-                print(f"[?] Не найдено тем на странице {p_num + 1}.")
-                continue
-
-            if p_num == 0 and len(rows) > 15:
-                rows = rows[15:]
-
-            for row in rows:
-                link_tag = row.select_one('a.tt-text')
-                if not link_tag:
-                    continue
-                
-                topic_id = link_tag['href'].split('=')[-1]
-                if topic_id in existing_ids:
-                    continue
-
-                title = clean_title(link_tag.text)
-                print(f"  > Найдена НОВАЯ игра: {title[:50]}...")
-                
-                details = get_topic_data(page, topic_id)
-                new_entries.append({
-                    "title": title,
-                    "size": details["size"],
-                    "magnet": details["magnet"],
-                    "topic_id": topic_id,
-                    "url": f"{BASE_URL}viewtopic.php?t={topic_id}"
-                })
-
-        browser.close()
+            details = get_topic_data(topic_id)
+            new_entries.append({
+                "title": title,
+                "size": details["size"],
+                "magnet": details["magnet"],
+                "topic_id": topic_id,
+                "url": f"{BASE_URL}viewtopic.php?t={topic_id}"
+            })
 
     if new_entries:
         full_db = new_entries + existing_data
