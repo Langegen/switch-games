@@ -25,10 +25,12 @@ jobs:
           python-version: '3.10'
 
       - name: Install dependencies
-        run: pip install requests beautifulsoup4
+        run: pip install -r requirements.txt
 
       - name: Run scraper
-        run: python scraper.py
+        run: |
+          sudo apt-get update && sudo apt-get install -y xvfb
+          xvfb-run python scraper.py
 
       - name: Commit and Push changes
         run: |
