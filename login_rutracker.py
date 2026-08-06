@@ -9,6 +9,9 @@ from selenium.webdriver.support import expected_conditions as EC
 
 LOGIN_URL = 'https://rutracker.org/forum/login.php'
 
+# Опциональный прокси для обхода Cloudflare: RUTRACKER_PROXY=socks5://127.0.0.1:1080
+PROXY_URL = os.environ.get("RUTRACKER_PROXY", "").strip()
+
 
 def _save_cookies_to_env(cookie_str):
     with open('.env', 'w', encoding='utf-8') as f:
@@ -57,9 +60,10 @@ def login_with_curl(username, password):
     }
     try:
         print("[*] Пробую быстрый логин через curl_cffi...")
-        resp = cf_requests.post(LOGIN_URL, data=body, headers=headers,
-                                impersonate='chrome120', timeout=30,
-                                allow_redirects=False)
+        kwargs = {'impersonate': 'chrome120', 'timeout': 30, 'allow_redirects': False}
+        if PROXY_URL:
+            kwargs['proxies'] = {'http': PROXY_URL, 'https': PROXY_URL}
+        resp = cf_requests.post(LOGIN_URL, data=body, headers=headers, **kwargs)
         if 'Один момент' in resp.text or 'Just a moment' in resp.text:
             print("[~] Cloudflare блокирует прямой запрос.")
             return None
@@ -93,6 +97,12 @@ def login_with_chrome(username, password, headless=True):
     if hasattr(os, 'geteuid') and os.geteuid() == 0:
         options.add_argument('--no-sandbox')
         options.add_argument('--disable-dev-shm-usage')
+    if PROXY_URL:
+        options.add_argument(f'--proxy-server={PROXY_URL}')
+    # Экономим память на VPS
+    options.add_argument('--disable-gpu')
+    options.add_argument('--disable-extensions')
+    options.add_argument('--no-first-run')
     options.add_argument('--window-size=1920,1080')
 
     driver = uc.Chrome(options=options)

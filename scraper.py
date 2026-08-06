@@ -38,6 +38,10 @@ if ENV_COOKIES_RAW:
 
 CF_SESSION_INITIALIZED = False
 
+# Опциональный прокси для обхода Cloudflare с датацентрового IP:
+# RUTRACKER_PROXY=socks5://127.0.0.1:1080 (или http://user:pass@host:port)
+PROXY_URL = os.environ.get("RUTRACKER_PROXY", "").strip()
+
 # ──────────────────────────────────────────────────────────────
 # Вспомогательные функции
 # ──────────────────────────────────────────────────────────────
@@ -131,11 +135,14 @@ def _fetch_with_curl(url, wait_keywords=None, is_post=False, post_data=None):
     headers = {"User-Agent": USER_AGENT}
     if is_post:
         headers["X-Requested-With"] = "XMLHttpRequest"
+    kwargs = {"impersonate": "chrome120", "timeout": 20}
+    if PROXY_URL:
+        kwargs["proxies"] = {"http": PROXY_URL, "https": PROXY_URL}
     try:
         if is_post:
-            resp = cf_requests.post(url, data=post_data, headers=headers, cookies=SESSION_COOKIES, impersonate="chrome120", timeout=20)
+            resp = cf_requests.post(url, data=post_data, headers=headers, cookies=SESSION_COOKIES, **kwargs)
         else:
-            resp = cf_requests.get(url, headers=headers, cookies=SESSION_COOKIES, impersonate="chrome120", timeout=20)
+            resp = cf_requests.get(url, headers=headers, cookies=SESSION_COOKIES, **kwargs)
             
         if resp.status_code == 200:
             return resp.text
@@ -168,6 +175,12 @@ def _fetch_with_chrome(url, wait_keywords=None, is_post=False, post_data=None):
             if os.environ.get("CHROME_NO_SANDBOX") == "1" or (hasattr(os, 'geteuid') and os.geteuid() == 0):
                 options.add_argument('--no-sandbox')
                 options.add_argument('--disable-dev-shm-usage')
+            if PROXY_URL:
+                options.add_argument(f'--proxy-server={PROXY_URL}')
+            # Экономим память на VPS
+            options.add_argument('--disable-gpu')
+            options.add_argument('--disable-extensions')
+            options.add_argument('--no-first-run')
             GLOBAL_DRIVER = uc.Chrome(options=options)
             GLOBAL_DRIVER.set_script_timeout(30)
 
@@ -447,7 +460,10 @@ def get_topic_data(topic_id):
 def fetch_atom_feed():
     print(f"[*] Получение Atom-ленты {ATOM_FEED_URL}...")
     try:
-        resp = cf_requests.get(ATOM_FEED_URL, impersonate="chrome120", timeout=15)
+        kwargs = {"impersonate": "chrome120", "timeout": 15}
+        if PROXY_URL:
+            kwargs["proxies"] = {"http": PROXY_URL, "https": PROXY_URL}
+        resp = cf_requests.get(ATOM_FEED_URL, **kwargs)
         if resp.status_code == 200:
             root = ET.fromstring(resp.content.decode('utf-8'))
             entries = []
