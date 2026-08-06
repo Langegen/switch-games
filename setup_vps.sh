@@ -26,8 +26,8 @@ export DEBIAN_FRONTEND=noninteractive
 
 # ---------- 1. Системные пакеты ----------
 log "Установка системных пакетов (git, python3, xvfb, cron)..."
-apt-get update -qq
-apt-get install -y -qq git python3 python3-venv wget cron xvfb >/dev/null
+apt-get update -qq -o Acquire::Retries=3 || warn "apt-get update неполный (зеркало синхронизируется?) — продолжаем со старыми индексами"
+apt-get install -y -qq --no-install-recommends git python3 python3-venv wget cron xvfb >/dev/null
 
 # ---------- 2. Google Chrome ----------
 if command -v google-chrome >/dev/null 2>&1; then
@@ -45,7 +45,21 @@ if [ -z "${SKIP_CF_BYPASS:-}" ] && ! command -v docker >/dev/null 2>&1; then
     apt-get install -y -qq docker.io >/dev/null 2>&1 || curl -fsSL https://get.docker.com | sh
     systemctl enable --now docker >/dev/null 2>&1 || true
 fi
+
 if [ -z "${SKIP_CF_BYPASS:-}" ]; then
+    # Образ с Chromium весит ~2 ГБ — при нехватке места чистим систему
+    avail_mb=$(( $(df -P / | awk 'NR==2 {print $4}') / 1024 ))
+    if [ "$avail_mb" -lt 4096 ]; then
+        log "Мало места на диске (${avail_mb} МБ). Очищаю..."
+        apt-get clean
+        rm -rf /var/lib/apt/lists/*
+        journalctl --vacuum-size=100M >/dev/null 2>&1 || true
+        docker system prune -f >/dev/null 2>&1 || true
+        avail_mb=$(( $(df -P / | awk 'NR==2 {print $4}') / 1024 ))
+        if [ "$avail_mb" -lt 4096 ]; then
+            warn "Свободно всего ${avail_mb} МБ — образ может не влезть. Очистите диск вручную: df -h"
+        fi
+    fi
     if docker ps --format '{{.Names}}' 2>/dev/null | grep -q '^cf-bypass$'; then
         log "CloudflareBypassForScraping уже запущен."
     else
