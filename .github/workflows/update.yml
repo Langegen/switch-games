@@ -28,6 +28,8 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Run scraper
+        env:
+          RUTRACKER_COOKIES: ${{ secrets.RUTRACKER_COOKIES }}
         run: |
           sudo apt-get update && sudo apt-get install -y xvfb
           xvfb-run python scraper.py
