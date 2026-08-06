@@ -14,6 +14,8 @@ LOGIN_URL = 'https://rutracker.org/forum/login.php'
 PROXY_URL = os.environ.get("RUTRACKER_PROXY", "").strip()
 # Переопределение User-Agent (если используются куки cf_clearance с другого браузера)
 UA_OVERRIDE = os.environ.get("RUTRACKER_UA", "").strip()
+# Локальный CloudflareBypassForScraping: RUTRACKER_CF_BYPASS=http://localhost:8000
+CF_BYPASS_URL = os.environ.get("RUTRACKER_CF_BYPASS", "").strip().rstrip('/')
 
 
 def _save_cookies_to_env(cookie_str):
@@ -198,8 +200,45 @@ def login_with_chrome(username, password, headless=True):
             pass
 
 
+def login_with_bypass(username, password):
+    """Логин через CloudflareBypassForScraping (mirror mode).
+
+    Сервис решает Cloudflare, повторяет POST на login.php и возвращает
+    Set-Cookie от rutracker (bb_session и т.д.).
+    """
+    if not CF_BYPASS_URL:
+        return None
+    try:
+        from curl_cffi import requests as cf_requests
+        body = (
+            f"login_username={_cp1251_quote(username)}"
+            f"&login_password={_cp1251_quote(password)}"
+            f"&login={_cp1251_quote('Вход')}"
+        ).encode()
+        url = CF_BYPASS_URL + '/forum/login.php'
+        headers = {
+            'x-hostname': 'rutracker.org',
+            'Content-Type': 'application/x-www-form-urlencoded',
+            'User-Agent': UA_OVERRIDE or 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        }
+        resp = cf_requests.post(url, data=body, headers=headers,
+                                impersonate='chrome120', timeout=60,
+                                allow_redirects=False)
+        cookies = _jar_to_dict(resp.cookies)
+        if 'bb_session' not in cookies:
+            print(f"[~] bb_session не получен через bypass (статус {resp.status_code}).")
+            return None
+        print("[+] Успешный вход через CF-bypass!")
+        return '; '.join(f'{k}={v}' for k, v in cookies.items())
+    except Exception as e:
+        print(f"[~] CF-bypass логин не удался: {e}")
+        return None
+
+
 def login(username, password, headless=True):
     cookie_str = login_with_curl(username, password)
+    if not cookie_str:
+        cookie_str = login_with_bypass(username, password)
     if not cookie_str:
         cookie_str = login_with_chrome(username, password, headless=headless)
     if not cookie_str:

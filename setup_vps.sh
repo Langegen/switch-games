@@ -39,6 +39,29 @@ else
     rm -f /tmp/chrome.deb
 fi
 
+# ---------- 2.5 CloudflareBypassForScraping (Docker) ----------
+if [ -z "${SKIP_CF_BYPASS:-}" ] && ! command -v docker >/dev/null 2>&1; then
+    log "Установка Docker (нужен для CloudflareBypassForScraping)..."
+    apt-get install -y -qq docker.io >/dev/null 2>&1 || curl -fsSL https://get.docker.com | sh
+    systemctl enable --now docker >/dev/null 2>&1 || true
+fi
+if [ -z "${SKIP_CF_BYPASS:-}" ]; then
+    if docker ps --format '{{.Names}}' 2>/dev/null | grep -q '^cf-bypass$'; then
+        log "CloudflareBypassForScraping уже запущен."
+    else
+        log "Запуск CloudflareBypassForScraping (docker, порт 8000)..."
+        docker rm -f cf-bypass >/dev/null 2>&1 || true
+        docker run -d --name cf-bypass --restart unless-stopped -p 8000:8000 \
+            ghcr.io/sarperavci/cloudflarebypassforscraping:latest >/dev/null
+        sleep 5
+        if curl -fsS http://localhost:8000/ >/dev/null 2>&1; then
+            log "Сервис CF-bypass работает: http://localhost:8000"
+        else
+            warn "Сервис не отвечает — проверьте: docker logs cf-bypass"
+        fi
+    fi
+fi
+
 # ---------- 3. Репозиторий ----------
 if [ -d "$INSTALL_DIR/.git" ]; then
     log "Обновление репозитория в $INSTALL_DIR..."
@@ -131,6 +154,14 @@ CRON_LINE="0 $CRON_HOUR * * * $INSTALL_DIR/run.sh >> $INSTALL_DIR/cron_log.txt 2
 ( crontab -l 2>/dev/null | grep -vF "$INSTALL_DIR/run.sh"; echo "$CRON_LINE" ) | crontab -
 service cron start >/dev/null 2>&1 || true
 log "Cron настроен: ежедневно в $CRON_HOUR:00"
+
+# ---------- 7.5 CF-bypass в .env ----------
+if docker ps --format '{{.Names}}' 2>/dev/null | grep -q '^cf-bypass$'; then
+    if [ -f .env ] && ! grep -q RUTRACKER_CF_BYPASS .env; then
+        printf "\nRUTRACKER_CF_BYPASS=http://localhost:8000\n" >> .env
+        log "RUTRACKER_CF_BYPASS добавлен в .env"
+    fi
+fi
 
 # ---------- 8. Тестовый запуск ----------
 ask "Запустить парсер прямо сейчас для проверки? [Y/n]: " RUN_NOW

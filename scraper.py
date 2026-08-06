@@ -12,6 +12,7 @@ import json
 import re
 import sys
 import time
+import urllib.parse
 import xml.etree.ElementTree as ET
 from html import unescape as html_unescape
 from bs4 import BeautifulSoup
@@ -50,6 +51,10 @@ CF_SESSION_INITIALIZED = False
 # Опциональный прокси для обхода Cloudflare с датацентрового IP:
 # RUTRACKER_PROXY=socks5://127.0.0.1:1080 (или http://user:pass@host:port)
 PROXY_URL = os.environ.get("RUTRACKER_PROXY", "").strip()
+
+# Локальный CloudflareBypassForScraping (mirror mode):
+# RUTRACKER_CF_BYPASS=http://localhost:8000
+CF_BYPASS_URL = os.environ.get("RUTRACKER_CF_BYPASS", "").strip().rstrip('/')
 
 # ──────────────────────────────────────────────────────────────
 # Вспомогательные функции
@@ -334,6 +339,39 @@ def _fetch_with_chrome(url, wait_keywords=None, is_post=False, post_data=None):
 
     return page_html
 
+def _bypass_request(url, is_post=False, post_data=None):
+    """Запрос через локальный CloudflareBypassForScraping (mirror mode).
+
+    Сервис сам решает Cloudflare (CloakBrowser) и повторяет наш запрос с
+    валидной cf_clearance и TLS-отпечатком Chrome. Возвращает HTML или None.
+    """
+    if not CF_BYPASS_URL:
+        return None
+    try:
+        parsed = urllib.parse.urlsplit(url)
+        path = parsed.path + (('?' + parsed.query) if parsed.query else '')
+        mirror_url = CF_BYPASS_URL + path
+        headers = {
+            'User-Agent': USER_AGENT,
+            'x-hostname': parsed.netloc,
+        }
+        if is_post:
+            headers['X-Requested-With'] = 'XMLHttpRequest'
+        headers = {k: v for k, v in headers.items() if v}
+        kwargs = {'impersonate': 'chrome120', 'timeout': 60}
+        if is_post:
+            resp = cf_requests.post(mirror_url, data=post_data, headers=headers,
+                                    cookies=SESSION_COOKIES, **kwargs)
+        else:
+            resp = cf_requests.get(mirror_url, headers=headers,
+                                   cookies=SESSION_COOKIES, **kwargs)
+        if resp.status_code == 200 and resp.text:
+            return resp.text
+        print(f"    [!] CF-bypass статус {resp.status_code}")
+    except Exception as e:
+        print(f"    [!] CF-bypass ошибка: {e}")
+    return None
+
 def fetch_url(url, forum_url=False, is_post=False, post_data=None, wait_keywords=None):
     """
     Основная функция получения страницы.
@@ -343,6 +381,13 @@ def fetch_url(url, forum_url=False, is_post=False, post_data=None, wait_keywords
     """
     keywords = ('hl-tr', 'forumtable') if forum_url else ('post_body', 'attach_link')
     wait_kw = wait_keywords or (('hl-tr', 'forumtable') if forum_url else ('post_body', 'attach_link', 'viewtopic'))
+
+    # 0. Локальный CloudflareBypassForScraping (mirror mode), если настроен
+    if CF_BYPASS_URL:
+        html = _bypass_request(url, is_post=is_post, post_data=post_data)
+        if html and (is_post or _is_valid_html(html, keywords)):
+            return html
+        print("    [!] CF-bypass не вернул страницу, пробуем другие способы...")
 
     # Пробуем curl_cffi
     html = _fetch_with_curl(url, wait_keywords=wait_kw, is_post=is_post, post_data=post_data)
