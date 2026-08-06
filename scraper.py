@@ -29,6 +29,13 @@ JSON_FILE = os.path.join(BASE_DIR, 'switch_games.json')
 SESSION_COOKIES = {}
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 
+# Переопределение User-Agent: должен совпадать с браузером, который решал
+# Cloudflare, если используются его куки cf_clearance
+# (RUTRACKER_UA='Mozilla/5.0 ... Chrome/122.0.0.0 Safari/537.36')
+UA_OVERRIDE = os.environ.get("RUTRACKER_UA", "").strip()
+if UA_OVERRIDE:
+    USER_AGENT = UA_OVERRIDE
+
 # Опциональные куки авторизации из переменной окружения
 ENV_COOKIES_RAW = os.environ.get("RUTRACKER_COOKIES", "").strip()
 if ENV_COOKIES_RAW:
@@ -131,8 +138,18 @@ def _is_valid_html(html, keywords=('post_body', 'attach_link', 'hl-tr', 'forumta
         return False
     return any(kw in html for kw in keywords)
 
+# curl_cffi на VPS обычно не может пройти Cloudflare даже с cf_clearance:
+# кука привязана к TLS-отпечатку Chrome, а у curl_cffi он другой.
+# После нескольких неудач curl_cffi автоматически отключается и все запросы
+# идут через Chrome. Принудительное отключение: RUTRACKER_NO_CURL=1
+CURL_DISABLED = os.environ.get("RUTRACKER_NO_CURL", "").strip() == "1"
+_curl_fail_streak = 0
+
 def _fetch_with_curl(url, wait_keywords=None, is_post=False, post_data=None):
     """Запрос через curl_cffi с текущими SESSION_COOKIES."""
+    global CURL_DISABLED, _curl_fail_streak
+    if CURL_DISABLED:
+        return _fetch_with_chrome(url, wait_keywords, is_post, post_data)
     headers = {"User-Agent": USER_AGENT}
     if is_post:
         headers["X-Requested-With"] = "XMLHttpRequest"
@@ -146,10 +163,16 @@ def _fetch_with_curl(url, wait_keywords=None, is_post=False, post_data=None):
             resp = cf_requests.get(url, headers=headers, cookies=SESSION_COOKIES, **kwargs)
             
         if resp.status_code == 200:
+            _curl_fail_streak = 0
             return resp.text
     except Exception as e:
         print(f"    [!] curl_cffi ошибка: {e}")
-        
+
+    _curl_fail_streak += 1
+    if _curl_fail_streak >= 3:
+        CURL_DISABLED = True
+        print("[~] curl_cffi не проходит Cloudflare на этом хосте — все запросы идут через Chrome.")
+
     # Fallback to Chrome
     print("    [!] curl_cffi не смог получить страницу, переключаемся на Chrome...")
     return _fetch_with_chrome(url, wait_keywords, is_post, post_data)
@@ -172,6 +195,8 @@ def _fetch_with_chrome(url, wait_keywords=None, is_post=False, post_data=None):
             options = uc.ChromeOptions()
             if os.environ.get("HEADLESS") == "1":
                 options.add_argument('--headless')
+            if UA_OVERRIDE:
+                options.add_argument(f'--user-agent={UA_OVERRIDE}')
             # VPS/контейнер: запуск от root и мало shared-памяти
             if os.environ.get("CHROME_NO_SANDBOX") == "1" or (hasattr(os, 'geteuid') and os.geteuid() == 0):
                 options.add_argument('--no-sandbox')
@@ -303,10 +328,12 @@ def fetch_url(url, forum_url=False, is_post=False, post_data=None, wait_keywords
     if chrome_html and (is_post or _is_valid_html(chrome_html, keywords)):
         return chrome_html
 
-    # После Chrome пробуем curl_cffi ещё раз (теперь с обновлёнными cookies)
-    html = _fetch_with_curl(url, wait_keywords=wait_kw, is_post=is_post, post_data=post_data)
-    if html and (is_post or _is_valid_html(html, keywords)):
-        return html
+    # После Chrome пробуем curl_cffi ещё раз (теперь с обновлёнными cookies),
+    # но только если curl_cffi вообще способен проходить Cloudflare на этом хосте
+    if not CURL_DISABLED:
+        html = _fetch_with_curl(url, wait_keywords=wait_kw, is_post=is_post, post_data=post_data)
+        if html and (is_post or _is_valid_html(html, keywords)):
+            return html
 
     # Если всё ещё ничего — вернём что есть из Chrome (хоть что-то)
     if chrome_html and len(chrome_html) > 500:

@@ -12,6 +12,8 @@ LOGIN_URL = 'https://rutracker.org/forum/login.php'
 
 # Опциональный прокси для обхода Cloudflare: RUTRACKER_PROXY=socks5://127.0.0.1:1080
 PROXY_URL = os.environ.get("RUTRACKER_PROXY", "").strip()
+# Переопределение User-Agent (если используются куки cf_clearance с другого браузера)
+UA_OVERRIDE = os.environ.get("RUTRACKER_UA", "").strip()
 
 
 def _save_cookies_to_env(cookie_str):
@@ -57,7 +59,7 @@ def login_with_curl(username, password):
         'Content-Type': 'application/x-www-form-urlencoded',
         'Origin': 'https://rutracker.org',
         'Referer': LOGIN_URL,
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'User-Agent': UA_OVERRIDE or 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
     }
     try:
         print("[*] Пробую быстрый логин через curl_cffi...")
@@ -94,6 +96,8 @@ def login_with_chrome(username, password, headless=True):
     options = uc.ChromeOptions()
     if headless:
         options.add_argument('--headless')
+    if UA_OVERRIDE:
+        options.add_argument(f'--user-agent={UA_OVERRIDE}')
     # VPS: запуск от root и мало shared-памяти
     if hasattr(os, 'geteuid') and os.geteuid() == 0:
         options.add_argument('--no-sandbox')
@@ -122,11 +126,48 @@ def login_with_chrome(username, password, headless=True):
                 pass
             return None
 
-        form = driver.find_element(By.NAME, 'login_username')
+        # Дожидаемся видимой кликабельной формы (элемент может быть в DOM,
+        # но скрыт, если Cloudflare ещё не завершил рендер)
+        try:
+            WebDriverWait(driver, 15).until(
+                EC.visibility_of_element_located((By.NAME, 'login_username')))
+        except Exception:
+            print("[!] Форма не стала видимой за 15 сек.")
+            try:
+                driver.save_screenshot('login_debug_fail.png')
+            except Exception:
+                pass
+            return None
+
         print("[*] Вводим логин и пароль...")
-        form.send_keys(username)
-        driver.find_element(By.NAME, 'login_password').send_keys(password)
-        driver.find_element(By.NAME, 'login').click()
+        time.sleep(1)  # дать странице доинициализироваться
+
+        def robust_fill(name, value):
+            """Ввод с ожиданием кликабельности и JS-fallback."""
+            field = driver.find_element(By.NAME, name)
+            try:
+                WebDriverWait(driver, 8).until(
+                    EC.element_to_be_clickable((By.NAME, name)))
+                field.click()
+                field.clear()
+                field.send_keys(value)
+            except Exception:
+                print(f"[~] Обычный ввод не сработал ({name}), ставлю через JS...")
+                driver.execute_script(
+                    "arguments[0].value = arguments[1];", field, value)
+            return field
+
+        robust_fill('login_username', username)
+        robust_fill('login_password', password)
+
+        submit = driver.find_element(By.NAME, 'login')
+        try:
+            WebDriverWait(driver, 8).until(
+                EC.element_to_be_clickable((By.NAME, 'login')))
+            submit.click()
+        except Exception:
+            print("[~] Клик по кнопке 'Вход' не сработал, жму через JS...")
+            driver.execute_script("arguments[0].click();", submit)
 
         print("[*] Ожидание завершения авторизации...")
         deadline = time.time() + 30

@@ -56,7 +56,7 @@ def res_info():
 def test_curl():
     print("\n=== Проверка curl_cffi (разные отпечатки TLS) ===")
     from curl_cffi import requests as cf
-    UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    UA = os.environ.get('RUTRACKER_UA', '') or 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
     ok_any = False
     for imp in ('chrome120', 'chrome131', 'safari17_0', 'chrome110'):
         try:
@@ -86,6 +86,9 @@ def test_chrome():
     options.add_argument('--disable-extensions')
     options.add_argument('--no-first-run')
     options.add_argument('--window-size=1920,1080')
+    ua = os.environ.get('RUTRACKER_UA', '').strip()
+    if ua:
+        options.add_argument(f'--user-agent={ua}')
     print("  Запуск Chrome (может занять 1-2 минуты)...")
     driver = uc.Chrome(options=options)
     try:
