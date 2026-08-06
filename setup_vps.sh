@@ -86,21 +86,40 @@ case "$origin_url" in
         ;;
 esac
 
-# ---------- 6. Куки RuTracker (логин/пароль) ----------
+# ---------- 6. Куки RuTracker ----------
 need_login=1
 if [ -f .env ] && grep -q "RUTRACKER_COOKIES='[^']\+'" .env; then
     ask "Куки RuTracker уже есть в .env. Перелогиниться? [y/N]: " RELOGIN
     case "$RELOGIN" in y|Y|yes|YES) need_login=1 ;; *) need_login=0 ;; esac
 fi
 if [ "$need_login" = "1" ]; then
-    ask "Логин RuTracker: " RT_USER
-    read -r -s -p "Пароль RuTracker: " RT_PASS < /dev/tty
     echo ""
-    log "Вход на RuTracker через Chrome (xvfb)..."
-    if xvfb-run -a ./venv/bin/python3 login_rutracker.py "$RT_USER" "$RT_PASS" --gui; then
-        log "Куки получены и сохранены в .env"
+    echo "Как получить куки RuTracker?"
+    echo "  1) Автоматически: вход по логину/паролю на самом VPS (Chrome обходит Cloudflare)"
+    echo "  2) Вручную: вставить куки из браузера на ПК (если Cloudflare не проходится)"
+    ask "Выбор [1]: " COOKIE_MODE
+    COOKIE_MODE="${COOKIE_MODE:-1}"
+    if [ "$COOKIE_MODE" = "2" ]; then
+        ask "Вставьте строку куки (bb_session=...; bb_guid=...): " MANUAL_COOKIES
+        if [ -n "$MANUAL_COOKIES" ]; then
+            printf "RUTRACKER_COOKIES='%s'\n" "$MANUAL_COOKIES" > .env
+            chmod 600 .env
+            log "Куки сохранены в .env"
+        else
+            warn "Куки не вставлены, пропускаю."
+        fi
     else
-        warn "Не удалось получить куки. Повторить позже: cd $INSTALL_DIR && xvfb-run -a ./venv/bin/python3 login_rutracker.py ЛОГИН ПАРОЛЬ --gui"
+        ask "Логин RuTracker: " RT_USER
+        read -r -s -p "Пароль RuTracker: " RT_PASS < /dev/tty
+        echo ""
+        log "Вход на RuTracker через Chrome (xvfb)..."
+        if xvfb-run -a ./venv/bin/python3 login_rutracker.py "$RT_USER" "$RT_PASS" --gui; then
+            log "Куки получены и сохранены в .env"
+        else
+            warn "Не удалось получить куки. Повторить позже:"
+            warn "  cd $INSTALL_DIR && xvfb-run -a ./venv/bin/python3 login_rutracker.py ЛОГИН ПАРОЛЬ --gui"
+            warn "Или вручную: редактор .env -> RUTRACKER_COOKIES='...'"
+        fi
     fi
 fi
 
