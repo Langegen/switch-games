@@ -22,7 +22,7 @@ else
 fi
 
 echo "[$(date)] Выгрузка изменений на GitHub..."
-git add switch_games.json scraper.py .gitignore
+git add switch_games.json changes.txt scraper.py .gitignore
 if git diff --staged --quiet; then
     echo "[$(date)] Изменений нет - коммит не нужен."
 else

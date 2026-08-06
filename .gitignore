@@ -5,3 +5,4 @@ cron_log.txt
 log.txt
 nohup.out
 .env
+enrich_state.json

@@ -357,14 +357,15 @@ def _bypass_request(url, is_post=False, post_data=None):
         }
         if is_post:
             headers['X-Requested-With'] = 'XMLHttpRequest'
-        headers = {k: v for k, v in headers.items() if v}
+        # Куки передаём ЯВНЫМ заголовком (параметр cookies= у curl_cffi
+        # может не дойти до mirror-сервиса — проверено рабочим curl-тестом)
+        if SESSION_COOKIES:
+            headers['Cookie'] = '; '.join(f'{k}={v}' for k, v in SESSION_COOKIES.items())
         kwargs = {'impersonate': 'chrome120', 'timeout': 60}
         if is_post:
-            resp = cf_requests.post(mirror_url, data=post_data, headers=headers,
-                                    cookies=SESSION_COOKIES, **kwargs)
+            resp = cf_requests.post(mirror_url, data=post_data, headers=headers, **kwargs)
         else:
-            resp = cf_requests.get(mirror_url, headers=headers,
-                                   cookies=SESSION_COOKIES, **kwargs)
+            resp = cf_requests.get(mirror_url, headers=headers, **kwargs)
         if resp.status_code == 200 and resp.text:
             return resp.text
         print(f"    [!] CF-bypass статус {resp.status_code}")
@@ -424,6 +425,20 @@ def fetch_url(url, forum_url=False, is_post=False, post_data=None, wait_keywords
 # Парсинг данных темы
 # ──────────────────────────────────────────────────────────────
 
+def fetch_title_id(topic_id):
+    """Только title_id: POST viewtorrent.php (список файлов раздачи).
+
+    Без авторизации viewtorrent отвечает 'Not logged in', поэтому нужен
+    валидный bb_session (куки из .env / login через bypass).
+    """
+    torrent_html = fetch_url(f"{BASE_URL}viewtorrent.php", is_post=True,
+                             post_data={"t": topic_id},
+                             wait_keywords=('dir', 'file', 'ul', 'li', 'torrent'))
+    if torrent_html:
+        return extract_title_id(torrent_html)
+    return None
+
+
 def get_topic_data(topic_id):
     url = f"{BASE_URL}viewtopic.php?t={topic_id}"
     data = {
@@ -455,14 +470,7 @@ def get_topic_data(topic_id):
     # Fallback для title_id: скачиваем список файлов раздачи (viewtorrent.php),
     # так как часто авторы не пишут ID в тексте, но он есть в имени файла (.nsp/.nsz)
     if not data["title_id"]:
-        torrent_url = f"{BASE_URL}viewtorrent.php"
-        # Для viewtorrent.php нужен POST запрос с ID топика
-        torrent_html = fetch_url(torrent_url, is_post=True, post_data={"t": topic_id}, wait_keywords=('dir', 'file', 'ul', 'li', 'torrent'))
-        if torrent_html:
-            print(f"    [~] viewtorrent html length: {len(torrent_html)}")
-            if len(torrent_html) < 200:
-                print(f"    [~] viewtorrent html: {torrent_html}")
-            data["title_id"] = extract_title_id(torrent_html)
+        data["title_id"] = fetch_title_id(topic_id)
 
 
     # Magnet: <a class="magnet-link"> есть и в гостевом виде (div.attach_link),
@@ -751,6 +759,8 @@ def run_scraper():
 
     added_count = 0
     updated_count = 0
+    added_titles = []
+    updated_titles = []
 
     for item in atom_entries:
         t_id = item["topic_id"]
@@ -789,6 +799,7 @@ def run_scraper():
                     old_item['title_id'] = extract_title_id(raw_title)
 
                 updated_count += 1
+                updated_titles.append(str(title)[:80])
         else:
             print(f"  [+] НОВАЯ игра: {title[:60]}...")
             details = get_topic_data(t_id)
@@ -816,12 +827,133 @@ def run_scraper():
             existing_data.insert(0, new_entry)
             existing_map[t_id] = new_entry
             added_count += 1
+            added_titles.append(str(title)[:80])
 
-    if added_count > 0 or updated_count > 0:
+    # Дообогащение первых 100 записей базы (поле title_id и т.п.)
+    enriched_count = 0
+    enriched_titles = []
+    try:
+        enriched_count, enriched_titles = _enrich_incomplete(existing_data, limit=100)
+    except Exception as e:
+        print(f"(!) Ошибка дообогащения: {e}")
+
+    if added_count > 0 or updated_count > 0 or enriched_count > 0:
         _save_json(existing_data, JSON_FILE)
-        print(f"[+] База обновлена. Добавлено: {added_count}, Обновлено: {updated_count}. Всего: {len(existing_data)}")
+        print(f"[+] База обновлена. Добавлено: {added_count}, Обновлено: {updated_count}, Дообогащено: {enriched_count}. Всего: {len(existing_data)}")
     else:
         print("[=] Проверка завершена. Новых и обновлённых раздач нет.")
+
+    _write_changes_log(added_titles, updated_titles, enriched_titles, len(existing_data))
+
+CHANGES_FILE = os.path.join(BASE_DIR, 'changes.txt')
+ENRICH_STATE_FILE = os.path.join(BASE_DIR, 'enrich_state.json')
+
+def _write_changes_log(added, updated, enriched, total):
+    """Лог изменений в changes.txt (перезаписывается при каждом запуске)."""
+    lines = [f"=== {time.strftime('%Y-%m-%d %H:%M:%S')} ===",
+             f"Всего в базе: {total}"]
+    if added:
+        lines.append(f"Добавлено: {len(added)}")
+        lines += [f"  + {t}" for t in added]
+    if updated:
+        lines.append(f"Обновлено: {len(updated)}")
+        lines += [f"  ~ {t}" for t in updated]
+    if enriched:
+        lines.append(f"Дообогащено: {len(enriched)}")
+        lines += [f"  * {t}" for t in enriched]
+    if not (added or updated or enriched):
+        lines.append("Изменений нет")
+    try:
+        with open(CHANGES_FILE, 'w', encoding='utf-8') as f:
+            f.write('\n'.join(lines) + '\n')
+    except Exception as e:
+        print(f"(!) Ошибка записи лога изменений: {e}")
+
+def _load_enrich_state():
+    try:
+        with open(ENRICH_STATE_FILE, encoding='utf-8') as f:
+            return json.load(f)
+    except Exception:
+        return {}
+
+def _save_enrich_state(state):
+    try:
+        with open(ENRICH_STATE_FILE, 'w', encoding='utf-8') as f:
+            json.dump(state, f, ensure_ascii=False, indent=2)
+    except Exception as e:
+        print(f"(!) Ошибка записи enrich_state: {e}")
+
+def _enrich_incomplete(existing_data, limit=100):
+    """Дообогащает первые `limit` записей базы (самые новые).
+
+    - запись с недостающими полями кроме title_id → полный пересбор get_topic_data
+    - запись без только title_id (гостевой вид всё остальное отдаёт) →
+      лёгкий POST viewtorrent (fetch_title_id)
+    Если ID так и не найден (например, NRO-хоумбрю без ID) — запись повторно
+    не трогается неделю (enrich_state.json).
+    """
+    REQUIRED = ('title_id', 'size', 'year', 'genre', 'developer', 'publisher',
+                'image_format', 'interface_lang', 'voice_lang', 'performance',
+                'multiplayer', 'cover', 'screenshots', 'description', 'magnet')
+    state = _load_enrich_state()
+    now = time.time()
+
+    def _missing(item):
+        return [
+            k for k in REQUIRED
+            if not item.get(k) or item.get(k) in ('Unknown', '', None)
+            or (k == 'screenshots' and not item.get(k))
+        ]
+
+    candidates = []
+    for idx, item in enumerate(existing_data[:limit]):
+        tid = str(item.get('topic_id', ''))
+        if not tid:
+            continue
+        missing = _missing(item)
+        if not missing:
+            continue
+        if state.get(tid) and now - state.get(tid, 0) < 7 * 86400:
+            continue
+        candidates.append((len(missing), idx, tid, missing, item))
+    candidates.sort(key=lambda x: (-x[0], x[1]))
+
+    done = 0
+    enriched_titles = []
+    for _, _, tid, missing, item in candidates[:limit]:
+        only_tid = set(missing) <= {'title_id'}
+        if only_tid:
+            print(f"  [*] ТОЛЬКО title_id [{tid}] {str(item.get('title'))[:55]}...")
+            title_id = fetch_title_id(tid)
+            if title_id:
+                item['title_id'] = title_id
+                done += 1
+                enriched_titles.append(str(item.get('title'))[:80])
+                state.pop(tid, None)
+            else:
+                state[tid] = now  # ID нет (NRO и т.п.) — не трогаем неделю
+            continue
+
+        print(f"  [*] ДООБОГАЩАЕМ [{tid}] {str(item.get('title'))[:55]}...")
+        details = get_topic_data(tid)
+        changed = False
+        for k in missing:
+            v = details.get(k)
+            if v not in (None, 'Unknown', '', []):
+                item[k] = v
+                changed = True
+            elif k not in item:
+                item[k] = v
+                changed = True
+        if _missing(item):
+            state[tid] = now
+        else:
+            state.pop(tid, None)
+        if changed:
+            done += 1
+            enriched_titles.append(str(item.get('title'))[:80])
+    _save_enrich_state(state)
+    return done, enriched_titles
 
 def _save_json(data, filepath):
     try:
