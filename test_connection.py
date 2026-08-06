@@ -77,6 +77,7 @@ def test_curl():
 def test_chrome():
     print("\n=== Проверка Chrome (Cloudflare) ===")
     import undetected_chromedriver as uc
+    from cf_utils import inject_cookies, wait_page
     options = uc.ChromeOptions()
     if hasattr(os, 'geteuid') and os.geteuid() == 0:
         options.add_argument('--no-sandbox')
@@ -90,14 +91,23 @@ def test_chrome():
     try:
         driver.set_page_load_timeout(90)
         t0 = time.time()
+        # Сначала открываем домен, потом инжектируем куки (bb_session/cf_clearance)
+        try:
+            driver.get('https://rutracker.org/forum/index.php')
+            inject_cookies(driver, cookies)
+            print(f"  Инжектировано кук: {len(cookies)}")
+        except Exception:
+            pass
         driver.get(TEST_URL)
+        el = time.time() - t0
+        print(f'  Загрузка за {el:.1f} сек')
+        ok = wait_page(driver, timeout=150, reload_every=40,
+                       success_keywords=('post_body',))
         title = driver.title
         html = driver.page_source
-        el = time.time() - t0
         chal = 'Один момент' in html or 'Just a moment' in html
-        ok = 'post_body' in html
-        print(f'  Загрузка за {el:.1f} сек, title={title!r}')
-        print(f'  challenge={chal} valid_page={ok}')
+        ok = ok and 'post_body' in html
+        print(f'  title={title!r} challenge={chal} valid_page={ok}')
         if ok:
             print('  -> Chrome РАБОТАЕТ')
             return True

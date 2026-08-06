@@ -6,6 +6,7 @@ import undetected_chromedriver as uc
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from cf_utils import click_turnstile, inject_cookies, wait_page
 
 LOGIN_URL = 'https://rutracker.org/forum/login.php'
 
@@ -110,28 +111,18 @@ def login_with_chrome(username, password, headless=True):
         print("[*] Открываем страницу входа...")
         driver.get(LOGIN_URL)
 
-        # Ждём форму входа (Cloudflare может решаться до ~2 минут),
-        # при зависании перезагружаем страницу.
-        form = None
-        for attempt in range(1, 4):
+        # Ждём форму входа, кликая Turnstile и перезагружаясь при зависании
+        form_ok = wait_page(driver, timeout=150, reload_every=40,
+                            success_keywords=('login_username',))
+        if not form_ok:
+            print("[!] Форма входа не появилась (Cloudflare не пройден).")
             try:
-                form = WebDriverWait(driver, 40).until(
-                    EC.presence_of_element_located((By.NAME, 'login_username'))
-                )
-                break
+                driver.save_screenshot('login_debug_fail.png')
             except Exception:
-                print(f"[!] Форма входа не появилась (попытка {attempt}/3), title={driver.title!r}")
-                try:
-                    driver.save_screenshot(f'login_debug_{attempt}.png')
-                except Exception:
-                    pass
-                if attempt < 3:
-                    print("[*] Перезагружаем страницу...")
-                    driver.get(LOGIN_URL)
-        if form is None:
-            print("[!] Cloudflare не пройден за 3 попытки.")
+                pass
             return None
 
+        form = driver.find_element(By.NAME, 'login_username')
         print("[*] Вводим логин и пароль...")
         form.send_keys(username)
         driver.find_element(By.NAME, 'login_password').send_keys(password)

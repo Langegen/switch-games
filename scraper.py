@@ -16,6 +16,7 @@ from html import unescape as html_unescape
 from bs4 import BeautifulSoup
 from curl_cffi import requests as cf_requests
 import undetected_chromedriver as uc
+from cf_utils import click_turnstile
 
 BASE_URL = "https://rutracker.org/forum/"
 FORUM_ID = '1605'
@@ -205,8 +206,9 @@ def _fetch_with_chrome(url, wait_keywords=None, is_post=False, post_data=None):
             else:
                 GLOBAL_DRIVER.get(url)
 
-        # Ждём загрузки целевой страницы (максимум 30 сек)
-        for _ in range(30):
+        # Ждём загрузки целевой страницы (максимум 90 сек),
+        # кликая Turnstile-чекбокс, если Cloudflare его показывает
+        for _ in range(90):
             src = GLOBAL_DRIVER.page_source
             title = GLOBAL_DRIVER.title
             if 'Just a moment' not in title and 'Один момент' not in title:
@@ -214,6 +216,10 @@ def _fetch_with_chrome(url, wait_keywords=None, is_post=False, post_data=None):
                 if is_post or any(kw in src for kw in wait_keywords):
                     page_html = src
                     break
+            try:
+                click_turnstile(GLOBAL_DRIVER)
+            except Exception:
+                pass
             time.sleep(1)
 
         if is_post:
