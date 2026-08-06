@@ -164,6 +164,10 @@ def _fetch_with_chrome(url, wait_keywords=None, is_post=False, post_data=None):
             options = uc.ChromeOptions()
             if os.environ.get("HEADLESS") == "1":
                 options.add_argument('--headless')
+            # VPS/контейнер: запуск от root и мало shared-памяти
+            if os.environ.get("CHROME_NO_SANDBOX") == "1" or (hasattr(os, 'geteuid') and os.geteuid() == 0):
+                options.add_argument('--no-sandbox')
+                options.add_argument('--disable-dev-shm-usage')
             GLOBAL_DRIVER = uc.Chrome(options=options)
             GLOBAL_DRIVER.set_script_timeout(30)
 

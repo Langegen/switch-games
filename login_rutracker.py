@@ -11,7 +11,11 @@ def login(username, password, headless=True):
     options = uc.ChromeOptions()
     if headless:
         options.add_argument('--headless')
-    
+    # VPS: запуск от root и мало shared-памяти
+    if hasattr(os, 'geteuid') and os.geteuid() == 0:
+        options.add_argument('--no-sandbox')
+        options.add_argument('--disable-dev-shm-usage')
+
     driver = uc.Chrome(options=options)
     try:
         print("[*] Открываем страницу входа...")
@@ -46,22 +50,21 @@ def login(username, password, headless=True):
         
         cookie_str = "; ".join(cookie_parts)
         print("\n" + "="*50)
-        print("ВАШИ КУКИ ДЛЯ .env ФАЙЛА (скопируйте строку ниже):")
-        print("="*50)
-        print(f"RUTRACKER_COOKIES='{cookie_str}'")
+        print("КУКИ СОХРАНЕНЫ В .env (RUTRACKER_COOKIES)")
         print("="*50 + "\n")
-        
-        # Сохраняем в .env если файла нет
+
         env_path = '.env'
-        if not os.path.exists(env_path):
-            with open(env_path, 'w', encoding='utf-8') as f:
-                f.write(f"RUTRACKER_COOKIES='{cookie_str}'\n")
-            print("[+] Файл .env автоматически создан.")
-        else:
-            print("[!] Файл .env уже существует, обновите переменную RUTRACKER_COOKIES вручную.")
-            
+        with open(env_path, 'w', encoding='utf-8') as f:
+            f.write(f"RUTRACKER_COOKIES='{cookie_str}'\n")
+        try:
+            os.chmod(env_path, 0o600)
+        except Exception:
+            pass
+        print("[+] Файл .env сохранён.")
+
     except Exception as e:
         print(f"[!] Ошибка во время авторизации: {e}")
+        sys.exit(1)
     finally:
         driver.quit()
 

@@ -4,3 +4,4 @@ __pycache__/
 cron_log.txt
 log.txt
 nohup.out
+.env
