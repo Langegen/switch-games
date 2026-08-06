@@ -10,6 +10,7 @@ if sys.stdout.encoding != 'utf-8':
 import copy
 import json
 import re
+import sys
 import time
 import xml.etree.ElementTree as ET
 from html import unescape as html_unescape
@@ -179,6 +180,28 @@ def _fetch_with_curl(url, wait_keywords=None, is_post=False, post_data=None):
 
 GLOBAL_DRIVER = None
 
+def _kill_stale_chrome():
+    """Убираем осиротевшие процессы Chrome после прерванных запусков (Linux)."""
+    if sys.platform.startswith('linux'):
+        try:
+            import subprocess
+            subprocess.run(['pkill', '-f', 'remote-debugging-port'],
+                           capture_output=True, timeout=5)
+        except Exception:
+            pass
+
+def _safe_get(driver, url):
+    """Навигация с таймаутом: CF-челлендж может не завершать загрузку страницы,
+    и обычный driver.get() завис бы на 300 секунд. Останавливаем загрузку и
+    возвращаем управление в цикл ожидания (там клик по Turnstile)."""
+    try:
+        driver.get(url)
+    except Exception:
+        try:
+            driver.execute_script('window.stop();')
+        except Exception:
+            pass
+
 def _fetch_with_chrome(url, wait_keywords=None, is_post=False, post_data=None):
     """Запрос через undetected_chromedriver (fallback).
     wait_keywords: кортеж строк для проверки загрузки страницы.
@@ -192,6 +215,8 @@ def _fetch_with_chrome(url, wait_keywords=None, is_post=False, post_data=None):
         wait_keywords = ('post_body', 'attach_link', 'hl-tr', 'forumtable', 'viewtopic')
     try:
         if GLOBAL_DRIVER is None:
+            _kill_stale_chrome()
+            print("[*] Запуск Chrome...")
             options = uc.ChromeOptions()
             if os.environ.get("HEADLESS") == "1":
                 options.add_argument('--headless')
@@ -209,13 +234,15 @@ def _fetch_with_chrome(url, wait_keywords=None, is_post=False, post_data=None):
             options.add_argument('--no-first-run')
             GLOBAL_DRIVER = uc.Chrome(options=options)
             GLOBAL_DRIVER.set_script_timeout(30)
+            GLOBAL_DRIVER.set_page_load_timeout(25)
+            print("[*] Chrome запущен")
 
         # Идём сразу на целевую страницу (CF challenge решится автоматически)
         if is_post:
             # Для POST сначала идём на корень, чтобы решить Cloudflare и инжектить куки
-            GLOBAL_DRIVER.get("https://rutracker.org/forum/index.php")
+            _safe_get(GLOBAL_DRIVER, "https://rutracker.org/forum/index.php")
         else:
-            GLOBAL_DRIVER.get(url)
+            _safe_get(GLOBAL_DRIVER, url)
         time.sleep(2)
 
         # Инжектируем куки авторизации чтобы быть залогиненным
@@ -227,20 +254,25 @@ def _fetch_with_chrome(url, wait_keywords=None, is_post=False, post_data=None):
                     print(f"    [!] Ошибка установки куки {k}: {e}")
             # Перезагружаем с куками
             if is_post:
-                GLOBAL_DRIVER.get("https://rutracker.org/forum/index.php")
+                _safe_get(GLOBAL_DRIVER, "https://rutracker.org/forum/index.php")
             else:
-                GLOBAL_DRIVER.get(url)
+                _safe_get(GLOBAL_DRIVER, url)
 
         # Ждём загрузки целевой страницы (максимум 90 сек),
         # кликая Turnstile-чекбокс, если Cloudflare его показывает
-        for _ in range(90):
-            src = GLOBAL_DRIVER.page_source
-            title = GLOBAL_DRIVER.title
+        for i in range(90):
+            try:
+                src = GLOBAL_DRIVER.page_source
+                title = GLOBAL_DRIVER.title
+            except Exception:
+                src, title = '', ''
             if 'Just a moment' not in title and 'Один момент' not in title:
                 # Если это is_post, мы ждём index.php. Если обычный GET - ждём wait_keywords
                 if is_post or any(kw in src for kw in wait_keywords):
                     page_html = src
                     break
+            if i % 20 == 0 and i > 0:
+                print(f"    [~] Ожидание страницы... title={title!r} ({i} сек)")
             try:
                 click_turnstile(GLOBAL_DRIVER)
             except Exception:
