@@ -1,10 +1,13 @@
-=== 2026-08-06 11:49:31 ===
-Всего в базе: 7041
+=== 2026-08-07 03:00:24 ===
+Всего в базе: 7042
+Добавлено: 1
+  + Montabi [NSZ][ENG]
 Обновлено: 16
-  ~ Limbot (Lim Bot) [NSZ][RUS/Multi10]
-  ~ Gods With Guns + 3 DLC [NSZ][ENG]
+  ~ Aery 1-30: Little Bird Adventure, Peace of Mind, A New Frontier, Broken Memories
+  ~ Hello Kitty Island Adventure Deluxe edition + DLC The Tea Garden, City Town, Whe
   ~ Talespinner (Tale Spinner) [NSZ][ENG]
-  ~ Memory of Memorie a Chill Story [NSZ][ENG]
+  ~ Dave the Diver + 6 DLC (In the Jungle) [NSZ][RUS/Multi11]
+  ~ Discounty [NSZ][RUS (Mod.)/ENG]
   ~ Pokemon Red + Blue + Yellow (порт gen1recomp) [NRO][ENG]
   ~ Dr. Mario Mania (хоумбрю) [NRO][ENG]
   ~ Ticket to Earth (порт) [NRO][ENG]
@@ -16,4 +19,3 @@
   ~ Deus Ex Go / Hitman Go / Lara Croft Go (порты) [NRO][RUS/Multi11]
   ~ Zuma Deluxe (порт) [NRO][ENG]
   ~ Angry Birds Classic / AngryBirds 2 (порты) [NRO][RUS/Multi11]
-  ~ 172 отомэ: Code Realize, Collar X Malice, Nightshade, Bustafellows 1-2, Taisho x
