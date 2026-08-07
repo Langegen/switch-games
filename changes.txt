@@ -1,10 +1,6 @@
-=== 2026-08-07 08:30:09 ===
+=== 2026-08-07 08:36:02 ===
 Всего в базе: 7042
-Обновлено: 16
-  ~ Poppy Playtime гл. 1-2-3-4-5 [NSP][RUS/Multi9]
-  ~ Montabi [NSZ][ENG]
-  ~ Quake + 11 DLC + 37 кастомных модов [NSZ][RUS/Multi6]
-  ~ Ball x Pit [NSZ][RUS/Multi10]
+Обновлено: 12
   ~ Aery 1-30: Little Bird Adventure, Peace of Mind, A New Frontier, Broken Memories
   ~ Pokemon Red + Blue + Yellow (порт gen1recomp) [NRO][ENG]
   ~ Dr. Mario Mania (хоумбрю) [NRO][ENG]
