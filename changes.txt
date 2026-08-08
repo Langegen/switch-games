@@ -1,6 +1,10 @@
-=== 2026-08-07 08:36:02 ===
-Всего в базе: 7042
-Обновлено: 12
+=== 2026-08-08 03:00:46 ===
+Всего в базе: 7043
+Добавлено: 1
+  + The Room Three 3, 4 Old Sins (порты) [NRO][RUS/Multi8]
+Обновлено: 11
+  ~ Deltarune: Chapter 1-2-3-4-5 [NSZ][RUS (Mod.)/ENG]
+  ~ Double Dragon Revive + DLC Dodge Ball [NSP][RUS (Mod.)/ENG]
   ~ Aery 1-30: Little Bird Adventure, Peace of Mind, A New Frontier, Broken Memories
   ~ Pokemon Red + Blue + Yellow (порт gen1recomp) [NRO][ENG]
   ~ Dr. Mario Mania (хоумбрю) [NRO][ENG]
@@ -10,6 +14,3 @@
   ~ The Legend of Zelda: Majora's Mask (нативный порт 2Ship 2Harkinian) + доп. HD-те
   ~ Subway Surfers (порт) [NRO][ENG]
   ~ Banjo-Kazooie (порт Lighthouse, Docklight) [NRO][ENG]
-  ~ Deus Ex Go / Hitman Go / Lara Croft Go (порты) [NRO][RUS/Multi11]
-  ~ Zuma Deluxe (порт) [NRO][ENG]
-  ~ Angry Birds Classic / AngryBirds 2 (порты) [NRO][RUS/Multi11]
