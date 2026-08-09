@@ -1,16 +1,14 @@
-=== 2026-08-08 03:00:46 ===
+=== 2026-08-09 03:00:22 ===
 Всего в базе: 7043
-Добавлено: 1
-  + The Room Three 3, 4 Old Sins (порты) [NRO][RUS/Multi8]
 Обновлено: 11
-  ~ Deltarune: Chapter 1-2-3-4-5 [NSZ][RUS (Mod.)/ENG]
-  ~ Double Dragon Revive + DLC Dodge Ball [NSP][RUS (Mod.)/ENG]
+  ~ DraStic DS NX: эмулятор Nintendo NDS/DSi/Dual Screen + игра New Super Mario Bros
+  ~ OneShot World Machine edition [NSZ][RUS/Multi8]
+  ~ Arranger a Role-Puzzling Adventure [NSZ][RUS (Mod.)/ENG]
+  ~ 174 отомэ: Code Realize, Collar X Malice, Nightshade, Bustafellows 1-2, Taisho x
+  ~ The Room Three 3, 4 Old Sins (порты) [NRO][RUS/Multi8]
   ~ Aery 1-30: Little Bird Adventure, Peace of Mind, A New Frontier, Broken Memories
   ~ Pokemon Red + Blue + Yellow (порт gen1recomp) [NRO][ENG]
   ~ Dr. Mario Mania (хоумбрю) [NRO][ENG]
   ~ Ticket to Earth (порт) [NRO][ENG]
   ~ Dekopon: эмулятор Nintendo 3DS и 2DS Azahar (Yoshi's New Island / Poochy and Yos
   ~ The Legend of Zelda: Ocarina of Time (нативный порт Ship of Harkinian + Leveled 
-  ~ The Legend of Zelda: Majora's Mask (нативный порт 2Ship 2Harkinian) + доп. HD-те
-  ~ Subway Surfers (порт) [NRO][ENG]
-  ~ Banjo-Kazooie (порт Lighthouse, Docklight) [NRO][ENG]
