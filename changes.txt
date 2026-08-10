@@ -1,9 +1,13 @@
-=== 2026-08-09 03:00:22 ===
-Всего в базе: 7043
+=== 2026-08-10 03:00:22 ===
+Всего в базе: 7045
+Добавлено: 2
+  + Peppered an Existential Platformer [NSZ][RUS/Multi8]
+  + Luxor Evolved [NSZ][ENG]
 Обновлено: 11
+  ~ Deltarune: Chapter 1-2-3-4-5 [NSZ][RUS (Mod.)/ENG]
+  ~ OSU! + 1236 песен (порт mcOsu) [ENG][NRO]
+  ~ Lego Star Wars: The Complete Saga (хоумбрю lswtcs) [NSP][ENG]
   ~ DraStic DS NX: эмулятор Nintendo NDS/DSi/Dual Screen + игра New Super Mario Bros
-  ~ OneShot World Machine edition [NSZ][RUS/Multi8]
-  ~ Arranger a Role-Puzzling Adventure [NSZ][RUS (Mod.)/ENG]
   ~ 174 отомэ: Code Realize, Collar X Malice, Nightshade, Bustafellows 1-2, Taisho x
   ~ The Room Three 3, 4 Old Sins (порты) [NRO][RUS/Multi8]
   ~ Aery 1-30: Little Bird Adventure, Peace of Mind, A New Frontier, Broken Memories
@@ -11,4 +15,3 @@
   ~ Dr. Mario Mania (хоумбрю) [NRO][ENG]
   ~ Ticket to Earth (порт) [NRO][ENG]
   ~ Dekopon: эмулятор Nintendo 3DS и 2DS Azahar (Yoshi's New Island / Poochy and Yos
-  ~ The Legend of Zelda: Ocarina of Time (нативный порт Ship of Harkinian + Leveled 
