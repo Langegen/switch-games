@@ -1,10 +1,13 @@
-=== 2026-08-10 03:00:22 ===
-Всего в базе: 7045
-Добавлено: 2
-  + Peppered an Existential Platformer [NSZ][RUS/Multi8]
-  + Luxor Evolved [NSZ][ENG]
-Обновлено: 11
-  ~ Deltarune: Chapter 1-2-3-4-5 [NSZ][RUS (Mod.)/ENG]
+=== 2026-08-11 03:00:23 ===
+Всего в базе: 7046
+Добавлено: 1
+  + Shard Squad + DLC [NSZ][RUS/Multi10]
+Обновлено: 14
+  ~ Minecraft (онлайн с tagNX) [NSP][RUS/Multi11]
+  ~ An English Haunting [NSZ][RUS (Mod.)/ENG]
+  ~ Wander Stars [NSZ][ENG]
+  ~ Easy Delivery Co [NSZ][RUS/Multi12]
+  ~ Flash NX SWF-плеер + Масяня, Магазинчик Бо, Samorost, Lenore, 6½, Happy Tree Fri
   ~ OSU! + 1236 песен (порт mcOsu) [ENG][NRO]
   ~ Lego Star Wars: The Complete Saga (хоумбрю lswtcs) [NSP][ENG]
   ~ DraStic DS NX: эмулятор Nintendo NDS/DSi/Dual Screen + игра New Super Mario Bros
@@ -14,4 +17,3 @@
   ~ Pokemon Red + Blue + Yellow (порт gen1recomp) [NRO][ENG]
   ~ Dr. Mario Mania (хоумбрю) [NRO][ENG]
   ~ Ticket to Earth (порт) [NRO][ENG]
-  ~ Dekopon: эмулятор Nintendo 3DS и 2DS Azahar (Yoshi's New Island / Poochy and Yos
