@@ -1,12 +1,14 @@
-=== 2026-08-11 03:00:23 ===
-Всего в базе: 7046
+=== 2026-08-12 03:00:24 ===
+Всего в базе: 7047
 Добавлено: 1
-  + Shard Squad + DLC [NSZ][RUS/Multi10]
-Обновлено: 14
-  ~ Minecraft (онлайн с tagNX) [NSP][RUS/Multi11]
-  ~ An English Haunting [NSZ][RUS (Mod.)/ENG]
-  ~ Wander Stars [NSZ][ENG]
-  ~ Easy Delivery Co [NSZ][RUS/Multi12]
+  + Жизнь и страдания господина Бранте в эпоху падения блаженной империи Аркнов / Th
+Обновлено: 15
+  ~ Main Frames (Mainframes) [NSZ][RUS/Multi7]
+  ~ Nicktoons and The Dice of Destiny [NSP][RUS (Mod.)/ENG]
+  ~ Heave Ho 1-2 [NSZ][RUS/Multi10]
+  ~ The Ramsey [NSZ][RUS (Mod.)/ENG]
+  ~ Sid Meier's Civilization VII (7) + 34 DLC [NSZ][RUS/Multi12]
+  ~ Pokemon Red + Blue + Yellow (порт gen1recomp) [NRO][ENG]
   ~ Flash NX SWF-плеер + Масяня, Магазинчик Бо, Samorost, Lenore, 6½, Happy Tree Fri
   ~ OSU! + 1236 песен (порт mcOsu) [ENG][NRO]
   ~ Lego Star Wars: The Complete Saga (хоумбрю lswtcs) [NSP][ENG]
@@ -14,6 +16,5 @@
   ~ 174 отомэ: Code Realize, Collar X Malice, Nightshade, Bustafellows 1-2, Taisho x
   ~ The Room Three 3, 4 Old Sins (порты) [NRO][RUS/Multi8]
   ~ Aery 1-30: Little Bird Adventure, Peace of Mind, A New Frontier, Broken Memories
-  ~ Pokemon Red + Blue + Yellow (порт gen1recomp) [NRO][ENG]
   ~ Dr. Mario Mania (хоумбрю) [NRO][ENG]
   ~ Ticket to Earth (порт) [NRO][ENG]
