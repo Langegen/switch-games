@@ -1,23 +1,12 @@
-=== 2026-08-13 03:00:24 ===
-Всего в базе: 7053
-Добавлено: 6
-  + Pets Survivors [NSZ][RUS/Multi10]
-  + Love Internet and Murder Magic [NSZ][ENG]
-  + Choppa Rescue Rivals [NSZ][ENG]
-  + Tower Dominion [NSZ][RUS/Multi10]
-  + Diddy Kong Racing (порт Golden Balloon NX) [NRO][ENG]
-  + The Lord of the Rings: War in the North Legacy edition (Властелин колец: Война н
-Обновлено: 17
-  ~ Night Swarm [NSP][RUS/Multi11]
-  ~ Twin Shot Deluxe [NSZ][RUS/Multi10]
-  ~ Sonic Racing Crossworlds + 8 DLC [NSZ][RUS/Multi10]
-  ~ Verho Curse of Faces [NSP][RUS/Multi10]
-  ~ Demonschool (Demon School) [NSZ][RUS (Mod.)/ENG]
-  ~ Schrodinger's Call [NSP][ENG]
-  ~ Pipistrello and the Cursed Yoyo [NSP][RUS (Mod.)/ENG]
-  ~ Rune Dice [NSZ][RUS/Multi10]
-  ~ Tetris the Grand Master TGM 4 Absolute Eye [NSZ][ENG]
-  ~ Sid Meier's Civilization VII (7) + 34 DLC [NSZ][RUS/Multi12]
+=== 2026-08-14 03:00:50 ===
+Всего в базе: 7054
+Добавлено: 1
+  + Grayland Remastered [NSZ][ENG]
+Обновлено: 11
+  ~ Lost to Time [NSZ][ENG]
+  ~ Banjo-Kazooie (порт Lighthouse, Docklight) [NRO][ENG]
+  ~ Shrink Rooms [NSZ][RUS/Multi10]
+  ~ Diddy Kong Racing (порт Golden Balloon NX) [NRO][ENG]
   ~ Pokemon Red + Blue + Yellow (порт gen1recomp) [NRO][ENG]
   ~ Flash NX SWF-плеер + Масяня, Магазинчик Бо, Samorost, Lenore, 6½, Happy Tree Fri
   ~ OSU! + 1236 песен (порт mcOsu) [ENG][NRO]
