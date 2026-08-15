@@ -1,16 +1,16 @@
-=== 2026-08-14 03:00:50 ===
-Всего в базе: 7054
-Добавлено: 1
-  + Grayland Remastered [NSZ][ENG]
-Обновлено: 11
-  ~ Lost to Time [NSZ][ENG]
+=== 2026-08-15 03:00:28 ===
+Всего в базе: 7056
+Добавлено: 2
+  + Defender of the Crown the Legend Returns [NSZ][RUS/Multi9]
+  + Tyrant's Realm [NSP][RUS/Multi11]
+Обновлено: 10
+  ~ R-Type Tactics I-II (1-2) Cosmos + 5 DLC [NSP][ENG]
+  ~ Realm of Ink [NSP][RUS/Multi10]
+  ~ Momento [NSP][ENG]
   ~ Banjo-Kazooie (порт Lighthouse, Docklight) [NRO][ENG]
-  ~ Shrink Rooms [NSZ][RUS/Multi10]
   ~ Diddy Kong Racing (порт Golden Balloon NX) [NRO][ENG]
   ~ Pokemon Red + Blue + Yellow (порт gen1recomp) [NRO][ENG]
   ~ Flash NX SWF-плеер + Масяня, Магазинчик Бо, Samorost, Lenore, 6½, Happy Tree Fri
   ~ OSU! + 1236 песен (порт mcOsu) [ENG][NRO]
   ~ Lego Star Wars: The Complete Saga (хоумбрю lswtcs) [NSP][ENG]
   ~ DraStic DS NX: эмулятор Nintendo NDS/DSi/Dual Screen + игра New Super Mario Bros
-  ~ 174 отомэ: Code Realize, Collar X Malice, Nightshade, Bustafellows 1-2, Taisho x
-  ~ The Room Three 3, 4 Old Sins (порты) [NRO][RUS/Multi8]
