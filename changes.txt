@@ -1,16 +1,16 @@
-=== 2026-08-15 03:00:28 ===
-Всего в базе: 7056
-Добавлено: 2
-  + Defender of the Crown the Legend Returns [NSZ][RUS/Multi9]
-  + Tyrant's Realm [NSP][RUS/Multi11]
-Обновлено: 10
-  ~ R-Type Tactics I-II (1-2) Cosmos + 5 DLC [NSP][ENG]
-  ~ Realm of Ink [NSP][RUS/Multi10]
-  ~ Momento [NSP][ENG]
+=== 2026-08-16 03:00:29 ===
+Всего в базе: 7057
+Добавлено: 1
+  + No Skin [NSZ][ENG]
+Обновлено: 11
+  ~ Easy Red 2 + DLC Stalingrad, Normandy, Ardennes 1940-1944, Shanghai Nanking, Blo
+  ~ PlateUp (Plate Up) + DLC [NSZ][RUS/Multi8]
+  ~ RetroMania Wrestling + DLC Legends Pack the Madness Returns [NSZ][ENG]
+  ~ Super Mario World Plus + Super Mario Bros Remastered (порт smw) [NRO][ENG]
+  ~ Nordic Ashes the Complete Saga: Survivors of Ragnarok, Remnants of Corruption, D
   ~ Banjo-Kazooie (порт Lighthouse, Docklight) [NRO][ENG]
   ~ Diddy Kong Racing (порт Golden Balloon NX) [NRO][ENG]
   ~ Pokemon Red + Blue + Yellow (порт gen1recomp) [NRO][ENG]
   ~ Flash NX SWF-плеер + Масяня, Магазинчик Бо, Samorost, Lenore, 6½, Happy Tree Fri
   ~ OSU! + 1236 песен (порт mcOsu) [ENG][NRO]
   ~ Lego Star Wars: The Complete Saga (хоумбрю lswtcs) [NSP][ENG]
-  ~ DraStic DS NX: эмулятор Nintendo NDS/DSi/Dual Screen + игра New Super Mario Bros
