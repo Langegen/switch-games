@@ -1,16 +1,18 @@
-=== 2026-08-16 03:00:29 ===
-Всего в базе: 7057
-Добавлено: 1
-  + No Skin [NSZ][ENG]
-Обновлено: 11
-  ~ Easy Red 2 + DLC Stalingrad, Normandy, Ardennes 1940-1944, Shanghai Nanking, Blo
-  ~ PlateUp (Plate Up) + DLC [NSZ][RUS/Multi8]
-  ~ RetroMania Wrestling + DLC Legends Pack the Madness Returns [NSZ][ENG]
+=== 2026-08-17 03:00:30 ===
+Всего в базе: 7063
+Добавлено: 6
+  + Zombotron Re-Boot (порт) [NRO][RUS/Multi9]
+  + Sacred 2 Fallen Angel Remaster + Ice and Blood [NSZ][ENG]
+  + Phigros (порт) [NRO][ENG]
+  + F-Zero X (порт NX G-Diffuser) [NRO][ENG]
+  + Sonic Jump (хоумбрю) [NRO][RUS/Multi9]
+  + Maestro (демонстрационная версия) [NSP][DEMO][RUS/Multi10]
+Обновлено: 8
+  ~ Metaverse Keeper [NSZ][RUS (Mod.)/ENG]
+  ~ Strange Antiquities [NSZ][RUS/Multi13]
+  ~ Silent Hill Decompilation NX (хоумбрю) [NRO][RUS/ENG]
+  ~ Touhou Youyoumu 7 Perfect Cherry Blossom / 6 Koumakyou the Embodiment of Scarlet
+  ~ Shard Squad + DLC [NSZ][RUS/Multi10]
   ~ Super Mario World Plus + Super Mario Bros Remastered (порт smw) [NRO][ENG]
-  ~ Nordic Ashes the Complete Saga: Survivors of Ragnarok, Remnants of Corruption, D
   ~ Banjo-Kazooie (порт Lighthouse, Docklight) [NRO][ENG]
   ~ Diddy Kong Racing (порт Golden Balloon NX) [NRO][ENG]
-  ~ Pokemon Red + Blue + Yellow (порт gen1recomp) [NRO][ENG]
-  ~ Flash NX SWF-плеер + Масяня, Магазинчик Бо, Samorost, Lenore, 6½, Happy Tree Fri
-  ~ OSU! + 1236 песен (порт mcOsu) [ENG][NRO]
-  ~ Lego Star Wars: The Complete Saga (хоумбрю lswtcs) [NSP][ENG]
