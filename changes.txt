@@ -1,18 +1,19 @@
-=== 2026-08-17 03:00:30 ===
-Всего в базе: 7063
-Добавлено: 6
-  + Zombotron Re-Boot (порт) [NRO][RUS/Multi9]
-  + Sacred 2 Fallen Angel Remaster + Ice and Blood [NSZ][ENG]
-  + Phigros (порт) [NRO][ENG]
-  + F-Zero X (порт NX G-Diffuser) [NRO][ENG]
-  + Sonic Jump (хоумбрю) [NRO][RUS/Multi9]
-  + Maestro (демонстрационная версия) [NSP][DEMO][RUS/Multi10]
-Обновлено: 8
-  ~ Metaverse Keeper [NSZ][RUS (Mod.)/ENG]
-  ~ Strange Antiquities [NSZ][RUS/Multi13]
+=== 2026-08-18 03:00:27 ===
+Всего в базе: 7066
+Добавлено: 3
+  + Card Quest [NSZ][ENG]
+  + Obakeidoro 2 Chase and Seek [NSZ][ENG]
+  + Woodo (демонстрационная версия) [NSZ][DEMO][RUS/Multi14]
+Обновлено: 12
+  ~ The Last Faith + DLC Awakened Ancients [NSP][RUS/Multi13]
+  ~ Blazblue Entropy Effect X Deluxe edition + 43 DLC [NSZ][RUS/Multi9]
+  ~ Sally Face [NSZ][RUS/Multi6]
+  ~ Zombotron Re-Boot (порт) [NRO][RUS/Multi9]
+  ~ Phigros (порт) [NRO][ENG]
   ~ Silent Hill Decompilation NX (хоумбрю) [NRO][RUS/ENG]
   ~ Touhou Youyoumu 7 Perfect Cherry Blossom / 6 Koumakyou the Embodiment of Scarlet
-  ~ Shard Squad + DLC [NSZ][RUS/Multi10]
+  ~ F-Zero X (порт NX G-Diffuser) [NRO][ENG]
+  ~ Sonic Jump (хоумбрю) [NRO][RUS/Multi9]
   ~ Super Mario World Plus + Super Mario Bros Remastered (порт smw) [NRO][ENG]
   ~ Banjo-Kazooie (порт Lighthouse, Docklight) [NRO][ENG]
   ~ Diddy Kong Racing (порт Golden Balloon NX) [NRO][ENG]
