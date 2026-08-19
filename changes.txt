@@ -1,13 +1,14 @@
-=== 2026-08-18 03:00:27 ===
-Всего в базе: 7066
-Добавлено: 3
-  + Card Quest [NSZ][ENG]
-  + Obakeidoro 2 Chase and Seek [NSZ][ENG]
-  + Woodo (демонстрационная версия) [NSZ][DEMO][RUS/Multi14]
-Обновлено: 12
-  ~ The Last Faith + DLC Awakened Ancients [NSP][RUS/Multi13]
-  ~ Blazblue Entropy Effect X Deluxe edition + 43 DLC [NSZ][RUS/Multi9]
-  ~ Sally Face [NSZ][RUS/Multi6]
+=== 2026-08-19 03:00:33 ===
+Всего в базе: 7068
+Добавлено: 2
+  + Guts 'n Grunts / Jr. / Sr. [NSZ][ENG]
+  + Catto's Post Office [NSZ][ENG]
+Обновлено: 14
+  ~ Teenage Mutant Ninja Turtles (TMNT) Splintered Fate + 4 DLC [NSZ][RUS/Multi14]
+  ~ DraStic DS NX: эмулятор Nintendo NDS/DSi/Dual Screen + игра New Super Mario Bros
+  ~ NetherSX2 (бывш. AetherSX2) плюс ARMSX2 NX PS2: эмуляторы Sony PlayStation 2 PCS
+  ~ The Legend of Heroes: Trails in the Sky 1st Chapter Remake + DLC [NSZ][RUS (Mod.
+  ~ Staffer Retro a Supernatural Mystery Quest [NSZ][ENG]
   ~ Zombotron Re-Boot (порт) [NRO][RUS/Multi9]
   ~ Phigros (порт) [NRO][ENG]
   ~ Silent Hill Decompilation NX (хоумбрю) [NRO][RUS/ENG]
