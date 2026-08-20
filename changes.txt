@@ -1,14 +1,19 @@
-=== 2026-08-19 03:00:33 ===
-Всего в базе: 7068
-Добавлено: 2
-  + Guts 'n Grunts / Jr. / Sr. [NSZ][ENG]
-  + Catto's Post Office [NSZ][ENG]
-Обновлено: 14
-  ~ Teenage Mutant Ninja Turtles (TMNT) Splintered Fate + 4 DLC [NSZ][RUS/Multi14]
+=== 2026-08-20 03:00:33 ===
+Всего в базе: 7072
+Добавлено: 4
+  + Two Strikes Ultimate edition + 3 DLC [NSZ][ENG]
+  + Toy Tactics [NSZ][RUS/Multi10]
+  + Fantasista Asuka, Magical Nut Ikuno Crystal Combi Collection [NSZ][ENG]
+  + Grimoire Groves [NSZ][ENG]
+Обновлено: 15
+  ~ Conquistadorio [NSP][Multi]
+  ~ Xenotilt Hostile Pinball Action (пинбол) [NSZ][ENG]
+  ~ Teenage Mutant Ninja Turtles (TMNT) Splintered Fate + 5 DLC [NSZ][RUS/Multi14]
+  ~ DarkStar One (Dark Star) [NSP][RUS (Mod.)/ENG]
+  ~ The King is Watching [NSP][RUS/Multi10]
+  ~ Gurei [NSZ][RUS/Multi7]
   ~ DraStic DS NX: эмулятор Nintendo NDS/DSi/Dual Screen + игра New Super Mario Bros
   ~ NetherSX2 (бывш. AetherSX2) плюс ARMSX2 NX PS2: эмуляторы Sony PlayStation 2 PCS
-  ~ The Legend of Heroes: Trails in the Sky 1st Chapter Remake + DLC [NSZ][RUS (Mod.
-  ~ Staffer Retro a Supernatural Mystery Quest [NSZ][ENG]
   ~ Zombotron Re-Boot (порт) [NRO][RUS/Multi9]
   ~ Phigros (порт) [NRO][ENG]
   ~ Silent Hill Decompilation NX (хоумбрю) [NRO][RUS/ENG]
@@ -16,5 +21,3 @@
   ~ F-Zero X (порт NX G-Diffuser) [NRO][ENG]
   ~ Sonic Jump (хоумбрю) [NRO][RUS/Multi9]
   ~ Super Mario World Plus + Super Mario Bros Remastered (порт smw) [NRO][ENG]
-  ~ Banjo-Kazooie (порт Lighthouse, Docklight) [NRO][ENG]
-  ~ Diddy Kong Racing (порт Golden Balloon NX) [NRO][ENG]
