@@ -1,4 +1,4 @@
-=== 2026-08-21 13:18:04 ===
+=== 2026-08-21 13:20:34 ===
 Всего в базе: 7076
 Обновлено: 9
   ~ TES 3 The Elder Scrolls III: Morrowind + Tribunal + Bloodmoon (нативный OpenMW),
@@ -11,4 +11,4 @@
   ~ F-Zero X (порт NX G-Diffuser) [NRO][ENG]
   ~ Sonic Jump (хоумбрю) [NRO][RUS/Multi9]
 Перезалит magnet: 1
-  # Disco Elysium the Final Cut [NSP][RUS/Multi8]
+  # Marvel Maximum Collection (6 игр) [NSP][RUS (Mod.)/ENG]
