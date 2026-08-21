@@ -1,4 +1,4 @@
-=== 2026-08-21 13:15:05 ===
+=== 2026-08-21 13:18:04 ===
 Всего в базе: 7076
 Обновлено: 9
   ~ TES 3 The Elder Scrolls III: Morrowind + Tribunal + Bloodmoon (нативный OpenMW),
@@ -10,3 +10,5 @@
   ~ Touhou Youyoumu 7 Perfect Cherry Blossom / 6 Koumakyou the Embodiment of Scarlet
   ~ F-Zero X (порт NX G-Diffuser) [NRO][ENG]
   ~ Sonic Jump (хоумбрю) [NRO][RUS/Multi9]
+Перезалит magnet: 1
+  # Disco Elysium the Final Cut [NSP][RUS/Multi8]
