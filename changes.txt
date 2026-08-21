@@ -1,20 +1,24 @@
-=== 2026-08-21 03:00:33 ===
-Всего в базе: 7075
-Добавлено: 3
-  + Steins Gate Re Boot (Reboot) [NSP][ENG]
-  + Sacred 2 Remaster [RePack][NSZ][RUS (Mod.)]
-  + The Legend of Heroes: Trails in the Sky 2nd Chapter Remake (демонстрационная вер
-Обновлено: 13
-  ~ Wobbly Life [NSZ][RUS/Multi9]
-  ~ Teeto [NSZ][RUS/Multi10]
-  ~ Fantasy Life i: The Girl Who Steals Time + 3 DLC [NSZ][RUS (Mod.)/ENG]
-  ~ Defender of the Crown the Legend Returns [NSZ][RUS/Multi9]
+=== 2026-08-21 12:55:44 ===
+Всего в базе: 7076
+Добавлено: 1
+  + Avatar Legends the Fighting Game [RePack][NSZ][RUS (Mod.)]
+Обновлено: 19
+  ~ K-Pop Idol Stories Road to Debut [NSZ][ENG]
+  ~ TES 3 The Elder Scrolls III: Morrowind + Tribunal + Bloodmoon (нативный OpenMW),
+  ~ Culdcept Begins [NSP][ENG]
+  ~ Solateria [NSZ][RUS (Mod.)/ENG]
+  ~ Dave the Diver + 6 DLC (In the Jungle) [NSZ][RUS/Multi11]
+  ~ Nordic Ashes the Complete Saga: Survivors of Ragnarok, Remnants of Corruption, D
+  ~ Avatar Legends the Fighting Game [NSZ][ENG]
+  ~ Tomb Raider I-III (+ Unfinished Business) / TR II (2) The Dagger of Xian + Golde
+  ~ Caravan Sand Witch (SandWitch) [NSP][RUS (Mod.)/ENG]
+  ~ Diablo II (2): Resurrected Infernal edition + DLC Reign of the Warlock [NSP][RUS
   ~ DraStic DS NX: эмулятор Nintendo NDS/DSi/Dual Screen + игра New Super Mario Bros
   ~ NetherSX2 (бывш. AetherSX2) плюс ARMSX2 NX PS2: эмуляторы Sony PlayStation 2 PCS
+  ~ Wingspan + 8 DLC [NSZ][RUS/Multi10]
   ~ Zombotron Re-Boot (порт) [NRO][RUS/Multi9]
   ~ Phigros (порт) [NRO][ENG]
   ~ Silent Hill Decompilation NX (хоумбрю) [NRO][RUS/ENG]
   ~ Touhou Youyoumu 7 Perfect Cherry Blossom / 6 Koumakyou the Embodiment of Scarlet
   ~ F-Zero X (порт NX G-Diffuser) [NRO][ENG]
   ~ Sonic Jump (хоумбрю) [NRO][RUS/Multi9]
-  ~ Super Mario World Plus + Super Mario Bros Remastered (порт smw) [NRO][ENG]
