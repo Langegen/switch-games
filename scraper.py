@@ -90,6 +90,38 @@ def _clean_magnet(url):
     url = re.sub(r'[?&]dn=[^&]*', '', url)
     return url
 
+def _magnet_btih(url):
+    """Infohash из magnet (hex40 или base32). Пустая строка, если ссылки нет."""
+    if not url:
+        return ''
+    m = re.search(r'btih:([A-Fa-f0-9]{40}|[a-zA-Z2-7]{32})', url, re.IGNORECASE)
+    return m.group(1).lower() if m else ''
+
+def _merge_topic_details(item, details, title=None, feed_size=None, raw_title=''):
+    """Пишет свежие поля темы в запись базы.
+
+    Пустой/Unknown magnet не затирает старый (страница могла не распарситься).
+    Возвращает True, если infohash реально сменился — перезаливка на трекере.
+    """
+    old_hash = _magnet_btih(item.get('magnet'))
+    if title:
+        item['title'] = title
+    if details.get('size') and details['size'] != 'Unknown':
+        item['size'] = details['size']
+    elif feed_size and feed_size != 'Unknown':
+        item['size'] = feed_size
+    for k, v in details.items():
+        if k == 'size':
+            continue
+        if v is not None and v != 'Unknown' and v != [] and v != '':
+            item[k] = v
+        elif k not in item:
+            item[k] = v
+    if not item.get('title_id') and raw_title:
+        item['title_id'] = extract_title_id(raw_title)
+    new_hash = _magnet_btih(details.get('magnet'))
+    return bool(new_hash) and new_hash != old_hash
+
 def _post_text(post_body):
     """Текст поста с корректными переводами строк.
 
@@ -771,33 +803,24 @@ def run_scraper():
 
         if t_id in existing_map:
             old_item = existing_map[t_id]
-            needs_update = (
+            meta_changed = (
                 old_item.get('title') != title
                 or (feed_size != "Unknown" and old_item.get('size') != feed_size)
                 or not old_item.get('title_id')
                 or 'year' not in old_item
                 or old_item.get('year') == 'Unknown'
             )
-            if needs_update:
-                print(f"  [~] ОБНОВЛЯЕМ: {title[:60]}...")
-                details = get_topic_data(t_id)
-                old_item['title'] = title
-                if details['size'] != 'Unknown':
-                    old_item['size'] = details['size']
-                elif feed_size != 'Unknown':
-                    old_item['size'] = feed_size
-
-                for k, v in details.items():
-                    if k == 'size':
-                        continue
-                    if v is not None and v != "Unknown" and v != [] and v != "":
-                        old_item[k] = v
-                    elif k not in old_item:
-                        old_item[k] = v
-
-                if not old_item.get('title_id'):
-                    old_item['title_id'] = extract_title_id(raw_title)
-
+            # Лента — сигнал «торрент недавно регистрировали/перезаливали».
+            # Title и size часто не меняются, infohash меняется всегда.
+            # Раньше страница не открывалась, если заголовок совпал, и в базе
+            # оставался мёртвый magnet (Absolum t=6755656 и т.п.).
+            details = get_topic_data(t_id)
+            magnet_changed = _merge_topic_details(
+                old_item, details, title=title, feed_size=feed_size,
+                raw_title=raw_title)
+            if magnet_changed or meta_changed:
+                why = "MAGNET" if magnet_changed else "мета"
+                print(f"  [~] ОБНОВЛЯЕМ ({why}): {title[:60]}...")
                 updated_count += 1
                 updated_titles.append(str(title)[:80])
         else:
@@ -837,19 +860,33 @@ def run_scraper():
     except Exception as e:
         print(f"(!) Ошибка дообогащения: {e}")
 
-    if added_count > 0 or updated_count > 0 or enriched_count > 0:
+    # Перезалитые топики выпадают из ленты за сутки-двое. 50 страниц/день
+    # проходят всю базу примерно за 5 месяцев — лучше, чем навсегда.
+    magnet_count = 0
+    magnet_titles = []
+    try:
+        seen_ids = {item["topic_id"] for item in atom_entries}
+        magnet_count, magnet_titles = _refresh_stale_magnets(
+            existing_data, skip_ids=seen_ids, limit=50)
+    except Exception as e:
+        print(f"(!) Ошибка проверки magnet: {e}")
+
+    if added_count > 0 or updated_count > 0 or enriched_count > 0 or magnet_count > 0:
         _save_json(existing_data, JSON_FILE)
-        print(f"[+] База обновлена. Добавлено: {added_count}, Обновлено: {updated_count}, Дообогащено: {enriched_count}. Всего: {len(existing_data)}")
+        print(f"[+] База обновлена. Добавлено: {added_count}, Обновлено: {updated_count}, "
+              f"Дообогащено: {enriched_count}, Magnet: {magnet_count}. Всего: {len(existing_data)}")
     else:
         print("[=] Проверка завершена. Новых и обновлённых раздач нет.")
 
-    _write_changes_log(added_titles, updated_titles, enriched_titles, len(existing_data))
+    _write_changes_log(added_titles, updated_titles, enriched_titles,
+                       len(existing_data), magnets=magnet_titles)
 
 CHANGES_FILE = os.path.join(BASE_DIR, 'changes.txt')
 ENRICH_STATE_FILE = os.path.join(BASE_DIR, 'enrich_state.json')
 
-def _write_changes_log(added, updated, enriched, total):
+def _write_changes_log(added, updated, enriched, total, magnets=None):
     """Лог изменений в changes.txt (перезаписывается при каждом запуске)."""
+    magnets = magnets or []
     lines = [f"=== {time.strftime('%Y-%m-%d %H:%M:%S')} ===",
              f"Всего в базе: {total}"]
     if added:
@@ -861,7 +898,10 @@ def _write_changes_log(added, updated, enriched, total):
     if enriched:
         lines.append(f"Дообогащено: {len(enriched)}")
         lines += [f"  * {t}" for t in enriched]
-    if not (added or updated or enriched):
+    if magnets:
+        lines.append(f"Перезалит magnet: {len(magnets)}")
+        lines += [f"  # {t}" for t in magnets]
+    if not (added or updated or enriched or magnets):
         lines.append("Изменений нет")
     try:
         with open(CHANGES_FILE, 'w', encoding='utf-8') as f:
@@ -882,6 +922,39 @@ def _save_enrich_state(state):
             json.dump(state, f, ensure_ascii=False, indent=2)
     except Exception as e:
         print(f"(!) Ошибка записи enrich_state: {e}")
+
+def _refresh_stale_magnets(existing_data, skip_ids, limit=50):
+    """Круговой проход: перечитать magnet у записей вне сегодняшней ленты.
+
+    skip_ids — topic_id, которые уже качали из Atom. Курсор в enrich_state.json.
+    """
+    state = _load_enrich_state()
+    n = len(existing_data)
+    if not n:
+        return 0, []
+    try:
+        cursor = int(state.get('_magnet_cursor', 0) or 0) % n
+    except (TypeError, ValueError):
+        cursor = 0
+    refreshed = []
+    fetched = 0
+    steps = 0
+    while steps < n and fetched < limit:
+        idx = (cursor + steps) % n
+        steps += 1
+        item = existing_data[idx]
+        tid = str(item.get('topic_id', ''))
+        if not tid or tid in skip_ids:
+            continue
+        print(f"  [*] MAGNET [{tid}] {str(item.get('title'))[:55]}...")
+        details = get_topic_data(tid)
+        fetched += 1
+        if _merge_topic_details(item, details):
+            refreshed.append(str(item.get('title'))[:80])
+        time.sleep(0.2)
+    state['_magnet_cursor'] = (cursor + steps) % n
+    _save_enrich_state(state)
+    return len(refreshed), refreshed
 
 def _enrich_incomplete(existing_data, limit=100):
     """Дообогащает первые `limit` записей базы (самые новые).
