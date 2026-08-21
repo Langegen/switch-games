@@ -1,4 +1,4 @@
-=== 2026-08-21 13:04:09 ===
+=== 2026-08-21 13:08:17 ===
 Всего в базе: 7076
 Обновлено: 9
   ~ TES 3 The Elder Scrolls III: Morrowind + Tribunal + Bloodmoon (нативный OpenMW),
