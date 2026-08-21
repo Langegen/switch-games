@@ -1,4 +1,4 @@
-=== 2026-08-21 13:00:59 ===
+=== 2026-08-21 13:04:09 ===
 Всего в базе: 7076
 Обновлено: 9
   ~ TES 3 The Elder Scrolls III: Morrowind + Tribunal + Bloodmoon (нативный OpenMW),
@@ -10,5 +10,3 @@
   ~ Touhou Youyoumu 7 Perfect Cherry Blossom / 6 Koumakyou the Embodiment of Scarlet
   ~ F-Zero X (порт NX G-Diffuser) [NRO][ENG]
   ~ Sonic Jump (хоумбрю) [NRO][RUS/Multi9]
-Перезалит magnet: 1
-  # Cemu NX: эмулятор Nintendo Wii U + игра DuckTales Remastered (Duck Tales / Утины
