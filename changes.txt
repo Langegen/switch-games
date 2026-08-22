@@ -1,12 +1,14 @@
-=== 2026-08-21 13:41:05 ===
-Всего в базе: 7076
-Обновлено: 9
+=== 2026-08-22 03:01:37 ===
+Всего в базе: 7078
+Добавлено: 2
+  + Sonic Runners Adventure (хоумбрю) [NRO][RUS/Multi12]
+  + TR-49 [NSZ][ENG]
+Обновлено: 8
+  ~ Banjo-Kazooie (порт Lighthouse, Docklight) [NRO][ENG]
+  ~ Sonic the Hedgehog 4 Episode II (эпизод 2, хоумбрю) [NRO][ENG]
+  ~ Choppa Rescue Rivals [NSZ][ENG]
+  ~ Tails of Iron 2: Whiskers of Winter + 2 DLC [NSZ][RUS/Multi12]
   ~ TES 3 The Elder Scrolls III: Morrowind + Tribunal + Bloodmoon (нативный OpenMW),
   ~ DraStic DS NX: эмулятор Nintendo NDS/DSi/Dual Screen + игра New Super Mario Bros
   ~ NetherSX2 (бывш. AetherSX2) плюс ARMSX2 NX PS2: эмуляторы Sony PlayStation 2 PCS
   ~ Zombotron Re-Boot (порт) [NRO][RUS/Multi9]
-  ~ Phigros (порт) [NRO][ENG]
-  ~ Silent Hill Decompilation NX (хоумбрю) [NRO][RUS/ENG]
-  ~ Touhou Youyoumu 7 Perfect Cherry Blossom / 6 Koumakyou the Embodiment of Scarlet
-  ~ F-Zero X (порт NX G-Diffuser) [NRO][ENG]
-  ~ Sonic Jump (хоумбрю) [NRO][RUS/Multi9]
