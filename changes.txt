@@ -1,26 +1,20 @@
-=== 2026-09-05 03:00:50 ===
-Всего в базе: 7117
-Добавлено: 7
-  + Another Eden Begins (демонстрационная версия) [NSZ][DEMO][ENG]
-  + Isle of Reveries [NSP][ENG]
-  + Tamashika [NSZ][ENG]
-  + Monsters Until Midnight [NSZ][RUS-ENG/Multi0]
-  + Fred and Jeff the Atomic Sulfate (Mortadelo y Filemón: El sulfato atómico) [NSZ]
-  + Touhou Lost Branch of Legend [NSZ][RUS/Multi7]
-  + Final Fantasy Resonance (демонстрационная версия) [NSP][DEMO][ENG]
-Обновлено: 15
-  ~ 11 RenPy-портов: Mycopsychosys Remastered / Bad End Theater / Sakura Isekai Adve
-  ~ Darkest Dungeon: Ancestral edition + 5 DLC: The Fire's Edge, The Color of Madnes
-  ~ Solateria [NSZ][RUS (Mod.)/ENG]
-  ~ Vita3K-nx: эмулятор Sony PlayStation Vita (PSV) + игра Gravity Rush / Daze [NRO]
-  ~ Folk Hero [NSZ][RUS/Multi9]
-  ~ Ludo XXL (лудо, парчис) / DOG Takes the Hindmost / 4 in a Row / My Rummy / Yatzi
-  ~ Backgammon Board Game Puzzle / Backgammon Pro / 3-in-1 (короткие нарды) [NSZ][RU
-  ~ Undertale Yellow (неофициальный порт) [NSZ][ENG]
+=== 2026-09-07 03:05:50 ===
+Всего в базе: 7119
+Добавлено: 2
+  + Clover Pit Unholy edition (CloverPit) [NSZ][RUS/Multi10]
+  + VTech V.Smile — 12 игр (эмулятор D.Smile) [NRO][ENG]
+Обновлено: 14
+  ~ The Legend of Zelda: The Minish Cap (нативный порт) [NRO][ENG]
+  ~ Tavern Talk 1-2 Stories Dreamwalker + DLC [NSZ][ENG]
   ~ Grand Theft Auto V (порт GTA 5) [NRO][RUS/Multi12]
+  ~ Dave the Diver + 6 DLC (In the Jungle) [NSZ][RUS/Multi11]
+  ~ Montabi [NSZ][ENG]
+  ~ Cabernet [NSP][RUS (Mod.)/ENG]
+  ~ Deer and Boy [NSP][Multi]
+  ~ 11 RenPy-портов: Mycopsychosys Remastered / Bad End Theater / Sakura Isekai Adve
+  ~ Vita3K-nx: эмулятор Sony PlayStation Vita (PSV) + игра Gravity Rush / Daze [NRO]
+  ~ Undertale Yellow (неофициальный порт) [NSZ][ENG]
   ~ Словесные POWGI+ игры, 31 шт.: Words in Word, Gaps, Roundout, Alphaset, Wordswee
   ~ Mega Man X Regenesis (хоумбрю) [NRO][ENG]
   ~ Infinity Blade (порт) [NRO][ENG]
   ~ Touhou 8 Imperishable Night / Youyoumu 7 Perfect Cherry Blossom / 6 Koumakyou th
-  ~ The Legend of Zelda: The Minish Cap (нативный порт) [NSP][ENG]
-  ~ Game and Watch, Электроника ИМ — 84 игры (эмулятор Yokoi, Sharp SM510) [NRO][ENG
