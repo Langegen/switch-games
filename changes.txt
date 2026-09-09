@@ -1,8 +1,6 @@
-=== 2026-09-08 11:51:22 ===
+=== 2026-09-09 03:00:50 ===
 Всего в базе: 7121
-Обновлено: 12
-  ~ Wingspan + 8 DLC [NSZ][RUS/Multi10]
-  ~ Terraformers + 3 DLC [NSZ][RUS/Multi8]
+Обновлено: 10
   ~ Star Fox Enhanced (порт Ultra StarFox Starwing SNES) [NRO][ENG]
   ~ Brutal Doom (на GZDoom) [NRO][ENG]
   ~ The Legend of Doom (на GZDoom) [NRO][ENG]
