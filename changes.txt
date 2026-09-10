@@ -1,13 +1,27 @@
-=== 2026-09-09 03:00:50 ===
-Всего в базе: 7121
-Обновлено: 10
+=== 2026-09-10 03:00:46 ===
+Всего в базе: 7126
+Добавлено: 5
+  + The Noexistencen of You and Me [NSZ][RUS/Multi10]
+  + Resonant Blade [NSZ][ENG]
+  + Dragon Quest Heroes: Torneko's Mystery Dungeon Classic HD [NSP][ENG]
+  + Earth Must Die [NSP][ENG]
+  + Barbarian Saga the Beastmaster [NSZ][ENG]
+Обновлено: 16
+  ~ Momento [NSP][ENG]
+  ~ Grand Theft Auto V (порт GTA 5) [NRO][RUS/Multi12]
+  ~ Tiebreak Plus Ace edition (Tie-Break, теннис) [NSP][RUS/Multi9]
+  ~ Dungeon Antiqua 1-2 [NSZ][ENG]
+  ~ Vita3K-nx: эмулятор Sony PlayStation Vita (PSV) + игра Gravity Rush / Daze [NRO]
+  ~ NetherSX2 (бывш. AetherSX2) плюс ARMSX2 NX PS2: эмуляторы Sony PlayStation 2 PCS
+  ~ Watermelon Game (スイカゲーム, 29 DLC) / Suika Planet + 3 DLC [NSZ][ENG]
+  ~ Terraria [NSZ][RUS/Multi7]
+  ~ Obakeidoro 2 Chase and Seek [NSZ][ENG]
   ~ Star Fox Enhanced (порт Ultra StarFox Starwing SNES) [NRO][ENG]
   ~ Brutal Doom (на GZDoom) [NRO][ENG]
   ~ The Legend of Doom (на GZDoom) [NRO][ENG]
   ~ The Legend of Zelda: The Minish Cap (нативный порт) [NRO][ENG]
   ~ VTech V.Smile — 12 игр (эмулятор D.Smile) [NRO][ENG]
   ~ 11 RenPy-портов: Mycopsychosys Remastered / Bad End Theater / Sakura Isekai Adve
-  ~ Vita3K-nx: эмулятор Sony PlayStation Vita (PSV) + игра Gravity Rush / Daze [NRO]
   ~ Undertale Yellow (неофициальный порт) [NSZ][ENG]
-  ~ Словесные POWGI+ игры, 31 шт.: Words in Word, Gaps, Roundout, Alphaset, Wordswee
-  ~ Mega Man X Regenesis (хоумбрю) [NRO][ENG]
+Перезалит magnet: 1
+  # Astroneer + DLC Megatech, Glitchwalkers [NSP][RUS/Multi11]
