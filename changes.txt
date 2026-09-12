@@ -1,20 +1,14 @@
-=== 2026-09-11 08:33:21 ===
-Всего в базе: 7128
+=== 2026-09-12 03:01:00 ===
+Всего в базе: 7130
 Добавлено: 2
-  + Clockwork Rabbit [NSZ][RUS/Multi13]
-  + Dragon Quest Monsters the Withered World (демонстрационная версия) [NSP][DEMO][E
-Обновлено: 18
+  + Flora and Fang: Guardians of the Vampire Garden [NSZ][ENG]
+  + Cladun X3 [NSZ][ENG]
+Обновлено: 12
+  ~ Game and Watch, Электроника ИМ — 106 игр (эмулятор Yokoi, Sharp SM510) [NRO][ENG
+  ~ Avatar Legends the Fighting Game [NSZ][ENG]
   ~ The Legend of Zelda: The Minish Cap (нативный порт) [NRO][ENG]
-  ~ Lollipop Chainsaw RePop [NSZ][RUS (Mod.)/ENG]
-  ~ Isle of Reveries [NSP][RUS (Mod.)/ENG]
-  ~ The Legend of Heroes: Trails to Azure [NSZ][RUS (Mod.)/ENG]
-  ~ Whiskey Mafia: Frank's Story / Leo's Family / Blacklist [NSZ][RUS/ENG]
-  ~ My Cozy Room / Mini Market Design / Softly Placed / Pocket Nook / Cozy Tiny Home
-  ~ Freaky Trip + 8 DLC [NSZ][ENG]
   ~ Steins Gate Re Boot (Reboot) [RePack][NSP][RUS (Mod.)/ENG]
   ~ Touhou Wonderful Waking World / 8 Imperishable Night / Youyoumu 7 Perfect Cherry
-  ~ Just Dance JD Legacy Mod (1300+ песен Unlimited, Now, 2026 и др.) [NSP][ENG]
-  ~ Moonlight Peaks [NSZ][RUS (Mod.)/ENG]
   ~ Vita3K-nx: эмулятор Sony PlayStation Vita (PSV) + игра Gravity Rush / Daze [NRO]
   ~ NetherSX2 (бывш. AetherSX2) плюс ARMSX2 NX PS2: эмуляторы Sony PlayStation 2 PCS
   ~ Star Fox Enhanced (порт Ultra StarFox Starwing SNES) [NRO][ENG]
