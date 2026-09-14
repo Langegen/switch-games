@@ -1,9 +1,7 @@
-=== 2026-09-13 03:00:59 ===
+=== 2026-09-14 03:00:59 ===
 Всего в базе: 7130
-Обновлено: 12
-  ~ Vampire Survivors (VS) First Survivaton + DLC Legacy of the Bloodmoon, Ante Cham
+Обновлено: 10
   ~ Game and Watch, Электроника ИМ — 106 игр (эмулятор Yokoi, Sharp SM510) [NRO][ENG
-  ~ Dustland Delivery + DLC Sheol [NSZ][RUS (Mod.)/ENG]
   ~ The Legend of Zelda: The Minish Cap (нативный порт) [NRO][ENG]
   ~ Steins Gate Re Boot (Reboot) [RePack][NSP][RUS (Mod.)/ENG]
   ~ Touhou Wonderful Waking World / 8 Imperishable Night / Youyoumu 7 Perfect Cherry
@@ -13,3 +11,5 @@
   ~ Brutal Doom (на GZDoom) [NRO][ENG]
   ~ The Legend of Doom (на GZDoom) [NRO][ENG]
   ~ VTech V.Smile — 12 игр (эмулятор D.Smile) [NRO][ENG]
+Перезалит magnet: 1
+  # Nitro Gen Omega [NSP][RUS/Multi10]
