@@ -1,3 +1,5 @@
+import socket
+socket.setdefaulttimeout(45)
 import os
 import sys
 

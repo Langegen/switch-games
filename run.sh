@@ -3,15 +3,14 @@
 PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 cd "$(dirname "$0")"
 
-# Защита от параллельного запуска нескольких копий
-LOCK_FILE="/tmp/switch-games.lock"
+# Взаимная блокировка (оба бота не должны работать одновременно)
+LOCK_FILE="/tmp/rutracker-scraper.lock"
 exec 200>"$LOCK_FILE"
-if ! flock -n 200; then
-    echo "[$(date)] Процесс switch-games уже выполняется (lockfile: $LOCK_FILE). Выход."
-    exit 0
+if ! flock -w 7200 200; then
+    echo "[$(date)] Другой парсер всё ещё активен спустя 2 часа ожидания. Выход."
+    exit 1
 fi
 
-# Куки RuTracker (RUTRACKER_COOKIES) из локального .env, если есть
 if [ -f .env ]; then
     set -a
     . ./.env
@@ -22,11 +21,11 @@ echo "[$(date)] Обновление кода..."
 git pull --rebase origin main
 
 echo "[$(date)] Запуск парсера..."
-# Chrome-fallback требует виртуальный дисплей (Cloudflare не проходится в headless)
+# Таймаут на выполнение 2 часа (защита от зависаний)
 if command -v xvfb-run >/dev/null 2>&1; then
-    xvfb-run -a ./venv/bin/python3 scraper.py
+    timeout 7200 xvfb-run -a ./venv/bin/python3 scraper.py
 else
-    ./venv/bin/python3 scraper.py
+    timeout 7200 ./venv/bin/python3 scraper.py
 fi
 
 echo "[$(date)] Выгрузка изменений на GitHub..."
