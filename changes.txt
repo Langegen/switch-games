@@ -1,24 +1,15 @@
-=== 2026-09-15 13:14:54 ===
-Всего в базе: 7134
-Добавлено: 4
-  + Grand Theft Auto V (порт GTA 5, репак) [RePack][NSZ][RUS/Multi12]
-  + Anvil Saga [NSZ][RUS/Multi6]
-  + Goodnight Universe [NSZ][ENG]
-  + Hyperdimension Neptunia Unlimited / 超新時空ゲイム ネプテューヌ∞ [NSP][JAP]
-Обновлено: 13
-  ~ Final Fantasy Resonance (демонстрационная версия) [NSP][DEMO][RUS (Mod.)/ENG]
+=== 2026-09-16 03:01:30 ===
+Всего в базе: 7135
+Добавлено: 1
+  + Sonic R (порт) [NRO][ENG]
+Обновлено: 10
+  ~ Touhou 10 Mountain of Faith / Wonderful Waking World / 8 Imperishable Night / Yo
+  ~ 22 судоку (Sudoku Relax, Universe, Master, Zenkai, Classic, Grandmaster и др.) +
+  ~ Hyperdimension Neptunia Unlimited / 超新時空ゲイム ネプテューヌ∞ [NSP][JAP]
   ~ Vita3K-nx: эмулятор Sony PlayStation Vita (PSV) + игра Gravity Rush / Daze [NRO]
-  ~ Guts 'n Grunts / Jr. / Sr. / Buck Blastem / Cave Ranger [NSZ][ENG]
-  ~ Senren Banka [NSP][RUS (Mod.)/ENG]
-  ~ Steins Gate Re Boot (Reboot) [RePack][NSP][RUS (Mod.)/ENG]
   ~ The Legend of Zelda: The Minish Cap (нативный порт) [NRO][ENG]
-  ~ Dustland Delivery + DLC Sheol [NSZ][RUS (Mod.)/ENG]
   ~ Game and Watch, Электроника ИМ — 106 игр (эмулятор Yokoi, Sharp SM510) [NRO][ENG
-  ~ Touhou Wonderful Waking World / 8 Imperishable Night / Youyoumu 7 Perfect Cherry
   ~ NetherSX2 (бывш. AetherSX2) плюс ARMSX2 NX PS2: эмуляторы Sony PlayStation 2 PCS
   ~ Star Fox Enhanced (порт Ultra StarFox Starwing SNES) [NRO][ENG]
   ~ Brutal Doom (на GZDoom) [NRO][ENG]
   ~ The Legend of Doom (на GZDoom) [NRO][ENG]
-Перезалит magnet: 2
-  # Achilles Survivor [NSP][RUS/Multi9]
-  # Deathbulge Battle of the Bands [NSP][ENG]
