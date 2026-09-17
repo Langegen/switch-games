@@ -1,15 +1,19 @@
-=== 2026-09-16 03:01:30 ===
-Всего в базе: 7135
-Добавлено: 1
-  + Sonic R (порт) [NRO][ENG]
+=== 2026-09-17 04:09:14 ===
+Всего в базе: 7137
+Добавлено: 2
+  + Великолепный Вовочка: Герой безопасного секса (порт Velikolepniy Vovochka) [NRO]
+  + Nova Hearts [NSP][ENG]
 Обновлено: 10
+  ~ Cemu NX: эмулятор Nintendo Wii U + игра DuckTales Remastered (Duck Tales / Утины
+  ~ DC Super Hero Girls Teen Power [NSP][RUS (Mod.)/ENG]
+  ~ VTech V.Smile — 12 игр (эмулятор D.Smile) [NRO][ENG]
   ~ Touhou 10 Mountain of Faith / Wonderful Waking World / 8 Imperishable Night / Yo
   ~ 22 судоку (Sudoku Relax, Universe, Master, Zenkai, Classic, Grandmaster и др.) +
-  ~ Hyperdimension Neptunia Unlimited / 超新時空ゲイム ネプテューヌ∞ [NSP][JAP]
+  ~ Sonic R (порт) [NRO][ENG]
   ~ Vita3K-nx: эмулятор Sony PlayStation Vita (PSV) + игра Gravity Rush / Daze [NRO]
   ~ The Legend of Zelda: The Minish Cap (нативный порт) [NRO][ENG]
   ~ Game and Watch, Электроника ИМ — 106 игр (эмулятор Yokoi, Sharp SM510) [NRO][ENG
   ~ NetherSX2 (бывш. AetherSX2) плюс ARMSX2 NX PS2: эмуляторы Sony PlayStation 2 PCS
-  ~ Star Fox Enhanced (порт Ultra StarFox Starwing SNES) [NRO][ENG]
-  ~ Brutal Doom (на GZDoom) [NRO][ENG]
-  ~ The Legend of Doom (на GZDoom) [NRO][ENG]
+Дообогащено: 2
+  * Великолепный Вовочка: Герой безопасного секса (порт Velikolepniy Vovochka) [NRO]
+  * Nova Hearts [NSP][ENG]
