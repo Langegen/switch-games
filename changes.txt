@@ -1,13 +1,19 @@
-=== 2026-09-18 03:01:09 ===
-Всего в базе: 7139
-Добавлено: 2
-  + Chronoquartz (Chrono Quartz) [NSZ][ENG]
-  + Mortal Glory 2 + DLC Reign of Tyrants [NSZ][ENG]
-Обновлено: 12
-  ~ Another Eden Begins [NSP][ENG]
-  ~ Коллекция ShootEmUp аркад, 395 шт. (R-Type Final 2, Ikaruga, Zero Gunner 2, Sky 
+=== 2026-09-20 03:00:52 ===
+Всего в базе: 7145
+Добавлено: 6
+  + Reus 2 + DLC Ice Age [NSZ][RUS/Multi7]
+  + Akiba Lost [NSP][ENG]
+  + Gizmoduck (Уткоробот, порт) [NRO][RUS/Multi14]
+  + Condemned Criminal Origins (хоумбрю-порт на Wine-NX) [NRO][RUS]
+  + Urban Jungle + DLC [NSZ][RUS/Multi10]
+  + Little Witch in the Woods [NSZ][ENG]
+Обновлено: 13
+  ~ The Grinch Christmas Adventures + DLC / The Grinch 2 Saving Christmas (Гринч: Ро
+  ~ Maestro + DLC [NSP][RUS/Multi10]
+  ~ Plants vs Zombies Fusion (порт) [NRO][ENG]
+  ~ Woodo [NSZ][RUS/Multi14]
+  ~ Tyrant's Realm [NSP][RUS/Multi11]
   ~ Великолепный Вовочка: Герой безопасного секса (порт Velikolepniy Vovochka) [NRO]
-  ~ Tales of Berseria Remastered + 11 DLC [NSZ][RUS/Multi6]
   ~ VTech V.Smile — 12 игр (эмулятор D.Smile) [NRO][ENG]
   ~ Touhou 10 Mountain of Faith / Wonderful Waking World / 8 Imperishable Night / Yo
   ~ 22 судоку (Sudoku Relax, Universe, Master, Zenkai, Classic, Grandmaster и др.) +
@@ -15,4 +21,3 @@
   ~ Vita3K-nx: эмулятор Sony PlayStation Vita (PSV) + игра Gravity Rush / Daze [NRO]
   ~ The Legend of Zelda: The Minish Cap (нативный порт) [NRO][ENG]
   ~ Game and Watch, Электроника ИМ — 106 игр (эмулятор Yokoi, Sharp SM510) [NRO][ENG
-  ~ NetherSX2 (бывш. AetherSX2) плюс ARMSX2 NX PS2: эмуляторы Sony PlayStation 2 PCS
