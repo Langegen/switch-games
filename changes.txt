@@ -1,18 +1,10 @@
-=== 2026-09-20 03:00:52 ===
+=== 2026-09-21 03:00:55 ===
 Всего в базе: 7145
-Добавлено: 6
-  + Reus 2 + DLC Ice Age [NSZ][RUS/Multi7]
-  + Akiba Lost [NSP][ENG]
-  + Gizmoduck (Уткоробот, порт) [NRO][RUS/Multi14]
-  + Condemned Criminal Origins (хоумбрю-порт на Wine-NX) [NRO][RUS]
-  + Urban Jungle + DLC [NSZ][RUS/Multi10]
-  + Little Witch in the Woods [NSZ][ENG]
-Обновлено: 13
-  ~ The Grinch Christmas Adventures + DLC / The Grinch 2 Saving Christmas (Гринч: Ро
-  ~ Maestro + DLC [NSP][RUS/Multi10]
+Обновлено: 12
+  ~ The Legend of Heroes: Trails in the Sky 2nd Chapter Remake + 30 DLC [NSZ][ENG]
   ~ Plants vs Zombies Fusion (порт) [NRO][ENG]
-  ~ Woodo [NSZ][RUS/Multi14]
-  ~ Tyrant's Realm [NSP][RUS/Multi11]
+  ~ Gizmoduck (Уткоробот, порт) [NRO][RUS/Multi14]
+  ~ Condemned Criminal Origins (хоумбрю-порт на Wine-NX) [NRO][RUS]
   ~ Великолепный Вовочка: Герой безопасного секса (порт Velikolepniy Vovochka) [NRO]
   ~ VTech V.Smile — 12 игр (эмулятор D.Smile) [NRO][ENG]
   ~ Touhou 10 Mountain of Faith / Wonderful Waking World / 8 Imperishable Night / Yo
