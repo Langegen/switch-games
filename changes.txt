@@ -1,24 +1,10 @@
-=== 2026-09-22 09:00:59 ===
-Всего в базе: 7145
-Обновлено: 27
-  ~ Captain Tsubasa 2: World Fighters + 5 DLC [NSZ][RUS (Mod.)/ENG]
-  ~ Realm of Ink [NSP][RUS/Multi10]
-  ~ The Garden Path [NSZ][ENG]
-  ~ Hello Kitty Island Adventure Deluxe edition + DLC The Tea Garden, City Town, Whe
-  ~ Aggelos 1-2 [NSP][RUS/Multi10]
-  ~ Minecraft [NSP][RUS/Multi11]
-  ~ The Lord of the Rings: War in the North Legacy edition (Властелин колец: Война н
-  ~ No Man's Sky + 23 экспедиции [NSP][RUS/Multi11]
-  ~ Mini Metro / Mini Motorways [NSZ][RUS/Multi11]
-  ~ Culdcept Begins [NSP][ENG]
-  ~ Absolum [NSP][RUS/Multi10]
-  ~ The Rogue Prince of Persia [NSZ][RUS/Multi13]
-  ~ Astroneer + DLC Megatech, Glitchwalkers [NSP][RUS/Multi11]
-  ~ Disgaea Mayhem + 3 DLC [NSZ][ENG]
-  ~ Dungeon Clawler [NSZ][RUS/Multi10]
-  ~ Fate Reawakened (Prometheus, Undiscovered Realms, The Traitor Soul, The Cursed K
-  ~ Marsupilami 2 Salsa Palombia [NSP][RUS (Mod.)/ENG]
-  ~ Quest of Dungeons [NSZ][RUS (Mod.)/ENG]
+=== 2026-09-22 13:00:57 ===
+Всего в базе: 7146
+Добавлено: 1
+  + Artis Impact [NSZ][RUS/Multi12]
+Обновлено: 10
+  ~ Core Keeper [NSZ][RUS/Multi9]
+  ~ Kingdom Two Crowns + DLC Call of Olympus + Norse Lands, Shogun, Dead Lands, Nors
   ~ Plants vs Zombies Fusion (порт) [NRO][ENG]
   ~ Gizmoduck (Уткоробот, порт) [NRO][RUS/Multi14]
   ~ Condemned Criminal Origins (хоумбрю-порт на Wine-NX) [NRO][RUS]
@@ -27,4 +13,3 @@
   ~ Touhou 10 Mountain of Faith / Wonderful Waking World / 8 Imperishable Night / Yo
   ~ 22 судоку (Sudoku Relax, Universe, Master, Zenkai, Classic, Grandmaster и др.) +
   ~ Sonic R (порт) [NRO][ENG]
-  ~ Vita3K-nx: эмулятор Sony PlayStation Vita (PSV) + игра Gravity Rush / Daze [NRO]
