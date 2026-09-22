@@ -1,13 +1,9 @@
-=== 2026-09-22 13:00:57 ===
+=== 2026-09-22 17:00:55 ===
 Всего в базе: 7146
-Добавлено: 1
-  + Artis Impact [NSZ][RUS/Multi12]
-Обновлено: 10
-  ~ Core Keeper [NSZ][RUS/Multi9]
-  ~ Kingdom Two Crowns + DLC Call of Olympus + Norse Lands, Shogun, Dead Lands, Nors
+Обновлено: 8
+  ~ Хоумбрю-порты на Wine-NX: Condemned: Criminal Origins, Deus Ex
   ~ Plants vs Zombies Fusion (порт) [NRO][ENG]
   ~ Gizmoduck (Уткоробот, порт) [NRO][RUS/Multi14]
-  ~ Condemned Criminal Origins (хоумбрю-порт на Wine-NX) [NRO][RUS]
   ~ Великолепный Вовочка: Герой безопасного секса (порт Velikolepniy Vovochka) [NRO]
   ~ VTech V.Smile — 12 игр (эмулятор D.Smile) [NRO][ENG]
   ~ Touhou 10 Mountain of Faith / Wonderful Waking World / 8 Imperishable Night / Yo
