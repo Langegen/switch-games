@@ -1,13 +1,6 @@
-=== 2026-09-23 13:01:00 ===
+=== 2026-09-23 17:00:56 ===
 Всего в базе: 7151
-Добавлено: 5
-  + GunGunGun / Gun Kid 99 [NSZ][ENG]
-  + Potion Party [NSZ][RUS/Multi6]
-  + A Tale for Anna [NSZ][RUS/Multi10]
-  + Lord Ambermaze [NSZ][RUS/Multi9]
-  + Well Dweller [NSZ][RUS/Multi8]
-Обновлено: 7
-  ~ LEGO Party [NSP][RUS (Mod.)/ENG]
+Обновлено: 6
   ~ Хоумбрю-порты на Wine-NX: Condemned: Criminal Origins, Deus Ex
   ~ Plants vs Zombies Fusion (порт) [NRO][ENG]
   ~ Gizmoduck (Уткоробот, порт) [NRO][RUS/Multi14]
