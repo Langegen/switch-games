@@ -1,11 +1,16 @@
-=== 2026-09-23 05:00:52 ===
-Всего в базе: 7146
-Обновлено: 8
+=== 2026-09-23 13:01:00 ===
+Всего в базе: 7151
+Добавлено: 5
+  + GunGunGun / Gun Kid 99 [NSZ][ENG]
+  + Potion Party [NSZ][RUS/Multi6]
+  + A Tale for Anna [NSZ][RUS/Multi10]
+  + Lord Ambermaze [NSZ][RUS/Multi9]
+  + Well Dweller [NSZ][RUS/Multi8]
+Обновлено: 7
+  ~ LEGO Party [NSP][RUS (Mod.)/ENG]
   ~ Хоумбрю-порты на Wine-NX: Condemned: Criminal Origins, Deus Ex
   ~ Plants vs Zombies Fusion (порт) [NRO][ENG]
   ~ Gizmoduck (Уткоробот, порт) [NRO][RUS/Multi14]
   ~ Великолепный Вовочка: Герой безопасного секса (порт Velikolepniy Vovochka) [NRO]
   ~ VTech V.Smile — 12 игр (эмулятор D.Smile) [NRO][ENG]
   ~ Touhou 10 Mountain of Faith / Wonderful Waking World / 8 Imperishable Night / Yo
-  ~ 22 судоку (Sudoku Relax, Universe, Master, Zenkai, Classic, Grandmaster и др.) +
-  ~ Sonic R (порт) [NRO][ENG]
