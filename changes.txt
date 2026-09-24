@@ -1,9 +1,12 @@
-=== 2026-09-24 05:00:53 ===
-Всего в базе: 7151
-Обновлено: 6
-  ~ Хоумбрю-порты на Wine-NX: Condemned: Criminal Origins, Deus Ex
+=== 2026-09-24 09:01:01 ===
+Всего в базе: 7152
+Добавлено: 1
+  + Graveyard Keeper II (2) + DLC [NSZ][RUS/Multi11]
+Обновлено: 7
+  ~ Fate Reawakened (Prometheus, Undiscovered Realms, The Traitor Soul, The Cursed K
+  ~ LEGO Party [NSP][RUS (Mod.)/ENG]
+  ~ Хоумбрю-порты на Wine-NX: Condemned Criminal Origins, Deus Ex, Dead Space [NRO][
+  ~ Monster Prom XXL / Prom 2 Monster Camp XXL / Prom 3 Monster Roadtrip XXL / 4 Mon
   ~ Plants vs Zombies Fusion (порт) [NRO][ENG]
   ~ Gizmoduck (Уткоробот, порт) [NRO][RUS/Multi14]
   ~ Великолепный Вовочка: Герой безопасного секса (порт Velikolepniy Vovochka) [NRO]
-  ~ VTech V.Smile — 12 игр (эмулятор D.Smile) [NRO][ENG]
-  ~ Touhou 10 Mountain of Faith / Wonderful Waking World / 8 Imperishable Night / Yo
