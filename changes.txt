@@ -1,7 +1,6 @@
-=== 2026-09-24 17:00:56 ===
+=== 2026-09-24 21:00:54 ===
 Всего в базе: 7152
-Обновлено: 5
-  ~ Sega Genesis / Mega Drive: Nintendo Switch Online (официальные игры NSO) + 2 кас
+Обновлено: 4
   ~ Хоумбрю-порты на Wine-NX: Condemned Criminal Origins, Deus Ex, Dead Space [NRO][
   ~ Plants vs Zombies Fusion (порт) [NRO][ENG]
   ~ Gizmoduck (Уткоробот, порт) [NRO][RUS/Multi14]
