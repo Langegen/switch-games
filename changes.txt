@@ -1,28 +1,4 @@
-=== 2026-09-26 10:25:56 ===
+=== 2026-09-26 13:00:51 ===
 Всего в базе: 7158
-Добавлено: 6
-  + Sin Reloaded Gold + Wages of Sin [NSZ][ENG]
-  + EA Sports FC 27 [NSP][RUS/Multi11]
-  + Qliphah in Providence's Shadow [NSP][ENG]
-  + Kalanoro [NSP][RUS/Multi8]
-  + Tentacle Tango [NSZ][ENG]
-  + Garfield Escape from Monday [NSP][ENG]
-Обновлено: 18
-  ~ Pit Panic [NSP][RUS (Mod.)/ENG]
-  ~ Noobs Want to Live [NSZ][ENG]
-  ~ Choppa Rescue Rivals [NSZ][ENG]
-  ~ Ila a Frosty Glide [NSP][RUS/Multi11]
-  ~ Clone Drone in the Danger Zone [NSZ][RUS/Multi10]
-  ~ Tokyo Valkyries [NSZ][ENG]
-  ~ Cozy Caravan [NSZ][RUS/Multi12]
-  ~ Moomintroll: Winter's Warmth / Snufkin Melody of Moominvalley (Снусмумрик: Мелод
-  ~ Demonschool (Demon School) [NSZ][RUS (Mod.)/ENG]
-  ~ Obakeidoro 2 Chase and Seek [NSZ][ENG]
-  ~ Hunt the Night [NSZ][RUS/Multi9]
-  ~ Until Then + DLC Afterimages [NSZ][ENG]
-  ~ Echoes of the Plum Grove [NSZ][RUS (Mod.)/ENG]
+Обновлено: 1
   ~ Хоумбрю-порты на Wine-NX: Condemned Criminal Origins, Deus Ex, Dead Space [NRO][
-  ~ Under Night In-birth II (2) Sys Celes + 5 DLC [NSP][ENG]
-  ~ Terraria [NSZ][RUS/Multi7]
-  ~ Lucky Tower Ultimate [NSZ][RUS/Multi9]
-  ~ Ghost Master Resurrection + 9 DLC [NSP][RUS/Multi9]
