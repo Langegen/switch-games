@@ -1,4 +1,9 @@
-=== 2026-09-28 09:00:50 ===
-Всего в базе: 7158
-Обновлено: 1
+=== 2026-09-28 13:00:58 ===
+Всего в базе: 7159
+Добавлено: 1
+  + Jurassic World Aftermath Collection (Парк юрского периода: Коллекция) [RePack][N
+Обновлено: 4
+  ~ No Man's Sky + 23 экспедиции [NSP][RUS/Multi11]
+  ~ Deltarune: Chapter 1-2-3-4-5 [NSZ][RUS (Mod.)/ENG]
+  ~ Golden Force [NSZ][RUS (Mod.)/ENG]
   ~ Хоумбрю-порты на Wine-NX: Condemned Criminal Origins, Deus Ex, Dead Space [NRO][
