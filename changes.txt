@@ -1,13 +1,12 @@
-=== 2026-09-29 17:00:56 ===
-Всего в базе: 7164
-Добавлено: 5
-  + Blades and Battles [NSZ][RUS/Multi10]
-  + Farming Camp [NSZ][ENG]
-  + Minecraft Dungeons II (2) + DLC [NSP][RUS/Multi9]
-  + Fountains + DLC Shattered Shape [NSZ][RUS/Multi9]
-  + The Posthumous Investigation [NSZ][RUS/Multi6]
+=== 2026-09-29 21:00:48 ===
+Всего в базе: 7168
+Добавлено: 4
+  + The Convenience Store [NSP][ENG]
+  + Mr Sleepy Man [NSZ][ENG]
+  + Neko Odyssey [NSZ][ENG]
+  + Puppergeist (Pupper Geist) [NSZ][RUS/Multi6]
 Обновлено: 4
-  ~ Outbound + DLC [NSZ][RUS/Multi10]
-  ~ Quake + Dawn of the Machine + 11 DLC + 37 кастомных модов [NSZ][RUS/Multi6]
-  ~ Raging Loop [NSP][RUS (Mod.)/ENG]
+  ~ Uno + 13 DLC [NSZ][RUS/Multi9]
+  ~ Gang Beasts [NSZ][RUS (Mod.)/ENG]
+  ~ Farlands (Far Lands) [NSZ][RUS/Multi7]
   ~ Хоумбрю-порты на Wine-NX: Condemned Criminal Origins, Deus Ex, Dead Space [NRO][
