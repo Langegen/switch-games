@@ -1,4 +1,13 @@
-=== 2026-09-29 13:00:50 ===
-Всего в базе: 7159
-Обновлено: 1
+=== 2026-09-29 17:00:56 ===
+Всего в базе: 7164
+Добавлено: 5
+  + Blades and Battles [NSZ][RUS/Multi10]
+  + Farming Camp [NSZ][ENG]
+  + Minecraft Dungeons II (2) + DLC [NSP][RUS/Multi9]
+  + Fountains + DLC Shattered Shape [NSZ][RUS/Multi9]
+  + The Posthumous Investigation [NSZ][RUS/Multi6]
+Обновлено: 4
+  ~ Outbound + DLC [NSZ][RUS/Multi10]
+  ~ Quake + Dawn of the Machine + 11 DLC + 37 кастомных модов [NSZ][RUS/Multi6]
+  ~ Raging Loop [NSP][RUS (Mod.)/ENG]
   ~ Хоумбрю-порты на Wine-NX: Condemned Criminal Origins, Deus Ex, Dead Space [NRO][
