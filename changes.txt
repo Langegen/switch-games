@@ -1,4 +1,9 @@
-=== 2026-09-30 05:00:49 ===
-Всего в базе: 7168
-Обновлено: 1
+=== 2026-09-30 09:00:50 ===
+Всего в базе: 7170
+Добавлено: 2
+  + Pools / The Pools / Anomaly Pools [NSZ][ENG,RUS]
+  + The Merlies [NSZ][ENG]
+Обновлено: 3
+  ~ Doraemon Story of Seasons [NSZ][RUS (Mod.)/ENG]
+  ~ The Room / The Room Two (2) / Three 3 / 4 Old Sins [NSZ][ENG,RUS (Mod.)]
   ~ Хоумбрю-порты на Wine-NX: Condemned Criminal Origins, Deus Ex, Dead Space [NRO][
