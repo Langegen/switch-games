@@ -1,12 +1,4 @@
-=== 2026-09-29 21:00:48 ===
+=== 2026-09-30 01:00:45 ===
 Всего в базе: 7168
-Добавлено: 4
-  + The Convenience Store [NSP][ENG]
-  + Mr Sleepy Man [NSZ][ENG]
-  + Neko Odyssey [NSZ][ENG]
-  + Puppergeist (Pupper Geist) [NSZ][RUS/Multi6]
-Обновлено: 4
-  ~ Uno + 13 DLC [NSZ][RUS/Multi9]
-  ~ Gang Beasts [NSZ][RUS (Mod.)/ENG]
-  ~ Farlands (Far Lands) [NSZ][RUS/Multi7]
+Обновлено: 1
   ~ Хоумбрю-порты на Wine-NX: Condemned Criminal Origins, Deus Ex, Dead Space [NRO][
