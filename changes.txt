@@ -1,4 +1,11 @@
-=== 2026-09-30 17:00:54 ===
-Всего в базе: 7170
-Обновлено: 1
+=== 2026-09-30 21:00:48 ===
+Всего в базе: 7171
+Добавлено: 1
+  + King's Blade [NSZ][RUS/Multi10]
+Обновлено: 6
+  ~ Dragon Quest Heroes: Torneko's Mystery Dungeon Classic HD [NSP][ENG]
+  ~ K-Pop Idol Stories Road to Debut [NSZ][ENG]
+  ~ Unrailed 2 Back on Track [NSZ][RUS/Multi10]
+  ~ Easy Delivery Co [NSZ][RUS/Multi12]
+  ~ The King is Watching [NSP][RUS/Multi10]
   ~ Хоумбрю-порты на Wine-NX: Condemned Criminal Origins, Deus Ex, Dead Space [NRO][
