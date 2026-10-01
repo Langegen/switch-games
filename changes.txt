@@ -1,9 +1,7 @@
-=== 2026-10-01 09:00:51 ===
-Всего в базе: 7173
-Добавлено: 2
-  + Keep Driving [NSZ][RUS/Multi8]
-  + Castlevania Belmont's Curse (демонстрационная версия) [NSP][DEMO][RUS/Multi11]
-Обновлено: 3
+=== 2026-10-01 13:00:53 ===
+Всего в базе: 7174
+Добавлено: 1
+  + Far Cry (хоумбрю nearChuckle) [NRO][RUS]
+Обновлено: 2
+  ~ Sacred 2 Remaster [RePack][NSZ][RUS (Mod.)]
   ~ Touhou 11 Subterranean Animism / 10 Mountain of Faith / 9 Phantasmagoria of Flow
-  ~ Chocobos Mystery Dungeon Every Buddy (Final Fantasy Fables: Chocobo's Dungeon / 
-  ~ Isle of Reveries [NSP][RUS (Mod.)/ENG]
