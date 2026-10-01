@@ -1,7 +1,7 @@
-=== 2026-10-01 13:00:53 ===
-Всего в базе: 7174
+=== 2026-10-01 17:00:55 ===
+Всего в базе: 7175
 Добавлено: 1
-  + Far Cry (хоумбрю nearChuckle) [NRO][RUS]
+  + Need For Speed Underground 2 (хоумбрю NFS:U2) [NRO][ENG]
 Обновлено: 2
-  ~ Sacred 2 Remaster [RePack][NSZ][RUS (Mod.)]
+  ~ Far Cry (хоумбрю nearChuckle) [NRO][RUS]
   ~ Touhou 11 Subterranean Animism / 10 Mountain of Faith / 9 Phantasmagoria of Flow
