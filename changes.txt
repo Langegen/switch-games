@@ -1,7 +1,11 @@
-=== 2026-10-01 17:00:55 ===
-Всего в базе: 7175
-Добавлено: 1
-  + Need For Speed Underground 2 (хоумбрю NFS:U2) [NRO][ENG]
-Обновлено: 2
+=== 2026-10-01 21:00:49 ===
+Всего в базе: 7178
+Добавлено: 3
+  + noJME, эмулятор J2ME-игр: Doom RPG, Colin McRae Dirt 3D, Orcs and Elves, Galaxy 
+  + Sonic and SEGA All Stars Racing (порт) [NRO][ENG]
+  + Asphalt 8 Airborne Retry (порт) [NRO][RUS/Multi11]
+Обновлено: 4
+  ~ Astonishia Story (어스토니시아 스토리) [NSZ][RUS (Mod.)/ENG]
+  ~ Need For Speed Underground 2 (хоумбрю NFS:U2) [NRO][ENG]
   ~ Far Cry (хоумбрю nearChuckle) [NRO][RUS]
   ~ Touhou 11 Subterranean Animism / 10 Mountain of Faith / 9 Phantasmagoria of Flow
