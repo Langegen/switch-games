@@ -1,4 +1,9 @@
-=== 2026-10-01 05:00:48 ===
-Всего в базе: 7171
-Обновлено: 1
-  ~ Хоумбрю-порты на Wine-NX: Condemned Criminal Origins, Deus Ex, Dead Space [NRO][
+=== 2026-10-01 09:00:51 ===
+Всего в базе: 7173
+Добавлено: 2
+  + Keep Driving [NSZ][RUS/Multi8]
+  + Castlevania Belmont's Curse (демонстрационная версия) [NSP][DEMO][RUS/Multi11]
+Обновлено: 3
+  ~ Touhou 11 Subterranean Animism / 10 Mountain of Faith / 9 Phantasmagoria of Flow
+  ~ Chocobos Mystery Dungeon Every Buddy (Final Fantasy Fables: Chocobo's Dungeon / 
+  ~ Isle of Reveries [NSP][RUS (Mod.)/ENG]
