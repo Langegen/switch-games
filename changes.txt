@@ -1,15 +1,8 @@
-=== 2026-10-02 09:00:49 ===
+=== 2026-10-02 13:00:51 ===
 Всего в базе: 7179
-Добавлено: 1
-  + Sorcerer's Servant SweetWitch [NSZ][ENG]
-Обновлено: 13
+Обновлено: 8
+  ~ Under Night In-birth II (2) Sys Celes + 6 DLC [NSP][ENG]
   ~ The Legend of Zelda: The Minish Cap (нативный порт) [NRO][ENG]
-  ~ Everybody's Golf Hot Shots (гольф) [NSP][ENG]
-  ~ Sid Meier's Civilization VII (7) + 42 DLC [NSZ][RUS/Multi12]
-  ~ Mai Child of Ages + DLC Storms of Time [NSZ][RUS/Multi11]
-  ~ Easy Red 2 + DLC Stalingrad, Normandy, Ardennes 1940-1944, Shanghai Nanking, Blo
-  ~ Dave the Diver + 6 DLC (In the Jungle) [NSZ][RUS/Multi11]
-  ~ Astrea Six Sided Oracles [NSZ][RUS/Multi8]
   ~ Need For Speed Underground 2 (хоумбрю NFS:U2) [NRO][RUS/ENG]
   ~ noJME, эмулятор J2ME-игр: Doom RPG, Colin McRae Dirt 3D, Orcs and Elves, Galaxy 
   ~ Sonic and SEGA All Stars Racing (порт) [NRO][ENG]
