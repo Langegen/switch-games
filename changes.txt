@@ -1,7 +1,6 @@
-=== 2026-10-02 13:00:51 ===
+=== 2026-10-02 17:00:51 ===
 Всего в базе: 7179
-Обновлено: 8
-  ~ Under Night In-birth II (2) Sys Celes + 6 DLC [NSP][ENG]
+Обновлено: 7
   ~ The Legend of Zelda: The Minish Cap (нативный порт) [NRO][ENG]
   ~ Need For Speed Underground 2 (хоумбрю NFS:U2) [NRO][RUS/ENG]
   ~ noJME, эмулятор J2ME-игр: Doom RPG, Colin McRae Dirt 3D, Orcs and Elves, Galaxy 
