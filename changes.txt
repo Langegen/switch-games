@@ -1,8 +1,14 @@
-=== 2026-10-03 05:00:48 ===
-Всего в базе: 7179
-Обновлено: 7
-  ~ The Legend of Zelda: The Minish Cap (нативный порт) [NRO][ENG]
+=== 2026-10-03 09:00:51 ===
+Всего в базе: 7180
+Добавлено: 1
+  + Love Ghostie [NSZ][ENG]
+Обновлено: 11
+  ~ Sands of Aura [NSP][RUS/Multi9]
+  ~ Wingspan + 8 DLC [NSZ][RUS/Multi10]
+  ~ Little Witch in the Woods [NSZ][RUS (Mod.)/ENG]
   ~ Need For Speed Underground 2 (хоумбрю NFS:U2) [NRO][RUS/ENG]
+  ~ Pokemon Red + Blue + Yellow (порт gen1recomp) [NRO][ENG]
+  ~ The Legend of Zelda: The Minish Cap (нативный порт) [NRO][ENG]
   ~ noJME, эмулятор J2ME-игр: Doom RPG, Colin McRae Dirt 3D, Orcs and Elves, Galaxy 
   ~ Sonic and SEGA All Stars Racing (порт) [NRO][ENG]
   ~ Asphalt 8 Airborne Retry (порт) [NRO][RUS/Multi11]
