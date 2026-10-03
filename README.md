@@ -20,6 +20,7 @@
 | `test_connection.py` | диагностика доступа к RuTracker (curl/Chrome/bypass) |
 | `cf_utils.py` | клик по Turnstile-чекбоксу Cloudflare |
 | `switch_games.json` | база игр |
+| `switch_games_stats.json` | статистика раздач (сиды, пиры, загрузки, дата добавления) |
 | `changes.txt` | лог последнего запуска (генерируется) |
 | `.env` | куки и настройки (не коммитится) |
 
@@ -91,11 +92,14 @@ git remote set-url origin https://<TOKEN>@github.com/Langegen/switch-games.git
 
 ```bash
 bash run.sh                                        # полный цикл: pull → парсер → push
+./venv/bin/python3 scraper.py                      # запуск парсера и сбора статистики
+./venv/bin/python3 scraper.py --stats-only         # только сбор статистики раздач
+./venv/bin/python3 scraper.py --skip-stats         # только обновление базы без сбора статистики
 ./venv/bin/python3 login_rutracker.py ЛОГИН ПАРОЛЬ  # обновить куки
 ./venv/bin/python3 test_connection.py               # диагностика (запускать через xvfb-run)
 ```
 
-## Формат записи в базе
+## Формат записи в базе (switch_games.json)
 
 ```json
 {
@@ -117,6 +121,20 @@ bash run.sh                                        # полный цикл: pull
   "screenshots": ["https://i128.fastpic.org/thumb/..."],
   "description": "«Сумерки, природа, флейты голос нервный...",
   "title_id": "01003CB02246E000"
+}
+```
+
+## Формат файла статистики (switch_games_stats.json)
+
+```json
+{
+  "6890951": {
+    "seeds": 15,
+    "leeches": 2,
+    "downloads": 1250,
+    "registered_at": "2024-09-15 11:33:20",
+    "updated_at": "2026-10-03 14:45:00"
+  }
 }
 ```
 

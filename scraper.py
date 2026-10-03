@@ -10,6 +10,7 @@ if sys.stdout.encoding != 'utf-8':
     except Exception:
         pass
 import copy
+import datetime
 import json
 import re
 import sys
@@ -28,6 +29,7 @@ ATOM_FEED_URL = f"https://feed.rutracker.cc/atom/f/{FORUM_ID}.atom"
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 JSON_FILE = os.path.join(BASE_DIR, 'switch_games.json')
+STATS_FILE = os.path.join(BASE_DIR, 'switch_games_stats.json')
 
 # Куки сессии (заполняются при инициализации)
 SESSION_COOKIES = {}
@@ -753,10 +755,220 @@ def scrape_full_forum(output_file=None, max_pages=None):
     return results
 
 # ──────────────────────────────────────────────────────────────
+# Сбор статистики раздач (tracker.php)
+# ──────────────────────────────────────────────────────────────
+
+def parse_tracker_page(html):
+    """
+    Парсит страницу tracker.php (поиск/список раздач трекера).
+    Возвращает список словарей:
+    [
+        {
+            "topic_id": "6890951",
+            "seeds": 15,
+            "leeches": 2,
+            "downloads": 450,
+            "registered_at": "2026-09-15 14:20:00"
+        },
+        ...
+    ]
+    """
+    if not html:
+        return []
+
+    soup = BeautifulSoup(html, 'html.parser')
+    results = []
+
+    # Ищем строки таблицы раздач: #tor-tbl tr с id trs-tr-... или tr.hl-tr
+    rows = soup.select('#tor-tbl tr[id^="trs-tr-"]')
+    if not rows:
+        rows = soup.select('table.forumline tr.hl-tr')
+    if not rows:
+        rows = soup.select('tr.hl-tr')
+
+    for row in rows:
+        # 1. Topic ID
+        topic_id = None
+        link = row.select_one('a[data-topic_id]')
+        if link and link.get('data-topic_id'):
+            topic_id = link['data-topic_id'].strip()
+        else:
+            link = row.select_one('a.tt-text, a[href*="viewtopic.php?t="]')
+            if link and link.get('href'):
+                m = re.search(r't=(\d+)', link['href'])
+                if m:
+                    topic_id = m.group(1)
+
+        if not topic_id:
+            continue
+
+        # 2. Seeds
+        seeds = 0
+        seed_td = row.select_one('td.seedmed, span.seedmed, u.seedmed, td[class*="seed"]')
+        if seed_td:
+            ts = seed_td.get('data-ts_text')
+            if ts and ts.lstrip('-').isdigit():
+                seeds = max(0, int(ts))
+            else:
+                txt = seed_td.get_text(strip=True)
+                m = re.search(r'-?\d+', txt)
+                if m:
+                    seeds = max(0, int(m.group(0)))
+
+        # 3. Leeches
+        leeches = 0
+        leech_td = row.select_one('td.leechmed, span.leechmed, u.leechmed, td[class*="leech"]')
+        if leech_td:
+            ts = leech_td.get('data-ts_text')
+            if ts and ts.isdigit():
+                leeches = int(ts)
+            else:
+                txt = leech_td.get_text(strip=True)
+                m = re.search(r'\d+', txt)
+                if m:
+                    leeches = int(m.group(0))
+
+        # 4. Downloads
+        downloads = 0
+        downloads_td = None
+        if leech_td and leech_td.name == 'td':
+            downloads_td = leech_td.find_next_sibling('td')
+        elif leech_td:
+            parent_td = leech_td.find_parent('td')
+            if parent_td:
+                downloads_td = parent_td.find_next_sibling('td')
+
+        if downloads_td:
+            ts = downloads_td.get('data-ts_text')
+            if ts and ts.isdigit():
+                downloads = int(ts)
+            else:
+                raw_dl = re.sub(r'\D', '', downloads_td.get_text(strip=True))
+                if raw_dl:
+                    downloads = int(raw_dl)
+
+        # 5. Registered At (дата добавления/перезалива торрента)
+        registered_at = None
+        reg_td = None
+        if downloads_td:
+            reg_td = downloads_td.find_next_sibling('td')
+
+        if reg_td:
+            ts = reg_td.get('data-ts_text')
+            if ts and ts.isdigit():
+                try:
+                    dt = datetime.datetime.fromtimestamp(int(ts), datetime.timezone.utc)
+                    registered_at = dt.strftime('%Y-%m-%d %H:%M:%S')
+                except Exception:
+                    pass
+            if not registered_at:
+                txt = reg_td.get_text(' ', strip=True)
+                if txt:
+                    registered_at = txt
+
+        results.append({
+            "topic_id": str(topic_id),
+            "seeds": seeds,
+            "leeches": leeches,
+            "downloads": downloads,
+            "registered_at": registered_at
+        })
+
+    return results
+
+def scrape_torrents_stats(output_file=None, max_pages=None):
+    """
+    Обход tracker.php?f=1605 для сбора статистики (сиды, личи, загрузки, дата добавления)
+    по всем раздачам подраздела без захода в отдельные темы.
+    """
+    if output_file is None:
+        output_file = STATS_FILE
+
+    print("[*] Сбор статистики раздач (tracker.php)...")
+
+    # Загружаем существующую статистику, чтобы сохранить предыдущие данные
+    stats_data = {}
+    if os.path.exists(output_file):
+        try:
+            with open(output_file, 'r', encoding='utf-8') as f:
+                content = f.read()
+                if content:
+                    stats_data = json.loads(content)
+            print(f"[*] Загружена существующая статистика: {len(stats_data)} раздач.")
+        except Exception as e:
+            print(f"(!) Ошибка чтения {output_file}: {e}")
+
+    page_num = 0
+    total_parsed = 0
+    now_str = time.strftime('%Y-%m-%d %H:%M:%S')
+
+    while True:
+        if max_pages is not None and page_num >= max_pages:
+            print(f"[*] Достигнут лимит страниц ({max_pages}).")
+            break
+
+        start = page_num * 50
+        tracker_url = f"{BASE_URL}tracker.php?f={FORUM_ID}&start={start}"
+        print(f"\n--- Страница статистики {page_num + 1} ({tracker_url}) ---")
+
+        html = fetch_url(tracker_url, forum_url=True, wait_keywords=('tor-tbl', 'hl-tr', 'tracker'))
+        if not html:
+            print(f"[!] Не удалось загрузить страницу {page_num + 1}. Прерываем сбор статистики.")
+            break
+
+        if 'login.php' in html and 'tor-tbl' not in html:
+            print("[!] tracker.php требует авторизации. Проверьте RUTRACKER_COOKIES (bb_session, bb_guid) в .env.")
+            break
+
+        page_entries = parse_tracker_page(html)
+        if not page_entries:
+            print(f"[*] На странице {page_num + 1} нет раздач. Завершение сбора статистики.")
+            break
+
+        new_on_page = 0
+        for entry in page_entries:
+            tid = entry["topic_id"]
+            stats_data[tid] = {
+                "seeds": entry["seeds"],
+                "leeches": entry["leeches"],
+                "downloads": entry["downloads"],
+                "registered_at": entry["registered_at"],
+                "updated_at": now_str
+            }
+            new_on_page += 1
+            total_parsed += 1
+
+        print(f"  [+] Обработано раздач на странице: {new_on_page} (всего в текущей сессии: {total_parsed})")
+
+        # Сохраняем каждые 10 страниц
+        if (page_num + 1) % 10 == 0:
+            _save_json(stats_data, output_file)
+            print(f"  [~] Промежуточное сохранение статистики: {len(stats_data)} раздач.")
+
+        if len(page_entries) < 50:
+            print(f"[*] Последняя страница ({len(page_entries)} раздач). Конец списка.")
+            break
+
+        page_num += 1
+        time.sleep(0.5)
+
+    _save_json(stats_data, output_file)
+    print(f"\n[+] Сбор статистики завершён. Сохранено {len(stats_data)} записей в {output_file}")
+
+    total_seeds = sum(item.get('seeds', 0) for item in stats_data.values())
+    total_downloads = sum(item.get('downloads', 0) for item in stats_data.values())
+
+    return {
+        "total": len(stats_data),
+        "total_seeds": total_seeds,
+        "total_downloads": total_downloads
+    }
+
+# ──────────────────────────────────────────────────────────────
 # Обновление по Atom-ленте
 # ──────────────────────────────────────────────────────────────
 
-def run_scraper():
+def run_scraper(skip_stats=False, stats_max_pages=None):
     """
     Основной скрипт:
     - Если switch_games.json НЕ существует → полный парсинг всех страниц форума
@@ -880,13 +1092,21 @@ def run_scraper():
     else:
         print("[=] Проверка завершена. Новых и обновлённых раздач нет.")
 
+    stats_info = None
+    if not skip_stats:
+        try:
+            stats_info = scrape_torrents_stats(max_pages=stats_max_pages)
+        except Exception as e:
+            print(f"(!) Ошибка сбора статистики: {e}")
+
     _write_changes_log(added_titles, updated_titles, enriched_titles,
-                       len(existing_data), magnets=magnet_titles)
+                       len(existing_data), magnets=magnet_titles,
+                       stats_info=stats_info)
 
 CHANGES_FILE = os.path.join(BASE_DIR, 'changes.txt')
 ENRICH_STATE_FILE = os.path.join(BASE_DIR, 'enrich_state.json')
 
-def _write_changes_log(added, updated, enriched, total, magnets=None):
+def _write_changes_log(added, updated, enriched, total, magnets=None, stats_info=None):
     """Лог изменений в changes.txt (перезаписывается при каждом запуске)."""
     magnets = magnets or []
     lines = [f"=== {time.strftime('%Y-%m-%d %H:%M:%S')} ===",
@@ -903,7 +1123,11 @@ def _write_changes_log(added, updated, enriched, total, magnets=None):
     if magnets:
         lines.append(f"Перезалит magnet: {len(magnets)}")
         lines += [f"  # {t}" for t in magnets]
-    if not (added or updated or enriched or magnets):
+    if stats_info:
+        lines.append(f"Статистика обновлена: {stats_info.get('total', 0)} раздач")
+        lines.append(f"  * Активных сидов: {stats_info.get('total_seeds', 0)}")
+        lines.append(f"  * Всего загрузок: {stats_info.get('total_downloads', 0)}")
+    if not (added or updated or enriched or magnets or stats_info):
         lines.append("Изменений нет")
     try:
         with open(CHANGES_FILE, 'w', encoding='utf-8') as f:
@@ -1038,4 +1262,18 @@ def _save_json(data, filepath):
         print(f"(!) Ошибка записи JSON: {e}")
 
 if __name__ == "__main__":
-    run_scraper()
+    import argparse
+    parser = argparse.ArgumentParser(description="RuTracker Nintendo Switch Scraper & Stats Collector")
+    parser.add_argument("--stats-only", action="store_true", help="Собрать только статистику раздач (tracker.php)")
+    parser.add_argument("--skip-stats", action="store_true", help="Пропустить сбор статистики (только база switch_games.json)")
+    parser.add_argument("--stats-max-pages", type=int, default=None, help="Лимит страниц при сборе статистики (для тестов)")
+    parser.add_argument("--full", action="store_true", help="Принудительный полный парсинг всех тем форума")
+    args = parser.parse_args()
+
+    if args.full:
+        scrape_full_forum()
+    elif args.stats_only:
+        scrape_torrents_stats(max_pages=args.stats_max_pages)
+    else:
+        run_scraper(skip_stats=args.skip_stats, stats_max_pages=args.stats_max_pages)
+
