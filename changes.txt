@@ -1,4 +1,4 @@
-=== 2026-10-03 14:27:41 ===
+=== 2026-10-03 21:39:12 ===
 Всего в базе: 7182
 Обновлено: 8
   ~ Need For Speed Underground 2 (хоумбрю NFS:U2) [NRO][RUS/ENG]
@@ -9,3 +9,7 @@
   ~ Asphalt 8 Airborne Retry (порт) [NRO][RUS/Multi11]
   ~ Far Cry (хоумбрю nearChuckle) [NRO][RUS]
   ~ Touhou 11 Subterranean Animism / 10 Mountain of Faith / 9 Phantasmagoria of Flow
+Статистика обновлена: 7193 раздач
+  * Покрытие базы: 100.2%
+  * Активных сидов: 101363
+  * Всего загрузок: 7476429
