@@ -42,6 +42,19 @@ UA_OVERRIDE = os.environ.get("RUTRACKER_UA", "").strip()
 if UA_OVERRIDE:
     USER_AGENT = UA_OVERRIDE
 
+# Автоматическая загрузка .env если переменные не переданы через окружение
+_env_path = os.path.join(BASE_DIR, '.env')
+if os.path.exists(_env_path):
+    with open(_env_path, 'r', encoding='utf-8') as _f:
+        for _line in _f:
+            _line = _line.strip()
+            if _line and not _line.startswith('#') and '=' in _line:
+                _k, _v = _line.split('=', 1)
+                _k = _k.strip()
+                _v = _v.strip().strip('"').strip("'")
+                if _k not in os.environ:
+                    os.environ[_k] = _v
+
 # Опциональные куки авторизации из переменной окружения
 ENV_COOKIES_RAW = os.environ.get("RUTRACKER_COOKIES", "").strip()
 if ENV_COOKIES_RAW:
@@ -416,8 +429,8 @@ def fetch_url(url, forum_url=False, is_post=False, post_data=None, wait_keywords
     2. При ошибке — Chrome fallback (cf_clearance привязан к браузеру, поэтому
        возвращаем Chrome HTML напрямую, не пытаемся снова через curl_cffi)
     """
-    keywords = ('hl-tr', 'forumtable') if forum_url else ('post_body', 'attach_link')
-    wait_kw = wait_keywords or (('hl-tr', 'forumtable') if forum_url else ('post_body', 'attach_link', 'viewtopic'))
+    keywords = wait_keywords or (('hl-tr', 'forumtable') if forum_url else ('post_body', 'attach_link'))
+    wait_kw = keywords
 
     # 0. Локальный CloudflareBypassForScraping (mirror mode), если настроен
     if CF_BYPASS_URL:
@@ -989,12 +1002,15 @@ def _crawl_tracker_query(base_tracker_url, stats_data, output_file=None, max_pag
         if not html:
             break
 
-        if 'login.php' in html and 'tor-tbl' not in html:
-            print("[!] tracker.php требует авторизации. Проверьте RUTRACKER_COOKIES (bb_session, bb_guid) в .env.")
-            return -1
-
         if 'слишком коротк' in html.lower() or 'too short' in html.lower():
             return -2
+
+        if 'не найдено' in html.lower() or 'not found' in html.lower():
+            break
+
+        if 'login_username' in html or ('login.php' in html and 'profile.php' not in html and 'tor-tbl' not in html):
+            print("[!] tracker.php требует авторизации. Проверьте RUTRACKER_COOKIES (bb_session, bb_guid) в .env.")
+            return -1
 
         page_entries = parse_tracker_page(html)
         if not page_entries:
