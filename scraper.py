@@ -802,31 +802,43 @@ def parse_tracker_page(html):
         if not topic_id:
             continue
 
-        # 2. Seeds
-        seeds = 0
-        seed_td = row.select_one('td.seedmed, span.seedmed, u.seedmed, td[class*="seed"]')
-        if seed_td:
-            ts = seed_td.get('data-ts_text')
-            if ts and ts.lstrip('-').isdigit():
-                seeds = max(0, int(ts))
-            else:
-                txt = seed_td.get_text(strip=True)
-                m = re.search(r'-?\d+', txt)
-                if m:
-                    seeds = max(0, int(m.group(0)))
-
-        # 3. Leeches
+        # 2. Leeches (класс leechmed стабильно присутствует на ячейке или внутри)
         leeches = 0
         leech_td = row.select_one('td.leechmed, span.leechmed, u.leechmed, td[class*="leech"]')
         if leech_td:
-            ts = leech_td.get('data-ts_text')
-            if ts and ts.isdigit():
-                leeches = int(ts)
+            b_tag = leech_td.find('b')
+            leech_txt = b_tag.get_text(strip=True) if b_tag else leech_td.get_text(strip=True)
+            m = re.search(r'\d+', leech_txt)
+            if m:
+                leeches = int(m.group(0))
             else:
-                txt = leech_td.get_text(strip=True)
-                m = re.search(r'\d+', txt)
-                if m:
-                    leeches = int(m.group(0))
+                ts = leech_td.get('data-ts_text')
+                if ts and ts.isdigit():
+                    leeches = int(ts)
+
+        # 3. Seeds (находится в колонке непосредственно перед leech_td)
+        seeds = 0
+        seed_td = None
+        if leech_td and leech_td.name == 'td':
+            seed_td = leech_td.find_previous_sibling('td')
+        elif leech_td:
+            parent_td = leech_td.find_parent('td')
+            if parent_td:
+                seed_td = parent_td.find_previous_sibling('td')
+
+        if not seed_td:
+            seed_td = row.select_one('td.seedmed, b.seedmed, span.seedmed, u.seedmed, td[class*="seed"]')
+
+        if seed_td:
+            b_tag = seed_td.find('b')
+            seed_txt = b_tag.get_text(strip=True) if b_tag else seed_td.get_text(strip=True)
+            m = re.search(r'\d+', seed_txt)
+            if m:
+                seeds = int(m.group(0))
+            else:
+                ts = seed_td.get('data-ts_text')
+                if ts and ts.lstrip('-').isdigit():
+                    seeds = max(0, int(ts))
 
         # 4. Downloads
         downloads = 0
@@ -876,10 +888,66 @@ def parse_tracker_page(html):
 
     return results
 
-def scrape_torrents_stats(output_file=None, max_pages=None):
+def _crawl_tracker_query(base_tracker_url, stats_data, output_file, max_pages=None, now_str=None):
+    """Обходит страницы tracker.php для заданного URL (с параметром nm или без)."""
+    if now_str is None:
+        now_str = time.strftime('%Y-%m-%d %H:%M:%S')
+    page_num = 0
+    total_found = 0
+
+    while True:
+        if max_pages is not None and page_num >= max_pages:
+            break
+
+        start = page_num * 50
+        sep = '&' if '?' in base_tracker_url else '?'
+        tracker_url = f"{base_tracker_url}{sep}start={start}"
+
+        html = fetch_url(tracker_url, forum_url=True, wait_keywords=('tor-tbl', 'hl-tr', 'tracker'))
+        if not html:
+            break
+
+        if 'login.php' in html and 'tor-tbl' not in html:
+            print("[!] tracker.php требует авторизации. Проверьте RUTRACKER_COOKIES (bb_session, bb_guid) в .env.")
+            return -1
+
+        if 'слишком коротк' in html.lower() or 'too short' in html.lower():
+            return -2
+
+        page_entries = parse_tracker_page(html)
+        if not page_entries:
+            break
+
+        new_on_page = 0
+        for entry in page_entries:
+            tid = entry["topic_id"]
+            stats_data[tid] = {
+                "seeds": entry["seeds"],
+                "leeches": entry["leeches"],
+                "downloads": entry["downloads"],
+                "registered_at": entry["registered_at"],
+                "updated_at": now_str
+            }
+            new_on_page += 1
+            total_found += 1
+
+        if len(page_entries) < 50:
+            break
+
+        page_num += 1
+        time.sleep(0.3)
+
+    return total_found
+
+def scrape_torrents_stats(output_file=None, max_pages=None, full_scan=True):
     """
     Обход tracker.php?f=1605 для сбора статистики (сиды, личи, загрузки, дата добавления)
     по всем раздачам подраздела без захода в отдельные темы.
+
+    - Сначала собираются топ-500 самых свежих/активных раздач по общему запросу.
+    - При full_scan=True выполняется алфавитный обход (0-9, A-Z с разбивкой S/T, А-Я),
+      что позволяет обойти серверное ограничение RuTracker в 500 результатов на запрос
+      и охватить все ~7200 раздач подраздела.
     """
     if output_file is None:
         output_file = STATS_FILE
@@ -898,59 +966,66 @@ def scrape_torrents_stats(output_file=None, max_pages=None):
         except Exception as e:
             print(f"(!) Ошибка чтения {output_file}: {e}")
 
-    page_num = 0
-    total_parsed = 0
     now_str = time.strftime('%Y-%m-%d %H:%M:%S')
 
-    while True:
-        if max_pages is not None and page_num >= max_pages:
-            print(f"[*] Достигнут лимит страниц ({max_pages}).")
-            break
+    # 1. Общий сбор (последние 500 раздач без фильтра)
+    print("\n--- 1. Сбор свежих раздач (tracker.php топ-500) ---")
+    base_url = f"{BASE_URL}tracker.php?f={FORUM_ID}"
+    res = _crawl_tracker_query(base_url, stats_data, output_file, max_pages=max_pages, now_str=now_str)
+    if res == -1:
+        return {"total": len(stats_data), "total_seeds": 0, "total_downloads": 0}
 
-        start = page_num * 50
-        tracker_url = f"{BASE_URL}tracker.php?f={FORUM_ID}&start={start}"
-        print(f"\n--- Страница статистики {page_num + 1} ({tracker_url}) ---")
+    print(f"[+] Свежие раздачи обработаны: получено {max(0, res)} (всего в базе: {len(stats_data)})")
+    _save_json(stats_data, output_file)
 
-        html = fetch_url(tracker_url, forum_url=True, wait_keywords=('tor-tbl', 'hl-tr', 'tracker'))
-        if not html:
-            print(f"[!] Не удалось загрузить страницу {page_num + 1}. Прерываем сбор статистики.")
-            break
+    # 2. Алфавитный обход для полного сбора всех ~7200 раздач
+    if full_scan:
+        print("\n--- 2. Алфавитный обход раздач (tracker.php по префиксам) ---")
+        prefixes = [str(d) for d in range(10)]
+        for code in range(ord('A'), ord('Z') + 1):
+            letter = chr(code)
+            if letter in ('S', 'T'):
+                for sub in 'abcdefghijklmnopqrstuvwxyz':
+                    prefixes.append(f"{letter}{sub}")
+            else:
+                prefixes.append(letter)
 
-        if 'login.php' in html and 'tor-tbl' not in html:
-            print("[!] tracker.php требует авторизации. Проверьте RUTRACKER_COOKIES (bb_session, bb_guid) в .env.")
-            break
+        cyrillic = 'АБВГДЕЖЗИКЛМНОПРСТУФХЦЧШЩЭЮЯ'
+        for c in cyrillic:
+            prefixes.append(c)
 
-        page_entries = parse_tracker_page(html)
-        if not page_entries:
-            print(f"[*] На странице {page_num + 1} нет раздач. Завершение сбора статистики.")
-            break
+        processed_prefixes = 0
+        for prefix in prefixes:
+            if max_pages is not None and processed_prefixes >= max_pages:
+                print(f"[*] Достигнут лимит префиксов ({max_pages}).")
+                break
 
-        new_on_page = 0
-        for entry in page_entries:
-            tid = entry["topic_id"]
-            stats_data[tid] = {
-                "seeds": entry["seeds"],
-                "leeches": entry["leeches"],
-                "downloads": entry["downloads"],
-                "registered_at": entry["registered_at"],
-                "updated_at": now_str
-            }
-            new_on_page += 1
-            total_parsed += 1
+            encoded_nm = urllib.parse.quote(prefix.encode('cp1251', errors='replace'))
+            query_url = f"{BASE_URL}tracker.php?f={FORUM_ID}&nm={encoded_nm}"
 
-        print(f"  [+] Обработано раздач на странице: {new_on_page} (всего в текущей сессии: {total_parsed})")
+            prefix_res = _crawl_tracker_query(query_url, stats_data, output_file, max_pages=max_pages, now_str=now_str)
+            if prefix_res == -1:
+                break
+            elif prefix_res == -2:
+                # Если 1 буква слишком короткая для движка, расширяем до 2 символов
+                print(f"  [~] Префикс '{prefix}' слишком короткий, расширяем до 2 символов...")
+                for sub in 'abcdefghijklmnopqrstuvwxyz0123456789':
+                    sub_prefix = f"{prefix}{sub}"
+                    sub_encoded = urllib.parse.quote(sub_prefix.encode('cp1251', errors='replace'))
+                    sub_url = f"{BASE_URL}tracker.php?f={FORUM_ID}&nm={sub_encoded}"
+                    sub_res = _crawl_tracker_query(sub_url, stats_data, output_file, max_pages=max_pages, now_str=now_str)
+                    if sub_res > 0:
+                        print(f"    [+] '{sub_prefix}': +{sub_res} (всего: {len(stats_data)})")
+                    time.sleep(0.3)
+            elif prefix_res > 0:
+                print(f"  [+] Префикс '{prefix}': +{prefix_res} раздач (всего в базе: {len(stats_data)})")
 
-        # Сохраняем каждые 10 страниц
-        if (page_num + 1) % 10 == 0:
-            _save_json(stats_data, output_file)
-            print(f"  [~] Промежуточное сохранение статистики: {len(stats_data)} раздач.")
+            processed_prefixes += 1
+            if processed_prefixes % 10 == 0:
+                _save_json(stats_data, output_file)
+                print(f"  [~] Промежуточное сохранение: {len(stats_data)} раздач в {output_file}")
 
-        if len(page_entries) < 50:
-            print(f"[*] Последняя страница ({len(page_entries)} раздач). Конец списка.")
-            break
-
-        page_num += 1
-        time.sleep(0.5)
+            time.sleep(0.3)
 
     _save_json(stats_data, output_file)
     print(f"\n[+] Сбор статистики завершён. Сохранено {len(stats_data)} записей в {output_file}")
@@ -968,7 +1043,7 @@ def scrape_torrents_stats(output_file=None, max_pages=None):
 # Обновление по Atom-ленте
 # ──────────────────────────────────────────────────────────────
 
-def run_scraper(skip_stats=False, stats_max_pages=None):
+def run_scraper(skip_stats=False, stats_max_pages=None, full_scan=True):
     """
     Основной скрипт:
     - Если switch_games.json НЕ существует → полный парсинг всех страниц форума
@@ -1095,7 +1170,7 @@ def run_scraper(skip_stats=False, stats_max_pages=None):
     stats_info = None
     if not skip_stats:
         try:
-            stats_info = scrape_torrents_stats(max_pages=stats_max_pages)
+            stats_info = scrape_torrents_stats(max_pages=stats_max_pages, full_scan=full_scan)
         except Exception as e:
             print(f"(!) Ошибка сбора статистики: {e}")
 
@@ -1266,6 +1341,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="RuTracker Nintendo Switch Scraper & Stats Collector")
     parser.add_argument("--stats-only", action="store_true", help="Собрать только статистику раздач (tracker.php)")
     parser.add_argument("--skip-stats", action="store_true", help="Пропустить сбор статистики (только база switch_games.json)")
+    parser.add_argument("--stats-quick", action="store_true", help="Быстрый сбор статистики (только топ-500 без алфавитного обхода)")
     parser.add_argument("--stats-max-pages", type=int, default=None, help="Лимит страниц при сборе статистики (для тестов)")
     parser.add_argument("--full", action="store_true", help="Принудительный полный парсинг всех тем форума")
     args = parser.parse_args()
@@ -1273,7 +1349,7 @@ if __name__ == "__main__":
     if args.full:
         scrape_full_forum()
     elif args.stats_only:
-        scrape_torrents_stats(max_pages=args.stats_max_pages)
+        scrape_torrents_stats(max_pages=args.stats_max_pages, full_scan=not args.stats_quick)
     else:
-        run_scraper(skip_stats=args.skip_stats, stats_max_pages=args.stats_max_pages)
+        run_scraper(skip_stats=args.skip_stats, stats_max_pages=args.stats_max_pages, full_scan=not args.stats_quick)
 
