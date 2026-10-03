@@ -755,8 +755,29 @@ def scrape_full_forum(output_file=None, max_pages=None):
     return results
 
 # ──────────────────────────────────────────────────────────────
-# Сбор статистики раздач (tracker.php)
+# Сбор статистики раздач (tracker.php и viewtopic.php)
 # ──────────────────────────────────────────────────────────────
+
+def normalize_rutracker_date(dt_str):
+    """Приводит строковую дату RuTracker (15-Сен-24 14:20) к стандартному формату YYYY-MM-DD HH:MM:SS."""
+    if not dt_str:
+        return None
+    months = {
+        'янв': '01', 'фев': '02', 'мар': '03', 'апр': '04', 'май': '05', 'июн': '06',
+        'июл': '07', 'авг': '08', 'сен': '09', 'окт': '10', 'ноя': '11', 'дек': '12',
+        'jan': '01', 'feb': '02', 'mar': '03', 'apr': '04', 'may': '05', 'jun': '06',
+        'jul': '07', 'aug': '08', 'sep': '09', 'oct': '10', 'nov': '11', 'dec': '12'
+    }
+    m = re.match(r'(\d{1,2})-([А-Яа-яA-Za-z]{3})-(\d{2,4})\s+(\d{1,2}):(\d{2})(?::(\d{2}))?', dt_str.strip())
+    if m:
+        d, mon, y, h, mi, s = m.groups()
+        mon_num = months.get(mon.lower(), '01')
+        if len(y) == 2:
+            y = f'20{y}' if int(y) < 70 else f'19{y}'
+        s = s or '00'
+        return f'{y}-{mon_num}-{int(d):02d} {int(h):02d}:{mi}:{s}'
+    return dt_str.strip()
+
 
 def parse_tracker_page(html):
     """
@@ -876,7 +897,7 @@ def parse_tracker_page(html):
             if not registered_at:
                 txt = reg_td.get_text(' ', strip=True)
                 if txt:
-                    registered_at = txt
+                    registered_at = normalize_rutracker_date(txt)
 
         results.append({
             "topic_id": str(topic_id),
@@ -888,7 +909,68 @@ def parse_tracker_page(html):
 
     return results
 
-def _crawl_tracker_query(base_tracker_url, stats_data, output_file, max_pages=None, now_str=None):
+def parse_topic_stats(html):
+    """
+    Парсит сиды, личи, количество скачиваний и дату регистрации из страницы темы (viewtopic.php).
+    """
+    if not html:
+        return None
+    soup = BeautifulSoup(html, 'html.parser')
+    stats = {'seeds': 0, 'leeches': 0, 'downloads': 0, 'registered_at': None}
+
+    # 1. Сиды
+    seed_el = soup.select_one('span.seed, b.seed, span.seedmed, td.seedmed')
+    if seed_el:
+        m = re.search(r'\d+', seed_el.get_text())
+        if m:
+            stats['seeds'] = int(m.group(0))
+    if stats['seeds'] == 0:
+        m = re.search(r'Сиды\s*:\s*(?:<[^>]+>)*\s*(\d+)', html, re.IGNORECASE)
+        if m:
+            stats['seeds'] = int(m.group(1))
+
+    # 2. Личи
+    leech_el = soup.select_one('span.leech, b.leech, span.leechmed, td.leechmed')
+    if leech_el:
+        m = re.search(r'\d+', leech_el.get_text())
+        if m:
+            stats['leeches'] = int(m.group(0))
+    if stats['leeches'] == 0:
+        m = re.search(r'(?:Личи|Пиры)\s*:\s*(?:<[^>]+>)*\s*(\d+)', html, re.IGNORECASE)
+        if m:
+            stats['leeches'] = int(m.group(1))
+
+    # 3. Скачивания
+    dl_el = soup.select_one('#tor-completed, span.tor-completed')
+    if dl_el:
+        raw_dl = re.sub(r'\D', '', dl_el.get_text())
+        if raw_dl:
+            stats['downloads'] = int(raw_dl)
+    if stats['downloads'] == 0:
+        m = re.search(r'Скачан\s*:\s*(?:<[^>]+>)*\s*([0-9\s,]+)\s*раз', html, re.IGNORECASE)
+        if m:
+            raw_dl = re.sub(r'\D', '', m.group(1))
+            if raw_dl:
+                stats['downloads'] = int(raw_dl)
+
+    # 4. Дата регистрации
+    reg_m = re.search(r'Зарегистрирован\s*:\s*(?:<[^>]+>)*\s*([0-9]{1,2}-[А-Яа-яA-Za-z]{3}-[0-9]{2,4}\s+[0-9]{1,2}:[0-9]{2}(?::[0-9]{2})?|[0-9]{4}-[0-9]{2}-[0-9]{2}\s+[0-9]{2}:[0-9]{2}(?::[0-9]{2})?)', html, re.IGNORECASE)
+    if reg_m:
+        stats['registered_at'] = normalize_rutracker_date(reg_m.group(1))
+    if not stats['registered_at']:
+        for td in soup.find_all(['td', 'th', 'div', 'span']):
+            txt = td.get_text().strip()
+            if 'зарегистрирован' in txt.lower():
+                next_td = td.find_next_sibling('td')
+                if next_td:
+                    val = next_td.get_text(strip=True)
+                    if val and len(val) < 40:
+                        stats['registered_at'] = normalize_rutracker_date(val)
+                        break
+
+    return stats
+
+def _crawl_tracker_query(base_tracker_url, stats_data, output_file=None, max_pages=None, now_str=None, refreshed_ids=None):
     """Обходит страницы tracker.php для заданного URL (с параметром nm или без)."""
     if now_str is None:
         now_str = time.strftime('%Y-%m-%d %H:%M:%S')
@@ -920,7 +1002,7 @@ def _crawl_tracker_query(base_tracker_url, stats_data, output_file, max_pages=No
 
         new_on_page = 0
         for entry in page_entries:
-            tid = entry["topic_id"]
+            tid = str(entry["topic_id"])
             stats_data[tid] = {
                 "seeds": entry["seeds"],
                 "leeches": entry["leeches"],
@@ -928,6 +1010,8 @@ def _crawl_tracker_query(base_tracker_url, stats_data, output_file, max_pages=No
                 "registered_at": entry["registered_at"],
                 "updated_at": now_str
             }
+            if refreshed_ids is not None:
+                refreshed_ids.add(tid)
             new_on_page += 1
             total_found += 1
 
@@ -939,20 +1023,25 @@ def _crawl_tracker_query(base_tracker_url, stats_data, output_file, max_pages=No
 
     return total_found
 
-def scrape_torrents_stats(output_file=None, max_pages=None, full_scan=True):
+def scrape_torrents_stats(output_file=None, max_pages=None, full_scan=True, games_file=None):
     """
-    Обход tracker.php?f=1605 для сбора статистики (сиды, личи, загрузки, дата добавления)
-    по всем раздачам подраздела без захода в отдельные темы.
+    3-фазный сбор и поддержание актуальности статистики раздач (сиды, личи, загрузки, дата добавления)
+    по 100% игр из базы switch_games.json.
 
-    - Сначала собираются топ-500 самых свежих/активных раздач по общему запросу.
-    - При full_scan=True выполняется алфавитный обход (0-9, A-Z с разбивкой S/T, А-Я),
-      что позволяет обойти серверное ограничение RuTracker в 500 результатов на запрос
-      и охватить все ~7200 раздач подраздела.
+    - Фаза 1: Быстрый сбор через срезы tracker.php?f=1605 (по сидам, загрузкам, дате, размеру, названию).
+              За ~7-8 запросов сразу собираются 2500–3500 наиболее активных раздач без перехода в темы.
+    - Фаза 2: Точечный обход оставшихся раздач через viewtopic.php?t=ID для достижения 100% покрытия
+              всех 7182 тем. Сначала проверяются темы, у которых вообще нет статистики, затем — не обновлённые.
+              Прогресс сохраняется на диск каждые 25 тем.
+    - Фаза 3: Повторный обход первых 3 страниц трекера (tracker.php) для гарантированной свежести
+              самых новых и динамичных раздач после завершения Фазы 2.
     """
     if output_file is None:
         output_file = STATS_FILE
+    if games_file is None:
+        games_file = JSON_FILE
 
-    print("[*] Сбор статистики раздач (tracker.php)...")
+    print("[*] Сбор статистики раздач (3-фазный режим для 100% покрытия)...")
 
     # Загружаем существующую статистику, чтобы сохранить предыдущие данные
     stats_data = {}
@@ -966,77 +1055,120 @@ def scrape_torrents_stats(output_file=None, max_pages=None, full_scan=True):
         except Exception as e:
             print(f"(!) Ошибка чтения {output_file}: {e}")
 
+    # Загружаем список всех тем из базы switch_games.json
+    all_game_topics = []
+    if os.path.exists(games_file):
+        try:
+            with open(games_file, 'r', encoding='utf-8') as f:
+                gdata = json.load(f)
+                all_game_topics = [str(item['topic_id']) for item in gdata if item.get('topic_id')]
+            print(f"[*] Загружен список игр: {len(all_game_topics)} тем в {os.path.basename(games_file)}.")
+        except Exception as e:
+            print(f"(!) Ошибка чтения {games_file}: {e}")
+
     now_str = time.strftime('%Y-%m-%d %H:%M:%S')
+    refreshed_ids = set()
 
-    # 1. Общий сбор (последние 500 раздач без фильтра)
-    print("\n--- 1. Сбор свежих раздач (tracker.php топ-500) ---")
-    base_url = f"{BASE_URL}tracker.php?f={FORUM_ID}"
-    res = _crawl_tracker_query(base_url, stats_data, output_file, max_pages=max_pages, now_str=now_str)
-    if res == -1:
-        return {"total": len(stats_data), "total_seeds": 0, "total_downloads": 0}
+    # ──────────────────────────────────────────────────────────
+    # Фаза 1: Быстрый сбор через срезы tracker.php
+    # ──────────────────────────────────────────────────────────
+    print("\n--- Фаза 1: Сбор активных раздач через срезы tracker.php ---")
+    sort_slices = [
+        ("сиды (убыв.)", f"{BASE_URL}tracker.php?f={FORUM_ID}&o=10&s=2"),
+        ("скачивания (убыв.)", f"{BASE_URL}tracker.php?f={FORUM_ID}&o=4&s=2"),
+        ("дата (свежие)", f"{BASE_URL}tracker.php?f={FORUM_ID}&o=1&s=2"),
+        ("дата (старые)", f"{BASE_URL}tracker.php?f={FORUM_ID}&o=1&s=1"),
+        ("размер (крупные)", f"{BASE_URL}tracker.php?f={FORUM_ID}&o=7&s=2"),
+        ("название (A-Z)", f"{BASE_URL}tracker.php?f={FORUM_ID}&o=2&s=1"),
+        ("название (Z-A)", f"{BASE_URL}tracker.php?f={FORUM_ID}&o=2&s=2"),
+        ("личи (убыв.)", f"{BASE_URL}tracker.php?f={FORUM_ID}&o=11&s=2"),
+    ]
 
-    print(f"[+] Свежие раздачи обработаны: получено {max(0, res)} (всего в базе: {len(stats_data)})")
+    for label, slice_url in sort_slices:
+        print(f"  [*] Срез: {label}...")
+        res = _crawl_tracker_query(slice_url, stats_data, output_file, max_pages=max_pages, now_str=now_str, refreshed_ids=refreshed_ids)
+        if res == -1:
+            print("  [!] Остановка Фазы 1 из-за ошибки авторизации.")
+            break
+        print(f"      Получено записей: {max(0, res)} (уникально обновлено в этой сессии: {len(refreshed_ids)})")
+        time.sleep(0.5)
+
     _save_json(stats_data, output_file)
+    print(f"[+] Фаза 1 завершена: {len(refreshed_ids)} раздач обновлено (всего в базе статистики: {len(stats_data)})")
 
-    # 2. Алфавитный обход для полного сбора всех ~7200 раздач
-    if full_scan:
-        print("\n--- 2. Алфавитный обход раздач (tracker.php по префиксам) ---")
-        prefixes = [str(d) for d in range(10)]
-        for code in range(ord('A'), ord('Z') + 1):
-            letter = chr(code)
-            if letter in ('S', 'T'):
-                for sub in 'abcdefghijklmnopqrstuvwxyz':
-                    prefixes.append(f"{letter}{sub}")
+    # ──────────────────────────────────────────────────────────
+    # Фаза 2: Точечный обход оставшихся тем через viewtopic.php
+    # ──────────────────────────────────────────────────────────
+    if full_scan and all_game_topics:
+        missing_ids = [tid for tid in all_game_topics if tid not in stats_data]
+        stale_ids = [tid for tid in all_game_topics if tid in stats_data and tid not in refreshed_ids]
+        remaining_ids = missing_ids + stale_ids
+
+        total_remaining = len(remaining_ids)
+        print(f"\n--- Фаза 2: Обход оставшихся тем через viewtopic.php ({total_remaining} тем) ---")
+        print(f"  * Новых тем без статистики: {len(missing_ids)}")
+        print(f"  * Старых/не обновлённых в фазе 1 тем: {len(stale_ids)}")
+
+        if max_pages is not None:
+            phase2_limit = max_pages * 50 if max_pages > 1 else max_pages
+            remaining_ids = remaining_ids[:phase2_limit]
+            print(f"  [*] Установлен лимит Фазы 2: {len(remaining_ids)} тем.")
+
+        phase2_processed = 0
+        phase2_saved = 0
+        for tid in remaining_ids:
+            topic_url = f"{BASE_URL}viewtopic.php?t={tid}"
+            html = fetch_url(topic_url, forum_url=False, wait_keywords=('post_body', 'attach', 'viewtopic'))
+            if html:
+                parsed = parse_topic_stats(html)
+                if parsed:
+                    stats_data[tid] = {
+                        "seeds": parsed["seeds"],
+                        "leeches": parsed["leeches"],
+                        "downloads": parsed["downloads"],
+                        "registered_at": parsed["registered_at"],
+                        "updated_at": now_str
+                    }
+                    refreshed_ids.add(tid)
+                    phase2_processed += 1
             else:
-                prefixes.append(letter)
+                print(f"  [!] Не удалось получить тему {tid}")
 
-        cyrillic = 'АБВГДЕЖЗИКЛМНОПРСТУФХЦЧШЩЭЮЯ'
-        for c in cyrillic:
-            prefixes.append(c)
-
-        processed_prefixes = 0
-        for prefix in prefixes:
-            if max_pages is not None and processed_prefixes >= max_pages:
-                print(f"[*] Достигнут лимит префиксов ({max_pages}).")
-                break
-
-            encoded_nm = urllib.parse.quote(prefix.encode('cp1251', errors='replace'))
-            query_url = f"{BASE_URL}tracker.php?f={FORUM_ID}&nm={encoded_nm}"
-
-            prefix_res = _crawl_tracker_query(query_url, stats_data, output_file, max_pages=max_pages, now_str=now_str)
-            if prefix_res == -1:
-                break
-            elif prefix_res == -2:
-                # Если 1 буква слишком короткая для движка, расширяем до 2 символов
-                print(f"  [~] Префикс '{prefix}' слишком короткий, расширяем до 2 символов...")
-                for sub in 'abcdefghijklmnopqrstuvwxyz0123456789':
-                    sub_prefix = f"{prefix}{sub}"
-                    sub_encoded = urllib.parse.quote(sub_prefix.encode('cp1251', errors='replace'))
-                    sub_url = f"{BASE_URL}tracker.php?f={FORUM_ID}&nm={sub_encoded}"
-                    sub_res = _crawl_tracker_query(sub_url, stats_data, output_file, max_pages=max_pages, now_str=now_str)
-                    if sub_res > 0:
-                        print(f"    [+] '{sub_prefix}': +{sub_res} (всего: {len(stats_data)})")
-                    time.sleep(0.3)
-            elif prefix_res > 0:
-                print(f"  [+] Префикс '{prefix}': +{prefix_res} раздач (всего в базе: {len(stats_data)})")
-
-            processed_prefixes += 1
-            if processed_prefixes % 10 == 0:
+            phase2_saved += 1
+            if phase2_saved % 25 == 0:
                 _save_json(stats_data, output_file)
-                print(f"  [~] Промежуточное сохранение: {len(stats_data)} раздач в {output_file}")
+                print(f"  [~] Фаза 2: обработано {phase2_saved}/{len(remaining_ids)} тем (всего в stats: {len(stats_data)}/{len(all_game_topics)})")
 
             time.sleep(0.3)
 
+        _save_json(stats_data, output_file)
+        print(f"[+] Фаза 2 завершена: успешно обработано {phase2_processed} тем.")
+
+    # ──────────────────────────────────────────────────────────
+    # Фаза 3: Повторный обход первых 3 страниц трекера
+    # ──────────────────────────────────────────────────────────
+    print("\n--- Фаза 3: Контрольный повторный проход первых 3 страниц tracker.php ---")
+    base_url = f"{BASE_URL}tracker.php?f={FORUM_ID}"
+    p3_res = _crawl_tracker_query(base_url, stats_data, output_file, max_pages=3, now_str=now_str, refreshed_ids=refreshed_ids)
+    print(f"[+] Фаза 3 завершена: свежие раздачи актуализированы ({max(0, p3_res)} записей).")
+
+    # Итоговое сохранение и вычисление статистики
     _save_json(stats_data, output_file)
-    print(f"\n[+] Сбор статистики завершён. Сохранено {len(stats_data)} записей в {output_file}")
+    print(f"\n[+] Сбор статистики полностью завершён. Сохранено {len(stats_data)} записей в {output_file}")
 
     total_seeds = sum(item.get('seeds', 0) for item in stats_data.values())
     total_downloads = sum(item.get('downloads', 0) for item in stats_data.values())
+    coverage_pct = (len(stats_data) / len(all_game_topics) * 100) if all_game_topics else 100
+
+    print(f"    * Покрытие базы: {len(stats_data)} / {len(all_game_topics)} ({coverage_pct:.1f}%)")
+    print(f"    * Активных сидов: {total_seeds}")
+    print(f"    * Суммарно скачиваний: {total_downloads}")
 
     return {
         "total": len(stats_data),
         "total_seeds": total_seeds,
-        "total_downloads": total_downloads
+        "total_downloads": total_downloads,
+        "coverage_pct": coverage_pct
     }
 
 # ──────────────────────────────────────────────────────────────
@@ -1200,6 +1332,8 @@ def _write_changes_log(added, updated, enriched, total, magnets=None, stats_info
         lines += [f"  # {t}" for t in magnets]
     if stats_info:
         lines.append(f"Статистика обновлена: {stats_info.get('total', 0)} раздач")
+        if stats_info.get('coverage_pct') is not None:
+            lines.append(f"  * Покрытие базы: {stats_info.get('coverage_pct', 0):.1f}%")
         lines.append(f"  * Активных сидов: {stats_info.get('total_seeds', 0)}")
         lines.append(f"  * Всего загрузок: {stats_info.get('total_downloads', 0)}")
     if not (added or updated or enriched or magnets or stats_info):
@@ -1341,7 +1475,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="RuTracker Nintendo Switch Scraper & Stats Collector")
     parser.add_argument("--stats-only", action="store_true", help="Собрать только статистику раздач (tracker.php)")
     parser.add_argument("--skip-stats", action="store_true", help="Пропустить сбор статистики (только база switch_games.json)")
-    parser.add_argument("--stats-quick", action="store_true", help="Быстрый сбор статистики (только топ-500 без алфавитного обхода)")
+    parser.add_argument("--stats-quick", action="store_true", help="Быстрый сбор статистики (только срезы tracker.php без точечного обхода тем)")
     parser.add_argument("--stats-max-pages", type=int, default=None, help="Лимит страниц при сборе статистики (для тестов)")
     parser.add_argument("--full", action="store_true", help="Принудительный полный парсинг всех тем форума")
     args = parser.parse_args()
