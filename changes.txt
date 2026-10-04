@@ -1,13 +1,7 @@
-=== 2026-10-04 13:44:32 ===
+=== 2026-10-04 17:43:36 ===
 Всего в базе: 7184
-Добавлено: 2
-  + Torchlight 1 (порт) [NRO][RUS]
-  + Stories from the Outbreak [NSZ][ENG]
-Обновлено: 12
-  ~ EA Sports FC 27 [NSP][RUS/Multi11]
-  ~ Little Nightmares III (3) + DLC Secrets of the Spiral (The Backstage, The Shores
-  ~ Kingdom Two Crowns + DLC Call of Olympus + Norse Lands, Shogun, Dead Lands, Nors
-  ~ Kanon [NSP][RUS (Mod.)/ENG]
+Обновлено: 9
+  ~ Torchlight 1 (порт) [NRO][RUS]
   ~ Need For Speed Underground 2 (хоумбрю NFS:U2) [NRO][RUS/ENG]
   ~ Pokemon Red + Blue + Yellow (порт gen1recomp) [NRO][ENG]
   ~ The Legend of Zelda: The Minish Cap (нативный порт) [NRO][ENG]
@@ -18,5 +12,5 @@
   ~ Touhou 11 Subterranean Animism / 10 Mountain of Faith / 9 Phantasmagoria of Flow
 Статистика обновлена: 7195 раздач
   * Покрытие базы: 100.2%
-  * Активных сидов: 99005
-  * Всего загрузок: 7478766
+  * Активных сидов: 106703
+  * Всего загрузок: 7480934
