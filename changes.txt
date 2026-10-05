@@ -1,13 +1,13 @@
-=== 2026-10-05 13:46:07 ===
-Всего в базе: 7187
-Добавлено: 3
-  + Wave Race 64 (порт) [NRO][ENG]
-  + Metroid Prime Origins 2D Demake (хоумбрю) [NRO][ENG]
-  + Kong Survivor Instinct [NSZ][RUS (Mod.)/ENG]
-Обновлено: 10
-  ~ Super Bunny Man [NSZ][RUS/Multi10]
-  ~ Torchlight 1 (порт) [NRO][RUS]
+=== 2026-10-05 17:46:58 ===
+Всего в базе: 7189
+Добавлено: 2
+  + Mass Effect 1 (порт) [NRO][ENG]
+  + Jak and Daxter the Precursor Legacy (порт openGOAL) [NRO][ENG]
+Обновлено: 11
   ~ Need For Speed Underground 2 (хоумбрю NFS:U2) [NRO][RUS/ENG]
+  ~ Wave Race 64 (порт) [NRO][ENG]
+  ~ Metroid Prime Origins 2D Demake (хоумбрю) [NRO][ENG]
+  ~ Torchlight 1 (порт) [NRO][RUS]
   ~ Pokemon Red + Blue + Yellow (порт gen1recomp) [NRO][ENG]
   ~ The Legend of Zelda: The Minish Cap (нативный порт) [NRO][ENG]
   ~ noJME, эмулятор J2ME-игр: Doom RPG, Colin McRae Dirt 3D, Orcs and Elves, Galaxy 
@@ -15,9 +15,7 @@
   ~ Asphalt 8 Airborne Retry (порт) [NRO][RUS/Multi11]
   ~ Far Cry (хоумбрю nearChuckle) [NRO][RUS]
   ~ Touhou 11 Subterranean Animism / 10 Mountain of Faith / 9 Phantasmagoria of Flow
-Перезалит magnet: 1
-  # Charming Hearts [NSP][ENG]
-Статистика обновлена: 7198 раздач
+Статистика обновлена: 7201 раздач
   * Покрытие базы: 100.2%
-  * Активных сидов: 95291
-  * Всего загрузок: 7485657
+  * Активных сидов: 108996
+  * Всего загрузок: 7487068
