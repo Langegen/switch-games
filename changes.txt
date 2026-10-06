@@ -1,9 +1,11 @@
-=== 2026-10-06 05:39:44 ===
+=== 2026-10-06 09:39:24 ===
 Всего в базе: 7190
-Обновлено: 13
-  ~ Mass Effect 1 (порт) [NRO][ENG]
+Обновлено: 15
+  ~ Cattle Country [NSZ][ENG]
+  ~ Hello, Mario, Yoshi, Luigi, Peach! (Привет, Марио, Йоши, Луиджи, Пич!) + мини-се
+  ~ Mass Effect 1 (порт) [NRO][RUS/ENG]
+  ~ Jak and Daxter the Precursor Legacy (порт openGOAL) [NRO][ENG/RUS (Voice Mod.)]
   ~ Need For Speed Underground 2 (хоумбрю NFS:U2) [NRO][RUS/ENG]
-  ~ Jak and Daxter the Precursor Legacy (порт openGOAL) [NRO][ENG]
   ~ Wave Race 64 (порт) [NRO][ENG]
   ~ Metroid Prime Origins 2D Demake (хоумбрю) [NRO][ENG]
   ~ Torchlight 1 (порт) [NRO][RUS]
@@ -16,5 +18,5 @@
   ~ Touhou 11 Subterranean Animism / 10 Mountain of Faith / 9 Phantasmagoria of Flow
 Статистика обновлена: 7201 раздач
   * Покрытие базы: 100.2%
-  * Активных сидов: 71250
-  * Всего загрузок: 7490837
+  * Активных сидов: 79336
+  * Всего загрузок: 7491229
