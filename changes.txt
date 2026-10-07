@@ -1,7 +1,6 @@
-=== 2026-10-07 13:41:05 ===
+=== 2026-10-07 17:41:52 ===
 Всего в базе: 7191
-Обновлено: 15
-  ~ Core Keeper [NSZ][RUS/Multi9]
+Обновлено: 14
   ~ Need For Speed Carbon (хоумбрю NFS:C) [NRO][RUS]
   ~ noJME, эмулятор для J2ME-игр: Doom RPG, Colin McRae Dirt 3D, Orcs and Elves, Gal
   ~ Asphalt 8 Airborne Retry (порт) [NRO][RUS/Multi11]
@@ -18,5 +17,5 @@
   ~ Touhou 11 Subterranean Animism / 10 Mountain of Faith / 9 Phantasmagoria of Flow
 Статистика обновлена: 7202 раздач
   * Покрытие базы: 100.2%
-  * Активных сидов: 98561
-  * Всего загрузок: 7497731
+  * Активных сидов: 109861
+  * Всего загрузок: 7499468
