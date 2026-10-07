@@ -1,11 +1,8 @@
-=== 2026-10-07 09:40:38 ===
+=== 2026-10-07 13:41:05 ===
 Всего в базе: 7191
-Добавлено: 1
-  + Need For Speed Carbon (хоумбрю NFS:C) [NRO][RUS]
-Обновлено: 16
-  ~ Tomb Raider I-III (+ Unfinished Business) / TR II (2) The Dagger of Xian + Golde
-  ~ Aggelos 1-2 [NSP][RUS/Multi10]
-  ~ Deathbulge Battle of the Bands [NSP][ENG]
+Обновлено: 15
+  ~ Core Keeper [NSZ][RUS/Multi9]
+  ~ Need For Speed Carbon (хоумбрю NFS:C) [NRO][RUS]
   ~ noJME, эмулятор для J2ME-игр: Doom RPG, Colin McRae Dirt 3D, Orcs and Elves, Gal
   ~ Asphalt 8 Airborne Retry (порт) [NRO][RUS/Multi11]
   ~ Mass Effect 1 (порт) [NRO][RUS/ENG]
@@ -21,5 +18,5 @@
   ~ Touhou 11 Subterranean Animism / 10 Mountain of Faith / 9 Phantasmagoria of Flow
 Статистика обновлена: 7202 раздач
   * Покрытие базы: 100.2%
-  * Активных сидов: 81048
-  * Всего загрузок: 7496625
+  * Активных сидов: 98561
+  * Всего загрузок: 7497731
