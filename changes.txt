@@ -1,5 +1,9 @@
-=== 2026-10-07 17:41:52 ===
-Всего в базе: 7191
+=== 2026-10-07 21:39:38 ===
+Всего в базе: 7194
+Добавлено: 3
+  + Sonic Adventure 2 Battle (хоумбрю) [NRO][ENG]
+  + Kingdom Hearts HD 1.5+2.5 Remix, 4 игры [NSP][ENG]
+  + Viractal Will You Trust Your Party [NSP][ENG]
 Обновлено: 14
   ~ Need For Speed Carbon (хоумбрю NFS:C) [NRO][RUS]
   ~ noJME, эмулятор для J2ME-игр: Doom RPG, Colin McRae Dirt 3D, Orcs and Elves, Gal
@@ -15,7 +19,7 @@
   ~ Sonic and SEGA All Stars Racing (порт) [NRO][ENG]
   ~ Far Cry (хоумбрю nearChuckle) [NRO][RUS]
   ~ Touhou 11 Subterranean Animism / 10 Mountain of Faith / 9 Phantasmagoria of Flow
-Статистика обновлена: 7202 раздач
+Статистика обновлена: 7206 раздач
   * Покрытие базы: 100.2%
-  * Активных сидов: 109861
-  * Всего загрузок: 7499468
+  * Активных сидов: 101346
+  * Всего загрузок: 7501395
