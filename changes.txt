@@ -1,10 +1,10 @@
-=== 2026-10-08 17:49:05 ===
-Всего в базе: 7197
-Обновлено: 19
-  ~ Need For Speed Carbon (хоумбрю NFS:C) [NRO][RUS]
-  ~ Muse Dash + 2 DLC (и версия с 3 кодами разблокировки оффлайн) [NSP][ENG]
+=== 2026-10-08 21:40:45 ===
+Всего в базе: 7198
+Добавлено: 1
+  + The Walking Dead Streets of Survival + DLC [NSZ][ENG]
+Обновлено: 16
+  ~ Need For Speed Underground 2 (хоумбрю NFS:U2) [NRO][RUS/ENG]
   ~ Хоумбрю-порты на Wine-NX: Condemned Criminal Origins, Deus Ex, Dead Space, Ultim
-  ~ Kong Survivor Instinct [NSZ][RUS (Mod.)/ENG]
   ~ Эмулятор Sega Model 3 Arcade: Daytona USA 2, Virtua Fighter 3, Sega Super GT Scu
   ~ OutRun 2006 SP Coast 2 Coast (хоумбрю) [NRO][ENG]
   ~ Mega Man X Regenesis (хоумбрю) [NRO][ENG]
@@ -14,7 +14,6 @@
   ~ Asphalt 8 Airborne Retry (порт) [NRO][RUS/Multi11]
   ~ Mass Effect 1 (порт) [NRO][RUS/ENG]
   ~ Jak and Daxter the Precursor Legacy (порт openGOAL) [NRO][ENG/RUS (Voice Mod.)]
-  ~ Need For Speed Underground 2 (хоумбрю NFS:U2) [NRO][RUS/ENG]
   ~ Wave Race 64 (порт) [NRO][ENG]
   ~ Metroid Prime Origins 2D Demake (хоумбрю) [NRO][ENG]
   ~ Torchlight 1 (порт) [NRO][RUS]
@@ -22,5 +21,5 @@
   ~ The Legend of Zelda: The Minish Cap (нативный порт) [NRO][ENG]
 Статистика обновлена: 7209 раздач
   * Покрытие базы: 100.2%
-  * Активных сидов: 112863
-  * Всего загрузок: 7505617
+  * Активных сидов: 104129
+  * Всего загрузок: 7506976
