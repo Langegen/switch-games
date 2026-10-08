@@ -1,13 +1,15 @@
-=== 2026-10-08 13:50:03 ===
+=== 2026-10-08 17:49:05 ===
 Всего в базе: 7197
-Обновлено: 17
-  ~ Doraemon Story of Seasons: Friends of the Great Kingdom + 12 DLC [NSZ][RUS (Mod.
+Обновлено: 19
+  ~ Need For Speed Carbon (хоумбрю NFS:C) [NRO][RUS]
+  ~ Muse Dash + 2 DLC (и версия с 3 кодами разблокировки оффлайн) [NSP][ENG]
+  ~ Хоумбрю-порты на Wine-NX: Condemned Criminal Origins, Deus Ex, Dead Space, Ultim
+  ~ Kong Survivor Instinct [NSZ][RUS (Mod.)/ENG]
   ~ Эмулятор Sega Model 3 Arcade: Daytona USA 2, Virtua Fighter 3, Sega Super GT Scu
   ~ OutRun 2006 SP Coast 2 Coast (хоумбрю) [NRO][ENG]
   ~ Mega Man X Regenesis (хоумбрю) [NRO][ENG]
   ~ The Simpsons Game (порт) [NRO][ENG]
   ~ Sonic Adventure 2 Battle (хоумбрю) [NRO][ENG]
-  ~ Need For Speed Carbon (хоумбрю NFS:C) [NRO][RUS]
   ~ noJME, эмулятор для J2ME-игр: Doom RPG, Colin McRae Dirt 3D, Orcs and Elves, Gal
   ~ Asphalt 8 Airborne Retry (порт) [NRO][RUS/Multi11]
   ~ Mass Effect 1 (порт) [NRO][RUS/ENG]
@@ -18,7 +20,7 @@
   ~ Torchlight 1 (порт) [NRO][RUS]
   ~ Pokemon Red + Blue + Yellow (порт gen1recomp) [NRO][ENG]
   ~ The Legend of Zelda: The Minish Cap (нативный порт) [NRO][ENG]
-Статистика обновлена: 7208 раздач
+Статистика обновлена: 7209 раздач
   * Покрытие базы: 100.2%
-  * Активных сидов: 97054
-  * Всего загрузок: 7504245
+  * Активных сидов: 112863
+  * Всего загрузок: 7505617
