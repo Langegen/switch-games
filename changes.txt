@@ -1,8 +1,7 @@
-=== 2026-10-08 01:46:37 ===
+=== 2026-10-08 05:40:36 ===
 Всего в базе: 7195
-Добавлено: 1
-  + The Simpsons Game (порт) [NRO][ENG]
-Обновлено: 15
+Обновлено: 16
+  ~ The Simpsons Game (порт) [NRO][ENG]
   ~ Sonic Adventure 2 Battle (хоумбрю) [NRO][ENG]
   ~ Need For Speed Carbon (хоумбрю NFS:C) [NRO][RUS]
   ~ noJME, эмулятор для J2ME-игр: Doom RPG, Colin McRae Dirt 3D, Orcs and Elves, Gal
@@ -18,7 +17,7 @@
   ~ Sonic and SEGA All Stars Racing (порт) [NRO][ENG]
   ~ Far Cry (хоумбрю nearChuckle) [NRO][RUS]
   ~ Touhou 11 Subterranean Animism / 10 Mountain of Faith / 9 Phantasmagoria of Flow
-Статистика обновлена: 7206 раздач
+Статистика обновлена: 7207 раздач
   * Покрытие базы: 100.2%
-  * Активных сидов: 85469
-  * Всего загрузок: 7502415
+  * Активных сидов: 77420
+  * Всего загрузок: 7502838
