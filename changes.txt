@@ -1,7 +1,5 @@
-=== 2026-10-08 21:40:45 ===
+=== 2026-10-09 01:47:50 ===
 Всего в базе: 7198
-Добавлено: 1
-  + The Walking Dead Streets of Survival + DLC [NSZ][ENG]
 Обновлено: 16
   ~ Need For Speed Underground 2 (хоумбрю NFS:U2) [NRO][RUS/ENG]
   ~ Хоумбрю-порты на Wine-NX: Condemned Criminal Origins, Deus Ex, Dead Space, Ultim
@@ -21,5 +19,5 @@
   ~ The Legend of Zelda: The Minish Cap (нативный порт) [NRO][ENG]
 Статистика обновлена: 7209 раздач
   * Покрытие базы: 100.2%
-  * Активных сидов: 104129
-  * Всего загрузок: 7506976
+  * Активных сидов: 84015
+  * Всего загрузок: 7507529
