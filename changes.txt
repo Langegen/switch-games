@@ -1,4 +1,4 @@
-=== 2026-10-09 09:41:13 ===
+=== 2026-10-09 13:49:31 ===
 Всего в базе: 7198
 Обновлено: 16
   ~ Need For Speed Underground 2 (хоумбрю NFS:U2) [NRO][RUS/ENG]
@@ -17,7 +17,9 @@
   ~ Torchlight 1 (порт) [NRO][RUS]
   ~ Pokemon Red + Blue + Yellow (порт gen1recomp) [NRO][ENG]
   ~ The Legend of Zelda: The Minish Cap (нативный порт) [NRO][ENG]
+Перезалит magnet: 1
+  # Kong Survivor Instinct [NSZ][RUS (Mod.)/ENG]
 Статистика обновлена: 7209 раздач
   * Покрытие базы: 100.2%
-  * Активных сидов: 82349
-  * Всего загрузок: 7509216
+  * Активных сидов: 96698
+  * Всего загрузок: 7511249
