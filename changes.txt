@@ -1,5 +1,8 @@
-=== 2026-10-12 07:15:01 ===
-Всего в базе: 7207
+=== 2026-10-12 09:44:43 ===
+Всего в базе: 7209
+Добавлено: 2
+  + NOVA 3 Near Orbit Vanguard Alliance (порт) [NRO][RUS/Multi10]
+  + Def Jam Fight for NY (порт) [NRO][ENG]
 Обновлено: 21
   ~ Angry Birds Epic: All Stars (хоумбрю) [NRO][RUS/Multi11]
   ~ Mercenaries 2 World in Flames (порт) [NRO][RUS/ENG]
@@ -22,7 +25,7 @@
   ~ Wave Race 64 (порт) [NRO][ENG]
   ~ Metroid Prime Origins 2D Demake (хоумбрю) [NRO][ENG]
   ~ Torchlight 1 (порт) [NRO][RUS]
-Статистика обновлена: 7220 раздач
+Статистика обновлена: 7222 раздач
   * Покрытие базы: 100.2%
-  * Активных сидов: 77936
-  * Всего загрузок: 7534610
+  * Активных сидов: 82002
+  * Всего загрузок: 7535586
