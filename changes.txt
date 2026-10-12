@@ -1,12 +1,13 @@
-=== 2026-10-12 14:00:39 ===
-Всего в базе: 7211
-Добавлено: 2
-  + Burnout 3 Takedown (порт) [NRO][ENG]
-  + Sly Cooper and the Thievius Raccoonus (порт Project Cane Raccoon) [NRO][ENG]
-Обновлено: 22
+=== 2026-10-12 18:11:00 ===
+Всего в базе: 7212
+Добавлено: 1
+  + Donkey Kong 64 (хоумбрю DK64R) [NRO][ENG]
+Обновлено: 23
+  ~ The Merlies [NSZ][RUS (Mod.)/ENG]
+  ~ Burnout 3 Takedown (порт) [NRO][ENG]
   ~ Need For Speed Underground 2 (хоумбрю NFS:U2) [NRO][RUS/ENG]
   ~ Need For Speed Underground (хоумбрю NFS:U) [NRO][ENG]
-  ~ Ravenswatch + 10 DLC [NSZ][RUS/Multi10]
+  ~ Sly Cooper and the Thievius Raccoonus (порт Project Cane Raccoon) [NRO][ENG]
   ~ NOVA 3 Near Orbit Vanguard Alliance (порт) [NRO][RUS/Multi10]
   ~ Def Jam Fight for NY (порт) [NRO][ENG]
   ~ Angry Birds Epic: All Stars (хоумбрю) [NRO][RUS/Multi11]
@@ -25,8 +26,7 @@
   ~ Sonic Adventure 2 Battle (хоумбрю) [NRO][ENG]
   ~ Asphalt 8 Airborne Retry (порт) [NRO][RUS/Multi11]
   ~ Jak and Daxter the Precursor Legacy (порт openGOAL) [NRO][ENG/RUS (Voice Mod.)]
-  ~ Wave Race 64 (порт) [NRO][ENG]
-Статистика обновлена: 7223 раздач
+Статистика обновлена: 7224 раздач
   * Покрытие базы: 100.2%
-  * Активных сидов: 94260
-  * Всего загрузок: 7535877
+  * Активных сидов: 110702
+  * Всего загрузок: 7537947
