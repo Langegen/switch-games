@@ -244,6 +244,35 @@ def _kill_stale_chrome():
         except Exception:
             pass
 
+def get_chrome_version_main():
+    """Detects installed Chrome major version to prevent chromedriver mismatch."""
+    try:
+        if sys.platform == "win32":
+            import subprocess
+            cmd = ['powershell', '-NoProfile', '-Command', '(Get-Item "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe").VersionInfo.ProductVersion']
+            out = subprocess.check_output(cmd, encoding='utf-8', stderr=subprocess.DEVNULL).strip()
+            if out and out[0].isdigit():
+                return int(out.split('.')[0])
+        elif sys.platform.startswith("linux"):
+            import subprocess
+            out = subprocess.check_output(['google-chrome', '--version'], encoding='utf-8', stderr=subprocess.DEVNULL).strip()
+            for p in out.split():
+                if '.' in p and p[0].isdigit():
+                    return int(p.split('.')[0])
+    except Exception:
+        pass
+    return None
+
+def close_driver():
+    """Завершение работы глобального экземпляра браузера Chrome."""
+    global GLOBAL_DRIVER
+    if GLOBAL_DRIVER is not None:
+        try:
+            GLOBAL_DRIVER.quit()
+        except Exception:
+            pass
+        GLOBAL_DRIVER = None
+
 def _safe_get(driver, url):
     """Навигация с таймаутом: CF-челлендж может не завершать загрузку страницы,
     и обычный driver.get() завис бы на 300 секунд. Останавливаем загрузку и
@@ -286,10 +315,11 @@ def _fetch_with_chrome(url, wait_keywords=None, is_post=False, post_data=None):
             options.add_argument('--disable-gpu')
             options.add_argument('--disable-extensions')
             options.add_argument('--no-first-run')
-            GLOBAL_DRIVER = uc.Chrome(options=options)
+            chrome_ver = get_chrome_version_main()
+            GLOBAL_DRIVER = uc.Chrome(options=options, version_main=chrome_ver)
             GLOBAL_DRIVER.set_script_timeout(30)
             GLOBAL_DRIVER.set_page_load_timeout(25)
-            print("[*] Chrome запущен")
+            print(f"[*] Chrome запущен (версия {chrome_ver or 'default'})")
 
         # Идём сразу на целевую страницу (CF challenge решится автоматически)
         if is_post:
@@ -1115,10 +1145,11 @@ def scrape_torrents_stats(output_file=None, max_pages=None, full_scan=True, game
     # ──────────────────────────────────────────────────────────
     # Фаза 2: Точечный обход оставшихся тем через viewtopic.php
     # ──────────────────────────────────────────────────────────
-    if full_scan and all_game_topics:
+    if all_game_topics:
         missing_ids = [tid for tid in all_game_topics if tid not in stats_data]
-        stale_ids = [tid for tid in all_game_topics if tid in stats_data and tid not in refreshed_ids]
+        stale_ids = [tid for tid in all_game_topics if tid in stats_data and tid not in refreshed_ids] if full_scan else []
         remaining_ids = missing_ids + stale_ids
+    if all_game_topics and remaining_ids:
 
         total_remaining = len(remaining_ids)
         print(f"\n--- Фаза 2: Обход оставшихся тем через viewtopic.php ({total_remaining} тем) ---")
@@ -1191,7 +1222,7 @@ def scrape_torrents_stats(output_file=None, max_pages=None, full_scan=True, game
 # Обновление по Atom-ленте
 # ──────────────────────────────────────────────────────────────
 
-def run_scraper(skip_stats=False, stats_max_pages=None, full_scan=True):
+def run_scraper(skip_stats=False, stats_max_pages=None, full_scan=False, sweep=False):
     """
     Основной скрипт:
     - Если switch_games.json НЕ существует → полный парсинг всех страниц форума
@@ -1289,24 +1320,23 @@ def run_scraper(skip_stats=False, stats_max_pages=None, full_scan=True):
             added_count += 1
             added_titles.append(str(title)[:80])
 
-    # Дообогащение первых 100 записей базы (поле title_id и т.п.)
+    # Дообогащение и круговой обход устаревших magnet (только при sweep=True)
     enriched_count = 0
     enriched_titles = []
-    try:
-        enriched_count, enriched_titles = _enrich_incomplete(existing_data, limit=100)
-    except Exception as e:
-        print(f"(!) Ошибка дообогащения: {e}")
-
-    # Перезалитые топики выпадают из ленты за сутки-двое. 50 страниц/день
-    # проходят всю базу примерно за 5 месяцев — лучше, чем навсегда.
     magnet_count = 0
     magnet_titles = []
-    try:
-        seen_ids = {item["topic_id"] for item in atom_entries}
-        magnet_count, magnet_titles = _refresh_stale_magnets(
-            existing_data, skip_ids=seen_ids, limit=50)
-    except Exception as e:
-        print(f"(!) Ошибка проверки magnet: {e}")
+    if sweep:
+        try:
+            enriched_count, enriched_titles = _enrich_incomplete(existing_data, limit=100)
+        except Exception as e:
+            print(f"(!) Ошибка дообогащения: {e}")
+
+        try:
+            seen_ids = {item["topic_id"] for item in atom_entries}
+            magnet_count, magnet_titles = _refresh_stale_magnets(
+                existing_data, skip_ids=seen_ids, limit=50)
+        except Exception as e:
+            print(f"(!) Ошибка проверки magnet: {e}")
 
     if added_count > 0 or updated_count > 0 or enriched_count > 0 or magnet_count > 0:
         _save_json(existing_data, JSON_FILE)
@@ -1494,12 +1524,21 @@ if __name__ == "__main__":
     parser.add_argument("--stats-quick", action="store_true", help="Быстрый сбор статистики (только срезы tracker.php без точечного обхода тем)")
     parser.add_argument("--stats-max-pages", type=int, default=None, help="Лимит страниц при сборе статистики (для тестов)")
     parser.add_argument("--full", action="store_true", help="Принудительный полный парсинг всех тем форума")
+    parser.add_argument("--sweep", action="store_true", help="Включить фоновый круговой обход старых раздач, дообогащение и полный обход статистики")
     args = parser.parse_args()
 
-    if args.full:
-        scrape_full_forum()
-    elif args.stats_only:
-        scrape_torrents_stats(max_pages=args.stats_max_pages, full_scan=not args.stats_quick)
-    else:
-        run_scraper(skip_stats=args.skip_stats, stats_max_pages=args.stats_max_pages, full_scan=not args.stats_quick)
+    try:
+        if args.full:
+            scrape_full_forum()
+        elif args.stats_only:
+            scrape_torrents_stats(max_pages=args.stats_max_pages, full_scan=args.sweep and not args.stats_quick)
+        else:
+            run_scraper(
+                skip_stats=args.skip_stats,
+                stats_max_pages=args.stats_max_pages,
+                full_scan=args.sweep and not args.stats_quick,
+                sweep=args.sweep
+            )
+    finally:
+        close_driver()
 

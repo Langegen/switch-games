@@ -1,5 +1,5 @@
 #!/bin/bash
-# Ежедневное обновление базы раздач: парсер -> коммит -> push на GitHub
+# Обновление базы раздач: парсер -> коммит -> push на GitHub
 PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 cd "$(dirname "$0")"
 
@@ -11,6 +11,9 @@ if ! flock -w 7200 200; then
     exit 1
 fi
 
+# Очистка осиротевших временных папок браузера/xvfb
+rm -rf /tmp/tmp* /tmp/playwright* /tmp/xvfb* 2>/dev/null || true
+
 if [ -f .env ]; then
     set -a
     . ./.env
@@ -18,15 +21,17 @@ if [ -f .env ]; then
 fi
 
 echo "[$(date)] Обновление кода..."
-git pull --rebase origin main
+git pull --rebase origin main || true
 
 echo "[$(date)] Запуск парсера..."
 # Таймаут на выполнение 2 часа (защита от зависаний)
 if command -v xvfb-run >/dev/null 2>&1; then
-    timeout 7200 xvfb-run -a ./venv/bin/python3 scraper.py
+    timeout 7200 xvfb-run -a ./venv/bin/python3 scraper.py "$@"
 else
-    timeout 7200 ./venv/bin/python3 scraper.py
+    timeout 7200 ./venv/bin/python3 scraper.py "$@"
 fi
+
+rm -rf /tmp/tmp* /tmp/playwright* /tmp/xvfb* 2>/dev/null || true
 
 echo "[$(date)] Выгрузка изменений на GitHub..."
 git add switch_games.json switch_games_stats.json changes.txt scraper.py run.sh .gitignore
@@ -34,8 +39,9 @@ if git diff --staged --quiet; then
     echo "[$(date)] Изменений нет - коммит не нужен."
 else
     git commit -m "Auto-update: $(date +'%Y-%m-%d %H:%M:%S')"
-    git pull --rebase origin main
+    git pull --rebase origin main || true
     git push origin main
+    git gc --auto 2>/dev/null || true
     echo "[$(date)] Завершено!"
 fi
 
