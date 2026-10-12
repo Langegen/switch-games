@@ -41,6 +41,7 @@ else
     git commit -m "Auto-update: $(date +'%Y-%m-%d %H:%M:%S')"
     git pull --rebase origin main || true
     git push origin main
+    truncate -s 0 /var/lib/docker/containers/*/*-json.log 2>/dev/null || true
     git gc --auto 2>/dev/null || true
     echo "[$(date)] Завершено!"
 fi
