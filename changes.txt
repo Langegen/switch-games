@@ -1,21 +1,14 @@
-=== 2026-10-12 06:15:21 ===
+=== 2026-10-12 07:15:01 ===
 Всего в базе: 7207
-Добавлено: 8
-  + Angry Birds Epic: All Stars (хоумбрю) [NRO][RUS/Multi11]
-  + Mercenaries 2 World in Flames (порт) [NRO][RUS/ENG]
-  + Osmos HD (порт) [NRO][ENG]
-  + Трилогия Donkey Kong Country / 2 Diddy’s Kong Quest / 3 Dixie Kong’s Double Trou
-  + Call of Duty 4 Modern Warfare (порт CoD4:MW) [NRO][RUS]
-  + Sulfur (демонстрационная версия) [NSZ][DEMO][RUS/Multi13]
-  + Silent Hill 2 EE (порт) [NRO][RUS]
-  + Isles of Sea and Sky [NSZ][RUS/Multi13]
-Обновлено: 19
+Обновлено: 21
+  ~ Angry Birds Epic: All Stars (хоумбрю) [NRO][RUS/Multi11]
+  ~ Mercenaries 2 World in Flames (порт) [NRO][RUS/ENG]
+  ~ Osmos HD (порт) [NRO][ENG]
+  ~ Трилогия Donkey Kong Country / 2 Diddy’s Kong Quest / 3 Dixie Kong’s Double Trou
+  ~ Call of Duty 4 Modern Warfare (порт CoD4:MW) [NRO][RUS]
   ~ noJME, эмулятор для J2ME-игр: Doom RPG, Colin McRae Dirt 3D, Orcs and Elves, Gal
-  ~ Soul Searching [NSZ][ENG]
-  ~ Defender of the Crown the Legend Returns [NSZ][RUS/Multi9]
+  ~ Silent Hill 2 EE (порт) [NRO][RUS]
   ~ Need For Speed Underground (хоумбрю NFS:U) [NRO][ENG]
-  ~ Concordia Digital edition + 6 DLC [NSZ][RUS (Mod.)/ENG]
-  ~ Human Fall Flat + 2 DLC [NSZ][RUS/Multi5]
   ~ Mass Effect 1 (порт) [NRO][RUS/ENG]
   ~ Need For Speed Underground 2 (хоумбрю NFS:U2) [NRO][RUS/ENG]
   ~ Хоумбрю-порты на Wine-NX: Condemned Criminal Origins, Deus Ex, Dead Space, Ultim
@@ -31,5 +24,5 @@
   ~ Torchlight 1 (порт) [NRO][RUS]
 Статистика обновлена: 7220 раздач
   * Покрытие базы: 100.2%
-  * Активных сидов: 83492
-  * Всего загрузок: 7532493
+  * Активных сидов: 77936
+  * Всего загрузок: 7534610
