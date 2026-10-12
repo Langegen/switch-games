@@ -1,6 +1,22 @@
-=== 2026-10-09 13:49:31 ===
-Всего в базе: 7198
-Обновлено: 16
+=== 2026-10-12 06:15:21 ===
+Всего в базе: 7207
+Добавлено: 8
+  + Angry Birds Epic: All Stars (хоумбрю) [NRO][RUS/Multi11]
+  + Mercenaries 2 World in Flames (порт) [NRO][RUS/ENG]
+  + Osmos HD (порт) [NRO][ENG]
+  + Трилогия Donkey Kong Country / 2 Diddy’s Kong Quest / 3 Dixie Kong’s Double Trou
+  + Call of Duty 4 Modern Warfare (порт CoD4:MW) [NRO][RUS]
+  + Sulfur (демонстрационная версия) [NSZ][DEMO][RUS/Multi13]
+  + Silent Hill 2 EE (порт) [NRO][RUS]
+  + Isles of Sea and Sky [NSZ][RUS/Multi13]
+Обновлено: 19
+  ~ noJME, эмулятор для J2ME-игр: Doom RPG, Colin McRae Dirt 3D, Orcs and Elves, Gal
+  ~ Soul Searching [NSZ][ENG]
+  ~ Defender of the Crown the Legend Returns [NSZ][RUS/Multi9]
+  ~ Need For Speed Underground (хоумбрю NFS:U) [NRO][ENG]
+  ~ Concordia Digital edition + 6 DLC [NSZ][RUS (Mod.)/ENG]
+  ~ Human Fall Flat + 2 DLC [NSZ][RUS/Multi5]
+  ~ Mass Effect 1 (порт) [NRO][RUS/ENG]
   ~ Need For Speed Underground 2 (хоумбрю NFS:U2) [NRO][RUS/ENG]
   ~ Хоумбрю-порты на Wine-NX: Condemned Criminal Origins, Deus Ex, Dead Space, Ultim
   ~ Эмулятор Sega Model 3 Arcade: Daytona USA 2, Virtua Fighter 3, Sega Super GT Scu
@@ -8,18 +24,12 @@
   ~ Mega Man X Regenesis (хоумбрю) [NRO][ENG]
   ~ The Simpsons Game (порт) [NRO][ENG]
   ~ Sonic Adventure 2 Battle (хоумбрю) [NRO][ENG]
-  ~ noJME, эмулятор для J2ME-игр: Doom RPG, Colin McRae Dirt 3D, Orcs and Elves, Gal
   ~ Asphalt 8 Airborne Retry (порт) [NRO][RUS/Multi11]
-  ~ Mass Effect 1 (порт) [NRO][RUS/ENG]
   ~ Jak and Daxter the Precursor Legacy (порт openGOAL) [NRO][ENG/RUS (Voice Mod.)]
   ~ Wave Race 64 (порт) [NRO][ENG]
   ~ Metroid Prime Origins 2D Demake (хоумбрю) [NRO][ENG]
   ~ Torchlight 1 (порт) [NRO][RUS]
-  ~ Pokemon Red + Blue + Yellow (порт gen1recomp) [NRO][ENG]
-  ~ The Legend of Zelda: The Minish Cap (нативный порт) [NRO][ENG]
-Перезалит magnet: 1
-  # Kong Survivor Instinct [NSZ][RUS (Mod.)/ENG]
-Статистика обновлена: 7209 раздач
+Статистика обновлена: 7220 раздач
   * Покрытие базы: 100.2%
-  * Активных сидов: 96698
-  * Всего загрузок: 7511249
+  * Активных сидов: 83492
+  * Всего загрузок: 7532493
