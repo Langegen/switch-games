@@ -1,9 +1,7 @@
-=== 2026-10-12 18:11:00 ===
+=== 2026-10-12 21:53:36 ===
 Всего в базе: 7212
-Добавлено: 1
-  + Donkey Kong 64 (хоумбрю DK64R) [NRO][ENG]
 Обновлено: 23
-  ~ The Merlies [NSZ][RUS (Mod.)/ENG]
+  ~ Donkey Kong 64 (хоумбрю DK64R) [NRO][ENG]
   ~ Burnout 3 Takedown (порт) [NRO][ENG]
   ~ Need For Speed Underground 2 (хоумбрю NFS:U2) [NRO][RUS/ENG]
   ~ Need For Speed Underground (хоумбрю NFS:U) [NRO][ENG]
@@ -28,5 +26,5 @@
   ~ Jak and Daxter the Precursor Legacy (порт openGOAL) [NRO][ENG/RUS (Voice Mod.)]
 Статистика обновлена: 7224 раздач
   * Покрытие базы: 100.2%
-  * Активных сидов: 110702
-  * Всего загрузок: 7537947
+  * Активных сидов: 106099
+  * Всего загрузок: 7540520
