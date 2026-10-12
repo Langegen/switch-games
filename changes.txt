@@ -1,9 +1,14 @@
-=== 2026-10-12 09:44:43 ===
-Всего в базе: 7209
+=== 2026-10-12 14:00:39 ===
+Всего в базе: 7211
 Добавлено: 2
-  + NOVA 3 Near Orbit Vanguard Alliance (порт) [NRO][RUS/Multi10]
-  + Def Jam Fight for NY (порт) [NRO][ENG]
-Обновлено: 21
+  + Burnout 3 Takedown (порт) [NRO][ENG]
+  + Sly Cooper and the Thievius Raccoonus (порт Project Cane Raccoon) [NRO][ENG]
+Обновлено: 22
+  ~ Need For Speed Underground 2 (хоумбрю NFS:U2) [NRO][RUS/ENG]
+  ~ Need For Speed Underground (хоумбрю NFS:U) [NRO][ENG]
+  ~ Ravenswatch + 10 DLC [NSZ][RUS/Multi10]
+  ~ NOVA 3 Near Orbit Vanguard Alliance (порт) [NRO][RUS/Multi10]
+  ~ Def Jam Fight for NY (порт) [NRO][ENG]
   ~ Angry Birds Epic: All Stars (хоумбрю) [NRO][RUS/Multi11]
   ~ Mercenaries 2 World in Flames (порт) [NRO][RUS/ENG]
   ~ Osmos HD (порт) [NRO][ENG]
@@ -11,9 +16,7 @@
   ~ Call of Duty 4 Modern Warfare (порт CoD4:MW) [NRO][RUS]
   ~ noJME, эмулятор для J2ME-игр: Doom RPG, Colin McRae Dirt 3D, Orcs and Elves, Gal
   ~ Silent Hill 2 EE (порт) [NRO][RUS]
-  ~ Need For Speed Underground (хоумбрю NFS:U) [NRO][ENG]
   ~ Mass Effect 1 (порт) [NRO][RUS/ENG]
-  ~ Need For Speed Underground 2 (хоумбрю NFS:U2) [NRO][RUS/ENG]
   ~ Хоумбрю-порты на Wine-NX: Condemned Criminal Origins, Deus Ex, Dead Space, Ultim
   ~ Эмулятор Sega Model 3 Arcade: Daytona USA 2, Virtua Fighter 3, Sega Super GT Scu
   ~ OutRun 2006 SP Coast 2 Coast (хоумбрю) [NRO][ENG]
@@ -23,9 +26,7 @@
   ~ Asphalt 8 Airborne Retry (порт) [NRO][RUS/Multi11]
   ~ Jak and Daxter the Precursor Legacy (порт openGOAL) [NRO][ENG/RUS (Voice Mod.)]
   ~ Wave Race 64 (порт) [NRO][ENG]
-  ~ Metroid Prime Origins 2D Demake (хоумбрю) [NRO][ENG]
-  ~ Torchlight 1 (порт) [NRO][RUS]
-Статистика обновлена: 7222 раздач
+Статистика обновлена: 7223 раздач
   * Покрытие базы: 100.2%
-  * Активных сидов: 82002
-  * Всего загрузок: 7535586
+  * Активных сидов: 94260
+  * Всего загрузок: 7535877
