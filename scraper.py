@@ -1222,7 +1222,7 @@ def scrape_torrents_stats(output_file=None, max_pages=None, full_scan=True, game
 # Обновление по Atom-ленте
 # ──────────────────────────────────────────────────────────────
 
-def run_scraper(skip_stats=False, stats_max_pages=None, full_scan=False, sweep=False):
+def run_scraper(skip_stats=False, stats_max_pages=None, full_scan=True, sweep=True):
     """
     Основной скрипт:
     - Если switch_games.json НЕ существует → полный парсинг всех страниц форума
@@ -1531,13 +1531,13 @@ if __name__ == "__main__":
         if args.full:
             scrape_full_forum()
         elif args.stats_only:
-            scrape_torrents_stats(max_pages=args.stats_max_pages, full_scan=args.sweep and not args.stats_quick)
+            scrape_torrents_stats(max_pages=args.stats_max_pages, full_scan=not args.stats_quick)
         else:
             run_scraper(
                 skip_stats=args.skip_stats,
                 stats_max_pages=args.stats_max_pages,
-                full_scan=args.sweep and not args.stats_quick,
-                sweep=args.sweep
+                full_scan=not args.stats_quick,
+                sweep=not args.stats_quick
             )
     finally:
         close_driver()
