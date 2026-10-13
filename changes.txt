@@ -1,8 +1,13 @@
-=== 2026-10-13 17:58:21 ===
-Всего в базе: 7216
-Добавлено: 1
-  + Sesame Street Friends and Fun [NSZ][ENG]
-Обновлено: 22
+=== 2026-10-13 21:50:16 ===
+Всего в базе: 7218
+Добавлено: 2
+  + Call of Duty Black Ops Zombies (iOS-порт) [NRO][ENG]
+  + SpongeBob SquarePants: Titans of the Tide + 5 DLC (Губка Боб Квадратные Штаны: Г
+Обновлено: 26
+  ~ Torchlight 1 (порт) [NRO][RUS/ENG]
+  ~ Sesame Street Friends and Fun [NSZ][ENG]
+  ~ Core Keeper [NSZ][RUS/Multi9]
+  ~ Another Eden Begins [NSP][RUS (Mod.)/ENG]
   ~ Call of Duty 4 Modern Warfare (порт CoD4:MW) [NRO][RUS/ENG]
   ~ Halo Combat Evolved (порт OpenCE) [NRO][ENG]
   ~ Donkey Kong 64 (хоумбрю DK64R) [NRO][ENG]
@@ -25,7 +30,7 @@
   ~ Mega Man X Regenesis (хоумбрю) [NRO][ENG]
   ~ The Simpsons Game (порт) [NRO][ENG]
   ~ Sonic Adventure 2 Battle (хоумбрю) [NRO][ENG]
-Статистика обновлена: 7229 раздач
+Статистика обновлена: 7230 раздач
   * Покрытие базы: 100.2%
-  * Активных сидов: 110634
-  * Всего загрузок: 7544883
+  * Активных сидов: 105603
+  * Всего загрузок: 7546845
