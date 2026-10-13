@@ -1,8 +1,10 @@
-=== 2026-10-13 14:00:46 ===
-Всего в базе: 7215
-Обновлено: 23
-  ~ Halo Combat Evolved (порт OpenCE) [NRO][ENG]
+=== 2026-10-13 17:58:21 ===
+Всего в базе: 7216
+Добавлено: 1
+  + Sesame Street Friends and Fun [NSZ][ENG]
+Обновлено: 22
   ~ Call of Duty 4 Modern Warfare (порт CoD4:MW) [NRO][RUS/ENG]
+  ~ Halo Combat Evolved (порт OpenCE) [NRO][ENG]
   ~ Donkey Kong 64 (хоумбрю DK64R) [NRO][ENG]
   ~ Burnout 3 Takedown (порт) [NRO][ENG]
   ~ Need For Speed Underground 2 (хоумбрю NFS:U2) [NRO][RUS/ENG]
@@ -23,8 +25,7 @@
   ~ Mega Man X Regenesis (хоумбрю) [NRO][ENG]
   ~ The Simpsons Game (порт) [NRO][ENG]
   ~ Sonic Adventure 2 Battle (хоумбрю) [NRO][ENG]
-  ~ Asphalt 8 Airborne Retry (порт) [NRO][RUS/Multi11]
-Статистика обновлена: 7228 раздач
+Статистика обновлена: 7229 раздач
   * Покрытие базы: 100.2%
-  * Активных сидов: 98010
-  * Всего загрузок: 7543241
+  * Активных сидов: 110634
+  * Всего загрузок: 7544883
