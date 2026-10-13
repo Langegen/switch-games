@@ -1,12 +1,7 @@
-=== 2026-10-13 09:46:34 ===
+=== 2026-10-13 14:00:46 ===
 Всего в базе: 7215
-Добавлено: 3
-  + Animal Crossing (хоумбрю GCnx) [NRO][ENG]
-  + Halo Combat Evolved (порт OpenCE) [NRO][ENG]
-  + Baladins [NSP][ENG]
-Обновлено: 24
-  ~ Fountains + DLC Shattered Shape [NSZ][RUS/Multi9]
-  ~ Bluey's Quest for the Gold Pen [NSZ][RUS (Voice Mod.)/Multi11]
+Обновлено: 23
+  ~ Halo Combat Evolved (порт OpenCE) [NRO][ENG]
   ~ Call of Duty 4 Modern Warfare (порт CoD4:MW) [NRO][RUS/ENG]
   ~ Donkey Kong 64 (хоумбрю DK64R) [NRO][ENG]
   ~ Burnout 3 Takedown (порт) [NRO][ENG]
@@ -29,7 +24,7 @@
   ~ The Simpsons Game (порт) [NRO][ENG]
   ~ Sonic Adventure 2 Battle (хоумбрю) [NRO][ENG]
   ~ Asphalt 8 Airborne Retry (порт) [NRO][RUS/Multi11]
-Статистика обновлена: 7227 раздач
+Статистика обновлена: 7228 раздач
   * Покрытие базы: 100.2%
-  * Активных сидов: 82648
-  * Всего загрузок: 7542453
+  * Активных сидов: 98010
+  * Всего загрузок: 7543241
