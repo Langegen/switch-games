@@ -1,6 +1,13 @@
-=== 2026-10-13 05:53:26 ===
-Всего в базе: 7212
-Обновлено: 23
+=== 2026-10-13 09:46:34 ===
+Всего в базе: 7215
+Добавлено: 3
+  + Animal Crossing (хоумбрю GCnx) [NRO][ENG]
+  + Halo Combat Evolved (порт OpenCE) [NRO][ENG]
+  + Baladins [NSP][ENG]
+Обновлено: 24
+  ~ Fountains + DLC Shattered Shape [NSZ][RUS/Multi9]
+  ~ Bluey's Quest for the Gold Pen [NSZ][RUS (Voice Mod.)/Multi11]
+  ~ Call of Duty 4 Modern Warfare (порт CoD4:MW) [NRO][RUS/ENG]
   ~ Donkey Kong 64 (хоумбрю DK64R) [NRO][ENG]
   ~ Burnout 3 Takedown (порт) [NRO][ENG]
   ~ Need For Speed Underground 2 (хоумбрю NFS:U2) [NRO][RUS/ENG]
@@ -12,7 +19,6 @@
   ~ Mercenaries 2 World in Flames (порт) [NRO][RUS/ENG]
   ~ Osmos HD (порт) [NRO][ENG]
   ~ Трилогия Donkey Kong Country / 2 Diddy’s Kong Quest / 3 Dixie Kong’s Double Trou
-  ~ Call of Duty 4 Modern Warfare (порт CoD4:MW) [NRO][RUS]
   ~ noJME, эмулятор для J2ME-игр: Doom RPG, Colin McRae Dirt 3D, Orcs and Elves, Gal
   ~ Silent Hill 2 EE (порт) [NRO][RUS]
   ~ Mass Effect 1 (порт) [NRO][RUS/ENG]
@@ -23,8 +29,7 @@
   ~ The Simpsons Game (порт) [NRO][ENG]
   ~ Sonic Adventure 2 Battle (хоумбрю) [NRO][ENG]
   ~ Asphalt 8 Airborne Retry (порт) [NRO][RUS/Multi11]
-  ~ Jak and Daxter the Precursor Legacy (порт openGOAL) [NRO][ENG/RUS (Voice Mod.)]
-Статистика обновлена: 7226 раздач
+Статистика обновлена: 7227 раздач
   * Покрытие базы: 100.2%
-  * Активных сидов: 77432
-  * Всего загрузок: 7540451
+  * Активных сидов: 82648
+  * Всего загрузок: 7542453
