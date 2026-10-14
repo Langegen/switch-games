@@ -1,10 +1,14 @@
-=== 2026-10-14 13:56:57 ===
-Всего в базе: 7219
-Обновлено: 23
-  ~ Qliphah in Providence's Shadow + 2 DLC [NSP][ENG]
-  ~ Dungeon Clawler [NSZ][RUS/Multi10]
-  ~ Fabledom [NSZ][RUS/Multi9]
-  ~ Under Night In-birth II (2) Sys Celes + 6 DLC [NSP][ENG]
+=== 2026-10-14 17:57:16 ===
+Всего в базе: 7221
+Добавлено: 2
+  + Magical Craft: My Enchanted Dress Shop [NSZ][ENG]
+  + Prey 2006 (хоумбрю openPrey) [NRO][ENG,RUS (Voice Mod.)]
+Обновлено: 22
+  ~ Need For Speed Underground 2 (хоумбрю NFS:U2) [NRO][RUS/ENG]
+  ~ Azure Striker Gunvolt 1-2-3 Trilogy Enhanced / Gunvolt Chronicles Luminous Aveng
+  ~ No Man's Sky + 23 экспедиции [NSP][RUS/Multi11]
+  ~ Lost Twins 2 [NSZ][Multi]
+  ~ Castlevania Belmont's Curse [NSP][RUS/Multi11]
   ~ Silent Hill 2 EE (порт) [NRO][RUS]
   ~ Halo Combat Evolved (порт OpenCE) [NRO][ENG,RUS (Voice.)]
   ~ Flatout 2 (хоумбрю) [NRO][ENG]
@@ -13,7 +17,6 @@
   ~ Call of Duty 4 Modern Warfare (порт CoD4:MW) [NRO][RUS/ENG]
   ~ Donkey Kong 64 (хоумбрю DK64R) [NRO][ENG]
   ~ Burnout 3 Takedown (порт) [NRO][ENG]
-  ~ Need For Speed Underground 2 (хоумбрю NFS:U2) [NRO][RUS/ENG]
   ~ Need For Speed Underground (хоумбрю NFS:U) [NRO][ENG]
   ~ Sly Cooper and the Thievius Raccoonus (порт Project Cane Raccoon) [NRO][ENG]
   ~ NOVA 3 Near Orbit Vanguard Alliance (порт) [NRO][RUS/Multi10]
@@ -23,8 +26,7 @@
   ~ Osmos HD (порт) [NRO][ENG]
   ~ Трилогия Donkey Kong Country / 2 Diddy’s Kong Quest / 3 Dixie Kong’s Double Trou
   ~ noJME, эмулятор для J2ME-игр: Doom RPG, Colin McRae Dirt 3D, Orcs and Elves, Gal
-  ~ Mass Effect 1 (порт) [NRO][RUS/ENG]
-Статистика обновлена: 7232 раздач
+Статистика обновлена: 7234 раздач
   * Покрытие базы: 100.2%
-  * Активных сидов: 97221
-  * Всего загрузок: 7544126
+  * Активных сидов: 110807
+  * Всего загрузок: 7545383
