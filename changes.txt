@@ -1,14 +1,11 @@
-=== 2026-10-14 17:57:16 ===
-Всего в базе: 7221
+=== 2026-10-14 21:55:50 ===
+Всего в базе: 7223
 Добавлено: 2
-  + Magical Craft: My Enchanted Dress Shop [NSZ][ENG]
-  + Prey 2006 (хоумбрю openPrey) [NRO][ENG,RUS (Voice Mod.)]
-Обновлено: 22
+  + Prototype 2 (порт) [NRO][RUS]
+  + Tales of Eternia Remastered [NSZ][RUS/Multi9]
+Обновлено: 19
   ~ Need For Speed Underground 2 (хоумбрю NFS:U2) [NRO][RUS/ENG]
-  ~ Azure Striker Gunvolt 1-2-3 Trilogy Enhanced / Gunvolt Chronicles Luminous Aveng
-  ~ No Man's Sky + 23 экспедиции [NSP][RUS/Multi11]
-  ~ Lost Twins 2 [NSZ][Multi]
-  ~ Castlevania Belmont's Curse [NSP][RUS/Multi11]
+  ~ Prey 2006 (хоумбрю openPrey) [NRO][ENG,RUS (Voice Mod.)]
   ~ Silent Hill 2 EE (порт) [NRO][RUS]
   ~ Halo Combat Evolved (порт OpenCE) [NRO][ENG,RUS (Voice.)]
   ~ Flatout 2 (хоумбрю) [NRO][ENG]
@@ -26,7 +23,7 @@
   ~ Osmos HD (порт) [NRO][ENG]
   ~ Трилогия Donkey Kong Country / 2 Diddy’s Kong Quest / 3 Dixie Kong’s Double Trou
   ~ noJME, эмулятор для J2ME-игр: Doom RPG, Colin McRae Dirt 3D, Orcs and Elves, Gal
-Статистика обновлена: 7234 раздач
+Статистика обновлена: 7235 раздач
   * Покрытие базы: 100.2%
-  * Активных сидов: 110807
-  * Всего загрузок: 7545383
+  * Активных сидов: 106121
+  * Всего загрузок: 7547799
