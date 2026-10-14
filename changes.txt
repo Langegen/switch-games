@@ -1,10 +1,18 @@
-=== 2026-10-14 05:53:07 ===
-Всего в базе: 7218
-Обновлено: 24
+=== 2026-10-14 09:53:15 ===
+Всего в базе: 7219
+Добавлено: 1
+  + Flatout 2 (хоумбрю) [NRO][ENG]
+Обновлено: 26
+  ~ Halo Combat Evolved (порт OpenCE) [NRO][ENG,RUS (Voice.)]
+  ~ Nintendo Switch Online (NSO, официальные игры + LFS-моды): Game Boy Advance (GBA
+  ~ La-Mulana / LaMulana 2 [NSZ][RUS (Mod.),ENG]
+  ~ Mario Kart 8 Deluxe (MK8D) + DLC Booster Course Pass, волна 6 [NSZ][RUS/Multi11]
+  ~ Shadow Corridor 1-2 [NSP][ENG,RUS]
+  ~ Don't Starve Together / Dont Starve: Nintendo Switch Edition + Hamlet DLC [NSZ][
+  ~ PlateUp (Plate Up) + DLC [NSZ][RUS/Multi8]
   ~ Torchlight 1 (порт) [NRO][RUS/ENG]
   ~ Call of Duty Black Ops Zombies (iOS-порт) [NRO][ENG]
   ~ Call of Duty 4 Modern Warfare (порт CoD4:MW) [NRO][RUS/ENG]
-  ~ Halo Combat Evolved (порт OpenCE) [NRO][ENG]
   ~ Donkey Kong 64 (хоумбрю DK64R) [NRO][ENG]
   ~ Burnout 3 Takedown (порт) [NRO][ENG]
   ~ Need For Speed Underground 2 (хоумбрю NFS:U2) [NRO][RUS/ENG]
@@ -21,11 +29,7 @@
   ~ Mass Effect 1 (порт) [NRO][RUS/ENG]
   ~ Хоумбрю-порты на Wine-NX: Condemned Criminal Origins, Deus Ex, Dead Space, Ultim
   ~ Эмулятор Sega Model 3 Arcade: Daytona USA 2, Virtua Fighter 3, Sega Super GT Scu
-  ~ OutRun 2006 SP Coast 2 Coast (хоумбрю) [NRO][ENG]
-  ~ Mega Man X Regenesis (хоумбрю) [NRO][ENG]
-  ~ The Simpsons Game (порт) [NRO][ENG]
-  ~ Sonic Adventure 2 Battle (хоумбрю) [NRO][ENG]
 Статистика обновлена: 7231 раздач
   * Покрытие базы: 100.2%
-  * Активных сидов: 76473
-  * Всего загрузок: 7542893
+  * Активных сидов: 80962
+  * Всего загрузок: 7543526
