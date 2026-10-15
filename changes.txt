@@ -1,12 +1,12 @@
-=== 2026-10-15 18:01:59 ===
-Всего в базе: 7229
-Добавлено: 2
-  + Renai Zero Kilometer (Ren'ai 恋愛0キロメートル) [NSP][ENG]
-  + Toy Story 3 Complete edition / Disney Pixar Toy Story Retro Roundup (6 игр) [NSZ
+=== 2026-10-15 21:50:14 ===
+Всего в базе: 7230
+Добавлено: 1
+  + Harvest Moon Echoes of Teradea [NSZ][ENG]
 Обновлено: 13
+  ~ Touhou 15 Legacy of Lunatic Kingdom / 11 / 10 Mountain of Faith / 9 Phantasmagor
+  ~ To the Moon / Finding Paradise / A Bird Story [NSZ][RUS/Multi10]
+  ~ Just Dance JD Legacy Mod (1400+ песен Decades of Hits, Unlimited, Now, 2026 и др
   ~ Croc's World 1-5 / Run [NSZ][ENG,RUS]
-  ~ Lydia [NSZ][RUS/Multi8]
-  ~ Ketsu Battler + 2 DLC [NSZ][ENG]
   ~ Prototype 2 (порт) [NRO][RUS]
   ~ Need For Speed Underground 2 (хоумбрю NFS:U2) [NRO][RUS/ENG]
   ~ Prey 2006 (хоумбрю openPrey) [NRO][ENG,RUS (Voice Mod.)]
@@ -16,8 +16,7 @@
   ~ Torchlight 1 (порт) [NRO][RUS/ENG]
   ~ Call of Duty Black Ops Zombies (iOS-порт) [NRO][ENG]
   ~ Call of Duty 4 Modern Warfare (порт CoD4:MW) [NRO][RUS/ENG]
-  ~ Donkey Kong 64 (хоумбрю DK64R) [NRO][ENG]
-Статистика обновлена: 7241 раздач
+Статистика обновлена: 7242 раздач
   * Покрытие базы: 100.2%
-  * Активных сидов: 114838
-  * Всего загрузок: 7553519
+  * Активных сидов: 106590
+  * Всего загрузок: 7552086
