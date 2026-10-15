@@ -1,13 +1,12 @@
-=== 2026-10-15 05:50:53 ===
-Всего в базе: 7225
+=== 2026-10-15 09:56:24 ===
+Всего в базе: 7227
 Добавлено: 2
-  + Zenonia [NSZ][RUS/Multi11]
-  + Silver Pines [NSZ][RUS/Multi9]
-Обновлено: 22
-  ~ Toem: A Photo Adventure 1-2 [NSZ][RUS/Multi7]
-  ~ Anton Blast (AntonBlast the Dynamite) [NSZ][ENG]
-  ~ Mini Metro / Mini Motorways [NSZ][RUS/Multi11]
-  ~ Astroneer + DLC Megatech, Glitchwalkers [NSP][RUS/Multi11]
+  + Vault of Power [NSZ][ENG]
+  + Cubic Cosmos [NSP][ENG]
+Обновлено: 16
+  ~ Creepy Tale 1 / 2 / 3 Ingrid Penance / 4 Some Other Place / 5 Snow Child [NSZ][R
+  ~ Constance [NSP][RUS/Multi16]
+  ~ Croc's World 1-5 / Run [NSZ][ENG,RUS]
   ~ Prototype 2 (порт) [NRO][RUS]
   ~ Need For Speed Underground 2 (хоумбрю NFS:U2) [NRO][RUS/ENG]
   ~ Prey 2006 (хоумбрю openPrey) [NRO][ENG,RUS (Voice Mod.)]
@@ -21,12 +20,7 @@
   ~ Burnout 3 Takedown (порт) [NRO][ENG]
   ~ Need For Speed Underground (хоумбрю NFS:U) [NRO][ENG]
   ~ Sly Cooper and the Thievius Raccoonus (порт Project Cane Raccoon) [NRO][ENG]
-  ~ NOVA 3 Near Orbit Vanguard Alliance (порт) [NRO][RUS/Multi10]
-  ~ Def Jam Fight for NY (порт) [NRO][ENG]
-  ~ Angry Birds Epic: All Stars (хоумбрю) [NRO][RUS/Multi11]
-  ~ Mercenaries 2 World in Flames (порт) [NRO][RUS/ENG]
-  ~ Osmos HD (порт) [NRO][ENG]
 Статистика обновлена: 7239 раздач
   * Покрытие базы: 100.2%
-  * Активных сидов: 79108
-  * Всего загрузок: 7545972
+  * Активных сидов: 85614
+  * Всего загрузок: 7547856

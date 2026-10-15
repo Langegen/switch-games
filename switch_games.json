@@ -1,5 +1,60 @@
 [
     {
+        "title": "Cubic Cosmos [NSP][ENG]",
+        "size": "1.04 GB",
+        "magnet": "magnet:?xt=urn:btih:4D5A59EAF4D0F74D1BFEF193944D5746872836E6&tr=http%3A%2F%2Fbt4.t-ru.org%2Fann%3Fmagnet",
+        "topic_id": "6922921",
+        "url": "https://rutracker.org/forum/viewtopic.php?t=6922921",
+        "year": "2026, октябрь",
+        "genre": "TCG",
+        "developer": "Inkstone Atelier",
+        "publisher": "Happy Player",
+        "image_format": "NSP",
+        "interface_lang": "Английский [ENG]",
+        "voice_lang": "не озвучивается",
+        "performance": "Да (на 22.5.0, Atmosphere 1.11.2)",
+        "multiplayer": "нет",
+        "cover": "https://i2.imageban.ru/out/2026/10/15/1bd948320f51a60b771f61439b564e51.png",
+        "screenshots": [
+            "https://i128.fastpic.org/thumb/2026/1015/62/ee7166c82a5e035a4eda3a43a223c662.jpeg",
+            "https://i128.fastpic.org/thumb/2026/1015/1f/455d44580138b4e03ef0717de7189e1f.jpeg",
+            "https://i128.fastpic.org/thumb/2026/1015/33/301eef6722aa381111ff9fc92b037833.jpeg",
+            "https://i128.fastpic.org/thumb/2026/1015/c4/583450669937b2cd0c29a7b2795bc0c4.jpeg",
+            "https://i128.fastpic.org/thumb/2026/1015/5b/994044c63e8073019dd9c12a18aa895b.jpeg",
+            "https://i128.fastpic.org/thumb/2026/1015/2e/8291124c6370c8d7afe61544c9a12f2e.jpeg"
+        ],
+        "description": "Динамичная карточная игра!\nСоберите неудержимую армию фишек, связывайте мощные комбо и наслаждайтесь бесконечными возможностями!..\n\n\n\nСоберите непобедимую колоду: комбинируйте карты и реликвии, чтобы собрать неудержимую колоду.\n\n\n\nСоздавайте смертельные комбинации из более чем 240 карт, открывайте сочетания эффектов с более чем 50 экипируемыми реликвиями.\n\n\n\nМножество случайных событий превращает каждое прохождение в новое приключение!",
+        "title_id": "01000500296CA000"
+    },
+    {
+        "title": "Vault of Power [NSZ][ENG]",
+        "size": "243.8 MB",
+        "magnet": "magnet:?xt=urn:btih:282F24CF154EE7BF2464178DFCA1CE7C55852B14&tr=http%3A%2F%2Fbt2.t-ru.org%2Fann%3Fmagnet",
+        "topic_id": "6922954",
+        "url": "https://rutracker.org/forum/viewtopic.php?t=6922954",
+        "year": "2026, октябрь",
+        "genre": "Role-Playing, Roguelite",
+        "developer": "Jim Games",
+        "publisher": "Cgi Lab Games",
+        "image_format": ".NSZ (сжато ~22%, установленный объём 0.31 ГБ)",
+        "interface_lang": "Английский [ENG]",
+        "voice_lang": "не озвучивается",
+        "performance": "Да (на 22.5.0, Atmosphere 1.11.2)",
+        "multiplayer": "нет",
+        "cover": "https://i4.imageban.ru/out/2026/10/15/aa6d486c2993e5ed6e852a9bc113c5fb.png",
+        "screenshots": [
+            "https://i128.fastpic.org/thumb/2026/1015/4e/702277f046dc654a0c1a568a25e47a4e.jpeg",
+            "https://i128.fastpic.org/thumb/2026/1015/35/3b980a48c4c33f28f1aaf3139d32f635.jpeg",
+            "https://i128.fastpic.org/thumb/2026/1015/36/6050158c49ec279c74fa8c99641b7d36.jpeg",
+            "https://i128.fastpic.org/thumb/2026/1015/9f/a6535e7659a68177530e7af29f564b9f.jpeg",
+            "https://i128.fastpic.org/thumb/2026/1015/34/06fcfd09cccf6812907d1bcaedf8a434.jpeg",
+            "https://i128.fastpic.org/thumb/2026/1015/19/a31b22f14930049f62c94ed5921a9a19.jpeg",
+            "https://i128.fastpic.org/thumb/2026/1015/78/7bdf1a87bd5f5ff47573c54207798978.jpeg"
+        ],
+        "description": "Освойте мощные навыки, стратегически размещайте своих юнитов и покоряйте сложные подземелья.\n\n\n\nКомбинируйте более 50 заклинаний, чтобы создать свой собственный билд.\n\n\n\nУчаствуйте в сложных битвах! Планируйте и готовьтесь перед каждой битвой. Битвы проходят автоматически.\n\n\n\nСлучайные события — получайте мощные бонусы классов.\n\n\n\nПризывайте мертвых как Некромант, управляйте бурями как Друид или насылайте метеоры как Маг.",
+        "title_id": "01004F302847E000"
+    },
+    {
         "title": "Silver Pines [NSZ][RUS/Multi9]",
         "size": "2.08 GB",
         "magnet": "magnet:?xt=urn:btih:B2B3298FBBFF29A30FD58F3FC1E239B2874B88D6&tr=http%3A%2F%2Fbt3.t-ru.org%2Fann%3Fmagnet",
@@ -11498,8 +11553,8 @@
     },
     {
         "title": "Constance [NSP][RUS/Multi16]",
-        "size": "1.86 GB",
-        "magnet": "magnet:?xt=urn:btih:E60957963187E2832C80A1AEBB2723C3C99D005B&tr=http%3A%2F%2Fbt3.t-ru.org%2Fann%3Fmagnet",
+        "size": "1.83 GB",
+        "magnet": "magnet:?xt=urn:btih:66486212D29C7D5E09A7833240CA3DDE25602C45&tr=http%3A%2F%2Fbt3.t-ru.org%2Fann%3Fmagnet",
         "topic_id": "6853437",
         "url": "https://rutracker.org/forum/viewtopic.php?t=6853437",
         "year": "2026, май",
@@ -20276,19 +20331,19 @@
         "title_id": "010010501B8B2000"
     },
     {
-        "title": "Creepy Tale 1 / 2 / 3 Ingrid Penance / 4 Some Other Place [NSZ][RUS/Multi7]",
-        "size": "1.29 GB",
-        "magnet": "magnet:?xt=urn:btih:2BD6F61FD91DBB45F78283D0CC91969DCCAFEEE8&tr=http%3A%2F%2Fbt2.t-ru.org%2Fann%3Fmagnet",
+        "title": "Creepy Tale 1 / 2 / 3 Ingrid Penance / 4 Some Other Place / 5 Snow Child [NSZ][RUS/Multi7]",
+        "size": "2.05 GB",
+        "magnet": "magnet:?xt=urn:btih:FAA5B979DBFE39C8BA4B1342EFCE235D13E5B53E&tr=http%3A%2F%2Fbt2.t-ru.org%2Fann%3Fmagnet",
         "topic_id": "5918248",
         "url": "https://rutracker.org/forum/viewtopic.php?t=5918248",
-        "year": "2020-2024",
+        "year": "2020-2026",
         "genre": "Adventure, Puzzle, Horror",
         "developer": "Creepy Brothers Studio, Deqaf Studio",
         "publisher": "No Gravity Games",
-        "image_format": ".NSZ (сжато ~72%, установленный объём 4.54 ГБ)",
+        "image_format": ".NSZ (сжато ~76%, установленный объём 8.58 ГБ)",
         "interface_lang": "Русский, Английский [RUS / ENG / Multi 7]",
         "voice_lang": "русская, английская (кроме 1-ой части)",
-        "performance": "Да (на 18.1.0, Atmosphere 1.7.1)",
+        "performance": "Да (на 22.5.0, Atmosphere 1.11.2)",
         "multiplayer": "нет",
         "cover": "http://images.vfl.ru/ii/1594479914/e2c3dc6f/31050389.png",
         "screenshots": [
@@ -20303,7 +20358,7 @@
             "https://i115.fastpic.org/thumb/2021/1014/5a/b808c287d3198ce0d8fbdb023eb5505a.jpeg"
         ],
         "description": "Беспечный поход за грибами вместе с братом оборачивается ужасом и затягивает героя в череду жутких событий. Брат похищен, а вы остаетесь один на один со зловещим лесом, наполненным опасностями и странными существами. Решайте головоломки, которые встречаются у вас на пути, не дайте себя поймать и спасите брата из лап нечистой силы!\nУзнайте темную историю, которая постигла некогда спокойный и миролюбивый лес, превратив его в жуткое место, наполненное злом. Возможно, именно вы сможете разгадать все тайны и спасти еще пока мирных жителей леса?\n\n\n\nЖутковато атмосферная головоломка с элементами классического квеста: собирайте предметы в инвентарь и используйте в самых разнообразных ситуациях.\n\n\n\nНо это не только квест, вам придется прятаться, убегать, высоко прыгать и даже… научиться играть на дудочке.\n\n\n\nВолшебная музыка и прекрасная 2D графика перенесут вас в страшную сказку и подарят много незабываемых часов!\n\n\n\nОт русских разработчиков.\nЕщё мифологические игры.",
-        "title_id": "010050B01FD30000"
+        "title_id": "0100FAB02A21E000"
     },
     {
         "title": "Snoopy and the Great Mystery Club + DLC (Снупи и Великий Клуб Тайн) [NSZ][ENG]",
@@ -30760,15 +30815,15 @@
         "multiplayer": "до 4 игроков",
         "cover": "http://images.vfl.ru/ii/1563653166/a4f1301f/27275328.png",
         "screenshots": [
-            "https://i106.fastpic.ru/thumb/2019/0720/e7/2e0cd30aa5152f65f87830561b89aee7.jpeg",
-            "https://i106.fastpic.ru/thumb/2019/0720/ff/4b453d28c554c754b80728c488bdacff.jpeg",
-            "https://i106.fastpic.ru/thumb/2019/0720/3b/957d17a8985a8993ab300548e343eb3b.jpeg",
-            "https://i106.fastpic.ru/thumb/2019/0720/67/ea50b5a2a74fda3ddd5b17613118d767.jpeg",
-            "https://i106.fastpic.ru/thumb/2019/0720/fe/a5900389053e7e36f3ff1969f4ebccfe.jpeg",
-            "https://i106.fastpic.ru/thumb/2019/0720/31/7e6013faabd192215f0b8a78f010ea31.jpeg",
-            "https://i106.fastpic.ru/thumb/2019/0720/85/739ae64d29183a99074530b8dfcce685.jpeg",
-            "https://i106.fastpic.ru/thumb/2019/0720/c3/10419b8eb157106aa1ccb102947106c3.jpeg",
-            "https://i106.fastpic.ru/thumb/2019/0720/5e/b175209d7d9bfda6453e1d47d68d735e.jpeg"
+            "https://i106.fastpic.org/thumb/2019/0720/e7/2e0cd30aa5152f65f87830561b89aee7.jpeg",
+            "https://i106.fastpic.org/thumb/2019/0720/ff/4b453d28c554c754b80728c488bdacff.jpeg",
+            "https://i106.fastpic.org/thumb/2019/0720/3b/957d17a8985a8993ab300548e343eb3b.jpeg",
+            "https://i106.fastpic.org/thumb/2019/0720/67/ea50b5a2a74fda3ddd5b17613118d767.jpeg",
+            "https://i106.fastpic.org/thumb/2019/0720/fe/a5900389053e7e36f3ff1969f4ebccfe.jpeg",
+            "https://i106.fastpic.org/thumb/2019/0720/31/7e6013faabd192215f0b8a78f010ea31.jpeg",
+            "https://i106.fastpic.org/thumb/2019/0720/85/739ae64d29183a99074530b8dfcce685.jpeg",
+            "https://i106.fastpic.org/thumb/2019/0720/c3/10419b8eb157106aa1ccb102947106c3.jpeg",
+            "https://i106.fastpic.org/thumb/2019/0720/5e/b175209d7d9bfda6453e1d47d68d735e.jpeg"
         ],
         "description": "«Звёздные Союзники Кирби» — четырнадцатая видеоигра серии Kirby, разработанная HAL Laboratory и выпущенная Nintendo. Это первая игра серии, выпущенная для данной консоли.\nОна позволит вам проявить свои не дюжие способности в красочной и удивительной Стране грез. Формируйте вместе со своими друзьями команду из четырех игроков и отправляйтесь в необычное путешествие, полное загадок, тайн и опасностей. В представленной версии для платформы Nintendo Switch вы сможете сообща выполнять мощные атаки, способные сокрушить даже самых могущественных соперников. Опробуйте необычную способность к копированию, которая откроет для вас множество возможностей.\nТемные сердечки, которые неожиданно начали сыпаться с небес, посеяли семена зла в душах всех, кто имел неосторожность с ними соприкоснуться. Однако попавшее в Кирби сердце удивительным образом наделило его силой любви, и теперь ему доступна поддержка любого персонажа. Объединяйте усилия и верните покой и мир в некогда цветущую Страну грез!..\nЕщё другие Kirby на Switch.",
         "title_id": "01007E3006DDA000"
@@ -30910,15 +30965,15 @@
         "multiplayer": "нет",
         "cover": "http://images.vfl.ru/ii/1609008527/cb33217c/32781962.png",
         "screenshots": [
-            "https://i114.fastpic.ru/thumb/2020/1226/3f/73bb47ab66f1fa0d8945b1c7df75a83f.jpeg",
-            "https://i114.fastpic.ru/thumb/2020/1226/0d/45cea8210df1f3af0e4e4c2c6321280d.jpeg",
-            "https://i114.fastpic.ru/thumb/2020/1226/2d/8bc44a30e66851c7f8181bb9e5484a2d.jpeg",
-            "https://i114.fastpic.ru/thumb/2020/1226/bc/c9ee006ff386f0dab9eb621d1ec65abc.jpeg",
-            "https://i114.fastpic.ru/thumb/2020/1226/22/1eae0fcb236972b1e85dfb54bdfc5d22.jpeg",
-            "https://i114.fastpic.ru/thumb/2020/1226/3a/97e81f7c83df5a3263b822336a940d3a.jpeg",
-            "https://i114.fastpic.ru/thumb/2020/1226/7c/f791541a5c16a2469ff22e404584c47c.jpeg",
-            "https://i114.fastpic.ru/thumb/2020/1226/8b/69f33bb4bf73ab4f45d56dfca7180f8b.jpeg",
-            "https://i114.fastpic.ru/thumb/2020/1226/89/fc6a1a261431e7e0b5ef9c9faad65c89.jpeg"
+            "https://i114.fastpic.org/thumb/2020/1226/3f/73bb47ab66f1fa0d8945b1c7df75a83f.jpeg",
+            "https://i114.fastpic.org/thumb/2020/1226/0d/45cea8210df1f3af0e4e4c2c6321280d.jpeg",
+            "https://i114.fastpic.org/thumb/2020/1226/2d/8bc44a30e66851c7f8181bb9e5484a2d.jpeg",
+            "https://i114.fastpic.org/thumb/2020/1226/bc/c9ee006ff386f0dab9eb621d1ec65abc.jpeg",
+            "https://i114.fastpic.org/thumb/2020/1226/22/1eae0fcb236972b1e85dfb54bdfc5d22.jpeg",
+            "https://i114.fastpic.org/thumb/2020/1226/3a/97e81f7c83df5a3263b822336a940d3a.jpeg",
+            "https://i114.fastpic.org/thumb/2020/1226/7c/f791541a5c16a2469ff22e404584c47c.jpeg",
+            "https://i114.fastpic.org/thumb/2020/1226/8b/69f33bb4bf73ab4f45d56dfca7180f8b.jpeg",
+            "https://i114.fastpic.org/thumb/2020/1226/89/fc6a1a261431e7e0b5ef9c9faad65c89.jpeg"
         ],
         "description": "Heroes of Might and Magic («Герои меча и магии») — фэнтезийная серия видеоигр в жанре пошаговой стратегии с элементами RPG, на данный момент включающая в себя семь основных частей. Вымышленная вселенная Heroes of Might and Magic основана на вселенной Might and Magic. События всех игр серии до пятой разворачиваются в вымышленном мире Энрот.\nHeroes of Might and Magic II: The Succession Wars + The Price of Loyalty (сокращённо Heroes II или HoMM2) — компьютерная игра в жанре пошаговой стратегии с элементами RPG, вторая часть в серии фэнтезийных игр Heroes of Might and Magic. Игра была разработана компанией New World Computing и издана The 3DO Company 1 октября 1996 года.\n\nHeroes of Might and Magic II визуально очень похожа на игру-предшественника, однако имеет ряд принципиальных отличий в игровом процессе. После смерти короля Морглина из династии Железный Кулак (англ. Ironfist), фигурировавшего в сюжете Heroes of Might and Magic I, разразилась борьба за наследство между его сыновьями — Роландом и Арчибальдом. Роланд олицетворяет собой «добрые» силы Рыцарей, Волшебниц и Магов, а Арчибальд — «злые» силы Варваров, Чернокнижников и Некромантов. Выбор наследника в королевстве Энрот должен был определиться королевским провидцем, однако он и три его преемника умирают при разных обстоятельствах, позволяющих заподозрить в их гибели козни злого Арчибальда. Арчибальд публикует прокламацию, утверждающую о причастности Роланда к происшедшему. Роланд, в страхе за свою жизнь, спасается бегством в летний дворец, а в отсутствие брата Арчибальд подкупом и угрозами принуждает нового провидца избрать его как нового короля.\n\nПосле неё игроку представляется выбор сюзерена для прохождения двух сюжетных кампаний — за Роланда и Арчибальда.Первую часть Heroes of Might and Magic I на DOSBox Retroarch для Switch см. здесь.",
         "title_id": null
@@ -31030,14 +31085,14 @@
         "multiplayer": "до 2 игроков",
         "cover": "http://images.vfl.ru/ii/1574437705/7e5347a2/28655820.png",
         "screenshots": [
-            "https://i111.fastpic.ru/thumb/2019/1116/d6/0ec3cf572433ea8df1eaa92b60f922d6.jpeg",
-            "https://i111.fastpic.ru/thumb/2019/1116/31/b2e8fe1d90de4d51f8d49d2a37a4ab31.jpeg",
-            "https://i111.fastpic.ru/thumb/2019/1116/6a/85d2cd2a0de3caaee560f682f478df6a.jpeg",
-            "https://i111.fastpic.ru/thumb/2019/1116/4b/488a9797eabb7497a06bdd91663f494b.jpeg",
-            "https://i111.fastpic.ru/thumb/2019/1116/1b/9570a17dea967a6d556010f295d5721b.jpeg",
-            "https://i111.fastpic.ru/thumb/2019/1116/6c/1fbb1329370ccf41068299b4d855386c.jpeg",
-            "https://i111.fastpic.ru/thumb/2019/1116/4c/8c0eff8299a748cd84b396c20cdc664c.jpeg",
-            "https://i111.fastpic.ru/thumb/2019/1116/c4/1f5adbb7df9a5b2d07046936b4f85fc4.jpeg"
+            "https://i111.fastpic.org/thumb/2019/1116/d6/0ec3cf572433ea8df1eaa92b60f922d6.jpeg",
+            "https://i111.fastpic.org/thumb/2019/1116/31/b2e8fe1d90de4d51f8d49d2a37a4ab31.jpeg",
+            "https://i111.fastpic.org/thumb/2019/1116/6a/85d2cd2a0de3caaee560f682f478df6a.jpeg",
+            "https://i111.fastpic.org/thumb/2019/1116/4b/488a9797eabb7497a06bdd91663f494b.jpeg",
+            "https://i111.fastpic.org/thumb/2019/1116/1b/9570a17dea967a6d556010f295d5721b.jpeg",
+            "https://i111.fastpic.org/thumb/2019/1116/6c/1fbb1329370ccf41068299b4d855386c.jpeg",
+            "https://i111.fastpic.org/thumb/2019/1116/4c/8c0eff8299a748cd84b396c20cdc664c.jpeg",
+            "https://i111.fastpic.org/thumb/2019/1116/c4/1f5adbb7df9a5b2d07046936b4f85fc4.jpeg"
         ],
         "description": "Действие в «Детях Морты» происходит в дальних краях, а история рассказывает о том, что знакомо и близко каждому: о простых, но дорогих сердцу чувствах, в которых порой бывает трудно признаться, о любви и надежде, тоске и сомнениях, потерях и великих жертвах, на которые мы идем ради спасения тех, кто нам особенно дорог.\nВы отправитесь в приключение вместе с необычной семьей настоящих героев. Когда землю окутывает скверна, стражам горы Морта пора выходить на бой с древним злом. Но эта история вовсе не о спасении мира, а об отважном семействе, в котором крепко держатся друг за друга, даже когда тьма грозит поглотить весь мир.\n\n\n\n6 игровых персонажей, каждый из которых самобытен.\n\n\n\nДушевная история о семье героев.\n\n\n\nИгра в жанре rogue-lite с крепким сюжетом, разнообразные навыки и характеристики.\n\n\n\nВ каждом походе можно найти предметы с пассивными или активируемыми характеристиками.\n\n\n\nМножество подземелий в разных биосистемах.\n\n\n\nВолшебный мир с богатой историей!",
         "title_id": "01002DE00C250000"
@@ -31089,15 +31144,15 @@
         "multiplayer": "нет",
         "cover": "http://images.vfl.ru/ii/1602521114/a1c2238d/31916681.png",
         "screenshots": [
-            "https://i114.fastpic.ru/thumb/2020/1012/87/71cd572fd520ed36590ca0efd7ab3d87.jpeg",
-            "https://i114.fastpic.ru/thumb/2020/1012/59/f67bcf02f790a0810d88f0d7d2b52b59.jpeg",
-            "https://i114.fastpic.ru/thumb/2020/1012/3b/0e6b63d5334da6fb18a2b731edb8e53b.jpeg",
-            "https://i114.fastpic.ru/thumb/2020/1012/32/1836d2819b4449a26103cd63d32a2532.jpeg",
-            "https://i114.fastpic.ru/thumb/2020/1012/a9/97b1e6f71efe0d4574ed3fc8db1725a9.jpeg",
-            "https://i114.fastpic.ru/thumb/2020/1012/fa/fdbbf7058852b905b005be5b3c6673fa.jpeg",
-            "https://i114.fastpic.ru/thumb/2020/1012/f0/bd1fcbc6bca58763df70f0b8b81f94f0.jpeg",
-            "https://i114.fastpic.ru/thumb/2020/1012/7a/6e33ea311f30208998d23c35b278667a.jpeg",
-            "https://i114.fastpic.ru/thumb/2020/1012/f2/b5a1d4e527a7204729f83986b6841ef2.jpeg"
+            "https://i114.fastpic.org/thumb/2020/1012/87/71cd572fd520ed36590ca0efd7ab3d87.jpeg",
+            "https://i114.fastpic.org/thumb/2020/1012/59/f67bcf02f790a0810d88f0d7d2b52b59.jpeg",
+            "https://i114.fastpic.org/thumb/2020/1012/3b/0e6b63d5334da6fb18a2b731edb8e53b.jpeg",
+            "https://i114.fastpic.org/thumb/2020/1012/32/1836d2819b4449a26103cd63d32a2532.jpeg",
+            "https://i114.fastpic.org/thumb/2020/1012/a9/97b1e6f71efe0d4574ed3fc8db1725a9.jpeg",
+            "https://i114.fastpic.org/thumb/2020/1012/fa/fdbbf7058852b905b005be5b3c6673fa.jpeg",
+            "https://i114.fastpic.org/thumb/2020/1012/f0/bd1fcbc6bca58763df70f0b8b81f94f0.jpeg",
+            "https://i114.fastpic.org/thumb/2020/1012/7a/6e33ea311f30208998d23c35b278667a.jpeg",
+            "https://i114.fastpic.org/thumb/2020/1012/f2/b5a1d4e527a7204729f83986b6841ef2.jpeg"
         ],
         "description": "YouTube («ютьюб») — видеохостинг, созданный в 2005-ом году, предоставляющий пользователям услуги хранения, доставки и показа видео, ставший популярнейшей видеоплощадкой и вторым сайтом в мире по количеству посетителей.\nПользователи могут загружать, просматривать, оценивать, добавлять в избранное и делиться теми или иными видеозаписями. В январе 2012 года ежедневное количество просмотров видео на сайте достигло 4 млрд. На 2017-ый год, его пользователи просматривают 1 миллиард часов контента ежедневно. В мае 2019-го за каждую минуту на портал загружается по 500 тысяч минут нового видео, за этот год его рекламная выручка составила ~15 миллиардов долларов. На сайте представлены фильмы, музыкальные клипы, трейлеры, новости, образовательные передачи, а также любительские видеозаписи, включая видеоблоги, слайд-шоу, юмористические видеоролики и прочее.\nКлиент Crunchyroll тут.",
         "title_id": "01003A400C3DA000"
@@ -31147,13 +31202,13 @@
         "voice_lang": "Английская",
         "performance": "RajNX 5.1.0 + Tinfoil",
         "multiplayer": "1-2",
-        "cover": "http://i91.fastpic.ru/big/2018/1006/e5/98225a6f27d9e35c6f24ca6802f637e5.jpg",
+        "cover": "http://i91.fastpic.org/big/2018/1006/e5/98225a6f27d9e35c6f24ca6802f637e5.jpg",
         "screenshots": [
-            "http://i89.fastpic.ru/thumb/2018/1006/dd/360b9515555b739b44e3b6fe2ffd31dd.jpeg",
-            "http://i89.fastpic.ru/thumb/2018/1006/d4/_5c5ddb26a37e3ebbcacf4dd45d8c9cd4.jpeg",
-            "http://i89.fastpic.ru/thumb/2018/1006/c1/b7c752f5b35e507f496f3a94be8c51c1.jpeg",
-            "http://i89.fastpic.ru/thumb/2018/1006/85/42e83f96efb6472b98e0b9b232cbdf85.jpeg",
-            "http://i89.fastpic.ru/thumb/2018/1006/66/4b9eeb3ed20fef2bec4f3d50a1847a66.jpeg"
+            "http://i89.fastpic.org/thumb/2018/1006/dd/360b9515555b739b44e3b6fe2ffd31dd.jpeg",
+            "http://i89.fastpic.org/thumb/2018/1006/d4/_5c5ddb26a37e3ebbcacf4dd45d8c9cd4.jpeg",
+            "http://i89.fastpic.org/thumb/2018/1006/c1/b7c752f5b35e507f496f3a94be8c51c1.jpeg",
+            "http://i89.fastpic.org/thumb/2018/1006/85/42e83f96efb6472b98e0b9b232cbdf85.jpeg",
+            "http://i89.fastpic.org/thumb/2018/1006/66/4b9eeb3ed20fef2bec4f3d50a1847a66.jpeg"
         ],
         "description": "Величайшие воины Хайрула выйдут на битву в игре Hyrule Warriors: Definitive Edition для Nintendo Switch! Сражайтесь с легионами врагов, используя мощные атаки в стиле Dynasty Warriors, и переключайтесь между различными персонажами из игр The Legend of Zelda, чтобы контролировать ход боя.\n\nПоделитесь контроллером Joy-Con с союзником, чтобы в любой момент объединить силы в совместном режиме на одной консоли Nintendo Switch!\nСамая полная версия Hyrule Warriors!\n\nЭта энергичная экшен-игра включает все карты и задания, плюс 29 персонажей из версий для Wii U и Nintendo 3DS, а также весь премиальный загружаемый контент. Кроме того, в игре появятся несколько новых нарядов для Линка и Зельды по мотивам The Legend of Zelda: Breath of the Wild.\nХайрулу нужны герои...\n\nДеликатный баланс Трифорса нарушен, и королевству Хайрул угрожают темные силы под предводительством темной колдуньи Сии. Только легендарный герой Линк и его отряд отважных воинов может противостоять толпам врагов и отыскать пропавшую принцессу Зельду. Не обойдется и без побочных заданий: помогите Линкл стать героиней, узнайте о прошлом Сии и бороздите моря с Мульт-Линком и Тетрой!\nСтаньте воином\n\nСражайтесь с сотнями врагов, выполняйте невероятные атаки, объединяйте их в неотразимые комбинации и разите целые отряды зрелищными особыми приемами. Только так вы спасете Хайрул.\n\nМгновенно переключайтесь между четырьмя союзниками, чтобы расставлять персонажей в стратегически важных позициях и совершенно по-новому расправляться с врагами. Собирайте рупии и другие полезные предметы, чтобы улучшать оружие и создавать жетоны, которые помогут усилить способности воина.\nСражайтесь в одиночку или вместе с другом!\n\nИграйте заново в уже пройденных миссиях любым доступным персонажем в режиме Free Mode. Так вы сможете изучить уникальные приемы каждого персонажа и выбрать себе любимого бойца. Исследуйте карты классических квестов в уникальном режиме Adventure Mode. Выполняйте различные задания и отыскивайте тайники, сражаясь в Термине, Лоуруле и Великом океане.\n\nКакой бы режим вы ни выбрали, вы можете сражаться в одиночку или заручиться поддержкой друга в совместном многопользовательском режиме с разделенным экраном!",
         "title_id": null
@@ -31175,14 +31230,14 @@
         "multiplayer": "нет",
         "cover": "http://images.vfl.ru/ii/1622960229/36a55945/34729470.png",
         "screenshots": [
-            "https://i114.fastpic.ru/thumb/2021/0606/dc/b407043515fdba1c2208eb0a362410dc.jpeg",
-            "https://i114.fastpic.ru/thumb/2021/0606/2a/598a349736c60e36c79e7bf58de2062a.jpeg",
-            "https://i115.fastpic.ru/thumb/2021/0623/4c/729a20cb901b1e7b004ccd0c305ccf4c.jpeg",
-            "https://i115.fastpic.ru/thumb/2021/0623/7a/4e78698bbdcc48f6dd6f39af6271737a.jpeg",
-            "https://i114.fastpic.ru/thumb/2021/0606/bc/7f3f0a97bee9222af4302f3190882fbc.jpeg",
-            "https://i114.fastpic.ru/thumb/2021/0606/d6/d3f2559a20e297881c4dedf9161b43d6.jpeg",
-            "https://i114.fastpic.ru/thumb/2021/0606/84/cddc46d6453553619fa3018e3c761584.jpeg",
-            "https://i114.fastpic.ru/thumb/2021/0606/87/46b81c9bc8007dbd7f59e2a21c833987.jpeg"
+            "https://i114.fastpic.org/thumb/2021/0606/dc/b407043515fdba1c2208eb0a362410dc.jpeg",
+            "https://i114.fastpic.org/thumb/2021/0606/2a/598a349736c60e36c79e7bf58de2062a.jpeg",
+            "https://i115.fastpic.org/thumb/2021/0623/4c/729a20cb901b1e7b004ccd0c305ccf4c.jpeg",
+            "https://i115.fastpic.org/thumb/2021/0623/7a/4e78698bbdcc48f6dd6f39af6271737a.jpeg",
+            "https://i114.fastpic.org/thumb/2021/0606/bc/7f3f0a97bee9222af4302f3190882fbc.jpeg",
+            "https://i114.fastpic.org/thumb/2021/0606/d6/d3f2559a20e297881c4dedf9161b43d6.jpeg",
+            "https://i114.fastpic.org/thumb/2021/0606/84/cddc46d6453553619fa3018e3c761584.jpeg",
+            "https://i114.fastpic.org/thumb/2021/0606/87/46b81c9bc8007dbd7f59e2a21c833987.jpeg"
         ],
         "description": "Легендарный Алекс Кидд из SEGA возвращается — в игре Alex Kidd in Miracle World DX! Окунитесь в Чудесный мир по-новому.\n\nВсе уровни из оригинальной игры заново — с новой HD-графикой, анимацией и улучшенным игровым процессом, — и познакомьтесь с совершенно новыми уровнями, которые расширяют историю мира и Алекса Кидда. Вам предстоит победить злого Джанкена Великого и спасти население города Radaxian раз и навсегда! Миру нужен герой — чего же вы ждете?\n\n\n\nВозвращение легенды: погрузитесь в превосходно воссозданную игру Alex Kidd in Miracle World с потрясающим дизайном и более четким и плавным управлением.\n\n\n\nНостальгия берет свое: вернитесь в 80-е одним нажатием кнопки. Переключаться между классической 8-битной графикой и графикой Full HD можно в любой момент, в каком бы месте уровня вы ни находились.\n\n\n\nНовые уровни: познакомьтесь с новыми уровнями, расширяющими историю оригинальной игры.\n\n\n\nАльтернативные бои с боссами: новая улучшенная механика сражений с боссами — с более удобным боем.\n\n\n\nНовая и ремастированная музыка: широкий выбор переработанных музыкальных композиций, а также обновленных треков из оригинальной классической игры!",
         "title_id": "010025D01221A000"
@@ -31234,15 +31289,15 @@
         "multiplayer": "нет",
         "cover": "http://images.vfl.ru/ii/1552149016/1cb40bd2/25696979.png",
         "screenshots": [
-            "https://i110.fastpic.ru/thumb/2019/0309/e8/_d08639bddcf6c5914ba2a885c275abe8.jpeg",
-            "https://i110.fastpic.ru/thumb/2019/0309/3d/_5a48f253c177725d303a1c68a77b123d.jpeg",
-            "https://i110.fastpic.ru/thumb/2019/0309/04/_03b0e0aa0b445b5f34ef8b4fff8d2c04.jpeg",
-            "https://i110.fastpic.ru/thumb/2019/0309/78/a1461978a90ae7329d2bf56dcab21078.jpeg",
-            "https://i110.fastpic.ru/thumb/2019/0309/8f/790eb88a6cd3d11b6c62ffe944bbea8f.jpeg",
-            "https://i110.fastpic.ru/thumb/2019/0309/4a/889b51e6099e1fc097193515f5fbb14a.jpeg",
-            "https://i110.fastpic.ru/thumb/2019/0309/a2/2d065c6279fad4cd0f6f997fa0950ba2.jpeg",
-            "https://i110.fastpic.ru/thumb/2019/0309/0c/2700fa0b57f4c76b2ebf17f5a4f50a0c.jpeg",
-            "https://i110.fastpic.ru/thumb/2019/0309/43/8530908be1228bf70c37ebd3bf75bd43.jpeg"
+            "https://i110.fastpic.org/thumb/2019/0309/e8/_d08639bddcf6c5914ba2a885c275abe8.jpeg",
+            "https://i110.fastpic.org/thumb/2019/0309/3d/_5a48f253c177725d303a1c68a77b123d.jpeg",
+            "https://i110.fastpic.org/thumb/2019/0309/04/_03b0e0aa0b445b5f34ef8b4fff8d2c04.jpeg",
+            "https://i110.fastpic.org/thumb/2019/0309/78/a1461978a90ae7329d2bf56dcab21078.jpeg",
+            "https://i110.fastpic.org/thumb/2019/0309/8f/790eb88a6cd3d11b6c62ffe944bbea8f.jpeg",
+            "https://i110.fastpic.org/thumb/2019/0309/4a/889b51e6099e1fc097193515f5fbb14a.jpeg",
+            "https://i110.fastpic.org/thumb/2019/0309/a2/2d065c6279fad4cd0f6f997fa0950ba2.jpeg",
+            "https://i110.fastpic.org/thumb/2019/0309/0c/2700fa0b57f4c76b2ebf17f5a4f50a0c.jpeg",
+            "https://i110.fastpic.org/thumb/2019/0309/43/8530908be1228bf70c37ebd3bf75bd43.jpeg"
         ],
         "description": "Добро пожаловать на Дикий Запад, каким вы его еще никогда не видели. Загляните вместе с Уорреном в самые темные уголки человеческой души и попытайтесь выжить в мире, полном сложного выбора и еще более тяжелых последствий. Потому что в этом мире смерть всегда ходит рядом, а черные пакты, которые вы заключаете с силами за гранью человеческого понимания, всегда будут преследовать ваших близких.\nСовершите путешествие вглубь мира Hard West и познакомьтесь с яркими игровыми персонажами, чьи судьбы тесно переплетаются с вашей. В ходе игры вместе вам нужно будет принять противоречивые решения, чтобы раскрыть великие планы древних сил. Вы сможете обнаружить глубокий повествовательный сюжет с несколькими концовками, которые зависят от выбора, сделанного в ходе игры.\n\n\n\n«Потусторонний» мир Дикого Запада. Исследуйте мир, в котором западные легенды встречаются с демонами, загадочными ритуалами и сатанистскими культами, и где мертвецы могут снова ходить по земле. За плату.\n\n\n\nУвлекательный бой. Управляйте членами команды (от 1 до 4) в пошаговой схватке и овладейте различными специальными навыками на основе вестернов.\n\n\n\nВыбор и судьба. Погрузитесь в глубокую сюжетную линию, в которой решения, принятые во время боевых сценариев и между ними, отразятся на будущих событиях и изменят великие судьбы противоречивой группы ярких персонажей.\n\n\n\nДело случая. Используйте систему боя, которая не зависит от чистой случайности. Удача — вот единственный страж, позволяющий вступить в бой и выиграть его.\n\n\n\nДинамическая защита. Измените ход боя благодаря расширенной системе защиты от объектов окружающей среды.\n\n\n\nОбнаружение теней. Находите врагов вне зоны видимости по теням, которые они отбрасывают, и звукам, которые они издают.\n\n\n\nРикошеты. Используйте металлические предметы для стрельбы за пределы зоны видимости. Это позволяет улучшить тактические параметры боя и выполнять планирование на разных уровнях.\n\n\n\n40 видов исторического оружия.\n\n\n\nЕщё вестернов.",
         "title_id": "0100ECE00D13E000"
@@ -31291,15 +31346,15 @@
         "multiplayer": "нет",
         "cover": "http://images.vfl.ru/ii/1563741986/aa387c47/27284913.png",
         "screenshots": [
-            "https://i90.fastpic.ru/thumb/2019/0721/b6/b45370055898b8e89da1e6bc0f23d5b6.jpeg",
-            "https://i90.fastpic.ru/thumb/2019/0721/9b/385d39b9153d7086e3e157aab1bd9e9b.jpeg",
-            "https://i90.fastpic.ru/thumb/2019/0721/40/1aa3ea3eba619cf0dd94d0c503547e40.jpeg",
-            "https://i90.fastpic.ru/thumb/2019/0721/4a/7844215c43c7fa470155d06574bcb14a.jpeg",
-            "https://i90.fastpic.ru/thumb/2019/0721/24/6f4b11c090b59fd082248390cb202924.jpeg",
-            "https://i90.fastpic.ru/thumb/2019/0721/a6/e65b9f74fd44e70d655e527152da49a6.jpeg",
-            "https://i90.fastpic.ru/thumb/2019/0721/14/95cb860929547cc6cb54c98235d61114.jpeg",
-            "https://i90.fastpic.ru/thumb/2019/0721/95/44f06529daa0522a5bc7d6015250bf95.jpeg",
-            "https://i90.fastpic.ru/thumb/2019/0721/bc/47a830e4b9c687cf9a37822c519f30bc.jpeg"
+            "https://i90.fastpic.org/thumb/2019/0721/b6/b45370055898b8e89da1e6bc0f23d5b6.jpeg",
+            "https://i90.fastpic.org/thumb/2019/0721/9b/385d39b9153d7086e3e157aab1bd9e9b.jpeg",
+            "https://i90.fastpic.org/thumb/2019/0721/40/1aa3ea3eba619cf0dd94d0c503547e40.jpeg",
+            "https://i90.fastpic.org/thumb/2019/0721/4a/7844215c43c7fa470155d06574bcb14a.jpeg",
+            "https://i90.fastpic.org/thumb/2019/0721/24/6f4b11c090b59fd082248390cb202924.jpeg",
+            "https://i90.fastpic.org/thumb/2019/0721/a6/e65b9f74fd44e70d655e527152da49a6.jpeg",
+            "https://i90.fastpic.org/thumb/2019/0721/14/95cb860929547cc6cb54c98235d61114.jpeg",
+            "https://i90.fastpic.org/thumb/2019/0721/95/44f06529daa0522a5bc7d6015250bf95.jpeg",
+            "https://i90.fastpic.org/thumb/2019/0721/bc/47a830e4b9c687cf9a37822c519f30bc.jpeg"
         ],
         "description": "В этом напряженном платформере от создателей классической игры TowerFall Маделин сражается со своими внутренними демонами на пути к вершине горы Селеста.\nПростое и удобное управление с массой сложных моментов, где каждое падение чему-то учит. Маделин может забраться куда угодно на горе Селеста, если хватит сил, конечно. Ее ждут опасные путешествия, загадочные места и встречи с таинственными персонажами.\n\n\n\nВсе нормально, Маделин. Просто дыши. Ты сможешь.\n\n\n\nХардкорная игра в старомодном стиле о поисках себя.\n\n\n\nПодъем на полтысячи экранов со сложными трюками и тайниками!\n\n\n\nБонусные главы для самых отважных.\n\n\n\nДва часа превосходной музыки.\n\n\n\nПирог!..\n\n\n\nОт создателей «Celeste 64: Fragments of the Mountain».",
         "title_id": "01002B30028F6000"
@@ -31321,13 +31376,13 @@
         "multiplayer": "нет",
         "cover": "http://images.vfl.ru/ii/1571384745/ebe1ef45/28233629.png",
         "screenshots": [
-            "https://i86.fastpic.ru/thumb/2019/1018/05/1ba92116a353fdd145b139e2dd5b6c05.jpeg",
-            "https://i86.fastpic.ru/thumb/2019/1018/86/98eaf0ba61e9d5a54ea3b321f6396786.jpeg",
-            "https://i86.fastpic.ru/thumb/2019/1018/b0/2015345d84ea10843c921804ba7e4cb0.jpeg",
-            "https://i86.fastpic.ru/thumb/2019/1018/f3/d066108269884c5a98d3d1db9537e3f3.jpeg",
-            "https://i86.fastpic.ru/thumb/2019/1018/d6/758aa43655737c3ab0a8e49a6234fdd6.jpeg",
-            "https://i86.fastpic.ru/thumb/2019/1018/a6/0073cc9dea7b8fa6d59dee18375a7ca6.jpeg",
-            "https://i86.fastpic.ru/thumb/2019/1018/09/0e3a7b35c22644bb2e71b78f207cda09.jpeg"
+            "https://i86.fastpic.org/thumb/2019/1018/05/1ba92116a353fdd145b139e2dd5b6c05.jpeg",
+            "https://i86.fastpic.org/thumb/2019/1018/86/98eaf0ba61e9d5a54ea3b321f6396786.jpeg",
+            "https://i86.fastpic.org/thumb/2019/1018/b0/2015345d84ea10843c921804ba7e4cb0.jpeg",
+            "https://i86.fastpic.org/thumb/2019/1018/f3/d066108269884c5a98d3d1db9537e3f3.jpeg",
+            "https://i86.fastpic.org/thumb/2019/1018/d6/758aa43655737c3ab0a8e49a6234fdd6.jpeg",
+            "https://i86.fastpic.org/thumb/2019/1018/a6/0073cc9dea7b8fa6d59dee18375a7ca6.jpeg",
+            "https://i86.fastpic.org/thumb/2019/1018/09/0e3a7b35c22644bb2e71b78f207cda09.jpeg"
         ],
         "description": "В 1802 году торговый корабль «Обра Динн» выходит из Лондона и отправляется на Восток с 200 тоннами товаров. Спустя полгода он так и не появляется в порту Мыса Доброй Надежды, и корабль объявляется пропавшим в море.\nРанним утром 14 октября 1807 года «Обра Динн» заходит в порт Фалмут с поврежденными парусами и без единого члена экипажа. В роли страхового инспектора Британской Ост-Индской компании вам предстоит раскрыть тайну исчезновения корабля и его загадочного возвращения.\nReturn of the Obra Dinn — это приключение от первого лица, в котором вам предстоит исследовать окружение и делать логические выводы.\n\n\n\nРаскройте необъяснимую тайну корабля от первого лица.\n\n\n\nВыдающийся игровой дизайн и 1-битная графика.\n\n\n\nВедите расследование, полагаясь на свою наблюдательность и силу дедукции.\n\n\n\nОт создателя игры «Papers, Please».",
         "title_id": "010032E00E6E2000"
@@ -31407,12 +31462,12 @@
         "multiplayer": "до 2 игроков",
         "cover": "http://images.vfl.ru/ii/1599054716/c61e26a6/31518055.png",
         "screenshots": [
-            "https://i112.fastpic.ru/thumb/2020/0902/e2/c82b75692e5499baf1ab9d3f03459de2.jpeg",
-            "https://i112.fastpic.ru/thumb/2020/0902/b2/fa4686c0ec6221423371c7800f2ee1b2.jpeg",
-            "https://i112.fastpic.ru/thumb/2020/0902/58/369e947105ba5c2db13de8f66f1a3458.jpeg",
-            "https://i112.fastpic.ru/thumb/2020/0902/12/69097c2516db81db8eb83197a72fa912.jpeg",
-            "https://i112.fastpic.ru/thumb/2020/0902/ba/1e89a468d0e346a357ae876b560e5fba.jpeg",
-            "https://i112.fastpic.ru/thumb/2020/0902/1b/fd3c8d154726c0a2ffd28bd4029f661b.jpeg"
+            "https://i112.fastpic.org/thumb/2020/0902/e2/c82b75692e5499baf1ab9d3f03459de2.jpeg",
+            "https://i112.fastpic.org/thumb/2020/0902/b2/fa4686c0ec6221423371c7800f2ee1b2.jpeg",
+            "https://i112.fastpic.org/thumb/2020/0902/58/369e947105ba5c2db13de8f66f1a3458.jpeg",
+            "https://i112.fastpic.org/thumb/2020/0902/12/69097c2516db81db8eb83197a72fa912.jpeg",
+            "https://i112.fastpic.org/thumb/2020/0902/ba/1e89a468d0e346a357ae876b560e5fba.jpeg",
+            "https://i112.fastpic.org/thumb/2020/0902/1b/fd3c8d154726c0a2ffd28bd4029f661b.jpeg"
         ],
         "description": "Устройте величайший бой посуды в Sushi Striker: The Way of Sushido для Nintendo Switch! Собирайте цветные тарелки с суши в этой динамичной головоломке, а затем швыряйте их во врагов! Да-а-а!..\nЕшьте — и сражайтесь! Окажитесь в роли Мусаси, юного героя с неуемным аппетитом! Раскройте тайну исчезновения родителей Мусаси, узнайте правду о трагических суши-битвах и защитите родную деревеньку от всемогущей империи, чтобы все снова могли спокойно полакомиться суши. Юный воин, будь начеку, ведь на твоем пути встретятся опытные суши-самураи. Чтобы выйти победителем, придется продемонстрировать молниеносные рефлексы и голод до побед!\nПища для размышлений.. Одним аппетитом битву не выиграть. В Sushi Striker: The Way of Sushido вы подружитесь с различными суши-помощниками, и трех из них можно взять с собой. Их умения совершенно точно пригодятся вам в приключениях. Вы также получите множество предметов, которые придадут эпичности и зрелищности вашим суши-дуэлям!\nПознайте глубину суши-битв — зотите устроить состязание? Играйте с друзьями и поразите их своими суши-стратегиями. Если же хочется потренироваться одному, можно устроить спарринг с невероятно ловким роботом. А если и этого будет мало, можете попробовать свои силы в дополнительных испытаниях из сражений сюжетного режима.",
         "title_id": "0100DDD0085A4000"
@@ -31464,13 +31519,13 @@
         "multiplayer": "до 2 игроков",
         "cover": "http://images.vfl.ru/ii/1556392098/bae57a3e/26343347.png",
         "screenshots": [
-            "https://i109.fastpic.ru/thumb/2019/0427/31/486cf19667cafed8b91997445246a731.jpeg",
-            "https://i109.fastpic.ru/thumb/2019/0427/13/f79ef373fd43178e1a7293ebf960d313.jpeg",
-            "https://i109.fastpic.ru/thumb/2019/0427/fd/3d4cb91ff6bb256f60c9216544c63afd.jpeg",
-            "https://i109.fastpic.ru/thumb/2019/0427/ca/fba19ccdc484c6728c49dcede64b5dca.jpeg",
-            "https://i109.fastpic.ru/thumb/2019/0427/56/4a3e9385c13438fbb321e538a2964a56.jpeg",
-            "https://i109.fastpic.ru/thumb/2019/0427/47/593447152121d0fd2bb345e4d9d78e47.jpeg",
-            "https://i109.fastpic.ru/thumb/2019/0427/dd/cd8a92fded46463488c8192ab950bbdd.jpeg"
+            "https://i109.fastpic.org/thumb/2019/0427/31/486cf19667cafed8b91997445246a731.jpeg",
+            "https://i109.fastpic.org/thumb/2019/0427/13/f79ef373fd43178e1a7293ebf960d313.jpeg",
+            "https://i109.fastpic.org/thumb/2019/0427/fd/3d4cb91ff6bb256f60c9216544c63afd.jpeg",
+            "https://i109.fastpic.org/thumb/2019/0427/ca/fba19ccdc484c6728c49dcede64b5dca.jpeg",
+            "https://i109.fastpic.org/thumb/2019/0427/56/4a3e9385c13438fbb321e538a2964a56.jpeg",
+            "https://i109.fastpic.org/thumb/2019/0427/47/593447152121d0fd2bb345e4d9d78e47.jpeg",
+            "https://i109.fastpic.org/thumb/2019/0427/dd/cd8a92fded46463488c8192ab950bbdd.jpeg"
         ],
         "description": "Создавайте ящики. Решайте головоломки. Идите к цели!\n\n2D-платформер, полюбившийся многим поклонникам головоломок, появится на Nintendo Switch! В игре BOXBOY! + BOXGIRL! вам предстоит как следует пошевелить серыми клеточками — в одиночку или с приятелем в режиме совместной игры. Главному герою Кьюбби и его друзьям нужна помощь: им необходимо пройти сложные уровни! С виду Кьюбби и его друзья — обычные квадратные ребята, но у них есть особый дар создавать ящики буквально из ничего. Всем известно, что добротные ящики никогда не лишние в хозяйстве: ими можно блокировать кнопки переключателей, засыпать глубокие ямы и даже защищаться от нападения!\nИ это еще не все! Ящики можно крепить друг к другу и создавать из них сложные конструкции. Постройте прямой мост, чтобы перейти через пропасть, или лестницу, чтобы подняться повыше и достать корону для коллекции. Оптимальное решение подскажут вам фантазия и смекалка! Имейте в виду, что число ящиков на уровень ограничено. Представляем совместный режим — впервые в этой серии игр! Помогите Квадропапе и Квадромаме, которые подозрительно смахивают на Кьюбби и Кьюси, вернуть в семью Кьюбейби. На пути они переживут всевозможные опасности и злоключения, но взаимовыручка поможет им срезать острые углы и избежать тупоугольных решений!\nПлатформы, порталы, лазеры, антигравитация — на почти трёхстах уровнях Кьюбби ждет множество сюрпризов! Как же хорошо, что ему не придется справляться с ними в одиночку. Очаровательная леди Кьюси спешит на помощь! Только посмотрите, какой у нее милый бантик. Вместе герои научатся лихо бросаться ящиками и заколачивать их в землю. Когда же вы пройдете совместное приключение до конца, то получите доступ к уровням для долговязого прямоугольного Кьюди.",
         "title_id": "010018300D006000"
@@ -31492,14 +31547,14 @@
         "multiplayer": "до 8 игроков",
         "cover": "http://images.vfl.ru/ii/1552416332/c064a68c/25740232.png",
         "screenshots": [
-            "https://i110.fastpic.ru/thumb/2019/0312/71/8ea7d71afc97b53b7e5075205e276c71.jpeg",
-            "https://i110.fastpic.ru/thumb/2019/0312/da/387bec85a4b5abf558246c2a155847da.jpeg",
-            "https://i110.fastpic.ru/thumb/2019/0312/23/9b2aed9d2ee86730c35963a2fe313723.jpeg",
-            "https://i110.fastpic.ru/thumb/2019/0312/2d/_ce2911f3ecdc7bde0e101de2ffc1c42d.jpeg",
-            "https://i110.fastpic.ru/thumb/2019/0312/bc/2518d7f6e32bb2d405bd684ef31e2dbc.jpeg",
-            "https://i109.fastpic.ru/thumb/2019/0312/6d/184fe8e3f0347956a428be2993a1956d.jpeg",
-            "https://i109.fastpic.ru/thumb/2019/0425/e2/_3733743a4b0064ff4be691af2ed21de2.jpeg",
-            "https://i109.fastpic.ru/thumb/2019/0425/56/_c0f2b57aadaaf395477193ff40d92d56.jpeg"
+            "https://i110.fastpic.org/thumb/2019/0312/71/8ea7d71afc97b53b7e5075205e276c71.jpeg",
+            "https://i110.fastpic.org/thumb/2019/0312/da/387bec85a4b5abf558246c2a155847da.jpeg",
+            "https://i110.fastpic.org/thumb/2019/0312/23/9b2aed9d2ee86730c35963a2fe313723.jpeg",
+            "https://i110.fastpic.org/thumb/2019/0312/2d/_ce2911f3ecdc7bde0e101de2ffc1c42d.jpeg",
+            "https://i110.fastpic.org/thumb/2019/0312/bc/2518d7f6e32bb2d405bd684ef31e2dbc.jpeg",
+            "https://i109.fastpic.org/thumb/2019/0312/6d/184fe8e3f0347956a428be2993a1956d.jpeg",
+            "https://i109.fastpic.org/thumb/2019/0425/e2/_3733743a4b0064ff4be691af2ed21de2.jpeg",
+            "https://i109.fastpic.org/thumb/2019/0425/56/_c0f2b57aadaaf395477193ff40d92d56.jpeg"
         ],
         "description": "Girls und Panzer: Dream Tank Match - танковый симулятор с милыми девушками с видом от третьего лица, основанный на одноименном аниме сериале. Вам предстоит окунуться в танковые сражения вместе с полюбившимися героинями.\nУчаствуйте в одиночных и сетевых баталиях 5x5 против компьютерных или живых противников и в фестивале «Панзефарен»!",
         "title_id": "01006DD00CC96000"
@@ -31511,7 +31566,7 @@
         "topic_id": "5900501",
         "url": "https://rutracker.org/forum/viewtopic.php?t=5900501",
         "year": "2020, май",
-        "genre": "Dungeon crawler",
+        "genre": "Action, Role-Playing",
         "developer": "Double Eleven",
         "publisher": "Mojang",
         "image_format": ".NSZ (сжато ~48%, установленный объём 7.38 ГБ)",
@@ -31521,16 +31576,16 @@
         "multiplayer": "до 4 игроков",
         "cover": "http://images.vfl.ru/ii/1590297318/1bfe1e29/30602437.png",
         "screenshots": [
-            "https://i112.fastpic.ru/thumb/2020/0524/a7/1eed724b95b63ea2fd64f0161c4209a7.jpeg",
-            "https://i112.fastpic.ru/thumb/2020/0524/68/b76ae58d6218bb59c9b4d27a0dd98268.jpeg",
-            "https://i112.fastpic.ru/thumb/2020/0524/cb/3c275f0600f2b6922d217e0ef9a414cb.jpeg",
-            "https://i112.fastpic.ru/thumb/2020/0524/aa/5ceca3c2a15d631105575ce9c5e93faa.jpeg",
-            "https://i112.fastpic.ru/thumb/2020/0524/10/b4a063d7cb8fca2e518bea7ea1c57810.jpeg",
-            "https://i112.fastpic.ru/thumb/2020/0524/f8/2245d5e531f09747d1b09ef50f43a7f8.jpeg",
-            "https://i112.fastpic.ru/thumb/2020/0524/3f/255b5be6d717f82c35ade1caecb5b43f.jpeg",
-            "https://i112.fastpic.ru/thumb/2020/0524/e9/11361ad2663df57bc692b577990020e9.jpeg"
+            "https://i112.fastpic.org/thumb/2020/0524/a7/1eed724b95b63ea2fd64f0161c4209a7.jpeg",
+            "https://i112.fastpic.org/thumb/2020/0524/68/b76ae58d6218bb59c9b4d27a0dd98268.jpeg",
+            "https://i112.fastpic.org/thumb/2020/0524/cb/3c275f0600f2b6922d217e0ef9a414cb.jpeg",
+            "https://i112.fastpic.org/thumb/2020/0524/aa/5ceca3c2a15d631105575ce9c5e93faa.jpeg",
+            "https://i112.fastpic.org/thumb/2020/0524/10/b4a063d7cb8fca2e518bea7ea1c57810.jpeg",
+            "https://i112.fastpic.org/thumb/2020/0524/f8/2245d5e531f09747d1b09ef50f43a7f8.jpeg",
+            "https://i112.fastpic.org/thumb/2020/0524/3f/255b5be6d717f82c35ade1caecb5b43f.jpeg",
+            "https://i112.fastpic.org/thumb/2020/0524/e9/11361ad2663df57bc692b577990020e9.jpeg"
         ],
-        "description": "Пробивайтесь через врагов в новой игре во вселенной Minecraft по мотивам классических подземных приключений! Покоряйте подземелья в одиночку или объединяйтесь с друзьями! До четырех игроков могут вместе эпично сражаться на динамичных и разнообразных уровнях с сокровищами, чтобы спасти селян и победить Архизлодеянина!\nНайдите клад с новым могущественным оружием и предметами для борьбы с безжалостными ордами новых мерзких мобов. Бейтесь или убегайте по ущельям, болотам и, конечно же, шахтам! Любой искатель приключений, достаточно храбрый или глупый для исследования этого прекрасного блочного мира, должен основательно подготовиться. Так что не медлите и снаряжайтесь!\n\n\n\nСражайтесь с новыми мерзкими мобами в игре по мотивам классических подземных приключений. Крипер подземелий!\n\n\n\nДо четырех игроков могут объединится и вместе сражаться в кооперативном режиме.\n\n\n\nСтановитесь сильнее! Открывайте десятки предметов и зачарований оружия для разрушительных приемов.\n\n\n\nРазнообразие! Придайте индивидуальности своему персонажу: сражайтесь в ближнем бою, отсиживайтесь вдалеке и атакуйте с расстояния или пробивайтесь через орды мобов под защитой тяжелой брони!\n\n\n\nЭпично! Исследуйте наполненные сокровищами уровни, чтобы победить Архизлодеянина!\n\n\n\nДругие Minecraft-игры см. здесь.",
+        "description": "Пробивайтесь через врагов в новой игре во вселенной Minecraft по мотивам классических подземных приключений! Покоряйте подземелья в одиночку или объединяйтесь с друзьями! До четырех игроков могут вместе эпично сражаться на динамичных и разнообразных уровнях с сокровищами, чтобы спасти селян и победить Архизлодеянина!\nНайдите клад с новым могущественным оружием и предметами для борьбы с безжалостными ордами новых мерзких мобов. Бейтесь или убегайте по ущельям, болотам и, конечно же, шахтам! Любой искатель приключений, достаточно храбрый или глупый для исследования этого прекрасного блочного мира, должен основательно подготовиться. Так что не медлите и снаряжайтесь!\n\n\n\nСражайтесь с новыми мерзкими мобами в игре по мотивам классических подземных приключений. Крипер подземелий!\n\n\n\nДо четырех игроков могут объединится и вместе сражаться в кооперативном режиме.\n\n\n\nСтановитесь сильнее! Открывайте десятки предметов и зачарований оружия для разрушительных приемов.\n\n\n\nРазнообразие! Придайте индивидуальности своему персонажу: сражайтесь в ближнем бою, отсиживайтесь вдалеке и атакуйте с расстояния или пробивайтесь через орды мобов под защитой тяжелой брони!\n\n\n\nЭпично! Исследуйте наполненные сокровищами уровни, чтобы победить Архизлодеянина!\n\n\n\nДругие Minecraft-игры см. здесь, продолжение тут.",
         "title_id": "01006C100EC08000"
     },
     {
@@ -31580,15 +31635,15 @@
         "multiplayer": "до 8 игроков",
         "cover": "http://images.vfl.ru/ii/1605598418/81aff8ac/32331536.png",
         "screenshots": [
-            "https://i114.fastpic.ru/thumb/2020/1117/16/76d91ef04f93d7e566620e6bfe162416.jpeg",
-            "https://i114.fastpic.ru/thumb/2020/1117/54/b4534b43775c86c65b128ad5776a3954.jpeg",
-            "https://i114.fastpic.ru/thumb/2020/1117/a0/fce60ccdc304206a39e7928d43c86aa0.jpeg",
-            "https://i114.fastpic.ru/thumb/2020/1117/16/556e98867b7183730e5730e699ed0d16.jpeg",
-            "https://i114.fastpic.ru/thumb/2020/1117/17/c12ed59a03979e9a4e31da9acd402f17.jpeg",
-            "https://i114.fastpic.ru/thumb/2020/1117/25/ca66850ef70e148164923b599a182325.jpeg",
-            "https://i114.fastpic.ru/thumb/2020/1117/ce/8d001419672cb613b0ea5dacce05a2ce.jpeg",
-            "https://i114.fastpic.ru/thumb/2020/1117/d9/c72d1ef1f1c4a08b6c2b604bf6b7e2d9.jpeg",
-            "https://i114.fastpic.ru/thumb/2020/1117/5d/37714ae4021861a6c84f2606886c385d.jpeg"
+            "https://i114.fastpic.org/thumb/2020/1117/16/76d91ef04f93d7e566620e6bfe162416.jpeg",
+            "https://i114.fastpic.org/thumb/2020/1117/54/b4534b43775c86c65b128ad5776a3954.jpeg",
+            "https://i114.fastpic.org/thumb/2020/1117/a0/fce60ccdc304206a39e7928d43c86aa0.jpeg",
+            "https://i114.fastpic.org/thumb/2020/1117/16/556e98867b7183730e5730e699ed0d16.jpeg",
+            "https://i114.fastpic.org/thumb/2020/1117/17/c12ed59a03979e9a4e31da9acd402f17.jpeg",
+            "https://i114.fastpic.org/thumb/2020/1117/25/ca66850ef70e148164923b599a182325.jpeg",
+            "https://i114.fastpic.org/thumb/2020/1117/ce/8d001419672cb613b0ea5dacce05a2ce.jpeg",
+            "https://i114.fastpic.org/thumb/2020/1117/d9/c72d1ef1f1c4a08b6c2b604bf6b7e2d9.jpeg",
+            "https://i114.fastpic.org/thumb/2020/1117/5d/37714ae4021861a6c84f2606886c385d.jpeg"
         ],
         "description": "«Family Feud» — командная игра и американское телешоу. Русскоязычный аналог «Сто к одному» транслировалась на телеканалах НТВ (8 января 1995 — 30 декабря 1996), МТК (11 января — 7 июня 1997), «ТВ Центр» (14 июня 1997 — 20 сентября 1998).\n\nБессменный ведущий программы — Александр Гуревич. Программа стала финалистом российской национальной телевизионной премии «ТЭФИ» в 2000-м, 2014-м, 2015-м, 2016-м, 2017-м и 2018-м годах, став лауреатом премии «ТЭФИ—2002» в номинации «Телевизионная игра».\nЦель участников игры «Family Feud», или «Сто к одному» состоит в том, чтобы угадать наиболее распространённые ответы людей с улицы на предложенные вопросы, на которые невозможно дать однозначный объективный ответ, например, «Какую еду больше всего любят французы?», «Что делает женщина, когда у неё сломался каблук?». Ответы бывают порой непредсказуемы и забавны. К примеру, на вопрос «Кто поддерживает порядок в стране?» десять из ста случайных прохожих дали ответ «дворники». Другие примеры вопросов: «Что делает женщина, когда у неё сломался каблук?».\nПрограмма породила множество региональных адаптаций на более чем 50 международных рынках за пределами Соединенных Штатов. Оригинальное американское телевизионное игровое шоу создано Марком Гудсоном.",
         "title_id": "010060200FC44000"
@@ -31788,15 +31843,15 @@
         "multiplayer": "нет",
         "cover": "http://images.vfl.ru/ii/1565087258/a1a0e83b/27455416.png",
         "screenshots": [
-            "https://i87.fastpic.ru/thumb/2019/1011/2c/d5e1e662ee2db7a07806b41efc79b22c.jpeg",
-            "https://i87.fastpic.ru/thumb/2019/1011/31/36212add0ef186b9f2487508b3e58831.jpeg",
-            "https://i87.fastpic.ru/thumb/2019/1011/91/43bfb157ba8d4cfa625056b917365e91.jpeg",
-            "https://i87.fastpic.ru/thumb/2019/1011/36/29adcd3df348205b9569cecd9c2c6336.jpeg",
-            "https://i87.fastpic.ru/thumb/2019/1011/d4/d99223be2d68eb2b8ebeb32ae9853dd4.jpeg",
-            "https://i87.fastpic.ru/thumb/2019/1011/99/d8d6dac48eb6c55866be94cba36c9999.jpeg",
-            "https://i87.fastpic.ru/thumb/2019/1011/b0/c2cb6a7f5306f6dd9703b8c47ea2ccb0.jpeg",
-            "https://i87.fastpic.ru/thumb/2019/1011/b4/e71e259d462c0a3d05d28b133cb39ab4.jpeg",
-            "https://i87.fastpic.ru/thumb/2019/1011/dd/c930020821a9b1e54629eb904cd3b2dd.jpeg"
+            "https://i87.fastpic.org/thumb/2019/1011/2c/d5e1e662ee2db7a07806b41efc79b22c.jpeg",
+            "https://i87.fastpic.org/thumb/2019/1011/31/36212add0ef186b9f2487508b3e58831.jpeg",
+            "https://i87.fastpic.org/thumb/2019/1011/91/43bfb157ba8d4cfa625056b917365e91.jpeg",
+            "https://i87.fastpic.org/thumb/2019/1011/36/29adcd3df348205b9569cecd9c2c6336.jpeg",
+            "https://i87.fastpic.org/thumb/2019/1011/d4/d99223be2d68eb2b8ebeb32ae9853dd4.jpeg",
+            "https://i87.fastpic.org/thumb/2019/1011/99/d8d6dac48eb6c55866be94cba36c9999.jpeg",
+            "https://i87.fastpic.org/thumb/2019/1011/b0/c2cb6a7f5306f6dd9703b8c47ea2ccb0.jpeg",
+            "https://i87.fastpic.org/thumb/2019/1011/b4/e71e259d462c0a3d05d28b133cb39ab4.jpeg",
+            "https://i87.fastpic.org/thumb/2019/1011/dd/c930020821a9b1e54629eb904cd3b2dd.jpeg"
         ],
         "description": "«Ведьмак 3: Дикая Охота» — приключенческая игра, действие которой разворачивается в открытом фэнтезийном мире. Вы будете играть ведьмаком Геральтом из Ривии и заниматься охотой на чудовищ. Игра получила более 250 наград «Лучшая игра года».\n\nВооружитесь острыми мечами и бесшумными арбалетами, а на помощь призовите смертоносную алхимию и мощную боевую магию. Отправляйтесь путешествовать по миру, который охвачен войной и наводнен чудовищами, чтобы отыскать Дитя Предназначения — от этого живого оружия зависит судьба мира.\nПолное издание включает весь вышедший загружаемый контент, в том числе два масштабных сюжетных дополнения: «Каменные сердца» и «Кровь и вино». Это идеальная возможность впервые погрузиться в темный фэнтезийный мир или заново пройти игру в портативном режиме.\n\n\n\nОгромный открытый мир. Где бы вы ни оказались — посреди роскоши утопающего в деньгах Новиграда, на леденящих душу островах Скеллиге или в болотах разоренной Ничейной земли — мир «Ведьмака» преподнесет вам немало сюрпризов. Исследуйте моря, погружайтесь на дно в поисках давно утерянных артефактов или седлайте коня, отправляясь прямиком в бой!\n\n\n\nУникальный по своей глубине сюжет и более 150 игровых часов. Прохождение основной кампании с побочными заданиями занимает более 100 часов, а прохождение всех дополнений — более 50. В основе игры «Ведьмак 3: Дикая Охота» лежит классическая ролевая система с мощным сюжетом и открытым миром, а игрок получает полную свободу выбора. Принимайте решения и будьте готовы к серьезным последствиям, от которых зависит окончание всей истории.\n\n\n\nТеперь на Nintendo Switch — играйте всегда и везде. Игра полностью переработана и использует все возможности Nintendo Switch. Играйте там, где вам удобно!",
         "title_id": "01003D100E9C6000"
@@ -31877,15 +31932,15 @@
         "multiplayer": "до 2 игроков",
         "cover": "http://images.vfl.ru/ii/1627399165/7fff3c76/35299891.png",
         "screenshots": [
-            "https://i115.fastpic.ru/thumb/2021/0723/9c/98a0d062fd2070c7ebf59a11be01609c.jpeg",
-            "https://i115.fastpic.ru/thumb/2021/0723/3f/4fdd6b14e1a8117de2b33c671bdba53f.jpeg",
-            "https://i115.fastpic.ru/thumb/2021/0723/67/6656070a4a8ba250322e7fbfdfeb0767.jpeg",
-            "https://i115.fastpic.ru/thumb/2021/0723/57/239b52627862741575caeaba59110857.jpeg",
-            "https://i115.fastpic.ru/thumb/2021/0723/80/3a4197aec79fdc55a56c83c4c36e8a80.jpeg",
-            "https://i115.fastpic.ru/thumb/2021/0723/6c/20a0d88e805a8a38ef3931992df8116c.jpeg",
-            "https://i115.fastpic.ru/thumb/2021/0723/26/fc5c7ae03991026fb8f96a2044c77626.jpeg",
-            "https://i115.fastpic.ru/thumb/2021/0723/13/84de3eacb41543e09607261c47635b13.jpeg",
-            "https://i115.fastpic.ru/thumb/2021/0723/21/3dbc448a08cdb6dd724da7ea7f66c421.jpeg"
+            "https://i115.fastpic.org/thumb/2021/0723/9c/98a0d062fd2070c7ebf59a11be01609c.jpeg",
+            "https://i115.fastpic.org/thumb/2021/0723/3f/4fdd6b14e1a8117de2b33c671bdba53f.jpeg",
+            "https://i115.fastpic.org/thumb/2021/0723/67/6656070a4a8ba250322e7fbfdfeb0767.jpeg",
+            "https://i115.fastpic.org/thumb/2021/0723/57/239b52627862741575caeaba59110857.jpeg",
+            "https://i115.fastpic.org/thumb/2021/0723/80/3a4197aec79fdc55a56c83c4c36e8a80.jpeg",
+            "https://i115.fastpic.org/thumb/2021/0723/6c/20a0d88e805a8a38ef3931992df8116c.jpeg",
+            "https://i115.fastpic.org/thumb/2021/0723/26/fc5c7ae03991026fb8f96a2044c77626.jpeg",
+            "https://i115.fastpic.org/thumb/2021/0723/13/84de3eacb41543e09607261c47635b13.jpeg",
+            "https://i115.fastpic.org/thumb/2021/0723/21/3dbc448a08cdb6dd724da7ea7f66c421.jpeg"
         ],
         "description": "SAMURAI WARRIORS: новое начало! 7 лет ожидания прошли не зря: встречайте новую часть серии боевиков SAMURAI WARRIORS!\n\nПогрузитесь вновь в историческую эпоху самой первой игры SAMURAI WARRIORS, которая вышла в 2004 г.\n\nПомимо разительного улучшения внешнего вида игры, новых офицеров и переработанных боевых приемов, вас ждет еще более захватывающая история воюющих провинций.\nНовая часть повествует о жизни офицеров Оды Набунаги и Акэчи Мицухидэ, подробно и живо передавая атмосферу периода Сэнгоку с момента окончания Смуты годов Онин до Инцидента в храме Хонно-дзи. Игра также знаменует собой начало новой серии, в которой полностью пересмотрены истории и персонажи SAMURAI WARRIORS.\n\n\n\nИгра включает 27 воинов-самураев. Молодой Ода Нобунага, известный по кличке «большой дурак из Овари», и Имагава Ешимото приобрели новый внешний вид, соответствующий историческому периоду игры.\n\n\n\nТакже к битве присоединятся новые персонажи, такие как Сайто Тошимитцу, вассал Акечи Митсухидэ, и Кога ниндзя Мицуки. Судьбы 27-ми героев переплетутся в сложной и полной напряжения истории периода Сэнгоку.\n\n\n\nБоевые приемы WARRIORS стали еще более впечатляющими — вновь насладитесь визитной карточкой серии WARRIORS: когда от ударов враги разлетаются в разные стороны!\n\n\n\nБитвы WARRIORS захватывают дух благодаря новым приемам и визуальной передаче атмосферы исторической Японии!\n\n\n\nДругие мусоу серии Warriors на Switch.",
         "title_id": "0100B28014132000"
@@ -31907,15 +31962,15 @@
         "multiplayer": "нет",
         "cover": "http://images.vfl.ru/ii/1621582408/18f708b1/34530743.png",
         "screenshots": [
-            "https://i114.fastpic.ru/thumb/2021/0521/9a/3aa0a2d014cec954142d8cb997fe019a.jpeg",
-            "https://i114.fastpic.ru/thumb/2021/0521/2a/378cd2407c87904223826e8139d2ff2a.jpeg",
-            "https://i114.fastpic.ru/thumb/2021/0521/78/b099f85c00727c7b9c4efd00a978ff78.jpeg",
-            "https://i114.fastpic.ru/thumb/2021/0521/46/455db4630ece072562b0e13c39a0ad46.jpeg",
-            "https://i114.fastpic.ru/thumb/2021/0521/02/6c35ac8b810f5abceb10413a70b9e902.jpeg",
-            "https://i114.fastpic.ru/thumb/2021/0521/dd/1fd9661ad624227300ac11a0455e4cdd.jpeg",
-            "https://i114.fastpic.ru/thumb/2021/0521/16/0549e8a8b5905671a2726f15d4782c16.jpeg",
-            "https://i114.fastpic.ru/thumb/2021/0521/b9/81a19defa6f18b111502f183988b32b9.jpeg",
-            "https://i114.fastpic.ru/thumb/2021/0521/4e/c8258ee026fd199cf5fa5657eeaac04e.jpeg"
+            "https://i114.fastpic.org/thumb/2021/0521/9a/3aa0a2d014cec954142d8cb997fe019a.jpeg",
+            "https://i114.fastpic.org/thumb/2021/0521/2a/378cd2407c87904223826e8139d2ff2a.jpeg",
+            "https://i114.fastpic.org/thumb/2021/0521/78/b099f85c00727c7b9c4efd00a978ff78.jpeg",
+            "https://i114.fastpic.org/thumb/2021/0521/46/455db4630ece072562b0e13c39a0ad46.jpeg",
+            "https://i114.fastpic.org/thumb/2021/0521/02/6c35ac8b810f5abceb10413a70b9e902.jpeg",
+            "https://i114.fastpic.org/thumb/2021/0521/dd/1fd9661ad624227300ac11a0455e4cdd.jpeg",
+            "https://i114.fastpic.org/thumb/2021/0521/16/0549e8a8b5905671a2726f15d4782c16.jpeg",
+            "https://i114.fastpic.org/thumb/2021/0521/b9/81a19defa6f18b111502f183988b32b9.jpeg",
+            "https://i114.fastpic.org/thumb/2021/0521/4e/c8258ee026fd199cf5fa5657eeaac04e.jpeg"
         ],
         "description": "Layers of Fear 2 делает упор на исследование и сюжет, а все объективы направляет на вас. Вы не просто вживаетесь в своего персонажа — вы и есть персонаж. Эта роль принадлежит вам. Она написана специально для вас. Но будьте осторожны, ведь реальность обманчива.\n\nПрошлое предопределило вашу личность и даровало необходимые для вашего ремесла навыки. Это же прошлое обезобразило вас глубокими шрамами — скрытыми ото всех, похороненными в глубине вашей души. Вы зарываете эти воспоминания все глубже, но используете приобретенный опыт, ведь он позволяет вам сыграть кого — или что — угодно.\nСвет прожектора выхватывает из темноты ваш безмолвный силуэт. Вокруг ни звука — лишь биение сердца и плеск волн, разбивающихся о борт. Издали доносится низкий властный голос: «Играйте!». Какую же вы выберете себе роль?Layers of Fear см. здесь.",
         "title_id": "01001730144DA000"
@@ -32027,13 +32082,13 @@
         "multiplayer": "нет",
         "cover": "http://images.vfl.ru/ii/1560880253/0e2b61f4/26930789.png",
         "screenshots": [
-            "https://i106.fastpic.ru/thumb/2019/0618/5f/666233bcdd8126c34976241f08b06f5f.jpeg",
-            "https://i106.fastpic.ru/thumb/2019/0618/36/3d9b1f81d6243fccedabc469334a3c36.jpeg",
-            "https://i106.fastpic.ru/thumb/2019/0618/04/8908a72ccaed0f2d60862072d84c6404.jpeg",
-            "https://i106.fastpic.ru/thumb/2019/0618/e5/0066b9ac892938b24db4caa2945da2e5.jpeg",
-            "https://i106.fastpic.ru/thumb/2019/0618/40/364788e6f432b215f51570d23ad70740.jpeg",
-            "https://i106.fastpic.ru/thumb/2019/0618/08/752332e4793aa7a793b5dbdce0c33508.jpeg",
-            "https://i106.fastpic.ru/thumb/2019/0618/48/9cc40f387e207f2e40c6aa075e9c4948.jpeg"
+            "https://i106.fastpic.org/thumb/2019/0618/5f/666233bcdd8126c34976241f08b06f5f.jpeg",
+            "https://i106.fastpic.org/thumb/2019/0618/36/3d9b1f81d6243fccedabc469334a3c36.jpeg",
+            "https://i106.fastpic.org/thumb/2019/0618/04/8908a72ccaed0f2d60862072d84c6404.jpeg",
+            "https://i106.fastpic.org/thumb/2019/0618/e5/0066b9ac892938b24db4caa2945da2e5.jpeg",
+            "https://i106.fastpic.org/thumb/2019/0618/40/364788e6f432b215f51570d23ad70740.jpeg",
+            "https://i106.fastpic.org/thumb/2019/0618/08/752332e4793aa7a793b5dbdce0c33508.jpeg",
+            "https://i106.fastpic.org/thumb/2019/0618/48/9cc40f387e207f2e40c6aa075e9c4948.jpeg"
         ],
         "description": "Blade II: The Return Of The Evil - это динамичный экшен с изометрическим видом камеры в фэнтезийном сеттинге. События разворачиваются на территории Элизиума, где все герои собрались, чтобы спасти мир от гибели! Геймеры могут выбрать двух персонажей из 4-х доступных классов. Таким образом вы сможете переключаться между ними в зависимости от ситуации. Проходите захватывающие миссии с такой боевой системой: создавайте неповторимые комбинационные атаки с возможностью блоков, уворотов и контрударов.",
         "title_id": "01009CC00E224000"
@@ -82855,9 +82910,9 @@
         "title_id": "01003F000973E000"
     },
     {
-        "title": "Croc's World 1-4 / Run [NSZ][ENG,RUS]",
-        "size": "202.3 MB",
-        "magnet": "magnet:?xt=urn:btih:AD3094C6A2B916832C80C55ABAF6EB3C0AD6FA12&tr=http%3A%2F%2Fbt4.t-ru.org%2Fann%3Fmagnet",
+        "title": "Croc's World 1-5 / Run [NSZ][ENG,RUS]",
+        "size": "435.9 MB",
+        "magnet": "magnet:?xt=urn:btih:3828EA8EAFF7CCACA51A6DE473D35E34F9F6FFF4&tr=http%3A%2F%2Fbt4.t-ru.org%2Fann%3Fmagnet",
         "topic_id": "6482953",
         "url": "https://rutracker.org/forum/viewtopic.php?t=6482953",
         "year": "Unknown",
@@ -82865,9 +82920,9 @@
         "developer": "Sprakelsoft",
         "publisher": "Sprakelsoft GmbH",
         "image_format": ".NSZ (сжато ~93%, установленный объём 2.81 ГБ)",
-        "interface_lang": "Русский (1 игра), Английский [ENG / RUS]",
+        "interface_lang": "Русский (2 игры), Английский [ENG / RUS]",
         "voice_lang": "не озвучивается",
-        "performance": "Да (на 17.0.1, Atmosphere 1.6.2)",
+        "performance": "Да (на 22.5.0, Atmosphere 1.11.2)",
         "multiplayer": "нет",
         "cover": "https://i4.imageban.ru/out/2024/02/08/13a780770c14c39bd96e60c22da781cb.png",
         "screenshots": [
@@ -82881,8 +82936,8 @@
             "https://i123.fastpic.org/thumb/2024/0208/0b/3d90456f33580cd9208b79b9a0ac570b.jpeg",
             "https://i123.fastpic.org/thumb/2024/0208/99/9a85b529980539eeba8f1b7d79ecaa99.jpeg"
         ],
-        "description": "«Мир крокодильчика Кроки» — это серия простых аркадных платформеров для самых маленьких игроков, созданных с настоящим немецким качеством!\n300+ невероятных уровней + аккуратная HD-графика + 15 разных биомов + множество врагов: найдите шлем, чтобы разбивать каменные блоки, отыщите мешок с камнями, чтобы бросаться ими, а если соберёте 100 бриллиантов, то получите дополнительные жизни!\nВключены 5 игр:\n\n\n\nCroc's World,\n\n\n\nCroc's World 2,\n\n\n\nCroc's World 3,\n\n\n\nCroc's World 4 (с переводом),\n\n\n\nCroc's World Run.\n\n\n\n3D-платформер Croc Legend of the Gobbos (Croc Pau-Pau Island) см. тут.",
-        "title_id": "01006B301DF0A000"
+        "description": "«Мир крокодильчика Кроки» — это серия простых аркадных платформеров для самых маленьких игроков, созданных с настоящим немецким качеством!\n300+ невероятных уровней + аккуратная HD-графика + 15 разных биомов + множество врагов: найдите шлем, чтобы разбивать каменные блоки, отыщите мешок с камнями, чтобы бросаться ими, а если соберёте 100 бриллиантов, то получите дополнительные жизни!\nВключены 6 игр:\n\n\n\nCroc's World,\n\n\n\nCroc's World 2,\n\n\n\nCroc's World 3,\n\n\n\nCroc's World 4 (с переводом),\n\n\n\nCroc's World 5 (с переводом),\n\n\n\nCroc's World Run.\n\n\n\n3D-платформер Croc Legend of the Gobbos (Croc Pau-Pau Island) см. тут.",
+        "title_id": "0100248029FA8000"
     },
     {
         "title": "Jerry Wanker and the Quest to get Laid (Anker and the Quest to get Love, без цензуры 18+) [NSZ][RUS/Multi5]",
