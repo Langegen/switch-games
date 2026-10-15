@@ -1,7 +1,12 @@
-=== 2026-10-15 13:53:39 ===
-Всего в базе: 7227
-Обновлено: 14
+=== 2026-10-15 18:01:59 ===
+Всего в базе: 7229
+Добавлено: 2
+  + Renai Zero Kilometer (Ren'ai 恋愛0キロメートル) [NSP][ENG]
+  + Toy Story 3 Complete edition / Disney Pixar Toy Story Retro Roundup (6 игр) [NSZ
+Обновлено: 13
   ~ Croc's World 1-5 / Run [NSZ][ENG,RUS]
+  ~ Lydia [NSZ][RUS/Multi8]
+  ~ Ketsu Battler + 2 DLC [NSZ][ENG]
   ~ Prototype 2 (порт) [NRO][RUS]
   ~ Need For Speed Underground 2 (хоумбрю NFS:U2) [NRO][RUS/ENG]
   ~ Prey 2006 (хоумбрю openPrey) [NRO][ENG,RUS (Voice Mod.)]
@@ -12,10 +17,7 @@
   ~ Call of Duty Black Ops Zombies (iOS-порт) [NRO][ENG]
   ~ Call of Duty 4 Modern Warfare (порт CoD4:MW) [NRO][RUS/ENG]
   ~ Donkey Kong 64 (хоумбрю DK64R) [NRO][ENG]
-  ~ Burnout 3 Takedown (порт) [NRO][ENG]
-  ~ Need For Speed Underground (хоумбрю NFS:U) [NRO][ENG]
-  ~ Sly Cooper and the Thievius Raccoonus (порт Project Cane Raccoon) [NRO][ENG]
 Статистика обновлена: 7241 раздач
   * Покрытие базы: 100.2%
-  * Активных сидов: 101414
-  * Всего загрузок: 7551306
+  * Активных сидов: 114838
+  * Всего загрузок: 7553519
