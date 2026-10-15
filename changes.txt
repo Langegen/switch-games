@@ -1,9 +1,7 @@
-=== 2026-10-14 21:55:50 ===
+=== 2026-10-15 01:58:13 ===
 Всего в базе: 7223
-Добавлено: 2
-  + Prototype 2 (порт) [NRO][RUS]
-  + Tales of Eternia Remastered [NSZ][RUS/Multi9]
-Обновлено: 19
+Обновлено: 20
+  ~ Prototype 2 (порт) [NRO][RUS]
   ~ Need For Speed Underground 2 (хоумбрю NFS:U2) [NRO][RUS/ENG]
   ~ Prey 2006 (хоумбрю openPrey) [NRO][ENG,RUS (Voice Mod.)]
   ~ Silent Hill 2 EE (порт) [NRO][RUS]
@@ -25,5 +23,5 @@
   ~ noJME, эмулятор для J2ME-игр: Doom RPG, Colin McRae Dirt 3D, Orcs and Elves, Gal
 Статистика обновлена: 7235 раздач
   * Покрытие базы: 100.2%
-  * Активных сидов: 106121
-  * Всего загрузок: 7547799
+  * Активных сидов: 88301
+  * Всего загрузок: 7548632
