@@ -1,7 +1,10 @@
-=== 2026-10-16 05:52:49 ===
-Всего в базе: 7231
-Обновлено: 13
-  ~ Zoids Wild Blast Unleashed / Infinity Blast [NSZ][ENG (Mod.)/JAP]
+=== 2026-10-16 09:52:04 ===
+Всего в базе: 7234
+Добавлено: 3
+  + Deep Rock Galactic Survivor [NSZ][RUS/Multi10]
+  + Prototype (порт) [NRO][RUS]
+  + Chained Beasts [NSZ][RUS/Multi12]
+Обновлено: 12
   ~ NetherSX2 (бывш. AetherSX2) плюс ARMSX2 NX PS2: эмуляторы Sony PlayStation 2 PCS
   ~ Need For Speed Underground (хоумбрю NFS:U) [NRO][RUS (Mod.)/ENG]
   ~ Torchlight 1 (порт) [NRO][RUS/ENG]
@@ -14,7 +17,7 @@
   ~ Halo Combat Evolved (порт OpenCE) [NRO][ENG,RUS (Voice.)]
   ~ Flatout 2 (хоумбрю) [NRO][ENG]
   ~ Call of Duty Black Ops Zombies (iOS-порт) [NRO][ENG]
-Статистика обновлена: 7244 раздач
+Статистика обновлена: 7246 раздач
   * Покрытие базы: 100.2%
-  * Активных сидов: 79285
-  * Всего загрузок: 7553561
+  * Активных сидов: 85285
+  * Всего загрузок: 7555178
