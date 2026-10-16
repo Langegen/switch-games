@@ -1,23 +1,20 @@
-=== 2026-10-16 09:52:04 ===
+=== 2026-10-16 14:10:12 ===
 Всего в базе: 7234
-Добавлено: 3
-  + Deep Rock Galactic Survivor [NSZ][RUS/Multi10]
-  + Prototype (порт) [NRO][RUS]
-  + Chained Beasts [NSZ][RUS/Multi12]
-Обновлено: 12
+Обновлено: 13
+  ~ Prototype 2 (порт) [NRO][RUS/ENG]
+  ~ Prototype (порт) [NRO][RUS]
   ~ NetherSX2 (бывш. AetherSX2) плюс ARMSX2 NX PS2: эмуляторы Sony PlayStation 2 PCS
   ~ Need For Speed Underground (хоумбрю NFS:U) [NRO][RUS (Mod.)/ENG]
   ~ Torchlight 1 (порт) [NRO][RUS/ENG]
   ~ Touhou 15 Legacy of Lunatic Kingdom / 11 / 10 Mountain of Faith / 9 Phantasmagor
   ~ Croc's World 1-5 / Run [NSZ][ENG,RUS]
-  ~ Prototype 2 (порт) [NRO][RUS]
   ~ Need For Speed Underground 2 (хоумбрю NFS:U2) [NRO][RUS/ENG]
   ~ Prey 2006 (хоумбрю openPrey) [NRO][ENG,RUS (Voice Mod.)]
   ~ Silent Hill 2 EE (порт) [NRO][RUS]
   ~ Halo Combat Evolved (порт OpenCE) [NRO][ENG,RUS (Voice.)]
   ~ Flatout 2 (хоумбрю) [NRO][ENG]
   ~ Call of Duty Black Ops Zombies (iOS-порт) [NRO][ENG]
-Статистика обновлена: 7246 раздач
+Статистика обновлена: 7247 раздач
   * Покрытие базы: 100.2%
-  * Активных сидов: 85285
-  * Всего загрузок: 7555178
+  * Активных сидов: 101177
+  * Всего загрузок: 7555611
