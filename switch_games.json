@@ -1,5 +1,35 @@
 [
     {
+        "title": "Prototype и Prototype 2 — хоумбрю-порты для Nintendo Switch (Xbox 360, рекомпиляция)",
+        "size": "14.46 GB",
+        "magnet": "magnet:?xt=urn:btih:B0CE8B054106028F3651E105C5E9E6B634A7FBD9&tr=http%3A%2F%2Fbt3.t-ru.org%2Fann%3Fmagnet",
+        "topic_id": "6923320",
+        "url": "https://rutracker.org/forum/viewtopic.php?t=6923320",
+        "year": "2009",
+        "genre": "Homebrew",
+        "developer": "Radical Entertainment (игра), fungalspores (порт для Switch)",
+        "publisher": "Unknown",
+        "image_format": "NRO + NSP-форвардер",
+        "interface_lang": "Русский, Английский [RUS / ENG] — зависит от вашей копии",
+        "voice_lang": "русская (в русском издании)",
+        "performance": "Да (на 22.5.0, Atmosphere 1.11.2)",
+        "multiplayer": "нет",
+        "cover": "https://i128.fastpic.org/big/2026/1015/23/f05ab4d5189aae2ba0f37ee27a029f23.jpg",
+        "screenshots": [
+            "https://i128.fastpic.org/thumb/2026/1015/12/82d7bb4bb89d9fde1fdcea43797ecc12.jpeg",
+            "https://i128.fastpic.org/thumb/2026/1015/db/991a50fd1f045e2ad32f9057388479db.jpeg",
+            "https://i128.fastpic.org/thumb/2026/1015/3c/8349b52a999ff82826134e056070823c.jpeg",
+            "https://i128.fastpic.org/thumb/2026/1015/b9/e596532d2114dc7a3b8f90503510b6b9.jpeg",
+            "https://i128.fastpic.org/thumb/2026/1015/0a/b660f0fb58de214b61712ac5847d900a.jpeg",
+            "https://i128.fastpic.org/big/2026/1015/66/cb35476458307802a09be3aaefa11166.jpg",
+            "https://i128.fastpic.org/thumb/2026/1015/80/f78753c97656f272adc4f51a999ae780.jpeg",
+            "https://i128.fastpic.org/thumb/2026/1015/81/f20cc2f528f0f9ee75c2a85f66081b81.jpeg",
+            "https://i128.fastpic.org/thumb/2026/1015/fc/c7b29bd7f298843938f2bc7ef88cd6fc.jpeg"
+        ],
+        "description": "Манхэттен охвачен вирусом. Алекс Мерсер приходит в себя в морге корпорации «Гентек» без памяти о прошлом — и с телом, способным поглощать людей, перенимать их облик, воспоминания и навыки. Пока улицы захватывают заражённые, а военные из «Чёрного дозора» зачищают город вместе с жителями, Алекс собирает по кусочкам правду о том, кто он такой и кто выпустил заразу. Бегайте по стенам небоскрёбов, прыгайте через кварталы, превращайте руки в когти, клинки и щиты, угоняйте танки и вертолёты — Нью-Йорк целиком становится полем боя.\n\n\n\nЧто нужно\n\n\n\n\n\n\nNintendo Switch с Atmosphère 1.8.0 или новее и sigpatches (для установки NSP)\n\n\n\nСвоя копия Prototype для Xbox 360 (образ ISO или распакованная папка с default.xex). Проверено на русском издании (4156084E); код собран под конкретный default.xex, другие издания могут не запуститься\n\n\n\nОколо 7 ГБ на карте. FAT32 подходит — самый большой файл игры меньше 4 ГБ\n\n\n\n\n\n\n\n\n\n\nУстановка\n\n\n\n\n\n\nСкопируйте папку switch из раздачи в корень карты (для обеих игр сразу)\n\n\n\nРаспакуйте свою игру в switch/prototype-nx/game/ — внутри должен лежать default.xex. Из ISO: extract-xiso -x \"Prototype.iso\" -d game. Папка $SystemUpdate не нужна\n\n\n\nУстановите nsp/Prototype [0150524F54310000][v0].nsp (DBI, sphaira или Tinfoil)\n\n\n\nЗапускайте «Prototype» с главного экрана\n\n\n\nБез NSP: удерживайте R при запуске любой установленной игры и выберите Prototype в Homebrew-меню. Через Альбом не запускайте — в этом режиме игре не хватает памяти.\n\n\n\n\n\n\nЧто сделано\n\n\n\n\n\n\nКод Xbox 360 перекомпилирован в нативный код Switch (ReXGlue), графика — нативный рендер на Vulkan (NVK) вместо эмуляции видеочипа, поэтому есть звук и меню с роликами идут 30–60 кадров\n\n\n\nИсправлены зависания в роликах, переходах и после паузы: главный и графический потоки игры ждали друг друга, на Switch графический поток медленнее, чем на Xbox 360\n\n\n\nИсправлены «повреждённые» сохранения: игра пишет в сейв его размер, а SDK отдавал старый\n\n\n\nПодпись консоли для сохранений, быстрые блокировки вместо общей на всю игру, оптимизация обращений к памяти\n\n\n\nПроизводительность: меню и ролики 30–60 кадров, в игре 25-30. CPU: 1785 MHz, GPU: 768–1152 MHz, RAM: 2333 MHz.\n\n\n\n\n\n\nНастройки\n\n\nФайл switch/prototype-nx/prototype.toml. После изменения полностью закройте игру.\n\n\n\nuser_language = 12 — русский, 1 — английский (зависит от вашей копии)\n\n\n\n\n\n\n\n\n\n\nЕсли что-то не так\n\n\n\n\n\n\nЗначок крутится и не открывается — NSP не установился до конца или нет sigpatches\n\n\n\nВылет сразу после запуска — игра запущена через Альбом, или в game/ нет default.xex (лишняя папка внутри)\n\n\n\nПодтормаживания при первом заходе в новые места — создаётся кэш шейдеров, со второго раза плавнее\n\n\n\nЛоги: switch/prototype-nx/logs/",
+        "title_id": null
+    },
+    {
         "title": "Harvest Moon Echoes of Teradea [NSZ][ENG]",
         "size": "3.52 GB",
         "magnet": "magnet:?xt=urn:btih:B9E1CCBEEEE84CEDF9DD8C34E09415EEE4A10CC0&tr=http%3A%2F%2Fbt.t-ru.org%2Fann%3Fmagnet",
@@ -914,9 +944,9 @@
         "title_id": null
     },
     {
-        "title": "Need For Speed Underground (хоумбрю NFS:U) [NRO][ENG]",
-        "size": "1.62 GB",
-        "magnet": "magnet:?xt=urn:btih:B0963DFE45BDB0E8D8E93326679A65BC3201FCBB&tr=http%3A%2F%2Fbt4.t-ru.org%2Fann%3Fmagnet",
+        "title": "Need For Speed Underground (хоумбрю NFS:U) [NRO][RUS (Mod.)/ENG]",
+        "size": "3.26 GB",
+        "magnet": "magnet:?xt=urn:btih:EBEF7A6CD44D30C7AF1E39E960F27A4755015C8B&tr=http%3A%2F%2Fbt4.t-ru.org%2Fann%3Fmagnet",
         "topic_id": "6920408",
         "url": "https://rutracker.org/forum/viewtopic.php?t=6920408",
         "year": "2003",
@@ -924,8 +954,8 @@
         "developer": "EA Black Box",
         "publisher": "antoxa2584x",
         "image_format": "NRO",
-        "interface_lang": "Английский [ENG]",
-        "voice_lang": "английская",
+        "interface_lang": "Английский [ENG] + русский от larichevstock",
+        "voice_lang": "английская + русская от СофтКлаб",
         "performance": "Да (на 22.5.0, Atmosphere 1.11.2)",
         "multiplayer": "нет",
         "cover": "https://i6.imageban.ru/out/2026/10/09/0a2cd17bcddb6c1258a4903da5938144.png",
@@ -1156,7 +1186,7 @@
     {
         "title": "Need For Speed Carbon (хоумбрю NFS:C) [NRO][RUS]",
         "size": "3.1 GB",
-        "magnet": "magnet:?xt=urn:btih:F4014CAB984C8C5632B0DF4B42853DB41CC09DF8&tr=http%3A%2F%2Fbt.t-ru.org%2Fann%3Fmagnet",
+        "magnet": "magnet:?xt=urn:btih:1ACA0CF87119C659B0E13E87AE15021D04C9FF58&tr=http%3A%2F%2Fbt.t-ru.org%2Fann%3Fmagnet",
         "topic_id": "6919329",
         "url": "https://rutracker.org/forum/viewtopic.php?t=6919329",
         "year": "2006",
@@ -36696,15 +36726,15 @@
         "multiplayer": "нет",
         "cover": "http://images.vfl.ru/ii/1591953650/032e08d1/30787583.png",
         "screenshots": [
-            "https://i112.fastpic.ru/thumb/2020/0612/0d/cbebcc769632cd5c82a510f6e9ada00d.jpeg",
-            "https://i112.fastpic.ru/thumb/2020/0612/dd/a713ee2eee8ab5462374fa744b6571dd.jpeg",
-            "https://i112.fastpic.ru/thumb/2020/0612/54/a0d6c7ee6f6ca15c3347170abccb4554.jpeg",
-            "https://i112.fastpic.ru/thumb/2020/0612/62/2d15c773f8b833b63be2f5dc31087c62.jpeg",
-            "https://i112.fastpic.ru/thumb/2020/0612/35/bf5420b6d8db487ea91589c98dbcd635.jpeg",
-            "https://i112.fastpic.ru/thumb/2020/0612/66/41a221ff382b6aa7837e4269ea5daa66.jpeg",
+            "https://i112.fastpic.org/thumb/2020/0612/0d/cbebcc769632cd5c82a510f6e9ada00d.jpeg",
+            "https://i112.fastpic.org/thumb/2020/0612/dd/a713ee2eee8ab5462374fa744b6571dd.jpeg",
+            "https://i112.fastpic.org/thumb/2020/0612/54/a0d6c7ee6f6ca15c3347170abccb4554.jpeg",
+            "https://i112.fastpic.org/thumb/2020/0612/62/2d15c773f8b833b63be2f5dc31087c62.jpeg",
+            "https://i112.fastpic.org/thumb/2020/0612/35/bf5420b6d8db487ea91589c98dbcd635.jpeg",
+            "https://i112.fastpic.org/thumb/2020/0612/66/41a221ff382b6aa7837e4269ea5daa66.jpeg",
             "http://images.vfl.ru/ii/1591953973/4c44bc5d/30787635.png",
-            "https://i112.fastpic.ru/thumb/2020/0612/5e/edf6354f8218ffc35652f519c4ecca5e.jpeg",
-            "https://i112.fastpic.ru/thumb/2020/0612/aa/283533724713ad0a1898666fcb4293aa.jpeg"
+            "https://i112.fastpic.org/thumb/2020/0612/5e/edf6354f8218ffc35652f519c4ecca5e.jpeg",
+            "https://i112.fastpic.org/thumb/2020/0612/aa/283533724713ad0a1898666fcb4293aa.jpeg"
         ],
         "description": "Токи Тори — поразительно героический цыпленок, который должен пройти более 80 уровней в пяти уникальных мирах, решая при этом головоломки.\nТоки Тори не слишком спортивный и даже не может прыгать! К счастью, в его распоряжении есть ряд великолепных инструментов: Telewarp, Freeze-o-Matic и InstantRock. Чтобы собрать все яйца на каждом из уровней, потребуются креативность мышления и творческий подход к решению проблем, но не волнуйтесь! Даже если вы застрянете, у вас всегда есть возможность перемотать время назад. А если ничто больше не помогает, воспользуйтесь джокером для пропуска уровня.\n\n\n\nКлассическая головоломка-платформер, более 80 уровней, пять миров, десятки часов игры.\n\n\n\nОгромное количество предметов для решения головоломок!\n\n\n\nНикогда не застревайте: перематывайте время или пропускайте уровень, если вам это нужно.\n\n\n\nСуперплавная графика со скоростью 60 кадров в секунду, функции вибрации HD.",
         "title_id": "0100A2B008696000"
@@ -36726,15 +36756,15 @@
         "multiplayer": "до 2 игроков",
         "cover": "http://images.vfl.ru/ii/1605613796/a803f3d3/32334091.png",
         "screenshots": [
-            "https://i114.fastpic.ru/thumb/2020/1028/0d/235325faf52550b0325fb4136545990d.jpeg",
-            "https://i114.fastpic.ru/thumb/2020/1028/d1/97f4b0e5a85a51e6e96719416f2e15d1.jpeg",
-            "https://i114.fastpic.ru/thumb/2020/1028/95/17e4672ebe82bc0215011a80a03ab595.jpeg",
-            "https://i114.fastpic.ru/thumb/2020/1028/ee/5a200301dbb7a6689af6ceed92b1b6ee.jpeg",
-            "https://i114.fastpic.ru/thumb/2020/1028/d8/4482ad92b8659e4a9344d8eeb6ebdbd8.jpeg",
-            "https://i114.fastpic.ru/thumb/2020/1028/e7/23d55f073a91019110f94ee5afeae8e7.jpeg",
-            "https://i114.fastpic.ru/thumb/2020/1028/d2/9945e0a7ec955bfc7d84c50191259cd2.jpeg",
-            "https://i114.fastpic.ru/thumb/2020/1028/da/4a6d50169b46a6b94b3177f64fc4bfda.jpeg",
-            "https://i114.fastpic.ru/thumb/2020/1028/0b/7dc8a0464dfd1d78727d9e6071f68e0b.jpeg"
+            "https://i114.fastpic.org/thumb/2020/1028/0d/235325faf52550b0325fb4136545990d.jpeg",
+            "https://i114.fastpic.org/thumb/2020/1028/d1/97f4b0e5a85a51e6e96719416f2e15d1.jpeg",
+            "https://i114.fastpic.org/thumb/2020/1028/95/17e4672ebe82bc0215011a80a03ab595.jpeg",
+            "https://i114.fastpic.org/thumb/2020/1028/ee/5a200301dbb7a6689af6ceed92b1b6ee.jpeg",
+            "https://i114.fastpic.org/thumb/2020/1028/d8/4482ad92b8659e4a9344d8eeb6ebdbd8.jpeg",
+            "https://i114.fastpic.org/thumb/2020/1028/e7/23d55f073a91019110f94ee5afeae8e7.jpeg",
+            "https://i114.fastpic.org/thumb/2020/1028/d2/9945e0a7ec955bfc7d84c50191259cd2.jpeg",
+            "https://i114.fastpic.org/thumb/2020/1028/da/4a6d50169b46a6b94b3177f64fc4bfda.jpeg",
+            "https://i114.fastpic.org/thumb/2020/1028/0b/7dc8a0464dfd1d78727d9e6071f68e0b.jpeg"
         ],
         "description": "За 100 лет до The Legend of Zelda: Breath of the Wild! Отправляйтесь в Хайрул прошлого и спасите королевство от уничтожения в Hyrule Warriors: Age of Calamity!\nСудьба Хайрула висит на волоске. Командуйте союзниками на поле боя и сражайтесь с Бедствием Ганоном в этой ожесточенной борьбе за выживание. Hyrule Warriors: Age of Calamity объединяет динамичный геймплей с яркими пейзажами и создает нечто совершенно новое!\n\n\n\nЗнакомый мир. Посмотрите на земли Хайрула до того, как их постигло Бедствие Ганон. Знакомые лица. Управляйте Линком, Зельдой и другими Воинами Хайрула, которые пытаются дать отпор злу и не допустить тотального уничтожения!\n\n\n\nДинамичные бои. Используйте могущественное оружие и магические руны, чтобы расправляться с вражескими армиями и сражаться с поистине устрашающими монстрами.\n\n\n\nГлубокий сюжет. Погрузитесь в уникальную историю, которая будет рассказана на поле боя и во время видеовставок, и спасите Хайрул, предотвратив Великое Бедствие! Вместе с другом играйте на одной консоли и совместными усилиями одолейте Бедствие Ганона. Сражайтесь плечом к плечу или разделитесь, чтобы выполнить больше заданий и сразить больше сил зла!",
         "title_id": "01002B00111A2000"
@@ -36786,15 +36816,15 @@
         "multiplayer": "нет",
         "cover": "http://images.vfl.ru/ii/1565283615/e316e506/27481137.png",
         "screenshots": [
-            "https://i86.fastpic.ru/thumb/2019/0808/92/7e321beadf49bf1e788eb6b0667c6f92.jpeg",
-            "https://i86.fastpic.ru/thumb/2019/0808/4a/49df1d05362d0f2c715a2e05d789a34a.jpeg",
-            "https://i86.fastpic.ru/thumb/2019/0808/b2/a3dc66916fb2fef815263401936482b2.jpeg",
-            "https://i86.fastpic.ru/thumb/2019/0808/07/dc84b29950a7a572809de71dc1bb5407.jpeg",
-            "https://i86.fastpic.ru/thumb/2019/0808/8a/475733558783faff9f4ee20803e79b8a.jpeg",
-            "https://i86.fastpic.ru/thumb/2019/0808/ca/510ef5a4c6573f3f2f4dafb5a9e56fca.jpeg",
-            "https://i86.fastpic.ru/thumb/2019/0808/a4/bff3cf8a16f6d13bf01394b85e6268a4.jpeg",
-            "https://i86.fastpic.ru/thumb/2019/0808/01/1330a1b4a23196c45425120ba8d9d601.jpeg",
-            "https://i86.fastpic.ru/thumb/2019/0808/c0/3cbbaca7c96349fce318cccc33ec35c0.jpeg"
+            "https://i86.fastpic.org/thumb/2019/0808/92/7e321beadf49bf1e788eb6b0667c6f92.jpeg",
+            "https://i86.fastpic.org/thumb/2019/0808/4a/49df1d05362d0f2c715a2e05d789a34a.jpeg",
+            "https://i86.fastpic.org/thumb/2019/0808/b2/a3dc66916fb2fef815263401936482b2.jpeg",
+            "https://i86.fastpic.org/thumb/2019/0808/07/dc84b29950a7a572809de71dc1bb5407.jpeg",
+            "https://i86.fastpic.org/thumb/2019/0808/8a/475733558783faff9f4ee20803e79b8a.jpeg",
+            "https://i86.fastpic.org/thumb/2019/0808/ca/510ef5a4c6573f3f2f4dafb5a9e56fca.jpeg",
+            "https://i86.fastpic.org/thumb/2019/0808/a4/bff3cf8a16f6d13bf01394b85e6268a4.jpeg",
+            "https://i86.fastpic.org/thumb/2019/0808/01/1330a1b4a23196c45425120ba8d9d601.jpeg",
+            "https://i86.fastpic.org/thumb/2019/0808/c0/3cbbaca7c96349fce318cccc33ec35c0.jpeg"
         ],
         "description": "Grandia (яп. グランディア Гурандиа) — японская ролевая игра, разработанная студией Game Arts. Впервые была выпущена в декабре 1997 года для приставки Sega Saturn, исключительно на территории Японии.\n\nРазработкой Grandia занимались люди, ранее создавшие не менее популярную серию Lunar, в том числе в качестве продюсера и геймдизанера братья Ёити и Такэси Миядзи, а также композитор Нориюки Ивадарэ. Игра запомнилась прежде всего своей удобной боевой системой, которая впоследствии проявилась во многих последующих частях серии.\nСобытия игры происходят в фэнтезийном вымышленном мире с высоким уровнем развития технологий. Мальчик по имени Джастин по наставлению таинственной женщины вместе с волшебным камнем отправляется в путешествие, чтобы разыскать следы древней давно исчезнувшей цивилизации. По пути к нему присоединяются другие искатели приключений, и вместе они противостоят милитаристским подразделениям Гарлайл, которые хотят завладеть секретами древнего народа для своих захватнических целей.\nGrandia удостоилась в основном положительных отзывов, а японским игровым журналом Famitsu была поставлена на 73-е место в списке величайших игр всех времён.\nHD-коллекция включает в себя Grandia I и II.",
         "title_id": "0100E0600BBC8000"
@@ -36816,12 +36846,12 @@
         "multiplayer": "нет",
         "cover": "http://images.vfl.ru/ii/1571326751/d9cd9166/28226946.png",
         "screenshots": [
-            "https://i90.fastpic.ru/thumb/2019/1017/30/9b38b78c43f563ae83e5b281333f3d30.jpeg",
-            "https://i90.fastpic.ru/thumb/2019/1017/34/281b80a25ba2815a34009a4ccf619334.jpeg",
-            "https://i90.fastpic.ru/thumb/2019/1017/40/6b22ef8b38fa7487021f2f838433eb40.jpeg",
-            "https://i90.fastpic.ru/thumb/2019/1017/20/eec93cc0b15db34948144cc9c2658320.jpeg",
-            "https://i90.fastpic.ru/thumb/2019/1017/36/997c40a7e609d55ae133551f6410e936.jpeg",
-            "https://i90.fastpic.ru/thumb/2019/1017/53/7f663bee78e825a40dd2e3f20295de53.jpeg"
+            "https://i90.fastpic.org/thumb/2019/1017/30/9b38b78c43f563ae83e5b281333f3d30.jpeg",
+            "https://i90.fastpic.org/thumb/2019/1017/34/281b80a25ba2815a34009a4ccf619334.jpeg",
+            "https://i90.fastpic.org/thumb/2019/1017/40/6b22ef8b38fa7487021f2f838433eb40.jpeg",
+            "https://i90.fastpic.org/thumb/2019/1017/20/eec93cc0b15db34948144cc9c2658320.jpeg",
+            "https://i90.fastpic.org/thumb/2019/1017/36/997c40a7e609d55ae133551f6410e936.jpeg",
+            "https://i90.fastpic.org/thumb/2019/1017/53/7f663bee78e825a40dd2e3f20295de53.jpeg"
         ],
         "description": "Компания Bandai Namco выпустила новую игру Digimon Story Cyber Sleuth: Complete Edition, посвящённую дигимонам, цифровым монстрам, нашим спутникам в параллельной реальности Digimon Story.\nВ коллекции Complete Edition, куда включены игры Digimon Story: Cyber Sleuth и Digimon Story: Cyber Sleuth — Hacker’s Memory, игроков ждут более трёх сотен различных дигимонов. Всех встречных монстров можно отловить и приручить, а новые, зачастую неожиданные, виды появляются в результате их скрещивания.\n\nЧтобы дигимоны могли с честью сражаться, их придётся вначале обучать и тренировать. Нужно также заботиться об их хорошем настроении, вручая созданиям подарки и взаимодействуя с ними. Чем прочнее связь дигимона с тренером, тем выше характеристики питомца и тем больше шансов получить мощного цифрового монстра в результате эволюции!..Другие игры Digimon.",
         "title_id": "010014E00DB56000"
@@ -36843,15 +36873,15 @@
         "multiplayer": "до 2 игроков",
         "cover": "https://i6.imageban.ru/out/2025/12/20/12c0f3de4df3ab72360b0d41ef883e00.png",
         "screenshots": [
-            "https://i86.fastpic.ru/thumb/2019/0905/d5/bc73bcd5b96d8ab23bdb9eda2ec8f1d5.jpeg",
-            "https://i86.fastpic.ru/thumb/2019/0905/42/aebfe0e7572e2c4ce72f82f8249d9c42.jpeg",
-            "https://i86.fastpic.ru/thumb/2019/0905/e3/2435ad7c0c195f22e92710edd4dc15e3.jpeg",
-            "https://i86.fastpic.ru/thumb/2019/0905/9b/cc7f63e6bb790391fc368575810af99b.jpeg",
-            "https://i86.fastpic.ru/thumb/2019/0905/10/f249e52a13aa5989d1f2c4fce49c6110.jpeg",
-            "https://i86.fastpic.ru/thumb/2019/0905/88/e3f2e3794ab301463cb7108edd279e88.jpeg",
-            "https://i86.fastpic.ru/thumb/2019/0905/24/321a742360ac0f95b0f9545929912424.jpeg",
-            "https://i86.fastpic.ru/thumb/2019/0905/79/a4fb0d39f6a5f3f242175055e9636579.jpeg",
-            "https://i86.fastpic.ru/thumb/2019/0905/94/ce47bdbaf46f42ea0f454808e60b6d94.jpeg"
+            "https://i86.fastpic.org/thumb/2019/0905/d5/bc73bcd5b96d8ab23bdb9eda2ec8f1d5.jpeg",
+            "https://i86.fastpic.org/thumb/2019/0905/42/aebfe0e7572e2c4ce72f82f8249d9c42.jpeg",
+            "https://i86.fastpic.org/thumb/2019/0905/e3/2435ad7c0c195f22e92710edd4dc15e3.jpeg",
+            "https://i86.fastpic.org/thumb/2019/0905/9b/cc7f63e6bb790391fc368575810af99b.jpeg",
+            "https://i86.fastpic.org/thumb/2019/0905/10/f249e52a13aa5989d1f2c4fce49c6110.jpeg",
+            "https://i86.fastpic.org/thumb/2019/0905/88/e3f2e3794ab301463cb7108edd279e88.jpeg",
+            "https://i86.fastpic.org/thumb/2019/0905/24/321a742360ac0f95b0f9545929912424.jpeg",
+            "https://i86.fastpic.org/thumb/2019/0905/79/a4fb0d39f6a5f3f242175055e9636579.jpeg",
+            "https://i86.fastpic.org/thumb/2019/0905/94/ce47bdbaf46f42ea0f454808e60b6d94.jpeg"
         ],
         "description": "Божественный мертв. Пустота надвигается. А внутри вас просыпаются доселе неведомые силы. Битва за божественность началась. Тщательно выбирайте, кому верить: в эти непростые времена тьма может скрываться в каждом сердце.\n\nКем вы хотите стать? Эльфом, поедающим плоть собратьев? Царственным ящером? Мертвецом, восставшим из могилы? Окружающий мир будет реагировать на вас в зависимости от вашего выбора.\n\nПришло время нового бога! Собирайте отряд и развивайте отношения со спутниками. Расправляйтесь с врагами в продуманных тактических пошаговых сражениях. Пользуйтесь ландшафтом как оружием; используйте высоту, чтобы получить преимущество, и загоняйте врагов в ловушки.\nСтаньте богом, в котором так отчаянно нуждается Ривеллон.\n\n\n\nНеограниченная свобода для странствий и экспериментов – идите куда угодно, говорите с кем угодно, используйте что угодно! Вы можете убить любого неигрового персонажа, не жертвуя при этом прохождением, можете говорить со всеми животными. Даже у призраков есть свои секреты...\n\n\n\nВыберите расу и биографию на свой вкус. Вы можете играть за любого из 6 персонажей – каждого со своими историей и задачами – или же создать собственного героя: человека, ящера, эльфа, гнома или нежить. Но помните: у каждого выбора есть последствия.\n\n\n\nНовое поколение пошаговых боев: расправляйтесь с врагами, используя силы стихий и их сочетания, а также не забывайте использовать окружение. Вам доступны более 200 навыков 12 разных школ. Но будьте осторожны: игровой ИИ 2.0 неимоверно хитер и находчив!\n\n\n\nОригинальная версия с английской озвучкой там.",
         "title_id": "010027400CDC6000"
@@ -36873,14 +36903,14 @@
         "multiplayer": "нет",
         "cover": "http://images.vfl.ru/ii/1623150376/37d3a2b4/34756459.png",
         "screenshots": [
-            "https://i114.fastpic.ru/thumb/2021/0608/59/91297adcbe2715e69e18000bd2ddd559.jpeg",
-            "https://i114.fastpic.ru/thumb/2021/0608/06/38405a4d89697c20840eab4f56fa1706.jpeg",
-            "https://i114.fastpic.ru/thumb/2021/0608/a2/ecaa6517cea9652ebcb5e6b1e27982a2.jpeg",
-            "https://i114.fastpic.ru/thumb/2021/0608/44/abf35eb55d5b4ef8e4b0a6a825ea8144.jpeg",
-            "https://i114.fastpic.ru/thumb/2021/0608/27/fc443b58767d8636d597ade6829ce427.jpeg",
-            "https://i114.fastpic.ru/thumb/2021/0608/51/7660c07f98570dce0620edf2b644ee51.jpeg",
-            "https://i114.fastpic.ru/thumb/2021/0608/bd/99bc848dab83d1fd4cc3684ab8829ebd.jpeg",
-            "https://i114.fastpic.ru/thumb/2021/0608/12/f0be91e85006b3c54e5ef26a83b8a012.jpeg"
+            "https://i114.fastpic.org/thumb/2021/0608/59/91297adcbe2715e69e18000bd2ddd559.jpeg",
+            "https://i114.fastpic.org/thumb/2021/0608/06/38405a4d89697c20840eab4f56fa1706.jpeg",
+            "https://i114.fastpic.org/thumb/2021/0608/a2/ecaa6517cea9652ebcb5e6b1e27982a2.jpeg",
+            "https://i114.fastpic.org/thumb/2021/0608/44/abf35eb55d5b4ef8e4b0a6a825ea8144.jpeg",
+            "https://i114.fastpic.org/thumb/2021/0608/27/fc443b58767d8636d597ade6829ce427.jpeg",
+            "https://i114.fastpic.org/thumb/2021/0608/51/7660c07f98570dce0620edf2b644ee51.jpeg",
+            "https://i114.fastpic.org/thumb/2021/0608/bd/99bc848dab83d1fd4cc3684ab8829ebd.jpeg",
+            "https://i114.fastpic.org/thumb/2021/0608/12/f0be91e85006b3c54e5ef26a83b8a012.jpeg"
         ],
         "description": "Здесь глубокая личная драма ничуть не уступает захватывающим событиям! Исследуйте полное тайн и загадок общество Mutazione от лица пятнадцатилетней Каи, которая приехала сюда ухаживать за своим захворавшим дедушкой Нонно. Заводите новых друзей, выращивайте музыкальные сады, заглядывайте на барбекю, посещайте музыкальные вечера и катайтесь на лодке, но не забудьте отправиться в главное путешествие и спасти всех от загадочной тьмы, которая оказалась в самом центре событий.\nБолее 100 лет тому назад на тропический курорт упал метеорит. Почти все жители погибли, а у немногих выживших начали проявляться загадочные мутации. Спасательные операции быстро сошли на нет, а жители города остались в мутирующей среде и основали свое закрытое общество — Mutazione.\n\nВ настоящем времени вам предстоит играть за пятнадцатилетнюю Каи, которая прибыла в Mutazione, чтобы позаботиться об умирающем дедушке. Но все оказалось совсем непросто... У Нонно для внучки появляются другие задачи, в дружелюбном обществе накаляются страсти, а в снах Каи к ней является пугающее существо, похожее на птицу.\n\nПадение метеорита и конец света пережить можно, но как справиться с ссорой по соседству?\n\n\n\nМногообразие очаровательных мутантов, яркий мир с нарисованной от руки графикой.\n\n\n\nСюжет, полный неожиданных драматических поворотов, изменяемые сады с расслабляющими звуками природы.\n\n\n\nОбмен семечками — отправляйте друзьям и получайте в подарок редкие и необычные семена!\n\n\n\nЕщё игры Apple Arcade на Switch.",
         "title_id": "0100D750132D8000"
@@ -36962,15 +36992,15 @@
         "multiplayer": "до 8 человек",
         "cover": "http://images.vfl.ru/ii/1644529023/a1792ebb/37976112.png",
         "screenshots": [
-            "https://i110.fastpic.ru/thumb/2019/0214/f3/8fb126595cb587741f6d8631b87cb9f3.jpeg",
-            "https://i110.fastpic.ru/thumb/2019/0214/6a/52603f711b06ba3850ed2f0baefe546a.jpeg",
-            "https://i110.fastpic.ru/thumb/2019/0214/72/f85d70ab40c362fa52d945a3c4940072.jpeg",
-            "https://i110.fastpic.ru/thumb/2019/0214/22/55a1f73c06144d089d6b8bc4482ade22.jpeg",
-            "https://i110.fastpic.ru/thumb/2019/0214/ab/c5f06d2a3134cd1224817a4efa1e64ab.jpeg",
-            "https://i110.fastpic.ru/thumb/2019/0214/c9/5aa5043828bc19b4a94b8cb7fcfe42c9.jpeg",
-            "https://i110.fastpic.ru/thumb/2019/0214/5b/2db95e737a227a8debed89bc16c22c5b.jpeg",
-            "https://i110.fastpic.ru/thumb/2019/0214/81/fbdc34f9bae438f4f818f2ab2a5ac681.jpeg",
-            "https://i110.fastpic.ru/thumb/2019/0214/16/42c5c70cd4c85776f8a1f73081ee0e16.jpeg"
+            "https://i110.fastpic.org/thumb/2019/0214/f3/8fb126595cb587741f6d8631b87cb9f3.jpeg",
+            "https://i110.fastpic.org/thumb/2019/0214/6a/52603f711b06ba3850ed2f0baefe546a.jpeg",
+            "https://i110.fastpic.org/thumb/2019/0214/72/f85d70ab40c362fa52d945a3c4940072.jpeg",
+            "https://i110.fastpic.org/thumb/2019/0214/22/55a1f73c06144d089d6b8bc4482ade22.jpeg",
+            "https://i110.fastpic.org/thumb/2019/0214/ab/c5f06d2a3134cd1224817a4efa1e64ab.jpeg",
+            "https://i110.fastpic.org/thumb/2019/0214/c9/5aa5043828bc19b4a94b8cb7fcfe42c9.jpeg",
+            "https://i110.fastpic.org/thumb/2019/0214/5b/2db95e737a227a8debed89bc16c22c5b.jpeg",
+            "https://i110.fastpic.org/thumb/2019/0214/81/fbdc34f9bae438f4f818f2ab2a5ac681.jpeg",
+            "https://i110.fastpic.org/thumb/2019/0214/16/42c5c70cd4c85776f8a1f73081ee0e16.jpeg"
         ],
         "description": "В невероятном кроссовере сошлись лучшие франшизы: Persona 4 Arena, RWBY, BLAZBLUE и Under Night In-Birth!\nНевероятно популярная аниме-франшиза была полностью переработана и превращена в игру со сражениями!\n\n\n\nВыбирайте любимых персонажей и объединяйтесь, чтобы сразиться в бою 2 на 2!\n\n\n\nВас ждут захватывающие бои без сложностей в управлении, а также набор уникальных движений для каждого персонажа!\n\n\n\nПодробный курс обучения, а также упрощенные движения позволят всем новым игрокам получать удовольствие от игры... Но это не значит, что игра простая!\n\n\n\nНаслаждайтесь обстановкой и музыкой из всех франшиз!",
         "title_id": "0100EE800C93E000"
@@ -37022,12 +37052,12 @@
         "multiplayer": "нет",
         "cover": "http://images.vfl.ru/ii/1566763704/091bba49/27657136.png",
         "screenshots": [
-            "https://i86.fastpic.ru/thumb/2019/0825/8b/bee5ea923a3af7281ab774e5d90d358b.jpeg",
-            "https://i86.fastpic.ru/thumb/2019/0825/58/7fefb691f6c298786d2fa0d75f0a8758.jpeg",
-            "https://i86.fastpic.ru/thumb/2019/0825/00/79350f31706aa0b88ec2b8a95b6de600.jpeg",
-            "https://i86.fastpic.ru/thumb/2019/0825/94/c0c1a114b5750c9a2a774dae526a8f94.jpeg",
-            "https://i86.fastpic.ru/thumb/2019/0825/11/96a43f0280a42d04aca5788464496b11.jpeg",
-            "https://i86.fastpic.ru/thumb/2019/0825/f0/fe5a387b7034982021e46a1dd670e9f0.jpeg"
+            "https://i86.fastpic.org/thumb/2019/0825/8b/bee5ea923a3af7281ab774e5d90d358b.jpeg",
+            "https://i86.fastpic.org/thumb/2019/0825/58/7fefb691f6c298786d2fa0d75f0a8758.jpeg",
+            "https://i86.fastpic.org/thumb/2019/0825/00/79350f31706aa0b88ec2b8a95b6de600.jpeg",
+            "https://i86.fastpic.org/thumb/2019/0825/94/c0c1a114b5750c9a2a774dae526a8f94.jpeg",
+            "https://i86.fastpic.org/thumb/2019/0825/11/96a43f0280a42d04aca5788464496b11.jpeg",
+            "https://i86.fastpic.org/thumb/2019/0825/f0/fe5a387b7034982021e46a1dd670e9f0.jpeg"
         ],
         "description": "Настоящее музыкальное приключение, где пение может спасти мир! Играйте за глуповатого барда, который отправился в путешествие на поиски таинственной Песни земли, что может спасти вселенную от неминуемой гибели. Теперь вам предстоит петь песни, открывать секреты этого мира и заводить новых друзей!\n\n\n\nЕщё музыкальные ритм-игры:\n\n\n\n\n\n\nMusic Racer\n\n\n\nHatsune Miku: Project DIVA\n\n\n\nCytus Alpha\n\n\n\nGal Metal\n\n\n\nLanota\n\n\n\nDeemo\n\n\n\nPianista\n\n\n\nThumper\n\n\n\nVoez\n\n\n\nMuse Dash\n\n\n\nEat Beat Deadspik\n\n\n\nSuperbeat Xonix\n\n\n\nFrederic 1+2\n\n\n\nJust Beat and Shapes\n\n\n\nLet's Sing\n\n\n\nJust Dance\n\n\n\nDark Witch Music Episode: Rudymical\n\n\n\nTaiko Drum 'n' Fun\n\n\n\nFloor Kids\n\n\n\nSongbird Symphony\n\n\n\nTerrorhythm Trrt\n\n\n\nAaero\n\n\n\nOld School Musical",
         "title_id": "0100F8A00853C000"
@@ -37109,14 +37139,14 @@
         "multiplayer": "нет",
         "cover": "http://images.vfl.ru/ii/1607713982/f8c759fe/32631045.png",
         "screenshots": [
-            "https://i114.fastpic.ru/thumb/2020/1211/62/fa00cb77e9b0f885293d75b11571ed62.jpeg",
-            "https://i114.fastpic.ru/thumb/2020/1211/94/6a022006d7a58b3385c636f3a405bb94.jpeg",
-            "https://i114.fastpic.ru/thumb/2020/1211/25/44fe5747eff3a449605b5db097716025.jpeg",
-            "https://i114.fastpic.ru/thumb/2020/1211/03/38a95c53538782d7fd76e9ec83964703.jpeg",
-            "https://i114.fastpic.ru/thumb/2020/1211/7c/0e0a634dc44194d4f723c5c0faceb07c.jpeg",
-            "https://i114.fastpic.ru/thumb/2020/1211/d6/f586ec2a2ff10a4a8fba57206089c3d6.jpeg",
-            "https://i114.fastpic.ru/thumb/2020/1211/13/24d7e6a53b9fafc20736301d84937c13.jpeg",
-            "https://i114.fastpic.ru/thumb/2020/1211/ba/67ac8ee98c2bf24fbc476d3152a77fba.jpeg"
+            "https://i114.fastpic.org/thumb/2020/1211/62/fa00cb77e9b0f885293d75b11571ed62.jpeg",
+            "https://i114.fastpic.org/thumb/2020/1211/94/6a022006d7a58b3385c636f3a405bb94.jpeg",
+            "https://i114.fastpic.org/thumb/2020/1211/25/44fe5747eff3a449605b5db097716025.jpeg",
+            "https://i114.fastpic.org/thumb/2020/1211/03/38a95c53538782d7fd76e9ec83964703.jpeg",
+            "https://i114.fastpic.org/thumb/2020/1211/7c/0e0a634dc44194d4f723c5c0faceb07c.jpeg",
+            "https://i114.fastpic.org/thumb/2020/1211/d6/f586ec2a2ff10a4a8fba57206089c3d6.jpeg",
+            "https://i114.fastpic.org/thumb/2020/1211/13/24d7e6a53b9fafc20736301d84937c13.jpeg",
+            "https://i114.fastpic.org/thumb/2020/1211/ba/67ac8ee98c2bf24fbc476d3152a77fba.jpeg"
         ],
         "description": "Волнительное нарративное путешествие по стране снов с особенным художественным оформлением и чарующим голосом Ханны Мюррей («Игра престолов»).\nУзнайте историю девочки — и её Тени, оказавшихся вместе в сюрреалистичном мире, полном страшных сюрпризов. Справляясь с её душевными терзаниями, пройдите это лиричное приключение, где героиня и её спутница должны повзрослеть — вместе!\n\n\n\nСюрреалистичный мир, написанный похожими на акварельными, красками.\n\n\n\nПреодолевайте любые испытания с помощью необычной способности перематывать события.\n\n\n\nЗатягивающие головоломки, разрывающие оковы сна.\n\n\n\nИгра светотени с переключением между 2D- и трёхмерной графикой!",
         "title_id": "0100820013612000"
@@ -37168,15 +37198,15 @@
         "multiplayer": "нет",
         "cover": "http://images.vfl.ru/ii/1593344044/1d2d5bf9/30933126.png",
         "screenshots": [
-            "https://i112.fastpic.ru/thumb/2020/0628/99/0fff5e72282dfdc9818c62c3d248d599.jpeg",
-            "https://i112.fastpic.ru/thumb/2020/0628/a5/e89cd87da08a228c41894da68bd440a5.jpeg",
-            "https://i112.fastpic.ru/thumb/2020/0628/6f/96e7bee7bfdae450bea81203725cd46f.jpeg",
-            "https://i112.fastpic.ru/thumb/2020/0628/cb/de2fcab4f6cec2fbcac1bb8e021033cb.jpeg",
-            "https://i112.fastpic.ru/thumb/2020/0628/03/f744e2fc5d952ba2dcc04904fed9f903.jpeg",
-            "https://i112.fastpic.ru/thumb/2020/0628/69/91f6919fcefa280200246b814d299369.jpeg",
+            "https://i112.fastpic.org/thumb/2020/0628/99/0fff5e72282dfdc9818c62c3d248d599.jpeg",
+            "https://i112.fastpic.org/thumb/2020/0628/a5/e89cd87da08a228c41894da68bd440a5.jpeg",
+            "https://i112.fastpic.org/thumb/2020/0628/6f/96e7bee7bfdae450bea81203725cd46f.jpeg",
+            "https://i112.fastpic.org/thumb/2020/0628/cb/de2fcab4f6cec2fbcac1bb8e021033cb.jpeg",
+            "https://i112.fastpic.org/thumb/2020/0628/03/f744e2fc5d952ba2dcc04904fed9f903.jpeg",
+            "https://i112.fastpic.org/thumb/2020/0628/69/91f6919fcefa280200246b814d299369.jpeg",
             "http://images.vfl.ru/ii/1554575291/24b1aa70/26085131.png",
-            "https://i109.fastpic.ru/thumb/2019/0406/03/869b8271d4d0f052abd64c68d4472f03.jpeg",
-            "https://i109.fastpic.ru/thumb/2019/0406/4f/164fdeeef743d421d944ef1708bbfa4f.jpeg"
+            "https://i109.fastpic.org/thumb/2019/0406/03/869b8271d4d0f052abd64c68d4472f03.jpeg",
+            "https://i109.fastpic.org/thumb/2019/0406/4f/164fdeeef743d421d944ef1708bbfa4f.jpeg"
         ],
         "description": "В постапокалиптическом мире, охваченном властью зловещей корпорации, у человечества осталась лишь одна надежда — наемник-ниндзя по имени Дзаку. Oniken — наследник хардкорных 8-битных платформеров, готовый проверить вашу ловкость и реакцию в череде врагов, ловушек и могучих боссов!\n\n\n\nПиксельная графика и музыка в стиле классических игр эпохи 8 бит, сюжетные видеовставки.\n\n\n\n6 сложных заданий, а также дополнительные этапы.\n\n\n\nСвыше 18 боссов — по сюжету или в особом босс-режиме!\n\n\n\nНастоящее испытание — хардкор-режим с всего одной жизнью..",
         "title_id": "0100E1800E202000"
@@ -37198,15 +37228,15 @@
         "multiplayer": "нет",
         "cover": "http://images.vfl.ru/ii/1643388904/dc68c33a/37773096.png",
         "screenshots": [
-            "https://i109.fastpic.ru/thumb/2019/0208/db/ab7b42b063819f3d4da9cc4c33c83cdb.jpeg",
-            "https://i109.fastpic.ru/thumb/2019/0208/d6/97cb3116ed59697f1721e16b8c2cc6d6.jpeg",
-            "https://i109.fastpic.ru/thumb/2019/0208/22/ab36b8d1fb51e9952598fb7b645c3b22.jpeg",
+            "https://i109.fastpic.org/thumb/2019/0208/db/ab7b42b063819f3d4da9cc4c33c83cdb.jpeg",
+            "https://i109.fastpic.org/thumb/2019/0208/d6/97cb3116ed59697f1721e16b8c2cc6d6.jpeg",
+            "https://i109.fastpic.org/thumb/2019/0208/22/ab36b8d1fb51e9952598fb7b645c3b22.jpeg",
             "https://i115.fastpic.org/thumb/2021/1011/56/89d5e217b9acc743778e5fb567fc1956.jpeg",
             "https://i115.fastpic.org/thumb/2021/1011/1c/7b52404f579e9326367eafb2559f2c1c.jpeg",
             "https://i115.fastpic.org/thumb/2021/1011/ba/98334103f4ed1e93aed8a9b25976aaba.jpeg",
-            "https://i109.fastpic.ru/thumb/2019/0208/80/ec73d760b509f5c82dfc910676392280.jpeg",
-            "https://i109.fastpic.ru/thumb/2019/0208/bc/1ab1f8d761c742edf4e8dfe94c8744bc.jpeg",
-            "https://i109.fastpic.ru/thumb/2019/0208/01/083f4a7832259e205d5497b0151b5c01.jpeg"
+            "https://i109.fastpic.org/thumb/2019/0208/80/ec73d760b509f5c82dfc910676392280.jpeg",
+            "https://i109.fastpic.org/thumb/2019/0208/bc/1ab1f8d761c742edf4e8dfe94c8744bc.jpeg",
+            "https://i109.fastpic.org/thumb/2019/0208/01/083f4a7832259e205d5497b0151b5c01.jpeg"
         ],
         "description": "Owlboy («Мальчик-сова») — захватывающая приключенческая игра, в которой вы можете летать и исследовать новый облачный мир! Соберите друзей и исследуйте вместе с ними открытые небеса. Одолейте препятствия и врагов в одном из самых развернутых приключений этой эпохи.\nИз-за немоты Отусу нелегко соответствовать ожиданиям «совечества». Дела начинают идти еще хуже, когда на горизонте вдруг появляются небесные пираты.\n\nТак начинается невероятное путешествие сквозь кишащие монстрами руины навстречу неожиданным встречам, тщательно скрываемым секретам и непомерным ношам.\nПриключение, которое рисовалось вручную 10 лет!",
         "title_id": "0100BC2004FF4000"
@@ -37228,12 +37258,12 @@
         "multiplayer": "нет",
         "cover": "http://images.vfl.ru/ii/1604136859/d3649810/32137705.png",
         "screenshots": [
-            "https://i114.fastpic.ru/thumb/2020/1031/9d/07f41fcad1ecb4954033bfdd8a8ff89d.jpeg",
-            "https://i114.fastpic.ru/thumb/2020/1031/76/c8c5e1aae89d9586c7d63890b37bfd76.jpeg",
-            "https://i114.fastpic.ru/thumb/2020/1031/18/8b6c41d607dc62033c8e54e6b65c0218.jpeg",
-            "https://i114.fastpic.ru/thumb/2020/1031/16/ce4609c62992967b7a97be383ed71116.jpeg",
-            "https://i114.fastpic.ru/thumb/2020/1031/f8/74ba0403b8bd91a6f8e12de744d2edf8.jpeg",
-            "https://i114.fastpic.ru/thumb/2020/1031/75/612d8dd879c525d60d61d60298041c75.jpeg",
+            "https://i114.fastpic.org/thumb/2020/1031/9d/07f41fcad1ecb4954033bfdd8a8ff89d.jpeg",
+            "https://i114.fastpic.org/thumb/2020/1031/76/c8c5e1aae89d9586c7d63890b37bfd76.jpeg",
+            "https://i114.fastpic.org/thumb/2020/1031/18/8b6c41d607dc62033c8e54e6b65c0218.jpeg",
+            "https://i114.fastpic.org/thumb/2020/1031/16/ce4609c62992967b7a97be383ed71116.jpeg",
+            "https://i114.fastpic.org/thumb/2020/1031/f8/74ba0403b8bd91a6f8e12de744d2edf8.jpeg",
+            "https://i114.fastpic.org/thumb/2020/1031/75/612d8dd879c525d60d61d60298041c75.jpeg",
             "https://i115.fastpic.org/thumb/2021/0731/ba/d03cce37aa4f482d59d195289c002cba.jpeg",
             "https://i115.fastpic.org/thumb/2021/0731/48/60839fab41019f9479121a78c6f6fd48.jpeg",
             "https://i115.fastpic.org/thumb/2021/0731/a0/13db458a365eaf5c9f93daf8c3e7ffa0.jpeg"
@@ -37286,15 +37316,15 @@
         "multiplayer": "нет",
         "cover": "http://images.vfl.ru/ii/1551362642/d7367ff1/25582319.png",
         "screenshots": [
-            "https://i109.fastpic.ru/thumb/2019/0228/f5/7fac0fb90a534f24213b0dc6047da6f5.jpeg",
-            "https://i109.fastpic.ru/thumb/2019/0228/a9/764207d11d972e5314bc230232c9eba9.jpeg",
-            "https://i109.fastpic.ru/thumb/2019/0228/35/61c0ce3af2a1ffb312e50270524b3235.jpeg",
-            "https://i109.fastpic.ru/thumb/2019/0228/2d/26eff095f14ce312f80149257a0be22d.jpeg",
-            "https://i109.fastpic.ru/thumb/2019/0228/eb/e1cd513f87ea6046d5cd3ee0faaa8feb.jpeg",
-            "https://i109.fastpic.ru/thumb/2019/0228/70/3fb33b0e04fe5c518d816b48794b8c70.jpeg",
-            "https://i109.fastpic.ru/thumb/2019/0228/ec/df616c53ac27f9f3c3d0560f34e2ceec.jpeg",
-            "https://i109.fastpic.ru/thumb/2019/0228/3c/b2d20bc651055378f8b6fb908d04793c.jpeg",
-            "https://i109.fastpic.ru/thumb/2019/0228/c5/f31cc39564b0b21446bb46a0b87d2fc5.jpeg"
+            "https://i109.fastpic.org/thumb/2019/0228/f5/7fac0fb90a534f24213b0dc6047da6f5.jpeg",
+            "https://i109.fastpic.org/thumb/2019/0228/a9/764207d11d972e5314bc230232c9eba9.jpeg",
+            "https://i109.fastpic.org/thumb/2019/0228/35/61c0ce3af2a1ffb312e50270524b3235.jpeg",
+            "https://i109.fastpic.org/thumb/2019/0228/2d/26eff095f14ce312f80149257a0be22d.jpeg",
+            "https://i109.fastpic.org/thumb/2019/0228/eb/e1cd513f87ea6046d5cd3ee0faaa8feb.jpeg",
+            "https://i109.fastpic.org/thumb/2019/0228/70/3fb33b0e04fe5c518d816b48794b8c70.jpeg",
+            "https://i109.fastpic.org/thumb/2019/0228/ec/df616c53ac27f9f3c3d0560f34e2ceec.jpeg",
+            "https://i109.fastpic.org/thumb/2019/0228/3c/b2d20bc651055378f8b6fb908d04793c.jpeg",
+            "https://i109.fastpic.org/thumb/2019/0228/c5/f31cc39564b0b21446bb46a0b87d2fc5.jpeg"
         ],
         "description": "Представьте место, куда попадают все забытые и потерянные предметы: старые игрушки, письма, носки. Забытые земли — это волшебный мир, населенный забывчиками — ожившими забытыми предметами, мечтающими, чтобы их помнили.\nForgotton Anne — это целостное анимационное приключение, облекающее выразительный сюжет в легкий пазл-платформер. Вы играете за Энн, призванную поддерживать порядок в Забытых землях. Она отправляется подавлять восстание, которое может помешать ей и ее повелителю Бонку вернуться в мир людей...\n\n\n\nОткройте потрясающе красивый мир забывчиков — оживших потерянных предметов, каждый из которых обладает ярким характером.\n\n\n\nУзнайте, что скрывает разрушительный конфликт между бесстрастным правителем и беспощадными бунтарями.\n\n\n\nНе спешите с выбором. Благодаря разветвленной системе диалогов все зависит от вас: ваши слова и действия могут изменить ход событий в игре.\n\n\n\nБегайте, прыгайте и взмывайте вверх, открывайте новые локации и способности — делайте все, что нужно, чтобы отправить Энн домой.\n\n\n\nНаслаждайтесь графикой ручной работы, созданной по традиционной технологии ваших любимых рисованных мультфильмов.\n\n\n\nВеликолепная музыка в исполнении Копенгагенского филармонического оркестра поможет погрузиться в мир игры.",
         "title_id": "010059E00B93C000"
@@ -37309,22 +37339,22 @@
         "genre": "Visual Novel, Homebrew",
         "developer": "Soviet Games",
         "publisher": "uyjulian",
-        "image_format": "NSP",
+        "image_format": "NRO",
         "interface_lang": "Русский, Английский [RUS / Eng / Multi 5]",
         "voice_lang": "нет",
         "performance": "Да (на 14.1.2, Atmosphere 1.3.2)",
         "multiplayer": "нет",
         "cover": "http://images.vfl.ru/ii/1559663452/d243d288/26775788.png",
         "screenshots": [
-            "https://i110.fastpic.ru/thumb/2019/0604/13/e4c8779ae7c03d3bcc53cca2594cc413.jpeg",
-            "https://i110.fastpic.ru/thumb/2019/0604/7e/8b6cee9f30b05f96db3422a6c3f98f7e.jpeg",
-            "https://i110.fastpic.ru/thumb/2019/0604/80/d7b3e14f2b6d4c726124de1c1907db80.jpeg",
-            "https://i110.fastpic.ru/thumb/2019/0604/e5/d40a4080375a11f6313c3cfc973cfee5.jpeg",
-            "https://i110.fastpic.ru/thumb/2019/0604/45/865d0be1c5e8a5dbcb5565cbfa824f45.jpeg",
-            "https://i110.fastpic.ru/thumb/2019/0604/14/2a3091983b4dd1b00655a91eb0720614.jpeg",
-            "https://i110.fastpic.ru/thumb/2019/0604/90/cb60c4eaea7f356bf30c241c292bda90.jpeg",
-            "https://i110.fastpic.ru/thumb/2019/0604/c6/8d49682cc885bb2510fffff6df2438c6.jpeg",
-            "https://i110.fastpic.ru/thumb/2019/0604/ec/1e46d2a0d9ab3413a2f8c42ceeb5baec.jpeg"
+            "https://i110.fastpic.org/thumb/2019/0604/13/e4c8779ae7c03d3bcc53cca2594cc413.jpeg",
+            "https://i110.fastpic.org/thumb/2019/0604/7e/8b6cee9f30b05f96db3422a6c3f98f7e.jpeg",
+            "https://i110.fastpic.org/thumb/2019/0604/80/d7b3e14f2b6d4c726124de1c1907db80.jpeg",
+            "https://i110.fastpic.org/thumb/2019/0604/e5/d40a4080375a11f6313c3cfc973cfee5.jpeg",
+            "https://i110.fastpic.org/thumb/2019/0604/45/865d0be1c5e8a5dbcb5565cbfa824f45.jpeg",
+            "https://i110.fastpic.org/thumb/2019/0604/14/2a3091983b4dd1b00655a91eb0720614.jpeg",
+            "https://i110.fastpic.org/thumb/2019/0604/90/cb60c4eaea7f356bf30c241c292bda90.jpeg",
+            "https://i110.fastpic.org/thumb/2019/0604/c6/8d49682cc885bb2510fffff6df2438c6.jpeg",
+            "https://i110.fastpic.org/thumb/2019/0604/ec/1e46d2a0d9ab3413a2f8c42ceeb5baec.jpeg"
         ],
         "description": "«Бесконечное лето» — видеоигра в жанре визуального романа с элементами эроге в сеттинге летнего лагеря, разработанная русской командой Erogame Project, изданная Soviet Games, один из самых успешных опытов отечественного игростроения в жанре визуальных новелл.\n      Грустная ночь у меня сегодня.\n     Смотрит с обоев былая сотня.\n     Можно поехать в бордель, и сводня-\n     нумизматка — будет согласна.\n     Лень отклеивать, суетиться.\n     Остаётся тихо сидеть, поститься\n     да напротив в окно креститься,\n     пока оно не погасло. ©\nГлавный герой игры — одинокий молодой человек. Он живёт за счёт случайных фрилансовых заказов и проводит большую часть своего времени в интернете на анонимных имиджбордах.\n\nВстретив на улице Семёна, вы никогда б не обратили на него внимания — действительно, подобных людей в каждом городе тысячи и даже сотни тысяч. Но однажды с ним приключается совершенно необычайный случай: он засыпает зимой в автобусе, а просыпается... Посреди жаркого лета. Перед ним — пионерлагерь «Совёнок», позади — прошлая жизнь. Чтобы разгадать, что же с ним случилось, Семёну, т.е. вам, предстоит получше узнать местных обитателей (а может, даже встретить любовь), разобраться в лабиринтах сложных человеческих взаимоотношений и своих собственных проблемах, решить загадки лагеря – как вернуться обратно? Или не возвращаться вовсе?..\nКаждый год наступает лето. Каждый человек — это бесконечная вселенная.\nЗдесь находятся Doki Doki Literature Club, здесь другие новеллы на Ren'Py на Switch.",
         "title_id": null
@@ -37436,15 +37466,15 @@
         "multiplayer": "до 2 игроков",
         "cover": "http://images.vfl.ru/ii/1579851445/8414ce02/29305297.png",
         "screenshots": [
-            "https://i111.fastpic.ru/thumb/2019/1229/80/aee57abf9c4ea45792f859c812d76280.jpeg",
-            "https://i111.fastpic.ru/thumb/2019/1229/44/f14c6ff18a4b986281c14837f0dcd844.jpeg",
-            "https://i111.fastpic.ru/thumb/2020/0124/23/86cf7715b498de4239462dccb76dc623.jpeg",
-            "https://i111.fastpic.ru/thumb/2019/1229/02/d6c293e3fae4d25aae60bf765e4ecd02.jpeg",
-            "https://i111.fastpic.ru/thumb/2019/1229/87/dc21d4e3be4c7ebf5d8cc2f5ec610c87.jpeg",
-            "https://i111.fastpic.ru/thumb/2019/1229/36/1e862d5dbd5532292c7114bd42dd5236.jpeg",
-            "https://i111.fastpic.ru/thumb/2019/1229/be/531859c63ef500397c074869479a69be.jpeg",
-            "https://i111.fastpic.ru/thumb/2020/0124/c0/b73a27f150e0a88c8345f0f2a509a7c0.jpeg",
-            "https://i111.fastpic.ru/thumb/2020/0124/23/ffe05f48c3e683cef6e35038c547d023.jpeg"
+            "https://i111.fastpic.org/thumb/2019/1229/80/aee57abf9c4ea45792f859c812d76280.jpeg",
+            "https://i111.fastpic.org/thumb/2019/1229/44/f14c6ff18a4b986281c14837f0dcd844.jpeg",
+            "https://i111.fastpic.org/thumb/2020/0124/23/86cf7715b498de4239462dccb76dc623.jpeg",
+            "https://i111.fastpic.org/thumb/2019/1229/02/d6c293e3fae4d25aae60bf765e4ecd02.jpeg",
+            "https://i111.fastpic.org/thumb/2019/1229/87/dc21d4e3be4c7ebf5d8cc2f5ec610c87.jpeg",
+            "https://i111.fastpic.org/thumb/2019/1229/36/1e862d5dbd5532292c7114bd42dd5236.jpeg",
+            "https://i111.fastpic.org/thumb/2019/1229/be/531859c63ef500397c074869479a69be.jpeg",
+            "https://i111.fastpic.org/thumb/2020/0124/c0/b73a27f150e0a88c8345f0f2a509a7c0.jpeg",
+            "https://i111.fastpic.org/thumb/2020/0124/23/ffe05f48c3e683cef6e35038c547d023.jpeg"
         ],
         "description": "Warhammer 40,000: Space Wolf представляет из себя смесь пошаговой тактической стратегии и карточной игры с ролевыми элементами. Игра включает в себя одиночную кампанию, режим выживания и режим дуэлей.\nВам предстоит принять командование отрядом Космических Десантников из ордена Космических Волков под предводительством Вальгарда Убитого Дважды. Ударный Крейсер вашей Великой Роты попал в ловушку Десантников Хаоса из легиона Несущих Слово и был вынужден совершить экстренную посадку на планете Канак, диком вулканическом мире, населённым племенами суровых варваров. От вас потребуется не просто выжить, но и выйти победителем из этой схватки.\n\n\n\nВступите в схватку с безжалостными врагами Космических Волков!\n\n\n\nЭпическая кампания на враждебной планете, полной мрачных тайн;\n\n\n\nСразитесь со смертоносным легионом Несущих Слово – фанатичными слугами Богов Хаоса.\n\n\n\nБрутальные тактические битвы: Управляй отрядом Космических Волков в доблестных битвах, которые развернутся в потрясающем и разнообразном окружении;\n\n\n\nБросьте вызов своим Братьям в многопользовательском режиме и докажите своё превосходство.\n\n\n\nВыбери свой путь: Серый Охотник, Волчий Скаут или Волчий Страж – вам решать, каким путём пойти и какой из этих путей лучше сочетается с собственным стилем игры.\n\n\n\nВерсия для Nintendo Switch включает в себя все выходившее ранее встроенные DLC и отсутствующие внутриигровые микротранзакции.\nОт русских разработчиков!Другие игры в серии Warhammer на Switch.",
         "title_id": "0100E5600D7B2000"
@@ -37466,12 +37496,12 @@
         "multiplayer": "нет",
         "cover": "http://images.vfl.ru/ii/1568396285/1c0b0adc/27853097.png",
         "screenshots": [
-            "https://i87.fastpic.ru/thumb/2019/0913/5f/2018588ed5fc355baf1fa96ed6c0705f.jpeg",
-            "https://i87.fastpic.ru/thumb/2019/0913/05/4acad95fac40f9d3eb4d761ee56a1b05.jpeg",
-            "https://i87.fastpic.ru/thumb/2019/0913/0c/56278963ba496c64486e93dc2aa4ae0c.jpeg",
-            "https://i87.fastpic.ru/thumb/2019/0913/93/d70bb2cfeb36e02b819f5d2a75226c93.jpeg",
-            "https://i87.fastpic.ru/thumb/2019/0913/a0/95b5ec704b26b47a8844c3476c3d5ba0.jpeg",
-            "https://i87.fastpic.ru/thumb/2019/0913/be/0f187b91f89be5edb070fc911c1c5dbe.jpeg"
+            "https://i87.fastpic.org/thumb/2019/0913/5f/2018588ed5fc355baf1fa96ed6c0705f.jpeg",
+            "https://i87.fastpic.org/thumb/2019/0913/05/4acad95fac40f9d3eb4d761ee56a1b05.jpeg",
+            "https://i87.fastpic.org/thumb/2019/0913/0c/56278963ba496c64486e93dc2aa4ae0c.jpeg",
+            "https://i87.fastpic.org/thumb/2019/0913/93/d70bb2cfeb36e02b819f5d2a75226c93.jpeg",
+            "https://i87.fastpic.org/thumb/2019/0913/a0/95b5ec704b26b47a8844c3476c3d5ba0.jpeg",
+            "https://i87.fastpic.org/thumb/2019/0913/be/0f187b91f89be5edb070fc911c1c5dbe.jpeg"
         ],
         "description": "В Amnesia: Collection включены все выходившие игры серии — «The Dark Descent», «A Machine For Pigs», и «Justine».\nПоследние оставшиеся воспоминания вот-вот растворятся в темноте. Ваш разум в смятении. Вы обязаны выбраться наружу.\n\nAmnesia: The Dark Descent — это хоррор от первого лица на выживание. Это игра об изучении, жизни и погружении в атмосферу ночного кошмара. Это то, от чего у вас точно побегут мурашки по коже.\n\nВы остановились в узком коридоре, услышав чей-то плач вдалеке.\n\nИ он становится все ближе.\nВ Amnesia: The Dark Descent вы будете играть роль Даниеля, проснувшегося в безлюдном замке и почти ничего не помнящего о своем прошлом. Пробираясь по мрачным дорожкам, вы должны будете восстановить часть своей памяти. Страх и ужас бродит не только снаружи, но и изнутри замка. Вас ждет пугающее неизвестностью путешествие в самые темные уголки людского разума.\n\nУслышали звук чьих-то шагов? Или это просто игра вашего разума?\n\nС применением мира, действующего по всем законам физики, поражающе острой 3D-графики и динамичного звукового сопровождения, этот мир постепенно поглотит вас. Контроль над игрой полностью в ваших руках. Тут нет внутриигровых видео, скачков во времени — все, что произойдет с вами, будет вызвано именно вашими действиями. Что-то выходит из темноты. И оно приближается. Быстро приближается.\n\nМир Amnesia: The Dark Descent полон опасностей, которые могут скрываться за любым углом. Вы можете выжить, только прячась, убегая, или используя свои мозги.\n\nТеперь-то вам понятно, что значит — выжить?\nНа дворе 1899 год.\n\nБогатый промышленник Освальд Мандус просыпается в своей кровати в лихорадочном бреду, его преследуют кошмары о темной, дьявольской машине. После жуткой поездки в Мексику его терзают видения некой индустриальной утопии, угрызения совести и тропическая лихорадка, и он попадает в мир своих кошмаров. В доме тишина, а пол под ним шатается по воле какой-то адской машины: он знает лишь, что его дети в большой опасности, и что их спасение в его руках.От создателей SOMA.",
         "title_id": "01003CC00D0BE000"
@@ -37493,13 +37523,13 @@
         "multiplayer": "до 4 игроков",
         "cover": "http://images.vfl.ru/ii/1571458882/6c10fd6b/28244215.png",
         "screenshots": [
-            "https://i89.fastpic.ru/thumb/2019/1019/0d/19e21917d483b6ba97f9d59345a2b10d.jpeg",
-            "https://i89.fastpic.ru/thumb/2019/1019/35/2db67b12fa66293c489a4131c3821a35.jpeg",
-            "https://i89.fastpic.ru/thumb/2019/1019/58/a0b72feb95cf5fa23f28934644ec7b58.jpeg",
-            "https://i89.fastpic.ru/thumb/2019/1019/05/f5365b98406c4cde5358aef9ccc20d05.jpeg",
-            "https://i89.fastpic.ru/thumb/2019/1019/e8/5ba835fc82d4b7c34fac6795f315efe8.jpeg",
-            "https://i89.fastpic.ru/thumb/2019/1019/88/1623b0a3ad2e7892d6e2efa93a1dcf88.jpeg",
-            "https://i89.fastpic.ru/thumb/2019/1019/5f/048d85d9a7e35a8d521e432fd67b9c5f.jpeg"
+            "https://i89.fastpic.org/thumb/2019/1019/0d/19e21917d483b6ba97f9d59345a2b10d.jpeg",
+            "https://i89.fastpic.org/thumb/2019/1019/35/2db67b12fa66293c489a4131c3821a35.jpeg",
+            "https://i89.fastpic.org/thumb/2019/1019/58/a0b72feb95cf5fa23f28934644ec7b58.jpeg",
+            "https://i89.fastpic.org/thumb/2019/1019/05/f5365b98406c4cde5358aef9ccc20d05.jpeg",
+            "https://i89.fastpic.org/thumb/2019/1019/e8/5ba835fc82d4b7c34fac6795f315efe8.jpeg",
+            "https://i89.fastpic.org/thumb/2019/1019/88/1623b0a3ad2e7892d6e2efa93a1dcf88.jpeg",
+            "https://i89.fastpic.org/thumb/2019/1019/5f/048d85d9a7e35a8d521e432fd67b9c5f.jpeg"
         ],
         "description": "Death Squared — совместная головоломка для одного, двух или четырех человек, которой лучше всего наслаждаться в компании друзей и родных.\nДокажите, что можете стать сплоченной командой в Death Squared! Каждому игроку надо провести робота к цели, но дорога усеяна смертельными ловушками и препятствиями. Команде игроков надо внимательно следить за происходящим на экране и общаться друг с другом, чтобы остаться в живых и достигнуть цели.\n\nПройдите основной режим в одиночку или вдвоем, а затем попробуйте силы в главном режиме для четырех игроков! А если и этого вам окажется мало, вас будет ждать особый режим Vault.\n\n\n\nМини-путешествие полное сюрпризов и открытий.\n\n\n\n80 уровней в сюжетном режиме.\n\n\n\n40 уровней в режиме для четырех игроков.\n\n\n\n30 уровней в режиме Vault (для опытных игроков!).",
         "title_id": "010085900337E000"
@@ -37547,15 +37577,15 @@
         "multiplayer": "нет",
         "cover": "http://images.vfl.ru/ii/1585249677/668fa4a8/30011987.png",
         "screenshots": [
-            "https://i111.fastpic.ru/thumb/2020/0326/70/c7831d59b02e182181de703f05ae3270.jpeg",
-            "https://i111.fastpic.ru/thumb/2020/0326/c9/d6c6682aa4bdd7f710fc167ad393fdc9.jpeg",
-            "https://i111.fastpic.ru/thumb/2020/0326/65/28d005b2f3dea0f3d3f31b54354ba465.jpeg",
-            "https://i111.fastpic.ru/thumb/2020/0326/36/d233f3dcd3ea3f1a6794580e5f105436.jpeg",
-            "https://i111.fastpic.ru/thumb/2020/0326/21/6071094e28a62b6b8d246befa3b30421.jpeg",
-            "https://i111.fastpic.ru/thumb/2020/0326/6c/c3ee004ebce5389616ba288ad9b7b46c.jpeg",
-            "https://i111.fastpic.ru/thumb/2020/0326/5c/921f925063b38aa27312772f8f47d05c.jpeg",
-            "https://i111.fastpic.ru/thumb/2020/0326/fa/e4989007a17cc92c496653d1692178fa.jpeg",
-            "https://i111.fastpic.ru/thumb/2020/0326/8a/f7840fd0a24611531beaf2edc4f8b08a.jpeg"
+            "https://i111.fastpic.org/thumb/2020/0326/70/c7831d59b02e182181de703f05ae3270.jpeg",
+            "https://i111.fastpic.org/thumb/2020/0326/c9/d6c6682aa4bdd7f710fc167ad393fdc9.jpeg",
+            "https://i111.fastpic.org/thumb/2020/0326/65/28d005b2f3dea0f3d3f31b54354ba465.jpeg",
+            "https://i111.fastpic.org/thumb/2020/0326/36/d233f3dcd3ea3f1a6794580e5f105436.jpeg",
+            "https://i111.fastpic.org/thumb/2020/0326/21/6071094e28a62b6b8d246befa3b30421.jpeg",
+            "https://i111.fastpic.org/thumb/2020/0326/6c/c3ee004ebce5389616ba288ad9b7b46c.jpeg",
+            "https://i111.fastpic.org/thumb/2020/0326/5c/921f925063b38aa27312772f8f47d05c.jpeg",
+            "https://i111.fastpic.org/thumb/2020/0326/fa/e4989007a17cc92c496653d1692178fa.jpeg",
+            "https://i111.fastpic.org/thumb/2020/0326/8a/f7840fd0a24611531beaf2edc4f8b08a.jpeg"
         ],
         "description": "Земля оказалась погребена под толщей льда, и людям пришлось искать убежища в океанах. Но вода не может защищать их вечно. Лед уничтожает подводный дом одинокого акванавта, что становится началом вынужденного путешествия, полного открытий и загадок. Следуйте за таинственным механическим существом и опуститесь на еще большую глубину... Неужели кому-то удалось спастись здесь, в кромешной бездне?\nНовый, оригинальный взгляд на исследование морских глубин в игре, наполненной уникальными аудиовизуальными элементами!\n\nСледите за запасом кислорода, странствуя по этому восхитительному подводному царству и исследуя его флору и фауну. Берегите свой костюм, чтобы не сгинуть под чудовищным давлением в руинах ушедших цивилизаций. Прекрасный морской пейзаж очерчивает границы мира последнего акванавта.\nВам понравится это подводное путешествие!Endless Ocean Luminous / Beyond Blue / Subnautica / Abzu / In Other Waters / Mythic Ocean / InnerSpace / Wavetale / Deep Diving Adventures / Koral см. здесь.Ещё игры Apple Arcade на Switch.",
         "title_id": "01004EE0104F6000"
@@ -37607,14 +37637,14 @@
         "multiplayer": "нет",
         "cover": "http://images.vfl.ru/ii/1605995555/2c889d32/32392116.png",
         "screenshots": [
-            "https://i114.fastpic.ru/thumb/2020/1122/ab/9eee87f9d36c34a2a227a14a7ee418ab.jpeg",
-            "https://i114.fastpic.ru/thumb/2020/1122/3f/14af01d1b2cbeb158a4c8940495c853f.jpeg",
-            "https://i114.fastpic.ru/thumb/2020/1122/d2/2e18e536ae102155adaa35a06ef1f0d2.jpeg",
-            "https://i114.fastpic.ru/thumb/2020/1122/80/c690bf8a2401a4b7e84b0db49d32ca80.jpeg",
-            "https://i114.fastpic.ru/thumb/2020/1122/b1/1777504b9b4c59d250723e2d7da53bb1.jpeg",
-            "https://i114.fastpic.ru/thumb/2020/1122/03/b1e0c14e55846ed693e1272d821c8d03.jpeg",
-            "https://i114.fastpic.ru/thumb/2020/1122/70/9ba75c9e8fc6bd2c9b588e0b14412770.jpeg",
-            "https://i114.fastpic.ru/thumb/2020/1122/3e/36ec3211a7f187a71485cd7287e1173e.jpeg"
+            "https://i114.fastpic.org/thumb/2020/1122/ab/9eee87f9d36c34a2a227a14a7ee418ab.jpeg",
+            "https://i114.fastpic.org/thumb/2020/1122/3f/14af01d1b2cbeb158a4c8940495c853f.jpeg",
+            "https://i114.fastpic.org/thumb/2020/1122/d2/2e18e536ae102155adaa35a06ef1f0d2.jpeg",
+            "https://i114.fastpic.org/thumb/2020/1122/80/c690bf8a2401a4b7e84b0db49d32ca80.jpeg",
+            "https://i114.fastpic.org/thumb/2020/1122/b1/1777504b9b4c59d250723e2d7da53bb1.jpeg",
+            "https://i114.fastpic.org/thumb/2020/1122/03/b1e0c14e55846ed693e1272d821c8d03.jpeg",
+            "https://i114.fastpic.org/thumb/2020/1122/70/9ba75c9e8fc6bd2c9b588e0b14412770.jpeg",
+            "https://i114.fastpic.org/thumb/2020/1122/3e/36ec3211a7f187a71485cd7287e1173e.jpeg"
         ],
         "description": "Star Renegades – это межпространственная стратегическая ролевая игра с элементами роглайт. Побеждайте генерируемых противников, выстраивайте отношения между героями и разорвите, наконец, замкнутый круг!\nВ ваше измерение прибыл сервобот по имени J5T-1N, чтобы предупредить о надвигающемся вторжении таинственной злобной силы, известной как Империум.\n\nБейтесь за выживание в процедурно-генерируемой захватывающей кампании, используя все нюансы тактической походовой боевой системы с упором на прерывания и контратаки. Вам предстоит столкнуться с «умной» системой супостатов – постоянно эволюционирующих и растущих в званиях офицеров армии противника.\n\nЕсли героический отряд падёт в неравном бою и часы вашего измерения окажутся сочтены, не забудьте отправить J5T-1N (вместе со всем багажом накопленных знаний) в следующую реальность, чтобы у следующей группы героев появился шанс на победу. Каждое прохождение игры особое, и битвы за новые измерения не будут одинаковы.\n\n\n\nПобеждайте противников, используя прерывания, контратаки, комбо-атаки и другие особенности нашей боевой системы.\n\n\n\nСражайтесь с противниками и боссами, создаваемыми «умной» системой супостатов – они будут совершенствоваться вслед за вами.\n\n\n\nПолучайте доступ к десяткам новых персонажей: выжившие бойцы вашего отряда могут вступать в близкие отношения и создавать новых героев.\n\n\n\nПрорывайтесь с боем в самое сердце Империума: движок Rebellion Engine делает каждое прохождение игры незабываемым – благодаря захватывающему геймплею и игровым событиям, процедурно-генерируемым операциям, постоянно меняющимся приоритетам, развивающимся противникам и огромному количеству снаряжения и улучшений для ваших бойцов.",
         "title_id": "010060D00F658000"
@@ -37661,7 +37691,7 @@
         "publisher": "Liron Barzilai",
         "image_format": "NSP",
         "interface_lang": "Русский, Английский [RUS / ENG / Multi 7]",
-        "voice_lang": "русская, английская, немецкая, французская",
+        "voice_lang": "русская (любительская «Фаргус»), английская, немецкая, французская",
         "performance": "Да (на 16.0.1, Atmosphere 1.5.1)",
         "multiplayer": "нет",
         "cover": "https://i2.imageban.ru/out/2023/04/09/ef7fd91944f4a1e2c407f94eab4297ff.png",
@@ -37694,11 +37724,11 @@
         "multiplayer": "до 4 игроков",
         "cover": "http://images.vfl.ru/ii/1573215882/2153183d/28488541.png",
         "screenshots": [
-            "https://i111.fastpic.ru/thumb/2019/1108/b6/0e85bdc469348f076d28fc2060bfbab6.jpeg",
-            "https://i111.fastpic.ru/thumb/2019/1108/48/f4d4b8dd899017d9e332ef9556790348.jpeg",
-            "https://i111.fastpic.ru/thumb/2019/1108/97/ec75a4e5c64190747ba4a211af55e297.jpeg",
-            "https://i111.fastpic.ru/thumb/2019/1108/5d/d57a8a8c9b1e8476814a6138a94f905d.jpeg",
-            "https://i111.fastpic.ru/thumb/2019/1108/a0/02f6532ecd365622487b9db6389ccfa0.jpeg"
+            "https://i111.fastpic.org/thumb/2019/1108/b6/0e85bdc469348f076d28fc2060bfbab6.jpeg",
+            "https://i111.fastpic.org/thumb/2019/1108/48/f4d4b8dd899017d9e332ef9556790348.jpeg",
+            "https://i111.fastpic.org/thumb/2019/1108/97/ec75a4e5c64190747ba4a211af55e297.jpeg",
+            "https://i111.fastpic.org/thumb/2019/1108/5d/d57a8a8c9b1e8476814a6138a94f905d.jpeg",
+            "https://i111.fastpic.org/thumb/2019/1108/a0/02f6532ecd365622487b9db6389ccfa0.jpeg"
         ],
         "description": "Собирайте монетки, набирайте очки и коллекционируйте цум-цумы!\nБольшая вечеринка с самыми пушистыми маленькими плюшевыми игрушками Диснея! Эти милые игрушки вот-вот появятся на вашем Nintendo Switch и готовы радовать людей всех возрастов. Принимайте участие в различных активностях вместе со своим цум-цумом, начните набирать очки, чтобы увеличить свою коллекцию маленьких друзей!\n\n\n\nИграйте в головоломки с другом! Сыграйте против друга, чтобы увидеть, у кого лучше развиты навыки лопанья! Выберите своего цум-цума и начинайте соединять его с другими цум-цумами, создавая самую длинную цепочку в мире!\n\n\n\nВесёлые игрища! Аэрохоккей или кёрлинг — соревнуйтесь с друзьями, кто же в них лучше? Поддерживается от одного до четырёх игроков по локальной сети.\n\n\n\nСоздайте свою цум-цум коллекцию. Чем больше очков вы получаете, тем больше монет приобретёте для покупки цум-цумов. Соберите свою личную милую мягкую коллекцию!\n\n\n\nЕщё игры Disney на Switch.",
         "title_id": "010012800EBAE000"
@@ -37720,12 +37750,12 @@
         "multiplayer": "до 4 игроков",
         "cover": "http://images.vfl.ru/ii/1579887982/6598d1f2/29312345.png",
         "screenshots": [
-            "https://i111.fastpic.ru/thumb/2020/0124/f9/_627d687a6c511f25c79adb46ae46aef9.jpeg",
-            "https://i111.fastpic.ru/thumb/2020/0124/3b/_fbc19cec2a5e45f595b0f41a4db90e3b.jpeg",
-            "https://i111.fastpic.ru/thumb/2020/0124/5a/_6987ef1f2da875f534389de3d03bbf5a.jpeg",
-            "https://i111.fastpic.ru/thumb/2020/0124/6f/bcc8baf6a2f35e48fc252c71d8b3676f.jpeg",
-            "https://i111.fastpic.ru/thumb/2020/0124/c8/_a2a1a1dfb33c2b0502c3947abb4983c8.jpeg",
-            "https://i111.fastpic.ru/thumb/2020/0124/c6/1f389523d91addb3234bb6c2b6404dc6.jpeg"
+            "https://i111.fastpic.org/thumb/2020/0124/f9/_627d687a6c511f25c79adb46ae46aef9.jpeg",
+            "https://i111.fastpic.org/thumb/2020/0124/3b/_fbc19cec2a5e45f595b0f41a4db90e3b.jpeg",
+            "https://i111.fastpic.org/thumb/2020/0124/5a/_6987ef1f2da875f534389de3d03bbf5a.jpeg",
+            "https://i111.fastpic.org/thumb/2020/0124/6f/bcc8baf6a2f35e48fc252c71d8b3676f.jpeg",
+            "https://i111.fastpic.org/thumb/2020/0124/c8/_a2a1a1dfb33c2b0502c3947abb4983c8.jpeg",
+            "https://i111.fastpic.org/thumb/2020/0124/c6/1f389523d91addb3234bb6c2b6404dc6.jpeg"
         ],
         "description": "У вас есть всего три минуты, чтобы совместными усилиями спастись от монстра! Играя за монстра, используйте ваши способности, чтобы поймать людей! Играйте в OBAKEIDORO! оффлайн-командой до четырех игроков. Увлекательное противостояние, которое заставит ваше сердце биться чаще!\nOBAKEIDORO! — это асимметричная экшен-игра, в которой три человека сталкиваются с монстром. Игровой процесс будет настолько сложным или простым, насколько вы сами того захотите.\nВ роли человека не стоит просто убегать! Используйте атаку фонарем для защиты от монстра! Если провести ее в удачный момент, вы сможете переломить ситуацию в вашу пользу. В роли монстра применяйте свои могущественные способности, ведь они ключ к вашей победе. Используйте способности скольжения и выслеживания, чтобы ловить людей.\nСпасетесь ли вы от монстра? Настигнете ли вы людей? OBAKEIDORO! — это игра в кошки-мышки, которая понравится всей семье!Вторая часть здесь: «OBAKEIDORO 2: Chase & Seek».",
         "title_id": "010074600CC7A000"
@@ -37747,12 +37777,12 @@
         "multiplayer": "нет",
         "cover": "http://images.vfl.ru/ii/1607215784/449c8395/32563614.png",
         "screenshots": [
-            "https://i114.fastpic.ru/thumb/2020/1206/70/91b51abdebb92f068e1adc6d3f4dc570.jpeg",
-            "https://i114.fastpic.ru/thumb/2020/1206/d3/cfbeaad73713ca6504c7bc72735879d3.jpeg",
-            "https://i114.fastpic.ru/thumb/2020/1206/a2/6a77fbd30277268846ba1534306616a2.jpeg",
-            "https://i114.fastpic.ru/thumb/2020/1206/0f/88112274760b241d3ae379d4b0f73d0f.jpeg",
-            "https://i114.fastpic.ru/thumb/2020/1206/dd/a307fd8ec6f3ba362773d8340fe1cddd.jpeg",
-            "https://i114.fastpic.ru/thumb/2020/1206/2d/67ec70a02794aeaac615b9a395e3d42d.jpeg",
+            "https://i114.fastpic.org/thumb/2020/1206/70/91b51abdebb92f068e1adc6d3f4dc570.jpeg",
+            "https://i114.fastpic.org/thumb/2020/1206/d3/cfbeaad73713ca6504c7bc72735879d3.jpeg",
+            "https://i114.fastpic.org/thumb/2020/1206/a2/6a77fbd30277268846ba1534306616a2.jpeg",
+            "https://i114.fastpic.org/thumb/2020/1206/0f/88112274760b241d3ae379d4b0f73d0f.jpeg",
+            "https://i114.fastpic.org/thumb/2020/1206/dd/a307fd8ec6f3ba362773d8340fe1cddd.jpeg",
+            "https://i114.fastpic.org/thumb/2020/1206/2d/67ec70a02794aeaac615b9a395e3d42d.jpeg",
             "https://i115.fastpic.org/thumb/2021/0731/3d/13be3daadc1353cea8aab7bc6ab7593d.jpeg",
             "https://i115.fastpic.org/thumb/2021/0731/29/b18bcc10919b1fabd0f14f7a75964f29.jpeg",
             "https://i115.fastpic.org/thumb/2021/0731/25/f0f85d42e52e0cdc641cd0d866852d25.jpeg"
@@ -37806,15 +37836,15 @@
         "multiplayer": "нет",
         "cover": "https://i3.imageban.ru/out/2022/09/22/ab7da1c52c10ceb3c117f9a68964dcf8.png",
         "screenshots": [
-            "https://i111.fastpic.ru/thumb/2020/0204/64/f4d18bdc8bec09b0415952487eddd064.jpeg",
-            "https://i111.fastpic.ru/thumb/2020/0204/7c/574793914e249cd409af99ea7249ee7c.jpeg",
-            "https://i111.fastpic.ru/thumb/2020/0204/fc/8fc6577a7b6f98e7df844c914074dffc.jpeg",
-            "https://i111.fastpic.ru/thumb/2020/0204/a1/f220c12134c833f6f6e8840c0536bba1.jpeg",
-            "https://i111.fastpic.ru/thumb/2020/0204/ca/00bc8e8045d230e6a7d069821bc3cbca.jpeg",
-            "https://i111.fastpic.ru/thumb/2020/0204/a6/39777c05e837e32964256f017cec36a6.jpeg",
-            "https://i111.fastpic.ru/thumb/2020/0204/30/c4f02f9f48749bd5c10f9b29d1f83930.jpeg",
-            "https://i111.fastpic.ru/thumb/2020/0204/3e/5c8bc5012682035c8d50fb0b7e58643e.jpeg",
-            "https://i111.fastpic.ru/thumb/2020/0204/81/_e90c5ccbdf8213d3d4aff657bb9fb281.jpeg"
+            "https://i111.fastpic.org/thumb/2020/0204/64/f4d18bdc8bec09b0415952487eddd064.jpeg",
+            "https://i111.fastpic.org/thumb/2020/0204/7c/574793914e249cd409af99ea7249ee7c.jpeg",
+            "https://i111.fastpic.org/thumb/2020/0204/fc/8fc6577a7b6f98e7df844c914074dffc.jpeg",
+            "https://i111.fastpic.org/thumb/2020/0204/a1/f220c12134c833f6f6e8840c0536bba1.jpeg",
+            "https://i111.fastpic.org/thumb/2020/0204/ca/00bc8e8045d230e6a7d069821bc3cbca.jpeg",
+            "https://i111.fastpic.org/thumb/2020/0204/a6/39777c05e837e32964256f017cec36a6.jpeg",
+            "https://i111.fastpic.org/thumb/2020/0204/30/c4f02f9f48749bd5c10f9b29d1f83930.jpeg",
+            "https://i111.fastpic.org/thumb/2020/0204/3e/5c8bc5012682035c8d50fb0b7e58643e.jpeg",
+            "https://i111.fastpic.org/thumb/2020/0204/81/_e90c5ccbdf8213d3d4aff657bb9fb281.jpeg"
         ],
         "description": "Ōkami (омонимический каламбур: слово Ōkami (狼) по-японски означает «волк», однако иероглифы письменности кандзи, используемые в названии игры (大神), тоже произносятся как Ōkami и означают «великое божество») — видеоигра с графикой в стиле рисованной анимации, первоначально разработанная японской студией Clover Studio для игровой консоли PlayStation 2.\nГлавным персонажем игры Ōkami является богиня Солнца японского пантеона синто по имени Аматэрасу, принявшая форму белой волчицы. Протагонистом игры является великое божество-волк. Те же иероглифы (大神) также используются в написании полного имени богини: Аматэрасу О:-ми-ками.\nВас ждет бесспорный шедевр, основанный на знаменитой технике рисования тушью суми-э и представленный в потрясающем высоком разрешении. Используйте волшебные способности, атаки и Небесную кисть, чтобы вновь наполнить Ниппон красками и жизнью.\nЕщё мифологические игры.",
         "title_id": "0100276009872000"

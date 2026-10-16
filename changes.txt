@@ -1,11 +1,12 @@
-=== 2026-10-15 21:50:14 ===
-Всего в базе: 7230
+=== 2026-10-16 01:58:29 ===
+Всего в базе: 7231
 Добавлено: 1
-  + Harvest Moon Echoes of Teradea [NSZ][ENG]
-Обновлено: 13
+  + Prototype и Prototype 2 — хоумбрю-порты для Nintendo Switch (Xbox 360, рекомпиля
+Обновлено: 12
+  ~ Need For Speed Carbon (хоумбрю NFS:C) [NRO][RUS]
+  ~ Need For Speed Underground (хоумбрю NFS:U) [NRO][RUS (Mod.)/ENG]
+  ~ Torchlight 1 (порт) [NRO][RUS/ENG]
   ~ Touhou 15 Legacy of Lunatic Kingdom / 11 / 10 Mountain of Faith / 9 Phantasmagor
-  ~ To the Moon / Finding Paradise / A Bird Story [NSZ][RUS/Multi10]
-  ~ Just Dance JD Legacy Mod (1400+ песен Decades of Hits, Unlimited, Now, 2026 и др
   ~ Croc's World 1-5 / Run [NSZ][ENG,RUS]
   ~ Prototype 2 (порт) [NRO][RUS]
   ~ Need For Speed Underground 2 (хоумбрю NFS:U2) [NRO][RUS/ENG]
@@ -13,10 +14,8 @@
   ~ Silent Hill 2 EE (порт) [NRO][RUS]
   ~ Halo Combat Evolved (порт OpenCE) [NRO][ENG,RUS (Voice.)]
   ~ Flatout 2 (хоумбрю) [NRO][ENG]
-  ~ Torchlight 1 (порт) [NRO][RUS/ENG]
   ~ Call of Duty Black Ops Zombies (iOS-порт) [NRO][ENG]
-  ~ Call of Duty 4 Modern Warfare (порт CoD4:MW) [NRO][RUS/ENG]
-Статистика обновлена: 7242 раздач
+Статистика обновлена: 7243 раздач
   * Покрытие базы: 100.2%
-  * Активных сидов: 106590
-  * Всего загрузок: 7552086
+  * Активных сидов: 88646
+  * Всего загрузок: 7552652
