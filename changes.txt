@@ -1,11 +1,8 @@
-=== 2026-10-16 17:55:02 ===
+=== 2026-10-16 21:52:26 ===
 Всего в базе: 7236
-Добавлено: 2
-  + Tenebris Somnia [NSP][ENG]
-  + Content Warning [NSZ][RUS/Multi13]
-Обновлено: 13
-  ~ Prototype (порт) [NRO][RUS]
-  ~ Lucky Tower Ultimate [NSZ][RUS/Multi9]
+Обновлено: 12
+  ~ Prototype (порт) [NRO][RUS/ENG]
+  ~ Flatout 2 (хоумбрю) [NRO][RUS/ENG]
   ~ Prototype 2 (порт) [NRO][RUS/ENG]
   ~ NetherSX2 (бывш. AetherSX2) плюс ARMSX2 NX PS2: эмуляторы Sony PlayStation 2 PCS
   ~ Need For Speed Underground (хоумбрю NFS:U) [NRO][RUS (Mod.)/ENG]
@@ -16,8 +13,7 @@
   ~ Prey 2006 (хоумбрю openPrey) [NRO][ENG,RUS (Voice Mod.)]
   ~ Silent Hill 2 EE (порт) [NRO][RUS]
   ~ Halo Combat Evolved (порт OpenCE) [NRO][ENG,RUS (Voice.)]
-  ~ Flatout 2 (хоумбрю) [NRO][ENG]
 Статистика обновлена: 7248 раздач
   * Покрытие базы: 100.2%
-  * Активных сидов: 113069
-  * Всего загрузок: 7558925
+  * Активных сидов: 107026
+  * Всего загрузок: 7561259
