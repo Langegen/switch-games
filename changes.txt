@@ -1,9 +1,8 @@
-=== 2026-10-16 01:58:29 ===
+=== 2026-10-16 05:52:49 ===
 Всего в базе: 7231
-Добавлено: 1
-  + Prototype и Prototype 2 — хоумбрю-порты для Nintendo Switch (Xbox 360, рекомпиля
-Обновлено: 12
-  ~ Need For Speed Carbon (хоумбрю NFS:C) [NRO][RUS]
+Обновлено: 13
+  ~ Zoids Wild Blast Unleashed / Infinity Blast [NSZ][ENG (Mod.)/JAP]
+  ~ NetherSX2 (бывш. AetherSX2) плюс ARMSX2 NX PS2: эмуляторы Sony PlayStation 2 PCS
   ~ Need For Speed Underground (хоумбрю NFS:U) [NRO][RUS (Mod.)/ENG]
   ~ Torchlight 1 (порт) [NRO][RUS/ENG]
   ~ Touhou 15 Legacy of Lunatic Kingdom / 11 / 10 Mountain of Faith / 9 Phantasmagor
@@ -15,7 +14,7 @@
   ~ Halo Combat Evolved (порт OpenCE) [NRO][ENG,RUS (Voice.)]
   ~ Flatout 2 (хоумбрю) [NRO][ENG]
   ~ Call of Duty Black Ops Zombies (iOS-порт) [NRO][ENG]
-Статистика обновлена: 7243 раздач
+Статистика обновлена: 7244 раздач
   * Покрытие базы: 100.2%
-  * Активных сидов: 88646
-  * Всего загрузок: 7552652
+  * Активных сидов: 79285
+  * Всего загрузок: 7553561
