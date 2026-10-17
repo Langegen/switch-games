@@ -1,10 +1,10 @@
-=== 2026-10-17 09:51:24 ===
-Всего в базе: 7237
-Добавлено: 1
-  + Spica Adventure [NSZ][ENG]
-Обновлено: 14
-  ~ Metal Gear Solid: Master Collection Edition, Vol. 2 (MGS 4 Guns of the Patriots 
-  ~ Nordic Ashes the Complete Saga: Survivors of Ragnarok, Remnants of Corruption, D
+=== 2026-10-17 13:57:10 ===
+Всего в базе: 7239
+Добавлено: 2
+  + Lost Odyssey (порт) [NRO][ENG]
+  + Fear and Hunger (порт) [NRO][RUS/ENG]
+Обновлено: 11
+  ~ Эмулятор Sega Model 3 Arcade: Daytona USA 2, Virtua Fighter 3, Sega Super GT Scu
   ~ Prototype (порт) [NRO][RUS/ENG]
   ~ Flatout 2 (хоумбрю) [NRO][RUS/ENG]
   ~ Prototype 2 (порт) [NRO][RUS/ENG]
@@ -15,9 +15,7 @@
   ~ Croc's World 1-5 / Run [NSZ][ENG,RUS]
   ~ Need For Speed Underground 2 (хоумбрю NFS:U2) [NRO][RUS/ENG]
   ~ Prey 2006 (хоумбрю openPrey) [NRO][ENG,RUS (Voice Mod.)]
-  ~ Silent Hill 2 EE (порт) [NRO][RUS]
-  ~ Halo Combat Evolved (порт OpenCE) [NRO][ENG,RUS (Voice.)]
-Статистика обновлена: 7250 раздач
+Статистика обновлена: 7252 раздач
   * Покрытие базы: 100.2%
-  * Активных сидов: 89845
-  * Всего загрузок: 7561111
+  * Активных сидов: 102148
+  * Всего загрузок: 7563284
