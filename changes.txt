@@ -1,6 +1,10 @@
-=== 2026-10-17 05:57:42 ===
-Всего в базе: 7236
-Обновлено: 13
+=== 2026-10-17 09:51:24 ===
+Всего в базе: 7237
+Добавлено: 1
+  + Spica Adventure [NSZ][ENG]
+Обновлено: 14
+  ~ Metal Gear Solid: Master Collection Edition, Vol. 2 (MGS 4 Guns of the Patriots 
+  ~ Nordic Ashes the Complete Saga: Survivors of Ragnarok, Remnants of Corruption, D
   ~ Prototype (порт) [NRO][RUS/ENG]
   ~ Flatout 2 (хоумбрю) [NRO][RUS/ENG]
   ~ Prototype 2 (порт) [NRO][RUS/ENG]
@@ -9,12 +13,11 @@
   ~ Torchlight 1 (порт) [NRO][RUS/ENG]
   ~ Touhou 15 Legacy of Lunatic Kingdom / 11 / 10 Mountain of Faith / 9 Phantasmagor
   ~ Croc's World 1-5 / Run [NSZ][ENG,RUS]
-  ~ Ketsu Battler + 2 DLC [NSZ][ENG]
   ~ Need For Speed Underground 2 (хоумбрю NFS:U2) [NRO][RUS/ENG]
   ~ Prey 2006 (хоумбрю openPrey) [NRO][ENG,RUS (Voice Mod.)]
   ~ Silent Hill 2 EE (порт) [NRO][RUS]
   ~ Halo Combat Evolved (порт OpenCE) [NRO][ENG,RUS (Voice.)]
-Статистика обновлена: 7248 раздач
+Статистика обновлена: 7250 раздач
   * Покрытие базы: 100.2%
-  * Активных сидов: 81269
-  * Всего загрузок: 7562809
+  * Активных сидов: 89845
+  * Всего загрузок: 7561111
