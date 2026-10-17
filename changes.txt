@@ -1,9 +1,10 @@
-=== 2026-10-17 13:57:10 ===
-Всего в базе: 7239
-Добавлено: 2
-  + Lost Odyssey (порт) [NRO][ENG]
-  + Fear and Hunger (порт) [NRO][RUS/ENG]
-Обновлено: 11
+=== 2026-10-17 17:54:46 ===
+Всего в базе: 7240
+Добавлено: 1
+  + Tenebris Somnia [RePack][NSP][RUS (Mod.)/ENG]
+Обновлено: 13
+  ~ Lost Odyssey (порт) [NRO][ENG]
+  ~ Fear and Hunger (порт) [NRO][RUS/ENG]
   ~ Эмулятор Sega Model 3 Arcade: Daytona USA 2, Virtua Fighter 3, Sega Super GT Scu
   ~ Prototype (порт) [NRO][RUS/ENG]
   ~ Flatout 2 (хоумбрю) [NRO][RUS/ENG]
@@ -17,5 +18,5 @@
   ~ Prey 2006 (хоумбрю openPrey) [NRO][ENG,RUS (Voice Mod.)]
 Статистика обновлена: 7252 раздач
   * Покрытие базы: 100.2%
-  * Активных сидов: 102148
-  * Всего загрузок: 7563284
+  * Активных сидов: 109237
+  * Всего загрузок: 7564747
