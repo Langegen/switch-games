@@ -1,8 +1,10 @@
-=== 2026-10-17 17:54:46 ===
+=== 2026-10-17 21:52:33 ===
 Всего в базе: 7240
-Добавлено: 1
-  + Tenebris Somnia [RePack][NSP][RUS (Mod.)/ENG]
-Обновлено: 13
+Обновлено: 16
+  ~ Once Upon a Katamari + 3 DLC [NSZ][ENG]
+  ~ Overboard [NSZ][RUS (Mod.)/ENG]
+  ~ Realm of Ink [NSP][RUS/Multi10]
+  ~ Montabi [NSZ][ENG]
   ~ Lost Odyssey (порт) [NRO][ENG]
   ~ Fear and Hunger (порт) [NRO][RUS/ENG]
   ~ Эмулятор Sega Model 3 Arcade: Daytona USA 2, Virtua Fighter 3, Sega Super GT Scu
@@ -15,8 +17,7 @@
   ~ Touhou 15 Legacy of Lunatic Kingdom / 11 / 10 Mountain of Faith / 9 Phantasmagor
   ~ Croc's World 1-5 / Run [NSZ][ENG,RUS]
   ~ Need For Speed Underground 2 (хоумбрю NFS:U2) [NRO][RUS/ENG]
-  ~ Prey 2006 (хоумбрю openPrey) [NRO][ENG,RUS (Voice Mod.)]
 Статистика обновлена: 7252 раздач
   * Покрытие базы: 100.2%
-  * Активных сидов: 109237
-  * Всего загрузок: 7564747
+  * Активных сидов: 107857
+  * Всего загрузок: 7567916
