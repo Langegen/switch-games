@@ -1,10 +1,6 @@
-=== 2026-10-17 21:52:33 ===
+=== 2026-10-18 01:57:40 ===
 Всего в базе: 7240
-Обновлено: 16
-  ~ Once Upon a Katamari + 3 DLC [NSZ][ENG]
-  ~ Overboard [NSZ][RUS (Mod.)/ENG]
-  ~ Realm of Ink [NSP][RUS/Multi10]
-  ~ Montabi [NSZ][ENG]
+Обновлено: 12
   ~ Lost Odyssey (порт) [NRO][ENG]
   ~ Fear and Hunger (порт) [NRO][RUS/ENG]
   ~ Эмулятор Sega Model 3 Arcade: Daytona USA 2, Virtua Fighter 3, Sega Super GT Scu
@@ -19,5 +15,5 @@
   ~ Need For Speed Underground 2 (хоумбрю NFS:U2) [NRO][RUS/ENG]
 Статистика обновлена: 7252 раздач
   * Покрытие базы: 100.2%
-  * Активных сидов: 107857
-  * Всего загрузок: 7567916
+  * Активных сидов: 90848
+  * Всего загрузок: 7569430
