@@ -1,8 +1,7 @@
-=== 2026-10-18 09:51:56 ===
+=== 2026-10-18 13:59:24 ===
 Всего в базе: 7241
-Добавлено: 1
-  + Silent Hill 3 (порт) [NRO][RUS/ENG]
-Обновлено: 12
+Обновлено: 13
+  ~ Silent Hill 3 (порт) [NRO][RUS/ENG]
   ~ Lost Odyssey (порт) [NRO][ENG]
   ~ Fear and Hunger (порт) [NRO][RUS/ENG]
   ~ Эмулятор Sega Model 3 Arcade: Daytona USA 2, Virtua Fighter 3, Sega Super GT Scu
@@ -17,5 +16,5 @@
   ~ Need For Speed Underground 2 (хоумбрю NFS:U2) [NRO][RUS/ENG]
 Статистика обновлена: 7253 раздач
   * Покрытие базы: 100.2%
-  * Активных сидов: 91002
-  * Всего загрузок: 7571249
+  * Активных сидов: 104064
+  * Всего загрузок: 7573419
