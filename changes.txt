@@ -1,6 +1,7 @@
-=== 2026-10-18 13:59:24 ===
+=== 2026-10-18 17:59:55 ===
 Всего в базе: 7241
 Обновлено: 13
+  ~ Need For Speed Underground 2 (хоумбрю NFS:U2) [NRO][RUS/ENG]
   ~ Silent Hill 3 (порт) [NRO][RUS/ENG]
   ~ Lost Odyssey (порт) [NRO][ENG]
   ~ Fear and Hunger (порт) [NRO][RUS/ENG]
@@ -13,8 +14,7 @@
   ~ Torchlight 1 (порт) [NRO][RUS/ENG]
   ~ Touhou 15 Legacy of Lunatic Kingdom / 11 / 10 Mountain of Faith / 9 Phantasmagor
   ~ Croc's World 1-5 / Run [NSZ][ENG,RUS]
-  ~ Need For Speed Underground 2 (хоумбрю NFS:U2) [NRO][RUS/ENG]
 Статистика обновлена: 7253 раздач
   * Покрытие базы: 100.2%
-  * Активных сидов: 104064
-  * Всего загрузок: 7573419
+  * Активных сидов: 116327
+  * Всего загрузок: 7576280
