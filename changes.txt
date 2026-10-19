@@ -1,6 +1,9 @@
-=== 2026-10-19 01:57:52 ===
+=== 2026-10-19 05:52:17 ===
 Всего в базе: 7241
-Обновлено: 13
+Обновлено: 16
+  ~ Neon Abyss 1-2 [NSZ][RUS/Multi8]
+  ~ Gizmoduck (Уткоробот, порт) [NRO][RUS/Multi14]
+  ~ Disney Dreamlight Valley + DLC Wishblossom Ranch, Storybook Vale, A Rift in Time
   ~ Need For Speed Underground 2 (хоумбрю NFS:U2) [NRO][RUS/ENG]
   ~ Silent Hill 3 (порт) [NRO][RUS/ENG]
   ~ Lost Odyssey (порт) [NRO][ENG]
@@ -14,7 +17,7 @@
   ~ Torchlight 1 (порт) [NRO][RUS/ENG]
   ~ Touhou 15 Legacy of Lunatic Kingdom / 11 / 10 Mountain of Faith / 9 Phantasmagor
   ~ Croc's World 1-5 / Run [NSZ][ENG,RUS]
-Статистика обновлена: 7253 раздач
+Статистика обновлена: 7255 раздач
   * Покрытие базы: 100.2%
-  * Активных сидов: 87920
-  * Всего загрузок: 7579200
+  * Активных сидов: 77900
+  * Всего загрузок: 7577883
