@@ -1,11 +1,9 @@
-=== 2026-10-19 21:54:20 ===
+=== 2026-10-20 01:52:10 ===
 Всего в базе: 7248
-Добавлено: 3
-  + Castlevania ReVamped (хоумбрю) [NRO][ENG]
-  + Dead Space Sabotage Mobile (хоумбрю) [NRO][ENG]
-  + The Dark Knight Rises (хоумбрю) [NRO][RUS/Multi10]
-Обновлено: 18
-  ~ Bendy and the Dark Revival [NSZ][RUS/Multi9]
+Обновлено: 20
+  ~ Castlevania ReVamped (хоумбрю) [NRO][ENG]
+  ~ Dead Space Sabotage Mobile (хоумбрю) [NRO][ENG]
+  ~ The Dark Knight Rises (хоумбрю) [NRO][RUS/Multi10]
   ~ Black and White (порт openBlack) [NRO][RUS (Voice Mod.)/ENG]
   ~ Conker's Bad Fur Day (хоумбрю) [NRO][ENG]
   ~ Space Channel 5 part 2 HD (хоумбрю) [NRO][ENG]
@@ -25,5 +23,5 @@
   ~ Croc's World 1-5 / Run [NSZ][ENG,RUS]
 Статистика обновлена: 7260 раздач
   * Покрытие базы: 100.2%
-  * Активных сидов: 105743
-  * Всего загрузок: 7583566
+  * Активных сидов: 87376
+  * Всего загрузок: 7584822
