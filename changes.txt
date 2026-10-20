@@ -1,7 +1,5 @@
-=== 2026-10-20 14:03:36 ===
+=== 2026-10-20 18:04:47 ===
 Всего в базе: 7250
-Добавлено: 1
-  + I Am Your Beast [NSZ][ENG]
 Обновлено: 21
   ~ Grand Theft Auto IV (порт GTA 4 LibertyRecomp) [NRO][RUS/Multi6]
   ~ Castlevania ReVamped (хоумбрю) [NRO][ENG]
@@ -24,7 +22,7 @@
   ~ Torchlight 1 (порт) [NRO][RUS/ENG]
   ~ Touhou 15 Legacy of Lunatic Kingdom / 11 / 10 Mountain of Faith / 9 Phantasmagor
   ~ Croc's World 1-5 / Run [NSZ][ENG,RUS]
-Статистика обновлена: 7262 раздач
+Статистика обновлена: 7263 раздач
   * Покрытие базы: 100.2%
-  * Активных сидов: 97998
-  * Всего загрузок: 7588780
+  * Активных сидов: 113311
+  * Всего загрузок: 7591046
