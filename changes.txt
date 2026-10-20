@@ -1,8 +1,9 @@
-=== 2026-10-20 09:55:10 ===
-Всего в базе: 7249
+=== 2026-10-20 14:03:36 ===
+Всего в базе: 7250
 Добавлено: 1
-  + Grand Theft Auto IV (порт GTA 4 LibertyRecomp) [NRO][RUS/Multi6]
-Обновлено: 20
+  + I Am Your Beast [NSZ][ENG]
+Обновлено: 21
+  ~ Grand Theft Auto IV (порт GTA 4 LibertyRecomp) [NRO][RUS/Multi6]
   ~ Castlevania ReVamped (хоумбрю) [NRO][ENG]
   ~ Dead Space Sabotage Mobile (хоумбрю) [NRO][ENG]
   ~ The Dark Knight Rises (хоумбрю) [NRO][RUS/Multi10]
@@ -25,5 +26,5 @@
   ~ Croc's World 1-5 / Run [NSZ][ENG,RUS]
 Статистика обновлена: 7262 раздач
   * Покрытие базы: 100.2%
-  * Активных сидов: 81485
-  * Всего загрузок: 7586731
+  * Активных сидов: 97998
+  * Всего загрузок: 7588780
