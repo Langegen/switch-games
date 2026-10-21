@@ -1,7 +1,8 @@
-=== 2026-10-21 18:13:02 ===
-Всего в базе: 7251
-Обновлено: 22
-  ~ Final Fantasy Resonance [NSP][ENG]
+=== 2026-10-21 22:01:16 ===
+Всего в базе: 7252
+Добавлено: 1
+  + Dead Space 2 (хоумбрю) [NRO][RUS/ENG]
+Обновлено: 20
   ~ The Legend of Zelda: Ocarina of Time (нативный порт Ship of Harkinian + Leveled 
   ~ Silent Hill 2 EE (порт) [NRO][RUS]
   ~ Lost Odyssey (порт) [NRO][RUS (Mod.)/ENG]
@@ -22,8 +23,7 @@
   ~ Prototype 2 (порт) [NRO][RUS/ENG]
   ~ NetherSX2 (бывш. AetherSX2) плюс ARMSX2 NX PS2: эмуляторы Sony PlayStation 2 PCS
   ~ Need For Speed Underground (хоумбрю NFS:U) [NRO][RUS (Mod.)/ENG]
-  ~ Torchlight 1 (порт) [NRO][RUS/ENG]
-Статистика обновлена: 7263 раздач
+Статистика обновлена: 7264 раздач
   * Покрытие базы: 100.2%
-  * Активных сидов: 111649
-  * Всего загрузок: 7596154
+  * Активных сидов: 105948
+  * Всего загрузок: 7597757
