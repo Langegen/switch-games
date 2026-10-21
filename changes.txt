@@ -1,6 +1,8 @@
-=== 2026-10-21 05:53:49 ===
+=== 2026-10-21 09:55:23 ===
 Всего в базе: 7251
 Обновлено: 21
+  ~ Silent Hill 2 EE (порт) [NRO][RUS]
+  ~ Lost Odyssey (порт) [NRO][RUS (Mod.)/ENG]
   ~ Grand Theft Auto IV (порт GTA 4 LibertyRecomp) [NRO][RUS/Multi6]
   ~ Castlevania ReVamped (хоумбрю) [NRO][ENG]
   ~ Dead Space Sabotage Mobile (хоумбрю) [NRO][ENG]
@@ -11,7 +13,6 @@
   ~ Gizmoduck (Уткоробот, порт) [NRO][RUS/Multi14]
   ~ Need For Speed Underground 2 (хоумбрю NFS:U2) [NRO][RUS/ENG]
   ~ Silent Hill 3 (порт) [NRO][RUS/ENG]
-  ~ Lost Odyssey (порт) [NRO][ENG]
   ~ Fear and Hunger (порт) [NRO][RUS/ENG]
   ~ Эмулятор Sega Model 3 Arcade: Daytona USA 2, Virtua Fighter 3, Sega Super GT Scu
   ~ Prototype (порт) [NRO][RUS/ENG]
@@ -21,8 +22,7 @@
   ~ Need For Speed Underground (хоумбрю NFS:U) [NRO][RUS (Mod.)/ENG]
   ~ Torchlight 1 (порт) [NRO][RUS/ENG]
   ~ Touhou 15 Legacy of Lunatic Kingdom / 11 / 10 Mountain of Faith / 9 Phantasmagor
-  ~ Croc's World 1-5 / Run [NSZ][ENG,RUS]
 Статистика обновлена: 7263 раздач
   * Покрытие базы: 100.2%
-  * Активных сидов: 76754
-  * Всего загрузок: 7593730
+  * Активных сидов: 82056
+  * Всего загрузок: 7593043
