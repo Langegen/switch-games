@@ -1,9 +1,8 @@
-=== 2026-10-21 14:03:44 ===
+=== 2026-10-21 18:13:02 ===
 Всего в базе: 7251
-Обновлено: 24
-  ~ The Survivalists + DLC Frostbite Fortress, Monkey Business [NSZ][RUS/Multi10]
+Обновлено: 22
+  ~ Final Fantasy Resonance [NSP][ENG]
   ~ The Legend of Zelda: Ocarina of Time (нативный порт Ship of Harkinian + Leveled 
-  ~ Loopers [NSP][ENG]
   ~ Silent Hill 2 EE (порт) [NRO][RUS]
   ~ Lost Odyssey (порт) [NRO][RUS (Mod.)/ENG]
   ~ Grand Theft Auto IV (порт GTA 4 LibertyRecomp) [NRO][RUS/Multi6]
@@ -24,8 +23,7 @@
   ~ NetherSX2 (бывш. AetherSX2) плюс ARMSX2 NX PS2: эмуляторы Sony PlayStation 2 PCS
   ~ Need For Speed Underground (хоумбрю NFS:U) [NRO][RUS (Mod.)/ENG]
   ~ Torchlight 1 (порт) [NRO][RUS/ENG]
-  ~ Touhou 15 Legacy of Lunatic Kingdom / 11 / 10 Mountain of Faith / 9 Phantasmagor
 Статистика обновлена: 7263 раздач
   * Покрытие базы: 100.2%
-  * Активных сидов: 96078
-  * Всего загрузок: 7592107
+  * Активных сидов: 111649
+  * Всего загрузок: 7596154
