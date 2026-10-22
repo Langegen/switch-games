@@ -1,9 +1,11 @@
-=== 2026-10-22 14:04:57 ===
-Всего в базе: 7254
+=== 2026-10-22 18:07:29 ===
+Всего в базе: 7255
 Добавлено: 1
-  + Ultra Street Fighter IV (4, хоумбрю) [NRO][ENG]
-Обновлено: 20
+  + Demons Night Fever [NSZ][ENG]
+Обновлено: 21
+  ~ Graveyard Keeper II (2) + DLC [NSZ][RUS/Multi11]
   ~ Dead Space 2 (хоумбрю) [NRO][RUS/ENG]
+  ~ Ultra Street Fighter IV (4, хоумбрю) [NRO][ENG]
   ~ Dante's Inferno (порт) [NRO][RUS/ENG]
   ~ Dead Space Sabotage Mobile (хоумбрю) [NRO][RUS/ENG]
   ~ The Legend of Zelda: Ocarina of Time (нативный порт Ship of Harkinian + Leveled 
@@ -22,8 +24,7 @@
   ~ Эмулятор Sega Model 3 Arcade: Daytona USA 2, Virtua Fighter 3, Sega Super GT Scu
   ~ Prototype (порт) [NRO][RUS/ENG]
   ~ Flatout 2 (хоумбрю) [NRO][RUS/ENG]
-  ~ Prototype 2 (порт) [NRO][RUS/ENG]
 Статистика обновлена: 7267 раздач
   * Покрытие базы: 100.2%
-  * Активных сидов: 98280
-  * Всего загрузок: 7598843
+  * Активных сидов: 113954
+  * Всего загрузок: 7601058
