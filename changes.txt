@@ -1,6 +1,11 @@
-=== 2026-10-22 05:45:30 ===
-Всего в базе: 7252
-Обновлено: 21
+=== 2026-10-22 10:10:54 ===
+Всего в базе: 7253
+Добавлено: 1
+  + Dante's Inferno (порт) [NRO][RUS/ENG]
+Обновлено: 22
+  ~ Sam and Max 1: Save the World / 2 Beyond Time and Space / 3 The Devil's Playhous
+  ~ Soul Quest [NSZ][ENG]
+  ~ Ticket to Ride + 12 DLC [NSZ][ENG]
   ~ Dead Space Sabotage Mobile (хоумбрю) [NRO][RUS/ENG]
   ~ Dead Space 2 (хоумбрю) [NRO][RUS/ENG]
   ~ The Legend of Zelda: Ocarina of Time (нативный порт Ship of Harkinian + Leveled 
@@ -20,9 +25,7 @@
   ~ Prototype (порт) [NRO][RUS/ENG]
   ~ Flatout 2 (хоумбрю) [NRO][RUS/ENG]
   ~ Prototype 2 (порт) [NRO][RUS/ENG]
-  ~ NetherSX2 (бывш. AetherSX2) плюс ARMSX2 NX PS2: эмуляторы Sony PlayStation 2 PCS
-  ~ Need For Speed Underground (хоумбрю NFS:U) [NRO][RUS (Mod.)/ENG]
-Статистика обновлена: 7264 раздач
+Статистика обновлена: 7266 раздач
   * Покрытие базы: 100.2%
-  * Активных сидов: 77651
-  * Всего загрузок: 7599524
+  * Активных сидов: 83875
+  * Всего загрузок: 7599372
