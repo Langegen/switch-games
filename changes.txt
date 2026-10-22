@@ -1,14 +1,13 @@
-=== 2026-10-21 22:01:16 ===
+=== 2026-10-22 02:01:11 ===
 Всего в базе: 7252
-Добавлено: 1
-  + Dead Space 2 (хоумбрю) [NRO][RUS/ENG]
-Обновлено: 20
+Обновлено: 21
+  ~ Dead Space Sabotage Mobile (хоумбрю) [NRO][RUS/ENG]
+  ~ Dead Space 2 (хоумбрю) [NRO][RUS/ENG]
   ~ The Legend of Zelda: Ocarina of Time (нативный порт Ship of Harkinian + Leveled 
   ~ Silent Hill 2 EE (порт) [NRO][RUS]
   ~ Lost Odyssey (порт) [NRO][RUS (Mod.)/ENG]
   ~ Grand Theft Auto IV (порт GTA 4 LibertyRecomp) [NRO][RUS/Multi6]
   ~ Castlevania ReVamped (хоумбрю) [NRO][ENG]
-  ~ Dead Space Sabotage Mobile (хоумбрю) [NRO][ENG]
   ~ The Dark Knight Rises (хоумбрю) [NRO][RUS/Multi10]
   ~ Black and White (порт openBlack) [NRO][RUS (Voice Mod.)/ENG]
   ~ Conker's Bad Fur Day (хоумбрю) [NRO][ENG]
@@ -25,5 +24,5 @@
   ~ Need For Speed Underground (хоумбрю NFS:U) [NRO][RUS (Mod.)/ENG]
 Статистика обновлена: 7264 раздач
   * Покрытие базы: 100.2%
-  * Активных сидов: 105948
-  * Всего загрузок: 7597757
+  * Активных сидов: 88382
+  * Всего загрузок: 7598087
