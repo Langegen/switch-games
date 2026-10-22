@@ -1,13 +1,11 @@
-=== 2026-10-22 10:10:54 ===
-Всего в базе: 7253
+=== 2026-10-22 14:04:57 ===
+Всего в базе: 7254
 Добавлено: 1
-  + Dante's Inferno (порт) [NRO][RUS/ENG]
-Обновлено: 22
-  ~ Sam and Max 1: Save the World / 2 Beyond Time and Space / 3 The Devil's Playhous
-  ~ Soul Quest [NSZ][ENG]
-  ~ Ticket to Ride + 12 DLC [NSZ][ENG]
-  ~ Dead Space Sabotage Mobile (хоумбрю) [NRO][RUS/ENG]
+  + Ultra Street Fighter IV (4, хоумбрю) [NRO][ENG]
+Обновлено: 20
   ~ Dead Space 2 (хоумбрю) [NRO][RUS/ENG]
+  ~ Dante's Inferno (порт) [NRO][RUS/ENG]
+  ~ Dead Space Sabotage Mobile (хоумбрю) [NRO][RUS/ENG]
   ~ The Legend of Zelda: Ocarina of Time (нативный порт Ship of Harkinian + Leveled 
   ~ Silent Hill 2 EE (порт) [NRO][RUS]
   ~ Lost Odyssey (порт) [NRO][RUS (Mod.)/ENG]
@@ -25,7 +23,7 @@
   ~ Prototype (порт) [NRO][RUS/ENG]
   ~ Flatout 2 (хоумбрю) [NRO][RUS/ENG]
   ~ Prototype 2 (порт) [NRO][RUS/ENG]
-Статистика обновлена: 7266 раздач
+Статистика обновлена: 7267 раздач
   * Покрытие базы: 100.2%
-  * Активных сидов: 83875
-  * Всего загрузок: 7599372
+  * Активных сидов: 98280
+  * Всего загрузок: 7598843
