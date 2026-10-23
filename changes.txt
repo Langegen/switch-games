@@ -1,12 +1,16 @@
-=== 2026-10-23 10:02:51 ===
-Всего в базе: 7256
+=== 2026-10-23 14:09:59 ===
+Всего в базе: 7257
 Добавлено: 1
-  + Петька и Василий Иванович спасают галактику (порт Red Comrades Save the Galaxy)
-Обновлено: 22
-  ~ Neon Inferno [NSZ][RUS/Multi13]
-  ~ Minecraft Dungeons II (2) + DLC [NSP][RUS/Multi9]
-  ~ Экономические симуляторы Kairosoft, 64 шт.: Game Dev Story, Cafeteria Nipponica,
+  + Moadra [NSZ][RUS/Multi9]
+Обновлено: 24
+  ~ Garfield Escape from Monday [NSP][RUS (Mod.)/ENG]
+  ~ Silver Pines [NSZ][RUS/Multi9]
+  ~ Back to the Dawn [NSZ][RUS (Mod.)/ENG]
+  ~ Hitman Absolution [NSZ][RUS/Multi9]
+  ~ Hades II (2) [NSZ][RUS/Multi10]
+  ~ Outbound + DLC [NSZ][RUS/Multi10]
   ~ VTech V.Smile — 12 игр (эмулятор D.Smile) [NRO][ENG]
+  ~ Петька и Василий Иванович спасают галактику (порт Red Comrades Save the Galaxy)
   ~ Dead Space 2 (хоумбрю) [NRO][RUS/ENG]
   ~ Ultra Street Fighter IV (4, хоумбрю) [NRO][ENG]
   ~ Dante's Inferno (порт) [NRO][RUS/ENG]
@@ -23,9 +27,7 @@
   ~ Gizmoduck (Уткоробот, порт) [NRO][RUS/Multi14]
   ~ Need For Speed Underground 2 (хоумбрю NFS:U2) [NRO][RUS/ENG]
   ~ Silent Hill 3 (порт) [NRO][RUS/ENG]
-  ~ Fear and Hunger (порт) [NRO][RUS/ENG]
-  ~ Эмулятор Sega Model 3 Arcade: Daytona USA 2, Virtua Fighter 3, Sega Super GT Scu
-Статистика обновлена: 7269 раздач
+Статистика обновлена: 7270 раздач
   * Покрытие базы: 100.2%
-  * Активных сидов: 83666
-  * Всего загрузок: 7594066
+  * Активных сидов: 98109
+  * Всего загрузок: 7591970
