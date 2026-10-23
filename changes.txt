@@ -1,15 +1,11 @@
-=== 2026-10-23 18:11:03 ===
+=== 2026-10-23 21:57:55 ===
 Всего в базе: 7259
-Добавлено: 2
-  + Metal Gear Rising Revengeance (хоумбрю) [NRO][ENG]
-  + Gears of War 2 (порт) [NRO][RUS/Multi12]
-Обновлено: 20
-  ~ Bo: Path of the Teal Lotus [NSZ][RUS (Mod.)/ENG]
+Обновлено: 19
+  ~ Metal Gear Rising Revengeance (хоумбрю) [NRO][ENG]
+  ~ Sin Reloaded Gold + Wages of Sin [NSZ][RUS (Mod.)/ENG]
   ~ Dante's Inferno (порт) [NRO][RUS/ENG]
   ~ Dead Space 2 (хоумбрю) [NRO][RUS/ENG]
-  ~ Tenebris Somnia [NSP][ENG]
-  ~ Dispatch [NSP][RUS/Multi10]
-  ~ Minecraft [NSP][RUS/Multi11]
+  ~ Gears of War 2 (порт) [NRO][RUS/Multi12]
   ~ Ultra Street Fighter IV (4, хоумбрю) [NRO][ENG]
   ~ VTech V.Smile — 12 игр (эмулятор D.Smile) [NRO][ENG]
   ~ Петька и Василий Иванович спасают галактику (порт Red Comrades Save the Galaxy)
@@ -26,5 +22,5 @@
   ~ Gizmoduck (Уткоробот, порт) [NRO][RUS/Multi14]
 Статистика обновлена: 7271 раздач
   * Покрытие базы: 100.2%
-  * Активных сидов: 111682
-  * Всего загрузок: 7593168
+  * Активных сидов: 107116
+  * Всего загрузок: 7595724
