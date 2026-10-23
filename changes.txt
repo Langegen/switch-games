@@ -1,19 +1,18 @@
-=== 2026-10-23 14:09:59 ===
-Всего в базе: 7257
-Добавлено: 1
-  + Moadra [NSZ][RUS/Multi9]
-Обновлено: 24
-  ~ Garfield Escape from Monday [NSP][RUS (Mod.)/ENG]
-  ~ Silver Pines [NSZ][RUS/Multi9]
-  ~ Back to the Dawn [NSZ][RUS (Mod.)/ENG]
-  ~ Hitman Absolution [NSZ][RUS/Multi9]
-  ~ Hades II (2) [NSZ][RUS/Multi10]
-  ~ Outbound + DLC [NSZ][RUS/Multi10]
+=== 2026-10-23 18:11:03 ===
+Всего в базе: 7259
+Добавлено: 2
+  + Metal Gear Rising Revengeance (хоумбрю) [NRO][ENG]
+  + Gears of War 2 (порт) [NRO][RUS/Multi12]
+Обновлено: 20
+  ~ Bo: Path of the Teal Lotus [NSZ][RUS (Mod.)/ENG]
+  ~ Dante's Inferno (порт) [NRO][RUS/ENG]
+  ~ Dead Space 2 (хоумбрю) [NRO][RUS/ENG]
+  ~ Tenebris Somnia [NSP][ENG]
+  ~ Dispatch [NSP][RUS/Multi10]
+  ~ Minecraft [NSP][RUS/Multi11]
+  ~ Ultra Street Fighter IV (4, хоумбрю) [NRO][ENG]
   ~ VTech V.Smile — 12 игр (эмулятор D.Smile) [NRO][ENG]
   ~ Петька и Василий Иванович спасают галактику (порт Red Comrades Save the Galaxy)
-  ~ Dead Space 2 (хоумбрю) [NRO][RUS/ENG]
-  ~ Ultra Street Fighter IV (4, хоумбрю) [NRO][ENG]
-  ~ Dante's Inferno (порт) [NRO][RUS/ENG]
   ~ Dead Space Sabotage Mobile (хоумбрю) [NRO][RUS/ENG]
   ~ The Legend of Zelda: Ocarina of Time (нативный порт Ship of Harkinian + Leveled 
   ~ Silent Hill 2 EE (порт) [NRO][RUS]
@@ -25,9 +24,7 @@
   ~ Conker's Bad Fur Day (хоумбрю) [NRO][ENG]
   ~ Space Channel 5 part 2 HD (хоумбрю) [NRO][ENG]
   ~ Gizmoduck (Уткоробот, порт) [NRO][RUS/Multi14]
-  ~ Need For Speed Underground 2 (хоумбрю NFS:U2) [NRO][RUS/ENG]
-  ~ Silent Hill 3 (порт) [NRO][RUS/ENG]
-Статистика обновлена: 7270 раздач
+Статистика обновлена: 7271 раздач
   * Покрытие базы: 100.2%
-  * Активных сидов: 98109
-  * Всего загрузок: 7591970
+  * Активных сидов: 111682
+  * Всего загрузок: 7593168
