@@ -1,8 +1,7 @@
-=== 2026-10-23 21:57:55 ===
+=== 2026-10-24 02:03:39 ===
 Всего в базе: 7259
-Обновлено: 19
-  ~ Metal Gear Rising Revengeance (хоумбрю) [NRO][ENG]
-  ~ Sin Reloaded Gold + Wages of Sin [NSZ][RUS (Mod.)/ENG]
+Обновлено: 18
+  ~ Metal Gear Rising Revengeance (хоумбрю) [NRO][RUS/Multi8]
   ~ Dante's Inferno (порт) [NRO][RUS/ENG]
   ~ Dead Space 2 (хоумбрю) [NRO][RUS/ENG]
   ~ Gears of War 2 (порт) [NRO][RUS/Multi12]
@@ -22,5 +21,5 @@
   ~ Gizmoduck (Уткоробот, порт) [NRO][RUS/Multi14]
 Статистика обновлена: 7271 раздач
   * Покрытие базы: 100.2%
-  * Активных сидов: 107116
-  * Всего загрузок: 7595724
+  * Активных сидов: 83319
+  * Всего загрузок: 7595738
