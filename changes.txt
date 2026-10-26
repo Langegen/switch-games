@@ -1,6 +1,9 @@
-=== 2026-10-24 05:47:52 ===
-Всего в базе: 7259
+=== 2026-10-26 05:58:29 ===
+Всего в базе: 7260
+Добавлено: 1
+  + Silent Hill: Downpour (хоумбрю)
 Обновлено: 18
+  ~ Prototype (порт) [NRO][RUS/ENG]
   ~ Metal Gear Rising Revengeance (хоумбрю) [NRO][RUS/Multi8]
   ~ Dante's Inferno (порт) [NRO][RUS/ENG]
   ~ Dead Space 2 (хоумбрю) [NRO][RUS/ENG]
@@ -18,8 +21,7 @@
   ~ Black and White (порт openBlack) [NRO][RUS (Voice Mod.)/ENG]
   ~ Conker's Bad Fur Day (хоумбрю) [NRO][ENG]
   ~ Space Channel 5 part 2 HD (хоумбрю) [NRO][ENG]
-  ~ Gizmoduck (Уткоробот, порт) [NRO][RUS/Multi14]
-Статистика обновлена: 7271 раздач
+Статистика обновлена: 7275 раздач
   * Покрытие базы: 100.2%
-  * Активных сидов: 74935
-  * Всего загрузок: 7597912
+  * Активных сидов: 78658
+  * Всего загрузок: 7618417
