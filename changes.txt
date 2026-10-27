@@ -1,8 +1,8 @@
-=== 2026-10-26 05:58:29 ===
-Всего в базе: 7260
-Добавлено: 1
-  + Silent Hill: Downpour (хоумбрю)
+=== 2026-10-27 12:22:06 ===
+Всего в базе: 7262
 Обновлено: 18
+  ~ Петька и Василий Иванович 2 - Судный день (порт Red Comrades 2: For the Great J
+  ~ Silent Hill: Downpour (хоумбрю)
   ~ Prototype (порт) [NRO][RUS/ENG]
   ~ Metal Gear Rising Revengeance (хоумбрю) [NRO][RUS/Multi8]
   ~ Dante's Inferno (порт) [NRO][RUS/ENG]
@@ -19,9 +19,7 @@
   ~ Castlevania ReVamped (хоумбрю) [NRO][ENG]
   ~ The Dark Knight Rises (хоумбрю) [NRO][RUS/Multi10]
   ~ Black and White (порт openBlack) [NRO][RUS (Voice Mod.)/ENG]
-  ~ Conker's Bad Fur Day (хоумбрю) [NRO][ENG]
-  ~ Space Channel 5 part 2 HD (хоумбрю) [NRO][ENG]
-Статистика обновлена: 7275 раздач
+Статистика обновлена: 7278 раздач
   * Покрытие базы: 100.2%
-  * Активных сидов: 78658
-  * Всего загрузок: 7618417
+  * Активных сидов: 92414
+  * Всего загрузок: 7628378
