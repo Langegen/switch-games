@@ -654,44 +654,52 @@ def get_topic_data(topic_id):
 # Парсинг Atom-ленты
 # ──────────────────────────────────────────────────────────────
 
-def fetch_atom_feed():
+def fetch_atom_feed(max_retries=3, timeout=60):
     print(f"[*] Получение Atom-ленты {ATOM_FEED_URL}...")
-    try:
-        kwargs = {"impersonate": "chrome120", "timeout": 15}
-        if PROXY_URL:
-            kwargs["proxies"] = {"http": PROXY_URL, "https": PROXY_URL}
-        resp = cf_requests.get(ATOM_FEED_URL, **kwargs)
-        if resp.status_code == 200:
-            root = ET.fromstring(resp.content.decode('utf-8'))
-            entries = []
-            for entry in root.findall('{http://www.w3.org/2005/Atom}entry'):
-                id_elem = entry.find('{http://www.w3.org/2005/Atom}id')
-                title_elem = entry.find('{http://www.w3.org/2005/Atom}title')
-                link_elem = entry.find('{http://www.w3.org/2005/Atom}link')
+    kwargs = {"impersonate": "chrome120", "timeout": timeout}
+    if PROXY_URL:
+        kwargs["proxies"] = {"http": PROXY_URL, "https": PROXY_URL}
 
-                if id_elem is None or title_elem is None:
-                    continue
+    for attempt in range(1, max_retries + 1):
+        try:
+            resp = cf_requests.get(ATOM_FEED_URL, **kwargs)
+            if resp.status_code == 200:
+                root = ET.fromstring(resp.content.decode('utf-8'))
+                entries = []
+                for entry in root.findall('{http://www.w3.org/2005/Atom}entry'):
+                    id_elem = entry.find('{http://www.w3.org/2005/Atom}id')
+                    title_elem = entry.find('{http://www.w3.org/2005/Atom}title')
+                    link_elem = entry.find('{http://www.w3.org/2005/Atom}link')
 
-                topic_id = id_elem.text.split('/')[-1]
-                raw_title = title_elem.text
-                topic_url = (
-                    link_elem.attrib.get('href', f"{BASE_URL}viewtopic.php?t={topic_id}")
-                    if link_elem is not None
-                    else f"{BASE_URL}viewtopic.php?t={topic_id}"
-                )
+                    if id_elem is None or title_elem is None:
+                        continue
 
-                clean, size = parse_feed_title(raw_title)
-                entries.append({
-                    "topic_id": topic_id,
-                    "title": clean,
-                    "size": size,
-                    "url": topic_url,
-                    "raw_title": raw_title,
-                })
-            print(f"[+] Из Atom-ленты получено {len(entries)} последних раздач.")
-            return entries
-    except Exception as e:
-        print(f"[!] Ошибка получения Atom-ленты: {e}")
+                    topic_id = id_elem.text.split('/')[-1]
+                    raw_title = title_elem.text
+                    topic_url = (
+                        link_elem.attrib.get('href', f"{BASE_URL}viewtopic.php?t={topic_id}")
+                        if link_elem is not None
+                        else f"{BASE_URL}viewtopic.php?t={topic_id}"
+                    )
+
+                    clean, size = parse_feed_title(raw_title)
+                    entries.append({
+                        "topic_id": topic_id,
+                        "title": clean,
+                        "size": size,
+                        "url": topic_url,
+                        "raw_title": raw_title,
+                    })
+                print(f"[+] Из Atom-ленты получено {len(entries)} последних раздач.")
+                return entries
+            else:
+                print(f"[!] Atom-лента вернула HTTP {resp.status_code} (попытка {attempt}/{max_retries})")
+        except Exception as e:
+            print(f"[!] Ошибка получения Atom-ленты (попытка {attempt}/{max_retries}): {e}")
+
+        if attempt < max_retries:
+            time.sleep(3)
+
     return []
 
 # ──────────────────────────────────────────────────────────────
