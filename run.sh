@@ -26,9 +26,9 @@ git pull --rebase origin main || true
 echo "[$(date)] Запуск парсера..."
 # Таймаут на выполнение 2 часа (защита от зависаний)
 if command -v xvfb-run >/dev/null 2>&1; then
-    timeout 7200 xvfb-run -a ./venv/bin/python3 scraper.py "$@"
+    timeout 7200 xvfb-run -a ./venv/bin/python3 scraper.py "$@" 200>&-
 else
-    timeout 7200 ./venv/bin/python3 scraper.py "$@"
+    timeout 7200 ./venv/bin/python3 scraper.py "$@" 200>&-
 fi
 
 rm -rf /tmp/tmp* /tmp/playwright* /tmp/xvfb* 2>/dev/null || true
