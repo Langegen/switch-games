@@ -521,6 +521,8 @@ def fetch_title_id(topic_id):
 def get_topic_data(topic_id):
     url = f"{BASE_URL}viewtopic.php?t={topic_id}"
     data = {
+        "title": "Unknown",
+        "raw_title": "",
         "magnet": None,
         "size": "Unknown",
         "title_id": None,
@@ -543,6 +545,14 @@ def get_topic_data(topic_id):
         return data
 
     soup = BeautifulSoup(html, 'html.parser')
+
+    # Название темы со страницы
+    h1 = soup.select_one('h1.maintitle, #topic-title')
+    raw_title = h1.get_text().strip() if h1 else ''
+    if not raw_title and soup.title:
+        raw_title = re.sub(r'\s*::\s*RuTracker\.org.*$', '', soup.title.get_text().strip(), flags=re.IGNORECASE)
+    data["title"] = clean_title(raw_title) if raw_title else "Unknown"
+    data["raw_title"] = raw_title
 
     data["title_id"] = extract_title_id(soup.get_text()) or extract_title_id(html)
 
@@ -950,8 +960,15 @@ def parse_tracker_page(html):
                 if txt:
                     registered_at = normalize_rutracker_date(txt)
 
+        title_tag = row.select_one('a.tt-text') or link
+        raw_title = title_tag.get_text(strip=True) if title_tag else ''
+        clean_t, sz = parse_feed_title(raw_title) if raw_title else ('Unknown', 'Unknown')
+
         results.append({
             "topic_id": str(topic_id),
+            "title": clean_t,
+            "raw_title": raw_title,
+            "size": sz,
             "seeds": seeds,
             "leeches": leeches,
             "downloads": downloads,
@@ -1227,6 +1244,127 @@ def scrape_torrents_stats(output_file=None, max_pages=None, full_scan=True, game
     }
 
 # ──────────────────────────────────────────────────────────────
+# Сверка каталога со статистикой трекера (добор пропущенных раздач)
+# ──────────────────────────────────────────────────────────────
+
+NON_GAME_TOPICS = {
+    '5638654',  # [FAQ] Правила раздела и оформление раздач
+    '5677480',  # [FAQ] Взлом Nintendo Switch / Atmosphere
+    '5799482',  # Вопросы новичков / обсуждение
+    '5823137',  # Прошивки для Nintendo Switch (Firmware)
+    '5897249',  # Читы / база читов Nintendo Switch
+    '6516789',  # Служебная тема / архив
+    '6636540',  # Служебная тема / архив
+    '6823103',  # Служебная тема / архив
+    '6829590',  # Служебная тема / архив
+    '6874027',  # Служебная тема / архив
+}
+
+def is_game_topic(title, details):
+    """Проверяет, является ли тема игровой раздачей."""
+    title_lower = title.lower()
+    # Исключаем явные служебные префиксы
+    if any(title_lower.startswith(prefix) for prefix in ['[faq]', 'правила раздела', '[гайд]', '[обсуждение]']):
+        return False
+    # Раздача обязательно должна иметь magnet-ссылку
+    magnet = details.get('magnet') or ''
+    if not magnet.startswith('magnet:'):
+        return False
+    # Проверяем признаки игры: формат образа, title_id или жанр/разработчик
+    fmt = str(details.get('image_format', '')).upper()
+    valid_formats = ('NSP', 'NSZ', 'XCI', 'NRO', 'РЕПАК', 'REPACK')
+    has_valid_format = any(f in fmt for f in valid_formats)
+    has_game_meta = (
+        details.get('genre') not in (None, 'Unknown', '')
+        or details.get('developer') not in (None, 'Unknown', '')
+        or details.get('title_id') is not None
+    )
+    return has_valid_format or has_game_meta
+
+def reconcile_missing_games(existing_data, existing_map, stats_data=None, max_add=30):
+    """
+    Сверяет каталог switch_games.json с базой статистики switch_games_stats.json.
+    Автоматически находит раздачи раздела f=1605, обнаруженные через tracker.php,
+    но пропущенные Atom-лентой (переносы тем модераторами, сбои/таймауты ленты,
+    задержки премодерации). Загружает их данные через CF-bypass и добавляет в каталог.
+    """
+    if stats_data is None:
+        if not os.path.exists(STATS_FILE):
+            return 0, []
+        try:
+            with open(STATS_FILE, 'r', encoding='utf-8') as f:
+                stats_data = json.load(f)
+        except Exception as e:
+            print(f"(!) Ошибка чтения {STATS_FILE} для сверки: {e}")
+            return 0, []
+
+    missing_ids = [
+        tid for tid in stats_data
+        if str(tid) not in existing_map and str(tid) not in NON_GAME_TOPICS
+    ]
+
+    if not missing_ids:
+        print("[*] Сверка со статистикой: все раздачи трекера уже присутствуют в каталоге.")
+        return 0, []
+
+    print(f"\n[*] Сверка со статистикой: обнаружено {len(missing_ids)} раздач трекера, отсутствующих в каталоге...")
+    added_count = 0
+    added_titles = []
+
+    # Сортируем по убыванию topic_id (сначала самые свежие)
+    missing_ids.sort(key=lambda x: int(x) if str(x).isdigit() else 0, reverse=True)
+
+    for tid in missing_ids[:max_add]:
+        tid_str = str(tid)
+        print(f"  [+] Добираем отсутствующую раздачу t={tid_str}...")
+        try:
+            details = get_topic_data(tid_str)
+            raw_title = details.get('raw_title', '')
+            title = details.get('title')
+            if not title or title == 'Unknown':
+                title = clean_title(raw_title) if raw_title else f"Topic {tid_str}"
+
+            if not is_game_topic(title, details):
+                print(f"      [i] Тема t={tid_str} ({title[:50]}) не является игровой раздачей, пропускаем.")
+                NON_GAME_TOPICS.add(tid_str)
+                continue
+
+            tid_val = details.get('title_id') or extract_title_id(raw_title)
+            topic_url = f"{BASE_URL}viewtopic.php?t={tid_str}"
+
+            new_entry = {
+                "title": title,
+                "size": details.get("size", "Unknown"),
+                "magnet": details.get("magnet"),
+                "topic_id": tid_str,
+                "url": topic_url,
+                "year": details.get("year", "Unknown"),
+                "genre": details.get("genre", "Unknown"),
+                "developer": details.get("developer", "Unknown"),
+                "publisher": details.get("publisher", "Unknown"),
+                "image_format": details.get("image_format", "Unknown"),
+                "interface_lang": details.get("interface_lang", "Unknown"),
+                "voice_lang": details.get("voice_lang", "Unknown"),
+                "performance": details.get("performance", "Unknown"),
+                "multiplayer": details.get("multiplayer", "Unknown"),
+                "cover": details.get("cover"),
+                "screenshots": details.get("screenshots", []),
+                "description": details.get("description", ""),
+                "title_id": tid_val,
+            }
+
+            existing_data.insert(0, new_entry)
+            existing_map[tid_str] = new_entry
+            added_count += 1
+            added_titles.append(str(title)[:80])
+            print(f"      [V] Успешно добавлена в каталог: {title[:60]}")
+            time.sleep(0.3)
+        except Exception as e:
+            print(f"      (!) Ошибка обработки t={tid_str}: {e}")
+
+    return added_count, added_titles
+
+# ──────────────────────────────────────────────────────────────
 # Обновление по Atom-ленте
 # ──────────────────────────────────────────────────────────────
 
@@ -1262,8 +1400,8 @@ def run_scraper(skip_stats=False, stats_max_pages=None, full_scan=False, sweep=F
 
     atom_entries = fetch_atom_feed()
     if not atom_entries:
-        print("[!] Не удалось получить Atom-ленту.")
-        return
+        print("[!] Atom-лента временно недоступна, продолжаем со сбором статистики и сверкой...")
+        atom_entries = []
 
     added_count = 0
     updated_count = 0
@@ -1346,19 +1484,28 @@ def run_scraper(skip_stats=False, stats_max_pages=None, full_scan=False, sweep=F
         except Exception as e:
             print(f"(!) Ошибка проверки magnet: {e}")
 
-    if added_count > 0 or updated_count > 0 or enriched_count > 0 or magnet_count > 0:
-        _save_json(existing_data, JSON_FILE)
-        print(f"[+] База обновлена. Добавлено: {added_count}, Обновлено: {updated_count}, "
-              f"Дообогащено: {enriched_count}, Magnet: {magnet_count}. Всего: {len(existing_data)}")
-    else:
-        print("[=] Проверка завершена. Новых и обновлённых раздач нет.")
-
+    # Сбор и актуализация статистики (tracker.php)
     stats_info = None
     if not skip_stats:
         try:
             stats_info = scrape_torrents_stats(max_pages=stats_max_pages, full_scan=full_scan)
         except Exception as e:
             print(f"(!) Ошибка сбора статистики: {e}")
+
+    # Автоматическая сверка каталога со статистикой трекера:
+    # находит и добавляет раздачи, пропущенные Atom-лентой
+    reconciled_count, reconciled_titles = reconcile_missing_games(existing_data, existing_map)
+    if reconciled_count > 0:
+        added_count += reconciled_count
+        added_titles.extend(reconciled_titles)
+
+    if added_count > 0 or updated_count > 0 or enriched_count > 0 or magnet_count > 0:
+        _save_json(existing_data, JSON_FILE)
+        rec_msg = f" (в т.ч. со статистики: {reconciled_count})" if reconciled_count > 0 else ""
+        print(f"[+] База обновлена. Добавлено: {added_count}{rec_msg}, Обновлено: {updated_count}, "
+              f"Дообогащено: {enriched_count}, Magnet: {magnet_count}. Всего: {len(existing_data)}")
+    else:
+        print("[=] Проверка завершена. Новых и обновлённых раздач нет.")
 
     _write_changes_log(added_titles, updated_titles, enriched_titles,
                        len(existing_data), magnets=magnet_titles,
@@ -1533,11 +1680,26 @@ if __name__ == "__main__":
     parser.add_argument("--stats-max-pages", type=int, default=None, help="Лимит страниц при сборе статистики (для тестов)")
     parser.add_argument("--full", action="store_true", help="Принудительный полный парсинг всех тем форума")
     parser.add_argument("--sweep", action="store_true", help="Включить фоновый круговой обход старых раздач, дообогащение и полный обход статистики")
+    parser.add_argument("--reconcile", action="store_true", help="Запустить только сверку базы со статистикой трекера")
     args = parser.parse_args()
 
     try:
         if args.full:
             scrape_full_forum()
+        elif args.reconcile:
+            existing_data = []
+            existing_map = {}
+            if os.path.exists(JSON_FILE):
+                with open(JSON_FILE, 'r', encoding='utf-8') as f:
+                    existing_data = json.load(f)
+                    existing_map = {str(item.get('topic_id')): item for item in existing_data if item.get('topic_id')}
+            rec_cnt, rec_titles = reconcile_missing_games(existing_data, existing_map)
+            if rec_cnt > 0:
+                _save_json(existing_data, JSON_FILE)
+                _write_changes_log(rec_titles, [], [], len(existing_data))
+                print(f"[+] Сверка завершена. Добавлено {rec_cnt} раздач. Всего в каталоге: {len(existing_data)}")
+            else:
+                print("[*] Сверка завершена: новых раздач для добавления не найдено.")
         elif args.stats_only:
             scrape_torrents_stats(max_pages=args.stats_max_pages, full_scan=args.sweep and not args.stats_quick)
         else:

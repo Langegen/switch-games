@@ -6,6 +6,7 @@
 
 - **Нет базы** → полный парсинг всех страниц форума (первые 15 закреплённых тем пропускаются).
 - **База есть** → проверка Atom-ленты `https://feed.rutracker.cc/atom/f/1605.atom` (50 последних раздач): новые добавляются в начало базы, у уже известных тем **всегда** перечитывается страница (чтобы подхватить перезалив magnet при том же названии/размере). Затем дообогащаются первые 100 записей и ещё 50 magnet'ов круговым проходом по остальной базе.
+- **Сверка со статистикой** → автоматический добор раздач из `tracker.php`: если на трекере появляется тема, пропущенная Atom-лентой (перенос модератором, сетевой сбой ленты, задержка премодерации), она автоматически догружается через CF-bypass и добавляется в каталог `switch_games.json`.
 - **Лог изменений** → `changes.txt` (добавлено/обновлено/дообогащено) перезаписывается при каждом запуске и коммитится в репозиторий.
 - **Cloudflare** → обход через локальный сервис [CloudflareBypassForScraping](https://github.com/sarperavci/CloudflareBypassForScraping) (Docker-контейнер), с запасным путём через `undetected-chromedriver`.
 
@@ -92,7 +93,8 @@ git remote set-url origin https://<TOKEN>@github.com/Langegen/switch-games.git
 
 ```bash
 bash run.sh                                        # полный цикл: pull → парсер → push
-./venv/bin/python3 scraper.py                      # запуск парсера и сбора статистики
+./venv/bin/python3 scraper.py                      # запуск парсера, сбора статистики и сверки
+./venv/bin/python3 scraper.py --reconcile          # только сверка базы со статистикой трекера
 ./venv/bin/python3 scraper.py --stats-only         # только сбор статистики раздач
 ./venv/bin/python3 scraper.py --skip-stats         # только обновление базы без сбора статистики
 ./venv/bin/python3 login_rutracker.py ЛОГИН ПАРОЛЬ  # обновить куки

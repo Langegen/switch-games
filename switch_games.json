@@ -3045,6 +3045,30 @@
         "title_id": "01000BC021FF2000"
     },
     {
+        "title": "Need For Speed Most Wanted (хоумбрю NFS:MW) [NRO][RUS]",
+        "size": "5.92 GB",
+        "magnet": "magnet:?xt=urn:btih:20E2E644F0D793D2AEA560B988B0E3F6EC1FA7A3&tr=http%3A%2F%2Fbt.t-ru.org%2Fann%3Fmagnet",
+        "topic_id": "6915309",
+        "url": "https://rutracker.org/forum/viewtopic.php?t=6915309",
+        "year": "2005",
+        "genre": "Racing, Homebrew",
+        "developer": "EA Black Box",
+        "publisher": "Electronic Arts",
+        "image_format": "NRO",
+        "interface_lang": "Русский [RUS]",
+        "voice_lang": "Русская",
+        "performance": "Да",
+        "multiplayer": "Нет",
+        "cover": "https://i4.imageban.ru/out/2026/09/28/12a96a820506b521aadeb43e92534224.jpg",
+        "screenshots": [
+            "https://i4.imageban.ru/thumbs/2026.09.28/fc9753b4f16e6ed5c16b907b19991a04.jpg",
+            "https://i3.imageban.ru/thumbs/2026.09.28/5453330debfeddbbfed0269ccde1f2c2.jpg",
+            "https://i4.imageban.ru/thumbs/2026.09.28/20b107c5edaeb5fe0fef64971020622e.jpg"
+        ],
+        "description": "Need for Speed: Most Wanted - девятая игра серии аркадных гонок от Electronic Arts. Впервые за долгое время в серию вернулась полиция и появились масштабные, красивые погони. Действия игры происходят в вымышленном городе Рокпорт, в котором игроку предоставлена полная свобода перемещения. На выбор игроку предлагается огромный парк автомобилей, несколько режимов езды и гонки с полицией, от которой протагонисту предстоит прятаться до понижения уровня тревоги.\nЭто нативный порт версии для Xbox 360, а не эмулятор. Целевая производительность — 30 кадров в секунду на штатных частотах консоли без разгона.(Проверено лично - работает  (наверное с разгоном будет еще бодрее))\nУстановка:\n\nФайл Need-for-Speed-Most-Wanted.nsp установить любым удобным способом.\n\nПапку switch скопировать в корень карты памяти.\n\nИграть",
+        "title_id": null
+    },
+    {
         "title": "Jurassic World Aftermath Collection (Парк юрского периода: Коллекция) [RePack][NSZ][RUS (Mod.)]",
         "size": "1.12 GB",
         "magnet": "magnet:?xt=urn:btih:184E13199232B5E06BDFC4DF249E42F5914D5AB1&tr=http%3A%2F%2Fbt3.t-ru.org%2Fann%3Fmagnet",
