@@ -185,12 +185,22 @@ def _is_cf_challenge(html):
     return ('Just a moment' in html or 'cf-browser-verification' in html
             or 'Один момент' in html)
 
+def _is_forum_message_page(html):
+    """Признак служебной страницы форума (тема удалена, ожидает модерации, нет доступа)."""
+    if not html:
+        return False
+    return ('class="forumline message"' in html or "class='forumline message'" in html or 'table class="forumline message"' in html or 'class="mrg_16"' in html) and (
+        'main_content' in html or 'page_container' in html or 'body_container' in html
+    )
+
 def _is_valid_html(html, keywords=('post_body', 'attach_link', 'hl-tr', 'forumtable', 'viewtopic')):
     """Проверяем, что страница настоящая (не Cloudflare challenge)."""
     if not html:
         return False
     if _is_cf_challenge(html):
         return False
+    if _is_forum_message_page(html):
+        return True
     return any(kw in html for kw in keywords)
 
 # curl_cffi на VPS обычно не может пройти Cloudflare даже с cf_clearance:
@@ -351,8 +361,8 @@ def _fetch_with_chrome(url, wait_keywords=None, is_post=False, post_data=None):
             except Exception:
                 src, title = '', ''
             if 'Just a moment' not in title and 'Один момент' not in title:
-                # Если это is_post, мы ждём index.php. Если обычный GET - ждём wait_keywords
-                if is_post or any(kw in src for kw in wait_keywords):
+                # Если это is_post, мы ждём index.php. Если обычный GET - ждём wait_keywords или служебное сообщение
+                if is_post or any(kw in src for kw in wait_keywords) or _is_forum_message_page(src):
                     page_html = src
                     break
             if i % 20 == 0 and i > 0:
@@ -545,6 +555,26 @@ def get_topic_data(topic_id):
         return data
 
     soup = BeautifulSoup(html, 'html.parser')
+
+    # Проверяем, существует ли тема / ожидает ли модерации
+    post_body = soup.find('div', class_='post_body')
+    if not post_body:
+        msg = soup.find('table', class_='message')
+        if msg:
+            msg_text = ' '.join(msg.get_text().split())
+            if 'модератор' in msg_text.lower():
+                data['is_pending_moderation'] = True
+                print(f"    [~] Тема {topic_id}: раздача ожидает проверки модератором.")
+            else:
+                print(f"    [~] Тема {topic_id} недоступна: {msg_text[:80]}")
+        else:
+            print(f"    [!] Тема {topic_id}: отсутствует post_body")
+        return data
+
+    tor_status = soup.find('span', id=lambda x: x and 'tor-status' in x) or soup.find(class_=lambda x: x and 'tor-status' in x)
+    if tor_status and 'премодерация' in tor_status.get_text().lower():
+        data['is_pending_moderation'] = True
+        print(f"    [~] Тема {topic_id}: статус 'премодерация', magnet пока отсутствует.")
 
     # Название темы со страницы
     h1 = soup.select_one('h1.maintitle, #topic-title')
@@ -1323,6 +1353,10 @@ def reconcile_missing_games(existing_data, existing_map, stats_data=None, max_ad
             title = details.get('title')
             if not title or title == 'Unknown':
                 title = clean_title(raw_title) if raw_title else f"Topic {tid_str}"
+
+            if details.get('is_pending_moderation'):
+                print(f"      [~] Тема t={tid_str} ожидает проверки модератором, будет добавлена после одобрения.")
+                continue
 
             if not is_game_topic(title, details):
                 print(f"      [i] Тема t={tid_str} ({title[:50]}) не является игровой раздачей, пропускаем.")
