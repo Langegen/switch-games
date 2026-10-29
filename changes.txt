@@ -1,6 +1,25 @@
-=== 2026-10-29 10:49:21 ===
+=== 2026-10-29 13:03:37 ===
 Всего в базе: 7266
-Добавлено: 3
-  + NOX
-  + Call of Duty:Classic (хоумбрю)
-  + The Legend of Zelda: The Wind Waker HD (порт SwitchWakerHD) [NRO][RUS]
+Обновлено: 18
+  ~ Петька и Василий Иванович 2 - Судный день (порт Red Comrades 2: For the Great J
+  ~ Silent Hill: Downpour (хоумбрю)
+  ~ Prototype (порт) [NRO][RUS/ENG]
+  ~ Metal Gear Rising Revengeance (хоумбрю) [NRO][RUS/Multi8]
+  ~ Dante's Inferno (порт) [NRO][RUS/ENG]
+  ~ Dead Space 2 (хоумбрю) [NRO][RUS/ENG]
+  ~ Gears of War 2 (порт) [NRO][RUS/Multi12]
+  ~ Ultra Street Fighter IV (4, хоумбрю) [NRO][ENG]
+  ~ VTech V.Smile — 12 игр (эмулятор D.Smile) [NRO][ENG]
+  ~ Петька и Василий Иванович спасают галактику (порт Red Comrades Save the Galaxy)
+  ~ Dead Space Sabotage Mobile (хоумбрю) [NRO][RUS/ENG]
+  ~ The Legend of Zelda: Ocarina of Time (нативный порт Ship of Harkinian + Leveled 
+  ~ Silent Hill 2 EE (порт) [NRO][RUS]
+  ~ Lost Odyssey (порт) [NRO][RUS (Mod.)/ENG]
+  ~ Grand Theft Auto IV (порт GTA 4 LibertyRecomp) [NRO][RUS/Multi6]
+  ~ Castlevania ReVamped (хоумбрю) [NRO][ENG]
+  ~ The Dark Knight Rises (хоумбрю) [NRO][RUS/Multi10]
+  ~ Black and White (порт openBlack) [NRO][RUS (Voice Mod.)/ENG]
+Статистика обновлена: 7280 раздач
+  * Покрытие базы: 100.2%
+  * Активных сидов: 94263
+  * Всего загрузок: 7643890
