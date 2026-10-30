@@ -128,14 +128,18 @@ def _merge_topic_details(item, details, title=None, feed_size=None, raw_title=''
     elif feed_size and feed_size != 'Unknown':
         item['size'] = feed_size
     for k, v in details.items():
-        if k == 'size':
+        if k in ('size', 'raw_title'):
             continue
         if v is not None and v != 'Unknown' and v != [] and v != '':
             item[k] = v
-        elif k not in item:
+        elif k not in item and k not in ('update_version', 'version'):
             item[k] = v
     if not item.get('title_id') and raw_title:
         item['title_id'] = extract_title_id(raw_title)
+    if details.get('update_version'):
+        item['update_version'] = int(details['update_version'])
+    if details.get('version'):
+        item['version'] = str(details['version'])
     new_hash = _magnet_btih(details.get('magnet'))
     return bool(new_hash) and new_hash != old_hash
 
@@ -147,6 +151,8 @@ def _post_text(post_body):
     'Формат образа: .NSZ (сжато ~64%, установленный объём 1.25 ГБ)'
     разрывались и значения в скобках терялись.
     Здесь <br> и блочные теги заменяются на '\\n', инлайн-теги не разрывают строку.
+    Также перед заголовками полей (span.post-b) добавляется '\\n', чтобы
+    значения не склеивались (например '1.24.0Язык интерфейса:...').
     """
     pb = copy.deepcopy(post_body)
     for br in pb.find_all('br'):
@@ -154,7 +160,111 @@ def _post_text(post_body):
     for block in pb.find_all(['div', 'ul', 'ol', 'li', 'tr', 'table']):
         block.insert_before('\n')
         block.insert_after('\n')
+    for el in pb.find_all('span', class_='post-b'):
+        el.insert_before('\n')
     return pb.get_text()
+
+def clean_version_str(raw):
+    """Очищает и нормализует строку версии (например 'v1.0.3 / v196608' -> '1.0.3')."""
+    if not raw:
+        return None
+    raw = str(raw).strip().strip('"\'[]()')
+    # Отсекаем суффиксы апдейтов: / v196608, (v65536), [v196608]
+    raw = re.sub(r'[\s/,\(\[]+v?\d{4,}[\)\]\s]*$', '', raw, flags=re.IGNORECASE).strip()
+    # Убираем префиксы v, v., ver., version
+    raw = re.sub(r'^(?:v(?:er(?:sion)?)?\.?\s*)', '', raw, flags=re.IGNORECASE).strip()
+    # Если остались приписки вроде + DLC или [UPD]
+    raw = re.sub(r'\s*(\+|\[|\().*(?:dlc|upd|update|repack).*$', '', raw, flags=re.IGNORECASE).strip()
+
+    # Извлекаем стандартную семантическую версию из начала строки (например, "0.0.1 от 24.10" -> "0.0.1")
+    sem_match = re.match(r'^([0-9]+(?:\.[0-9]+)+(?:[a-zA-Z]|b\d+|-rc\d+|-patch\d*)?)', raw)
+    if sem_match:
+        return sem_match.group(1)
+
+    # Если версия вида 1.0b или 2.0
+    alt_match = re.match(r'^([0-9]+(?:\.[0-9a-zA-Z]+)+)', raw)
+    if alt_match:
+        return alt_match.group(1)
+
+    # Убираем скобки и знаки препинания по краям
+    raw = raw.strip('.,;:- \t\r\n[]()\'"')
+    # Должна содержать хотя бы одну цифру и быть не длиннее 30 символов
+    if not re.search(r'\d', raw) or len(raw) > 30:
+        return None
+    return raw if raw else None
+
+def extract_fallback_version(text):
+    """Ищет строковую версию (например 1.0.3, v1.2) в заголовке или имени файла."""
+    if not text:
+        return None
+    # Ищем версии в скобках [1.0.3] или (v1.0.3)
+    m = re.search(r'[\[\(]v?(\d+\.\d+(?:\.\d+)*[a-zA-Z0-9_-]*)[\]\)]', text, re.IGNORECASE)
+    if m:
+        ver = clean_version_str(m.group(1))
+        if ver and not re.match(r'^(?:19|20)\d\d\.', ver):
+            return ver
+    # Ищем отдельно стоящие v1.0.3
+    m = re.search(r'\bv(\d+\.\d+(?:\.\d+)*[a-zA-Z0-9_-]*)\b', text, re.IGNORECASE)
+    if m:
+        ver = clean_version_str(m.group(1))
+        if ver and not re.match(r'^(?:19|20)\d\d\.', ver):
+            return ver
+    return None
+
+def parse_torrent_metadata(html):
+    """Парсит HTML от viewtorrent.php и извлекает title_id, update_version и fallback_version."""
+    if not html:
+        return {"title_id": None, "update_version": None, "version": None, "files": []}
+
+    raw_files = re.findall(r'<b>([^<]+)</b>', html)
+    files = [f.strip() for f in raw_files if not f.strip().startswith('./')]
+    if not files:
+        files = re.findall(r'>([^<]+\.(?:nsp|nsz|xci|xcz|nro))<', html, re.IGNORECASE)
+
+    base_title_id = None
+    update_versions = []
+    file_versions = []
+
+    for fname in files:
+        # Title IDs
+        tids = re.findall(r'0100[0-9A-Fa-f]{12}', fname, re.IGNORECASE)
+        for tid in tids:
+            tid_upper = tid.upper()
+            if tid_upper.endswith('000') and not base_title_id:
+                base_title_id = tid_upper
+            elif not base_title_id and not tid_upper.endswith('800'):
+                base_title_id = tid_upper[:-3] + '000'
+
+        is_update_file = any(tid.upper().endswith('800') for tid in tids)
+        if not is_update_file and re.search(r'\b(?:upd|update)\b', fname, re.IGNORECASE):
+            is_update_file = True
+
+        if is_update_file:
+            v_match = re.findall(r'\[v(\d+)\]', fname, re.IGNORECASE)
+            for v_str in v_match:
+                v_num = int(v_str)
+                if v_num > 0:
+                    update_versions.append(v_num)
+
+        f_ver = extract_fallback_version(fname)
+        if f_ver:
+            file_versions.append(f_ver)
+
+    if not base_title_id:
+        all_tids = re.findall(r'0100[0-9A-Fa-f]{12}', html, re.IGNORECASE)
+        if all_tids:
+            first = all_tids[0].upper()
+            base_title_id = first[:-3] + '000'
+
+    max_update_version = max(update_versions) if update_versions else None
+    fallback_version = file_versions[0] if file_versions else None
+
+    return {
+        "title_id": base_title_id,
+        "update_version": max_update_version,
+        "version": fallback_version,
+        "files": files
+    }
 
 def extract_title_id(text):
     """Extract Nintendo Switch Title ID (16 hex chars starting with 0100).
@@ -514,18 +624,30 @@ def fetch_url(url, forum_url=False, is_post=False, post_data=None, wait_keywords
 # Парсинг данных темы
 # ──────────────────────────────────────────────────────────────
 
+def fetch_torrent_metadata(topic_id):
+    """Метаданные файлов: POST viewtorrent.php (список файлов раздачи).
+
+    Возвращает dict:
+    - title_id: базовый Title ID (ending in 000) или None
+    - update_version: int (максимальный vN из файлов апдейта ...800) или None
+    - version: fallback_version (str) из имен файлов или None
+    - files: список имен файлов
+    """
+    torrent_html = fetch_url(f"{BASE_URL}viewtorrent.php", is_post=True,
+                             post_data={"t": topic_id},
+                             wait_keywords=('dir', 'file', 'ul', 'li', 'torrent'))
+    if torrent_html:
+        return parse_torrent_metadata(torrent_html)
+    return {"title_id": None, "update_version": None, "version": None, "files": []}
+
 def fetch_title_id(topic_id):
     """Только title_id: POST viewtorrent.php (список файлов раздачи).
 
     Без авторизации viewtorrent отвечает 'Not logged in', поэтому нужен
     валидный bb_session (куки из .env / login через bypass).
     """
-    torrent_html = fetch_url(f"{BASE_URL}viewtorrent.php", is_post=True,
-                             post_data={"t": topic_id},
-                             wait_keywords=('dir', 'file', 'ul', 'li', 'torrent'))
-    if torrent_html:
-        return extract_title_id(torrent_html)
-    return None
+    meta = fetch_torrent_metadata(topic_id)
+    return meta.get("title_id")
 
 
 def get_topic_data(topic_id):
@@ -586,11 +708,14 @@ def get_topic_data(topic_id):
 
     data["title_id"] = extract_title_id(soup.get_text()) or extract_title_id(html)
 
-    # Fallback для title_id: скачиваем список файлов раздачи (viewtorrent.php),
-    # так как часто авторы не пишут ID в тексте, но он есть в имени файла (.nsp/.nsz)
-    if not data["title_id"]:
-        data["title_id"] = fetch_title_id(topic_id)
-
+    # Скачиваем список файлов раздачи (viewtorrent.php):
+    # получаем title_id, update_version и запасную версию из файлов
+    torrent_meta = fetch_torrent_metadata(topic_id)
+    if not data["title_id"] and torrent_meta.get("title_id"):
+        data["title_id"] = torrent_meta["title_id"]
+    if torrent_meta.get("update_version"):
+        data["update_version"] = torrent_meta["update_version"]
+    file_version = torrent_meta.get("version")
 
     # Magnet: <a class="magnet-link"> есть и в гостевом виде (div.attach_link),
     # и в авторизованном (table.attach) — ищем по всей странице.
@@ -630,6 +755,7 @@ def get_topic_data(topic_id):
             "developer": r'Разработчик\s*:\s*([^\n]+)',
             "publisher": r'Издатель\s*:\s*([^\n]+)',
             "image_format": r'Формат образа\s*:\s*([^\n]+)',
+            "version": r'(?:Версия(?:\s+игры)?|Game\s*Version)\s*:\s*([^\n]+)',
             "interface_lang": r'Язык интерфейса\s*:\s*([^\n]+)',
             "voice_lang": r'(?:Язык озвучки|Озвучка)\s*:\s*([^\n]+)',
             "performance": r'Работоспособность проверена\s*:\s*([^\n]+)',
@@ -640,6 +766,18 @@ def get_topic_data(topic_id):
             m = re.search(pat, text_content, re.IGNORECASE)
             if m:
                 data[key] = m.group(1).strip()
+
+        if "version" in data:
+            cleaned_ver = clean_version_str(data["version"])
+            if cleaned_ver:
+                data["version"] = cleaned_ver
+            else:
+                del data["version"]
+
+        if "version" not in data:
+            fallback_ver = file_version or extract_fallback_version(raw_title)
+            if fallback_ver:
+                data["version"] = fallback_ver
 
         # Fallback для размера (если блок attach_link скрыт или отсутствует)
         if data["size"] == "Unknown":
@@ -824,6 +962,10 @@ def scrape_full_forum(output_file=None, max_pages=None):
                 "description": details.get("description", ""),
                 "title_id": tid_val,
             }
+            if details.get("update_version"):
+                game_entry["update_version"] = int(details["update_version"])
+            if details.get("version"):
+                game_entry["version"] = str(details["version"])
             results.append(game_entry)
             new_on_page += 1
 
@@ -1386,6 +1528,10 @@ def reconcile_missing_games(existing_data, existing_map, stats_data=None, max_ad
                 "description": details.get("description", ""),
                 "title_id": tid_val,
             }
+            if details.get("update_version"):
+                new_entry["update_version"] = int(details["update_version"])
+            if details.get("version"):
+                new_entry["version"] = str(details["version"])
 
             existing_data.insert(0, new_entry)
             existing_map[tid_str] = new_entry
@@ -1495,6 +1641,10 @@ def run_scraper(skip_stats=False, stats_max_pages=None, full_scan=False, sweep=F
                 "description": details.get("description", ""),
                 "title_id": tid_val,
             }
+            if details.get("update_version"):
+                new_entry["update_version"] = int(details["update_version"])
+            if details.get("version"):
+                new_entry["version"] = str(details["version"])
             existing_data.insert(0, new_entry)
             existing_map[t_id] = new_entry
             added_count += 1
@@ -1667,14 +1817,18 @@ def _enrich_incomplete(existing_data, limit=100):
         only_tid = set(missing) <= {'title_id'}
         if only_tid:
             print(f"  [*] ТОЛЬКО title_id [{tid}] {str(item.get('title'))[:55]}...")
-            title_id = fetch_title_id(tid)
-            if title_id:
-                item['title_id'] = title_id
+            meta = fetch_torrent_metadata(tid)
+            if meta.get('title_id'):
+                item['title_id'] = meta['title_id']
                 done += 1
                 enriched_titles.append(str(item.get('title'))[:80])
                 state.pop(tid, None)
             else:
                 state[tid] = now  # ID нет (NRO и т.п.) — не трогаем неделю
+            if meta.get('update_version'):
+                item['update_version'] = meta['update_version']
+            if not item.get('version') and meta.get('version'):
+                item['version'] = meta['version']
             continue
 
         print(f"  [*] ДООБОГАЩАЕМ [{tid}] {str(item.get('title'))[:55]}...")
@@ -1688,6 +1842,12 @@ def _enrich_incomplete(existing_data, limit=100):
             elif k not in item:
                 item[k] = v
                 changed = True
+        if details.get('update_version'):
+            item['update_version'] = details['update_version']
+            changed = True
+        if details.get('version') and not item.get('version'):
+            item['version'] = details['version']
+            changed = True
         if _missing(item):
             state[tid] = now
         else:
@@ -1715,10 +1875,15 @@ if __name__ == "__main__":
     parser.add_argument("--full", action="store_true", help="Принудительный полный парсинг всех тем форума")
     parser.add_argument("--sweep", action="store_true", help="Включить фоновый круговой обход старых раздач, дообогащение и полный обход статистики")
     parser.add_argument("--reconcile", action="store_true", help="Запустить только сверку базы со статистикой трекера")
+    parser.add_argument("--enrich-versions", action="store_true", help="Массовое дообогащение базы полями update_version и version")
+    parser.add_argument("--limit", type=int, default=None, help="Лимит записей для дообогащения версий (для тестов)")
     args = parser.parse_args()
 
     try:
-        if args.full:
+        if args.enrich_versions:
+            from enrich_versions import enrich_all_versions
+            enrich_all_versions(limit=args.limit)
+        elif args.full:
             scrape_full_forum()
         elif args.reconcile:
             existing_data = []

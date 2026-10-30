@@ -6,4 +6,6 @@ log.txt
 nohup.out
 .env
 enrich_state.json
+enrich_versions_state.json
+enrich_versions.log
 cron_log.txt
