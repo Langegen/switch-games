@@ -1,8 +1,8 @@
-=== 2026-11-02 17:03:13 ===
+=== 2026-11-02 21:02:24 ===
 Всего в базе: 7271
 Обновлено: 20
-  ~ DARK SOULS II: Scholar of the First Sin (порт Xbox 360 / ReXGlue) [NRO]
   ~ Ice Age 2: The Meltdown (хоумбрю) [RUS]
+  ~ EA Sports FC 27 [NSP][RUS/Multi11]
   ~ NOX
   ~ Петька и Василий Иванович 2 - Судный день (порт Red Comrades 2: For the Great J
   ~ Silent Hill: Downpour (хоумбрю)
@@ -21,7 +21,7 @@
   ~ Grand Theft Auto IV (порт GTA 4 LibertyRecomp) [NRO][RUS/Multi6]
   ~ Castlevania ReVamped (хоумбрю) [NRO][ENG]
   ~ The Dark Knight Rises (хоумбрю) [NRO][RUS/Multi10]
-Статистика обновлена: 7282 раздач
+Статистика обновлена: 7284 раздач
   * Покрытие базы: 100.2%
-  * Активных сидов: 107456
-  * Всего загрузок: 7677591
+  * Активных сидов: 105122
+  * Всего загрузок: 7678530
