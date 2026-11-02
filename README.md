@@ -122,8 +122,22 @@ bash run.sh                                        # полный цикл: pull
   "cover": "https://i7.imageban.ru/out/...",
   "screenshots": ["https://i128.fastpic.org/thumb/..."],
   "description": "«Сумерки, природа, флейты голос нервный...",
-  "title_id": "01003CB02246E000"
+  "title_id": "01003CB02246E000",
+  "version": "1.0.3",
+  "update_version": 196608,
+  "titles": [
+    {"id": "01003CB02246E000", "update_version": 196608, "version": "1.0.3"}
+  ]
 }
+```
+
+- `title_id` — ID первой игры из имён файлов раздачи; если ID в файлах нет — из текста темы.
+- `titles` — все игры раздачи по именам файлов (`viewtorrent.php`). В мультираздаче (Coffee Talk / Episode 2 / Tokyo) у каждой игры свой ID, своё обновление (`update_version`, наибольший `[vN]`; `0` — в раздаче только база) и, если есть в имени файла, версия. Поле пишется, только если в именах файлов есть ID. По нему менеджер игр TorrentShopNX находит каждую игру мультираздачи и сравнивает её версию.
+
+Заполнить `titles` у уже собранной базы (один проход по спискам файлов всех раздач; прогресс в `enrich_titles_state.json`, можно прерывать и продолжать):
+
+```bash
+./venv/bin/python3 enrich_versions.py --titles --push
 ```
 
 ## Формат файла статистики (switch_games_stats.json)

@@ -37,6 +37,7 @@ if sys.stdout.encoding != 'utf-8':
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 JSON_FILE = os.path.join(BASE_DIR, 'switch_games.json')
 STATE_FILE = os.path.join(BASE_DIR, 'enrich_versions_state.json')
+TITLES_STATE_FILE = os.path.join(BASE_DIR, 'enrich_titles_state.json')
 LOCK_FILE = '/tmp/rutracker-scraper.lock'
 SAVE_INTERVAL = 50
 
@@ -79,22 +80,22 @@ class FileLocker:
                 pass
 
 
-def _load_state():
-    if os.path.exists(STATE_FILE):
+def _load_state(path=STATE_FILE):
+    if os.path.exists(path):
         try:
-            with open(STATE_FILE, 'r', encoding='utf-8') as f:
+            with open(path, 'r', encoding='utf-8') as f:
                 return json.load(f)
         except Exception as e:
-            print(f"[!] Ошибка чтения файла состояния {STATE_FILE}: {e}")
+            print(f"[!] Ошибка чтения файла состояния {path}: {e}")
     return {}
 
 
-def _save_state(state):
+def _save_state(state, path=STATE_FILE):
     try:
-        tmp_file = f"{STATE_FILE}.tmp"
+        tmp_file = f"{path}.tmp"
         with open(tmp_file, 'w', encoding='utf-8') as f:
             json.dump(state, f, ensure_ascii=False, indent=2)
-        os.replace(tmp_file, STATE_FILE)
+        os.replace(tmp_file, path)
     except Exception as e:
         print(f"[!] Ошибка сохранения состояния: {e}")
 
@@ -252,6 +253,91 @@ def enrich_all_versions(limit=None, delay=0.15, force=False, push=False):
         _git_push()
 
 
+def enrich_all_titles(limit=None, delay=0.15, force=False, push=False):
+    """Заполняет поле titles (все игры раздачи по именам файлов) у всех записей.
+
+    Заодно исправляет title_id: если он не совпадает ни с одной игрой из
+    файлов (ID другого региона или другой игры из текста темы), берётся ID
+    первой игры. Прогресс — в enrich_titles_state.json; раздачи, у которых
+    список файлов не загрузился, не отмечаются и проверятся в следующий раз.
+    """
+    if not os.path.exists(JSON_FILE):
+        print(f"[!] Каталог {JSON_FILE} не найден.")
+        return
+    with open(JSON_FILE, 'r', encoding='utf-8') as f:
+        games = json.load(f)
+    total_games = len(games)
+    print(f"[*] Всего записей: {total_games}")
+
+    state = {} if force else _load_state(TITLES_STATE_FILE)
+    stop_requested = False
+
+    def handle_signal(sig, frame):
+        nonlocal stop_requested
+        print(f"\n[~] Получен сигнал {sig}, сохранение и остановка...")
+        stop_requested = True
+
+    signal.signal(signal.SIGINT, handle_signal)
+    signal.signal(signal.SIGTERM, handle_signal)
+
+    processed = multi = fixed_ids = failed = 0
+    since_last_save = 0
+    with FileLocker(LOCK_FILE):
+        for idx, item in enumerate(games):
+            if stop_requested:
+                break
+            if limit is not None and processed >= limit:
+                print(f"[*] Достигнут лимит ({limit}).")
+                break
+            tid = str(item.get('topic_id', '')).strip()
+            if not tid or (not force and state.get(tid)):
+                continue
+
+            meta = fetch_torrent_metadata(tid)
+            processed += 1
+            if not meta.get('files'):
+                failed += 1
+                print(f"[{idx+1}/{total_games}] [{tid}] список файлов не получен")
+                continue
+
+            titles = meta.get('titles') or []
+            note = ''
+            if titles:
+                item['titles'] = titles
+                if len(titles) > 1:
+                    multi += 1
+                ids = [t['id'] for t in titles]
+                old = str(item.get('title_id') or '').strip().upper()
+                try:
+                    old_app = '%016X' % (int(old, 16) & ~0x1FFF) if old else ''
+                except ValueError:
+                    old_app = ''
+                if old_app not in ids:
+                    item['title_id'] = ids[0]
+                    fixed_ids += 1
+                    note = f" | title_id {old or '-'} -> {ids[0]}"
+            else:
+                item.pop('titles', None)
+            state[tid] = int(time.time())
+            since_last_save += 1
+
+            print(f"[{idx+1}/{total_games}] [{tid}] игр: {len(titles)}{note} | {str(item.get('title', ''))[:45]}")
+            if since_last_save >= SAVE_INTERVAL:
+                _save_json(games, JSON_FILE)
+                _save_state(state, TITLES_STATE_FILE)
+                since_last_save = 0
+            if delay > 0:
+                time.sleep(delay)
+
+        _save_json(games, JSON_FILE)
+        _save_state(state, TITLES_STATE_FILE)
+
+    print(f"\n[+] Готово: обработано {processed}, мультираздач {multi}, "
+          f"исправлено title_id {fixed_ids}, без списка файлов {failed}")
+    if push:
+        _git_push()
+
+
 def _git_push():
     """Коммит и отправка изменений в Git-репозиторий."""
     import subprocess
@@ -276,9 +362,14 @@ if __name__ == "__main__":
     parser.add_argument("--delay", type=float, default=0.15, help="Задержка между запросами в секундах (по умолч. 0.15)")
     parser.add_argument("--force", action="store_true", help="Принудительно перепроверить даже обработанные темы")
     parser.add_argument("--push", action="store_true", help="Выполнить git commit и push после завершения")
+    parser.add_argument("--titles", action="store_true",
+                        help="Заполнить titles (все игры раздачи по файлам) и исправить title_id")
     args = parser.parse_args()
 
     try:
-        enrich_all_versions(limit=args.limit, delay=args.delay, force=args.force, push=args.push)
+        if args.titles:
+            enrich_all_titles(limit=args.limit, delay=args.delay, force=args.force, push=args.push)
+        else:
+            enrich_all_versions(limit=args.limit, delay=args.delay, force=args.force, push=args.push)
     finally:
         close_driver()

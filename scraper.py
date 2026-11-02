@@ -132,7 +132,7 @@ def _merge_topic_details(item, details, title=None, feed_size=None, raw_title=''
             continue
         if v is not None and v != 'Unknown' and v != [] and v != '':
             item[k] = v
-        elif k not in item and k not in ('update_version', 'version'):
+        elif k not in item and k not in ('update_version', 'version', 'titles'):
             item[k] = v
     if not item.get('title_id') and raw_title:
         item['title_id'] = extract_title_id(raw_title)
@@ -211,30 +211,67 @@ def extract_fallback_version(text):
             return ver
     return None
 
+def _app_id(tid):
+    """ID игры (application ID) для любого ID её содержимого.
+
+    У игры младшие 13 бит нулевые; обновление — app|0x800, DLC — app+0x1000+N.
+    Поэтому ...F000 (DLC) — это не ID игры, а [:-3]+'000' его не исправляет.
+    """
+    return '%016X' % (int(tid, 16) & ~0x1FFF)
+
+
+def parse_torrent_titles(files):
+    """Игры раздачи по именам файлов: [{"id", "update_version"?, "version"?}].
+
+    Порядок — по первому упоминанию в списке файлов. В мультираздачах
+    (Coffee Talk / Episode 2 / Tokyo) у каждой игры свой ID и своё обновление.
+    update_version — наибольший [vN] среди файлов игры и её обновления
+    (0, если есть только база [v0]); без тегов [vN] поле не пишется.
+    version — строка версии из имён файлов этой игры, если она там есть.
+    """
+    order = []
+    info = {}
+    for fname in files:
+        tids = re.findall(r'0100[0-9A-Fa-f]{12}', fname, re.IGNORECASE)
+        if not tids:
+            continue
+        vers = [int(v) for v in re.findall(r'\[v(\d+)\]', fname, re.IGNORECASE)]
+        for tid in tids:
+            tid = tid.upper()
+            app = _app_id(tid)
+            if app == '0100000000000000':      # заглушка хоумбрю, не игра
+                continue
+            if app not in info:
+                info[app] = {"id": app}
+                order.append(app)
+            entry = info[app]
+            is_dlc = (int(tid, 16) & 0x1000) != 0
+            if vers and not is_dlc:
+                entry["update_version"] = max(entry.get("update_version", 0), max(vers))
+            if not is_dlc and "version" not in entry:
+                ver = extract_fallback_version(fname)
+                if ver:
+                    entry["version"] = ver
+    return [info[a] for a in order]
+
+
 def parse_torrent_metadata(html):
-    """Парсит HTML от viewtorrent.php и извлекает title_id, update_version и fallback_version."""
+    """Парсит HTML от viewtorrent.php: title_id, titles, update_version и fallback_version."""
     if not html:
-        return {"title_id": None, "update_version": None, "version": None, "files": []}
+        return {"title_id": None, "titles": [], "update_version": None, "version": None, "files": []}
 
     raw_files = re.findall(r'<b>([^<]+)</b>', html)
     files = [f.strip() for f in raw_files if not f.strip().startswith('./')]
     if not files:
         files = re.findall(r'>([^<]+\.(?:nsp|nsz|xci|xcz|nro))<', html, re.IGNORECASE)
 
-    base_title_id = None
+    titles = parse_torrent_titles(files)
+    base_title_id = titles[0]["id"] if titles else None
     update_versions = []
     file_versions = []
 
     for fname in files:
-        # Title IDs
         tids = re.findall(r'0100[0-9A-Fa-f]{12}', fname, re.IGNORECASE)
-        for tid in tids:
-            tid_upper = tid.upper()
-            if tid_upper.endswith('000') and not base_title_id:
-                base_title_id = tid_upper
-            elif not base_title_id and not tid_upper.endswith('800'):
-                base_title_id = tid_upper[:-3] + '000'
-
         is_update_file = any(tid.upper().endswith('800') for tid in tids)
         if not is_update_file and re.search(r'\b(?:upd|update)\b', fname, re.IGNORECASE):
             is_update_file = True
@@ -253,14 +290,14 @@ def parse_torrent_metadata(html):
     if not base_title_id:
         all_tids = re.findall(r'0100[0-9A-Fa-f]{12}', html, re.IGNORECASE)
         if all_tids:
-            first = all_tids[0].upper()
-            base_title_id = first[:-3] + '000'
+            base_title_id = _app_id(all_tids[0])
 
     max_update_version = max(update_versions) if update_versions else None
     fallback_version = file_versions[0] if file_versions else None
 
     return {
         "title_id": base_title_id,
+        "titles": titles,
         "update_version": max_update_version,
         "version": fallback_version,
         "files": files
@@ -277,12 +314,12 @@ def extract_title_id(text):
     if not matches:
         return None
     upper_matches = [m.upper() for m in matches]
-    # Prefer base game IDs (ending in 000)
+    # Prefer base game IDs (low 13 bits clear; a DLC ID like ...F000 is not one)
     for m in upper_matches:
-        if m.endswith('000'):
+        if _app_id(m) == m and m != '0100000000000000':
             return m
-    # Otherwise normalize: zero out last 3 hex digits to get base game
-    return upper_matches[0][:-3] + '000'
+    # Otherwise map the first update/DLC ID to its game
+    return _app_id(upper_matches[0])
 
 # ──────────────────────────────────────────────────────────────
 # HTTP / Cloudflare
@@ -628,7 +665,8 @@ def fetch_torrent_metadata(topic_id):
     """Метаданные файлов: POST viewtorrent.php (список файлов раздачи).
 
     Возвращает dict:
-    - title_id: базовый Title ID (ending in 000) или None
+    - title_id: ID первой игры из имён файлов или None
+    - titles: все игры раздачи (см. parse_torrent_titles)
     - update_version: int (максимальный vN из файлов апдейта ...800) или None
     - version: fallback_version (str) из имен файлов или None
     - files: список имен файлов
@@ -638,7 +676,7 @@ def fetch_torrent_metadata(topic_id):
                              wait_keywords=('dir', 'file', 'ul', 'li', 'torrent'))
     if torrent_html:
         return parse_torrent_metadata(torrent_html)
-    return {"title_id": None, "update_version": None, "version": None, "files": []}
+    return {"title_id": None, "titles": [], "update_version": None, "version": None, "files": []}
 
 def fetch_title_id(topic_id):
     """Только title_id: POST viewtorrent.php (список файлов раздачи).
@@ -706,13 +744,15 @@ def get_topic_data(topic_id):
     data["title"] = clean_title(raw_title) if raw_title else "Unknown"
     data["raw_title"] = raw_title
 
-    data["title_id"] = extract_title_id(soup.get_text()) or extract_title_id(html)
-
-    # Скачиваем список файлов раздачи (viewtorrent.php):
-    # получаем title_id, update_version и запасную версию из файлов
+    # Скачиваем список файлов раздачи (viewtorrent.php): ID всех игр,
+    # update_version и запасную версию из файлов. ID из файлов важнее ID
+    # из текста темы: в тексте бывают ID других регионов и других игр
+    # (Rhythm Heaven Groove, Castlevania Belmont's Curse), а мультираздача
+    # содержит несколько игр, каждую со своим ID.
     torrent_meta = fetch_torrent_metadata(topic_id)
-    if not data["title_id"] and torrent_meta.get("title_id"):
-        data["title_id"] = torrent_meta["title_id"]
+    data["titles"] = torrent_meta.get("titles") or []
+    data["title_id"] = (torrent_meta.get("title_id")
+                        or extract_title_id(soup.get_text()) or extract_title_id(html))
     if torrent_meta.get("update_version"):
         data["update_version"] = torrent_meta["update_version"]
     file_version = torrent_meta.get("version")
@@ -962,6 +1002,8 @@ def scrape_full_forum(output_file=None, max_pages=None):
                 "description": details.get("description", ""),
                 "title_id": tid_val,
             }
+            if details.get("titles"):
+                game_entry["titles"] = details["titles"]
             if details.get("update_version"):
                 game_entry["update_version"] = int(details["update_version"])
             if details.get("version"):
@@ -1528,6 +1570,8 @@ def reconcile_missing_games(existing_data, existing_map, stats_data=None, max_ad
                 "description": details.get("description", ""),
                 "title_id": tid_val,
             }
+            if details.get("titles"):
+                new_entry["titles"] = details["titles"]
             if details.get("update_version"):
                 new_entry["update_version"] = int(details["update_version"])
             if details.get("version"):
@@ -1641,6 +1685,8 @@ def run_scraper(skip_stats=False, stats_max_pages=None, full_scan=False, sweep=F
                 "description": details.get("description", ""),
                 "title_id": tid_val,
             }
+            if details.get("titles"):
+                new_entry["titles"] = details["titles"]
             if details.get("update_version"):
                 new_entry["update_version"] = int(details["update_version"])
             if details.get("version"):
@@ -1825,6 +1871,8 @@ def _enrich_incomplete(existing_data, limit=100):
                 state.pop(tid, None)
             else:
                 state[tid] = now  # ID нет (NRO и т.п.) — не трогаем неделю
+            if meta.get('titles'):
+                item['titles'] = meta['titles']
             if meta.get('update_version'):
                 item['update_version'] = meta['update_version']
             if not item.get('version') and meta.get('version'):
@@ -1842,6 +1890,9 @@ def _enrich_incomplete(existing_data, limit=100):
             elif k not in item:
                 item[k] = v
                 changed = True
+        if details.get('titles'):
+            item['titles'] = details['titles']
+            changed = True
         if details.get('update_version'):
             item['update_version'] = details['update_version']
             changed = True
