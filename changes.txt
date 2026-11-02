@@ -1,6 +1,7 @@
-=== 2026-11-01 21:02:06 ===
+=== 2026-11-02 01:02:21 ===
 Всего в базе: 7271
 Обновлено: 19
+  ~ Ice Age 2: The Meltdown (хоумбрю) [RUS]
   ~ NOX
   ~ Петька и Василий Иванович 2 - Судный день (порт Red Comrades 2: For the Great J
   ~ Silent Hill: Downpour (хоумбрю)
@@ -19,8 +20,7 @@
   ~ Grand Theft Auto IV (порт GTA 4 LibertyRecomp) [NRO][RUS/Multi6]
   ~ Castlevania ReVamped (хоумбрю) [NRO][ENG]
   ~ The Dark Knight Rises (хоумбрю) [NRO][RUS/Multi10]
-  ~ Black and White (порт openBlack) [NRO][RUS (Voice Mod.)/ENG]
 Статистика обновлена: 7281 раздач
   * Покрытие базы: 100.1%
-  * Активных сидов: 101404
-  * Всего загрузок: 7671844
+  * Активных сидов: 88872
+  * Всего загрузок: 7673378
