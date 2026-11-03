@@ -1,12 +1,14 @@
-=== 2026-11-03 13:02:10 ===
-Всего в базе: 7274
-Добавлено: 1
-  + Donkey Kong Bananza + DLC DK Island and Emerald Rush [NSP][RUS/Multi17]
-Обновлено: 23
-  ~ Коллекция RPG от Kemco (79 шт.): Monochrome Order / Asdivine: Hearts 1-2, Dios, 
+=== 2026-11-03 17:02:35 ===
+Всего в базе: 7279
+Добавлено: 5
+  + Journey to the Void [NSZ][RUS/Multi8]
+  + Dicevaders (Dice Vaders) [NSZ][ENG]
+  + Mario Kart World [NSP][RUS/Multi12]
+  + We Are Eva [NSP][ENG]
+  + Bluey's Happy Snaps [XCI][ENG]
+Обновлено: 18
+  ~ Alien Quest Eve (хоумбрю) [NSZ][ENG]
   ~ Dead Space 2 (хоумбрю) [NRO][RUS/ENG]
-  ~ Romancing SaGa Minstrel Song Remastered International [NSP][ENG]
-  ~ 49 Keys (Forty Nine Chiavi) [NSZ][ENG]
   ~ Silent Hill Decompilation NX (хоумбрю) [NRO][RUS/ENG]
   ~ Call of Duty Classic (хоумбрю) [NRO][RUS/ENG]
   ~ Survival Crisis Z (хоумбрю)
@@ -23,10 +25,7 @@
   ~ VTech V.Smile — 12 игр (эмулятор D.Smile) [NRO][ENG]
   ~ Петька и Василий Иванович спасают галактику (порт Red Comrades Save the Galaxy)
   ~ Dead Space Sabotage Mobile (хоумбрю) [NRO][RUS/ENG]
-  ~ The Legend of Zelda: Ocarina of Time (нативный порт Ship of Harkinian + Leveled 
-  ~ Silent Hill 2 EE (порт) [NRO][RUS]
-  ~ Lost Odyssey (порт) [NRO][RUS (Mod.)/ENG]
-Статистика обновлена: 7285 раздач
+Статистика обновлена: 7289 раздач
   * Покрытие базы: 100.2%
-  * Активных сидов: 96732
-  * Всего загрузок: 7679588
+  * Активных сидов: 108371
+  * Всего загрузок: 7680989
