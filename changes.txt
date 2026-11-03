@@ -1,16 +1,15 @@
-=== 2026-11-03 17:02:35 ===
+=== 2026-11-03 21:02:33 ===
 Всего в базе: 7279
-Добавлено: 5
-  + Journey to the Void [NSZ][RUS/Multi8]
-  + Dicevaders (Dice Vaders) [NSZ][ENG]
-  + Mario Kart World [NSP][RUS/Multi12]
-  + We Are Eva [NSP][ENG]
-  + Bluey's Happy Snaps [XCI][ENG]
-Обновлено: 18
-  ~ Alien Quest Eve (хоумбрю) [NSZ][ENG]
+Обновлено: 22
+  ~ Sonic Racing Crossworlds + 8 DLC [NSZ][RUS/Multi10]
+  ~ Another Eden Begins [NSP][RUS (Mod.)/ENG]
+  ~ To the Moon / Finding Paradise / A Bird Story / Sigmund Minisode 1 и 2 Holiday S
+  ~ Dog Man Mission Impawsible / Bark in Action [NSZ][RUS (Mod.)/ENG]
+  ~ Mario Kart World [NSP][RUS/Multi12]
   ~ Dead Space 2 (хоумбрю) [NRO][RUS/ENG]
   ~ Silent Hill Decompilation NX (хоумбрю) [NRO][RUS/ENG]
   ~ Call of Duty Classic (хоумбрю) [NRO][RUS/ENG]
+  ~ Tape to Tape [RUS (Mod.)/ENG]
   ~ Survival Crisis Z (хоумбрю)
   ~ DuckTales: Remastered (порт) [NRO][RUS]
   ~ Ice Age 2: The Meltdown (хоумбрю) [RUS]
@@ -24,8 +23,7 @@
   ~ Ultra Street Fighter IV (4, хоумбрю) [NRO][ENG]
   ~ VTech V.Smile — 12 игр (эмулятор D.Smile) [NRO][ENG]
   ~ Петька и Василий Иванович спасают галактику (порт Red Comrades Save the Galaxy)
-  ~ Dead Space Sabotage Mobile (хоумбрю) [NRO][RUS/ENG]
-Статистика обновлена: 7289 раздач
+Статистика обновлена: 7290 раздач
   * Покрытие базы: 100.2%
-  * Активных сидов: 108371
-  * Всего загрузок: 7680989
+  * Активных сидов: 105512
+  * Всего загрузок: 7682105
