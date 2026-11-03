@@ -1,19 +1,23 @@
-=== 2026-11-03 09:01:59 ===
-Всего в базе: 7273
-Добавлено: 2
-  + Tape to Tape [RUS (Mod.)/ENG]
-  + Village in the Shade [NSP][ENG]
-Обновлено: 19
+=== 2026-11-03 13:02:10 ===
+Всего в базе: 7274
+Добавлено: 1
+  + Donkey Kong Bananza + DLC DK Island and Emerald Rush [NSP][RUS/Multi17]
+Обновлено: 23
+  ~ Коллекция RPG от Kemco (79 шт.): Monochrome Order / Asdivine: Hearts 1-2, Dios, 
+  ~ Dead Space 2 (хоумбрю) [NRO][RUS/ENG]
+  ~ Romancing SaGa Minstrel Song Remastered International [NSP][ENG]
+  ~ 49 Keys (Forty Nine Chiavi) [NSZ][ENG]
+  ~ Silent Hill Decompilation NX (хоумбрю) [NRO][RUS/ENG]
   ~ Call of Duty Classic (хоумбрю) [NRO][RUS/ENG]
   ~ Survival Crisis Z (хоумбрю)
   ~ DuckTales: Remastered (порт) [NRO][RUS]
   ~ Ice Age 2: The Meltdown (хоумбрю) [RUS]
+  ~ DARK SOULS II: Scholar of the First Sin (порт Xbox 360 / ReXGlue) [NRO]
   ~ Петька и Василий Иванович 2 - Судный день (порт Red Comrades 2: For the Great J
   ~ Silent Hill: Downpour (хоумбрю)
   ~ Prototype (порт) [NRO][RUS/ENG]
   ~ Metal Gear Rising Revengeance (хоумбрю) [NRO][RUS/Multi8]
   ~ Dante's Inferno (порт) [NRO][RUS/ENG]
-  ~ Dead Space 2 (хоумбрю) [NRO][RUS/ENG]
   ~ Gears of War 2 (порт) [NRO][RUS/Multi12]
   ~ Ultra Street Fighter IV (4, хоумбрю) [NRO][ENG]
   ~ VTech V.Smile — 12 игр (эмулятор D.Smile) [NRO][ENG]
@@ -22,8 +26,7 @@
   ~ The Legend of Zelda: Ocarina of Time (нативный порт Ship of Harkinian + Leveled 
   ~ Silent Hill 2 EE (порт) [NRO][RUS]
   ~ Lost Odyssey (порт) [NRO][RUS (Mod.)/ENG]
-  ~ Grand Theft Auto IV (порт GTA 4 LibertyRecomp) [NRO][RUS/Multi6]
 Статистика обновлена: 7285 раздач
   * Покрытие базы: 100.2%
-  * Активных сидов: 82622
-  * Всего загрузок: 7680735
+  * Активных сидов: 96732
+  * Всего загрузок: 7679588
