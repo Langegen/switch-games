@@ -1,8 +1,13 @@
-=== 2026-11-03 05:02:03 ===
-Всего в базе: 7271
+=== 2026-11-03 09:01:59 ===
+Всего в базе: 7273
+Добавлено: 2
+  + Tape to Tape [RUS (Mod.)/ENG]
+  + Village in the Shade [NSP][ENG]
 Обновлено: 19
+  ~ Call of Duty Classic (хоумбрю) [NRO][RUS/ENG]
+  ~ Survival Crisis Z (хоумбрю)
+  ~ DuckTales: Remastered (порт) [NRO][RUS]
   ~ Ice Age 2: The Meltdown (хоумбрю) [RUS]
-  ~ NOX
   ~ Петька и Василий Иванович 2 - Судный день (порт Red Comrades 2: For the Great J
   ~ Silent Hill: Downpour (хоумбрю)
   ~ Prototype (порт) [NRO][RUS/ENG]
@@ -18,9 +23,7 @@
   ~ Silent Hill 2 EE (порт) [NRO][RUS]
   ~ Lost Odyssey (порт) [NRO][RUS (Mod.)/ENG]
   ~ Grand Theft Auto IV (порт GTA 4 LibertyRecomp) [NRO][RUS/Multi6]
-  ~ Castlevania ReVamped (хоумбрю) [NRO][ENG]
-  ~ The Dark Knight Rises (хоумбрю) [NRO][RUS/Multi10]
-Статистика обновлена: 7284 раздач
+Статистика обновлена: 7285 раздач
   * Покрытие базы: 100.2%
-  * Активных сидов: 79423
-  * Всего загрузок: 7679792
+  * Активных сидов: 82622
+  * Всего загрузок: 7680735
