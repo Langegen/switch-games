@@ -1,19 +1,90 @@
 [
     {
-        "title": "Pokémon Pokopia [Nintendo Switch 2]",
+        "title": "Croc 2 Kingdom of the Gobbos [NSZ][ENG]",
+        "size": "7.14 GB",
+        "magnet": "magnet:?xt=urn:btih:DD00270313A48C61E8C8E039297576A983D8C7B6&tr=http%3A%2F%2Fbt.t-ru.org%2Fann%3Fmagnet",
+        "topic_id": "6932672",
+        "url": "https://rutracker.org/forum/viewtopic.php?t=6932672",
+        "year": "2026, октябрь",
+        "genre": "3D Platformer, Adventure",
+        "developer": "Big Boat, Titanium Studios",
+        "publisher": "Argonaut Games",
+        "image_format": ".NSZ (сжато ~41%, установленный объём 12.17 ГБ)",
+        "interface_lang": "Английский [ENG]",
+        "voice_lang": "английская",
+        "performance": "Да (на 22.5.0, Atmosphere 1.11.2)",
+        "multiplayer": "нет",
+        "cover": "https://i3.imageban.ru/out/2026/11/04/d11408bdf0ecd2e1440b06757155de54.png",
+        "screenshots": [
+            "https://i129.fastpic.org/thumb/2026/1104/ef/2d6802eb58ca6a668f5c4cfc4164d6ef.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1104/0f/c4bdb2f337b09443016e550906ea5d0f.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1104/77/b144f11a907578f6e6c48d5b4d76f077.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1104/49/5bc647497a5ad08e5874bcad2d09dc49.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1104/fb/1c1db09f82854f78e0f9990d0cc014fb.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1104/1a/83e59020f572c87cc7d9e8b56da7611a.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1104/15/52a02fbd6212049470747f0362da0015.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1104/84/2ae4831d840e436bf0723426510d6784.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1104/ca/0d2d8d4f21b71d1484e6819a499902ca.jpeg"
+        ],
+        "description": "История начинается с того, что профессора Гоббо похищают дантини — приспешники барона Данте — в тот момент, когда профессор становится свидетелем воскрешения своего хозяина.\nТем временем в Долине Гоббо Крок играет на пляже и находит послание в бутылке. В письме говорится, что отправители ищут своего ребенка. Крок с удивлением замечает на бумаге след крокодильей лапы и относит послание королю Руфусу. Тот читает его и советует Кроку отправиться на поиски других гоббо, живущих в отдаленных краях — возможно, они помогут найти крокодилов, отправивших письмо. Гоббо сооружают своего рода катапульту: Крок встает на один конец доски, а другой гоббо сбрасывает на противоположный край тяжелый валун. Благодаря этому Крок перелетает на далекий материк, где и начинаются его поиски.\nНа материке Крока уже знают: большинство местных жителей-гоббо общаются с ним так, словно они давно знакомы. О главной цели путешествия Крока почти не упоминается вплоть до того момента, пока игрок не доберется до последней деревни. В то же время барон Данте намеренно посылает своих приспешников, чтобы остановить Крока, — это выливается в сражения с боссами!..Предыдущую часть, «Croc: Legend of the Gobbos» и «Croc's World, 6 игр» см. там.",
+        "title_id": "01006D9026E1E000",
+        "titles": [
+            {
+                "id": "01006D9026E1E000",
+                "update_version": 0
+            }
+        ],
+        "version": "1.0.0"
+    },
+    {
+        "title": "Scurge Hive [NSZ][ENG]",
+        "size": "53.2 MB",
+        "magnet": "magnet:?xt=urn:btih:4DFF059A7838DC74BE30A63B3899A8579F6D710D&tr=http%3A%2F%2Fbt4.t-ru.org%2Fann%3Fmagnet",
+        "topic_id": "6932676",
+        "url": "https://rutracker.org/forum/viewtopic.php?t=6932676",
+        "year": "2025, октябрь",
+        "genre": "Action, Adventure, Metroidvania",
+        "developer": "Orbital Media",
+        "publisher": "Shinyuden, Ratalaika Games S.L.",
+        "image_format": ".NSZ (сжато ~34%, установленный объём 0.08 ГБ)",
+        "interface_lang": "Английский [ENG]",
+        "voice_lang": "не озвучивается",
+        "performance": "Да (на 22.5.0, Atmosphere 1.11.2)",
+        "multiplayer": "до 2 игроков",
+        "cover": "https://i7.imageban.ru/out/2026/11/04/16a8539a8d25ca4d39215bca8f2fe2c0.png",
+        "screenshots": [
+            "https://i129.fastpic.org/thumb/2026/1104/eb/3fbf024e7834eb4731b1433d7460e8eb.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1104/40/14c5a6c11329be48f586de7de7ec8d40.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1104/d4/24b9c2cefb424ccd5897d97a707a24d4.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1104/0e/469b13fe87a4160356cb29c63da7b50e.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1104/37/b5d74d88737e7c64c0484cbf8d814b37.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1104/c0/36e64e02ae0d6267646ff9fcda9f0ec0.jpeg"
+        ],
+        "description": "Сюжет повествует о Дженос Арме, которую военные нанимают для проведения спасательно-поисковой операции в 58-й исследовательской лаборатории Конфедерации на планете Инос.\nПричиной катастрофы стал опасный организм — «Скердж», паразит, способный превращать живые существа и технику в свои производные формы. Дженос облачена в специальный костюм, устойчивый к заражению.\nК сожалению, он лишь замедляет процесс, но не дает полного иммунитета: при первой же встрече со «Скерджем» героиня оказывается заражена..\nИзначально игра была выпущенный в 2006 году для портативных консолей Game Boy Advance и Nintendo DS, игровой процесс разворачивается в изометрической проекции.",
+        "title_id": "0100AB302115A000",
+        "titles": [
+            {
+                "id": "0100AB302115A000",
+                "update_version": 0
+            }
+        ],
+        "version": "1.0.0"
+    },
+    {
+        "title": "Pokemon Pokopia [NUP][ENG]",
         "size": "6.54 GB",
         "magnet": "magnet:?xt=urn:btih:52AAFBB95FD5FEB6FAB148FAE945085E2B3B4EE2&tr=http%3A%2F%2Fbt.t-ru.org%2Fann%3Fmagnet",
         "topic_id": "6932607",
         "url": "https://rutracker.org/forum/viewtopic.php?t=6932607",
         "year": "2026, март",
-        "genre": "Life Simulation",
+        "genre": "Simulator",
         "developer": "GAME FREAK, KOEI TECMO GAMES",
         "publisher": "Nintendo, The Pokémon Company",
         "image_format": "NUP",
-        "interface_lang": "Английский, немецкий, французский, испанский, итальянский, японский, корейский, китайский [Multi 9]",
-        "voice_lang": "Нет",
+        "interface_lang": "английский, немецкий, французский, испанский, итальянский, японский, корейский, китайский",
+        "voice_lang": "нет",
         "performance": "Да (на эмуляторе Switch 2 PokeDinner-Eglantine-2.5.0)",
-        "multiplayer": "до 4 игроков по локальной сети или онлайн",
+        "multiplayer": "до 4 игроков по локальной сети",
         "cover": "https://i6.imageban.ru/out/2026/11/03/e248d6b31d51d339760020ecee0cecbb.png",
         "screenshots": [
             "https://i2.imageban.ru/thumbs/2026.11.04/45a16ca5a7984874a7c766107a20979b.png",
@@ -192,19 +263,19 @@
         "version": "1.0.1"
     },
     {
-        "title": "Donkey Kong Bananza + DLC DK Island and Emerald Rush [NSP][RUS/Multi17]",
-        "size": "9.49 GB",
-        "magnet": "magnet:?xt=urn:btih:117125BAC68C8C58FFC74ED0949D070BE2A2F031&tr=http%3A%2F%2Fbt2.t-ru.org%2Fann%3Fmagnet",
+        "title": "Donkey Kong Bananza + DLC DK Island and Emerald Rush [NUP][RUS/Multi17]",
+        "size": "8.31 GB",
+        "magnet": "magnet:?xt=urn:btih:8537B386BF6BABAD4B1CA63FA872A30231B3C80F&tr=http%3A%2F%2Fbt2.t-ru.org%2Fann%3Fmagnet",
         "topic_id": "6932107",
         "url": "https://rutracker.org/forum/viewtopic.php?t=6932107",
         "year": "2025, июль",
         "genre": "Action, Adventure, 3D Platformer",
         "developer": "Nintendo EPD",
         "publisher": "Nintendo",
-        "image_format": "NSP",
+        "image_format": "NUP",
         "interface_lang": "Русский, Английский [RUS / ENG / Multi 17]",
         "voice_lang": "русская, английская, немецкая, французская, испанская, итальянская, китайская, корейская, японская",
-        "performance": "Да (на эмуляторе Switch 2 PokeDinner-Eglantine-2.1.0)",
+        "performance": "Да (на эмуляторе Switch 2 PokeDinner-Eglantine-2.5.0)",
         "multiplayer": "до 2 игроков",
         "cover": "https://i2.imageban.ru/out/2026/11/02/1860482d1160f0f915e878cdee14ab36.png",
         "screenshots": [
@@ -214,7 +285,7 @@
         ],
         "description": "Донки Конг и Полин отправляются в путешествие по огромному подземному миру. Здесь можно пробивать стены, прокладывать туннели, искать сокровища и сражаться с врагами. Камни и обломки пригодятся не только в бою: с их помощью можно решать головоломки и открывать новые пути. А превращения Бананза наделят Донки Конга особыми способностями.\nГероев ждут джунгли, лагуны, каньоны и ледяные пустоши. Исследуйте подземелье, находите спрятанные тайны и помешайте корпорации VoidCo завладеть силой, способной исполнить любое желание. Приключение можно пройти вместе с другом в кооперативном режиме.",
         "title_id": null,
-        "version": "458752"
+        "version": "3.2.0"
     },
     {
         "title": "Village in the Shade [NSP][ENG]",

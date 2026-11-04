@@ -1,9 +1,12 @@
-=== 2026-11-04 01:02:00 ===
-Всего в базе: 7280
-Добавлено: 1
-  + Pokémon Pokopia [Nintendo Switch 2]
-Обновлено: 18
+=== 2026-11-04 05:02:03 ===
+Всего в базе: 7282
+Добавлено: 2
+  + Scurge Hive [NSZ][ENG]
+  + Croc 2 Kingdom of the Gobbos [NSZ][ENG]
+Обновлено: 20
+  ~ Donkey Kong Bananza + DLC DK Island and Emerald Rush [NUP][RUS/Multi17]
   ~ Mario Kart World [NUP][RUS/Multi12]
+  ~ Pokémon Pokopia [Nintendo Switch 2]
   ~ Dead Space 2 (хоумбрю) [NRO][RUS/ENG]
   ~ Silent Hill Decompilation NX (хоумбрю) [NRO][RUS/ENG]
   ~ Call of Duty Classic (хоумбрю) [NRO][RUS/ENG]
@@ -21,7 +24,7 @@
   ~ Ultra Street Fighter IV (4, хоумбрю) [NRO][ENG]
   ~ VTech V.Smile — 12 игр (эмулятор D.Smile) [NRO][ENG]
   ~ Петька и Василий Иванович спасают галактику (порт Red Comrades Save the Galaxy)
-Статистика обновлена: 7291 раздач
+Статистика обновлена: 7293 раздач
   * Покрытие базы: 100.2%
-  * Активных сидов: 91868
-  * Всего загрузок: 7682860
+  * Активных сидов: 79168
+  * Всего загрузок: 7681782
