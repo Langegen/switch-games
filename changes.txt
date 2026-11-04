@@ -1,24 +1,13 @@
-=== 2026-11-04 13:03:04 ===
-Всего в базе: 7286
-Добавлено: 3
-  + Fast Fusion [NUP][ENG]
-  + Godzilla Destroy All Monsters Melee Remastered + DLC [NSP][ENG]
-  + Look Outside [NSZ][ENG]
-Обновлено: 28
-  ~ The Witch's Bakery [NSZ][RUS (Mod.)/ENG]
-  ~ Urban Myth Dissolution Center [NSZ][RUS/Multi10]
-  ~ Gurei [NSZ][RUS/Multi7]
-  ~ Zenonia [NSZ][RUS/Multi11]
-  ~ The Noexistencen of You and Me [NSZ][RUS/Multi10]
-  ~ Bang Bang Bandits [NSZ][ENG]
-  ~ Memory of Memorie a Chill Story [NSZ][ENG]
-  ~ Moonlight Peaks [NSZ][RUS (Mod.)/ENG]
-  ~ Avatar Legends the Fighting Game [NSZ][ENG]
-  ~ Montabi [NSZ][ENG]
-  ~ Uno + 14 DLC [NSZ][RUS/Multi9]
-  ~ Hello Kitty Island Adventure Deluxe edition + DLC The Tea Garden, City Town, Whe
-  ~ Ravenswatch + 10 DLC [NSZ][RUS/Multi10]
-  ~ Laysara Summit Kingdom [NSP][ENG]
+=== 2026-11-04 17:02:48 ===
+Всего в базе: 7291
+Добавлено: 5
+  + Splatoon Raiders [NUP][ENG]
+  + Fire Emblem: Fortune's Weave [NUP][ENG]
+  + Cat Astrophy [NSZ][RUS/Multi11]
+  + Warrior Cats Clans of the Forest Feral Edition [XCI][ENG]
+  + Hello Kitty Party Land [XCI][ENG]
+Обновлено: 14
+  ~ Fast Fusion [NUP][ENG]
   ~ Donkey Kong Bananza + DLC DK Island and Emerald Rush [NUP][RUS/Multi17]
   ~ Mario Kart World [NUP][RUS/Multi12]
   ~ Pokémon Pokopia [Nintendo Switch 2]
@@ -32,8 +21,7 @@
   ~ DARK SOULS II: Scholar of the First Sin (порт Xbox 360 / ReXGlue) [NRO]
   ~ Петька и Василий Иванович 2 - Судный день (порт Red Comrades 2: For the Great J
   ~ Silent Hill: Downpour (хоумбрю)
-  ~ Prototype (порт) [NRO][RUS/ENG]
-Статистика обновлена: 7297 раздач
+Статистика обновлена: 7302 раздач
   * Покрытие базы: 100.2%
-  * Активных сидов: 102917
-  * Всего загрузок: 7682431
+  * Активных сидов: 111356
+  * Всего загрузок: 7684948
