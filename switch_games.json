@@ -1,5 +1,30 @@
 [
     {
+        "title": "Pokémon Pokopia [Nintendo Switch 2]",
+        "size": "6.54 GB",
+        "magnet": "magnet:?xt=urn:btih:52AAFBB95FD5FEB6FAB148FAE945085E2B3B4EE2&tr=http%3A%2F%2Fbt.t-ru.org%2Fann%3Fmagnet",
+        "topic_id": "6932607",
+        "url": "https://rutracker.org/forum/viewtopic.php?t=6932607",
+        "year": "2026, март",
+        "genre": "Life Simulation",
+        "developer": "GAME FREAK, KOEI TECMO GAMES",
+        "publisher": "Nintendo, The Pokémon Company",
+        "image_format": "NUP",
+        "interface_lang": "Английский, немецкий, французский, испанский, итальянский, японский, корейский, китайский [Multi 9]",
+        "voice_lang": "Нет",
+        "performance": "Да (на эмуляторе Switch 2 PokeDinner-Eglantine-2.5.0)",
+        "multiplayer": "до 4 игроков по локальной сети или онлайн",
+        "cover": "https://i6.imageban.ru/out/2026/11/03/e248d6b31d51d339760020ecee0cecbb.png",
+        "screenshots": [
+            "https://i2.imageban.ru/thumbs/2026.11.04/45a16ca5a7984874a7c766107a20979b.png",
+            "https://i5.imageban.ru/thumbs/2026.11.04/612b728defb858f06d8bf5bf731684b5.png",
+            "https://i2.imageban.ru/thumbs/2026.11.04/893279b1a66ebee0c7ccbbf27e5fbcee.png"
+        ],
+        "description": "В Pokémon Pokopia вы играете за Дитто, принявшего человеческий облик. Мир вокруг опустел, и его предстоит вернуть к жизни: собирать материалы, строить дома, выращивать растения и создавать места обитания для покемонов.\nЗнакомьтесь с новыми соседями, учитесь у них полезным приёмам и меняйте ландшафт: выращивайте траву, разбивайте камни, пересекайте воду и добирайтесь до гор. Покемоны помогут со строительством и будут обращаться к вам с просьбами. Обустраивайте свой уголок в удобном темпе, а затем приглашайте друзей — играть вместе можно по локальной сети или онлайн.",
+        "title_id": null,
+        "version": "2.0.1a"
+    },
+    {
         "title": "Bluey's Happy Snaps [XCI][ENG]",
         "size": "3.72 GB",
         "magnet": "magnet:?xt=urn:btih:CBA6F655C1881C1509C5C6099160D6906673C1F8&tr=http%3A%2F%2Fbt2.t-ru.org%2Fann%3Fmagnet",
@@ -70,19 +95,19 @@
         "version": "1.0.0"
     },
     {
-        "title": "Mario Kart World [NSP][RUS/Multi12]",
-        "size": "21.97 GB",
-        "magnet": "magnet:?xt=urn:btih:5D240349FDE6AEA5FAB2A14B949F608E15E0F00F&tr=http%3A%2F%2Fbt.t-ru.org%2Fann%3Fmagnet",
+        "title": "Mario Kart World [NUP][RUS/Multi12]",
+        "size": "21.59 GB",
+        "magnet": "magnet:?xt=urn:btih:6D417ED168D81749C2A58F5040A82BAF7B6406D1&tr=http%3A%2F%2Fbt.t-ru.org%2Fann%3Fmagnet",
         "topic_id": "6932402",
         "url": "https://rutracker.org/forum/viewtopic.php?t=6932402",
         "year": "2025, июнь",
         "genre": "Racing, Action",
         "developer": "Nintendo EPD",
         "publisher": "Nintendo",
-        "image_format": "NSP",
+        "image_format": "NUP",
         "interface_lang": "Русский, Английский [RUS / ENG / Multi 12]",
         "voice_lang": "английская",
-        "performance": "Да (на эмуляторе Switch 2 PokeDinner-Eglantine-2.1.0)",
+        "performance": "Да (на эмуляторе Switch 2 PokeDinner-Eglantine-2.5.0)",
         "multiplayer": "до 4 игроков на одной платформе, до 8 по локальной сети",
         "cover": "https://i7.imageban.ru/out/2026/11/03/d10b5d6fcc7ecbe6e686b9d0c9a0e3ba.png",
         "screenshots": [
@@ -92,7 +117,7 @@
         ],
         "description": "В Mario Kart World трассой становится целый мир. Гоняйте с Марио и его друзьями по городам, лесам, горам и побережьям, а затем отправляйтесь исследовать окрестности между заездами.\nСоревнуйтесь в Гран-при, участвуйте в гонках на выбывание или устраивайте битвы на аренах. На трассе могут встретиться до 24 гонщиков, а погода и время суток меняются прямо во время заезда. Играйте в одиночку, с друзьями на одной консоли или онлайн.",
         "title_id": null,
-        "version": "1.7.0"
+        "version": "1.8.0"
     },
     {
         "title": "Dicevaders (Dice Vaders) [NSZ][ENG]",

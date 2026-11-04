@@ -1,11 +1,9 @@
-=== 2026-11-03 21:02:33 ===
-Всего в базе: 7279
-Обновлено: 22
-  ~ Sonic Racing Crossworlds + 8 DLC [NSZ][RUS/Multi10]
-  ~ Another Eden Begins [NSP][RUS (Mod.)/ENG]
-  ~ To the Moon / Finding Paradise / A Bird Story / Sigmund Minisode 1 и 2 Holiday S
-  ~ Dog Man Mission Impawsible / Bark in Action [NSZ][RUS (Mod.)/ENG]
-  ~ Mario Kart World [NSP][RUS/Multi12]
+=== 2026-11-04 01:02:00 ===
+Всего в базе: 7280
+Добавлено: 1
+  + Pokémon Pokopia [Nintendo Switch 2]
+Обновлено: 18
+  ~ Mario Kart World [NUP][RUS/Multi12]
   ~ Dead Space 2 (хоумбрю) [NRO][RUS/ENG]
   ~ Silent Hill Decompilation NX (хоумбрю) [NRO][RUS/ENG]
   ~ Call of Duty Classic (хоумбрю) [NRO][RUS/ENG]
@@ -23,7 +21,7 @@
   ~ Ultra Street Fighter IV (4, хоумбрю) [NRO][ENG]
   ~ VTech V.Smile — 12 игр (эмулятор D.Smile) [NRO][ENG]
   ~ Петька и Василий Иванович спасают галактику (порт Red Comrades Save the Galaxy)
-Статистика обновлена: 7290 раздач
+Статистика обновлена: 7291 раздач
   * Покрытие базы: 100.2%
-  * Активных сидов: 105512
-  * Всего загрузок: 7682105
+  * Активных сидов: 91868
+  * Всего загрузок: 7682860
