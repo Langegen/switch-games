@@ -1,12 +1,10 @@
-=== 2026-11-04 17:02:48 ===
-Всего в базе: 7291
-Добавлено: 5
-  + Splatoon Raiders [NUP][ENG]
-  + Fire Emblem: Fortune's Weave [NUP][ENG]
-  + Cat Astrophy [NSZ][RUS/Multi11]
-  + Warrior Cats Clans of the Forest Feral Edition [XCI][ENG]
-  + Hello Kitty Party Land [XCI][ENG]
-Обновлено: 14
+=== 2026-11-04 21:02:07 ===
+Всего в базе: 7292
+Добавлено: 1
+  + Star Fox [NUP][ENG]
+Обновлено: 13
+  ~ Splatoon Raiders [NUP][ENG]
+  ~ Fire Emblem: Fortune's Weave [NUP][ENG]
   ~ Fast Fusion [NUP][ENG]
   ~ Donkey Kong Bananza + DLC DK Island and Emerald Rush [NUP][RUS/Multi17]
   ~ Mario Kart World [NUP][RUS/Multi12]
@@ -18,10 +16,7 @@
   ~ Survival Crisis Z (хоумбрю)
   ~ DuckTales: Remastered (порт) [NRO][RUS]
   ~ Ice Age 2: The Meltdown (хоумбрю) [RUS]
-  ~ DARK SOULS II: Scholar of the First Sin (порт Xbox 360 / ReXGlue) [NRO]
-  ~ Петька и Василий Иванович 2 - Судный день (порт Red Comrades 2: For the Great J
-  ~ Silent Hill: Downpour (хоумбрю)
-Статистика обновлена: 7302 раздач
+Статистика обновлена: 7303 раздач
   * Покрытие базы: 100.2%
-  * Активных сидов: 111356
-  * Всего загрузок: 7684948
+  * Активных сидов: 104848
+  * Всего загрузок: 7687416

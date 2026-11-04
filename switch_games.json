@@ -1,5 +1,36 @@
 [
     {
+        "title": "Star Fox [NUP][ENG]",
+        "size": "28.08 GB",
+        "magnet": "magnet:?xt=urn:btih:07222C657723BDF25BE724B1CB9BC26AA45365CD&tr=http%3A%2F%2Fbt4.t-ru.org%2Fann%3Fmagnet",
+        "topic_id": "6932933",
+        "url": "https://rutracker.org/forum/viewtopic.php?t=6932933",
+        "year": "2025, июнь",
+        "genre": "ShootEmUp, Adventure",
+        "developer": "Velan Studios",
+        "publisher": "Nintendo",
+        "image_format": "NUP",
+        "interface_lang": "Английский [ENG]",
+        "voice_lang": "английская",
+        "performance": "Да (на эмуляторе Switch 2 Lichii nx2 build 70 286117c PGO)",
+        "multiplayer": "до 4 игроков",
+        "cover": "https://i4.imageban.ru/out/2026/11/04/95c9d6d309d99a7539fab330281f4127.png",
+        "screenshots": [
+            "https://i129.fastpic.org/thumb/2026/1104/ff/4612218eed5edcaa4294a93296a294ff.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1104/3e/c133f6087488e7eb4be4dd38267f113e.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1104/ad/b2b4c8f7bdeeb94a5ce4f9daf3ab28ad.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1104/d0/4b2a19ce6693abb007a1dd14803785d0.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1104/57/06cc390fe98a41378e30e82ad9e64157.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1104/d1/9f80cf6d5a9000d814e5f6fd5c483ad1.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1104/46/4c1f5db3def0bc1a4ff612aa96603f46.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1104/9f/b7af12d916294043939994ec0532e49f.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1104/66/b03258067156259720d4c7922d97f366.jpeg"
+        ],
+        "description": "Рельсовый шутер от третьего лица, в котором игроки управляют различными транспортными средствами, пилотируемыми Фоксом Макклаудом. Фокс, сын покойного лидера оригинальной команды Star Fox Джеймса Макклауда, возглавляет новую команду Star Fox, которая должна помешать главному злодею игры — безумному доктору Андроссу — уничтожить Звёздную систему Лайлат.\nКак ремейк Star Fox 64, игра сохраняет схожий игровой процесс и элементы управления. Управляя кораблём The Arwing, игроки автоматически проходят уровень. Они должны защищаться от врагов и лавировать между препятствиями, используя различные боевые средства, такие как лазеры и бомбы, или использовать фигуры высшего пилотажа, такие как сальто или вращение.\nИгра разделена на уровни, с сюжетными вставками между ними, в которых действия игроков влияют на финал и общее развитие истории. Во время прохождения уровней игрок может защищаться плазменным щитом, который можно восстанавливать собирая золотые и серебряные кольца. Выполняя смежные задания, уникальные для каждого уровня, можно получать дополнительные награды.",
+        "title_id": null,
+        "version": "1.2.0"
+    },
+    {
         "title": "Hello Kitty Party Land [XCI][ENG]",
         "size": "4.15 GB",
         "magnet": "magnet:?xt=urn:btih:72EE7382F6B64B54D6ED5FD52820276CEB8ECFF6&tr=http%3A%2F%2Fbt4.t-ru.org%2Fann%3Fmagnet",
@@ -88,9 +119,11 @@
             "https://i129.fastpic.org/thumb/2026/1104/99/39b721c78acd24672b33ff60c51b3799.jpeg",
             "https://i129.fastpic.org/thumb/2026/1104/76/a34dd33c52492e9722de0448a50a4776.jpeg",
             "https://i129.fastpic.org/thumb/2026/1104/56/10a6a51a331834d7c619b032e60fb156.jpeg",
-            "https://i129.fastpic.org/thumb/2026/1104/0a/127f242a1140e6a1a62c9d385d48210a.jpeg",
-            "https://i129.fastpic.org/thumb/2026/1104/e1/729f512f9a2f2e36724b4fd58a1006e1.jpeg",
-            "https://i129.fastpic.org/thumb/2026/1104/0e/8cea6aae7684001ab5db1eb75c876d0e.jpeg"
+            "https://i129.fastpic.org/thumb/2026/1104/00/fba3e39406b573d6bab11ccb58488e00.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1104/d1/a97269f72f488e6cb2383b9507f5e7d1.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1104/d0/06555d2a8816899cd28160b63b4a39d0.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1104/5c/678da2279344ca19b3c694bebbcb4f5c.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1104/0a/127f242a1140e6a1a62c9d385d48210a.jpeg"
         ],
         "description": "Cat-Astrophy сочетает динамичные сражения, точный платформинг и уникальные билды в космическом Action Roguelite, где каждый забег создаёт новые испытания и новые способы игры. Освой Звёздный курсор, исследуй процедурно генерируемые планеты и раскрой тайну, окружающую Поло, становясь сильнее с каждой экспедицией.\n\n\n\nДинамичные сражения и стремительное перемещение: прыгай, уклоняйся и сражайся.\n\n\n\nНовый билд в каждом забеге: комбинируй модули, способности и улучшения, создавая новые стратегии.\n\n\n\nПроцедурное исследование космоса: открывай планеты, альтернативные маршруты и секреты в каждой экспедиции.\n\n\n\nПостоянный прогресс: каждая попытка открывает новые возможности для следующего забега.\n\n\n\nПиксель-арт с характером: исследуй красочную вселенную, наполненную невероятными деталями!..\n\n\n\nЕщё котоигры.",
         "title_id": "01001BB028E98000",
