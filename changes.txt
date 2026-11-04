@@ -1,9 +1,24 @@
-=== 2026-11-04 09:03:01 ===
-Всего в базе: 7283
-Добавлено: 1
-  + Rage in Peace [NSZ][ENG]
-Обновлено: 20
-  ~ Boomerang Fu + 3 DLC [NSZ][RUS/Multi17]
+=== 2026-11-04 13:03:04 ===
+Всего в базе: 7286
+Добавлено: 3
+  + Fast Fusion [NUP][ENG]
+  + Godzilla Destroy All Monsters Melee Remastered + DLC [NSP][ENG]
+  + Look Outside [NSZ][ENG]
+Обновлено: 28
+  ~ The Witch's Bakery [NSZ][RUS (Mod.)/ENG]
+  ~ Urban Myth Dissolution Center [NSZ][RUS/Multi10]
+  ~ Gurei [NSZ][RUS/Multi7]
+  ~ Zenonia [NSZ][RUS/Multi11]
+  ~ The Noexistencen of You and Me [NSZ][RUS/Multi10]
+  ~ Bang Bang Bandits [NSZ][ENG]
+  ~ Memory of Memorie a Chill Story [NSZ][ENG]
+  ~ Moonlight Peaks [NSZ][RUS (Mod.)/ENG]
+  ~ Avatar Legends the Fighting Game [NSZ][ENG]
+  ~ Montabi [NSZ][ENG]
+  ~ Uno + 14 DLC [NSZ][RUS/Multi9]
+  ~ Hello Kitty Island Adventure Deluxe edition + DLC The Tea Garden, City Town, Whe
+  ~ Ravenswatch + 10 DLC [NSZ][RUS/Multi10]
+  ~ Laysara Summit Kingdom [NSP][ENG]
   ~ Donkey Kong Bananza + DLC DK Island and Emerald Rush [NUP][RUS/Multi17]
   ~ Mario Kart World [NUP][RUS/Multi12]
   ~ Pokémon Pokopia [Nintendo Switch 2]
@@ -18,12 +33,7 @@
   ~ Петька и Василий Иванович 2 - Судный день (порт Red Comrades 2: For the Great J
   ~ Silent Hill: Downpour (хоумбрю)
   ~ Prototype (порт) [NRO][RUS/ENG]
-  ~ Metal Gear Rising Revengeance (хоумбрю) [NRO][RUS/Multi8]
-  ~ Dante's Inferno (порт) [NRO][RUS/ENG]
-  ~ Gears of War 2 (порт) [NRO][RUS/Multi12]
-  ~ Dispatch [NSP][RUS/Multi10]
-  ~ Ultra Street Fighter IV (4, хоумбрю) [NRO][ENG]
-Статистика обновлена: 7294 раздач
+Статистика обновлена: 7297 раздач
   * Покрытие базы: 100.2%
-  * Активных сидов: 85486
-  * Всего загрузок: 7682051
+  * Активных сидов: 102917
+  * Всего загрузок: 7682431
