@@ -1,11 +1,11 @@
-=== 2026-11-05 17:02:36 ===
+=== 2026-11-05 21:01:50 ===
 Всего в базе: 7302
-Добавлено: 3
-  + Nintendo Switch Sports Resort [NUP][RUS/Multi16]
-  + Kirby Air Riders [NUP][ENG]
-  + Hyrule Warriors Age of Imprisonment [NUP][ENG]
-Обновлено: 9
-  ~ Minecraft [NSP][RUS/Multi11]
+Обновлено: 13
+  ~ Prototype 2 (порт) [NRO][RUS/ENG]
+  ~ Detention [NSZ][ENG]
+  ~ Nintendo Switch Sports Resort [NUP][RUS/Multi16]
+  ~ Kirby Air Riders [NUP][ENG]
+  ~ Hyrule Warriors Age of Imprisonment [NUP][ENG]
   ~ The Legend of Zelda: Ocarina of Time [NUP][RUS/Multi16]
   ~ Star Fox [NUP][ENG]
   ~ Splatoon Raiders [NUP][ENG]
@@ -16,5 +16,5 @@
   ~ Pokémon Pokopia [Nintendo Switch 2]
 Статистика обновлена: 7313 раздач
   * Покрытие базы: 100.2%
-  * Активных сидов: 107215
-  * Всего загрузок: 7694991
+  * Активных сидов: 102734
+  * Всего загрузок: 7696783
