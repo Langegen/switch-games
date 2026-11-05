@@ -1,12 +1,8 @@
-=== 2026-11-05 09:02:45 ===
+=== 2026-11-05 13:02:52 ===
 Всего в базе: 7299
-Добавлено: 5
-  + Valkyrie Tune Synthesis of Souls [NSZ][ENG]
-  + Wild Blue Skies [NSP][ENG]
-  + Dungeon of Dragon Knight Remake [NSZ][RUS/Multi9]
-  + Escape From Mystwood Mansion [NSP][ENG]
-  + Crafty Survivors [NSZ][RUS/Multi4]
 Обновлено: 11
+  ~ Kynseed [NSZ][RUS (Mod.)/ENG]
+  ~ Hard Time III (3) / Old School / Wrestling Empire / Infinite Lives (Mat Dickie, 
   ~ The Legend of Zelda: Ocarina of Time [NUP][RUS/Multi16]
   ~ Star Fox [NUP][ENG]
   ~ Splatoon Raiders [NUP][ENG]
@@ -16,9 +12,7 @@
   ~ Mario Kart World [NUP][RUS/Multi12]
   ~ Pokémon Pokopia [Nintendo Switch 2]
   ~ Dead Space 2 (хоумбрю) [NRO][RUS/ENG]
-  ~ Silent Hill Decompilation NX (хоумбрю) [NRO][RUS/ENG]
-  ~ Call of Duty Classic (хоумбрю) [NRO][RUS/ENG]
 Статистика обновлена: 7310 раздач
   * Покрытие базы: 100.2%
-  * Активных сидов: 82268
-  * Всего загрузок: 7690933
+  * Активных сидов: 95291
+  * Всего загрузок: 7692632

@@ -50,7 +50,7 @@
         "image_format": "NSP",
         "interface_lang": "Английский [ENG]",
         "voice_lang": "английская",
-        "performance": "Да(на 23.0.1, Atmosphere 1.12.0)",
+        "performance": "Да (на 23.0.1, Atmosphere 1.12.0)",
         "multiplayer": "нет",
         "cover": "https://i6.imageban.ru/out/2026/11/05/067b5d45d66601a562aef9d6f34ace67.jpg",
         "screenshots": [
@@ -10878,8 +10878,8 @@
     },
     {
         "title": "Kynseed [NSZ][RUS (Mod.)/ENG]",
-        "size": "1.02 GB",
-        "magnet": "magnet:?xt=urn:btih:3845CAB39EB5C0E9E1DBD61EE36C0C7BDC5C50F7&tr=http%3A%2F%2Fbt3.t-ru.org%2Fann%3Fmagnet",
+        "size": "804.5 MB",
+        "magnet": "magnet:?xt=urn:btih:8DCF4A2E5A2B8786D23BC565F795D9C38F59D251&tr=http%3A%2F%2Fbt3.t-ru.org%2Fann%3Fmagnet",
         "topic_id": "6890797",
         "url": "https://rutracker.org/forum/viewtopic.php?t=6890797",
         "year": "2026, август",
@@ -120774,9 +120774,9 @@
         ]
     },
     {
-        "title": "Hard Time III (3) / Old School / Wrestling Empire (Mat Dickie, MDickie) [NSZ][ENG]",
-        "size": "1.01 GB",
-        "magnet": "magnet:?xt=urn:btih:4AA13FA261AD9802989781DDF379590E7449836B&tr=http%3A%2F%2Fbt.t-ru.org%2Fann%3Fmagnet",
+        "title": "Hard Time III (3) / Old School / Wrestling Empire / Infinite Lives (Mat Dickie, MDickie) [NSZ][ENG]",
+        "size": "1.45 GB",
+        "magnet": "magnet:?xt=urn:btih:EEA8EBE155D4BA441DBD4FE21BE72D10328F5CE2&tr=http%3A%2F%2Fbt.t-ru.org%2Fann%3Fmagnet",
         "topic_id": "6590570",
         "url": "https://rutracker.org/forum/viewtopic.php?t=6590570",
         "year": "2024, сентябрь",
@@ -120801,10 +120801,14 @@
             "https://i124.fastpic.org/thumb/2024/1026/63/358e4079a7ca1cdf6311dafe140a2663.jpeg"
         ],
         "description": "«Сколько я зарезал, сколько перерезал; сколько душ я загубил!..» ©\nКультовый трэш-симулятор сидельца от великолепного Мэта Дики возвращается в полном портативе на Nintendo Switch!..\nПроверьте, как долго вы сможете выжить на зоне, где сотни других заключенных пытаются пристебаться к вам каждый день в режиме реального времени. Развивайте отношения с помощью продвинутой системы диалогов. Если вы выберете путь насилия, боевая система позволит вам проявить себя кулаками или оружием! Сотни полностью интерактивных предметов можно использовать в любой руке, включая умопомрачительные пушки для перестрелок в любой момент. А благодаря творческой системе крафта у вас никогда не закончатся боеприпасы.\nКроме того, совершенно новая роль полицейского предлагает вам побороться с преступностью с другой стороны забора — поддержите порядок среди заключенных и патрулируйте улицы в поисках бандитов! Расширенный мир делает мир суперживым, с широким спектром транспортных средств и животных. 3D-графика высокого разрешения, плавная частота кадров и разнообразием ракурсов камеры — наслаждайтесь всеми кинематографическими моментами!\nВидеообзор игры.",
-        "title_id": "0100EB001AE86000",
+        "title_id": "0100720023F52000",
         "update_version": 4194304,
         "version": "1.1.5",
         "titles": [
+            {
+                "id": "0100720023F52000",
+                "update_version": 393216
+            },
             {
                 "id": "0100C7301F6FA000",
                 "update_version": 786432
