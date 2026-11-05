@@ -1,8 +1,12 @@
-=== 2026-11-05 05:01:56 ===
-Всего в базе: 7294
-Добавлено: 1
-  + Rumbral [NSP][RUS/Multi10]
-Обновлено: 14
+=== 2026-11-05 09:02:45 ===
+Всего в базе: 7299
+Добавлено: 5
+  + Valkyrie Tune Synthesis of Souls [NSZ][ENG]
+  + Wild Blue Skies [NSP][ENG]
+  + Dungeon of Dragon Knight Remake [NSZ][RUS/Multi9]
+  + Escape From Mystwood Mansion [NSP][ENG]
+  + Crafty Survivors [NSZ][RUS/Multi4]
+Обновлено: 11
   ~ The Legend of Zelda: Ocarina of Time [NUP][RUS/Multi16]
   ~ Star Fox [NUP][ENG]
   ~ Splatoon Raiders [NUP][ENG]
@@ -14,10 +18,7 @@
   ~ Dead Space 2 (хоумбрю) [NRO][RUS/ENG]
   ~ Silent Hill Decompilation NX (хоумбрю) [NRO][RUS/ENG]
   ~ Call of Duty Classic (хоумбрю) [NRO][RUS/ENG]
-  ~ Tape to Tape [RUS (Mod.)/ENG]
-  ~ Survival Crisis Z (хоумбрю)
-  ~ DuckTales: Remastered (порт) [NRO][RUS]
-Статистика обновлена: 7305 раздач
+Статистика обновлена: 7310 раздач
   * Покрытие базы: 100.2%
-  * Активных сидов: 79426
-  * Всего загрузок: 7689570
+  * Активных сидов: 82268
+  * Всего загрузок: 7690933
