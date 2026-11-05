@@ -1,5 +1,30 @@
 [
     {
+        "title": "The Legend of Zelda: Ocarina of Time [NUP][RUS/Multi16]",
+        "size": "23.3 GB",
+        "magnet": "magnet:?xt=urn:btih:F740123EDED710324406D876681AA4F2C3BD577A&tr=http%3A%2F%2Fbt.t-ru.org%2Fann%3Fmagnet",
+        "topic_id": "6933053",
+        "url": "https://rutracker.org/forum/viewtopic.php?t=6933053",
+        "year": "2026, ноябрь",
+        "genre": "Action, Adventure",
+        "developer": "Nintendo EPD",
+        "publisher": "Nintendo",
+        "image_format": "NUP",
+        "interface_lang": "русский, английский, немецкий, французский, испанский, итальянский, японский, корейский, китайский и другие [Multi 16]",
+        "voice_lang": "английская, японская, французская, немецкая, итальянская, испанская, латиноамериканская испанская, бразильский португальский",
+        "performance": "Да (на эмуляторе Switch 2 Lichii 22.1.8 со специальным патчем для запуска окарины)",
+        "multiplayer": "нет",
+        "cover": "https://i6.imageban.ru/out/2026/11/05/b3af808a3a258ab5c0680d2ae2469e94.png",
+        "screenshots": [
+            "https://i7.imageban.ru/thumbs/2026.11.05/915cba7dcf9e5374721b0d96f8351321.png",
+            "https://i2.imageban.ru/thumbs/2026.11.05/a988558588358906c7802acae1635843.png",
+            "https://i2.imageban.ru/thumbs/2026.11.05/874e658ccd7af650391091e0fa8f16c9.png"
+        ],
+        "description": "Ганондорф охотится за Трифорсом, и юному Линку предстоит защитить Хайрул. Вместе с феей Нави он отправится в большое путешествие, чтобы раскрыть планы Ганондорфа и стать Героем Времени.\nИсследуйте Хайрул, решайте головоломки, сражайтесь с врагами и играйте на окарине, чтобы менять ход событий. В ремейке обновили графику и музыку, добавили озвученные сцены, расширенные диалоги, прыжок и рывок, а также современное управление камерой.",
+        "title_id": null,
+        "version": "1.1.1"
+    },
+    {
         "title": "Star Fox [NUP][ENG]",
         "size": "28.08 GB",
         "magnet": "magnet:?xt=urn:btih:07222C657723BDF25BE724B1CB9BC26AA45365CD&tr=http%3A%2F%2Fbt4.t-ru.org%2Fann%3Fmagnet",

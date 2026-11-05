@@ -1,8 +1,9 @@
-=== 2026-11-04 21:02:07 ===
-Всего в базе: 7292
+=== 2026-11-05 01:01:58 ===
+Всего в базе: 7293
 Добавлено: 1
-  + Star Fox [NUP][ENG]
+  + The Legend of Zelda: Ocarina of Time [NUP][RUS/Multi16]
 Обновлено: 13
+  ~ Star Fox [NUP][ENG]
   ~ Splatoon Raiders [NUP][ENG]
   ~ Fire Emblem: Fortune's Weave [NUP][ENG]
   ~ Fast Fusion [NUP][ENG]
@@ -15,8 +16,7 @@
   ~ Tape to Tape [RUS (Mod.)/ENG]
   ~ Survival Crisis Z (хоумбрю)
   ~ DuckTales: Remastered (порт) [NRO][RUS]
-  ~ Ice Age 2: The Meltdown (хоумбрю) [RUS]
-Статистика обновлена: 7303 раздач
+Статистика обновлена: 7304 раздач
   * Покрытие базы: 100.2%
-  * Активных сидов: 104848
-  * Всего загрузок: 7687416
+  * Активных сидов: 90041
+  * Всего загрузок: 7688745
