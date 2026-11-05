@@ -1,8 +1,9 @@
-=== 2026-11-05 01:01:58 ===
-Всего в базе: 7293
+=== 2026-11-05 05:01:56 ===
+Всего в базе: 7294
 Добавлено: 1
-  + The Legend of Zelda: Ocarina of Time [NUP][RUS/Multi16]
-Обновлено: 13
+  + Rumbral [NSP][RUS/Multi10]
+Обновлено: 14
+  ~ The Legend of Zelda: Ocarina of Time [NUP][RUS/Multi16]
   ~ Star Fox [NUP][ENG]
   ~ Splatoon Raiders [NUP][ENG]
   ~ Fire Emblem: Fortune's Weave [NUP][ENG]
@@ -16,7 +17,7 @@
   ~ Tape to Tape [RUS (Mod.)/ENG]
   ~ Survival Crisis Z (хоумбрю)
   ~ DuckTales: Remastered (порт) [NRO][RUS]
-Статистика обновлена: 7304 раздач
+Статистика обновлена: 7305 раздач
   * Покрытие базы: 100.2%
-  * Активных сидов: 90041
-  * Всего загрузок: 7688745
+  * Активных сидов: 79426
+  * Всего загрузок: 7689570
