@@ -1,5 +1,30 @@
 [
     {
+        "title": "Orbitals [NUP][RUS]",
+        "size": "9.89 GB",
+        "magnet": "magnet:?xt=urn:btih:C44A490733ECF9919E51D5C6C36CE64B9A811EFD&tr=http%3A%2F%2Fbt3.t-ru.org%2Fann%3Fmagnet",
+        "topic_id": "6933583",
+        "url": "https://rutracker.org/forum/viewtopic.php?t=6933583",
+        "year": "2026, сентябрь",
+        "genre": "Action, Adventure, Puzzle",
+        "developer": "Shapefarm",
+        "publisher": "Kepler Interactive",
+        "image_format": "NUP",
+        "interface_lang": "Русский, Английский [RUS / ENG / Multi 10]",
+        "voice_lang": "английская, японская, китайская, французская, немецкая, испанская, латиноамериканская испанская, бразильский португальский",
+        "performance": "Да (на эмуляторе Switch 2 PokeDinner-Eglantine-2.5.0)",
+        "multiplayer": "2 игрока",
+        "cover": "https://i1.imageban.ru/out/2026/11/06/87391718bdaf8acb9a4ecc5f369f58c3.png",
+        "screenshots": [
+            "https://i3.imageban.ru/thumbs/2026.11.06/dc45ccacaccb7b3c126148b39bd45c85.png",
+            "https://i1.imageban.ru/thumbs/2026.11.06/4b34ff9928c12e25ec5b9b4f3ab3caae.png",
+            "https://i3.imageban.ru/thumbs/2026.11.06/793d9219c56dc71c574dde9f753b47b2.png"
+        ],
+        "description": "Многопользовательское космическое приключение для двоих в духе классического аниме. Мaki и Omura — исследователи, которым нужно выбраться за пределы загадочного шторма и найти помощь для своей космической станции.\nУ каждого героя свои инструменты и задачи. Один может управлять кораблём, пока второй ведёт огонь, а для решения головоломок и преодоления опасностей придётся действовать сообща. Играть можно вдвоём на одной консоли или онлайн; одиночного режима нет.",
+        "title_id": null,
+        "version": "1.0.5"
+    },
+    {
         "title": "Коллекция carafe-портов для Nintendo Switch",
         "size": "60.55 GB",
         "magnet": "magnet:?xt=urn:btih:26991128FFDF45B98FBEB0B9FF7C5B896A16F37B&tr=http%3A%2F%2Fbt2.t-ru.org%2Fann%3Fmagnet",
