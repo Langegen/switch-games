@@ -49,6 +49,7 @@ from scraper import (
     fetch_torrent_metadata,
     clean_version_str,
     extract_fallback_version,
+    is_nsw2_or_nup,
     _post_text,
     _save_json,
     close_driver,
@@ -162,6 +163,9 @@ def enrich_all_versions(limit=None, delay=0.15, force=False, push=False):
 
             tid = str(item.get('topic_id', '')).strip()
             if not tid:
+                continue
+
+            if is_nsw2_or_nup(item.get('title'), item.get('raw_title'), item.get('image_format'), item):
                 continue
 
             # Если запись уже обработана и не force
@@ -291,6 +295,9 @@ def enrich_all_titles(limit=None, delay=0.15, force=False, push=False):
                 break
             tid = str(item.get('topic_id', '')).strip()
             if not tid or (not force and state.get(tid)):
+                continue
+
+            if is_nsw2_or_nup(item.get('title'), item.get('raw_title'), item.get('image_format'), item):
                 continue
 
             meta = fetch_torrent_metadata(tid)

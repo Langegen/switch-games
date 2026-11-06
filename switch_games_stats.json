@@ -50973,13 +50973,6 @@
         "registered_at": "2026-11-02 04:29:30",
         "updated_at": "2026-11-06 13:00:54"
     },
-    "6932107": {
-        "seeds": 217,
-        "leeches": 142,
-        "downloads": 1021,
-        "registered_at": "2026-11-04 00:26:57",
-        "updated_at": "2026-11-06 13:00:54"
-    },
     "6932041": {
         "seeds": 4,
         "leeches": 0,
@@ -51015,26 +51008,12 @@
         "registered_at": "2026-11-03 15:26:20",
         "updated_at": "2026-11-06 13:00:54"
     },
-    "6932402": {
-        "seeds": 151,
-        "leeches": 105,
-        "downloads": 771,
-        "registered_at": "2026-11-03 22:28:20",
-        "updated_at": "2026-11-06 13:00:54"
-    },
     "6932601": {
         "seeds": 0,
         "leeches": 0,
         "downloads": 0,
         "registered_at": "2026-11-03 20:51:53",
         "updated_at": "2026-11-04 01:00:41"
-    },
-    "6932607": {
-        "seeds": 122,
-        "leeches": 111,
-        "downloads": 546,
-        "registered_at": "2026-11-03 21:54:48",
-        "updated_at": "2026-11-06 13:00:54"
     },
     "6932676": {
         "seeds": 15,
@@ -51055,13 +51034,6 @@
         "leeches": 2,
         "downloads": 56,
         "registered_at": "2026-11-04 05:24:20",
-        "updated_at": "2026-11-06 13:00:54"
-    },
-    "6932806": {
-        "seeds": 33,
-        "leeches": 35,
-        "downloads": 205,
-        "registered_at": "2026-11-04 11:34:18",
         "updated_at": "2026-11-06 13:00:54"
     },
     "6932779": {
@@ -51097,34 +51069,6 @@
         "leeches": 19,
         "downloads": 54,
         "registered_at": "2026-11-04 16:09:55",
-        "updated_at": "2026-11-06 13:00:54"
-    },
-    "6932857": {
-        "seeds": 53,
-        "leeches": 27,
-        "downloads": 254,
-        "registered_at": "2026-11-04 14:09:06",
-        "updated_at": "2026-11-06 13:00:54"
-    },
-    "6932856": {
-        "seeds": 59,
-        "leeches": 27,
-        "downloads": 388,
-        "registered_at": "2026-11-04 14:08:15",
-        "updated_at": "2026-11-06 13:00:54"
-    },
-    "6932933": {
-        "seeds": 74,
-        "leeches": 70,
-        "downloads": 330,
-        "registered_at": "2026-11-04 17:04:01",
-        "updated_at": "2026-11-06 13:00:54"
-    },
-    "6933053": {
-        "seeds": 683,
-        "leeches": 417,
-        "downloads": 2559,
-        "registered_at": "2026-11-04 23:49:39",
         "updated_at": "2026-11-06 13:00:54"
     },
     "6933112": {
@@ -51169,46 +51113,11 @@
         "registered_at": "2026-11-05 05:29:46",
         "updated_at": "2026-11-06 13:00:54"
     },
-    "6933379": {
-        "seeds": 38,
-        "leeches": 64,
-        "downloads": 144,
-        "registered_at": "2026-11-05 14:50:35",
-        "updated_at": "2026-11-06 13:00:54"
-    },
-    "6933364": {
-        "seeds": 54,
-        "leeches": 42,
-        "downloads": 142,
-        "registered_at": "2026-11-05 14:27:33",
-        "updated_at": "2026-11-06 13:00:54"
-    },
-    "6933331": {
-        "seeds": 33,
-        "leeches": 45,
-        "downloads": 120,
-        "registered_at": "2026-11-05 13:18:09",
-        "updated_at": "2026-11-06 13:00:54"
-    },
     "6933547": {
         "seeds": 1,
         "leeches": 60,
         "downloads": 102,
         "registered_at": "2026-11-05 22:59:30",
-        "updated_at": "2026-11-06 13:00:54"
-    },
-    "6933583": {
-        "seeds": 42,
-        "leeches": 85,
-        "downloads": 127,
-        "registered_at": "2026-11-06 01:45:13",
-        "updated_at": "2026-11-06 13:00:54"
-    },
-    "6933662": {
-        "seeds": 37,
-        "leeches": 73,
-        "downloads": 112,
-        "registered_at": "2026-11-06 06:11:27",
         "updated_at": "2026-11-06 13:00:54"
     }
 }

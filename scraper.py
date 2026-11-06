@@ -974,11 +974,15 @@ def scrape_full_forum(output_file=None, max_pages=None):
             seen_ids.add(topic_id)
 
             raw_title = link_tag.text.strip()
+            if is_nsw2_or_nup(raw_title=raw_title):
+                continue
             title = clean_title(raw_title)
             topic_url = f"{BASE_URL}viewtopic.php?t={topic_id}"
 
             print(f"  [{len(results)+1}] [{topic_id}] {title[:60].encode('utf-8', errors='replace').decode('utf-8')}...")
             details = get_topic_data(topic_id)
+            if not is_game_topic(title, details):
+                continue
 
             tid_val = details.get("title_id") or extract_title_id(raw_title)
 
@@ -1472,14 +1476,54 @@ NON_GAME_TOPICS = {
     '6823103',  # Служебная тема / архив
     '6829590',  # Служебная тема / архив
     '6874027',  # Служебная тема / архив
+    # Раздачи Nintendo Switch 2 (NSW2 / NUP)
+    '6933662',
+    '6933583',
+    '6933379',
+    '6933364',
+    '6933331',
+    '6933053',
+    '6932933',
+    '6932856',
+    '6932857',
+    '6932806',
+    '6932607',
+    '6932402',
+    '6932107',
 }
 
+def is_nsw2_or_nup(title='', raw_title='', image_format='', details=None):
+    """Проверяет, относится ли раздача к Nintendo Switch 2 (NSW2) или формату NUP.
+    Такие раздачи исключаются из каталога Nintendo Switch 1.
+    """
+    all_title_text = f"{title or ''} {raw_title or ''}".upper()
+    if re.search(r'\[NSW2\]|\bNSW2\b', all_title_text):
+        return True
+    fmt = str(image_format or '').upper()
+    if details:
+        fmt = str(details.get('image_format', '') or fmt).upper()
+        raw = str(details.get('raw_title', '')).upper()
+        t = str(details.get('title', '')).upper()
+        if re.search(r'\[NSW2\]|\bNSW2\b', f"{t} {raw}"):
+            return True
+        files = details.get('files') or []
+        if any(str(f).lower().endswith('.nup') for f in files):
+            return True
+    if re.search(r'\[NUP\]|\bNUP\b', fmt) or re.search(r'\[NUP\]|\bNUP\b', all_title_text):
+        return True
+    return False
+
 def is_game_topic(title, details):
-    """Проверяет, является ли тема игровой раздачей."""
+    """Проверяет, является ли тема игровой раздачей для Nintendo Switch (исключает NSW2 и NUP)."""
     title_lower = title.lower()
     # Исключаем явные служебные префиксы
     if any(title_lower.startswith(prefix) for prefix in ['[faq]', 'правила раздела', '[гайд]', '[обсуждение]']):
         return False
+
+    raw_title = str(details.get('raw_title', '') if details else '')
+    if is_nsw2_or_nup(title=title, raw_title=raw_title, details=details):
+        return False
+
     # Раздача обязательно должна иметь magnet-ссылку
     magnet = details.get('magnet') or ''
     if not magnet.startswith('magnet:'):
@@ -1641,6 +1685,14 @@ def run_scraper(skip_stats=False, stats_max_pages=None, full_scan=False, sweep=F
 
         if t_id in existing_map:
             old_item = existing_map[t_id]
+            details = get_topic_data(t_id)
+            if not is_game_topic(title, details):
+                print(f"  [-] Удаляем неподходящую тему (NSW2/NUP): {title[:60]}...")
+                existing_data.remove(old_item)
+                del existing_map[t_id]
+                NON_GAME_TOPICS.add(str(t_id))
+                updated_count += 1
+                continue
             meta_changed = (
                 old_item.get('title') != title
                 or (feed_size != "Unknown" and old_item.get('size') != feed_size)
@@ -1652,7 +1704,6 @@ def run_scraper(skip_stats=False, stats_max_pages=None, full_scan=False, sweep=F
             # Title и size часто не меняются, infohash меняется всегда.
             # Раньше страница не открывалась, если заголовок совпал, и в базе
             # оставался мёртвый magnet (Absolum t=6755656 и т.п.).
-            details = get_topic_data(t_id)
             magnet_changed = _merge_topic_details(
                 old_item, details, title=title, feed_size=feed_size,
                 raw_title=raw_title)
@@ -1662,8 +1713,16 @@ def run_scraper(skip_stats=False, stats_max_pages=None, full_scan=False, sweep=F
                 updated_count += 1
                 updated_titles.append(str(title)[:80])
         else:
+            if str(t_id) in NON_GAME_TOPICS or is_nsw2_or_nup(title=title, raw_title=raw_title):
+                print(f"  [-] Пропускаем тему NSW2/NUP из ленты: {title[:60]}...")
+                NON_GAME_TOPICS.add(str(t_id))
+                continue
             print(f"  [+] НОВАЯ игра: {title[:60]}...")
             details = get_topic_data(t_id)
+            if not is_game_topic(title, details):
+                print(f"  [-] Тема {t_id} ({title[:50]}) не является подходящей игрой, пропускаем.")
+                NON_GAME_TOPICS.add(str(t_id))
+                continue
             tid_val = details.get('title_id') or extract_title_id(raw_title)
             new_entry = {
                 "title": title,
