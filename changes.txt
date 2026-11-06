@@ -1,8 +1,11 @@
-=== 2026-11-06 05:01:47 ===
-Всего в базе: 7304
+=== 2026-11-06 09:01:52 ===
+Всего в базе: 7305
 Добавлено: 1
-  + Orbitals [NUP][RUS]
-Обновлено: 13
+  + Yoshi and the Mysterious Book [NUP][ENG]
+Обновлено: 16
+  ~ Hard Time III (3) / Old School / Wrestling Empire / Infinite Lives (Mat Dickie, 
+  ~ Mega Man X Regenesis (хоумбрю) [NRO][ENG]
+  ~ Orbitals [NUP][RUS]
   ~ Коллекция carafe-портов для Nintendo Switch
   ~ Prototype 2 (порт) [NRO][RUS/ENG]
   ~ Nintendo Switch Sports Resort [NUP][RUS/Multi16]
@@ -16,7 +19,7 @@
   ~ Donkey Kong Bananza + DLC DK Island and Emerald Rush [NUP][RUS/Multi17]
   ~ Mario Kart World [NUP][RUS/Multi12]
   ~ Pokémon Pokopia [Nintendo Switch 2]
-Статистика обновлена: 7315 раздач
+Статистика обновлена: 7316 раздач
   * Покрытие базы: 100.2%
-  * Активных сидов: 79917
-  * Всего загрузок: 7698845
+  * Активных сидов: 83953
+  * Всего загрузок: 7700293

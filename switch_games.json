@@ -1,6 +1,37 @@
 [
     {
-        "title": "Orbitals [NUP][RUS]",
+        "title": "Yoshi and the Mysterious Book [NUP][ENG]",
+        "size": "38.18 GB",
+        "magnet": "magnet:?xt=urn:btih:3B62EBB0F366C1108527D63BAF6B9988B7A4C5EC&tr=http%3A%2F%2Fbt4.t-ru.org%2Fann%3Fmagnet",
+        "topic_id": "6933662",
+        "url": "https://rutracker.org/forum/viewtopic.php?t=6933662",
+        "year": "2026, май",
+        "genre": "Platformer, Adventure",
+        "developer": "Good-Feel",
+        "publisher": "Nintendo",
+        "image_format": "NUP",
+        "interface_lang": "Английский [ENG]",
+        "voice_lang": "английская",
+        "performance": "Да (на эмуляторе Switch 2 Orchid v0.7.5 36251ed)",
+        "multiplayer": "до 2 игроков",
+        "cover": "https://i5.imageban.ru/out/2026/11/06/41921272b0e3192a20b1840571c96c6c.png",
+        "screenshots": [
+            "https://i129.fastpic.org/thumb/2026/1106/ce/1c6d0bda98e784d67e1f9597092f29ce.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1106/77/cbe19d778959b3efd95a52d1a3c79377.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1106/80/2e7244b23f741704df2f36e664adff80.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1106/ee/a6fe309370a172ebf385afd6b88274ee.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1106/de/f9a4736d323bdd5a1ac556e31332a5de.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1106/e3/b071871646447648a79e318e6ce772e3.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1106/7d/61585eda7c671ae5b3f4a465aeec8d7d.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1106/5c/a8b4d1074b8843f758df5b2c94f8a35c.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1106/9f/1f99efa94f6a14f618e48238c952619f.jpeg"
+        ],
+        "description": "Однажды на эти земли, где живут динозаврики Йоши, упала книга по имени Мистер Э. В этой энциклопедии описывались разнообразные существа. Движимый любопытством, Йоши окунулся в мир знаний!\nИгра была анонсирована на презентации Nintendo Direct 12 сентября 2025 года в рамках празднования 40-летия серии Super Mario Bros., первая игра была выпущена в 1985 году. Yoshi and the Mysterious Book представляет собой сайд-скроллер-платформер, действие которого происходит внутри живой энциклопедии называющей себя «Мистер Э».\nЙоши ищет на страницах энциклопедии различных существ и взаимодействует с ними. Когда Йоши находит того или иного персонажа, он может использовать его способности для решения головоломок. К примеру, Йоши может проглотить незнакомое существо, чтобы узнать о нём побольше или угостить едой, чтобы изменить умение нового друга. Так, если скормить лягушке яблоко, она станет пускать большие пузыри. Мир на страницах энциклопедии анимирован в стиле традиционной покадровой анимации, с более низкой частотой кадров при определенных действиях персонажа, например, при прыжках.",
+        "title_id": null,
+        "version": "1.0.2"
+    },
+    {
+        "title": "Orbitals [NUP][RUS/Multi10]",
         "size": "9.89 GB",
         "magnet": "magnet:?xt=urn:btih:C44A490733ECF9919E51D5C6C36CE64B9A811EFD&tr=http%3A%2F%2Fbt3.t-ru.org%2Fann%3Fmagnet",
         "topic_id": "6933583",
@@ -25,7 +56,7 @@
         "version": "1.0.5"
     },
     {
-        "title": "Коллекция carafe-портов для Nintendo Switch",
+        "title": "Коллекция Carafe/Wine-NX/Box64/Autorun-портов для консоли Nintendo Switch [NRO][RUS]",
         "size": "60.55 GB",
         "magnet": "magnet:?xt=urn:btih:26991128FFDF45B98FBEB0B9FF7C5B896A16F37B&tr=http%3A%2F%2Fbt2.t-ru.org%2Fann%3Fmagnet",
         "topic_id": "6933547",
@@ -34,7 +65,7 @@
         "genre": "Homebrew",
         "developer": "Sigma Team",
         "publisher": "Lexmechanic",
-        "image_format": "NRO",
+        "image_format": "NSP",
         "interface_lang": "Русский [RUS]",
         "voice_lang": "Русский",
         "performance": "Да (20.5.0, atmosphere 1.11.2)",
@@ -67,7 +98,7 @@
         "image_format": "NUP",
         "interface_lang": "Английский [ENG]",
         "voice_lang": "японская, английская, французская, испанская, итальянская, немецкая",
-        "performance": "Да (на эмуляторе Switch 2 Eglantine v0.1.0-rc1 PGO)",
+        "performance": "Да (на эмуляторе Switch 2 Eglantine 05/11/2026 e736dfd daily-build prerelease PGO)",
         "multiplayer": "до 2 игроков",
         "cover": "https://i3.imageban.ru/out/2026/11/05/2b915119fc68bc00bd1ea8042422ed06.png",
         "screenshots": [
@@ -6764,8 +6795,8 @@
     },
     {
         "title": "Mega Man X Regenesis (хоумбрю) [NRO][ENG]",
-        "size": "87.4 MB",
-        "magnet": "magnet:?xt=urn:btih:54E40DAB891E5286ABB8515DAC5824C3EAD0321D&tr=http%3A%2F%2Fbt2.t-ru.org%2Fann%3Fmagnet",
+        "size": "142.6 MB",
+        "magnet": "magnet:?xt=urn:btih:2EC25406AE1408DD5DE0C7E60094BE0D77DF5730&tr=http%3A%2F%2Fbt2.t-ru.org%2Fann%3Fmagnet",
         "topic_id": "6903066",
         "url": "https://rutracker.org/forum/viewtopic.php?t=6903066",
         "year": "2026",
@@ -6791,7 +6822,7 @@
         ],
         "description": "Фанатский проект, созданный Джастином Россом: действия разворачиваются в альтернативной временной линии после событий Mega Man X. Сигма — победил, Икс пал, и человечество уже на грани вымирания. А когда кажется, что последняя надежда потеряна, доктор Кейн представляет свой последний план — Проект «Регенезис»! Получив последний шанс переписать историю, Икс обязан вновь подняться и начать свою борьбу за спасение остатков человечества..\n\n\n\nНовый фанатский оригинальный сюжет в альтернативной временной линии серии «Mega Man X».\n\n\n\n8 совершенно новых боссов-мавериков, которых нужно победить, специальное оружие, которое нужно освоить.\n\n\n\nИщите спрятанные коллекционные предметы и секреты, разблокируйте внутриигровые достижения-ачивки.\n\n\n\nПиксельная графика ручной работы в стиле SNES и 25 новых музыкальных композиций!..\n\n\n\nДругие игры Mega Man.",
         "title_id": null,
-        "version": "1.00.92"
+        "version": "1.01.0"
     },
     {
         "title": "MIG Switch Game Collection Vol 2: сборник №2 из 250 игр для флеш-картриджа MIG Switch [XCI+BIN][RUS/Multi]",
@@ -120912,7 +120943,7 @@
     {
         "title": "Hard Time III (3) / Old School / Wrestling Empire / Infinite Lives (Mat Dickie, MDickie) [NSZ][ENG]",
         "size": "1.45 GB",
-        "magnet": "magnet:?xt=urn:btih:EEA8EBE155D4BA441DBD4FE21BE72D10328F5CE2&tr=http%3A%2F%2Fbt.t-ru.org%2Fann%3Fmagnet",
+        "magnet": "magnet:?xt=urn:btih:BA4859F9396EFE44E2F5447E77E4149A0275839E&tr=http%3A%2F%2Fbt.t-ru.org%2Fann%3Fmagnet",
         "topic_id": "6590570",
         "url": "https://rutracker.org/forum/viewtopic.php?t=6590570",
         "year": "2024, сентябрь",
@@ -120951,7 +120982,7 @@
             },
             {
                 "id": "0100EB001AE86000",
-                "update_version": 1179648
+                "update_version": 1310720
             },
             {
                 "id": "0100F2B013CA4000",
