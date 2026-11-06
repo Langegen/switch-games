@@ -1,8 +1,9 @@
-=== 2026-11-05 21:01:50 ===
-Всего в базе: 7302
-Обновлено: 13
+=== 2026-11-06 01:01:49 ===
+Всего в базе: 7303
+Добавлено: 1
+  + Коллекция carafe-портов для Nintendo Switch
+Обновлено: 12
   ~ Prototype 2 (порт) [NRO][RUS/ENG]
-  ~ Detention [NSZ][ENG]
   ~ Nintendo Switch Sports Resort [NUP][RUS/Multi16]
   ~ Kirby Air Riders [NUP][ENG]
   ~ Hyrule Warriors Age of Imprisonment [NUP][ENG]
@@ -14,7 +15,7 @@
   ~ Donkey Kong Bananza + DLC DK Island and Emerald Rush [NUP][RUS/Multi17]
   ~ Mario Kart World [NUP][RUS/Multi12]
   ~ Pokémon Pokopia [Nintendo Switch 2]
-Статистика обновлена: 7313 раздач
+Статистика обновлена: 7314 раздач
   * Покрытие базы: 100.2%
-  * Активных сидов: 102734
-  * Всего загрузок: 7696783
+  * Активных сидов: 90388
+  * Всего загрузок: 7698107
