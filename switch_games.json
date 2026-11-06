@@ -1,19 +1,88 @@
 [
     {
+        "title": "Haunted Paws (демонстрационная версия) [NSZ][DEMO][RUS/Multi12]",
+        "size": "1.01 GB",
+        "magnet": "magnet:?xt=urn:btih:91067FDD49641F86DA091877FF9A3060749F4BDA&tr=http%3A%2F%2Fbt4.t-ru.org%2Fann%3Fmagnet",
+        "topic_id": "6933967",
+        "url": "https://rutracker.org/forum/viewtopic.php?t=6933967",
+        "year": "2027, май",
+        "genre": "Adventure, Action",
+        "developer": "LazyFlock",
+        "publisher": "LazyFlock",
+        "image_format": ".NSZ (сжато ~14%, установленный объём 1.18 ГБ) [DEMO]",
+        "interface_lang": "Русский, Английский [RUS / ENG / Multi 12]",
+        "voice_lang": "не озвучивается",
+        "performance": "Да (на 22.5.0, Atmosphere 1.11.2)",
+        "multiplayer": "только",
+        "cover": "https://i1.imageban.ru/out/2026/11/06/569b966427aee1d587eecb6860bf821b.png",
+        "screenshots": [
+            "https://i129.fastpic.org/thumb/2026/1106/e0/3b9ba041170407c325d3bb3da7be50e0.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1106/4d/7f28e6d5d6f48857791279874987554d.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1106/cd/9c4487553bfcffde8fa521f9738134cd.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1106/f4/62a64d5c1a354923504077162e00e9f4.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1106/05/5357cf15c8a4ecc49814f375124b1805.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1106/5c/ab48f0cbd317ea3ae590c375d349765c.jpeg"
+        ],
+        "description": "Уютное и жутковатое кооперативное приключение, в котором два щенка спасают свою хозяйку из особняка с привидениями. Создайте своего щенка, вместе решайте головоломки и побеждайте злобных существ.\nВы будете играть за щенков, и у вас будет возможность копать, нюхать, лаять и делать другие веселые вещи, которые любят щенки. Выберите свою любимую породу собак и погрузитесь в мир щенков! Наслаждайтесь игривой жизнью щенка вместе с друзьями. Лучший человеческий друг наших маленьких щенков был похищен злыми существами и заперт в доме с привидениями. Чтобы освободить его, вам придется столкнуться с различными ужасами.\nВ Haunted Paws каждое зловещее существо скрывает темное прошлое. Победите их, чтобы раскрыть их секреты и освободить их!..",
+        "title_id": "0100B2502AAA8000",
+        "titles": [
+            {
+                "id": "0100B2502AAA8000",
+                "update_version": 0
+            }
+        ],
+        "version": "1.0.0"
+    },
+    {
+        "title": "Yet Another Zombie Survivors (демонстрационная версия) [NSZ][DEMO][RUS/Multi9]",
+        "size": "807.3 MB",
+        "magnet": "magnet:?xt=urn:btih:2129C927538D1B9400E6E35063D1AB0B163BEE20&tr=http%3A%2F%2Fbt4.t-ru.org%2Fann%3Fmagnet",
+        "topic_id": "6933986",
+        "url": "https://rutracker.org/forum/viewtopic.php?t=6933986",
+        "year": "2026, октябрь",
+        "genre": "Action, Arcade",
+        "developer": "Awesome Games Studio sp. z o.o.",
+        "publisher": "Awesome Games",
+        "image_format": ".NSZ (сжато ~40%, установленный объём 1.45 ГБ) [DEMO]",
+        "interface_lang": "Русский, Английский [RUS / ENG / Multi 9]",
+        "voice_lang": "не озвучивается",
+        "performance": "Да (на 22.5.0, Atmosphere 1.11.2)",
+        "multiplayer": "нет",
+        "cover": "https://i2.imageban.ru/out/2026/11/06/dc7782a347fb9349b26a02add0db1ca6.png",
+        "screenshots": [
+            "https://i129.fastpic.org/thumb/2026/1106/2b/b205ebc5343df8dc3a3b8e3edd3de72b.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1106/ed/f73318731c22203bec98f4a552ad1fed.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1106/da/5e2fc06a0e83d8f815b9305f12b8abda.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1106/ca/b43895675fc46ca35df2d17a1aef09ca.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1106/83/7abd6ab13cd334ed272a934ae0083383.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1106/39/643be62cf8efc2cff69d67c281119139.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1106/86/14c6d850a07f0a422adb159f5c514786.jpeg"
+        ],
+        "description": "Зомби-шутер про бесконечные волны врагов: вы носитесь по арене, стреляете, косите зомби, собираете кристаллы опыта и берёте новые уровни.\nКаждый уровень даёт возможность усилить персонажа, открыть новое оружие или полезное улучшение. Но по-настоящему из общей массы Yet Another Zombie Survivors вырывается благодаря системе нескольких персонажей и тем комбинациям, которые она открывает. Забег стартует с выбранного класса, но по мере прохождения вы спасаете других выживших, и вскоре по карте уже бегает целая тройка бойцов – у каждого свои бонусы и собственный арсенал. Это действительно удачное переосмысление привычной формулы: игра не застаивается, а каждый новый забег легко собирается в совершенно другую сборку!..\nВо время забега вы выбираете не только оружие и улучшения, но и находите контейнеры с ограниченным набором дополнительных инструментов. Например, сковороду, которая даёт шанс оглушить более крепких элитных врагов при попадании. Таких мелких, но очень забавных находок здесь хватает. И что особенно приятно, система не заставляет вас до конца цепляться за предметы, взятые в начале: новые контейнеры позволяют заменить их, перебросить или вовсе отказаться, получив взамен здоровье и деньги.",
+        "title_id": "0100E430211BE000",
+        "titles": [
+            {
+                "id": "0100E430211BE000",
+                "update_version": 0
+            }
+        ],
+        "version": "1.0.1b"
+    },
+    {
         "title": "Коллекция Carafe/Wine-NX/Box64/Autorun-эмуляторов ПК игр для консоли Nintendo Switch [NRO][RUS]",
-        "size": "60.55 GB",
-        "magnet": "magnet:?xt=urn:btih:26991128FFDF45B98FBEB0B9FF7C5B896A16F37B&tr=http%3A%2F%2Fbt2.t-ru.org%2Fann%3Fmagnet",
+        "size": "83.95 GB",
+        "magnet": "magnet:?xt=urn:btih:24D706E4D0D43495C598B39B7587F1ACD8D73605&tr=http%3A%2F%2Fbt2.t-ru.org%2Fann%3Fmagnet",
         "topic_id": "6933547",
         "url": "https://rutracker.org/forum/viewtopic.php?t=6933547",
         "year": "2026",
-        "genre": "Homebrew",
+        "genre": "Emulation, Homebrew",
         "developer": "Sigma Team",
         "publisher": "Lexmechanic",
         "image_format": "NSP",
         "interface_lang": "Русский [RUS]",
-        "voice_lang": "Русский",
+        "voice_lang": "VA",
         "performance": "Да (20.5.0, atmosphere 1.11.2)",
-        "multiplayer": "Unknown",
+        "multiplayer": "нет",
         "cover": "https://i2.imageban.ru/out/2026/11/06/904e100e90a3f82519b5693b3f92823e.jpg",
         "screenshots": [
             "https://i8.imageban.ru/out/2026/11/06/43ee1a709863524521b30738f884e5b2.png",
@@ -27,7 +96,8 @@
             "https://i129.fastpic.org/thumb/2026/1106/14/2e0ae9aba44ef546ae9baa563adc3d14.jpeg"
         ],
         "description": "Зловещие тени и бесконечный мрак поселились в длинных коридорах военной базы, где зло устроило свое логово. Его кровожадные эмиссары заполонили офисы, склады и тайные лаборатории. Ваша задача проста до безобразия — очистить военную базу от скверны любой ценой. У вас будет взрывчатка, чтобы разобраться с непонятными телепортами, изрыгающими тысячи злобных тварей, а стационарные орудия помогут охранять зачищенные территории. Вам предоставлен доступ к самому высокотехнологичному оружию, разработанному человечеством. Зарабатывайте деньги и покупайте новые смертоносные стволы и биомеханические имплантаты, способные превратить любого задохлика в сверхчеловека.\nПроизводительность: около 60 кадров без разгона",
-        "title_id": null
+        "title_id": null,
+        "version": "1.6"
     },
     {
         "title": "Crafty Survivors [NSZ][RUS/Multi4]",
@@ -855,6 +925,7 @@
         "multiplayer": "нет",
         "cover": "https://i7.imageban.ru/out/2026/10/26/8f20355d7e415de2fd520dec7877629d.png",
         "screenshots": [
+            "https://i2.imageban.ru/out/2026/11/06/bcb905204f6d2eaa1fb4916358619b56.jpg",
             "https://i5.imageban.ru/out/2026/10/26/a5b6294e38a6e11f49c9b5fc126c16ec.jpg",
             "https://i2.imageban.ru/out/2026/10/26/f2b9fde09f70839448a11ed927c6f55e.jpg",
             "https://i8.imageban.ru/out/2026/10/26/b07405692ec76f3283044ff7b2c17307.jpg",
@@ -862,8 +933,7 @@
             "https://i8.imageban.ru/out/2026/10/31/bc20b5c23c913523d6a8586443b79701.jpg",
             "https://i5.imageban.ru/out/2026/10/31/57bb96cdd15df2a7625edad104e34f2b.jpg",
             "https://i5.imageban.ru/out/2026/10/31/d2a8477c7c0e4510f341e40e7f7e947a.jpg",
-            "https://i8.imageban.ru/out/2026/10/31/ece1defb5145ea25c018f56abbbc16bf.jpg",
-            "https://i5.imageban.ru/out/2026/10/31/72d67b9bfe49594134604b38145ea3c8.jpg"
+            "https://i8.imageban.ru/out/2026/10/31/ece1defb5145ea25c018f56abbbc16bf.jpg"
         ],
         "description": "DARK SOULS™ II: Scholar of the First Sin — наиболее полное издание знаменитой ролевой игры DARK SOULS™ II, включающее все ранее выпущенные материалы и дополнения.\nВас ждёт незабываемое путешествие по огромному и загадочному миру, где за каждым поворотом скрываются смертельно опасные противники, коварные ловушки и непредсказуемые испытания. Каждое столкновение может стать последним, а каждая победа потребует выдержки, мастерства и решимости. Исследуйте мрачные земли Дранглика, сражайтесь с могущественными боссами, собирайте души и попытайтесь найти способ избавиться от древнего проклятия, обрекающего вас на вечное странствие между жизнью и смертью.\nИздание Scholar of the First Sin предлагает совершенно новый игровой опыт: расположение противников и предметов было переработано, появились новые опасности и персонажи, а привычные безопасные места больше не гарантируют спасения. В игру также включены три масштабных дополнения — Crown of the Sunken King, Crown of the Old Iron King и Crown of the Ivory King.\nПриготовьтесь вновь взглянуть в лицо смерти.\nВ мире DARK SOULS II каждый шаг — испытание, а каждая победа достаётся дорогой ценой.",
         "title_id": "0100D52000560000",
@@ -1155,7 +1225,7 @@
         ]
     },
     {
-        "title": "Петька и Василий Иванович спасают галактику (порт Red Comrades Save the Galaxy) [NRO][RUS]",
+        "title": "Петька и Василий Иванович спасают галактику, Судный день (порты Red Comrades Save the Galaxy, RC2: For the Great Justice) [NRO][RUS]",
         "size": "2.34 GB",
         "magnet": "magnet:?xt=urn:btih:9E2471D4FFBE0EFECF4D5ADA4F5C6607E57A2244&tr=http%3A%2F%2Fbt2.t-ru.org%2Fann%3Fmagnet",
         "topic_id": "6926622",
@@ -1177,7 +1247,9 @@
             "https://i129.fastpic.org/thumb/2026/1023/3e/5040e4596a8963a0e6a8f5db87dec33e.jpeg",
             "https://i129.fastpic.org/thumb/2026/1023/07/1e0220971a9b0c0e5489750f0b573a07.jpeg",
             "https://i129.fastpic.org/thumb/2026/1023/3e/b13a29fc9820bfa4a99158f0542e363e.jpeg",
-            "https://i129.fastpic.org/thumb/2026/1023/39/f853bba08ce4ca2395d49948eff5f439.jpeg"
+            "https://i129.fastpic.org/thumb/2026/1023/39/f853bba08ce4ca2395d49948eff5f439.jpeg",
+            "https://i1.imageban.ru/out/2026/10/27/03f7238f5fd75e9e887ff4e8b5447ca5.jpg",
+            "https://i129.fastpic.org/thumb/2026/1027/ee/460918e1470b81a3f86e020c553931ee.jpeg"
         ],
         "description": "Петька и Василий Иванович спасают галактику — компьютерная игра в жанре юмористического графического квеста, разработанная компанией S.K.I.F. и выпущенная компанией «Бука» в ноябре 1998 года для Microsoft Windows, а также 11 сентября 2014 для устройств Android. Стала родоначальником целой одноимённой серии.\n16 февраля 2016 года было выпущено переиздание для современных версий операционной системы Windows и широкоформатных мониторов под названием «Петька и Василий Иванович: Перезагрузка», также доступное с английскими субтитрами под названием Red Comrades Save the Galaxy: Reloaded.",
         "title_id": null,
@@ -3018,8 +3090,8 @@
     },
     {
         "title": "Mercenaries 2 World in Flames (порт) [NRO][RUS/ENG]",
-        "size": "6.44 GB",
-        "magnet": "magnet:?xt=urn:btih:217D627A9F09F0554DCC3B353D7EEF1F2697CD51&tr=http%3A%2F%2Fbt3.t-ru.org%2Fann%3Fmagnet",
+        "size": "6.46 GB",
+        "magnet": "magnet:?xt=urn:btih:45A7978749E80852A3E8542ABF4BA50F62E99C83&tr=http%3A%2F%2Fbt3.t-ru.org%2Fann%3Fmagnet",
         "topic_id": "6921545",
         "url": "https://rutracker.org/forum/viewtopic.php?t=6921545",
         "year": "2008",
@@ -3043,7 +3115,7 @@
         ],
         "description": "Mercenaries 2: World in Flames, она же Mercenaries 2; с англ. — «Наёмники 2: Мир в огне» — шутер от третьего лица с открытым миром, разработанный Pandemic Studios и изданный Electronic Arts. Вторая часть серии и продолжение Mercenaries: Playground of Destruction. Анонсирована на E3 2006, вышла 31 августа 2008 года в Северной Америке и 5 сентября в Европе на PC, PlayStation 2, PlayStation 3 и Xbox 360. Пресса оценила игру средне, но коммерчески она была успешна: продано свыше 1,9 млн копий, по некоторым данным — более 2 млн.\nСюжет разворачивается в вымышленной охваченной войной Венесуэле. Игрок с самого начала выбирает одного из трёх наёмников: Криса Джейкобса — тяжеловооружённого бойца с большим запасом боеприпасов; Дженнифер Муи — быструю и скрытную убийцу; Маттиаса Нильссона — неуравновешенного шведа с ускоренным восстановлением здоровья. После предательства оружейного барона Рамона Солано, не заплатившего за работу и попытавшегося убить героя, тот решает мстить и развязывает войну, чтобы вернуть деньги и установить порядок в стране. Открытый мир Венесуэлы делится между фракциями: Союзниками, Китайцами, Пиратами, Освободительной армией Венесуэлы и силами Солано.",
         "title_id": null,
-        "version": "0.1.0"
+        "version": "0.2.0"
     },
     {
         "title": "Angry Birds Epic: All Stars (хоумбрю) [NRO][RUS/Multi11]",

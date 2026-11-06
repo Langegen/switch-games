@@ -1,13 +1,15 @@
-=== 2026-11-06 17:01:59 ===
-Всего в базе: 7292
-Обновлено: 6
-  ~ Dark Souls II (2) Scholar of the First Sin (порт) [NRO][RUS/ENG]
+=== 2026-11-06 21:01:46 ===
+Всего в базе: 7294
+Добавлено: 2
+  + Yet Another Zombie Survivors (демонстрационная версия) [NSZ][DEMO][RUS/Multi9]
+  + Haunted Paws (демонстрационная версия) [NSZ][DEMO][RUS/Multi12]
+Обновлено: 5
+  ~ Коллекция Carafe/Wine-NX/Box64/Autorun-эмуляторов ПК игр для консоли Nintendo Sw
+  ~ Mercenaries 2 World in Flames (порт) [NRO][RUS/ENG]
   ~ Петька и Василий Иванович спасают галактику (порт Red Comrades Save the Galaxy)
-  ~ Cemu NX: эмулятор Nintendo Wii U + игра Kirby and the Rainbow Curse [NRO][ENG]
   ~ Mega Man X Regenesis (хоумбрю) [NRO][ENG]
-  ~ Коллекция carafe-портов для Nintendo Switch
   ~ Prototype 2 (порт) [NRO][RUS/ENG]
-Статистика обновлена: 7316 раздач
-  * Покрытие базы: 100.3%
-  * Активных сидов: 108155
-  * Всего загрузок: 7703887
+Статистика обновлена: 7318 раздач
+  * Покрытие базы: 100.4%
+  * Активных сидов: 105592
+  * Всего загрузок: 7706506
