@@ -1,9 +1,7 @@
-=== 2026-11-06 09:01:52 ===
+=== 2026-11-06 13:02:22 ===
 Всего в базе: 7305
-Добавлено: 1
-  + Yoshi and the Mysterious Book [NUP][ENG]
 Обновлено: 16
-  ~ Hard Time III (3) / Old School / Wrestling Empire / Infinite Lives (Mat Dickie, 
+  ~ Yoshi and the Mysterious Book [NUP][ENG]
   ~ Mega Man X Regenesis (хоумбрю) [NRO][ENG]
   ~ Orbitals [NUP][RUS]
   ~ Коллекция carafe-портов для Nintendo Switch
@@ -21,5 +19,5 @@
   ~ Pokémon Pokopia [Nintendo Switch 2]
 Статистика обновлена: 7316 раздач
   * Покрытие базы: 100.2%
-  * Активных сидов: 83953
-  * Всего загрузок: 7700293
+  * Активных сидов: 97249
+  * Всего загрузок: 7702303
