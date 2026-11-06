@@ -1,23 +1,13 @@
-=== 2026-11-06 13:02:22 ===
-Всего в базе: 7305
-Обновлено: 16
-  ~ Yoshi and the Mysterious Book [NUP][ENG]
+=== 2026-11-06 17:01:59 ===
+Всего в базе: 7292
+Обновлено: 6
+  ~ Dark Souls II (2) Scholar of the First Sin (порт) [NRO][RUS/ENG]
+  ~ Петька и Василий Иванович спасают галактику (порт Red Comrades Save the Galaxy)
+  ~ Cemu NX: эмулятор Nintendo Wii U + игра Kirby and the Rainbow Curse [NRO][ENG]
   ~ Mega Man X Regenesis (хоумбрю) [NRO][ENG]
-  ~ Orbitals [NUP][RUS]
   ~ Коллекция carafe-портов для Nintendo Switch
   ~ Prototype 2 (порт) [NRO][RUS/ENG]
-  ~ Nintendo Switch Sports Resort [NUP][RUS/Multi16]
-  ~ Kirby Air Riders [NUP][ENG]
-  ~ Hyrule Warriors Age of Imprisonment [NUP][ENG]
-  ~ The Legend of Zelda: Ocarina of Time [NUP][RUS/Multi16]
-  ~ Star Fox [NUP][ENG]
-  ~ Splatoon Raiders [NUP][ENG]
-  ~ Fire Emblem: Fortune's Weave [NUP][ENG]
-  ~ Fast Fusion [NUP][ENG]
-  ~ Donkey Kong Bananza + DLC DK Island and Emerald Rush [NUP][RUS/Multi17]
-  ~ Mario Kart World [NUP][RUS/Multi12]
-  ~ Pokémon Pokopia [Nintendo Switch 2]
 Статистика обновлена: 7316 раздач
-  * Покрытие базы: 100.2%
-  * Активных сидов: 97249
-  * Всего загрузок: 7702303
+  * Покрытие базы: 100.3%
+  * Активных сидов: 108155
+  * Всего загрузок: 7703887
