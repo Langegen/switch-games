@@ -1,5 +1,36 @@
 [
     {
+        "title": "Alice Madness Returns (порт) [NRO][RUS]",
+        "size": "4.81 GB",
+        "magnet": "magnet:?xt=urn:btih:AE3CFF6288C001006EF5FC843373CBF5A26C159C&tr=http%3A%2F%2Fbt3.t-ru.org%2Fann%3Fmagnet",
+        "topic_id": "6934286",
+        "url": "https://rutracker.org/forum/viewtopic.php?t=6934286",
+        "year": "2011",
+        "genre": "Action, Adventure, Homebrew",
+        "developer": "Spicy Horse, Electronic Arts",
+        "publisher": "adumah",
+        "image_format": "NRO",
+        "interface_lang": "Русский (официальный перевод от «1C-СофтКлаб») [RUS]",
+        "voice_lang": "русская, любительская от ElikaStudio",
+        "performance": "Да (на 22.5.0, Atmosphere 1.11.2)",
+        "multiplayer": "нет",
+        "cover": "https://i4.imageban.ru/out/2026/11/07/b1d26637521e28d8e7e7442dc2156960.png",
+        "screenshots": [
+            "https://i129.fastpic.org/thumb/2026/1107/a1/841cd9717066444dbec0d9d1081a1ca1.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1107/d9/05ac34211255d36a618d9757319318d9.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1107/66/4ddaa2dab2480703d99d1543d8495066.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1107/37/f9bc0bb3b197216282a0b7ac9e8b9c37.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1107/67/ef466e87515d13ec1224f760ddfd9f67.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1107/b6/8e247e53fb2cff806eba30225731cbb6.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1107/51/6ab78ef5f4d2b20f1f259700da66fa51.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1107/8a/dec4e2e81f36e36ab1635ac16ff0248a.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1107/0e/834589e1d8be4bcb8582dd1ba888320e.jpeg"
+        ],
+        "description": "«Мало кто находит выход: некоторые не видят его, даже если найдут, а многие — даже не ищут.» ©\nДействие разворачивается во второй половине XIX века. В 1863 году в доме маленькой девочки Алисы Лидделл и её семьи случился пожар. Родители и старшая сестра Элизабет сгорели, сама Алиса выжила, получив при этом эмоциональную травму, и, по версии врачей, заболела кататонией. В гибели родителей Алиса считала виновной себя.\nДевочка была отправлена в психиатрическую лечебницу Ратледж, где провела около десяти лет. В течение этого времени Алиса сумела мысленно проникнуть в Страну чудес и разобраться в себе, уничтожив Червонную Королеву.\nСобытия происходят в 1875 году, почти сразу после концовки первой. Придя в стабильное состояние, но всё ещё находясь в депрессии, Алиса выписалась из лечебницы (получив вместе с тем небольшое наследство) и поступила в приют для душевно травмированных сирот Хаундсдитч в Лондоне на попечение психиатра — доктора Ангуса Бамби. Хотя Алиса живёт нормальной жизнью, она продолжает испытывать кошмарные галлюцинации. Алиса хочет узнать причину пожара и гибели своих родителей, соединив свои воспоминания в целостную картину...",
+        "title_id": "01006EF5FC842000",
+        "version": "0.2"
+    },
+    {
         "title": "Haunted Paws (демонстрационная версия) [NSZ][DEMO][RUS/Multi12]",
         "size": "1.01 GB",
         "magnet": "magnet:?xt=urn:btih:91067FDD49641F86DA091877FF9A3060749F4BDA&tr=http%3A%2F%2Fbt4.t-ru.org%2Fann%3Fmagnet",
@@ -69,7 +100,7 @@
         "version": "1.0.1b"
     },
     {
-        "title": "Коллекция Carafe/Wine-NX/Box64/Autorun-эмуляторов ПК игр для консоли Nintendo Switch [NRO][RUS]",
+        "title": "Коллекция Carafe/Wine-NX/Box64/FEX/Autorun-эмуляторов ПК игр для консоли Nintendo Switch [NRO][RUS]",
         "size": "83.95 GB",
         "magnet": "magnet:?xt=urn:btih:24D706E4D0D43495C598B39B7587F1ACD8D73605&tr=http%3A%2F%2Fbt2.t-ru.org%2Fann%3Fmagnet",
         "topic_id": "6933547",
@@ -1827,8 +1858,8 @@
     },
     {
         "title": "Lost Odyssey (порт) [NRO][RUS (Mod.)/ENG]",
-        "size": "23.47 GB",
-        "magnet": "magnet:?xt=urn:btih:7C48371BB52DA9F0E6A919DD9D926D37A85E9F53&tr=http%3A%2F%2Fbt3.t-ru.org%2Fann%3Fmagnet",
+        "size": "23.9 GB",
+        "magnet": "magnet:?xt=urn:btih:1213DD62F2A94430A292E30C40F86BB856ECAACA&tr=http%3A%2F%2Fbt3.t-ru.org%2Fann%3Fmagnet",
         "topic_id": "6924019",
         "url": "https://rutracker.org/forum/viewtopic.php?t=6924019",
         "year": "2007",
