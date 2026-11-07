@@ -1,9 +1,10 @@
-=== 2026-11-07 17:01:53 ===
-Всего в базе: 7297
-Добавлено: 2
-  + Mortal Kombat 9 Komplete edition (порт) [NRO][ENG]
-  + Dead Space (хоумбрю) [NRO][RUS/Multi5]
-Обновлено: 7
+=== 2026-11-07 21:01:47 ===
+Всего в базе: 7298
+Добавлено: 1
+  + Mass Effect 2 (порт) [NRO][RUS/ENG]
+Обновлено: 9
+  ~ Mortal Kombat 9 Komplete edition (порт) [NRO][ENG]
+  ~ Dead Space (хоумбрю) [NRO][RUS/Multi5]
   ~ Gears of War 2 (порт) [NRO][RUS/Multi12]
   ~ Lost Odyssey (порт) [NRO][RUS (Mod.)/ENG]
   ~ Коллекция Carafe/Wine-NX/Box64/Autorun-эмуляторов ПК игр для консоли Nintendo Sw
@@ -11,7 +12,7 @@
   ~ Петька и Василий Иванович спасают галактику (порт Red Comrades Save the Galaxy)
   ~ Mega Man X Regenesis (хоумбрю) [NRO][ENG]
   ~ Prototype 2 (порт) [NRO][RUS/ENG]
-Статистика обновлена: 7322 раздач
+Статистика обновлена: 7323 раздач
   * Покрытие базы: 100.4%
-  * Активных сидов: 111410
-  * Всего загрузок: 7715471
+  * Активных сидов: 106792
+  * Всего загрузок: 7718312

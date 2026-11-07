@@ -1,5 +1,32 @@
 [
     {
+        "title": "Mass Effect 2 (порт) [NRO][RUS/ENG]",
+        "size": "13.42 GB",
+        "magnet": "magnet:?xt=urn:btih:01659A8B1B80CEBF6FA158C578922E6C004BD58E&tr=http%3A%2F%2Fbt4.t-ru.org%2Fann%3Fmagnet",
+        "topic_id": "6934554",
+        "url": "https://rutracker.org/forum/viewtopic.php?t=6934554",
+        "year": "2010",
+        "genre": "Action, RPG, 3rd Person, Homebrew",
+        "developer": "BioWare",
+        "publisher": "Unknown",
+        "image_format": "NRO",
+        "interface_lang": "Русский/Английский [RUS/ENG]",
+        "voice_lang": "Английская",
+        "performance": "Да (на 20.5.0, Atmosphere 1.11.2)",
+        "multiplayer": "Unknown",
+        "cover": "https://i121.fastpic.org/big/2022/1213/f9/ed53b0be7f6231f9a4c7e680827317f9.jpeg",
+        "screenshots": [
+            "https://i129.fastpic.org/thumb/2026/1107/69/631bf5201fc396db3a46ecbf11daed69.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1107/70/faa9cc6e3b15ad5e26d9f00bcb56fd70.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1107/78/9e92ac1d7eb044848b869f12dfe69678.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1107/e6/3dc9e3e66e8f478b255c11682a542de6.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1107/4b/5396572e9376ed618673c57d24ed874b.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1107/0c/ae9a99c8b4c4e5915ce6bcf47eb78b0c.jpeg"
+        ],
+        "description": "Через два года после того, как командор Шепард отразил вторжение Жнецов, у человечества появился новый враг. На окраинах обитаемого космоса кто-то постепенно уничтожает колонии людей. Чтобы остановить надвигающуюся угрозу, Шепарду предстоит сотрудничать с сетью Цербер - безжалостной организацией, провозглашающей выживание человечества любой ценой. Для выполнения этой ответственной миссии Шепард должен собрать очень сильную команду и принять командование самым мощным космическим кораблем в галактике. Но даже с такими ресурсами большинство считает его затею безнадежной. Командор Шепард должен доказать скептикам, что они ошибались.",
+        "title_id": null
+    },
+    {
         "title": "Dead Space (хоумбрю) [NRO][RUS/Multi5]",
         "size": "6.43 GB",
         "magnet": "magnet:?xt=urn:btih:7B08381EEBAD8CD614C6AB6EB61B8A3848ED172D&tr=http%3A%2F%2Fbt2.t-ru.org%2Fann%3Fmagnet",
