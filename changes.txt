@@ -1,15 +1,17 @@
-=== 2026-11-07 13:02:18 ===
-Всего в базе: 7295
-Добавлено: 1
-  + Alice Madness Returns (порт) [NRO][RUS]
-Обновлено: 6
+=== 2026-11-07 17:01:53 ===
+Всего в базе: 7297
+Добавлено: 2
+  + Mortal Kombat 9 Komplete edition (порт) [NRO][ENG]
+  + Dead Space (хоумбрю) [NRO][RUS/Multi5]
+Обновлено: 7
+  ~ Gears of War 2 (порт) [NRO][RUS/Multi12]
   ~ Lost Odyssey (порт) [NRO][RUS (Mod.)/ENG]
   ~ Коллекция Carafe/Wine-NX/Box64/Autorun-эмуляторов ПК игр для консоли Nintendo Sw
   ~ Mercenaries 2 World in Flames (порт) [NRO][RUS/ENG]
   ~ Петька и Василий Иванович спасают галактику (порт Red Comrades Save the Galaxy)
   ~ Mega Man X Regenesis (хоумбрю) [NRO][ENG]
   ~ Prototype 2 (порт) [NRO][RUS/ENG]
-Статистика обновлена: 7321 раздач
+Статистика обновлена: 7322 раздач
   * Покрытие базы: 100.4%
-  * Активных сидов: 101767
-  * Всего загрузок: 7713765
+  * Активных сидов: 111410
+  * Всего загрузок: 7715471
