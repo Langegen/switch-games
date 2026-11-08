@@ -1,18 +1,17 @@
-=== 2026-11-07 21:01:47 ===
+=== 2026-11-08 01:01:46 ===
 Всего в базе: 7298
-Добавлено: 1
-  + Mass Effect 2 (порт) [NRO][RUS/ENG]
-Обновлено: 9
+Обновлено: 10
+  ~ Коллекция Carafe/Wine-NX/Box64/FEX/Autorun-эмуляторов ПК игр для консоли Nintend
+  ~ Mass Effect 2 (порт) [NRO][RUS/ENG]
   ~ Mortal Kombat 9 Komplete edition (порт) [NRO][ENG]
   ~ Dead Space (хоумбрю) [NRO][RUS/Multi5]
   ~ Gears of War 2 (порт) [NRO][RUS/Multi12]
   ~ Lost Odyssey (порт) [NRO][RUS (Mod.)/ENG]
-  ~ Коллекция Carafe/Wine-NX/Box64/Autorun-эмуляторов ПК игр для консоли Nintendo Sw
   ~ Mercenaries 2 World in Flames (порт) [NRO][RUS/ENG]
   ~ Петька и Василий Иванович спасают галактику (порт Red Comrades Save the Galaxy)
   ~ Mega Man X Regenesis (хоумбрю) [NRO][ENG]
   ~ Prototype 2 (порт) [NRO][RUS/ENG]
 Статистика обновлена: 7323 раздач
-  * Покрытие базы: 100.4%
-  * Активных сидов: 106792
-  * Всего загрузок: 7718312
+  * Покрытие базы: 100.3%
+  * Активных сидов: 93473
+  * Всего загрузок: 7719402
