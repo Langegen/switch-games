@@ -1,8 +1,7 @@
-=== 2026-11-09 09:02:05 ===
+=== 2026-11-09 13:02:06 ===
 Всего в базе: 7300
-Добавлено: 1
-  + Tekken 3 Expanded Definitive edition (порт) [NRO][ENG]
-Обновлено: 10
+Обновлено: 11
+  ~ Tekken 3 Expanded Definitive edition (порт) [NRO][ENG]
   ~ Коллекция Carafe/Wine-NX/Box64/FEX/Autorun-эмуляторов ПК игр для консоли Nintend
   ~ Mass Effect 2 (порт) [NRO][RUS/ENG]
   ~ Mortal Kombat 9 Komplete edition (порт) [NRO][ENG]
@@ -15,5 +14,5 @@
   ~ Prototype 2 (порт) [NRO][RUS/ENG]
 Статистика обновлена: 7326 раздач
   * Покрытие базы: 100.4%
-  * Активных сидов: 85010
-  * Всего загрузок: 7727322
+  * Активных сидов: 98792
+  * Всего загрузок: 7729684
