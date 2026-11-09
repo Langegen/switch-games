@@ -1,6 +1,9 @@
-=== 2026-11-09 13:02:06 ===
-Всего в базе: 7300
-Обновлено: 11
+=== 2026-11-09 17:02:05 ===
+Всего в базе: 7301
+Добавлено: 1
+  + Shank 1-2 (хоумбрю) [NRO][ENG,RUS (Voice Mod.)]
+Обновлено: 12
+  ~ 180 отомэ: Code Realize, Collar X Malice, Nightshade, Bustafellows 1-2, Taisho x
   ~ Tekken 3 Expanded Definitive edition (порт) [NRO][ENG]
   ~ Коллекция Carafe/Wine-NX/Box64/FEX/Autorun-эмуляторов ПК игр для консоли Nintend
   ~ Mass Effect 2 (порт) [NRO][RUS/ENG]
@@ -12,7 +15,7 @@
   ~ Петька и Василий Иванович спасают галактику (порт Red Comrades Save the Galaxy)
   ~ Mega Man X Regenesis (хоумбрю) [NRO][ENG]
   ~ Prototype 2 (порт) [NRO][RUS/ENG]
-Статистика обновлена: 7326 раздач
+Статистика обновлена: 7327 раздач
   * Покрытие базы: 100.4%
-  * Активных сидов: 98792
-  * Всего загрузок: 7729684
+  * Активных сидов: 111031
+  * Всего загрузок: 7732001
