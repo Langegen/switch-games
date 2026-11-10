@@ -1,10 +1,11 @@
-=== 2026-11-10 17:02:42 ===
+=== 2026-11-10 21:02:11 ===
 Всего в базе: 7305
-Добавлено: 2
-  + Tanuki Pon's Summer [NSP][RUS/Multi13]
-  + Warhammer Survivors [NSP][RUS/Multi11]
-Обновлено: 15
+Обновлено: 18
+  ~ Marvel Cosmic Invasion + 2 DLC [NSZ][RUS/Multi8]
+  ~ Steins Gate Re Boot (Reboot) [NSP][ENG]
+  ~ Dead Space (хоумбрю) [NRO][RUS/Multi5]
   ~ Kanon-NX (RenPy-порт 18+ Standard edition) [NSZ][ENG]
+  ~ Grizzy and the Lemmings – Crazy Party [NSP][RUS/Multi16]
   ~ Mortal Kombat 9 Komplete edition (порт) [NRO][RUS]
   ~ Prototype 2 (порт) [NRO][RUS/ENG]
   ~ Jak and Daxter the Precursor Legacy / Jak II (2) Renegade / Jak 3 (порт openGOAL
@@ -13,7 +14,6 @@
   ~ Tekken 3 Expanded Definitive edition (порт) [NRO][ENG]
   ~ Коллекция Carafe/Wine-NX/Box64/FEX/Autorun-эмуляторов ПК игр для консоли Nintend
   ~ Mass Effect 2 (порт) [NRO][RUS/ENG]
-  ~ Dead Space (хоумбрю) [NRO][RUS/Multi5]
   ~ Gears of War 2 (порт) [NRO][RUS/Multi12]
   ~ Lost Odyssey (порт) [NRO][RUS (Mod.)/ENG]
   ~ Mercenaries 2 World in Flames (порт) [NRO][RUS/ENG]
@@ -21,5 +21,5 @@
   ~ Mega Man X Regenesis (хоумбрю) [NRO][ENG]
 Статистика обновлена: 7331 раздач
   * Покрытие базы: 100.4%
-  * Активных сидов: 111957
-  * Всего загрузок: 7742546
+  * Активных сидов: 107728
+  * Всего загрузок: 7743924
