@@ -1,5 +1,7 @@
-=== 2026-11-10 01:01:50 ===
-Всего в базе: 7301
+=== 2026-11-10 05:01:48 ===
+Всего в базе: 7302
+Добавлено: 1
+  + Grizzy and the Lemmings – Crazy Party [NSP][RUS/Multi16]
 Обновлено: 14
   ~ Prototype 2 (порт) [NRO][RUS/ENG]
   ~ Jak and Daxter the Precursor Legacy / Jak II (2) Renegade / Jak 3 (порт openGOAL
@@ -15,7 +17,7 @@
   ~ Mercenaries 2 World in Flames (порт) [NRO][RUS/ENG]
   ~ Петька и Василий Иванович спасают галактику (порт Red Comrades Save the Galaxy)
   ~ Mega Man X Regenesis (хоумбрю) [NRO][ENG]
-Статистика обновлена: 7327 раздач
+Статистика обновлена: 7328 раздач
   * Покрытие базы: 100.4%
-  * Активных сидов: 92586
-  * Всего загрузок: 7736304
+  * Активных сидов: 80962
+  * Всего загрузок: 7736863
