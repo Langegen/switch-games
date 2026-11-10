@@ -1,8 +1,9 @@
-=== 2026-11-10 05:01:48 ===
-Всего в базе: 7302
+=== 2026-11-10 09:02:24 ===
+Всего в базе: 7303
 Добавлено: 1
-  + Grizzy and the Lemmings – Crazy Party [NSP][RUS/Multi16]
+  + Fight Crab [NSP][ENG]
 Обновлено: 14
+  ~ Mortal Kombat 9 Komplete edition (порт) [NRO][RUS]
   ~ Prototype 2 (порт) [NRO][RUS/ENG]
   ~ Jak and Daxter the Precursor Legacy / Jak II (2) Renegade / Jak 3 (порт openGOAL
   ~ Shank 1-2 (хоумбрю) [NRO][ENG,RUS (Voice Mod.)]
@@ -10,14 +11,13 @@
   ~ Tekken 3 Expanded Definitive edition (порт) [NRO][ENG]
   ~ Коллекция Carafe/Wine-NX/Box64/FEX/Autorun-эмуляторов ПК игр для консоли Nintend
   ~ Mass Effect 2 (порт) [NRO][RUS/ENG]
-  ~ Mortal Kombat 9 Komplete edition (порт) [NRO][ENG]
   ~ Dead Space (хоумбрю) [NRO][RUS/Multi5]
   ~ Gears of War 2 (порт) [NRO][RUS/Multi12]
   ~ Lost Odyssey (порт) [NRO][RUS (Mod.)/ENG]
   ~ Mercenaries 2 World in Flames (порт) [NRO][RUS/ENG]
   ~ Петька и Василий Иванович спасают галактику (порт Red Comrades Save the Galaxy)
   ~ Mega Man X Regenesis (хоумбрю) [NRO][ENG]
-Статистика обновлена: 7328 раздач
+Статистика обновлена: 7329 раздач
   * Покрытие базы: 100.4%
-  * Активных сидов: 80962
-  * Всего загрузок: 7736863
+  * Активных сидов: 84713
+  * Всего загрузок: 7738307
