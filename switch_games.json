@@ -1,19 +1,95 @@
 [
     {
+        "title": "Warhammer Survivors [NSP][RUS/Multi11]",
+        "size": "904.4 MB",
+        "magnet": "magnet:?xt=urn:btih:0A7934AE536B4D61AF12449A1AEF08E68ABF4459&tr=http%3A%2F%2Fbt.t-ru.org%2Fann%3Fmagnet",
+        "topic_id": "6935983",
+        "url": "https://rutracker.org/forum/viewtopic.php?t=6935983",
+        "year": "2026, ноябрь",
+        "genre": "Action, Arcade",
+        "developer": "Auroch Digital",
+        "publisher": "Auroch Digital",
+        "image_format": "NSP",
+        "interface_lang": "Русский, Английский [RUS / ENG / Multi 11]",
+        "voice_lang": "не озвучивается",
+        "performance": "Да (на 23.0.1, Atmosphere 1.12.1)",
+        "multiplayer": "нет",
+        "cover": "https://i5.imageban.ru/out/2026/11/10/2fb5c7a7fcd4e5efe452315d986a182f.png",
+        "screenshots": [
+            "https://i129.fastpic.org/thumb/2026/1110/10/5f77daa4c6754263c89375ce55fe9a10.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1110/07/b898879f4261b2c03222ea73bbaa3607.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1110/d1/a3a4999e9b6925538f933d4f94fae5d1.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1110/98/92d4221e8b880eca6ca2218936bb3f98.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1110/4e/e7a16fb451ab51cd57e25accbd3c8a4e.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1110/fa/beec17c9adcbffb3191a25259cfad0fa.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1110/34/aa34030dfea2048af2735e93de393134.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1110/47/b60d037bd6aa9f8aeec3440300c0c547.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1110/82/0334f5222c87d0786652b2adf1c2dc82.jpeg"
+        ],
+        "description": "Очередной клон Vampire Survivors!\nЗахватывающая механика игр на выживание в стиле bullet heaven приходит в 41-е тысячелетие и Смертные царства в партнерстве с Warhammer и poncle (VS).\nВас ждут эпические воители Warhammer, враги, оружие и многое другое в тщательно прорисованном анимационном пиксельном стиле.\n– Яростная игра на выживание в мрачном и темном стиле.\n\n– Более 40 культовых персонажей из вселенных Warhammer 40,000 и Warhammer: Age of Sigmar, в том числе сам Малум Каэдо из Warhammer 40,000: Boltgun!\n\n– Множество режимов и этапов в мрачном и темном 41-м тысячелетии и Смертных царствах.\n\n- Арсенал из более 75 видов оружия, среди которого есть болтер, цепной меч Астартес, топоры смерча, а также пасхалки, например, баночка краски Nuln Oil.\n\n– Сразитесь с самыми могущественными монстрами из двух вселенных, среди которых и отвратительно раздувшийся Великий Нечистый. Экстремальные боссы станут крепким орешком даже для ветеранов игр на выживание!\n\n– Мощный набор пассивных способностей и усилителей, которые помогут выдержать натиск полчища врагов.\n\n– Мистические тайны, ждущие своей разгадки, и коллекционные предметы, которые предстоит найти!\n\n– ...и это еще не всё! Выберите свою вселенную и станьте легендой Империи или воителем Ордена в ходе яростных сражений на выжженных равнинах Акши и в узких и тесных коридорах разбитого звездолета. Каждый этап представляет собой новую арену жестокой мясорубки — со своими врагами... и тайнами, которые предстоит раскрыть.",
+        "title_id": "0100CAA026246000",
+        "titles": [
+            {
+                "id": "0100CAA026246000",
+                "update_version": 131072
+            }
+        ],
+        "update_version": 131072,
+        "version": "2.1.2"
+    },
+    {
+        "title": "Tanuki Pon's Summer [NSP][RUS/Multi13]",
+        "size": "1.21 GB",
+        "magnet": "magnet:?xt=urn:btih:0B2153ABF2406C9D8DF17779F71DF2239F39D7F4&tr=http%3A%2F%2Fbt2.t-ru.org%2Fann%3Fmagnet",
+        "topic_id": "6935971",
+        "url": "https://rutracker.org/forum/viewtopic.php?t=6935971",
+        "year": "2026, ноябрь",
+        "genre": "Adventure, Simulator",
+        "developer": "Denkiworks (Таку Ариока, Ян де Грааф, Лиам Эдвардс)",
+        "publisher": "Critical Reflex",
+        "image_format": "NSP",
+        "interface_lang": "Русский, Английский [RUS / ENG / Multi 13]",
+        "voice_lang": "не озвучивается",
+        "performance": "Да (на 23.0.1, Atmosphere 1.12.1)",
+        "multiplayer": "нет",
+        "cover": "https://i4.imageban.ru/out/2026/11/10/1543ace3ef2b197f0f901c05380f0215.png",
+        "screenshots": [
+            "https://i129.fastpic.org/thumb/2026/1110/63/d005858647bb7f3659d5d4158451b763.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1110/8d/135a7fd35b35320ad12b219bf3f5d78d.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1110/f4/659feddfb727b0d74998946ab278abf4.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1110/fd/1346b42f855452c16bd724531c6de7fd.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1110/88/8a5995c6aa11717df5c42f5258634788.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1110/77/ad585f9cc9be6e3f213875d4a9a97d77.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1110/52/f9d86ab3624db25d424bad22e8e12852.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1110/d4/1e5fd472d8096921805b19aeffe60bd4.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1110/99/ef9d98ed75beedd4e628301a977d7799.jpeg"
+        ],
+        "description": "До праздника тануки остался месяц, а храм к нему совсем не готов. Добрый, но чуточку ленивый тануки по имени Пон берётся за подработку на почте, чтобы до конца лета успеть привести всё в порядок. Развозите посылки, заводите друзей и подготовьте храм к празднику!\nВы — маленький тануки по имени Пон. Хотите целый месяц разъезжать на велике по залитому солнцем японскому острову? Лето будет весьма насыщенным: вы поработаете почтальоном, продемонстрируете всем свои таланты, подготовитесь к пышному празднику и обзаведетесь новыми знакомыми, с которыми не захочется расставаться.\n\n\n\nУ знакомства с местными жителями масса преимуществ — вас пригласят готовить суши, играть в бейсбол, упражняться в сумо и участвовать во многих других затеях, каждая из которых принесет новый заработок для обустройства храма и возможность подружиться с соседями.\n\n\n\nЗапрыгивайте на BMX и вперед — развозить почту непохожим друг на друга местным жителям. Однако скоро вы будете знать их предпочтения (а также все тропинки на острове) как свои пять пальцев, так что не задерживайтесь! Планируйте маршрут и укладывайте коробки в велосипедную корзинку поудобнее.\n\n\n\nЗаработанное можно потратить на украшения и сооружения для чудесного храма, ведь грядет Великий праздник тануки! Обустройте территорию со вкусом — Пон хочет не только проделывать BMX-трюки, но и подготовить потрясающий сюрприз для тех, с кем он так сблизился за лето.\n\n\n\nBMX — не только средство передвижения почтальона. Исследуя крыши домов и закоулки острова, можно разъезжать по перилам, скакать по рампам, собирать крутые комбинации трюков и пройти более сотни испытаний! И никто не запретит вам лопаться от гордости.\n\n\n\nА как вам головные уборы для Пона по мотивам Hollow Knight: Silksong, PEAK и Shovel Knight? Аксессуары из ваших любимых игр отлично подойдут как почтальону, так и заправскому мастеру BMX.",
+        "title_id": "0100AC602974E000",
+        "titles": [
+            {
+                "id": "0100AC602974E000",
+                "update_version": 131072
+            }
+        ],
+        "update_version": 131072,
+        "version": "1.0.28494.20.12"
+    },
+    {
         "title": "Fight Crab [NSP][ENG]",
         "size": "748.6 MB",
         "magnet": "magnet:?xt=urn:btih:DD7F697C273E3406C463029B1547211A14A04725&tr=http%3A%2F%2Fbt4.t-ru.org%2Fann%3Fmagnet",
         "topic_id": "6935751",
         "url": "https://rutracker.org/forum/viewtopic.php?t=6935751",
         "year": "2020",
-        "genre": "Fighting",
+        "genre": "Action, Fighting",
         "developer": "Calappa Games",
         "publisher": "Unknown",
         "image_format": "NSP",
         "interface_lang": "Английский [ENG]",
-        "voice_lang": "Английская",
+        "voice_lang": "английская",
         "performance": "Да (на 23.0.1, Atmosphere 1.12.0)",
-        "multiplayer": "2х",
+        "multiplayer": "до 2 игроков",
         "cover": "https://i2.imageban.ru/out/2026/11/10/e03a041514f4f87b7d663cb380e2c5ce.png",
         "screenshots": [
             "https://i129.fastpic.org/thumb/2026/1110/a5/b9e5365b92ebc65549e96d0372c476a5.jpeg",
@@ -33,20 +109,20 @@
         "version": "1.2.3"
     },
     {
-        "title": "Grizzy and the Lemmings – Crazy Party [NSP][RUS/Multi16]",
+        "title": "Grizzy and the Lemmings Crazy Party [NSP][RUS/Multi16]",
         "size": "1.73 GB",
         "magnet": "magnet:?xt=urn:btih:AA5E82ADB0CEFE52B46DA293D84AD70F919A0F50&tr=http%3A%2F%2Fbt.t-ru.org%2Fann%3Fmagnet",
         "topic_id": "6935743",
         "url": "https://rutracker.org/forum/viewtopic.php?t=6935743",
         "year": "2026",
-        "genre": "Action,Party",
+        "genre": "Arcade, Party",
         "developer": "Balio Studio SRL",
         "publisher": "Unknown",
         "image_format": "NSP",
         "interface_lang": "Русский, Английский [RUS / ENG / Multi 15]",
-        "voice_lang": "Английская",
+        "voice_lang": "английская",
         "performance": "Да (на 23.0.1, Atmosphere 1.12.0)",
-        "multiplayer": "4х",
+        "multiplayer": "до 4 игроков",
         "cover": "https://i5.imageban.ru/out/2026/11/10/f6de07ebadeeed9d2f6cff4142886066.png",
         "screenshots": [
             "https://i129.fastpic.org/thumb/2026/1110/b1/06076b19eea43f22b131c758563fb4b1.jpeg",
@@ -129770,8 +129846,8 @@
     },
     {
         "title": "Kanon-NX (RenPy-порт 18+ Standard edition) [NSZ][ENG]",
-        "size": "553.7 MB",
-        "magnet": "magnet:?xt=urn:btih:12415C85BB810581961C2AED15B410CB3FE2709D&tr=http%3A%2F%2Fbt4.t-ru.org%2Fann%3Fmagnet",
+        "size": "557.3 MB",
+        "magnet": "magnet:?xt=urn:btih:EC3278C0CD1880A39C9285D20135D1FD3A75568A&tr=http%3A%2F%2Fbt4.t-ru.org%2Fann%3Fmagnet",
         "topic_id": "6756121",
         "url": "https://rutracker.org/forum/viewtopic.php?t=6756121",
         "year": "1999",
@@ -129794,7 +129870,7 @@
         ],
         "description": "Kanon (яп. カノン Канон) — японский визуальный роман, разработанный компанией Key и впервые выпущенный для ПК 4-го июня 1999 года VisualArts. Позже были выпущены версии игры, не содержавшие эротических сцен (тут содержатся), а также осуществлено портирование на другие платформы, например, на Dreamcast, PlayStation 2 и PlayStation Portable. «Kanon» стал первой игрой, выпущенной компанией Key. Визуальный роман стал одним из первых представителей особого поджанра подобных игр, получивших название «накигэ», на волне популярности которого компания Key продолжила выпуск аналогичной продукции.\n«Канон» посвящён нескольким девушкам, связанных прошлым с Юити Айдзавой, который спустя семь лет отсутствия возвращается в родной город. У него не сохранилось воспоминаний о том времени, когда он жил здесь.\nРодители далеко за границей, поэтому герой останавливается в доме своей тёти Акико Минасэ и двоюродной сестры, Наюки. Понемногу, день за днём, к Юити возвращается память о старых знакомых и о том, что произошло в его детстве..Официальная версия игры на Switch находится тут.",
         "title_id": null,
-        "version": "1.0"
+        "version": "10.11.2026"
     },
     {
         "title": "Upaon a Snake's Journey [NSZ][RUS/Multi7]",

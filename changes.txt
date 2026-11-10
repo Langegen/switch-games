@@ -1,6 +1,10 @@
-=== 2026-11-10 13:02:06 ===
-Всего в базе: 7303
-Обновлено: 14
+=== 2026-11-10 17:02:42 ===
+Всего в базе: 7305
+Добавлено: 2
+  + Tanuki Pon's Summer [NSP][RUS/Multi13]
+  + Warhammer Survivors [NSP][RUS/Multi11]
+Обновлено: 15
+  ~ Kanon-NX (RenPy-порт 18+ Standard edition) [NSZ][ENG]
   ~ Mortal Kombat 9 Komplete edition (порт) [NRO][RUS]
   ~ Prototype 2 (порт) [NRO][RUS/ENG]
   ~ Jak and Daxter the Precursor Legacy / Jak II (2) Renegade / Jak 3 (порт openGOAL
@@ -15,7 +19,7 @@
   ~ Mercenaries 2 World in Flames (порт) [NRO][RUS/ENG]
   ~ Петька и Василий Иванович спасают галактику (порт Red Comrades Save the Galaxy)
   ~ Mega Man X Regenesis (хоумбрю) [NRO][ENG]
-Статистика обновлена: 7329 раздач
+Статистика обновлена: 7331 раздач
   * Покрытие базы: 100.4%
-  * Активных сидов: 97834
-  * Всего загрузок: 7740103
+  * Активных сидов: 111957
+  * Всего загрузок: 7742546
