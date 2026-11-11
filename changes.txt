@@ -1,6 +1,7 @@
-=== 2026-11-11 05:01:58 ===
+=== 2026-11-11 09:01:56 ===
 Всего в базе: 7306
-Обновлено: 16
+Обновлено: 17
+  ~ Rooftops and Alleys the Parkour Game + 4 DLC [NSZ][RUS/Multi8]
   ~ Dead Space (хоумбрю) [NRO][RUS/Multi5]
   ~ Kanon-NX (RenPy-порт 18+ Standard edition) [NSZ][ENG]
   ~ Grizzy and the Lemmings – Crazy Party [NSP][RUS/Multi16]
@@ -19,5 +20,5 @@
   ~ Mega Man X Regenesis (хоумбрю) [NRO][ENG]
 Статистика обновлена: 7332 раздач
   * Покрытие базы: 100.4%
-  * Активных сидов: 80188
-  * Всего загрузок: 7746547
+  * Активных сидов: 83291
+  * Всего загрузок: 7747966

@@ -87922,19 +87922,19 @@
         ]
     },
     {
-        "title": "Rooftops and Alleys the Parkour Game + 2 DLC [NSZ][RUS/Multi8]",
-        "size": "1.06 GB",
-        "magnet": "magnet:?xt=urn:btih:1514C2938DC2CC3BB66C0237C4E81724E7CAE1A9&tr=http%3A%2F%2Fbt.t-ru.org%2Fann%3Fmagnet",
+        "title": "Rooftops and Alleys the Parkour Game + 4 DLC [NSZ][RUS/Multi8]",
+        "size": "1.13 GB",
+        "magnet": "magnet:?xt=urn:btih:8C5F2DF15578A026DDDE80F500AC8EB5E8F814F9&tr=http%3A%2F%2Fbt.t-ru.org%2Fann%3Fmagnet",
         "topic_id": "6706372",
         "url": "https://rutracker.org/forum/viewtopic.php?t=6706372",
         "year": "2025, июнь",
         "genre": "Simulator, Sport",
         "developer": "Shine Research, Shine Group, Radical Theory",
         "publisher": "MLMedia, Michel Losch Media",
-        "image_format": ".NSZ (сжато ~18%, установленный объём 1.28 ГБ)",
+        "image_format": ".NSZ (сжато ~18%, установленный объём 1.35 ГБ)",
         "interface_lang": "Русский, Английский [RUS / ENG / Multi 8]",
         "voice_lang": "не озвучивается",
-        "performance": "Да (на 19.0.1, Atmosphere 1.9.1)",
+        "performance": "Да (на 23.0.1, Atmosphere 1.12.1)",
         "multiplayer": "до 4 игроков",
         "cover": "https://i2.imageban.ru/out/2025/06/13/cbdef5045f589c3c65c953eacf9a2bf4.png",
         "screenshots": [
@@ -87950,12 +87950,12 @@
         ],
         "description": "Больше, чем просто паркур или фриран!... Это настоящий источник адреналина: комбо, полеты наперекор гравитации и ощущение свободы… до тех пор, пока вы не падаете с высоты 30 метров.\nВ одиночку или с друзьями исследуйте масштабные карты, созданные специально для паркура. Доберитесь до труднодоступных мест, находите скрытые участки и проходите испытания — на время, трюковые задачи или другое.\nВас ждут такие форматы, как: «Метки», «Захват флага», «Битвы трюков», а также свободное перемещение по открытому миру в компании друзей.",
         "title_id": "0100FC20214B2000",
-        "update_version": 655360,
-        "version": "1.10",
+        "update_version": 720896,
+        "version": "1.11",
         "titles": [
             {
                 "id": "0100FC20214B2000",
-                "update_version": 655360
+                "update_version": 720896
             }
         ]
     },
