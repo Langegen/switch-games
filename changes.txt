@@ -1,7 +1,8 @@
-=== 2026-11-11 09:01:56 ===
-Всего в базе: 7306
-Обновлено: 17
-  ~ Rooftops and Alleys the Parkour Game + 4 DLC [NSZ][RUS/Multi8]
+=== 2026-11-11 13:02:22 ===
+Всего в базе: 7307
+Добавлено: 1
+  + Tom the Postgirl (демонстрационная версия) [NSP][DEMO][RUS/Multi12]
+Обновлено: 16
   ~ Dead Space (хоумбрю) [NRO][RUS/Multi5]
   ~ Kanon-NX (RenPy-порт 18+ Standard edition) [NSZ][ENG]
   ~ Grizzy and the Lemmings – Crazy Party [NSP][RUS/Multi16]
@@ -18,7 +19,7 @@
   ~ Mercenaries 2 World in Flames (порт) [NRO][RUS/ENG]
   ~ Петька и Василий Иванович спасают галактику (порт Red Comrades Save the Galaxy)
   ~ Mega Man X Regenesis (хоумбрю) [NRO][ENG]
-Статистика обновлена: 7332 раздач
+Статистика обновлена: 7333 раздач
   * Покрытие базы: 100.4%
-  * Активных сидов: 83291
-  * Всего загрузок: 7747966
+  * Активных сидов: 97204
+  * Всего загрузок: 7749876
