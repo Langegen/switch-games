@@ -1,8 +1,8 @@
-=== 2026-11-10 21:02:11 ===
-Всего в базе: 7305
-Обновлено: 18
-  ~ Marvel Cosmic Invasion + 2 DLC [NSZ][RUS/Multi8]
-  ~ Steins Gate Re Boot (Reboot) [NSP][ENG]
+=== 2026-11-11 01:01:49 ===
+Всего в базе: 7306
+Добавлено: 1
+  + Shrek 2 Remastered [NSZ][RUS/Multi7]
+Обновлено: 16
   ~ Dead Space (хоумбрю) [NRO][RUS/Multi5]
   ~ Kanon-NX (RenPy-порт 18+ Standard edition) [NSZ][ENG]
   ~ Grizzy and the Lemmings – Crazy Party [NSP][RUS/Multi16]
@@ -19,7 +19,7 @@
   ~ Mercenaries 2 World in Flames (порт) [NRO][RUS/ENG]
   ~ Петька и Василий Иванович спасают галактику (порт Red Comrades Save the Galaxy)
   ~ Mega Man X Regenesis (хоумбрю) [NRO][ENG]
-Статистика обновлена: 7331 раздач
+Статистика обновлена: 7332 раздач
   * Покрытие базы: 100.4%
-  * Активных сидов: 107728
-  * Всего загрузок: 7743924
+  * Активных сидов: 93460
+  * Всего загрузок: 7745785

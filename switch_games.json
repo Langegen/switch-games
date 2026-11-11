@@ -1,5 +1,43 @@
 [
     {
+        "title": "Shrek 2 Remastered [NSZ][RUS/Multi7]",
+        "size": "2.59 GB",
+        "magnet": "magnet:?xt=urn:btih:D23C479164E9DE501A930817068203A2761EF82E&tr=http%3A%2F%2Fbt.t-ru.org%2Fann%3Fmagnet",
+        "topic_id": "6936157",
+        "url": "https://rutracker.org/forum/viewtopic.php?t=6936157",
+        "year": "2026, ноябрь",
+        "genre": "Beatemup, Adventure, Party",
+        "developer": "Luxoflux, Aspyr",
+        "publisher": "Aspyr Media",
+        "image_format": ".NSZ (сжато ~55%, установленный объём 5.70 ГБ)",
+        "interface_lang": "Русский, Английский [RUS / ENG / Multi 7]",
+        "voice_lang": "английская",
+        "performance": "Да (на 23.0.1, Atmosphere 1.12.1)",
+        "multiplayer": "до 4 игроков",
+        "cover": "https://i4.imageban.ru/out/2026/11/11/6fc9d23ab072a6eb3c73b4995d50ec2e.png",
+        "screenshots": [
+            "https://i129.fastpic.org/thumb/2026/1111/74/d1196c841423a1e07f8f278104524a74.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1111/60/d484b44f0a7c49a30f061627ed665260.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1111/4d/6a3fe31eed96e3707f5847102d32e54d.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1111/2d/4ffa950443eadab18993a570d03b432d.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1111/4b/2b766665e9fbfd20605629af1bf6ce4b.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1111/12/fefed3acde0c599e93700349e5376f12.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1111/b6/5ea6a65057433bf995ca9d4e5705f0b6.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1111/83/94d4a4e99fb421ea56cb59348a3dbc83.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1111/08/5873699e4455b7cfdda47d1837d95b08.jpeg"
+        ],
+        "description": "В классическом приключенческом битемапе по мотивам мультфильма студии DreamWorks Animation вас ждет путешествие по сказочному Тридевятому королевству — от болота Шрека до замка Фионы. Играйте в одиночку или с друзьями, выбирайте любимых героев из вселенной Шрека, и вперёд!\n\n\n\nИммерсивные уровни прямиком из сказки: пройдите путь от болота Шрека до замка в Тридевятом королевстве, наслаждаясь легендарными сценами с любимыми персонажами из мультфильма и скрытыми пасхалками.\n\n\n\nМеняйте героев, когда пожелаете: выбирайте героев под ситуацию — для битв с врагами, сражений с боссами или решения головоломок, используйте их способности и продвигайтесь по сюжету.\n\n\n\nНовые функции: создавайте неподвластные времени кадры в новом фоторежиме и открывайте внутриигровые читы.\n\n\n\nУлучшенная графика: игра была полностью переработана. Текстуры стали четче, интерфейс — удобнее, а анимации и кат-сцены теперь воспроизводятся в качестве 1080p.\n\n\n\nКооператив до 4 игроков: на одном экране, по сети или в смешанном режиме. Душевное командное приключение с элементами экшена — играйте в одиночку или в команде до четырех человек. Поддерживаются форматы на одном экране, по сети или в смешанном режиме.\n\n\n\nИграйте как в старые добрые времена — весело и без лишних сложностей!..",
+        "title_id": "01000750246F0000",
+        "titles": [
+            {
+                "id": "01000750246F0000",
+                "update_version": 65536
+            }
+        ],
+        "update_version": 65536,
+        "version": "1.0.4"
+    },
+    {
         "title": "Warhammer Survivors [NSP][RUS/Multi11]",
         "size": "904.4 MB",
         "magnet": "magnet:?xt=urn:btih:0A7934AE536B4D61AF12449A1AEF08E68ABF4459&tr=http%3A%2F%2Fbt.t-ru.org%2Fann%3Fmagnet",
