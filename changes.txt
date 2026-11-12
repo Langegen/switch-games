@@ -1,15 +1,19 @@
-=== 2026-11-12 10:15:38 ===
-Всего в базе: 7308
-Добавлено: 2
-  + Dishonored (порт) [NRO][ENG]
-  + Lou’s Lagoon [NSP][RUS/Multi11]
-Обновлено: 22
-  ~ Sid Meier's Civilization VII (7) + 42 DLC [NSZ][RUS/Multi12]
-  ~ Herdling [NSZ][RUS/Multi10]
-  ~ Nordic Ashes the Complete Saga: Survivors of Ragnarok, Remnants of Corruption, D
-  ~ Choppa Rescue Rivals [NSZ][ENG]
-  ~ Culdcept Begins [NSP][ENG]
-  ~ Akiba Lost [NSP][ENG]
+=== 2026-11-12 13:03:05 ===
+Всего в базе: 7313
+Добавлено: 5
+  + Fear and Hunger 2 Termina (хоумбрю) [NRO][RUS/ENG]
+  + American McGee's Alice (порт Looking Glass) [NRO][RUS/ENG]
+  + Super Bunny Man [NSZ][RUS/Multi10]
+  + The Coffin of Andy and Leyley (хоумбрю) [NRO][RUS/ENG]
+  + Mercenaries 2 World in Flames (порт) [NRO][RUS/ENG]
+Обновлено: 21
+  ~ No Man's Sky + 23 экспедиции [NSP][RUS/Multi11]
+  ~ Diablo II (2): Resurrected Infernal edition + DLC Reign of the Warlock [NSP][RUS
+  ~ Echoes of the Plum Grove [NSZ][RUS (Mod.)/ENG]
+  ~ Astrea Six Sided Oracles [NSZ][RUS/Multi8]
+  ~ Godzilla Destroy All Monsters Melee Remastered + DLC [NSP][ENG]
+  ~ Chained Beasts [NSZ][RUS/Multi12]
+  ~ Dishonored (порт) [NRO][ENG]
   ~ Dead Space 3 (хоумбрю) [NRO][RUS]
   ~ Коллекция Carafe/Wine-NX/Box64/FEX/Autorun-эмуляторов ПК игр для консоли Nintend
   ~ Dead Space (хоумбрю) [NRO][RUS/Multi5]
@@ -24,9 +28,7 @@
   ~ Mass Effect 2 (порт) [NRO][RUS/ENG]
   ~ Gears of War 2 (порт) [NRO][RUS/Multi12]
   ~ Lost Odyssey (порт) [NRO][RUS (Mod.)/ENG]
-  ~ Петька и Василий Иванович спасают галактику (порт Red Comrades Save the Galaxy)
-  ~ Mega Man X Regenesis (хоумбрю) [NRO][ENG]
-Статистика обновлена: 7337 раздач
+Статистика обновлена: 7339 раздач
   * Покрытие базы: 100.4%
-  * Активных сидов: 85447
-  * Всего загрузок: 7751928
+  * Активных сидов: 95605
+  * Всего загрузок: 7752916
