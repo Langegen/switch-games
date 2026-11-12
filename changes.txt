@@ -1,6 +1,9 @@
-=== 2026-11-11 21:01:51 ===
-Всего в базе: 7307
+=== 2026-11-12 01:01:50 ===
+Всего в базе: 7308
+Добавлено: 1
+  + Dead Space 3 (хоумбрю) [NRO][RUS]
 Обновлено: 16
+  ~ Коллекция Carafe/Wine-NX/Box64/FEX/Autorun-эмуляторов ПК игр для консоли Nintend
   ~ Dead Space (хоумбрю) [NRO][RUS/Multi5]
   ~ Kanon-NX (RenPy-порт 18+ Standard edition) [NSZ][ENG]
   ~ Grizzy and the Lemmings – Crazy Party [NSP][RUS/Multi16]
@@ -10,14 +13,13 @@
   ~ Shank 1-2 (хоумбрю) [NRO][ENG,RUS (Voice Mod.)]
   ~ 180 отомэ: Code Realize, Collar X Malice, Nightshade, Bustafellows 1-2, Taisho x
   ~ Tekken 3 Expanded Definitive edition (порт) [NRO][ENG]
-  ~ Коллекция Carafe/Wine-NX/Box64/FEX/Autorun-эмуляторов ПК игр для консоли Nintend
   ~ Mass Effect 2 (порт) [NRO][RUS/ENG]
   ~ Gears of War 2 (порт) [NRO][RUS/Multi12]
   ~ Lost Odyssey (порт) [NRO][RUS (Mod.)/ENG]
   ~ Mercenaries 2 World in Flames (порт) [NRO][RUS/ENG]
   ~ Петька и Василий Иванович спасают галактику (порт Red Comrades Save the Galaxy)
   ~ Mega Man X Regenesis (хоумбрю) [NRO][ENG]
-Статистика обновлена: 7334 раздач
+Статистика обновлена: 7335 раздач
   * Покрытие базы: 100.4%
-  * Активных сидов: 104685
-  * Всего загрузок: 7754501
+  * Активных сидов: 90216
+  * Всего загрузок: 7756033
