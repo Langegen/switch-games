@@ -1,8 +1,8 @@
-=== 2026-11-12 01:01:50 ===
+=== 2026-11-12 05:01:50 ===
 Всего в базе: 7308
-Добавлено: 1
-  + Dead Space 3 (хоумбрю) [NRO][RUS]
-Обновлено: 16
+Обновлено: 19
+  ~ Cyanotype Daydream - The Girl Who's Called the World (Hakuchuumu no Aojashin / 白
+  ~ Dead Space 3 (хоумбрю) [NRO][RUS]
   ~ Коллекция Carafe/Wine-NX/Box64/FEX/Autorun-эмуляторов ПК игр для консоли Nintend
   ~ Dead Space (хоумбрю) [NRO][RUS/Multi5]
   ~ Kanon-NX (RenPy-порт 18+ Standard edition) [NSZ][ENG]
@@ -19,7 +19,8 @@
   ~ Mercenaries 2 World in Flames (порт) [NRO][RUS/ENG]
   ~ Петька и Василий Иванович спасают галактику (порт Red Comrades Save the Galaxy)
   ~ Mega Man X Regenesis (хоумбрю) [NRO][ENG]
+  ~ Minecraft [NSP][RUS/Multi11]
 Статистика обновлена: 7335 раздач
   * Покрытие базы: 100.4%
-  * Активных сидов: 90216
-  * Всего загрузок: 7756033
+  * Активных сидов: 79615
+  * Всего загрузок: 7755294
