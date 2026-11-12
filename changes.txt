@@ -1,9 +1,11 @@
-=== 2026-11-12 17:02:48 ===
+=== 2026-11-12 21:02:29 ===
 Всего в базе: 7314
-Добавлено: 1
-  + The Witcher 2 Assassins of Kings (порт Ведьмак 2: Убийцы королей) [NRO][RUS/POL]
-Обновлено: 17
-  ~ Labyrinth of the Demon King [NSP][RUS/Multi11]
+Обновлено: 18
+  ~ Qliphah in Providence's Shadow + 2 DLC [NSP][RUS (Mod.)/ENG]
+  ~ Wilmot's Warehouse / Wilmot Works It Out [NSZ][ENG]
+  ~ Metal Gear Solid: Master Collection Edition, Vol. 2 (MGS 4 Guns of the Patriots 
+  ~ Muse Dash + 2 DLC (и версия с 3 кодами разблокировки оффлайн) [NSP][ENG]
+  ~ The Witcher 2 Assassins of Kings (порт Ведьмак 2: Убийцы королей) [NRO][RUS/POL]
   ~ American McGee's Alice (порт Looking Glass) [NRO][RUS/ENG]
   ~ Dishonored (порт) [NRO][ENG]
   ~ Dead Space 3 (хоумбрю) [NRO][RUS]
@@ -17,10 +19,7 @@
   ~ Shank 1-2 (хоумбрю) [NRO][ENG,RUS (Voice Mod.)]
   ~ 180 отомэ: Code Realize, Collar X Malice, Nightshade, Bustafellows 1-2, Taisho x
   ~ Tekken 3 Expanded Definitive edition (порт) [NRO][ENG]
-  ~ Mass Effect 2 (порт) [NRO][RUS/ENG]
-  ~ Gears of War 2 (порт) [NRO][RUS/Multi12]
-  ~ Lost Odyssey (порт) [NRO][RUS (Mod.)/ENG]
 Статистика обновлена: 7341 раздач
   * Покрытие базы: 100.4%
-  * Активных сидов: 106712
-  * Всего загрузок: 7755356
+  * Активных сидов: 103709
+  * Всего загрузок: 7756838
