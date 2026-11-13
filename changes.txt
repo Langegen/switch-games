@@ -1,5 +1,7 @@
-=== 2026-11-13 17:02:19 ===
-Всего в базе: 7316
+=== 2026-11-13 21:02:09 ===
+Всего в базе: 7317
+Добавлено: 1
+  + Million Depth (демонстрационная версия) [NSZ][DEMO][ENG]
 Обновлено: 10
   ~ The Witcher 2 Assassins of Kings (порт Ведьмак 2: Убийцы королей) [NRO][RUS/POL]
   ~ Lost Odyssey (порт) [NRO][RUS (Mod.)/ENG]
@@ -11,7 +13,7 @@
   ~ Kanon-NX (RenPy-порт 18+ Standard edition) [NSZ][ENG]
   ~ Grizzy and the Lemmings – Crazy Party [NSP][RUS/Multi16]
   ~ Mortal Kombat 9 Komplete edition (порт) [NRO][RUS]
-Статистика обновлена: 7344 раздач
+Статистика обновлена: 7345 раздач
   * Покрытие базы: 100.4%
-  * Активных сидов: 108299
-  * Всего загрузок: 7760972
+  * Активных сидов: 104806
+  * Всего загрузок: 7763112

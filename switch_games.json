@@ -1,5 +1,42 @@
 [
     {
+        "title": "Million Depth (демонстрационная версия) [NSZ][DEMO][ENG]",
+        "size": "413 MB",
+        "magnet": "magnet:?xt=urn:btih:2E5C3540228388AC0120F0803FA5CE1EDCC26EEF&tr=http%3A%2F%2Fbt4.t-ru.org%2Fann%3Fmagnet",
+        "topic_id": "6937545",
+        "url": "https://rutracker.org/forum/viewtopic.php?t=6937545",
+        "year": "2026, декабрь",
+        "genre": "Action, Adventure, Roguelite",
+        "developer": "Cyber Space Biotope",
+        "publisher": "Playism",
+        "image_format": ".NSZ (сжато ~79%, установленный объём 1.94 ГБ) [DEMO]",
+        "interface_lang": "Английский [ENG]",
+        "voice_lang": "не озвучивается",
+        "performance": "Да (на 23.0.1, Atmosphere 1.12.2)",
+        "multiplayer": "нет",
+        "cover": "https://i5.imageban.ru/out/2026/11/13/feb06141abc5299cbb564d1f74828bcf.png",
+        "screenshots": [
+            "https://i129.fastpic.org/thumb/2026/1113/ae/18ff3169283afbaac91701cd3ca865ae.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1113/e5/fb097c0a2bebd830da27f3c19cd8f3e5.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1113/9e/ea61097fc1c8eeb5ef20317e95e0b79e.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1113/7f/fe6ef73a6a9a0d0cb57c5578f53f0d7f.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1113/49/fff7d4107c9b3481f111a536d3325249.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1113/e5/4e3be20e2e7ceddf3b679b5522e7bae5.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1113/8e/f2e4ccce623ba9891b22b53bb389de8e.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1113/62/50a65e8dbc36378d1115688c40562062.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1113/5b/c7dbeb53d2d5d367fe728f0a880c775b.jpeg"
+        ],
+        "description": "Мома отправляется в путь, чтобы найти своего друга — он находится где-то в недрах «Миллиона глубин» подземного комплекса, насчитывающего миллион этажей. Однако её ждёт мир, который постоянно меняется. Истинная история «Миллиона глубин» разнится в зависимости от временной линии, а судьба самой Момы меняется вместе с окружающим её миром.\nРешения, принятые вами в прошлом, эхом отзываются в будущем — и даже в других временных линиях — самым неожиданным образом. Ей предстоит собрать воедино разрозненные подсказки, чтобы разгадать многочисленные тайны своего путешествия.\nСоздавайте оружие и участвуйте в стратегических сражениях с использованием механики остановки времени, погружаясь в глубины этого подземного мира, состоящего из миллиона удивительных этажей!",
+        "title_id": "010006102A00E000",
+        "titles": [
+            {
+                "id": "010006102A00E000",
+                "update_version": 0
+            }
+        ],
+        "version": "3.1.3"
+    },
+    {
         "title": "Tearscape [NSP][RUS/Multi11]",
         "size": "163.4 MB",
         "magnet": "magnet:?xt=urn:btih:A7526E495025CD9C780F19E18BE65386A1A923A0&tr=http%3A%2F%2Fbt3.t-ru.org%2Fann%3Fmagnet",
