@@ -1,6 +1,10 @@
-=== 2026-11-13 01:01:59 ===
+=== 2026-11-13 05:02:02 ===
 Всего в базе: 7314
-Обновлено: 14
+Обновлено: 18
+  ~ Unrailed 2 Back on Track [NSZ][RUS/Multi10]
+  ~ Harvest Moon Echoes of Teradea [NSZ][RUS (Mod.)/ENG]
+  ~ Tales of Eternia Remastered (Tales of Destiny II) [NSZ][RUS/Multi9]
+  ~ Ball x Pit + DLC Risen Ballbylon [NSZ][RUS/Multi10]
   ~ The Witcher 2 Assassins of Kings (порт Ведьмак 2: Убийцы королей) [NRO][RUS/POL]
   ~ American McGee's Alice (порт Looking Glass) [NRO][RUS/ENG]
   ~ Dishonored (порт) [NRO][ENG]
@@ -17,5 +21,5 @@
   ~ Tekken 3 Expanded Definitive edition (порт) [NRO][ENG]
 Статистика обновлена: 7341 раздач
   * Покрытие базы: 100.4%
-  * Активных сидов: 89564
-  * Всего загрузок: 7757970
+  * Активных сидов: 79388
+  * Всего загрузок: 7756704
