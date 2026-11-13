@@ -1,10 +1,9 @@
-=== 2026-11-13 13:02:07 ===
+=== 2026-11-13 17:02:19 ===
 Всего в базе: 7316
-Обновлено: 11
-  ~ Lost Odyssey (порт) [NRO][RUS (Mod.)/ENG]
-  ~ Dog Man Mission Impawsible / Bark in Action [NSZ][RUS (Mod.)/ENG]
-  ~ Dishonored (порт) [NRO][RUS/ENG]
+Обновлено: 10
   ~ The Witcher 2 Assassins of Kings (порт Ведьмак 2: Убийцы королей) [NRO][RUS/POL]
+  ~ Lost Odyssey (порт) [NRO][RUS (Mod.)/ENG]
+  ~ Dishonored (порт) [NRO][RUS/ENG]
   ~ American McGee's Alice (порт Looking Glass) [NRO][RUS/ENG]
   ~ Dead Space 3 (хоумбрю) [NRO][RUS]
   ~ Коллекция Carafe/Wine-NX/Box64/FEX/Autorun-эмуляторов ПК игр для консоли Nintend
@@ -12,7 +11,7 @@
   ~ Kanon-NX (RenPy-порт 18+ Standard edition) [NSZ][ENG]
   ~ Grizzy and the Lemmings – Crazy Party [NSP][RUS/Multi16]
   ~ Mortal Kombat 9 Komplete edition (порт) [NRO][RUS]
-Статистика обновлена: 7343 раздач
+Статистика обновлена: 7344 раздач
   * Покрытие базы: 100.4%
-  * Активных сидов: 97859
-  * Всего загрузок: 7759156
+  * Активных сидов: 108299
+  * Всего загрузок: 7760972
