@@ -299,9 +299,9 @@
         "version": "1.1.0"
     },
     {
-        "title": "Dishonored (порт) [NRO][ENG]",
-        "size": "3.89 GB",
-        "magnet": "magnet:?xt=urn:btih:C2F9C2A14E6555F4A8CDE772728895DC3A6926AF&tr=http%3A%2F%2Fbt.t-ru.org%2Fann%3Fmagnet",
+        "title": "Dishonored (порт) [NRO][RUS/ENG]",
+        "size": "7.77 GB",
+        "magnet": "magnet:?xt=urn:btih:7F147FF6644EF6EBEEC1764CD33DFFC4A4E6A169&tr=http%3A%2F%2Fbt.t-ru.org%2Fann%3Fmagnet",
         "topic_id": "6936716",
         "url": "https://rutracker.org/forum/viewtopic.php?t=6936716",
         "year": "2012",
@@ -309,7 +309,7 @@
         "developer": "Arkane Studios",
         "publisher": "cznn999",
         "image_format": "NRO",
-        "interface_lang": "Английский [ ENG]",
+        "interface_lang": "Русский (официальный от 1С-СофтКлаб), Английский [RUS / ENG]",
         "voice_lang": "английская",
         "performance": "Да (на 22.5.0, Atmosphere 1.11.2)",
         "multiplayer": "нет",
@@ -2626,7 +2626,7 @@
     {
         "title": "Lost Odyssey (порт) [NRO][RUS (Mod.)/ENG]",
         "size": "23.9 GB",
-        "magnet": "magnet:?xt=urn:btih:1213DD62F2A94430A292E30C40F86BB856ECAACA&tr=http%3A%2F%2Fbt3.t-ru.org%2Fann%3Fmagnet",
+        "magnet": "magnet:?xt=urn:btih:F03E07597A5CAB7C826F9758135FEF0E239ABA98&tr=http%3A%2F%2Fbt3.t-ru.org%2Fann%3Fmagnet",
         "topic_id": "6924019",
         "url": "https://rutracker.org/forum/viewtopic.php?t=6924019",
         "year": "2007",
@@ -2653,7 +2653,7 @@
         "description": "Магическая энергия всегда содержалась в живых существах, но её мощь сильно возросла за 30 лет до начала событий игры. Это сильно повлияло на общество благодаря созданию устройства «Магический Двигатель», с помощью которого появилась возможность использовать магическую силу для освещения, автомобилей, связи, роботов, а также для других целей. Если раньше только избранные могли использовать магию, то сейчас очень многие получили эту возможность.\nЭтот прогресс также вызвал желание у двух наций, королевства Гохтза и республики Ухра, недавно изменённого монархического общества; разработать новые и более мощные оружия массового поражения. Ухра строят Великий Посох, гигантский магический двигатель, в то время как высоко индустриализированные Гохтза активно изучают магию внутри себя. Третья нация, Свободные океанские штаты Нумары, остается изолированной и нейтральной, но в ней начинается беспорядок из-за попыток совершения Путча Ухра воюет с Кхентами, нацией звере-людей, они посылают свои силы в горы Уол для окончательной битвы, где и начинается игра!..\nLost Odyssey, япон. Росуто одэссэй ロストオデッセイ, или «Потерянная одиссея» — японская ролевая игра, изданная Microsoft Game Studios эксклюзивно для Xbox 360. Lost Odyssey была создана Хиронобу Сакагути, создателем знаменитой серии Final Fantasy. Это третий проект Сакагути вне Square Enix, после ASH: Archaic Sealed Heat и Blue Dragon. Игрок управляет персонажем по имени Каим, человеком, который живёт уже тысячу лет и ничего не помнит о своём прошлом, и начинает в мире, в котором близится магическая «промышленная революция»: Каим борется с возвращением своей памяти, и болью, которая она приносит. Famitsu присудило игре 36/40, все четыре критика поставили девятки.\nВидеотрейлер.",
         "title_id": null,
         "raw_title": "[Nintendo Switch] Lost Odyssey (порт) [NRO][RUS (Mod.)/ENG]",
-        "version": "1.1.0"
+        "version": "1.2.0"
     },
     {
         "title": "Spica Adventure [NSZ][ENG]",
@@ -81048,8 +81048,8 @@
     },
     {
         "title": "Dog Man Mission Impawsible / Bark in Action [NSZ][RUS (Mod.)/ENG]",
-        "size": "3.14 GB",
-        "magnet": "magnet:?xt=urn:btih:664CE79AAF4E9201EA33BBA1464A6AD3FC14181C&tr=http%3A%2F%2Fbt4.t-ru.org%2Fann%3Fmagnet",
+        "size": "3.16 GB",
+        "magnet": "magnet:?xt=urn:btih:79E4DCE05F113055FA36458B86982A856674AF83&tr=http%3A%2F%2Fbt4.t-ru.org%2Fann%3Fmagnet",
         "topic_id": "6581133",
         "url": "https://rutracker.org/forum/viewtopic.php?t=6581133",
         "year": "2024, декабрь - 2026, октябрь",
@@ -81057,7 +81057,7 @@
         "developer": "Floor 84 Studio",
         "publisher": "Mindscape",
         "image_format": ".NSZ (сжато ~19%, установленный объём 1.34 ГБ)",
-        "interface_lang": "Английский [ENG] + машинный перевод от most2820 для первой части",
+        "interface_lang": "Английский [ENG] + машинный перевод от most2820",
         "voice_lang": "не озвучивается",
         "performance": "Да (на 22.5.0, Atmosphere 1.11.2)",
         "multiplayer": "нет",
