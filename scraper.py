@@ -121,7 +121,9 @@ def _merge_topic_details(item, details, title=None, feed_size=None, raw_title=''
     Возвращает True, если infohash реально сменился — перезаливка на трекере.
     """
     old_hash = _magnet_btih(item.get('magnet'))
-    if title:
+    if details.get("title") and details["title"] != "Unknown":
+        item['title'] = details['title']
+    elif title:
         item['title'] = title
     if details.get('size') and details['size'] != 'Unknown':
         item['size'] = details['size']
@@ -140,6 +142,10 @@ def _merge_topic_details(item, details, title=None, feed_size=None, raw_title=''
         item['update_version'] = int(details['update_version'])
     if details.get('version'):
         item['version'] = str(details['version'])
+    if details.get('is_demo'):
+        item['is_demo'] = True
+    elif 'is_demo' in item and not details.get('is_demo'):
+        item.pop('is_demo', None)
     new_hash = _magnet_btih(details.get('magnet'))
     return bool(new_hash) and new_hash != old_hash
 
@@ -295,12 +301,23 @@ def parse_torrent_metadata(html):
     max_update_version = max(update_versions) if update_versions else None
     fallback_version = file_versions[0] if file_versions else None
 
+    # Признак демоверсии по именам файлов в раздаче
+    is_demo = False
+    game_files = [f for f in files if re.search(r'\.(?:nsp|nsz|xci|xcz)\b', f, re.IGNORECASE)]
+    if game_files:
+        demo_files = [f for f in game_files if re.search(r'\[DEMO\]|\(DEMO\)|\bdemo\b|демонстрационная', f, re.IGNORECASE)]
+        if demo_files and len(demo_files) == len(game_files):
+            is_demo = True
+        elif any(re.search(r'\[v0\]', f, re.IGNORECASE) and re.search(r'\[DEMO\]|\(DEMO\)|\bdemo\b|демонстрационная', f, re.IGNORECASE) for f in demo_files):
+            is_demo = True
+
     return {
         "title_id": base_title_id,
         "titles": titles,
         "update_version": max_update_version,
         "version": fallback_version,
-        "files": files
+        "files": files,
+        "is_demo": is_demo
     }
 
 def extract_title_id(text):
@@ -676,7 +693,7 @@ def fetch_torrent_metadata(topic_id):
                              wait_keywords=('dir', 'file', 'ul', 'li', 'torrent'))
     if torrent_html:
         return parse_torrent_metadata(torrent_html)
-    return {"title_id": None, "titles": [], "update_version": None, "version": None, "files": []}
+    return {"title_id": None, "titles": [], "update_version": None, "version": None, "files": [], "is_demo": False}
 
 def fetch_title_id(topic_id):
     """Только title_id: POST viewtorrent.php (список файлов раздачи).
@@ -751,11 +768,21 @@ def get_topic_data(topic_id):
     # содержит несколько игр, каждую со своим ID.
     torrent_meta = fetch_torrent_metadata(topic_id)
     data["titles"] = torrent_meta.get("titles") or []
-    data["title_id"] = (torrent_meta.get("title_id")
-                        or extract_title_id(soup.get_text()) or extract_title_id(html))
+    fallback_tid = extract_title_id(_post_text(post_body)) if post_body else None
+    data["title_id"] = torrent_meta.get("title_id") or fallback_tid
     if torrent_meta.get("update_version"):
         data["update_version"] = torrent_meta["update_version"]
     file_version = torrent_meta.get("version")
+
+    # Признак демоверсии: по именам файлов в торренте либо по заголовку темы
+    is_demo = bool(torrent_meta.get("is_demo"))
+    if not is_demo and re.search(r'\[DEMO\]|\(DEMO\)|\bdemo\b|демонстрационная', f"{raw_title} {data['title']}", re.IGNORECASE):
+        is_demo = True
+    if is_demo:
+        data["is_demo"] = True
+        # Если в заголовке релизер не указал демо, дополняем заголовок
+        if not re.search(r'\[DEMO\]|\(DEMO\)|\bdemo\b|демонстрационная', data["title"], re.IGNORECASE):
+            data["title"] = f"{data['title']} (демонстрационная версия)"
 
     # Magnet: <a class="magnet-link"> есть и в гостевом виде (div.attach_link),
     # и в авторизованном (table.attach) — ищем по всей странице.
@@ -986,8 +1013,9 @@ def scrape_full_forum(output_file=None, max_pages=None):
 
             tid_val = details.get("title_id") or extract_title_id(raw_title)
 
+            title_to_use = details.get("title") if details.get("title") and details["title"] != "Unknown" else title
             game_entry = {
-                "title": title,
+                "title": title_to_use,
                 "size": details.get("size", "Unknown"),
                 "magnet": details.get("magnet"),
                 "topic_id": str(topic_id),
@@ -1006,6 +1034,8 @@ def scrape_full_forum(output_file=None, max_pages=None):
                 "description": details.get("description", ""),
                 "title_id": tid_val,
             }
+            if details.get("is_demo"):
+                game_entry["is_demo"] = True
             if details.get("titles"):
                 game_entry["titles"] = details["titles"]
             if details.get("update_version"):
@@ -1594,8 +1624,9 @@ def reconcile_missing_games(existing_data, existing_map, stats_data=None, max_ad
             tid_val = details.get('title_id') or extract_title_id(raw_title)
             topic_url = f"{BASE_URL}viewtopic.php?t={tid_str}"
 
+            title_to_use = details.get("title") if details.get("title") and details["title"] != "Unknown" else title
             new_entry = {
-                "title": title,
+                "title": title_to_use,
                 "size": details.get("size", "Unknown"),
                 "magnet": details.get("magnet"),
                 "topic_id": tid_str,
@@ -1614,6 +1645,8 @@ def reconcile_missing_games(existing_data, existing_map, stats_data=None, max_ad
                 "description": details.get("description", ""),
                 "title_id": tid_val,
             }
+            if details.get("is_demo"):
+                new_entry["is_demo"] = True
             if details.get("titles"):
                 new_entry["titles"] = details["titles"]
             if details.get("update_version"):
@@ -1724,8 +1757,9 @@ def run_scraper(skip_stats=False, stats_max_pages=None, full_scan=False, sweep=F
                 NON_GAME_TOPICS.add(str(t_id))
                 continue
             tid_val = details.get('title_id') or extract_title_id(raw_title)
+            title_to_use = details.get("title") if details.get("title") and details["title"] != "Unknown" else title
             new_entry = {
-                "title": title,
+                "title": title_to_use,
                 "size": details["size"] if details["size"] != "Unknown" else feed_size,
                 "magnet": details.get("magnet"),
                 "topic_id": t_id,
@@ -1744,6 +1778,8 @@ def run_scraper(skip_stats=False, stats_max_pages=None, full_scan=False, sweep=F
                 "description": details.get("description", ""),
                 "title_id": tid_val,
             }
+            if details.get("is_demo"):
+                new_entry["is_demo"] = True
             if details.get("titles"):
                 new_entry["titles"] = details["titles"]
             if details.get("update_version"):
@@ -1957,6 +1993,12 @@ def _enrich_incomplete(existing_data, limit=100):
             changed = True
         if details.get('version') and not item.get('version'):
             item['version'] = details['version']
+            changed = True
+        if details.get('is_demo'):
+            item['is_demo'] = True
+            changed = True
+        elif 'is_demo' in item and not details.get('is_demo'):
+            item.pop('is_demo', None)
             changed = True
         if _missing(item):
             state[tid] = now
