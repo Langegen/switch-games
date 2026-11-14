@@ -1,17 +1,20 @@
-=== 2026-11-14 17:03:18 ===
-Всего в базе: 7319
+=== 2026-11-14 21:03:47 ===
+Всего в базе: 7321
 Добавлено: 2
-  + Jagged Alliance 2 Агония Власти (хоумбрю) [NRO][RUS/ENG]
-  + Bejeweled 3 (хоумбрю) [NRO][ENG]
-Обновлено: 7
+  + Rusty Rangers [NSZ][RUS/ENG]
+  + The Cat Lady (порт) [NRO][RUS]
+Обновлено: 10
+  ~ Beholder 1, 2, 3, Conductor [NSZ][RUS/Multi]
+  ~ Good Job [NSP][RUS (Mod.)/ENG]
+  ~ Bejeweled 3 (хоумбрю) [NRO][ENG]
+  ~ Jagged Alliance 2 Агония Власти (хоумбрю) [NRO][RUS/ENG]
   ~ The Witcher 2 Assassins of Kings (порт Ведьмак 2: Убийцы королей) [NRO][RUS/POL]
   ~ Lost Odyssey (порт) [NRO][RUS (Mod.)/ENG]
   ~ Dishonored (порт) [NRO][RUS/ENG]
   ~ American McGee's Alice (порт Looking Glass) [NRO][RUS/ENG]
   ~ Dead Space 3 (хоумбрю) [NRO][RUS]
   ~ Коллекция Carafe/Wine-NX/Box64/FEX/Autorun-эмуляторов ПК игр для консоли Nintend
-  ~ Dead Space (хоумбрю) [NRO][RUS/Multi5]
-Статистика обновлена: 7347 раздач
+Статистика обновлена: 7348 раздач
   * Покрытие базы: 100.4%
-  * Активных сидов: 109025
-  * Всего загрузок: 7772036
+  * Активных сидов: 106664
+  * Всего загрузок: 7766843
