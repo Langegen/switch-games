@@ -1,8 +1,7 @@
-=== 2026-11-13 21:02:09 ===
+=== 2026-11-14 01:01:58 ===
 Всего в базе: 7317
-Добавлено: 1
-  + Million Depth (демонстрационная версия) [NSZ][DEMO][ENG]
-Обновлено: 10
+Обновлено: 9
+  ~ Sin Reloaded Gold + Wages of Sin [NSZ][RUS (Mod.)/ENG]
   ~ The Witcher 2 Assassins of Kings (порт Ведьмак 2: Убийцы королей) [NRO][RUS/POL]
   ~ Lost Odyssey (порт) [NRO][RUS (Mod.)/ENG]
   ~ Dishonored (порт) [NRO][RUS/ENG]
@@ -11,9 +10,7 @@
   ~ Коллекция Carafe/Wine-NX/Box64/FEX/Autorun-эмуляторов ПК игр для консоли Nintend
   ~ Dead Space (хоумбрю) [NRO][RUS/Multi5]
   ~ Kanon-NX (RenPy-порт 18+ Standard edition) [NSZ][ENG]
-  ~ Grizzy and the Lemmings – Crazy Party [NSP][RUS/Multi16]
-  ~ Mortal Kombat 9 Komplete edition (порт) [NRO][RUS]
 Статистика обновлена: 7345 раздач
   * Покрытие базы: 100.4%
-  * Активных сидов: 104806
-  * Всего загрузок: 7763112
+  * Активных сидов: 90884
+  * Всего загрузок: 7764481
