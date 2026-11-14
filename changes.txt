@@ -1,6 +1,7 @@
-=== 2026-11-14 09:02:45 ===
+=== 2026-11-14 12:46:47 ===
 Всего в базе: 7317
-Обновлено: 8
+Обновлено: 9
+  ~ Tetris the Grand Master TGM 4 Absolute Eye [NSZ][ENG]
   ~ The Witcher 2 Assassins of Kings (порт Ведьмак 2: Убийцы королей) [NRO][RUS/POL]
   ~ Lost Odyssey (порт) [NRO][RUS (Mod.)/ENG]
   ~ Dishonored (порт) [NRO][RUS/ENG]
@@ -11,5 +12,5 @@
   ~ Kanon-NX (RenPy-порт 18+ Standard edition) [NSZ][ENG]
 Статистика обновлена: 7345 раздач
   * Покрытие базы: 100.4%
-  * Активных сидов: 86973
-  * Всего загрузок: 7766479
+  * Активных сидов: 97893
+  * Всего загрузок: 7768708

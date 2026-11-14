@@ -34,7 +34,8 @@
                 "update_version": 0
             }
         ],
-        "version": "3.1.3"
+        "version": "3.1.3",
+        "is_demo": true
     },
     {
         "title": "Tearscape [NSP][RUS/Multi11]",
@@ -429,7 +430,8 @@
                 "update_version": 0
             }
         ],
-        "version": "1.0.0"
+        "version": "1.0.0",
+        "is_demo": true
     },
     {
         "title": "Shrek 2 Remastered [NSZ][RUS/Multi7]",
@@ -15610,7 +15612,7 @@
     {
         "title": "Tetris the Grand Master TGM 4 Absolute Eye [NSZ][ENG]",
         "size": "166.5 MB",
-        "magnet": "magnet:?xt=urn:btih:9B1DFA803F86B6308FA71169CEEA42FDC25EF873&tr=http%3A%2F%2Fbt.t-ru.org%2Fann%3Fmagnet",
+        "magnet": "magnet:?xt=urn:btih:69651172B863D7F08F4C707DCF4F3CD2D220C654&tr=http%3A%2F%2Fbt.t-ru.org%2Fann%3Fmagnet",
         "topic_id": "6866917",
         "url": "https://rutracker.org/forum/viewtopic.php?t=6866917",
         "year": "2026, июнь",
@@ -15633,12 +15635,12 @@
         ],
         "description": "В сентябре 2009 года японская компания Arika представила широкой общественности свою четвёртую игру под названием Tetris: The Grand Master 4 – The Masters of Round на выставке игровых автоматов. Предполагалось, что она будет работать на оборудовании Sega RingWide. 18 сентября 2010 года вице-президент Arika Ичиро Михара объявил об отмене The Grand Master 4 в своём блоге. В июле 2015 года Arika начала тестирование The Grand Master 4 в Японии и США. Название было изменено на The Grand Master 2015, что отражало отсутствие лицензии на Tetris и запланированного релиза. 26 сентября 2024 года Arika и The Tetris Company объявили о подписании лицензионного соглашения на выпуск новой игры Tetris: The Grand Master. 4 декабря 2024 года игра была анонсирована под названием Tetris: The Grand Master 4 – Absolute Eye. Игра была выпущена 4 апреля 2025 года для ПК на Microsoft Windows.\nНевероятная серия Tetris the Grand Master теперь на Nintendo Switch!.. Мы предлагаем динамичный и высокотехнологичный игровой процесс: примите новые вызовы в таких режимах, как ASUKA и SHIRANUI.\nТакже включены режимы, более удобные для новичков, позволяющие даже начинающим тетрисоводам легко учиться, совершенствоваться в мастерстве и переигрывать партии вдвоём с другом!..\nЕщё тетрисов.",
         "title_id": "0100A9F027F1C000",
-        "update_version": 131072,
-        "version": "2.3.0.1",
+        "update_version": 196608,
+        "version": "2.4.0.1",
         "titles": [
             {
                 "id": "0100A9F027F1C000",
-                "update_version": 131072
+                "update_version": 196608
             }
         ]
     },
