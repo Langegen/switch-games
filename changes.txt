@@ -1,11 +1,7 @@
-=== 2026-11-14 21:03:47 ===
+=== 2026-11-15 01:02:00 ===
 Всего в базе: 7321
-Добавлено: 2
-  + Rusty Rangers [NSZ][RUS/ENG]
-  + The Cat Lady (порт) [NRO][RUS]
-Обновлено: 10
-  ~ Beholder 1, 2, 3, Conductor [NSZ][RUS/Multi]
-  ~ Good Job [NSP][RUS (Mod.)/ENG]
+Обновлено: 9
+  ~ The Cat Lady (порт) [NRO][RUS]
   ~ Bejeweled 3 (хоумбрю) [NRO][ENG]
   ~ Jagged Alliance 2 Агония Власти (хоумбрю) [NRO][RUS/ENG]
   ~ The Witcher 2 Assassins of Kings (порт Ведьмак 2: Убийцы королей) [NRO][RUS/POL]
@@ -16,5 +12,5 @@
   ~ Коллекция Carafe/Wine-NX/Box64/FEX/Autorun-эмуляторов ПК игр для консоли Nintend
 Статистика обновлена: 7348 раздач
   * Покрытие базы: 100.4%
-  * Активных сидов: 106664
-  * Всего загрузок: 7766843
+  * Активных сидов: 90270
+  * Всего загрузок: 7768275
