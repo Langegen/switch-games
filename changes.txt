@@ -1,10 +1,10 @@
-=== 2026-11-15 05:02:03 ===
-Всего в базе: 7324
-Добавлено: 3
-  + Titanium Court [NSZ][ENG]
-  + Warp Shift [NSZ][ENG]
-  + Mini Ninjas (порт) [NRO][RUS]
+=== 2026-11-15 09:01:59 ===
+Всего в базе: 7326
+Добавлено: 2
+  + Singularity (хоумбрю) [NRO][RUS]
+  + Castlevania Harmony of Despair + DLC (хоумбрю) [NRO][ENG]
 Обновлено: 9
+  ~ Mini Ninjas (порт) [NRO][RUS]
   ~ The Cat Lady (порт) [NRO][RUS]
   ~ Bejeweled 3 (хоумбрю) [NRO][ENG]
   ~ Jagged Alliance 2 Агония Власти (хоумбрю) [NRO][RUS/ENG]
@@ -13,8 +13,7 @@
   ~ Dishonored (порт) [NRO][RUS/ENG]
   ~ American McGee's Alice (порт Looking Glass) [NRO][RUS/ENG]
   ~ Dead Space 3 (хоумбрю) [NRO][RUS]
-  ~ Коллекция Carafe/Wine-NX/Box64/FEX/Autorun-эмуляторов ПК игр для консоли Nintend
-Статистика обновлена: 7351 раздач
+Статистика обновлена: 7353 раздач
   * Покрытие базы: 100.4%
-  * Активных сидов: 83049
-  * Всего загрузок: 7768882
+  * Активных сидов: 88845
+  * Всего загрузок: 7770432
