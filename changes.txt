@@ -1,9 +1,9 @@
-=== 2026-11-15 09:01:59 ===
+=== 2026-11-15 13:02:26 ===
 Всего в базе: 7326
-Добавлено: 2
-  + Singularity (хоумбрю) [NRO][RUS]
-  + Castlevania Harmony of Despair + DLC (хоумбрю) [NRO][ENG]
-Обновлено: 9
+Обновлено: 11
+  ~ Warp Shift [NSZ][RUS (Mod.).ENG]
+  ~ Castlevania Harmony of Despair + DLC (хоумбрю) [NRO][ENG]
+  ~ Singularity (хоумбрю) [NRO][RUS]
   ~ Mini Ninjas (порт) [NRO][RUS]
   ~ The Cat Lady (порт) [NRO][RUS]
   ~ Bejeweled 3 (хоумбрю) [NRO][ENG]
@@ -12,8 +12,7 @@
   ~ Lost Odyssey (порт) [NRO][RUS (Mod.)/ENG]
   ~ Dishonored (порт) [NRO][RUS/ENG]
   ~ American McGee's Alice (порт Looking Glass) [NRO][RUS/ENG]
-  ~ Dead Space 3 (хоумбрю) [NRO][RUS]
 Статистика обновлена: 7353 раздач
   * Покрытие базы: 100.4%
-  * Активных сидов: 88845
-  * Всего загрузок: 7770432
+  * Активных сидов: 100482
+  * Всего загрузок: 7772744
