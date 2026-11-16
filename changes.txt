@@ -1,7 +1,6 @@
-=== 2026-11-15 21:02:24 ===
+=== 2026-11-16 01:02:05 ===
 Всего в базе: 7326
-Обновлено: 11
-  ~ Battle Brothers + 9 DLC [NSZ][ENG]
+Обновлено: 10
   ~ The Witcher 2 Assassins of Kings (порт Ведьмак 2: Убийцы королей) [NRO][RUS/ENG]
   ~ Castlevania Harmony of Despair + DLC (хоумбрю) [NRO][ENG]
   ~ Singularity (хоумбрю) [NRO][RUS]
@@ -14,5 +13,5 @@
   ~ American McGee's Alice (порт Looking Glass) [NRO][RUS/ENG]
 Статистика обновлена: 7353 раздач
   * Покрытие базы: 100.4%
-  * Активных сидов: 105363
-  * Всего загрузок: 7775118
+  * Активных сидов: 90617
+  * Всего загрузок: 7776447
