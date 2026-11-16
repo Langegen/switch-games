@@ -1,7 +1,9 @@
-=== 2026-11-16 13:02:57 ===
-Всего в базе: 7328
-Обновлено: 14
-  ~ Fuga Melodies of Steel 1-2-3 [NSZ][RUS/ENG]
+=== 2026-11-16 17:03:01 ===
+Всего в базе: 7330
+Добавлено: 2
+  + The Sims 3 (хоумбрю) [NRO][ENG]
+  + LEGO Batman the Videogame (2008, хоумбрю) [NRO][RUS]
+Обновлено: 13
   ~ Hard Corps Uprising (хоумбрю) [NRO][ENG]
   ~ Barbie™ Rewind [XCI][ENG]
   ~ Fear and Hunger (порт) [NRO][RUS/ENG]
@@ -15,7 +17,7 @@
   ~ Jagged Alliance 2 Агония Власти (хоумбрю) [NRO][RUS/ENG]
   ~ Lost Odyssey (порт) [NRO][RUS (Mod.)/ENG]
   ~ American McGee's Alice (порт Looking Glass) [NRO][RUS/ENG]
-Статистика обновлена: 7355 раздач
+Статистика обновлена: 7357 раздач
   * Покрытие базы: 100.4%
-  * Активных сидов: 95786
-  * Всего загрузок: 7773559
+  * Активных сидов: 108228
+  * Всего загрузок: 7775070
