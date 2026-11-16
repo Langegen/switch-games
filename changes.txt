@@ -1,12 +1,11 @@
-=== 2026-11-16 09:03:15 ===
+=== 2026-11-16 13:02:57 ===
 Всего в базе: 7328
-Добавлено: 2
-  + Barbie™ Rewind [XCI][ENG]
-  + Hard Corps Uprising (хоумбрю) [NRO][ENG]
-Обновлено: 12
+Обновлено: 14
+  ~ Fuga Melodies of Steel 1-2-3 [NSZ][RUS/ENG]
+  ~ Hard Corps Uprising (хоумбрю) [NRO][ENG]
+  ~ Barbie™ Rewind [XCI][ENG]
   ~ Fear and Hunger (порт) [NRO][RUS/ENG]
   ~ Dishonored (порт) [NRO][RUS/ENG]
-  ~ Castlevania Belmont's Curse [NSP][RUS/Multi11]
   ~ The Witcher 2 Assassins of Kings (порт Ведьмак 2: Убийцы королей) [NRO][RUS/ENG]
   ~ Castlevania Harmony of Despair + DLC (хоумбрю) [NRO][ENG]
   ~ Singularity (хоумбрю) [NRO][RUS]
@@ -18,5 +17,5 @@
   ~ American McGee's Alice (порт Looking Glass) [NRO][RUS/ENG]
 Статистика обновлена: 7355 раздач
   * Покрытие базы: 100.4%
-  * Активных сидов: 83777
-  * Всего загрузок: 7771661
+  * Активных сидов: 95786
+  * Всего загрузок: 7773559
