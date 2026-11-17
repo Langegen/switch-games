@@ -1,10 +1,11 @@
-=== 2026-11-17 17:03:35 ===
-Всего в базе: 7338
-Обновлено: 24
-  ~ Moomin Midsummer Madness / Moomintroll: Winter's Warmth / Snufkin Melody of Moom
-  ~ Yog-Sothoth's Yard [NSZ][ENG]
-  ~ Death Road to Canada [NSZ][RUS (Mod.)/ENG]
+=== 2026-11-17 21:04:01 ===
+Всего в базе: 7339
+Добавлено: 1
+  + Ridge Racer 6 (хоумбрю) + 77 DLC [NRO][ENG]
+Обновлено: 23
   ~ Jagged Alliance 2 Агония Власти (хоумбрю) [NRO][RUS/ENG]
+  ~ Sacred 2 Remaster [RePack][NSZ][RUS (Mod.)]
+  ~ 502's Arcade [NSZ][RUS/Multi8]
   ~ Коллекция Carafe/Wine-NX/Box64/FEX/Autorun-эмуляторов ПК игр для консоли Nintend
   ~ Manhunt (порт Xbox Original) [NRO][RUS]
   ~ Dishonored + DLC The Knife of Dunwall, The Brigmore Witches, Dunwall City Trials
@@ -25,7 +26,7 @@
   ~ The Cat Lady (порт) [NRO][RUS]
   ~ Bejeweled 3 (хоумбрю) [NRO][ENG]
   ~ Lost Odyssey (порт) [NRO][RUS (Mod.)/ENG]
-Статистика обновлена: 7365 раздач
+Статистика обновлена: 7366 раздач
   * Покрытие базы: 100.4%
-  * Активных сидов: 108314
-  * Всего загрузок: 7781639
+  * Активных сидов: 103941
+  * Всего загрузок: 7783107

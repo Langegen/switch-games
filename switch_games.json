@@ -1,5 +1,36 @@
 [
     {
+        "title": "Ridge Racer 6 (хоумбрю) + 77 DLC [NRO][ENG]",
+        "size": "7.23 GB",
+        "magnet": "magnet:?xt=urn:btih:EF9CC575AC7CAE142669EC7ACA2F7777DAC04CD5&tr=http%3A%2F%2Fbt2.t-ru.org%2Fann%3Fmagnet",
+        "topic_id": "6939263",
+        "url": "https://rutracker.org/forum/viewtopic.php?t=6939263",
+        "year": "2005",
+        "genre": "Racing, Arcade, Homebrew",
+        "developer": "Namco",
+        "publisher": "ChanseyIsTheBest",
+        "image_format": "NRO",
+        "interface_lang": "Английский [ENG]",
+        "voice_lang": "английская",
+        "performance": "Да (на 22.5.0, Atmosphere 1.11.2)",
+        "multiplayer": "нет",
+        "cover": "https://i1.imageban.ru/out/2026/11/17/dfe66a0e354cf220e3c4490a99669865.png",
+        "screenshots": [
+            "https://i129.fastpic.org/thumb/2026/1117/f3/dfb0599346befb83aff863aaa99ab5f3.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1117/05/60ea69e37aa87e83df307f7a07466d05.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1117/1e/00487467b4b1d81833bd7039b094e51e.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1117/ba/abb0860771755c8e2ef9c4e94ff095ba.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1117/08/a4f76647a317b948551c54eac3490208.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1117/cf/37c7a3755dabd574f8afb53b56060ccf.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1117/c4/94e8479119ddf967f1302df3a0a432c4.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1117/80/5d6651e42e5bbcfa9c24f583070aa180.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1117/ab/b1c171b6e42a1d2a1da0e409d8e24dab.jpeg"
+        ],
+        "description": "Легендарный проект, от эпизода к эпизоду радующий поклонников запредельными скоростями и роскошными автомобилями, возвращается в новом обличье. Ультрасовременные графические технологии 2005-го года, максимально использующие потенциал Xbox 360, превращают Ridge Racer 6 в мечту любого гонщика. От стремительных виражей захватывает дух, агрессивное вождение опытных соперников повышает уровень адреналина в крови, а новейшие спецэффекты полностью стирают грань между реальностью и миром на экране.\nRidge Racer 6 устанавливает новую планку качества для виртуальных гонок. Заезды проходят во всех уголках планеты, вас ждут десятки скоростных болидов с полностью переработанной системой турбо-ускорения. Вы быстрее ветра промчитесь по извилистым трассам, проложенным среди живописных гор и в центре тесных мегаполисов. Чтобы одержать верх над сильными соперниками и вырвать у них победу, придется проявить недюжинную сноровку!\nВ Японии журнал Famitsu оценил её в 34 балла из 40 (поставив оценки 8, 9, 8 и 9). Портал VideoGamer назвал игру наиболее близкой к жанру аркадных гонок среди проектов для домашних консолей — как по внешнему виду, так и по игровому процессу. Ресурс GameSpy высоко оценил «потрясающую графику» и «отличное оформление», GameSpot охарактеризовал проект как эффектную, динамичную гоночную игру с качественной физикой управления.",
+        "title_id": null,
+        "version": "1.0.1"
+    },
+    {
         "title": "The Cat in the Hat Rainy Day Mayhem [XCI][ENG]",
         "size": "2.08 GB",
         "magnet": "magnet:?xt=urn:btih:29C4ADB21CE7C3F88E82A694821CDDEC345EC7E3&tr=http%3A%2F%2Fbt3.t-ru.org%2Fann%3Fmagnet",
@@ -651,8 +682,8 @@
     },
     {
         "title": "Jagged Alliance 2 Агония Власти (хоумбрю) [NRO][RUS/ENG]",
-        "size": "1.62 GB",
-        "magnet": "magnet:?xt=urn:btih:7DFC045B26656E5D26559756423EE27E0634E3B0&tr=http%3A%2F%2Fbt4.t-ru.org%2Fann%3Fmagnet",
+        "size": "1.6 GB",
+        "magnet": "magnet:?xt=urn:btih:21D18324508A12ADD66ADE3B6B727296841F29B8&tr=http%3A%2F%2Fbt4.t-ru.org%2Fann%3Fmagnet",
         "topic_id": "6937844",
         "url": "https://rutracker.org/forum/viewtopic.php?t=6937844",
         "year": "23 июля 1999",
@@ -660,8 +691,8 @@
         "developer": "Sir-Tech Software",
         "publisher": "Atash41",
         "image_format": "NRO",
-        "interface_lang": "Русский, Английский [RUS / ENG] (смешанный)",
-        "voice_lang": "русская, английская (смешанная)",
+        "interface_lang": "Русский, Английский [RUS / ENG] (смешанный), Английский [ENG]",
+        "voice_lang": "русская / английская (смешанная), английская",
         "performance": "Да 19.0.1|AMS 1.8.0|S",
         "multiplayer": "Нет",
         "cover": "https://i129.fastpic.org/big/2026/1114/03/619e8c9d92c2efbe1a1ef76b2fc7c703.png",
@@ -9159,8 +9190,8 @@
     },
     {
         "title": "Sacred 2 Remaster [RePack][NSZ][RUS (Mod.)]",
-        "size": "10.2 GB",
-        "magnet": "magnet:?xt=urn:btih:58AE345FB1DF8E5F5B919589235DDEA2737BDBD4&tr=http%3A%2F%2Fbt.t-ru.org%2Fann%3Fmagnet",
+        "size": "10.57 GB",
+        "magnet": "magnet:?xt=urn:btih:40688B84BECBCD543E5B529A78A4A8594D6C79D8&tr=http%3A%2F%2Fbt.t-ru.org%2Fann%3Fmagnet",
         "topic_id": "6897584",
         "url": "https://rutracker.org/forum/viewtopic.php?t=6897584",
         "year": "2026, август",
@@ -217890,15 +217921,15 @@
     },
     {
         "title": "502's Arcade [NSZ][RUS/Multi8]",
-        "size": "335 MB",
-        "magnet": "magnet:?xt=urn:btih:1EEF508031DCF91979DA5C3368C8EEC96D5D0920&tr=http%3A%2F%2Fbt3.t-ru.org%2Fann%3Fmagnet",
+        "size": "412.5 MB",
+        "magnet": "magnet:?xt=urn:btih:CFFAB68BC6EB4A43A752FBBE49F0DF825A4D2203&tr=http%3A%2F%2Fbt3.t-ru.org%2Fann%3Fmagnet",
         "topic_id": "6489604",
         "url": "https://rutracker.org/forum/viewtopic.php?t=6489604",
         "year": "2024, февраль",
         "genre": "Arcade, Puzzle",
         "developer": "502 Studios",
         "publisher": "502 Studios",
-        "image_format": ".NSZ (сжато ~36%, установленный объём 0.54 ГБ)",
+        "image_format": ".NSZ (сжато ~36%, установленный объём 0.64 ГБ)",
         "interface_lang": "Русский, Английский [RUS / ENG / Multi 8]",
         "voice_lang": "не озвучивается",
         "performance": "Да (на 20.5.0, Atmosphere 1.9.5)",
@@ -217917,12 +217948,12 @@
         ],
         "description": "Альманах быстрых аркадных игр, ставящих за цель перед игроками достижение вершины таблицы лидеров в каждой из них. Представленные здесь игры охватывают широкий спектр жанров, от данжн-кроулеров с процедурно генерируемыми уровнями таинственного храма, до занимательных головоломок о приготовлении удивительных зелий для магазинчика. Не стесняйтесь, и окунитесь в атмосферу зала аркадных автоматов, или бросьте себе вызов, устремившись за получением всех трофеев в каждой игре.\n\n\n\nДизайн игр предполагает сиюминутное погружение в процесс, так что вам решать - провести в них несколько минут, или же несколько часов!\n\n\n\nПокорите каждую из игр в удобном для вас темпе. Некоторые из них проще, иные - сложнее, но дело мастера боится. Поэтому не спешите опускать руки. К тому же, вас ждёт множество достижений!\n\n\n\nНеважно, сражаетесь вы против инопланетных орд или разбираетесь в медитативной головоломке, у каждой игры свой, подходящий её темпу саундтрек.\n\n\n\nПомните то чувство, когда отставали всего на несколько очков от лучшего игрока зала? Верните его себе в трёх доступных вариантах таблиц лидеров: ежедневной, еженедельной и всех времён. Чем не стимул возвращаться и оттачивать мастерство?",
         "title_id": "01009B101466C000",
-        "update_version": 458752,
-        "version": "1.4.37",
+        "update_version": 524288,
+        "version": "1.5.406",
         "titles": [
             {
                 "id": "01009B101466C000",
-                "update_version": 458752
+                "update_version": 524288
             }
         ]
     },
