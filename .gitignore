@@ -10,3 +10,4 @@ enrich_versions_state.json
 enrich_versions.log
 cron_log.txt
 enrich_titles_state.json
+enrich_titles.log
