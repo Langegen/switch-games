@@ -1,13 +1,28 @@
-=== 2026-11-16 17:03:01 ===
-Всего в базе: 7330
-Добавлено: 2
-  + The Sims 3 (хоумбрю) [NRO][ENG]
-  + LEGO Batman the Videogame (2008, хоумбрю) [NRO][RUS]
-Обновлено: 13
+=== 2026-11-17 08:49:14 ===
+Всего в базе: 7338
+Добавлено: 8
+  + Future Knight [NSZ][ENG]
+  + Hasbro Games Junior Collection [XCI][ENG]
+  + Yokai Landlord Monster Mystery [NSZ][ENG]
+  + Manhunt (порт Xbox Original) [NRO][RUS]
+  + Bloody Roar Extreme (порт Beastorizer Primal Fury) [NRO][ENG]
+  + Soulcalibur II (порт Soul Calibur 2) [NRO][ENG]
+  + Downfall Redux (порт) [NRO][RUS/Multi7]
+  + The Cat in the Hat Rainy Day Mayhem [XCI][ENG]
+Обновлено: 21
+  ~ Anthology of The Killer (9 частей) [NSZ][ENG]
+  ~ Коллекция Carafe/Wine-NX/Box64/FEX/Autorun-эмуляторов ПК игр для консоли Nintend
+  ~ Dishonored + DLC The Knife of Dunwall, The Brigmore Witches, Dunwall City Trials
+  ~ Captain Tsubasa 2: World Fighters + 5 DLC [NSZ][RUS (Mod.)/ENG]
+  ~ Tanuki Pon's Summer [NSP][RUS/Multi13]
+  ~ The Merlies [NSZ][RUS (Mod.)/ENG]
+  ~ Prototype 2 (порт) [NRO][RUS/ENG]
+  ~ Mass Effect 2 (порт) [NRO][RUS/ENG]
+  ~ LEGO Batman the Videogame (2008, хоумбрю) [NRO][RUS]
+  ~ The Sims 3 (хоумбрю) [NRO][ENG]
   ~ Hard Corps Uprising (хоумбрю) [NRO][ENG]
   ~ Barbie™ Rewind [XCI][ENG]
   ~ Fear and Hunger (порт) [NRO][RUS/ENG]
-  ~ Dishonored (порт) [NRO][RUS/ENG]
   ~ The Witcher 2 Assassins of Kings (порт Ведьмак 2: Убийцы королей) [NRO][RUS/ENG]
   ~ Castlevania Harmony of Despair + DLC (хоумбрю) [NRO][ENG]
   ~ Singularity (хоумбрю) [NRO][RUS]
@@ -16,8 +31,7 @@
   ~ Bejeweled 3 (хоумбрю) [NRO][ENG]
   ~ Jagged Alliance 2 Агония Власти (хоумбрю) [NRO][RUS/ENG]
   ~ Lost Odyssey (порт) [NRO][RUS (Mod.)/ENG]
-  ~ American McGee's Alice (порт Looking Glass) [NRO][RUS/ENG]
-Статистика обновлена: 7357 раздач
-  * Покрытие базы: 100.4%
-  * Активных сидов: 108228
-  * Всего загрузок: 7775070
+Статистика обновлена: 7365 раздач
+  * Покрытие базы: 100.5%
+  * Активных сидов: 83037
+  * Всего загрузок: 7778899
