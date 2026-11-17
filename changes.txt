@@ -1,6 +1,7 @@
-=== 2026-11-17 09:43:46 ===
+=== 2026-11-17 13:03:37 ===
 Всего в базе: 7338
 Обновлено: 21
+  ~ Jagged Alliance 2 Агония Власти (хоумбрю) [NRO][RUS/ENG]
   ~ Коллекция Carafe/Wine-NX/Box64/FEX/Autorun-эмуляторов ПК игр для консоли Nintend
   ~ Manhunt (порт Xbox Original) [NRO][RUS]
   ~ Dishonored + DLC The Knife of Dunwall, The Brigmore Witches, Dunwall City Trials
@@ -20,9 +21,8 @@
   ~ Mini Ninjas (порт) [NRO][RUS]
   ~ The Cat Lady (порт) [NRO][RUS]
   ~ Bejeweled 3 (хоумбрю) [NRO][ENG]
-  ~ Jagged Alliance 2 Агония Власти (хоумбрю) [NRO][RUS/ENG]
   ~ Lost Odyssey (порт) [NRO][RUS (Mod.)/ENG]
 Статистика обновлена: 7365 раздач
   * Покрытие базы: 100.4%
-  * Активных сидов: 84489
-  * Всего загрузок: 7779254
+  * Активных сидов: 96278
+  * Всего загрузок: 7780491
