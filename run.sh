@@ -19,6 +19,7 @@ if [ -f .env ]; then
     . ./.env
     set +a
 fi
+export PYTHONUNBUFFERED=1
 
 echo "[$(date)] Обновление кода..."
 git pull --rebase origin main || true

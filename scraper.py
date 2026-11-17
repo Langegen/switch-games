@@ -671,10 +671,11 @@ def fetch_url(url, forum_url=False, is_post=False, post_data=None, wait_keywords
         if html and (is_post or _is_valid_html(html, keywords)):
             return html
 
-    # Если всё ещё ничего — вернём что есть из Chrome (хоть что-то)
+    # Если всё ещё ничего — вернём что есть из Chrome (если это не заглушка CF)
     if chrome_html and len(chrome_html) > 500:
-        print(f"    [~] Возвращаем неполный Chrome ответ для {url}")
-        return chrome_html
+        if not ('Just a moment' in chrome_html or 'cf-browser-verification' in chrome_html or 'Один момент' in chrome_html):
+            print(f"    [~] Возвращаем неполный Chrome ответ для {url}")
+            return chrome_html
 
     print(f"    [!] Не удалось получить страницу: {url}")
     return None
@@ -1724,6 +1725,9 @@ def run_scraper(skip_stats=False, stats_max_pages=None, full_scan=False, sweep=F
         if t_id in existing_map:
             old_item = existing_map[t_id]
             details = get_topic_data(t_id)
+            if not details or not details.get('magnet'):
+                print(f"  [!] Не удалось получить страницу для t={t_id} ({title[:50]}), пропускаем обновление.")
+                continue
             if not is_game_topic(title, details):
                 print(f"  [-] Удаляем неподходящую тему (NSW2/NUP): {title[:60]}...")
                 existing_data.remove(old_item)
