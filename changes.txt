@@ -1,6 +1,9 @@
-=== 2026-11-17 13:03:37 ===
+=== 2026-11-17 17:03:35 ===
 Всего в базе: 7338
-Обновлено: 21
+Обновлено: 24
+  ~ Moomin Midsummer Madness / Moomintroll: Winter's Warmth / Snufkin Melody of Moom
+  ~ Yog-Sothoth's Yard [NSZ][ENG]
+  ~ Death Road to Canada [NSZ][RUS (Mod.)/ENG]
   ~ Jagged Alliance 2 Агония Власти (хоумбрю) [NRO][RUS/ENG]
   ~ Коллекция Carafe/Wine-NX/Box64/FEX/Autorun-эмуляторов ПК игр для консоли Nintend
   ~ Manhunt (порт Xbox Original) [NRO][RUS]
@@ -24,5 +27,5 @@
   ~ Lost Odyssey (порт) [NRO][RUS (Mod.)/ENG]
 Статистика обновлена: 7365 раздач
   * Покрытие базы: 100.4%
-  * Активных сидов: 96278
-  * Всего загрузок: 7780491
+  * Активных сидов: 108314
+  * Всего загрузок: 7781639
