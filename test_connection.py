@@ -90,7 +90,7 @@ def test_chrome():
     if ua:
         options.add_argument(f'--user-agent={ua}')
     print("  Запуск Chrome (может занять 1-2 минуты)...")
-    driver = uc.Chrome(options=options)
+    driver = uc.Chrome(options=options, version_main=154)
     try:
         driver.set_page_load_timeout(90)
         t0 = time.time()

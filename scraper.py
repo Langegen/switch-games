@@ -61,7 +61,8 @@ if ENV_COOKIES_RAW:
     for _item in ENV_COOKIES_RAW.split(';'):
         if '=' in _item:
             _k, _v = _item.strip().split('=', 1)
-            SESSION_COOKIES[_k.strip()] = _v.strip()
+            if _k.strip() != 'cf_clearance':
+                SESSION_COOKIES[_k.strip()] = _v.strip()
 
 CF_SESSION_INITIALIZED = False
 
@@ -506,6 +507,8 @@ def _fetch_with_chrome(url, wait_keywords=None, is_post=False, post_data=None):
         # Инжектируем куки авторизации чтобы быть залогиненным
         if SESSION_COOKIES:
             for k, v in SESSION_COOKIES.items():
+                if k == 'cf_clearance':
+                    continue
                 try:
                     GLOBAL_DRIVER.add_cookie({'name': k, 'value': v, 'domain': '.rutracker.org'})
                 except Exception as e:
@@ -613,7 +616,9 @@ def _bypass_request(url, is_post=False, post_data=None):
         # Куки передаём ЯВНЫМ заголовком (параметр cookies= у curl_cffi
         # может не дойти до mirror-сервиса — проверено рабочим curl-тестом)
         if SESSION_COOKIES:
-            headers['Cookie'] = '; '.join(f'{k}={v}' for k, v in SESSION_COOKIES.items())
+            bypass_cookies = {k: v for k, v in SESSION_COOKIES.items() if k != 'cf_clearance'}
+            if bypass_cookies:
+                headers['Cookie'] = '; '.join(f'{k}={v}' for k, v in bypass_cookies.items())
         kwargs = {'impersonate': 'chrome120', 'timeout': 60}
         if is_post:
             resp = cf_requests.post(mirror_url, data=post_data, headers=headers, **kwargs)
