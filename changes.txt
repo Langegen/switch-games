@@ -1,12 +1,6 @@
-=== 2026-11-18 09:03:41 ===
+=== 2026-11-18 13:03:52 ===
 Всего в базе: 7340
-Добавлено: 1
-  + Kowloon's Gate Suzaku [XCI][ENG]
-Обновлено: 25
-  ~ SpeedRunners / Speed Runners 2 King of Speed [NSZ][RUS/Multi11]
-  ~ Dragon Quest Builders / Dragon Quest Builders 2 [NSP][ENG,RUS]
-  ~ Ravenswatch + 10 DLC [NSZ][RUS/Multi10]
-  ~ Avatar Legends the Fighting Game [NSZ][ENG]
+Обновлено: 21
   ~ Jagged Alliance 2 Агония Власти (хоумбрю) [NRO][RUS/ENG]
   ~ Ridge Racer 6 (хоумбрю) + 77 DLC [NRO][ENG]
   ~ Коллекция Carafe/Wine-NX/Box64/FEX/Autorun-эмуляторов ПК игр для консоли Nintend
@@ -30,5 +24,5 @@
   ~ Bejeweled 3 (хоумбрю) [NRO][ENG]
 Статистика обновлена: 7368 раздач
   * Покрытие базы: 100.4%
-  * Активных сидов: 83623
-  * Всего загрузок: 7783971
+  * Активных сидов: 97022
+  * Всего загрузок: 7785358
