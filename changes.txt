@@ -1,10 +1,12 @@
-=== 2026-11-18 17:03:07 ===
-Всего в базе: 7342
+=== 2026-11-18 21:09:59 ===
+Всего в базе: 7344
 Добавлено: 2
-  + Call of Duty Black Ops 1-2 (порты) [NRO][RUS]
-  + Village in the Shade [NSZ][RUS (Mod.)/ENG]
+  + Reverie in the Moonlight [NSZ][ENG]
+  + Blur (хоумбрю) [NRO][ENG]
 Обновлено: 22
-  ~ Terrifier the Artcade Game [NSP][RUS (Mod.)/ENG]
+  ~ Discounty [NSZ][RUS (Mod.)/ENG]
+  ~ Death Road to Canada [NSZ][RUS (Mod.)/ENG]
+  ~ Call of Duty Black Ops 1-2 (порты) [NRO][RUS]
   ~ Jagged Alliance 2 Агония Власти (хоумбрю) [NRO][RUS/ENG]
   ~ Ridge Racer 6 (хоумбрю) + 77 DLC [NRO][ENG]
   ~ Коллекция Carafe/Wine-NX/Box64/FEX/Autorun-эмуляторов ПК игр для консоли Nintend
@@ -24,9 +26,7 @@
   ~ Castlevania Harmony of Despair + DLC (хоумбрю) [NRO][ENG]
   ~ Singularity (хоумбрю) [NRO][RUS]
   ~ Mini Ninjas (порт) [NRO][RUS]
-  ~ The Cat Lady (порт) [NRO][RUS]
-  ~ Bejeweled 3 (хоумбрю) [NRO][ENG]
-Статистика обновлена: 7370 раздач
+Статистика обновлена: 7372 раздач
   * Покрытие базы: 100.4%
-  * Активных сидов: 107116
-  * Всего загрузок: 7786833
+  * Активных сидов: 103673
+  * Всего загрузок: 7788537
