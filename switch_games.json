@@ -13,7 +13,7 @@
         "interface_lang": "Английский [ENG]",
         "voice_lang": "английская",
         "performance": "Да (на 22.5.0, Atmosphere 1.11.2)",
-        "multiplayer": "нет",
+        "multiplayer": "до 2 игроков",
         "cover": "https://i1.imageban.ru/out/2026/11/17/dfe66a0e354cf220e3c4490a99669865.png",
         "screenshots": [
             "https://i129.fastpic.org/thumb/2026/1117/f3/dfb0599346befb83aff863aaa99ab5f3.jpeg",
@@ -429,7 +429,7 @@
         "image_format": "NRO",
         "interface_lang": "Английский [ENG]",
         "voice_lang": "не озвучивается",
-        "performance": "Да (на 22.5.0, Atmosphere 1.11.2)",
+        "performance": "Да (на 23.5.0, Atmosphere 1.12.2)",
         "multiplayer": "нет",
         "cover": "https://i8.imageban.ru/out/2026/11/15/4bd66a77c27347c27571bbaecda69d70.png",
         "screenshots": [
@@ -36745,7 +36745,7 @@
     {
         "title": "Azure Striker Gunvolt 1-2-3 Trilogy Enhanced / Gunvolt Chronicles Luminous Avenger iX 1+2 Dual Collection [NSP][ENG]",
         "size": "11.16 GB",
-        "magnet": "magnet:?xt=urn:btih:A8FF017245AA6F68BC886EF8821AB369749CE9D7&tr=http%3A%2F%2Fbt4.t-ru.org%2Fann%3Fmagnet",
+        "magnet": "magnet:?xt=urn:btih:B8113A2BFD64CA5579AE22C680B9447453D3CF3D&tr=http%3A%2F%2Fbt4.t-ru.org%2Fann%3Fmagnet",
         "topic_id": "6880115",
         "url": "https://rutracker.org/forum/viewtopic.php?t=6880115",
         "year": "2024-2026",
@@ -36770,13 +36770,13 @@
             "https://i127.fastpic.org/thumb/2026/0709/70/7cccb3193e815b847a47ab5d0bf98f70.jpeg"
         ],
         "description": "Проноситесь по уровням на высокой скорости и уничтожайте врагов в этом увлекательном платформере. Вы управляете сверхчеловеком, известным как Адепт, противостоящий группе Сумераги в решающей битве за свободу.\nПять научно-фантастические историй с яркими персонажами ждут вас!\nВ раздачу включены следующие части:\n\n\n\nAzure Striker Gunvolt,\n\n\n\nAzure Striker Gunvolt 2,\n\n\n\nAzure Striker Gunvolt 3,\n\n\n\nLuminous Avenger iX,\n\n\n\nLuminous Avenger iX 2.",
-        "title_id": "0100CEB027550000",
-        "update_version": 458752,
-        "version": "2.1.0",
+        "title_id": "0100E40022CE2000",
+        "update_version": 589824,
+        "version": "2.1.2",
         "titles": [
             {
                 "id": "0100E40022CE2000",
-                "update_version": 458752
+                "update_version": 589824
             },
             {
                 "id": "0100CEB027550000",

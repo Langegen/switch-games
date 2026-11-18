@@ -1,6 +1,7 @@
-=== 2026-11-18 01:02:45 ===
+=== 2026-11-18 05:02:44 ===
 Всего в базе: 7339
-Обновлено: 22
+Обновлено: 23
+  ~ Azure Striker Gunvolt 1-2-3 Trilogy Enhanced / Gunvolt Chronicles Luminous Aveng
   ~ Jagged Alliance 2 Агония Власти (хоумбрю) [NRO][RUS/ENG]
   ~ Ridge Racer 6 (хоумбрю) + 77 DLC [NRO][ENG]
   ~ Коллекция Carafe/Wine-NX/Box64/FEX/Autorun-эмуляторов ПК игр для консоли Nintend
@@ -25,5 +26,5 @@
   ~ Lost Odyssey (порт) [NRO][RUS (Mod.)/ENG]
 Статистика обновлена: 7366 раздач
   * Покрытие базы: 100.4%
-  * Активных сидов: 90062
-  * Всего загрузок: 7784320
+  * Активных сидов: 79570
+  * Всего загрузок: 7784479
