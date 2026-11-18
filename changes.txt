@@ -1,6 +1,10 @@
-=== 2026-11-18 13:03:52 ===
-Всего в базе: 7340
-Обновлено: 21
+=== 2026-11-18 17:03:07 ===
+Всего в базе: 7342
+Добавлено: 2
+  + Call of Duty Black Ops 1-2 (порты) [NRO][RUS]
+  + Village in the Shade [NSZ][RUS (Mod.)/ENG]
+Обновлено: 22
+  ~ Terrifier the Artcade Game [NSP][RUS (Mod.)/ENG]
   ~ Jagged Alliance 2 Агония Власти (хоумбрю) [NRO][RUS/ENG]
   ~ Ridge Racer 6 (хоумбрю) + 77 DLC [NRO][ENG]
   ~ Коллекция Carafe/Wine-NX/Box64/FEX/Autorun-эмуляторов ПК игр для консоли Nintend
@@ -22,7 +26,7 @@
   ~ Mini Ninjas (порт) [NRO][RUS]
   ~ The Cat Lady (порт) [NRO][RUS]
   ~ Bejeweled 3 (хоумбрю) [NRO][ENG]
-Статистика обновлена: 7368 раздач
+Статистика обновлена: 7370 раздач
   * Покрытие базы: 100.4%
-  * Активных сидов: 97022
-  * Всего загрузок: 7785358
+  * Активных сидов: 107116
+  * Всего загрузок: 7786833
