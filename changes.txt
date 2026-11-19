@@ -1,8 +1,10 @@
-=== 2026-11-19 17:02:40 ===
+=== 2026-11-19 21:02:39 ===
 Всего в базе: 7347
-Добавлено: 1
-  + Titan Souls (хоумбрю) [NRO][ENG]
-Обновлено: 20
+Обновлено: 22
+  ~ Titan Souls (хоумбрю) [NRO][ENG]
+  ~ Geometry Dash / World / Meltdown / Sub Zero (порты) [NRO][ENG]
+  ~ Absolum [NSP][RUS/Multi10]
+  ~ God of War Collection 1-2 (порты) [NRO][RUS]
   ~ Deadpool (хоумбрю) [NRO][RUS]
   ~ The Sims 3 (хоумбрю) [NRO][RUS/ENG]
   ~ Blur (хоумбрю) [NRO][ENG]
@@ -21,9 +23,7 @@
   ~ Hard Corps Uprising (хоумбрю) [NRO][ENG]
   ~ Barbie™ Rewind [XCI][ENG]
   ~ Fear and Hunger (порт) [NRO][RUS/ENG]
-  ~ The Witcher 2 Assassins of Kings (порт Ведьмак 2: Убийцы королей) [NRO][RUS/ENG]
-  ~ Castlevania Harmony of Despair + DLC (хоумбрю) [NRO][ENG]
 Статистика обновлена: 7375 раздач
   * Покрытие базы: 100.4%
-  * Активных сидов: 105915
-  * Всего загрузок: 7792494
+  * Активных сидов: 101477
+  * Всего загрузок: 7794476
