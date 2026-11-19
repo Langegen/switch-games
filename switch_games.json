@@ -13,7 +13,7 @@
         "interface_lang": "Английский [ENG]",
         "voice_lang": "английская",
         "performance": "Да (на 23.5.0, Atmosphere 1.12.2)",
-        "multiplayer": "нет",
+        "multiplayer": "до 2 игроков",
         "cover": "https://i1.imageban.ru/out/2026/11/18/2cc8bab3644110e4704fd0524c6e2acd.png",
         "screenshots": [
             "https://i129.fastpic.org/thumb/2026/1118/55/df2fe5c4a1212a0f145d648423089455.jpeg",
@@ -494,9 +494,9 @@
         "version": "0.1.1"
     },
     {
-        "title": "The Sims 3 (хоумбрю) [NRO][ENG]",
-        "size": "3.84 GB",
-        "magnet": "magnet:?xt=urn:btih:963B2A54893D8DCDE04370093F91D6083644C706&tr=http%3A%2F%2Fbt.t-ru.org%2Fann%3Fmagnet",
+        "title": "The Sims 3 (хоумбрю) [NRO][RUS/ENG]",
+        "size": "9.78 GB",
+        "magnet": "magnet:?xt=urn:btih:825913F63FB70A8ECFF654BCA18D373787F00141&tr=http%3A%2F%2Fbt.t-ru.org%2Fann%3Fmagnet",
         "topic_id": "6938765",
         "url": "https://rutracker.org/forum/viewtopic.php?t=6938765",
         "year": "2010",
@@ -504,7 +504,7 @@
         "developer": "Maxis, Electronic Arts",
         "publisher": "Zumoly",
         "image_format": "NRO",
-        "interface_lang": "Английский [ENG]",
+        "interface_lang": "Русский (официальный от СофтКлаб), Английский [RUS / ENG]",
         "voice_lang": "симлиш",
         "performance": "Да (на 22.5.0, Atmosphere 1.11.2)",
         "multiplayer": "нет",

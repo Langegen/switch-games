@@ -1,6 +1,7 @@
-=== 2026-11-19 01:02:38 ===
+=== 2026-11-19 05:02:43 ===
 Всего в базе: 7344
 Обновлено: 21
+  ~ The Sims 3 (хоумбрю) [NRO][RUS/ENG]
   ~ Blur (хоумбрю) [NRO][ENG]
   ~ Call of Duty Black Ops 1-2 (порты) [NRO][RUS]
   ~ Jagged Alliance 2 Агония Власти (хоумбрю) [NRO][RUS/ENG]
@@ -14,7 +15,6 @@
   ~ Prototype 2 (порт) [NRO][RUS/ENG]
   ~ Mass Effect 2 (порт) [NRO][RUS/ENG]
   ~ LEGO Batman the Videogame (2008, хоумбрю) [NRO][RUS]
-  ~ The Sims 3 (хоумбрю) [NRO][ENG]
   ~ Hard Corps Uprising (хоумбрю) [NRO][ENG]
   ~ Barbie™ Rewind [XCI][ENG]
   ~ Fear and Hunger (порт) [NRO][RUS/ENG]
@@ -24,5 +24,5 @@
   ~ Mini Ninjas (порт) [NRO][RUS]
 Статистика обновлена: 7372 раздач
   * Покрытие базы: 100.4%
-  * Активных сидов: 88783
-  * Всего загрузок: 7789624
+  * Активных сидов: 79410
+  * Всего загрузок: 7789973
