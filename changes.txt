@@ -1,9 +1,10 @@
-=== 2026-11-19 09:02:41 ===
-Всего в базе: 7345
+=== 2026-11-19 13:02:38 ===
+Всего в базе: 7346
 Добавлено: 1
-  + God of War Collection 1-2 (порты) [NRO][RUS (Mod.)/ENG]
-Обновлено: 21
-  ~ Коллекция RPG от Kemco (80 шт.): Monochrome Order / Asdivine: Hearts 1-2, Dios, 
+  + Deadpool (хоумбрю) [NRO][RUS]
+Обновлено: 20
+  ~ Lucky Tower Ultimate [NSZ][RUS/Multi9]
+  ~ God of War Collection 1-2 (порты) [NRO][RUS (Mod.)/ENG]
   ~ The Sims 3 (хоумбрю) [NRO][RUS/ENG]
   ~ Blur (хоумбрю) [NRO][ENG]
   ~ Call of Duty Black Ops 1-2 (порты) [NRO][RUS]
@@ -22,9 +23,7 @@
   ~ Barbie™ Rewind [XCI][ENG]
   ~ Fear and Hunger (порт) [NRO][RUS/ENG]
   ~ The Witcher 2 Assassins of Kings (порт Ведьмак 2: Убийцы королей) [NRO][RUS/ENG]
-  ~ Castlevania Harmony of Despair + DLC (хоумбрю) [NRO][ENG]
-  ~ Singularity (хоумбрю) [NRO][RUS]
-Статистика обновлена: 7373 раздач
+Статистика обновлена: 7374 раздач
   * Покрытие базы: 100.4%
-  * Активных сидов: 82594
-  * Всего загрузок: 7790745
+  * Активных сидов: 95916
+  * Всего загрузок: 7792349
