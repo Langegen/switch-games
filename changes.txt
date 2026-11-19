@@ -1,10 +1,9 @@
-=== 2026-11-19 13:02:38 ===
-Всего в базе: 7346
+=== 2026-11-19 17:02:40 ===
+Всего в базе: 7347
 Добавлено: 1
-  + Deadpool (хоумбрю) [NRO][RUS]
+  + Titan Souls (хоумбрю) [NRO][ENG]
 Обновлено: 20
-  ~ Lucky Tower Ultimate [NSZ][RUS/Multi9]
-  ~ God of War Collection 1-2 (порты) [NRO][RUS (Mod.)/ENG]
+  ~ Deadpool (хоумбрю) [NRO][RUS]
   ~ The Sims 3 (хоумбрю) [NRO][RUS/ENG]
   ~ Blur (хоумбрю) [NRO][ENG]
   ~ Call of Duty Black Ops 1-2 (порты) [NRO][RUS]
@@ -23,7 +22,8 @@
   ~ Barbie™ Rewind [XCI][ENG]
   ~ Fear and Hunger (порт) [NRO][RUS/ENG]
   ~ The Witcher 2 Assassins of Kings (порт Ведьмак 2: Убийцы королей) [NRO][RUS/ENG]
-Статистика обновлена: 7374 раздач
+  ~ Castlevania Harmony of Despair + DLC (хоумбрю) [NRO][ENG]
+Статистика обновлена: 7375 раздач
   * Покрытие базы: 100.4%
-  * Активных сидов: 95916
-  * Всего загрузок: 7792349
+  * Активных сидов: 105915
+  * Всего загрузок: 7792494
