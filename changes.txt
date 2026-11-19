@@ -1,11 +1,7 @@
-=== 2026-11-18 21:09:59 ===
+=== 2026-11-19 01:02:38 ===
 Всего в базе: 7344
-Добавлено: 2
-  + Reverie in the Moonlight [NSZ][ENG]
-  + Blur (хоумбрю) [NRO][ENG]
-Обновлено: 22
-  ~ Discounty [NSZ][RUS (Mod.)/ENG]
-  ~ Death Road to Canada [NSZ][RUS (Mod.)/ENG]
+Обновлено: 21
+  ~ Blur (хоумбрю) [NRO][ENG]
   ~ Call of Duty Black Ops 1-2 (порты) [NRO][RUS]
   ~ Jagged Alliance 2 Агония Власти (хоумбрю) [NRO][RUS/ENG]
   ~ Ridge Racer 6 (хоумбрю) + 77 DLC [NRO][ENG]
@@ -28,5 +24,5 @@
   ~ Mini Ninjas (порт) [NRO][RUS]
 Статистика обновлена: 7372 раздач
   * Покрытие базы: 100.4%
-  * Активных сидов: 103673
-  * Всего загрузок: 7788537
+  * Активных сидов: 88783
+  * Всего загрузок: 7789624
