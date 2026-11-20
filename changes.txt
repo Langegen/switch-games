@@ -1,6 +1,8 @@
-=== 2026-11-20 01:02:35 ===
+=== 2026-11-20 05:03:41 ===
 Всего в базе: 7347
-Обновлено: 21
+Обновлено: 23
+  ~ Sea of Stars + DLC Throes of the Watchmaker [NSZ][RUS/Multi9]
+  ~ Splatoon 3 + DLC Side Order, Inkopolis [NSP][RUS/Multi7]
   ~ Titan Souls (хоумбрю) [NRO][ENG]
   ~ Geometry Dash / World / Meltdown / Sub Zero (порты) [NRO][ENG]
   ~ God of War Collection 1-2 (порты) [NRO][RUS]
@@ -24,5 +26,5 @@
   ~ Fear and Hunger (порт) [NRO][RUS/ENG]
 Статистика обновлена: 7375 раздач
   * Покрытие базы: 100.4%
-  * Активных сидов: 85727
-  * Всего загрузок: 7795437
+  * Активных сидов: 77653
+  * Всего загрузок: 7792318
