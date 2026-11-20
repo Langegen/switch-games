@@ -1,5 +1,34 @@
 [
     {
+        "title": "Call of Duty Black Ops 2 (порт) [RUS/ENG]",
+        "size": "17.1 GB",
+        "magnet": "magnet:?xt=urn:btih:32A1F86D277FEC82211F2717D6EA875AB0082B89&tr=http%3A%2F%2Fbt.t-ru.org%2Fann%3Fmagnet",
+        "topic_id": "6939455",
+        "url": "https://rutracker.org/forum/viewtopic.php?t=6939455",
+        "year": "2012",
+        "genre": "Action, First-Person Shooter, Homebrew",
+        "developer": "Treyarch, Activision",
+        "publisher": "Unknown",
+        "image_format": "NRO",
+        "interface_lang": "Русский (официальный лицензионный перевод «Новый Диск»), Английский [RUS/ENG]",
+        "voice_lang": "русская («Новый Диск»), английская",
+        "performance": "Да (на 19.0.1, ultra 2.7)",
+        "multiplayer": "интернет до 18 человек",
+        "cover": "https://i6.imageban.ru/out/2026/11/20/f6ffb45e9b367916f3a57d325dfb9ae6.png",
+        "screenshots": [
+            "https://i2.imageban.ru/thumbs/2026.11.18/f488565d89be5d694108d108cb659352.jpg",
+            "https://i7.imageban.ru/thumbs/2026.11.18/92bddde7c93bbb053384508b304227cd.jpg",
+            "https://i4.imageban.ru/thumbs/2026.11.18/f8a7e77b28861923997f0c2574a03621.jpg",
+            "https://i3.imageban.ru/thumbs/2026.11.18/dd7f94998c31e980df2ef45f9ae4d25b.jpg",
+            "https://i7.imageban.ru/thumbs/2026.11.18/f5250262040937dad5030d4c2536843a.jpg",
+            "https://i6.imageban.ru/thumbs/2026.11.18/342e987ce64acf976611e6f31b33a30f.jpg",
+            "https://i6.imageban.ru/thumbs/2026.11.18/0c037fd81d22fa4ae190588b7faffce1.jpg"
+        ],
+        "description": "Неофициальный нативный порт мультиплеера и зомби-режима культового шутера Call of Duty: Black Ops II для прошитых консолей Nintendo Switch (на базе проекта BO2-Requiem-NX).\nВ данной сборке реализован нативный запуск игры на архитектуре Switch без использования эмуляторов. Игрокам доступны классический сетевой режим (игра с ботами и в онлайн-лобби) и режим выживания «Зомби».",
+        "title_id": null,
+        "version": "Beta 3.4"
+    },
+    {
         "title": "Idle Immortal + 2 DLC [NSZ][ENG]",
         "size": "1.1 GB",
         "magnet": "magnet:?xt=urn:btih:187F20BD3CD26931CD99B594E86F1CBD3D3289BE&tr=http%3A%2F%2Fbt.t-ru.org%2Fann%3Fmagnet",
