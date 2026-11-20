@@ -1,9 +1,8 @@
-=== 2026-11-20 17:02:39 ===
+=== 2026-11-20 21:02:48 ===
 Всего в базе: 7352
-Добавлено: 2
-  + Acorn Avengers [NSZ][ENG]
-  + Aurelia (хоумбрю 18+) [NRO][RUS/Multi8]
 Обновлено: 19
+  ~ EA Sports FC 27 [NSP][RUS/Multi11]
+  ~ Aurelia (хоумбрю 18+) [NRO][RUS/Multi8]
   ~ Metroid Prime 2 Echoes (хоумбрю) [NRO][ENG]
   ~ Titan Souls (хоумбрю) [NRO][ENG]
   ~ Geometry Dash / World / Meltdown / Sub Zero (порты) [NRO][ENG]
@@ -21,9 +20,7 @@
   ~ Soulcalibur II (порт Soul Calibur 2) [NRO][ENG]
   ~ Downfall Redux (порт) [NRO][RUS/Multi7]
   ~ Prototype 2 (порт) [NRO][RUS/ENG]
-  ~ Mass Effect 2 (порт) [NRO][RUS/ENG]
-  ~ LEGO Batman the Videogame (2008, хоумбрю) [NRO][RUS]
 Статистика обновлена: 7379 раздач
   * Покрытие базы: 100.4%
-  * Активных сидов: 102152
-  * Всего загрузок: 7798126
+  * Активных сидов: 101700
+  * Всего загрузок: 7801689
