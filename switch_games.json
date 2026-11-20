@@ -1,5 +1,70 @@
 [
     {
+        "title": "Idle Immortal + 2 DLC [NSZ][ENG]",
+        "size": "1.1 GB",
+        "magnet": "magnet:?xt=urn:btih:187F20BD3CD26931CD99B594E86F1CBD3D3289BE&tr=http%3A%2F%2Fbt.t-ru.org%2Fann%3Fmagnet",
+        "topic_id": "6940332",
+        "url": "https://rutracker.org/forum/viewtopic.php?t=6940332",
+        "year": "2026, август",
+        "genre": "Action, Arcade",
+        "developer": "Happy Player",
+        "publisher": "Leoful",
+        "image_format": ".NSZ (сжато ~21%, установленный объём 1.38 ГБ)",
+        "interface_lang": "Английский [ENG]",
+        "voice_lang": "не озвучивается",
+        "performance": "Да (на 23.0.1, Atmosphere 1.12.2)",
+        "multiplayer": "нет",
+        "cover": "https://i8.imageban.ru/out/2026/11/20/691a99a88dc5b7378e9aa96cca8fdddb.png",
+        "screenshots": [
+            "https://i129.fastpic.org/thumb/2026/1120/4c/946e2e81b5c7b82f1bfff490fc75624c.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1120/17/787312f1ee3f9e4ecbf939c5bcae6017.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1120/48/a96224c10dbd36ff4c5fe500c85df648.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1120/99/7df0d6a96790069ec28884ab5b00d399.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1120/bb/e0e2c29d16e64898c1ec8adae444e7bb.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1120/db/59a2db3a6860ff69a5cf1a8aec9035db.jpeg"
+        ],
+        "description": "Готовы ли вы ступить на путь к бессмертию в качестве настоящего главы китайской школы? Набирайте учеников и сформируйте сильнейший отряд — наслаждайтесь расслабляющим idle-геймплеем, который не требует вашего постоянного участия. Даже когда игра выключена, ваша школа продолжает сражаться, становиться сильнее и приближаться к победе.\n\n\n\nФормирование отряда: в игре доступно 16 играбельных персонажей, каждый из которых обладает спец. талантами, классом и навыками. Подбирайте подходящих учеников и создавайте войска по своему усмотрению.\n\n\n\nДля каждого героя можно выбрать один из шести различных путей самосовершенствования. Изучая различные техники, они получают особые бонусы, и даже герои одного класса могут развиваться совершенно по-разному, обретая различные характеристики.\n\n\n\nПутешествуйте по обширным китайским землям, знакомьтесь с другими школами и фракциями, и развивайте сюжет. Собирайте ресурсы, необходимые для процветания вашей школы. Вас ждут случайные события и неожиданные сокровища!..\n\n\n\nВидеотрейлер.",
+        "title_id": "010037D02742E000",
+        "titles": [
+            {
+                "id": "010037D02742E000",
+                "update_version": 262144
+            }
+        ],
+        "update_version": 262144,
+        "version": "1.4"
+    },
+    {
+        "title": "Metroid Prime 2 Echoes (хоумбрю) [NRO][ENG]",
+        "size": "1.27 GB",
+        "magnet": "magnet:?xt=urn:btih:675C73D540E50DB2BC0CF5D70D0BCECA0326F203&tr=http%3A%2F%2Fbt3.t-ru.org%2Fann%3Fmagnet",
+        "topic_id": "6940357",
+        "url": "https://rutracker.org/forum/viewtopic.php?t=6940357",
+        "year": "2004",
+        "genre": "Action, Adventure, First Person Shooter, Metroidvania, Homebrew",
+        "developer": "Retro Studios, Nintendo",
+        "publisher": "Unknown",
+        "image_format": "NRO",
+        "interface_lang": "Английский [ENG]",
+        "voice_lang": "английская",
+        "performance": "Да (на 23.5.0, Atmosphere 1.12.2)",
+        "multiplayer": "нет",
+        "cover": "https://i6.imageban.ru/out/2026/11/20/a3df84b7713bbdebab534479500e9c7a.jpeg",
+        "screenshots": [
+            "https://i129.fastpic.org/thumb/2026/1120/32/3e092e97f082f5b65af20b4d9a013232.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1120/b9/6c09849c30783c115daf73ae87f86cb9.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1120/46/538be62e4048e843118bc36c0f1bce46.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1120/dc/c04029fa179644a16bb734b2a53358dc.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1120/3c/b4be965a42598a7a8c2b61122b1ce73c.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1120/cd/458cef6802e87697d9f97507238e26cd.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1120/db/eaaa69fd0e820abfa1cdaee4861400db.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1120/3d/9197e522a0d0fe54b019465c0839f13d.jpeg"
+        ],
+        "description": "Главная героиня игры — охотница за головами Самус Аран — отправляется на поиски корабля Галактической Федерации, пропавшего на планете Эфир. Прибыв на место, Самус обнаруживает, что планета после космической катастрофы приобрела зловещего двойника — планету Тёмный Эфир, населенную жестокими Ингами. Самус должна помочь обитателям Эфира Люминотам, посетив три храма. Врагами охотницы в игре являются не только Инги, но и космические пираты и её собственный двойник, Тёмная Самус.",
+        "title_id": null,
+        "version": "0.5.0"
+    },
+    {
         "title": "Titan Souls (хоумбрю) [NRO][ENG]",
         "size": "188.6 MB",
         "magnet": "magnet:?xt=urn:btih:F16E70130C6F3A6E36B1591011D1809CDC3D98B7&tr=http%3A%2F%2Fbt4.t-ru.org%2Fann%3Fmagnet",
@@ -31427,19 +31492,19 @@
         ]
     },
     {
-        "title": "Sonic Racing Crossworlds + 8 DLC [NSZ][RUS/Multi10]",
-        "size": "10.85 GB",
-        "magnet": "magnet:?xt=urn:btih:6EC0E3E70AA50C52C03FD707E08895B937A82C21&tr=http%3A%2F%2Fbt3.t-ru.org%2Fann%3Fmagnet",
+        "title": "Sonic Racing Crossworlds + 12 DLC [NSZ][RUS/Multi10]",
+        "size": "11.89 GB",
+        "magnet": "magnet:?xt=urn:btih:02A96F795CED02A3BEF9D5723B78F6DD5CD1D977&tr=http%3A%2F%2Fbt3.t-ru.org%2Fann%3Fmagnet",
         "topic_id": "6748998",
         "url": "https://rutracker.org/forum/viewtopic.php?t=6748998",
         "year": "2025, сентябрь",
         "genre": "Racing, Arcade",
         "developer": "Sonic Team",
         "publisher": "SEGA",
-        "image_format": ".NSZ (сжато ~8%, установленный объём 11.58 ГБ)",
+        "image_format": ".NSZ (сжато ~8%, установленный объём 12.89 ГБ)",
         "interface_lang": "Русский, Английский [RUS / ENG / Multi 10]",
         "voice_lang": "японская, английская, французская, немецкая, испанская, итальянская",
-        "performance": "Да (на 21.2.0, Atmosphere 1.10.2)",
+        "performance": "Да (на 22.5.0, Atmosphere 1.12.2)",
         "multiplayer": "до 8 игроков",
         "cover": "https://i2.imageban.ru/out/2025/08/30/1b6ec427d3165e3d0fb02f6e2aa64c95.png",
         "screenshots": [
@@ -31455,12 +31520,12 @@
         ],
         "description": "Гоняйте всласть по суше, воде и воздуху, летите сквозь космос и время, неситесь к финишу в одиночку или участвуйте в командных заездах!..\n\n\n\nДоступны 45 транспортных средств и 70 различных устройств. Создай идеальную машину для своего стиля игры.\n\n\n\nВыбери одного из 23 любимых героев — их больше, чем в любой из гоночных игр о Сонике!\n\n\n\nПредметы дают преимущество! Используй 23 различных предмета — как уже знакомые, так и новинки вроде монстр-трака!\n\n\n\nИграй с друзьями на одном экране в Гран-при или новом режиме для компании «Гоночный парк», состязайся с гонщиками или испытай свои навыки вождения в «Раздельном старте».\n\n\n\nВидеотрейлер: https://www.youtube.com/watch?v=Ks_Uxuhz6nc",
         "title_id": "01006E001823C000",
-        "update_version": 720896,
-        "version": "1.43",
+        "update_version": 786432,
+        "version": "2.00",
         "titles": [
             {
                 "id": "01006E001823C000",
-                "update_version": 720896
+                "update_version": 786432
             }
         ]
     },

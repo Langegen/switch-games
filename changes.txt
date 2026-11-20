@@ -1,8 +1,10 @@
-=== 2026-11-20 05:03:41 ===
-Всего в базе: 7347
-Обновлено: 23
-  ~ Sea of Stars + DLC Throes of the Watchmaker [NSZ][RUS/Multi9]
-  ~ Splatoon 3 + DLC Side Order, Inkopolis [NSP][RUS/Multi7]
+=== 2026-11-20 09:02:41 ===
+Всего в базе: 7349
+Добавлено: 2
+  + Metroid Prime 2 Echoes (хоумбрю) [NRO][ENG]
+  + Idle Immortal + 2 DLC [NSZ][ENG]
+Обновлено: 19
+  ~ Sonic Racing Crossworlds + 12 DLC [NSZ][RUS/Multi10]
   ~ Titan Souls (хоумбрю) [NRO][ENG]
   ~ Geometry Dash / World / Meltdown / Sub Zero (порты) [NRO][ENG]
   ~ God of War Collection 1-2 (порты) [NRO][RUS]
@@ -21,10 +23,7 @@
   ~ Prototype 2 (порт) [NRO][RUS/ENG]
   ~ Mass Effect 2 (порт) [NRO][RUS/ENG]
   ~ LEGO Batman the Videogame (2008, хоумбрю) [NRO][RUS]
-  ~ Hard Corps Uprising (хоумбрю) [NRO][ENG]
-  ~ Barbie™ Rewind [XCI][ENG]
-  ~ Fear and Hunger (порт) [NRO][RUS/ENG]
-Статистика обновлена: 7375 раздач
+Статистика обновлена: 7377 раздач
   * Покрытие базы: 100.4%
-  * Активных сидов: 77653
-  * Всего загрузок: 7792318
+  * Активных сидов: 80271
+  * Всего загрузок: 7793534
