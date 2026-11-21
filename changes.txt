@@ -1,5 +1,7 @@
-=== 2026-11-21 17:02:45 ===
-Всего в базе: 7353
+=== 2026-11-21 21:02:39 ===
+Всего в базе: 7354
+Добавлено: 1
+  + Sonic Dream Team (хоумбрю) [NRO][RUS/Multi17]
 Обновлено: 18
   ~ Mass Effect 2 (порт) [NRO][RUS/ENG]
   ~ The Witcher 2 Assassins of Kings (порт Ведьмак 2: Убийцы королей) [NRO][RUS/ENG]
@@ -19,7 +21,7 @@
   ~ Коллекция Carafe/Wine-NX/Box64/FEX/Autorun-эмуляторов ПК игр для консоли Nintend
   ~ Dishonored + DLC The Knife of Dunwall, The Brigmore Witches, Dunwall City Trials
   ~ Bloody Roar Extreme (порт Beastorizer Primal Fury) [NRO][ENG]
-Статистика обновлена: 7380 раздач
+Статистика обновлена: 7381 раздач
   * Покрытие базы: 100.4%
-  * Активных сидов: 104593
-  * Всего загрузок: 7810478
+  * Активных сидов: 99362
+  * Всего загрузок: 7812475
