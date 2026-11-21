@@ -1,6 +1,8 @@
-=== 2026-11-21 09:02:50 ===
+=== 2026-11-21 13:02:38 ===
 Всего в базе: 7353
 Обновлено: 16
+  ~ Prototype 2 (порт) [NRO][RUS/ENG]
+  ~ Manhunt (порт) [NRO][RUS]
   ~ Aurelia (хоумбрю 18+) [NRO][RUS/Multi8]
   ~ Metroid Prime 2 Echoes (хоумбрю) [NRO][ENG]
   ~ Titan Souls (хоумбрю) [NRO][ENG]
@@ -13,11 +15,9 @@
   ~ Jagged Alliance 2 Агония Власти (хоумбрю) [NRO][RUS/ENG]
   ~ Ridge Racer 6 (хоумбрю) + 77 DLC [NRO][ENG]
   ~ Коллекция Carafe/Wine-NX/Box64/FEX/Autorun-эмуляторов ПК игр для консоли Nintend
-  ~ Manhunt (порт Xbox Original) [NRO][RUS]
   ~ Dishonored + DLC The Knife of Dunwall, The Brigmore Witches, Dunwall City Trials
   ~ Bloody Roar Extreme (порт Beastorizer Primal Fury) [NRO][ENG]
-  ~ Soulcalibur II (порт Soul Calibur 2) [NRO][ENG]
 Статистика обновлена: 7380 раздач
   * Покрытие базы: 100.4%
-  * Активных сидов: 83483
-  * Всего загрузок: 7806663
+  * Активных сидов: 94506
+  * Всего загрузок: 7808892
