@@ -1,8 +1,8 @@
-=== 2026-11-21 21:02:39 ===
+=== 2026-11-22 01:02:37 ===
 Всего в базе: 7354
-Добавлено: 1
-  + Sonic Dream Team (хоумбрю) [NRO][RUS/Multi17]
-Обновлено: 18
+Обновлено: 19
+  ~ Call of Duty Black Ops 1-2 (порты) [NRO][RUS]
+  ~ Sonic Dream Team (хоумбрю) [NRO][RUS/Multi17]
   ~ Mass Effect 2 (порт) [NRO][RUS/ENG]
   ~ The Witcher 2 Assassins of Kings (порт Ведьмак 2: Убийцы королей) [NRO][RUS/ENG]
   ~ Prototype 2 (порт) [NRO][RUS/ENG]
@@ -15,7 +15,6 @@
   ~ Deadpool (хоумбрю) [NRO][RUS]
   ~ The Sims 3 (хоумбрю) [NRO][RUS/ENG]
   ~ Blur (хоумбрю) [NRO][ENG]
-  ~ Call of Duty Black Ops 1-2 (порты) [NRO][RUS]
   ~ Jagged Alliance 2 Агония Власти (хоумбрю) [NRO][RUS/ENG]
   ~ Ridge Racer 6 (хоумбрю) + 77 DLC [NRO][ENG]
   ~ Коллекция Carafe/Wine-NX/Box64/FEX/Autorun-эмуляторов ПК игр для консоли Nintend
@@ -23,5 +22,5 @@
   ~ Bloody Roar Extreme (порт Beastorizer Primal Fury) [NRO][ENG]
 Статистика обновлена: 7381 раздач
   * Покрытие базы: 100.4%
-  * Активных сидов: 99362
-  * Всего загрузок: 7812475
+  * Активных сидов: 86090
+  * Всего загрузок: 7813920
