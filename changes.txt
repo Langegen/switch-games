@@ -1,6 +1,7 @@
-=== 2026-11-23 09:02:06 ===
+=== 2026-11-23 13:02:08 ===
 Всего в базе: 7356
 Обновлено: 19
+  ~ Star Ores Inc + 2 DLC [NSZ][RUS/Multi11]
   ~ Call of Duty World at War (порт CoD:WaW) [NRO][RUS]
   ~ Call of Duty Black Ops 1-2 (порты) [NRO][RUS]
   ~ Sonic Dream Team (хоумбрю) [NRO][RUS/Multi17]
@@ -19,8 +20,7 @@
   ~ Jagged Alliance 2 Агония Власти (хоумбрю) [NRO][RUS/ENG]
   ~ Ridge Racer 6 (хоумбрю) + 77 DLC [NRO][ENG]
   ~ Коллекция Carafe/Wine-NX/Box64/FEX/Autorun-эмуляторов ПК игр для консоли Nintend
-  ~ Dishonored + DLC The Knife of Dunwall, The Brigmore Witches, Dunwall City Trials
 Статистика обновлена: 7383 раздач
   * Покрытие базы: 100.4%
-  * Активных сидов: 77617
-  * Всего загрузок: 7824194
+  * Активных сидов: 89636
+  * Всего загрузок: 7825451
