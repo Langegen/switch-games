@@ -1,5 +1,36 @@
 [
     {
+        "title": "Call of Duty: Modern Warfare 2 (порт) [NRO][RUS]",
+        "size": "7.72 GB",
+        "magnet": "magnet:?xt=urn:btih:A974BC62B7056F56C09A995D1F537784356FF184&tr=http%3A%2F%2Fbt3.t-ru.org%2Fann%3Fmagnet",
+        "topic_id": "6942227",
+        "url": "https://rutracker.org/forum/viewtopic.php?t=6942227",
+        "year": "2009",
+        "genre": "Action, shooter, 3D, 1st person, Homebrew",
+        "developer": "Infinity Ward",
+        "publisher": "Unknown",
+        "image_format": "NRO",
+        "interface_lang": "Русский [RUS]",
+        "voice_lang": "Русская",
+        "performance": "Да (на 20.5.0, Atmosphere 1.11.2)",
+        "multiplayer": "C ботами",
+        "cover": "https://i129.fastpic.org/big/2026/1123/3b/f6eac95052e66428dd077659e99fa93b.png",
+        "screenshots": [
+            "https://i129.fastpic.org/thumb/2026/1123/49/4936b2b82cb4465bda24c70a975b5349.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1123/e7/c3dfc1fb888fb3879e5cc64828b446e7.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1123/63/0477e65f24fd3824330d405cd880d563.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1123/40/aeaa7b0a90865e32e06c3f99e2e93740.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1123/f4/eb61954b01c47929fc974214a9a34af4.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1123/50/467ccfea16d12b671080b0d838bb6750.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1123/68/ad83540fa5909bdd003e1759bed81c68.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1123/50/f4f7d00906e0c1b6cf6274978fadde50.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1123/86/0c68cb7b71c6a3af1b9b371c4b12c486.jpeg"
+        ],
+        "description": "Продолжение нашумевшего боевика Call of Duty 4: Modern Warfare, разошедшегося по всему миру тиражом 14 миллионов экземпляров и удостоившегося звания «Игра 2007 года» от большинства игровых изданий. Действие разворачивается спустя несколько лет после событий, произошедших в первой части блокбастера. В составе спецотряда по борьбе с терроризмом под командованием капитана Джона Мактавиша игрок примет участие в опаснейших операциях в самых разных уголках мира: в заснеженных горах Казахстана и трущобах Рио-де-Жанейро, в песках Афганистана и даже на бескрайних просторах России. В захватывающих дух перестрелках и рукопашных схватках с экстремистами бойцы элитного отряда будут использовать новейшее оружие, снаряжение и технику.",
+        "title_id": null,
+        "version": "1.0.1"
+    },
+    {
         "title": "Blood and Glory Legend (хоумбрю) [NRO][RUS]",
         "size": "328.7 MB",
         "magnet": "magnet:?xt=urn:btih:60A8AE488D6FCC9E3092DF155C5E23080B6276C3&tr=http%3A%2F%2Fbt2.t-ru.org%2Fann%3Fmagnet",
