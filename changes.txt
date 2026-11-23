@@ -1,6 +1,10 @@
-=== 2026-11-22 06:21:20 ===
-Всего в базе: 7354
+=== 2026-11-23 08:45:57 ===
+Всего в базе: 7356
+Добавлено: 2
+  + Call of Duty World at War (порт CoD:WaW) [NRO][RUS]
+  + Blood and Glory Legend (хоумбрю) [NRO][RUS]
 Обновлено: 18
+  ~ Call of Duty Black Ops 1-2 (порты) [NRO][RUS]
   ~ Sonic Dream Team (хоумбрю) [NRO][RUS/Multi17]
   ~ Mass Effect 2 (порт) [NRO][RUS/ENG]
   ~ The Witcher 2 Assassins of Kings (порт Ведьмак 2: Убийцы королей) [NRO][RUS/ENG]
@@ -18,8 +22,7 @@
   ~ Ridge Racer 6 (хоумбрю) + 77 DLC [NRO][ENG]
   ~ Коллекция Carafe/Wine-NX/Box64/FEX/Autorun-эмуляторов ПК игр для консоли Nintend
   ~ Dishonored + DLC The Knife of Dunwall, The Brigmore Witches, Dunwall City Trials
-  ~ Bloody Roar Extreme (порт Beastorizer Primal Fury) [NRO][ENG]
-Статистика обновлена: 7381 раздач
+Статистика обновлена: 7383 раздач
   * Покрытие базы: 100.4%
-  * Активных сидов: 79026
-  * Всего загрузок: 7814616
+  * Активных сидов: 76929
+  * Всего загрузок: 7823992
