@@ -1,9 +1,7 @@
-=== 2026-11-23 08:45:57 ===
+=== 2026-11-23 09:02:06 ===
 Всего в базе: 7356
-Добавлено: 2
-  + Call of Duty World at War (порт CoD:WaW) [NRO][RUS]
-  + Blood and Glory Legend (хоумбрю) [NRO][RUS]
-Обновлено: 18
+Обновлено: 19
+  ~ Call of Duty World at War (порт CoD:WaW) [NRO][RUS]
   ~ Call of Duty Black Ops 1-2 (порты) [NRO][RUS]
   ~ Sonic Dream Team (хоумбрю) [NRO][RUS/Multi17]
   ~ Mass Effect 2 (порт) [NRO][RUS/ENG]
@@ -24,5 +22,5 @@
   ~ Dishonored + DLC The Knife of Dunwall, The Brigmore Witches, Dunwall City Trials
 Статистика обновлена: 7383 раздач
   * Покрытие базы: 100.4%
-  * Активных сидов: 76929
-  * Всего загрузок: 7823992
+  * Активных сидов: 77617
+  * Всего загрузок: 7824194
