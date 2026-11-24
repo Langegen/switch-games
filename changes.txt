@@ -1,8 +1,7 @@
-=== 2026-11-23 21:02:16 ===
+=== 2026-11-24 01:02:01 ===
 Всего в базе: 7357
-Добавлено: 1
-  + Call of Duty: Modern Warfare 2 (порт) [NRO][RUS]
-Обновлено: 17
+Обновлено: 18
+  ~ Call of Duty: Modern Warfare 2 (порт) [NRO][RUS]
   ~ Call of Duty World at War (порт CoD:WaW) [NRO][RUS]
   ~ Call of Duty Black Ops 1-2 (порты) [NRO][RUS]
   ~ Sonic Dream Team (хоумбрю) [NRO][RUS/Multi17]
@@ -22,5 +21,5 @@
   ~ Ridge Racer 6 (хоумбрю) + 77 DLC [NRO][ENG]
 Статистика обновлена: 7384 раздач
   * Покрытие базы: 100.4%
-  * Активных сидов: 98691
-  * Всего загрузок: 7829886
+  * Активных сидов: 85783
+  * Всего загрузок: 7830934
