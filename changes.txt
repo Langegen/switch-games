@@ -1,8 +1,7 @@
-=== 2026-11-26 09:01:58 ===
+=== 2026-11-26 13:02:12 ===
 Всего в базе: 7358
-Добавлено: 1
-  + Max Payne 2 the Fall of MaxPayne (хоумбрю) [NRO][ENG]
-Обновлено: 19
+Обновлено: 20
+  ~ Max Payne 2 the Fall of MaxPayne (хоумбрю) [NRO][ENG]
   ~ Визуальные новеллы на RenPy, 165 шт.: Katawa Shoujo / Saya no Uta / Hatsune Miku
   ~ Call of Duty: Modern Warfare 2 (порт) [NRO][RUS]
   ~ Call of Duty World at War (порт CoD:WaW) [NRO][RUS]
@@ -24,5 +23,5 @@
   ~ Ridge Racer 6 (хоумбрю) + 77 DLC [NRO][ENG]
 Статистика обновлена: 7385 раздач
   * Покрытие базы: 100.4%
-  * Активных сидов: 81710
-  * Всего загрузок: 7845214
+  * Активных сидов: 90407
+  * Всего загрузок: 7846491
