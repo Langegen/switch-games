@@ -1,5 +1,33 @@
 [
     {
+        "title": "Time Shift (порт) [NRO][RUS]",
+        "size": "4.05 GB",
+        "magnet": "magnet:?xt=urn:btih:FB4603E30E971134057C588A9F73292DB9A2F909&tr=http%3A%2F%2Fbt3.t-ru.org%2Fann%3Fmagnet",
+        "topic_id": "6943630",
+        "url": "https://rutracker.org/forum/viewtopic.php?t=6943630",
+        "year": "2007",
+        "genre": "First Person Shooter, Homebrew",
+        "developer": "Telifon Production, Saber Interactive, Sierra Entertainment",
+        "publisher": "Unknown",
+        "image_format": "NRO",
+        "interface_lang": "Русский [RUS]",
+        "voice_lang": "русская",
+        "performance": "Да (на 22.5.0, Atmosphere 1.12.1)",
+        "multiplayer": "Нет",
+        "cover": "https://i129.fastpic.org/big/2026/1127/0a/60ececd063997af39f325d3f9ea9400a.jpg",
+        "screenshots": [
+            "https://i129.fastpic.org/thumb/2026/1127/92/_7942e16b2f96a7799a45b6f88f296092.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1127/9b/_33342262c685fe24cc1e1d739e29f69b.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1127/06/_cd8160f0fdf56522cd07db0affc7de06.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1127/98/_060afbff501952587f8805c795e71998.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1127/74/_293ff7f9b4c2491826887d08c94f4a74.jpeg",
+            "https://i129.fastpic.org/thumb/2026/1127/d6/_0426f07852156557359ca99f3bd3bbd6.jpeg"
+        ],
+        "description": "TimeShift — научно-фантастический шутер от первого лица, разработанный студией Saber Interactive и изданный компанией Sierra Entertainment. Действие разворачивается в альтернативной мрачной реальности, которую захватил диктатор доктор Эйден Крон, изменивший ход истории с помощью украденного хронокостюма «Альфа».\nГлавный герой — безымянный учёный в более совершенном квантовом костюме «Бета», который отправляется в прошлое, чтобы остановить Крона и исправить временную линию. Ключевая особенность геймплея — управление временем: игрок может замедлять, полностью останавливать или обращать его вспять, чтобы уклоняться от пуль, обезоруживать врагов и решать головоломки.\nПо данным агрегатора Metacritic игра получила смешанно-положительные отзывы прессы — от 71 до 74 баллов из 100 в зависимости от платформы, при этом критики и игроки особо отметили механику управления временем.",
+        "title_id": null,
+        "version": "1.0.0"
+    },
+    {
         "title": "Max Payne 2 the Fall of MaxPayne (хоумбрю) [NRO][ENG]",
         "size": "1.86 GB",
         "magnet": "magnet:?xt=urn:btih:A614D74879B2EE68D91015199C78332C1460B302&tr=http%3A%2F%2Fbt2.t-ru.org%2Fann%3Fmagnet",
