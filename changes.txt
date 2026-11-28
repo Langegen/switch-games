@@ -1,17 +1,15 @@
-=== 2026-11-28 05:02:21 ===
+=== 2026-11-28 09:43:55 ===
 Всего в базе: 7359
-Обновлено: 21
+Обновлено: 18
   ~ Time Shift (порт) [NRO][RUS]
   ~ Max Payne 2 the Fall of MaxPayne (хоумбрю) [NRO][ENG]
   ~ Визуальные новеллы на RenPy, 165 шт.: Katawa Shoujo / Saya no Uta / Hatsune Miku
   ~ Call of Duty: Modern Warfare 2 (порт) [NRO][RUS]
   ~ Call of Duty World at War (порт CoD:WaW) [NRO][RUS]
   ~ Call of Duty Black Ops 1-2 (порты) [NRO][RUS]
-  ~ Sonic Dream Team (хоумбрю) [NRO][RUS/Multi17]
   ~ Mass Effect 2 (порт) [NRO][RUS/ENG]
   ~ The Witcher 2 Assassins of Kings (порт Ведьмак 2: Убийцы королей) [NRO][RUS/ENG]
   ~ Prototype 2 (порт) [NRO][RUS/ENG]
-  ~ Manhunt (порт) [NRO][RUS]
   ~ Aurelia (хоумбрю 18+) [NRO][RUS/Multi8]
   ~ Metroid Prime 2 Echoes (хоумбрю) [NRO][ENG]
   ~ Titan Souls (хоумбрю) [NRO][ENG]
@@ -20,9 +18,8 @@
   ~ Deadpool (хоумбрю) [NRO][RUS]
   ~ The Sims 3 (хоумбрю) [NRO][RUS/ENG]
   ~ Blur (хоумбрю) [NRO][ENG]
-  ~ Jagged Alliance 2 Агония Власти (хоумбрю) [NRO][RUS/ENG]
   ~ Ridge Racer 6 (хоумбрю) + 77 DLC [NRO][ENG]
 Статистика обновлена: 7388 раздач
   * Покрытие базы: 100.4%
-  * Активных сидов: 78322
-  * Всего загрузок: 7858290
+  * Активных сидов: 83234
+  * Всего загрузок: 7859307
